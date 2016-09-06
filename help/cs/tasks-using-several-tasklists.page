@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="tasks-using-several-tasklists" xml:lang="cs">
+
+  <info>
+    <desc>Přidání a používání více než jednoho seznamu úkolů nebo poznámek.</desc>
+
+    <link type="guide" xref="tasks-organizing"/>
+
+    <revision pkgversion="3.1.91" version="0.3" date="2011-09-04" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Používání několika seznamů úkolů a poznámek</title>
+
+<p>Můžete udržovat více seznamů úkolů a poznámek a vybírat si, který seznam bude zobrazený. Například můžete mít úkoly pro práci, úkoly pro domácnost nebo úkoly pro pěvecký spolek, jehož jste členem. Postranní panel tyto seznamy zobrazuje a vy můžete označit či odznačit políčka vedle nich, pokud chcete zobrazit či skrýt úkoly nebo poznámky v náhledu.</p>
+
+<p>Úkoly a poznámky se v každém seznamu zobrazují rozdílnou barvou.</p>
+
+<p>Můžete také používat seznamy, které nejsou ve vašem počítači, třeba ty z internetu.</p>
+
+</page>

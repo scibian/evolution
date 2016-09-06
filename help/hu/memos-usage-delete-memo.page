@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="memos-usage-delete-memo" xml:lang="hu">
+
+  <info>
+    <desc>Feljegyzés törlése a feljegyzéslistából.</desc>
+    
+    <link type="guide" xref="memos-usage"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-08-01" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Feljegyzés törlése</title>
+
+<p>Ha törölni szeretne egy feljegyzést a feljegyzéslistájából, akkor kattintson a jobb egérgombbal a feljegyzésre, és válassza a <gui>Törlés</gui> menüpontot, vagy kattintson a feljegyzésre, és válassza a <gui>Törlés</gui> gombot az eszköztáron, vagy válassza a <guiseq><gui>Szerkesztés</gui><gui>Feljegyzés törlése</gui></guiseq> menüpontot.</p>
+
+</page>

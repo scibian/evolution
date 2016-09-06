@@ -1,0 +1,931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETableModel</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ETableItem.html" title="ETableItem">
+<link rel="next" href="evolution-util-ETableOne.html" title="ETableOne">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETableModel.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETableModel.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#ETableModel.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_implementations">  <span class="dim">|</span> 
+                  <a href="#ETableModel.implementations" class="shortcut">Known Implementations</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETableModel.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETableItem.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="evolution-util-ETableOne.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETableModel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETableModel.top_of_page"></a>ETableModel</span></h2>
+<p>ETableModel</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETableModel.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-column-count" title="e_table_model_column_count ()">e_table_model_column_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-column-name" title="e_table_model_column_name ()">e_table_model_column_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-row-count" title="e_table_model_row_count ()">e_table_model_row_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-append-row" title="e_table_model_append_row ()">e_table_model_append_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-value-at" title="e_table_model_value_at ()">e_table_model_value_at</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-set-value-at" title="e_table_model_set_value_at ()">e_table_model_set_value_at</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-is-cell-editable" title="e_table_model_is_cell_editable ()">e_table_model_is_cell_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-has-save-id" title="e_table_model_has_save_id ()">e_table_model_has_save_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-get-save-id" title="e_table_model_get_save_id ()">e_table_model_get_save_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-has-change-pending" title="e_table_model_has_change_pending ()">e_table_model_has_change_pending</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-duplicate-value" title="e_table_model_duplicate_value ()">e_table_model_duplicate_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-free-value" title="e_table_model_free_value ()">e_table_model_free_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-initialize-value" title="e_table_model_initialize_value ()">e_table_model_initialize_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-value-is-empty" title="e_table_model_value_is_empty ()">e_table_model_value_is_empty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-value-to-string" title="e_table_model_value_to_string ()">e_table_model_value_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-pre-change" title="e_table_model_pre_change ()">e_table_model_pre_change</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-no-change" title="e_table_model_no_change ()">e_table_model_no_change</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-changed" title="e_table_model_changed ()">e_table_model_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-row-changed" title="e_table_model_row_changed ()">e_table_model_row_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-cell-changed" title="e_table_model_cell_changed ()">e_table_model_cell_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-rows-inserted" title="e_table_model_rows_inserted ()">e_table_model_rows_inserted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-rows-deleted" title="e_table_model_rows_deleted ()">e_table_model_rows_deleted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-row-inserted" title="e_table_model_row_inserted ()">e_table_model_row_inserted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-row-deleted" title="e_table_model_row_deleted ()">e_table_model_row_deleted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-freeze" title="e_table_model_freeze ()">e_table_model_freeze</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableModel.html#e-table-model-thaw" title="e_table_model_thaw ()">e_table_model_thaw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableModel.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableModel.html#ETableModel-model-cell-changed" title="The “model-cell-changed” signal">model-cell-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableModel.html#ETableModel-model-changed" title="The “model-changed” signal">model-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableModel.html#ETableModel-model-no-change" title="The “model-no-change” signal">model-no-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableModel.html#ETableModel-model-pre-change" title="The “model-pre-change” signal">model-pre-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableModel.html#ETableModel-model-row-changed" title="The “model-row-changed” signal">model-row-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableModel.html#ETableModel-model-rows-deleted" title="The “model-rows-deleted” signal">model-rows-deleted</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableModel.html#ETableModel-model-rows-inserted" title="The “model-rows-inserted” signal">model-rows-inserted</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableModel.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="ETableModel.html#ETableModel-struct" title="ETableModel">ETableModel</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableModel.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> ETableModel
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETableModel.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+ETableModel requires
+ <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ETableModel.implementations"></a><h2>Known Implementations</h2>
+<p>
+ETableModel is implemented by
+ <a class="link" href="ETableSorted.html" title="ETableSorted">ETableSorted</a>,  <a class="link" href="ETableSubset.html" title="ETableSubset">ETableSubset</a> and  <a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter">ETreeTableAdapter</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ETableModel.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETableModel.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-table-model-column-count"></a><h3>e_table_model_column_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_model_column_count (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.18.10.2.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>The e-table-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.18.10.2.5"></a><h4>Returns</h4>
+<p> the number of columns in the table model.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-column-name"></a><h3>e_table_model_column_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_table_model_column_name (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-row-count"></a><h3>e_table_model_row_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_model_row_count (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.18.10.4.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the e-table-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.18.10.4.5"></a><h4>Returns</h4>
+<p> the number of rows in the Table model.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-append-row"></a><h3>e_table_model_append_row ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_append_row (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                          <em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *source</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.18.10.5.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to append the a row to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-value-at"></a><h3>e_table_model_value_at ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_table_model_value_at (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-set-value-at"></a><h3>e_table_model_set_value_at ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_set_value_at (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> value</code></em>);</pre>
+<p>This function instructs the model to store the value in <em class="parameter"><code>data</code></em>
+ in the
+the <em class="parameter"><code>table_model</code></em>
+ at column <em class="parameter"><code>col</code></em>
+ and row <em class="parameter"><code>row</code></em>
+.  The <em class="parameter"><code>data</code></em>
+ typically
+comes from one of the ECell rendering objects.</p>
+<p>There should be an agreement between the Table Model and the user
+of this function about the data being stored.  Typically it will
+be a pointer to a set of data, or a datum that fits inside a gpointer .</p>
+<div class="refsect3">
+<a name="id-1.12.18.10.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to operate on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>the column where the data will be stored in the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row where the data will be stored in the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>the data to be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-is-cell-editable"></a><h3>e_table_model_is_cell_editable ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_model_is_cell_editable (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.18.10.8.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to query.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>column to query.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>row to query.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.18.10.8.5"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cell in <em class="parameter"><code>table_model</code></em>
+at <em class="parameter"><code>col</code></em>
+,<em class="parameter"><code>row</code></em>
+can be
+edited, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-has-save-id"></a><h3>e_table_model_has_save_id ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_model_has_save_id (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-get-save-id"></a><h3>e_table_model_get_save_id ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_table_model_get_save_id (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-has-change-pending"></a><h3>e_table_model_has_change_pending ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_model_has_change_pending (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-duplicate-value"></a><h3>e_table_model_duplicate_value ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_table_model_duplicate_value (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> value</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-free-value"></a><h3>e_table_model_free_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_free_value (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> value</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-initialize-value"></a><h3>e_table_model_initialize_value ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_table_model_initialize_value (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-value-is-empty"></a><h3>e_table_model_value_is_empty ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_model_value_is_empty (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> value</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-value-to-string"></a><h3>e_table_model_value_to_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_table_model_value_to_string (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> value</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-pre-change"></a><h3>e_table_model_pre_change ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_pre_change (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-no-change"></a><h3>e_table_model_no_change ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_no_change (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+<p>Use this function to notify any views of this table model that
+the contents of the table model have changed.  This will emit
+the signal "model_no_change" on the <em class="parameter"><code>table_model</code></em>
+ object.</p>
+<p>It is preferable to use the <a class="link" href="ETableModel.html#e-table-model-row-changed" title="e_table_model_row_changed ()"><code class="function">e_table_model_row_changed()</code></a> and
+the <a class="link" href="ETableModel.html#e-table-model-cell-changed" title="e_table_model_cell_changed ()"><code class="function">e_table_model_cell_changed()</code></a> to notify of smaller changes
+than to invalidate the entire model, as the views might have
+ways of caching the information they render from the model.</p>
+<div class="refsect3">
+<a name="id-1.12.18.10.18.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to notify of the lack of a change</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-changed"></a><h3>e_table_model_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_changed (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+<p>Use this function to notify any views of this table model that
+the contents of the table model have changed.  This will emit
+the signal "model_changed" on the <em class="parameter"><code>table_model</code></em>
+ object.</p>
+<p>It is preferable to use the <a class="link" href="ETableModel.html#e-table-model-row-changed" title="e_table_model_row_changed ()"><code class="function">e_table_model_row_changed()</code></a> and
+the <a class="link" href="ETableModel.html#e-table-model-cell-changed" title="e_table_model_cell_changed ()"><code class="function">e_table_model_cell_changed()</code></a> to notify of smaller changes
+than to invalidate the entire model, as the views might have
+ways of caching the information they render from the model.</p>
+<div class="refsect3">
+<a name="id-1.12.18.10.19.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-row-changed"></a><h3>e_table_model_row_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_row_changed (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Use this function to notify any views of the table model that
+the contents of row <em class="parameter"><code>row</code></em>
+ have changed in model.  This function
+will emit the "model_row_changed" signal on the <em class="parameter"><code>table_model</code></em>
+
+object</p>
+<div class="refsect3">
+<a name="id-1.12.18.10.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row that was changed in the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-cell-changed"></a><h3>e_table_model_cell_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_cell_changed (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Use this function to notify any views of the table model that
+contents of the cell at <em class="parameter"><code>col</code></em>
+,<em class="parameter"><code>row</code></em>
+ has changed. This will emit
+the "model_cell_changed" signal on the <em class="parameter"><code>table_model</code></em>
+
+object</p>
+<div class="refsect3">
+<a name="id-1.12.18.10.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>the column.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-rows-inserted"></a><h3>e_table_model_rows_inserted ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_rows_inserted (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>);</pre>
+<p>Use this function to notify any views of the table model that
+<em class="parameter"><code>count</code></em>
+ rows at row <em class="parameter"><code>row</code></em>
+ have been inserted into the model.  This
+function will emit the "model_rows_inserted" signal on the
+<em class="parameter"><code>table_model</code></em>
+ object</p>
+<div class="refsect3">
+<a name="id-1.12.18.10.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row that was inserted into the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>The number of rows that were inserted.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-rows-deleted"></a><h3>e_table_model_rows_deleted ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_rows_deleted (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-row-inserted"></a><h3>e_table_model_row_inserted ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_row_inserted (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Use this function to notify any views of the table model that the
+row <em class="parameter"><code>row</code></em>
+ has been inserted into the model.  This function will emit
+the "model_rows_inserted" signal on the <em class="parameter"><code>table_model</code></em>
+ object</p>
+<div class="refsect3">
+<a name="id-1.12.18.10.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row that was inserted into the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-row-deleted"></a><h3>e_table_model_row_deleted ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_row_deleted (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Use this function to notify any views of the table model that the
+row <em class="parameter"><code>row</code></em>
+ has been deleted from the model.  This function will emit
+the "model_rows_deleted" signal on the <em class="parameter"><code>table_model</code></em>
+ object</p>
+<div class="refsect3">
+<a name="id-1.12.18.10.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row that was deleted</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-freeze"></a><h3>e_table_model_freeze ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_freeze (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-model-thaw"></a><h3>e_table_model_thaw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_model_thaw (<em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableModel.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETableModel-struct"></a><h3>ETableModel</h3>
+<pre class="programlisting">typedef struct _ETableModel ETableModel;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableModel.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETableModel-model-cell-changed"></a><h3>The <code class="literal">“model-cell-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *etablemodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableModel-model-changed"></a><h3>The <code class="literal">“model-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *etablemodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableModel-model-no-change"></a><h3>The <code class="literal">“model-no-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *etablemodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableModel-model-pre-change"></a><h3>The <code class="literal">“model-pre-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *etablemodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableModel-model-row-changed"></a><h3>The <code class="literal">“model-row-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *etablemodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableModel-model-rows-deleted"></a><h3>The <code class="literal">“model-rows-deleted”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *etablemodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableModel-model-rows-inserted"></a><h3>The <code class="literal">“model-rows-inserted”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *etablemodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

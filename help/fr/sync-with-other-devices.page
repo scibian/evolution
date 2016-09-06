@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="sync-with-other-devices" xml:lang="fr">
+
+  <info>
+    <desc>Synchroniser les données d'Evolution avec les périphériques pris en charge et les téléphones portables.</desc>
+
+    <link type="guide" xref="index#data-migration-and-sync"/>
+
+    <revision pkgversion="2.30.2" version="0.6" date="2013-04-20" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-sync.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+<!-- TODO:POST-3-8: Find out how to sync modern devices, e.g. Android, iPhone, Nokia N97 / N900, N9, N950, etc. Maybe SyncEvolution is the recommended (and external) way here? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Synchronisation d'<app>Evolution</app> avec les autres périphériques</title>
+
+<p>Il n'y a actuellement aucune « instructions recommandées » pour les utilisateurs.</p>
+
+<p>Many distributions provide the application <app><link href="http://syncevolution.org/">SyncEvolution</link></app> that can be used in combination with devices that support <link href="https://en.wikipedia.org/wiki/SyncML">SyncML</link>.<!-- Buteo development seems to have slowed down, hence commenting this section - AndreKlapper, 2011/05/14: Also <link href="http://wiki.meego.com/Buteo">Buteo</link> aims to provide that functionality. A technical comparison of Buteo with SyncEvolution can be found <link href="http://meego.com/sites/all/files/meego-sync-linuxcon-2010.pdf">here on slide #18</link>. --></p>
+
+<p>In general it is recommended to use applications and devices that both support the <link href="https://en.wikipedia.org/wiki/ActiveSync">ActiveSync protocol</link> (such as <app>SyncEvolution</app>). A <link href="https://en.wikipedia.org/wiki/List_of_collaborative_software">list of collaborative software</link> is available on Wikipedia.</p>
+
+ <p>Si vous avez une bonne expérience ou plus d'informations à ce sujet, n'hésitez pas à remplir un rapport d'anomalie dans le <link href="https://bugzilla.gnome.org/enter_bug.cgi?product=evolution&amp;component=User%20Documentation">système de suivi de bogues de GNOME</link>.</p>
+
+  <section id="palm">
+    <title>Palm</title>
+<p>Pour se synchroniser avec un périphérique Palm OS comme le PalmPilot(TM) et le Handspring Visor, il y a plusieurs étapes à suivre. Tout d'abord, vous devez activer la synchronisation. Deuxièmement, votre ordinateur doit reconnaître le périphérique et pouvoir y accéder. Ensuite, vous devez définir le type de synchronisation à utiliser.</p>
+    <section id="sync-enabling-palm">
+      <title>Activation de la synchronisation</title>
+      <p>Si vous n'avez jamais utilisé un périphérique portable avec votre ordinateur, vous devez le configurer en utilisant le menu <guiseq><gui>Édition</gui><gui>Synchronisation Pilot GNOME...</gui></guiseq>. Vérifiez que vous disposez des autorisations de lecture et d'écriture sur le périphérique (dans <file>/dev/pilot</file> normalement). En cas de problème, faites un essai avec <file>/dev/ttyS0</file> si vous disposez d'une connexion série ou dans <file>/dev/ttyUSB1</file> si vous disposez d'une connexion USB. Pour ce faire, vous devez passer en mode administrateur et ajouter votre nom d'utilisateur au groupe qui a les droits sur ce nœud de périphérique. Dans le cas d'une synchronisation par USB, deux nœuds sont créés, <file>ttyUSB0</file> et <file>ttyUSB1</file>. Le second nœud est celui qui sera utilisé pour configurer le périphérique.</p>
+   </section>
+   <section id="sync-selecting-conduits-">
+     <title>Sélection des canaux</title>
+     <p>Lorsque votre ordinateur et le périphérique Palm OS communiquent, sélectionnez les canaux appropriés dans la section <gui>Pilot Conduits</gui> (canaux Pilot). Vous pouvez utiliser des canaux pour synchroniser les données avec plusieurs applications ; les canaux Evolution s'appellent <gui>EAddress</gui> pour les contacts de votre carnet d'adresses, <gui>ECalendar</gui> pour votre agenda et <gui>ETodo</gui> pour votre listede tâches.</p>
+     <p>Cliquez sur <gui>Activer</gui>, puis sur <gui>Paramètres</gui> pour modifier le comportement d'un canal lorsqu'il est activé. Les options varient en fonction du canal, mais en règle générale, vous disposez des options suivantes :</p>
+     <list>
+       <item><p><gui>Désactivé</gui> : ne rien faire.</p></item>
+       <item><p><gui>Synchroniser</gui> : copie les nouvelles données de l'ordinateur vers le périphérique et vice-versa ; supprime les éléments qui figuraient sur les deux systèmes et qui ont été supprimés de l'un des deux.</p></item>
+       <item><p><gui>Copier à partir du Pilot</gui> : si le périphérique portable contient de nouvelles données, elles sont copiées vers l'ordinateur.</p></item>
+       <item><p><gui>Copier vers le Pilot</gui> : copier les nouvelles données de l'ordinateur vers le périphérique portable.</p></item>
+     </list>
+   <p>Sélectionnez le comportement de chacun des canaux à utiliser. Si vous ne savez pas, utilisez <gui>Synchroniser</gui>.</p>
+  </section>
+
+  <section id="sync-information">
+   <title>Informations de synchronisation</title>
+   <p>Procédez comme suit pour synchroniser les données sur le périphérique Palm OS et les données que vous stockez dans Evolution.</p>
+   <list>
+     <item><p>Si vous voulez sauvegarder les informations avant la synchronisation, faites une copie du répertoire <file>.local/share/evolution</file> dans votre dossier personnel.</p></item>
+     <item><p>Placez le périphérique sur sa station d'accueil et appuyez sur le bouton <gui style="button">HotSync</gui>.</p></item>
+     <item><p>Si vous utilisez Palm OS version 4.0 et que la protection par mot de passe est active sur le périphérique portable, des problèmes de synchronisation peuvent se produire. Dans ce cas, désactivez la protection par mot de passe sur votre périphérique portable, synchronisez le périphérique et votre ordinateur, puis réactivez-la.</p></item>
+    </list>
+   <p>Maintenant votre périphérique Palm OS et Evolution devraient se synchroniser.</p>
+  </section>
+
+  </section>
+
+</page>

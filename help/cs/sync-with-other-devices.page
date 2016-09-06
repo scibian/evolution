@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="sync-with-other-devices" xml:lang="cs">
+
+  <info>
+    <desc>Synchronizace dat z Evolutionu s přenosnými zařízeními a mobilními telefony. </desc>
+
+    <link type="guide" xref="index#data-migration-and-sync"/>
+
+    <revision pkgversion="2.30.2" version="0.6" date="2013-04-20" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-sync.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+<!-- TODO:POST-3-8: Find out how to sync modern devices, e.g. Android, iPhone, Nokia N97 / N900, N9, N950, etc. Maybe SyncEvolution is the recommended (and external) way here? -->
+  </info>
+
+  <title>Synchronizace <em>Evolutionu</em> s dalšími zařízeními</title>
+
+<p>Momentálně neexistují žádné "doporučené instrukce" pro uživatele.</p>
+
+<p>Many distributions provide the application <app><link href="http://syncevolution.org/">SyncEvolution</link></app> that can be used in combination with devices that support <link href="https://en.wikipedia.org/wiki/SyncML">SyncML</link>.<!-- Buteo development seems to have slowed down, hence commenting this section - AndreKlapper, 2011/05/14: Also <link href="http://wiki.meego.com/Buteo">Buteo</link> aims to provide that functionality. A technical comparison of Buteo with SyncEvolution can be found <link href="http://meego.com/sites/all/files/meego-sync-linuxcon-2010.pdf">here on slide #18</link>. --></p>
+
+<p>In general it is recommended to use applications and devices that both support the <link href="https://en.wikipedia.org/wiki/ActiveSync">ActiveSync protocol</link> (such as <app>SyncEvolution</app>). A <link href="https://en.wikipedia.org/wiki/List_of_collaborative_software">list of collaborative software</link> is available on Wikipedia.</p>
+
+ <p>Můžete-li poskytnout dobré praktické zkušenosti a více informací na toto téma, nezdráhejte se vytvořit chybové hlášení v <link href="https://bugzilla.gnome.org/enter_bug.cgi?product=evolution&amp;component=User%20Documentation">v systému pro hlášení chyb v GNOME</link>.</p>
+
+  <section id="palm">
+    <title>Palm</title>
+<p>Chcete-li synchronizovat zařízení s Palm OS jako PalmPilot(TM) nebo Handspring Visor, musíte provést několik kroků. Za prvé musíte synchronizaci povolit. Za druhé váš počítač musí PDA rozeznat a připojit se k němu. Za třetí musíte rozhodnout, jak se má synchronizace chovat.</p>
+    <section id="sync-enabling-palm">
+      <title>Povolení synchronizace</title>
+      <p>Pokud jste ještě PDA s počítačem nepoužívali, musíte jej nastavit pomocí <guiseq><gui>Upravit</gui><gui>Synchronizace GNOME Pilot...</gui></guiseq>. Ujistěte se, že máte na zařízení, které je normálně v <file>/dev/pilot</file>, práva pro čtení a zápis. Pokud to nefunguje, zkontrolujte v <file>/dev/ttyS0</file>, jestli máte spojení přes sériový port, nebo v <file>/dev/ttyUSB1</file> přes USB. Můžete to udělat tak, že se přepnete do rootu a přidáte vaše jméno uživatele do skupiny, která vlastní uzel zařízení. Pro USB zařízení na synchronizaci se vytvářejí dva uzly zařízení, <file>ttyUSB0</file> a <file>ttyUSB1</file>. Druhý uzel je ten, který se používá pro nastavení zařízení.</p>
+   </section>
+   <section id="sync-selecting-conduits-">
+     <title>Výběr modulů</title>
+     <p>Poté, co váš počítač a zařízení s Palm OS komunikují, vyberte, které moduly chcete, v sekci <gui>Pilot Conduits</gui>. Můžete použít moduly pro synchronizaci dat s několika aplikacemi, moduly Evolution jsou označeny EAddress pro kontakty v adresáři; ECalendar, pro kalendář; ETodo pro seznam úkolů.</p>
+     <p>Klikněte na <gui>Povolit</gui>, potom klikněte na <gui>Nastavení</gui>, chcete-li změnit, co moduly dělají, když jsou aktivovány. Vaše volby se mohou lišit v závislosti na modulu, ale většinou jsou následující:</p>
+     <list>
+       <item><p><gui>Zakázáno</gui>: Nedělá nic.</p></item>
+       <item><p><gui>Synchronizovat</gui>: Kopíruje nová data z počítače do PDA a z PDA do počítače. Odstraňuje položky, které byly v obou systémech, ale byly odstraněny v jednom z nich.</p></item>
+       <item><p><gui>Kopírovat z Pilota</gui>: Pokud jsou nějaká nová data na PDA, kopíruje z něj na počítač.</p></item>
+       <item><p><gui>Kopírovat do Pilota</gui>: Kopíruje nová data z počítače do PDA.</p></item>
+     </list>
+   <p>Vyberte chování modulů, které chcete použít. Pokud si nejste jisti, zvolte <gui>Synchronizovat</gui>.</p>
+  </section>
+
+  <section id="sync-information">
+   <title>Synchronizace informací</title>
+   <p>Použijte následující postup, chcete-li synchronizovat data na zařízení s Palm OS s daty uloženými v Evolution.</p>
+   <list>
+     <item><p>Chcete-li zazálohovat data před synchronizací, udělejte si kopii adresáře <file>.local/share/evolution</file> v domovském adresáři.</p></item>
+     <item><p>Vložte PDA do kolébky a stiskněte tlačítko <gui style="button">HotSync</gui>.</p></item>
+     <item><p>Používáte-li Palm OS verze 4.0 a máte-li zapnutou ochranu heslem na vašem zařízení, můžete mít problémy se synchronizací. Pokud toto nastane, zkuste vypnout ochranu heslem na zařízení, synchronizovat jej s počítačem a potom ochranu heslem znovu zapnout.</p></item>
+    </list>
+   <p>Nyní bude zařízení s Palm OS synchronizovat data s Evolution.</p>
+  </section>
+
+  </section>
+
+</page>

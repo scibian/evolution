@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="memos-usage-edit-memo" xml:lang="ja">
+
+  <info>
+    <desc>メモ一覧にあるメモを編集します。</desc>
+    
+    <link type="guide" xref="memos-usage"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2012-02-19" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>メモの編集</title>
+
+<p>メモ一覧にある既存のメモを変更したい場合は、</p>
+
+<steps>
+<item><p>メモ一覧の変更するメモをダブルクリックするか、メモを右クリックして<key>メモを開く</key>をクリックします。</p></item>
+<item><p>メモの情報を編集します。</p></item>
+<item><p><gui>保存</gui>ボタン、または<guiseq><gui>ファイル</gui><gui>保存</gui></guiseq>をクリックします。</p></item>
+</steps>
+</page>

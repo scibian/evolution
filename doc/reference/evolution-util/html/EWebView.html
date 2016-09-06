@@ -1,0 +1,1550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EWebView</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch08.html" title="HTML Rendering">
+<link rel="prev" href="ch08.html" title="HTML Rendering">
+<link rel="next" href="EWebViewPreview.html" title="EWebViewPreview">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EWebView.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EWebView.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EWebView.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EWebView.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EWebView.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch08.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch08.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EWebViewPreview.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EWebView"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EWebView.top_of_page"></a>EWebView</span></h2>
+<p>EWebView</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EWebView.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-new" title="e_web_view_new ()">e_web_view_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-clear" title="e_web_view_clear ()">e_web_view_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-load-string" title="e_web_view_load_string ()">e_web_view_load_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-load-uri" title="e_web_view_load_uri ()">e_web_view_load_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-redirect-uri" title="e_web_view_redirect_uri ()">e_web_view_redirect_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-suggest-filename" title="e_web_view_suggest_filename ()">e_web_view_suggest_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-reload" title="e_web_view_reload ()">e_web_view_reload</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-html" title="e_web_view_get_html ()">e_web_view_get_html</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-caret-mode" title="e_web_view_get_caret_mode ()">e_web_view_get_caret_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-caret-mode" title="e_web_view_set_caret_mode ()">e_web_view_set_caret_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-copy-target-list" title="e_web_view_get_copy_target_list ()">e_web_view_get_copy_target_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-disable-printing" title="e_web_view_get_disable_printing ()">e_web_view_get_disable_printing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-disable-printing" title="e_web_view_set_disable_printing ()">e_web_view_set_disable_printing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-disable-save-to-disk" title="e_web_view_get_disable_save_to_disk ()">e_web_view_get_disable_save_to_disk</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-disable-save-to-disk" title="e_web_view_set_disable_save_to_disk ()">e_web_view_set_disable_save_to_disk</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-editable" title="e_web_view_get_editable ()">e_web_view_get_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-editable" title="e_web_view_set_editable ()">e_web_view_set_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-inline-spelling" title="e_web_view_get_inline_spelling ()">e_web_view_get_inline_spelling</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-inline-spelling" title="e_web_view_set_inline_spelling ()">e_web_view_set_inline_spelling</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-magic-links" title="e_web_view_get_magic_links ()">e_web_view_get_magic_links</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-magic-links" title="e_web_view_set_magic_links ()">e_web_view_set_magic_links</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-magic-smileys" title="e_web_view_get_magic_smileys ()">e_web_view_get_magic_smileys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-magic-smileys" title="e_web_view_set_magic_smileys ()">e_web_view_set_magic_smileys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-selected-uri" title="e_web_view_get_selected_uri ()">e_web_view_get_selected_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-selected-uri" title="e_web_view_set_selected_uri ()">e_web_view_set_selected_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-cursor-image-src" title="e_web_view_get_cursor_image_src ()">e_web_view_get_cursor_image_src</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-cursor-image-src" title="e_web_view_set_cursor_image_src ()">e_web_view_set_cursor_image_src</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-open-proxy" title="e_web_view_get_open_proxy ()">e_web_view_get_open_proxy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-open-proxy" title="e_web_view_set_open_proxy ()">e_web_view_set_open_proxy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-paste-target-list" title="e_web_view_get_paste_target_list ()">e_web_view_get_paste_target_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-print-proxy" title="e_web_view_get_print_proxy ()">e_web_view_get_print_proxy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-print-proxy" title="e_web_view_set_print_proxy ()">e_web_view_set_print_proxy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-save-as-proxy" title="e_web_view_get_save_as_proxy ()">e_web_view_get_save_as_proxy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-set-save-as-proxy" title="e_web_view_set_save_as_proxy ()">e_web_view_set_save_as_proxy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-add-highlight" title="e_web_view_add_highlight ()">e_web_view_add_highlight</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-clear-highlights" title="e_web_view_clear_highlights ()">e_web_view_clear_highlights</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-update-highlights" title="e_web_view_update_highlights ()">e_web_view_update_highlights</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-action" title="e_web_view_get_action ()">e_web_view_get_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-action-group" title="e_web_view_get_action_group ()">e_web_view_get_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-copy-clipboard" title="e_web_view_copy_clipboard ()">e_web_view_copy_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-cut-clipboard" title="e_web_view_cut_clipboard ()">e_web_view_cut_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-is-selection-active" title="e_web_view_is_selection_active ()">e_web_view_is_selection_active</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-paste-clipboard" title="e_web_view_paste_clipboard ()">e_web_view_paste_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-scroll-forward" title="e_web_view_scroll_forward ()">e_web_view_scroll_forward</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-scroll-backward" title="e_web_view_scroll_backward ()">e_web_view_scroll_backward</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-select-all" title="e_web_view_select_all ()">e_web_view_select_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-unselect-all" title="e_web_view_unselect_all ()">e_web_view_unselect_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-zoom-100" title="e_web_view_zoom_100 ()">e_web_view_zoom_100</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-zoom-in" title="e_web_view_zoom_in ()">e_web_view_zoom_in</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-zoom-out" title="e_web_view_zoom_out ()">e_web_view_zoom_out</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-ui-manager" title="e_web_view_get_ui_manager ()">e_web_view_get_ui_manager</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-popup-menu" title="e_web_view_get_popup_menu ()">e_web_view_get_popup_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-show-popup-menu" title="e_web_view_show_popup_menu ()">e_web_view_show_popup_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EActivity.html" title="EActivity"><span class="returnvalue">EActivity</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-new-activity" title="e_web_view_new_activity ()">e_web_view_new_activity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-status-message" title="e_web_view_status_message ()">e_web_view_status_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-stop-loading" title="e_web_view_stop_loading ()">e_web_view_stop_loading</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-update-actions" title="e_web_view_update_actions ()">e_web_view_update_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-get-selection-html" title="e_web_view_get_selection_html ()">e_web_view_get_selection_html</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-update-fonts" title="e_web_view_update_fonts ()">e_web_view_update_fonts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-cursor-image-copy" title="e_web_view_cursor_image_copy ()">e_web_view_cursor_image_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-cursor-image-save" title="e_web_view_cursor_image_save ()">e_web_view_cursor_image_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-request" title="e_web_view_request ()">e_web_view_request</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GInputStream.html"><span class="returnvalue">GInputStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-request-finish" title="e_web_view_request_finish ()">e_web_view_request_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-install-request-handler" title="e_web_view_install_request_handler ()">e_web_view_install_request_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EWebView.html#e-web-view-add-css-rule-into-style-sheet" title="e_web_view_add_css_rule_into_style_sheet ()">e_web_view_add_css_rule_into_style_sheet</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EWebView.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--caret-mode" title="The “caret-mode” property">caret-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--cursor-image-src" title="The “cursor-image-src” property">cursor-image-src</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--disable-printing" title="The “disable-printing” property">disable-printing</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--disable-save-to-disk" title="The “disable-save-to-disk” property">disable-save-to-disk</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--inline-spelling" title="The “inline-spelling” property">inline-spelling</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--magic-links" title="The “magic-links” property">magic-links</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--magic-smileys" title="The “magic-smileys” property">magic-smileys</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *</td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--open-proxy" title="The “open-proxy” property">open-proxy</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *</td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--print-proxy" title="The “print-proxy” property">print-proxy</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *</td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--save-as-proxy" title="The “save-as-proxy” property">save-as-proxy</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EWebView.html#EWebView--selected-uri" title="The “selected-uri” property">selected-uri</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EWebView.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EWebView.html#EWebView-new-activity" title="The “new-activity” signal">new-activity</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="EWebView.html#EWebView-popup-event" title="The “popup-event” signal">popup-event</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="EWebView.html#EWebView-process-mailto" title="The “process-mailto” signal">process-mailto</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EWebView.html#EWebView-status-message" title="The “status-message” signal">status-message</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EWebView.html#EWebView-stop-loading" title="The “stop-loading” signal">stop-loading</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EWebView.html#EWebView-update-actions" title="The “update-actions” signal">update-actions</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EWebView.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EWebView.html#EWebView-struct" title="struct EWebView">EWebView</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EWebView.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/webkitgtk/webkitgtk-webkitwebview.html#WebKitWebView">WebKitWebView</a>
+                    <span class="lineart">╰──</span> EWebView
+</pre>
+</div>
+<div class="refsect1">
+<a name="EWebView.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EWebView implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>,  <a href="http://developer.gnome.org/gtk2/GtkScrollable.html">GtkScrollable</a>,  EExtensible,  <a class="link" href="EAlertSink.html" title="EAlertSink">EAlertSink</a> and  <a class="link" href="ESelectable.html" title="ESelectable">ESelectable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EWebView.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EWebView.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-web-view-new"></a><h3>e_web_view_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_web_view_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-clear"></a><h3>e_web_view_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_clear (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-load-string"></a><h3>e_web_view_load_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_load_string (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-load-uri"></a><h3>e_web_view_load_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_load_uri (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-redirect-uri"></a><h3>e_web_view_redirect_uri ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_web_view_redirect_uri (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+<p>Replaces <em class="parameter"><code>uri</code></em>
+ with a redirected URI as necessary, primarily for use
+with custom <a href="/usr/share/gtk-doc/html/libsoup-2.4/SoupRequest.html"><span class="type">SoupRequest</span></a> handlers.  Typically this function would be
+called just prior to handing a request off to a <a href="/usr/share/gtk-doc/html/libsoup-2.4/SoupSession.html"><span class="type">SoupSession</span></a>, such as
+from a <a href="/usr/share/gtk-doc/html/webkitgtk/webkitgtk-webkitwebview.html#WebKitWebView"><span class="type">WebKitWebView</span></a> <a href="/usr/share/gtk-doc/html/webkitgtk/webkitgtk-webkitwebview.html#WebKitWebView-resource-request-starting"><span class="type">“resource-request-starting”</span></a> signal
+handler.</p>
+<p>A newly-allocated URI string is always returned, whether the <em class="parameter"><code>uri</code></em>
+ was
+redirected or not.  Free the returned string with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.9.2.10.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>web_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the requested URI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.9.2.10.6.7"></a><h4>Returns</h4>
+<p> the redirected URI or a copy of <em class="parameter"><code>uri</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-suggest-filename"></a><h3>e_web_view_suggest_filename ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_web_view_suggest_filename (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+<p>Attempts to derive a suggested filename from the <em class="parameter"><code>uri</code></em>
+ for use in a
+"Save As" dialog.</p>
+<p>By default the suggested filename is the last path segment of the <em class="parameter"><code>uri</code></em>
+
+(unless <em class="parameter"><code>uri</code></em>
+ looks like a query), but subclasses can use other mechanisms
+for custom URI schemes.  For example, "cid:" URIs in an email message may
+refer to a MIME part with a suggested filename in its Content-Disposition
+header.</p>
+<p>The returned string should be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when finished with it,
+but callers should also be prepared for the function to return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+a filename cannot be determined.</p>
+<div class="refsect3">
+<a name="id-1.9.2.10.7.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>web_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>a URI string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.9.2.10.7.8"></a><h4>Returns</h4>
+<p> a suggested filename, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-reload"></a><h3>e_web_view_reload ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_reload (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-html"></a><h3>e_web_view_get_html ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_web_view_get_html (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-caret-mode"></a><h3>e_web_view_get_caret_mode ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_get_caret_mode (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-caret-mode"></a><h3>e_web_view_set_caret_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_caret_mode (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> caret_mode</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-copy-target-list"></a><h3>e_web_view_get_copy_target_list ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+e_web_view_get_copy_target_list (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-disable-printing"></a><h3>e_web_view_get_disable_printing ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_get_disable_printing (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-disable-printing"></a><h3>e_web_view_set_disable_printing ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_disable_printing (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> disable_printing</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-disable-save-to-disk"></a><h3>e_web_view_get_disable_save_to_disk ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_get_disable_save_to_disk (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-disable-save-to-disk"></a><h3>e_web_view_set_disable_save_to_disk ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_disable_save_to_disk (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> disable_save_to_disk</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-editable"></a><h3>e_web_view_get_editable ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_get_editable (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-editable"></a><h3>e_web_view_set_editable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_editable (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> editable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-inline-spelling"></a><h3>e_web_view_get_inline_spelling ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_get_inline_spelling (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-inline-spelling"></a><h3>e_web_view_set_inline_spelling ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_inline_spelling (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> inline_spelling</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-magic-links"></a><h3>e_web_view_get_magic_links ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_get_magic_links (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-magic-links"></a><h3>e_web_view_set_magic_links ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_magic_links (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> magic_links</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-magic-smileys"></a><h3>e_web_view_get_magic_smileys ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_get_magic_smileys (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-magic-smileys"></a><h3>e_web_view_set_magic_smileys ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_magic_smileys (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> magic_smileys</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-selected-uri"></a><h3>e_web_view_get_selected_uri ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_web_view_get_selected_uri (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-selected-uri"></a><h3>e_web_view_set_selected_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_selected_uri (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *selected_uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-cursor-image-src"></a><h3>e_web_view_get_cursor_image_src ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_web_view_get_cursor_image_src (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-cursor-image-src"></a><h3>e_web_view_set_cursor_image_src ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_cursor_image_src (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *src_uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-open-proxy"></a><h3>e_web_view_get_open_proxy ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_web_view_get_open_proxy (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-open-proxy"></a><h3>e_web_view_set_open_proxy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_open_proxy (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *open_proxy</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-paste-target-list"></a><h3>e_web_view_get_paste_target_list ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+e_web_view_get_paste_target_list (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-print-proxy"></a><h3>e_web_view_get_print_proxy ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_web_view_get_print_proxy (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-print-proxy"></a><h3>e_web_view_set_print_proxy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_print_proxy (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *print_proxy</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-save-as-proxy"></a><h3>e_web_view_get_save_as_proxy ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_web_view_get_save_as_proxy (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-set-save-as-proxy"></a><h3>e_web_view_set_save_as_proxy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_set_save_as_proxy (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *save_as_proxy</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-add-highlight"></a><h3>e_web_view_add_highlight ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_add_highlight (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *highlight</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-clear-highlights"></a><h3>e_web_view_clear_highlights ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_clear_highlights (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-update-highlights"></a><h3>e_web_view_update_highlights ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_update_highlights (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-action"></a><h3>e_web_view_get_action ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_web_view_get_action (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-action-group"></a><h3>e_web_view_get_action_group ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+e_web_view_get_action_group (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-copy-clipboard"></a><h3>e_web_view_copy_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_copy_clipboard (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-cut-clipboard"></a><h3>e_web_view_cut_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_cut_clipboard (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-is-selection-active"></a><h3>e_web_view_is_selection_active ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_is_selection_active (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-paste-clipboard"></a><h3>e_web_view_paste_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_paste_clipboard (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-scroll-forward"></a><h3>e_web_view_scroll_forward ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_scroll_forward (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-scroll-backward"></a><h3>e_web_view_scroll_backward ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_web_view_scroll_backward (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-select-all"></a><h3>e_web_view_select_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_select_all (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-unselect-all"></a><h3>e_web_view_unselect_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_unselect_all (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-zoom-100"></a><h3>e_web_view_zoom_100 ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_zoom_100 (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-zoom-in"></a><h3>e_web_view_zoom_in ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_zoom_in (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-zoom-out"></a><h3>e_web_view_zoom_out ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_zoom_out (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-ui-manager"></a><h3>e_web_view_get_ui_manager ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *
+e_web_view_get_ui_manager (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-popup-menu"></a><h3>e_web_view_get_popup_menu ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_web_view_get_popup_menu (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-show-popup-menu"></a><h3>e_web_view_show_popup_menu ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_show_popup_menu (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-new-activity"></a><h3>e_web_view_new_activity ()</h3>
+<pre class="programlisting"><a class="link" href="EActivity.html" title="EActivity"><span class="returnvalue">EActivity</span></a> *
+e_web_view_new_activity (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+<p>Returns a new <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> for an <span class="type">EWebView-related</span> asynchronous operation,
+and emits the <a class="link" href="EWebView.html#EWebView-new-activity" title="The “new-activity” signal"><span class="type">“new-activity”</span></a> signal.  By default the <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a>
+comes loaded with a <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> and sets the <em class="parameter"><code>web_view</code></em>
+ itself as the
+<a class="link" href="EActivity.html#EActivity--alert-sink" title="The “alert-sink” property"><span class="type">“alert-sink”</span></a> (which means alerts are displayed directly in the
+content area).  The signal emission allows the <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> to be further
+customized and/or tracked by the application.</p>
+<div class="refsect3">
+<a name="id-1.9.2.10.55.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>web_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.9.2.10.55.6"></a><h4>Returns</h4>
+<p> an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-status-message"></a><h3>e_web_view_status_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_status_message (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *status_message</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-stop-loading"></a><h3>e_web_view_stop_loading ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_stop_loading (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-update-actions"></a><h3>e_web_view_update_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_update_actions (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-get-selection-html"></a><h3>e_web_view_get_selection_html ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_web_view_get_selection_html (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-update-fonts"></a><h3>e_web_view_update_fonts ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_update_fonts (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-cursor-image-copy"></a><h3>e_web_view_cursor_image_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_cursor_image_copy (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+<p>Asynchronously copies the image under the cursor to the clipboard.</p>
+<p>This function triggers a <a class="link" href="EWebView.html#EWebView-new-activity" title="The “new-activity” signal"><span class="type">“new-activity”</span></a> signal emission so
+the asynchronous operation can be tracked and/or cancelled.</p>
+<div class="refsect3">
+<a name="id-1.9.2.10.61.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>web_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-cursor-image-save"></a><h3>e_web_view_cursor_image_save ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_cursor_image_save (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>);</pre>
+<p>Prompts the user to choose a destination file and then asynchronously
+saves the image under the cursor to the destination file.</p>
+<p>This function triggers a <a class="link" href="EWebView.html#EWebView-new-activity" title="The “new-activity” signal"><span class="type">“new-activity”</span></a> signal emission so
+the asynchronous operation can be tracked and/or cancelled.</p>
+<div class="refsect3">
+<a name="id-1.9.2.10.62.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>web_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-request"></a><h3>e_web_view_request ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_request (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Asynchronously requests data at <em class="parameter"><code>uri</code></em>
+ by way of a <a href="/usr/share/gtk-doc/html/libsoup-2.4/SoupRequest.html"><span class="type">SoupRequest</span></a> to WebKit's
+default <a href="/usr/share/gtk-doc/html/libsoup-2.4/SoupSession.html"><span class="type">SoupSession</span></a>, incorporating both <a class="link" href="EWebView.html#e-web-view-redirect-uri" title="e_web_view_redirect_uri ()"><code class="function">e_web_view_redirect_uri()</code></a> and the
+custom request handlers installed via <a class="link" href="EWebView.html#e-web-view-install-request-handler" title="e_web_view_install_request_handler ()"><code class="function">e_web_view_install_request_handler()</code></a>.</p>
+<p>When the operation is finished, <em class="parameter"><code>callback</code></em>
+ will be called.  You can then
+call <a class="link" href="EWebView.html#e-web-view-request-finish" title="e_web_view_request_finish ()"><code class="function">e_web_view_request_finish()</code></a> to get the result of the operation.</p>
+<div class="refsect3">
+<a name="id-1.9.2.10.63.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>web_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the URI to load</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>optional <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> object, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when the request is satisfied</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to the callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-request-finish"></a><h3>e_web_view_request_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GInputStream.html"><span class="returnvalue">GInputStream</span></a> *
+e_web_view_request_finish (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Finishes the operation started with <a class="link" href="EWebView.html#e-web-view-request" title="e_web_view_request ()"><code class="function">e_web_view_request()</code></a>.</p>
+<p>Unreference the returned <a href="https://developer.gnome.org/gio/unstable/GInputStream.html"><span class="type">GInputStream</span></a> with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished
+with it.  If an error occurred, the function will set <em class="parameter"><code>error</code></em>
+ and return
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.9.2.10.64.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>web_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.9.2.10.64.7"></a><h4>Returns</h4>
+<p> a <a href="https://developer.gnome.org/gio/unstable/GInputStream.html"><span class="type">GInputStream</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-install-request-handler"></a><h3>e_web_view_install_request_handler ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_install_request_handler (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> handler_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-web-view-add-css-rule-into-style-sheet"></a><h3>e_web_view_add_css_rule_into_style_sheet ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_web_view_add_css_rule_into_style_sheet
+                               (<em class="parameter"><code><a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *web_view</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *style_sheet_id</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *selector</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *style</code></em>);</pre>
+<p>Insert new CSS rule (defined with <em class="parameter"><code>selector</code></em>
+ and <em class="parameter"><code>style</code></em>
+) into CSS style sheet
+with given <em class="parameter"><code>style_sheet_id</code></em>
+. If style sheet doesn't exist, it's created.</p>
+<p>The rule is inserted to every DOM document that is in page. That means also
+into DOM documents inside iframe elements.</p>
+<div class="refsect3">
+<a name="id-1.9.2.10.66.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>web_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style_sheet_id</p></td>
+<td class="parameter_description"><p>CSS style sheet's id</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>selector</p></td>
+<td class="parameter_description"><p>CSS selector</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>style for given selector</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EWebView.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EWebView-struct"></a><h3>struct EWebView</h3>
+<pre class="programlisting">struct EWebView;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EWebView.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EWebView--caret-mode"></a><h3>The <code class="literal">“caret-mode”</code> property</h3>
+<pre class="programlisting">  “caret-mode”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--cursor-image-src"></a><h3>The <code class="literal">“cursor-image-src”</code> property</h3>
+<pre class="programlisting">  “cursor-image-src”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--disable-printing"></a><h3>The <code class="literal">“disable-printing”</code> property</h3>
+<pre class="programlisting">  “disable-printing”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--disable-save-to-disk"></a><h3>The <code class="literal">“disable-save-to-disk”</code> property</h3>
+<pre class="programlisting">  “disable-save-to-disk”     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--inline-spelling"></a><h3>The <code class="literal">“inline-spelling”</code> property</h3>
+<pre class="programlisting">  “inline-spelling”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--magic-links"></a><h3>The <code class="literal">“magic-links”</code> property</h3>
+<pre class="programlisting">  “magic-links”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--magic-smileys"></a><h3>The <code class="literal">“magic-smileys”</code> property</h3>
+<pre class="programlisting">  “magic-smileys”            <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--open-proxy"></a><h3>The <code class="literal">“open-proxy”</code> property</h3>
+<pre class="programlisting">  “open-proxy”               <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--print-proxy"></a><h3>The <code class="literal">“print-proxy”</code> property</h3>
+<pre class="programlisting">  “print-proxy”              <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--save-as-proxy"></a><h3>The <code class="literal">“save-as-proxy”</code> property</h3>
+<pre class="programlisting">  “save-as-proxy”            <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView--selected-uri"></a><h3>The <code class="literal">“selected-uri”</code> property</h3>
+<pre class="programlisting">  “selected-uri”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EWebView.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EWebView-new-activity"></a><h3>The <code class="literal">“new-activity”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a>  *ewebview,
+               <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView-popup-event"></a><h3>The <code class="literal">“popup-event”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *ewebview,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>    *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView-process-mailto"></a><h3>The <code class="literal">“process-mailto”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *ewebview,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>    *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView-status-message"></a><h3>The <code class="literal">“status-message”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *ewebview,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>    *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView-stop-loading"></a><h3>The <code class="literal">“stop-loading”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *ewebview,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EWebView-update-actions"></a><h3>The <code class="literal">“update-actions”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EWebView.html" title="EWebView"><span class="type">EWebView</span></a> *ewebview,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

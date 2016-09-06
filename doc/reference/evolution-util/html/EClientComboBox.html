@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EClientComboBox</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch12.html" title="ESource Support">
+<link rel="prev" href="EClientCache.html" title="EClientCache">
+<link rel="next" href="EClientSelector.html" title="EClientSelector">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EClientComboBox.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EClientComboBox.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EClientComboBox.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EClientComboBox.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch12.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EClientCache.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EClientSelector.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EClientComboBox"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EClientComboBox.top_of_page"></a>EClientComboBox</span></h2>
+<p>EClientComboBox — Combo box of <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instances</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EClientComboBox.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientComboBox.html#e-client-combo-box-new" title="e_client_combo_box_new ()">e_client_combo_box_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EClientCache.html" title="EClientCache"><span class="returnvalue">EClientCache</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientComboBox.html#e-client-combo-box-ref-client-cache" title="e_client_combo_box_ref_client_cache ()">e_client_combo_box_ref_client_cache</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EClientComboBox.html#e-client-combo-box-set-client-cache" title="e_client_combo_box_set_client_cache ()">e_client_combo_box_set_client_cache</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientComboBox.html#e-client-combo-box-get-client-sync" title="e_client_combo_box_get_client_sync ()">e_client_combo_box_get_client_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EClientComboBox.html#e-client-combo-box-get-client" title="e_client_combo_box_get_client ()">e_client_combo_box_get_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientComboBox.html#e-client-combo-box-get-client-finish" title="e_client_combo_box_get_client_finish ()">e_client_combo_box_get_client_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientComboBox.html#e-client-combo-box-ref-cached-client" title="e_client_combo_box_ref_cached_client ()">e_client_combo_box_ref_cached_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *</td>
+<td class="property_name"><a class="link" href="EClientComboBox.html#EClientComboBox--client-cache" title="The “client-cache” property">client-cache</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EClientComboBox.html#EClientComboBox-struct" title="struct EClientComboBox">EClientComboBox</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkBin.html">GtkBin</a>
+                    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkComboBox.html">GtkComboBox</a>
+                        <span class="lineart">╰──</span> <a class="link" href="ESourceComboBox.html" title="ESourceComboBox">ESourceComboBox</a>
+                            <span class="lineart">╰──</span> EClientComboBox
+</pre>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EClientComboBox implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>,  <a href="http://developer.gnome.org/gtk2/GtkCellLayout.html">GtkCellLayout</a> and  <a href="http://developer.gnome.org/gtk2/GtkCellEditable.html">GtkCellEditable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;e-util/e-util.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.description"></a><h2>Description</h2>
+<p><a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a> extends the functionality of <a class="link" href="ESourceComboBox.html" title="ESourceComboBox"><span class="type">ESourceComboBox</span></a> by
+providing convenient access to <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instances with <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a>.</p>
+<p>As a future enhancement, this widget may also display status information
+about the backends associated with the displayed data sources, similar to
+<a class="link" href="EClientSelector.html" title="EClientSelector"><span class="type">EClientSelector</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-client-combo-box-new"></a><h3>e_client_combo_box_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_client_combo_box_new (<em class="parameter"><code><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *extension_name</code></em>);</pre>
+<p>Creates a new <a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a> widget that lets the user pick an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a>
+from the provided <em class="parameter"><code>client_cache</code></em>
+.  The displayed sources are restricted to
+those which have an <em class="parameter"><code>extension_name</code></em>
+ extension.</p>
+<div class="refsect3">
+<a name="id-1.13.14.10.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extension_name</p></td>
+<td class="parameter_description"><p>the name of an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> extension</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.14.10.2.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-combo-box-ref-client-cache"></a><h3>e_client_combo_box_ref_client_cache ()</h3>
+<pre class="programlisting"><a class="link" href="EClientCache.html" title="EClientCache"><span class="returnvalue">EClientCache</span></a> *
+e_client_combo_box_ref_client_cache (<em class="parameter"><code><a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a> *combo_box</code></em>);</pre>
+<p>Returns the <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> passed to <a class="link" href="EClientComboBox.html#e-client-combo-box-new" title="e_client_combo_box_new ()"><code class="function">e_client_combo_box_new()</code></a>.</p>
+<p>The returned <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> is referenced for thread-safety and must be
+unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.13.14.10.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.14.10.3.7"></a><h4>Returns</h4>
+<p> an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-combo-box-set-client-cache"></a><h3>e_client_combo_box_set_client_cache ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_client_combo_box_set_client_cache (<em class="parameter"><code><a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a> *combo_box</code></em>,
+                                     <em class="parameter"><code><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache</code></em>);</pre>
+<p>Simultaneously sets the <a class="link" href="EClientComboBox.html#EClientComboBox--client-cache" title="The “client-cache” property"><span class="type">“client-cache”</span></a> and
+<a class="link" href="ESourceComboBox.html#ESourceComboBox--registry" title="The “registry” property"><span class="type">“registry”</span></a> properties.</p>
+<p>This function is intended for cases where <em class="parameter"><code>combo_box</code></em>
+ is instantiated
+by a <a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="type">GtkBuilder</span></a> and has to be given an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> after it is fully
+constructed.</p>
+<div class="refsect3">
+<a name="id-1.13.14.10.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-combo-box-get-client-sync"></a><h3>e_client_combo_box_get_client_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+e_client_combo_box_get_client_sync (<em class="parameter"><code><a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a> *combo_box</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *source</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Obtains a shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance for <em class="parameter"><code>source</code></em>
+, or else creates a new
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance to be shared.</p>
+<p>The <a class="link" href="ESourceComboBox.html#ESourceComboBox--extension-name" title="The “extension-name” property"><span class="type">“extension-name”</span></a> property determines the type of
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> to obtain.  See <a class="link" href="EClientCache.html#e-client-cache-get-client-sync" title="e_client_cache_get_client_sync ()"><code class="function">e_client_cache_get_client_sync()</code></a> for a list
+of valid extension names.</p>
+<p>If a request for the same <em class="parameter"><code>source</code></em>
+ and <a class="link" href="ESourceComboBox.html#ESourceComboBox--extension-name" title="The “extension-name” property"><span class="type">“extension-name”</span></a>
+is already in progress when this function is called, this request will
+"piggyback" on the in-progress request such that they will both succeed
+or fail simultaneously.</p>
+<p>Unreference the returned <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished
+with it.  If an error occurs, the function will set <em class="parameter"><code>error</code></em>
+ and return
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.13.14.10.5.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>optional <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> object, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.14.10.5.9"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-combo-box-get-client"></a><h3>e_client_combo_box_get_client ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_client_combo_box_get_client (<em class="parameter"><code><a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a> *combo_box</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *source</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Asynchronously obtains a shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance for <em class="parameter"><code>source</code></em>
+, or else
+creates a new <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance to be shared.</p>
+<p>The <a class="link" href="ESourceComboBox.html#ESourceComboBox--extension-name" title="The “extension-name” property"><span class="type">“extension-name”</span></a> property determines the type of
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> to obtain.  See <a class="link" href="EClientCache.html#e-client-cache-get-client-sync" title="e_client_cache_get_client_sync ()"><code class="function">e_client_cache_get_client_sync()</code></a> for a list
+of valid extension names.</p>
+<p>If a request for the same <em class="parameter"><code>source</code></em>
+ and <a class="link" href="ESourceComboBox.html#ESourceComboBox--extension-name" title="The “extension-name” property"><span class="type">“extension-name”</span></a>
+is already in progress when this function is called, this request will
+"piggyback" on the in-progress request such that they will both succeed
+or fail simultaneously.</p>
+<p>When the operation is finished, <em class="parameter"><code>callback</code></em>
+ will be called.  You can
+then call <a class="link" href="EClientComboBox.html#e-client-combo-box-get-client-finish" title="e_client_combo_box_get_client_finish ()"><code class="function">e_client_combo_box_get_client_finish()</code></a> to get the result of
+the operation.</p>
+<div class="refsect3">
+<a name="id-1.13.14.10.6.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>optional <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> object, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when the request is satisfied</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to the callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-combo-box-get-client-finish"></a><h3>e_client_combo_box_get_client_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+e_client_combo_box_get_client_finish (<em class="parameter"><code><a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a> *combo_box</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Finishes the operation started with <a class="link" href="EClientComboBox.html#e-client-combo-box-get-client" title="e_client_combo_box_get_client ()"><code class="function">e_client_combo_box_get_client()</code></a>.</p>
+<p>Unreference the returned <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished
+with it.  If an error occurred, the function will set <em class="parameter"><code>error</code></em>
+ and return
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.13.14.10.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.14.10.7.7"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-combo-box-ref-cached-client"></a><h3>e_client_combo_box_ref_cached_client ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+e_client_combo_box_ref_cached_client (<em class="parameter"><code><a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a> *combo_box</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *source</code></em>);</pre>
+<p>Returns a shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance for <em class="parameter"><code>source</code></em>
+ and the value of
+<a class="link" href="ESourceComboBox.html#ESourceComboBox--extension-name" title="The “extension-name” property"><span class="type">“extension-name”</span></a> if such an instance is already cached,
+or else <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  This function does not create a new <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance,
+and therefore does not block.</p>
+<p>The returned <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> is referenced for thread-safety and must be
+unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.13.14.10.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientComboBox.html" title="EClientComboBox"><span class="type">EClientComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.14.10.8.7"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EClientComboBox-struct"></a><h3>struct EClientComboBox</h3>
+<pre class="programlisting">struct EClientComboBox;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EClientComboBox.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EClientComboBox--client-cache"></a><h3>The <code class="literal">“client-cache”</code> property</h3>
+<pre class="programlisting">  “client-cache”             <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *</pre>
+<p>Cache of shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instances.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-reading-keyboard-shortcuts" xml:lang="ja">
+
+  <info>
+    <desc>Keyboard shortcuts that can save you some time when reading mail.</desc>
+
+    <link type="guide" xref="index#mail-basic"/>
+<!-- TODO:POST-3-8: maybe introduce keyboard shortcuts guide xref covering any shortcuts in all modules, covering http://library.gnome.org/users/evolution/2.32/quickref-mail.html.en ? -->
+
+    <revision pkgversion="3.10.4" version="0.3" date="2014-02-26" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Using shortcut keys to read mail</title>
+
+<section id="view-email">
+<title>Viewing an email</title>
+<p>メールウィンドウでメール一覧から選択するとメールを読めます。メールを別ウィンドウで読みたい場合は、メールをダブルクリックするか、<key>Enter</key>を押すか、<keyseq><key>Ctrl</key><key>O</key></keyseq>を押します。</p>
+</section>
+
+<section id="marking-message-read-or-unread">
+<title>メールを既読または未読にする</title>
+<p>選択中のメールを既読にするには、<keyseq><key>Ctrl</key><key>K</key></keyseq>を押します。</p>
+<p>選択中のメールを未読にするには、<keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>を押します。</p>
+</section>
+
+<section id="inside-message">
+<title>メール内の移動</title>
+<p>キーボードを使ってメールを読む場合、<key>スペースバー</key>を押すと下に、<key>Backspace</key>を押すと手前にメール内で移動できます。メール一覧にフォーカスがある状態でキーを押すようにしてください。</p>
+</section>
+
+<section id="inside-folder">
+<title>メール一覧のフォルダー内の移動</title>
+<p>キーボードの矢印キーを使ってメール一覧内で移動します。</p>
+</section>
+
+<section id="inside-folder-unread">
+<title>メール一覧の未読メール間の移動</title>
+<p>前後の未読メールに移動するには、ピリオド (<key>.</key>) やコンマ (<key>,</key>) キーを押します。キーボードによっては <key>&gt;</key> や <key>&lt;</key> の記号もあります。この方法を覚えておくとメール一覧の前後に移動するのに便利です。右の角括弧 (<key>]</key>) を使って次の未読メールに、左の角括弧 (<key>[</key>) を使って次の未読メールに移動できます。</p>
+</section>
+
+<section id="unread-across-folders">
+<title>フォルダーをまたいだ未読メール間の移動</title>
+
+<p><key>スペースバー</key>を使って、全メールフォルダーの未読メールを簡単に読めます。</p>
+
+<p>メールウィンドウでは、スペースバーには以下の挙動があてられています:</p>
+<list>
+<item><p>スペースバーを最初に押したときには、次の未読メールに移動します。</p></item>
+<item><p>メールが画面内に収まっていない場合には、スペースバーは<key>Page Down</key>として機能します。</p></item>
+<item><p>ページ末尾でスペースバーを押したときには、次の未読メールに移動します。</p></item>
+<item><p>同じメールボックスに未読メールがない場合は、スペースバーを押すと次のフォルダーの未読メールに移動します。</p></item>
+<item><p>新着メールが複数のフォルダーに届いた場合、スペースバーを押すとフォルダー間で移動します。この機能により、フォルダーをクリックすることなく別のフォルダーにある次のメールに移動できます。</p></item>
+</list>
+</section>
+
+</page>

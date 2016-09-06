@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-actions" xml:lang="ja">
+
+  <info>
+    <desc>振り分けの設定に利用できる動作です。</desc>
+
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-08-25" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-filters.html.en#usage-mail-org-filters-new -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  </info>
+
+  <title>利用できる振り分け動作</title>
+
+<list>
+<item><p>フォルダーに移動:</p>
+<p>指定したフォルダーにメールを移動します。</p></item>
+
+<item><p>フォルダーにコピー:</p>
+<p>指定したフォルダーにメールをコピーします。</p></item>
+
+<item><p>削除:</p>
+<p>メールの削除を指示します。抹消するかゴミ箱を空にするまでは削除を取り消せます。</p></item>
+
+<item><p>処理を停止:</p>
+<p>Select this if you want to all other filters ignore this message. Note that only filters listed after this particular rule will be ignored.</p></item>
+
+<item><p>ラベルをセット:</p>
+<p>メールにラベルを追加します。</p></item>
+
+<item><p>色を付ける:</p>
+<p>メールに選択した色を付けます。</p></item>
+
+<item><p>スコアを付ける:</p>
+<p>メールに数値のスコアを付けます。</p></item>
+
+<item><p>スコアを調整する:</p>
+<p>指定した量だけスコアの数値を変更します。</p></item>
+
+<item><p>ステータスをセットする:</p>
+<p>メールのステータスをセットします。ステータスは返信済、下書き、重要、既読、ジャンクのどれかです。</p></item>
+
+<item><p>ステータスを外す:</p>
+<p>メールにステータスがセットされていれば外します。セットされていない場合は何もしません。</p></item>
+
+<item><p>ビープ音を鳴らす:</p>
+<p>Makes the system beep.</p></item>
+
+<item><p>サウンドを演奏する:</p>
+<p>Evolution で演奏するサウンドファイルを選択します。</p></item>
+
+<item><p>プログラムを実行する:</p>
+<p>Evolution から他のアプリケーションを実行します。</p></item>
+
+<item><p>次のプログラムに渡す:</p>
+<p>メールを選択したアプリケーションに送ります。戻り値は期待しません。この機能を利用してメールからウェブに自動で投稿させたり、Evolution では対応していない追加の投稿処理を実行できます。</p></item>
+
+<item><p>転送:</p>
+<p>メールを他のメールアドレスに転送します。</p></item>
+
+</list>
+</page>

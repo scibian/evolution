@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-not-working" xml:lang="ja">
+
+  <info>
+    <desc>Fix problems with mail filters that do not sort and organize mail as expected.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.9.3" version="0.5" date="2013-06-24" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+
+  </info>
+
+<title>Mail filters are not working</title>
+
+<section id="order">
+<title>フィルターの順</title>
+<p>振り分け規則の順は非常に重要です。元のメールに、レシピのように順に適用していきます。</p>
+<p>ある規則で<gui>処理を停止</gui>を指示すると、その条件に該当するメールは全て、それ以後の規則を無視します。</p>
+<p>他のフォルダーへのメールの移動では「移動」の実際の内容は、移動先フォルダーにメールをコピーして元のメールの削除を指示します。そのためそれ以後の規則は全て、削除を指示されたメールに対して適用されます。したがって、メールの移動は通常、振り分け規則の最後に配置します。</p>
+<p>To check the rules and their order of an existing filter, review its actions in the <gui>Then</gui> section by <link xref="mail-filters#editing">editing the filter</link>.</p>
+</section>
+
+<section id="several-clients">
+<title>複数のメールクライアントの利用</title>
+<p>Another thing you have to keep in mind is that filters depend on the "new" flag that is set on the server when a particular email message is initially fetched from the server. If you use another email client aside from Evolution, your filters may not work automatically.</p>
+</section>
+
+<section id="filter-log">
+<title>振り分け動作のログ取得</title>
+<p>振り分け動作が思ったように機能しない理由がまだよくわからない場合は、振り分け動作のログ取得を有効にできます。</p>
+<list>
+<item><p>Evolution を閉じます。</p></item>
+<item><p><app>ターミナル</app>アプリケーションを開きます。</p></item>
+<item><p>コマンド <cmd>gsettings set org.gnome.evolution.mail filters-log-actions true</cmd> を実行します。</p></item>
+<item><p>コマンド <cmd>gsettings set org.gnome.evolution.mail filters-log-file "/home/ユーザー名/my-filter-log"</cmd> を実行します。<cmd>ユーザー名</cmd> は自分のユーザー名に置き換えます。実行するとホームフォルダーに <file>my-filter-log</file> というテキストファイルが作成されます。ファイル名には絶対パスを指示する必要があることに注意してください。<sys>~</sys> や <sys>$HOME</sys> のような形式は機能しません。</p></item><!-- this is explained in https://bugzilla.gnome.org/show_bug.cgi?id=669471 -->
+<item><p>Evolution を起動します。</p></item>
+<item><p>メールを取得して振り分け規則を適用します。</p></item>
+<item><p>テキストエディターでファイル <file>my-filter-log</file> を開いて、適用された振り分け動作を確認します。</p></item>
+</list>
+
+<p>コマンド <cmd>gsettings set org.gnome.evolution.mail filters-log-actions false</cmd> を実行すると振り分け動作のログ取得を再び無効にできます。</p>
+
+<p><app>dconf-editor</app>アプリケーションを使って行うこともできます。</p>
+</section>
+
+</page>

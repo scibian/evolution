@@ -1,0 +1,1494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Shell Reference Manual: EShellWindow</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Shell Reference Manual">
+<link rel="up" href="ch01.html" title="The Shell">
+<link rel="prev" href="EShellBackend.html" title="EShellBackend">
+<link rel="next" href="EShellView.html" title="EShellView">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EShellWindow.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EShellWindow.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EShellWindow.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EShellWindow.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EShellWindow.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EShellBackend.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EShellView.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EShellWindow"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EShellWindow.top_of_page"></a>EShellWindow</span></h2>
+<p>EShellWindow — the main window</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EShellWindow.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-new" title="e_shell_window_new ()">e_shell_window_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EShell.html" title="EShell"><span class="returnvalue">EShell</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-shell" title="e_shell_window_get_shell ()">e_shell_window_get_shell</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a class="link" href="EShellView.html" title="EShellView"><span class="returnvalue">_EShellView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-shell-view" title="e_shell_window_get_shell_view ()">e_shell_window_get_shell_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a class="link" href="EShellView.html" title="EShellView"><span class="returnvalue">_EShellView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-peek-shell-view" title="e_shell_window_peek_shell_view ()">e_shell_window_peek_shell_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-shell-view-action" title="e_shell_window_get_shell_view_action ()">e_shell_window_get_shell_view_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-alert-bar" title="e_shell_window_get_alert_bar ()">e_shell_window_get_alert_bar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="returnvalue">EFocusTracker</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-focus-tracker" title="e_shell_window_get_focus_tracker ()">e_shell_window_get_focus_tracker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-ui-manager" title="e_shell_window_get_ui_manager ()">e_shell_window_get_ui_manager</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-action" title="e_shell_window_get_action ()">e_shell_window_get_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-action-group" title="e_shell_window_get_action_group ()">e_shell_window_get_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-managed-widget" title="e_shell_window_get_managed_widget ()">e_shell_window_get_managed_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-active-view" title="e_shell_window_get_active_view ()">e_shell_window_get_active_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-set-active-view" title="e_shell_window_set_active_view ()">e_shell_window_set_active_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-safe-mode" title="e_shell_window_get_safe_mode ()">e_shell_window_get_safe_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-set-safe-mode" title="e_shell_window_set_safe_mode ()">e_shell_window_set_safe_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-add-action-group" title="e_shell_window_add_action_group ()">e_shell_window_add_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-sidebar-visible" title="e_shell_window_get_sidebar_visible ()">e_shell_window_get_sidebar_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-set-sidebar-visible" title="e_shell_window_set_sidebar_visible ()">e_shell_window_set_sidebar_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-switcher-visible" title="e_shell_window_get_switcher_visible ()">e_shell_window_get_switcher_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-set-switcher-visible" title="e_shell_window_set_switcher_visible ()">e_shell_window_set_switcher_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-taskbar-visible" title="e_shell_window_get_taskbar_visible ()">e_shell_window_get_taskbar_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-set-taskbar-visible" title="e_shell_window_set_taskbar_visible ()">e_shell_window_set_taskbar_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-get-toolbar-visible" title="e_shell_window_get_toolbar_visible ()">e_shell_window_get_toolbar_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-set-toolbar-visible" title="e_shell_window_set_toolbar_visible ()">e_shell_window_set_toolbar_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-register-new-item-actions" title="e_shell_window_register_new_item_actions ()">e_shell_window_register_new_item_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellWindow.html#e-shell-window-register-new-source-actions" title="e_shell_window_register_new_source_actions ()">e_shell_window_register_new_source_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--active-view" title="The “active-view” property">active-view</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/evolution-util/EAlertBar.html"><span class="type">EAlertBar</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--alert-bar" title="The “alert-bar” property">alert-bar</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="type">EFocusTracker</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--focus-tracker" title="The “focus-tracker” property">focus-tracker</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--geometry" title="The “geometry” property">geometry</a></td>
+<td class="property_flags">Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--safe-mode" title="The “safe-mode” property">safe-mode</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--shell" title="The “shell” property">shell</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--sidebar-visible" title="The “sidebar-visible” property">sidebar-visible</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--switcher-visible" title="The “switcher-visible” property">switcher-visible</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--taskbar-visible" title="The “taskbar-visible” property">taskbar-visible</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--toolbar-visible" title="The “toolbar-visible” property">toolbar-visible</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellWindow.html#EShellWindow--ui-manager" title="The “ui-manager” property">ui-manager</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EShellWindow.html#EShellWindow-close-alert" title="The “close-alert” signal">close-alert</a></td>
+<td class="signal_flags">Action</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EShellWindow.html#EShellWindow-shell-view-created" title="The “shell-view-created” signal">shell-view-created</a></td>
+<td class="signal_flags">Has Details</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EShellWindow.html#EShellWindow-struct" title="struct EShellWindow">EShellWindow</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkBin.html">GtkBin</a>
+                    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWindow.html">GtkWindow</a>
+                        <span class="lineart">╰──</span> EShellWindow
+</pre>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EShellWindow implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>,  <a href="http://developer.gnome.org/evolution-util/EAlertSink.html">EAlertSink</a> and  EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;shell/e-shell-window.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-shell-window-new"></a><h3>e_shell_window_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_shell_window_new (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> safe_mode</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *geometry</code></em>);</pre>
+<p>Returns a new <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a>.</p>
+<p>It's up to the various <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>&lt;!-- --&gt;'s to define exactly
+what "safe mode" means, but the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> usually puts the initial
+<a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> into "safe mode" if detects the previous Evolution
+session crashed.</p>
+<p>The initial view for the window is determined by GSettings key
+&lt;filename&gt;/org/gnome/evolution/shell/default-component-id&lt;/filename&gt;.
+Or, if the GSettings key is not set or can't be read, the first view
+in the switcher is used.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.2.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>safe_mode</p></td>
+<td class="parameter_description"><p>whether to initialize the window to "safe mode"</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>geometry</p></td>
+<td class="parameter_description"><p>initial window geometry string, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.2.8"></a><h4>Returns</h4>
+<p> a new <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-shell"></a><h3>e_shell_window_get_shell ()</h3>
+<pre class="programlisting"><a class="link" href="EShell.html" title="EShell"><span class="returnvalue">EShell</span></a> *
+e_shell_window_get_shell (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> that was passed to <a class="link" href="EShellWindow.html#e-shell-window-new" title="e_shell_window_new ()"><code class="function">e_shell_window_new()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.3.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-shell-view"></a><h3>e_shell_window_get_shell_view ()</h3>
+<pre class="programlisting">struct <a class="link" href="EShellView.html" title="EShellView"><span class="returnvalue">_EShellView</span></a> *
+e_shell_window_get_shell_view (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *view_name</code></em>);</pre>
+<p>Returns the <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> named <em class="parameter"><code>view_name</code></em>
+ (see the
+&lt;structfield&gt;name&lt;/structfield&gt; field in <span class="type">EShellBackendInfo</span>).  This
+will also instantiate the <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> the first time it's requested.
+To reduce resource consumption, Evolution tries to delay instantiating
+shell views until the user switches to them.  So in general, only the
+active view name, as returned by <a class="link" href="EShellWindow.html#e-shell-window-get-active-view" title="e_shell_window_get_active_view ()"><code class="function">e_shell_window_get_active_view()</code></a>,
+should be requested.</p>
+<p>The function emits a <a class="link" href="EShellWindow.html#EShellWindow-shell-view-created" title="The “shell-view-created” signal"><span class="type">“shell-view-created”</span></a> signal with
+<em class="parameter"><code>view_name</code></em>
+ as the signal detail when it instantiates an <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_name</p></td>
+<td class="parameter_description"><p>name of a shell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.4.7"></a><h4>Returns</h4>
+<p> the requested <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no such view is
+registered</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-peek-shell-view"></a><h3>e_shell_window_peek_shell_view ()</h3>
+<pre class="programlisting">struct <a class="link" href="EShellView.html" title="EShellView"><span class="returnvalue">_EShellView</span></a> *
+e_shell_window_peek_shell_view (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *view_name</code></em>);</pre>
+<p>Returns the <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> named <em class="parameter"><code>view_name</code></em>
+ (see the
+&lt;structfield&gt;name&lt;/structfield&gt; field in <span class="type">EShellBackendInfo</span>), or
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the requested view has not yet been instantiated.  Unlike
+<a class="link" href="EShellWindow.html#e-shell-window-get-shell-view" title="e_shell_window_get_shell_view ()"><code class="function">e_shell_window_get_shell_view()</code></a>, this function will not instantiate
+the view itself.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_name</p></td>
+<td class="parameter_description"><p>name of a shell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.5.6"></a><h4>Returns</h4>
+<p> the requested <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no such view is
+instantiated</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-shell-view-action"></a><h3>e_shell_window_get_shell_view_action ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_shell_window_get_shell_view_action (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *view_name</code></em>);</pre>
+<p>Returns the switcher action for <em class="parameter"><code>view_name</code></em>
+.</p>
+<p>An <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> creates a <a href="http://developer.gnome.org/gtk2/GtkRadioAction.html"><span class="type">GtkRadioAction</span></a> for each registered subclass
+of <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>.  This action gets passed to the <a class="link" href="EShellSwitcher.html" title="EShellSwitcher"><span class="type">EShellSwitcher</span></a>, which
+displays a button that proxies the action.  When the <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> named
+<em class="parameter"><code>view_name</code></em>
+ is active, the action's icon becomes the <em class="parameter"><code>shell_window</code></em>
+ icon.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_name</p></td>
+<td class="parameter_description"><p>name of a shell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.6.7"></a><h4>Returns</h4>
+<p> the switcher action for the <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> named <em class="parameter"><code>view_name</code></em>
+,
+or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no such shell view exists</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-alert-bar"></a><h3>e_shell_window_get_alert_bar ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_shell_window_get_alert_bar (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns the <a href="http://developer.gnome.org/evolution-util/EAlertBar.html"><span class="type">EAlertBar</span></a> used to display informational and error messages.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.7.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/evolution-util/EAlertBar.html"><span class="type">EAlertBar</span></a> for <em class="parameter"><code>shell_window</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-focus-tracker"></a><h3>e_shell_window_get_focus_tracker ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="returnvalue">EFocusTracker</span></a> *
+e_shell_window_get_focus_tracker (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s focus tracker, which directs
+Cut, Copy, Paste and Select All main menu activations to the
+appropriate editable or selectable widget.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.8.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="type">EFocusTracker</span></a> for <em class="parameter"><code>shell_window</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-ui-manager"></a><h3>e_shell_window_get_ui_manager ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *
+e_shell_window_get_ui_manager (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s user interface manager, which
+manages the window's menus and toolbars via <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>&lt;!-- --&gt;s.
+This is the mechanism by which shell views and plugins can extend
+Evolution's menus and toolbars.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.9.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a> for <em class="parameter"><code>shell_window</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-action"></a><h3>e_shell_window_get_action ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_shell_window_get_action (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Returns the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> named <em class="parameter"><code>action_name</code></em>
+ in <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s
+user interface manager, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no such action exists.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>the name of an action</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.10.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> named <em class="parameter"><code>action_name</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-action-group"></a><h3>e_shell_window_get_action_group ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+e_shell_window_get_action_group (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+<p>Returns the <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> named <em class="parameter"><code>group_name</code></em>
+ in
+<em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s user interface manager, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no
+such action group exists.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>group_name</p></td>
+<td class="parameter_description"><p>the name of an action group</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.11.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> named <em class="parameter"><code>group_name</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-managed-widget"></a><h3>e_shell_window_get_managed_widget ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_shell_window_get_managed_widget (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *widget_path</code></em>);</pre>
+<p>Looks up a widget in <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s user interface manager by
+following a path.  See <a href="http://developer.gnome.org/gtk2/GtkUIManager.html#gtk-ui-manager-get-widget"><code class="function">gtk_ui_manager_get_widget()</code></a> for more information
+about paths.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>widget_path</p></td>
+<td class="parameter_description"><p>path in the UI definintion</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.12.6"></a><h4>Returns</h4>
+<p> the widget found by following the path, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no widget
+was found</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-active-view"></a><h3>e_shell_window_get_active_view ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_shell_window_get_active_view (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns the name of the active <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.13.6"></a><h4>Returns</h4>
+<p> the name of the active view</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-set-active-view"></a><h3>e_shell_window_set_active_view ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_set_active_view (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *view_name</code></em>);</pre>
+<p>Switches <em class="parameter"><code>shell_window</code></em>
+ to the <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> named <em class="parameter"><code>view_name</code></em>
+, causing
+the entire content of <em class="parameter"><code>shell_window</code></em>
+ to change.  This is typically
+called as a result of the user clicking one of the switcher buttons.</p>
+<p>The name of the newly activated shell view is also written to GSettings key
+&lt;filename&gt;/org/gnome/evolution/shell/default-component-id&lt;/filename&gt;.
+This makes the active shell view persistent across Evolution sessions.
+It also causes new shell windows created within the current Evolution
+session to open to the most recently selected shell view.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.14.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_name</p></td>
+<td class="parameter_description"><p>the name of the shell view to switch to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-safe-mode"></a><h3>e_shell_window_get_safe_mode ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_window_get_safe_mode (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>shell_window</code></em>
+ is in "safe mode".</p>
+<p>It's up to the various <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>&lt;!-- --&gt;'s to define exactly
+what "safe mode" means.  The <em class="parameter"><code>shell_window</code></em>
+ simply manages the
+"safe mode" state.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.15.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.15.7"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>shell_window</code></em>
+is in "safe mode"</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-set-safe-mode"></a><h3>e_shell_window_set_safe_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_set_safe_mode (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> safe_mode</code></em>);</pre>
+<p>If <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, puts <em class="parameter"><code>shell_window</code></em>
+ into "safe mode".</p>
+<p>It's up to the various <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>&lt;!-- --&gt;'s to define exactly
+what "safe mode" means.  The <em class="parameter"><code>shell_window</code></em>
+ simply manages the
+"safe mode" state.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.16.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>safe_mode</p></td>
+<td class="parameter_description"><p>whether to put <em class="parameter"><code>shell_window</code></em>
+into "safe mode"</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-add-action-group"></a><h3>e_shell_window_add_action_group ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_add_action_group (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+<p>Creates a new <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> and adds it to <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s
+user interface manager.  This also takes care of details like setting
+the translation domain.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>group_name</p></td>
+<td class="parameter_description"><p>the name of the new action group</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-sidebar-visible"></a><h3>e_shell_window_get_sidebar_visible ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_window_get_sidebar_visible (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s side bar is visible.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.18.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is the side bar is visible</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-set-sidebar-visible"></a><h3>e_shell_window_set_sidebar_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_set_sidebar_visible (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sidebar_visible</code></em>);</pre>
+<p>Makes <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s side bar visible or invisible.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sidebar_visible</p></td>
+<td class="parameter_description"><p>whether the side bar should be visible</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-switcher-visible"></a><h3>e_shell_window_get_switcher_visible ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_window_get_switcher_visible (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s switcher buttons are visible.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.20.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is the switcher buttons are visible</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-set-switcher-visible"></a><h3>e_shell_window_set_switcher_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_set_switcher_visible (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> switcher_visible</code></em>);</pre>
+<p>Makes <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s switcher buttons visible or invisible.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>switcher_visible</p></td>
+<td class="parameter_description"><p>whether the switcher buttons should be visible</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-taskbar-visible"></a><h3>e_shell_window_get_taskbar_visible ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_window_get_taskbar_visible (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s task bar is visible.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.22.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is the task bar is visible</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-set-taskbar-visible"></a><h3>e_shell_window_set_taskbar_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_set_taskbar_visible (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> taskbar_visible</code></em>);</pre>
+<p>Makes <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s task bar visible or invisible.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>taskbar_visible</p></td>
+<td class="parameter_description"><p>whether the task bar should be visible</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-get-toolbar-visible"></a><h3>e_shell_window_get_toolbar_visible ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_window_get_toolbar_visible (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s tool bar is visible.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.11.24.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the tool bar is visible</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-set-toolbar-visible"></a><h3>e_shell_window_set_toolbar_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_set_toolbar_visible (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> toolbar_visible</code></em>);</pre>
+<p>Makes <em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s tool bar visible or invisible.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>toolbar_visible</p></td>
+<td class="parameter_description"><p>whether the tool bar should be visible</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-register-new-item-actions"></a><h3>e_shell_window_register_new_item_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_register_new_item_actions
+                               (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *backend_name</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html#GtkActionEntry"><span class="type">GtkActionEntry</span></a> *entries</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>);</pre>
+<p>Registers a list of <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>&lt;!-- --&gt;s to appear in
+<em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s "New" menu and toolbar button.  This
+function should be called from an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a>&lt;!-- --&gt;'s
+<a href="http://developer.gnome.org/gtk2/GtkApplication.html#GtkApplication-window-added"><span class="type">“window-added”</span></a> signal handler.  The <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a>
+calling this function should pass its own name for the <em class="parameter"><code>backend_name</code></em>
+
+argument (i.e. the &lt;structfield&gt;name&lt;/structfield&gt; field from its own
+<span class="type">EShellBackendInfo</span>).</p>
+<p>The registered <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>&lt;!-- --&gt;s should be for creating individual
+items such as an email message or a calendar appointment.  The action
+labels should be marked for translation with the "New" context using
+the <a href="https://developer.gnome.org/glib/unstable/glib-I18N.html#NC-:CAPS"><code class="function">NC_()</code></a> macro.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.26.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>backend_name</p></td>
+<td class="parameter_description"><p>name of an <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p>an array of <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html#GtkActionEntry"><span class="type">GtkActionEntry</span></a>&lt;!-- --&gt;s</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_entries</p></td>
+<td class="parameter_description"><p>number of elements in the array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-window-register-new-source-actions"></a><h3>e_shell_window_register_new_source_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_window_register_new_source_actions
+                               (<em class="parameter"><code><a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *backend_name</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html#GtkActionEntry"><span class="type">GtkActionEntry</span></a> *entries</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>);</pre>
+<p>Registers a list of <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>&lt;!-- --&gt;s to appear in
+<em class="parameter"><code>shell_window</code></em>
+&lt;!-- --&gt;'s "New" menu and toolbar button.  This
+function should be called from an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a>&lt;!-- --&gt;'s
+<a href="http://developer.gnome.org/gtk2/GtkApplication.html#GtkApplication-window-added"><span class="type">“window-added”</span></a> signal handler.  The <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a>
+calling this function should pass its own name for the <em class="parameter"><code>backend_name</code></em>
+
+argument (i.e. the &lt;structfield&gt;name&lt;/structfield&gt; field from its own
+<span class="type">EShellBackendInfo</span>).</p>
+<p>The registered <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>&lt;!-- --&gt;s should be for creating item
+containers such as an email folder or a calendar.  The action labels
+should be marked for translation with the "New" context using the
+<a href="https://developer.gnome.org/glib/unstable/glib-I18N.html#NC-:CAPS"><code class="function">NC_()</code></a> macro.</p>
+<div class="refsect3">
+<a name="id-1.2.4.11.27.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>backend_name</p></td>
+<td class="parameter_description"><p>name of an <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p>an array of <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html#GtkActionEntry"><span class="type">GtkActionEntry</span></a>&lt;!-- --&gt;s</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_entries</p></td>
+<td class="parameter_description"><p>number of elements in the array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EShellWindow-struct"></a><h3>struct EShellWindow</h3>
+<pre class="programlisting">struct EShellWindow;</pre>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EShellWindow--active-view"></a><h3>The <code class="literal">“active-view”</code> property</h3>
+<pre class="programlisting">  “active-view”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Name of the active <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--alert-bar"></a><h3>The <code class="literal">“alert-bar”</code> property</h3>
+<pre class="programlisting">  “alert-bar”                <a href="http://developer.gnome.org/evolution-util/EAlertBar.html"><span class="type">EAlertBar</span></a> *</pre>
+<p>Displays informational and error messages.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--focus-tracker"></a><h3>The <code class="literal">“focus-tracker”</code> property</h3>
+<pre class="programlisting">  “focus-tracker”            <a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="type">EFocusTracker</span></a> *</pre>
+<p>The shell window's <a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="type">EFocusTracker</span></a>.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--geometry"></a><h3>The <code class="literal">“geometry”</code> property</h3>
+<pre class="programlisting">  “geometry”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>User-specified initial window geometry string.</p>
+<p>Flags: Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--safe-mode"></a><h3>The <code class="literal">“safe-mode”</code> property</h3>
+<pre class="programlisting">  “safe-mode”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the shell window is in safe mode.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--shell"></a><h3>The <code class="literal">“shell”</code> property</h3>
+<pre class="programlisting">  “shell”                    <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *</pre>
+<p>The <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> singleton.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--sidebar-visible"></a><h3>The <code class="literal">“sidebar-visible”</code> property</h3>
+<pre class="programlisting">  “sidebar-visible”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the shell window's side bar is visible.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--switcher-visible"></a><h3>The <code class="literal">“switcher-visible”</code> property</h3>
+<pre class="programlisting">  “switcher-visible”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the shell window's switcher buttons are visible.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--taskbar-visible"></a><h3>The <code class="literal">“taskbar-visible”</code> property</h3>
+<pre class="programlisting">  “taskbar-visible”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the shell window's task bar is visible.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--toolbar-visible"></a><h3>The <code class="literal">“toolbar-visible”</code> property</h3>
+<pre class="programlisting">  “toolbar-visible”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the shell window's tool bar is visible.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow--ui-manager"></a><h3>The <code class="literal">“ui-manager”</code> property</h3>
+<pre class="programlisting">  “ui-manager”               <a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a> *</pre>
+<p>The shell window's <a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a>.</p>
+<p>Flags: Read</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EShellWindow.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EShellWindow-close-alert"></a><h3>The <code class="literal">“close-alert”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Closes either one <span class="type">EShellView-specific</span> <a href="http://developer.gnome.org/evolution-util/EAlert.html"><span class="type">EAlert</span></a> or else one
+global <a href="http://developer.gnome.org/evolution-util/EAlert.html"><span class="type">EAlert</span></a>.  This signal is bound to the Escape key.</p>
+<div class="refsect3">
+<a name="id-1.2.4.14.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> which emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Action</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellWindow-shell-view-created"></a><h3>The <code class="literal">“shell-view-created”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> *shell_window,
+               <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a>   *shell_view,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Emitted when a new <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> is instantiated by way of
+<a class="link" href="EShellWindow.html#e-shell-window-get-shell-view" title="e_shell_window_get_shell_view ()"><code class="function">e_shell_window_get_shell_view()</code></a>.  The signal detail denotes
+the new view name, which can be used to obtain notification
+of when a particular <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> is created.</p>
+<div class="refsect3">
+<a name="id-1.2.4.14.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_window</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> which emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>shell_view</p></td>
+<td class="parameter_description"><p>the new <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Has Details</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

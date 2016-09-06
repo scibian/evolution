@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="calendar-marcus-bains-line" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-layout"/>
+
+    <revision pkgversion="2.32.1" version="0.1" date="2011-07-21" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>"Marcus Bains Line" と呼ばれる赤い線は現在時を示します。</desc>
+  </info>
+
+  <title>日間ビューでの時刻表示</title>
+
+  <p>カレンダーの日間ビューでの赤い線は現在日時を表す目印です。</p>
+
+</page>

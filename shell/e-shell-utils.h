@@ -1,0 +1,45 @@
+/*
+ * e-shell-utils.h
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *
+ *
+ * Copyright (C) 1999-2008 Novell, Inc. (www.novell.com)
+ *
+ */
+
+#ifndef E_SHELL_UTILS_H
+#define E_SHELL_UTILS_H
+
+#include <shell/e-shell.h>
+
+G_BEGIN_DECLS
+
+GFile *		e_shell_run_open_dialog		(EShell *shell,
+						 const gchar *title,
+						 GtkCallback customize_func,
+						 gpointer customize_data);
+
+GFile *		e_shell_run_save_dialog		(EShell *shell,
+						 const gchar *title,
+						 const gchar *suggestion,
+						 const gchar *filters,
+						 GtkCallback customize_func,
+						 gpointer customize_data);
+
+guint		e_shell_utils_import_uris	(EShell *shell,
+						 const gchar * const *uris);
+
+G_END_DECLS
+
+#endif /* E_SHELL_UTILS_H */

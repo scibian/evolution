@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="tasks-usage-edit-task" xml:lang="ja">
+
+  <info>
+    <desc>タスク一覧にあるタスクを編集します。</desc>
+    
+    <link type="guide" xref="tasks-usage"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-08-01" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>タスクの編集</title>
+
+<p>タスク一覧にある既存のタスクを変更したい場合は、</p>
+
+<steps>
+<item><p>タスク一覧の変更するタスクをダブルクリックするか、タスクを右クリックして<key>タスクを開く</key>をクリックします。</p></item>
+<item><p>タスクの情報を編集します。</p></item>
+<item><p><gui>保存</gui>ボタン、または<guiseq><gui>ファイル</gui><gui>保存</gui></guiseq>をクリックします。</p></item>
+</steps>
+
+</page>

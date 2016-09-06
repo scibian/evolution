@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-getting-keys" xml:lang="hu">
+
+  <info>
+    <desc>Nyilvános GPG-kulcsok beszerzése és használata.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.2" date="2011-07-27" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encrypt-getting-key -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>Nyilvános GPG-kulcsok beszerzése és használata</title>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a complete rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<p>Titkosított üzenet küldéséhez a címzett nyilvános kulcsát együtt kell a saját személyes kulcsával használnia. Az Evolution kezeli a titkosítást, de a nyilvános kulcsot be kell szereznie, és hozzá kell adnia a kulcstartójához.</p>
+
+<p>A nyilvános kulcsok nyilvános kulcskiszolgálóról való beszerzéséhez adja ki a <cmd>gpg --recv-keys --keyserver wwwkeys.pgp.net kulcsazonosító</cmd> parancsot, a <code>kulcsazonosító</code> helyére a címzett azonosítóját helyettesítve. Meg kell adnia a jelszavát, ezután az azonosító automatikusan hozzáadásra kerül a kulcstartójához.</p>
+
+<p>Ha valaki közvetlenül küldi el nyilvános kulcsát, akkor mentse egyszerű szöveges fájlként, és adja ki a <cmd>gpg --import</cmd> parancsot a kulcstartójára való importáláshoz.</p>
+</page>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-supported-file-formats" xml:lang="el">
+
+  <info>
+    <desc>Υποστηριζόμενες μορφές αρχείων για εισαγωγή δεδομένων.</desc>
+    
+    <link type="guide" xref="import-data"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-10-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/importing-mail-and-settings.html.en#importing-mail -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Υποστηριζόμενες μορφές αρχείων</title>
+
+<p>Το Evolution μπορεί να εισάγει τους παρακάτω τύπους αρχείων:</p>
+
+<section id="mail">
+<title>Αλληλογραφία</title>
+<list>
+<item><p>Berkley Mailbox (.mbox ή χωρίς επέκταση):</p>
+<p>Η μορφή αλληλογραφίας που χρησιμοποιείται από το Mozilla, το Netscape, το Evolution (για τοπικούς φακέλους μέχρι την έκδοση 2.32), το Eudora και πολλούς άλλους πελάτες αλληλογραφίας.</p></item>
+<item><p>Maildir (χωρίς επέκταση):</p>
+<p>Η χρησιμοποιούμενη μορφή από το Evolution (για τοπικούς φακέλους από την έκδοση 3.0). Δεν υπάρχει ανάγκη εισαγωγής αρχείων Maildir καθώς μπορείτε να <link xref="mail-account-manage-maildir-format-directories">ρυθμίσετε έναν λογαριασμό Maildir</link> στο Evolution και να δείξετε τον φάκελο όπου αποθηκεύονται τα αρχεία Maildir.</p></item>
+<item><p>Προσωπικοί φάκελοι Outlook Express 5/6 (.dbx):</p>
+<p>Η χρησιμοποιούμενη μορφή αρχείων αλληλογραφίας από το Microsoft Outlook Express 5/6. Για νεώτερες εκδόσεις συνιστάται η εισαγωγή PST.</p></item>
+</list>
+</section>
+
+<section id="calendar">
+<title>Ημερολόγιο</title>
+<list>
+<item><p>vCalendar (.vcs):</p>
+<p>Ένας τύπος για την αποθήκευση αρχείων ημερολογίου, που χρησιμοποιείται γενικά από το Evolution, το Microsoft Outlook, το Sunbird, και το Korganizer.</p></item>
+<item><p>iCalendar ή iCal (.ics):</p>
+<p>Ένας τύπος για την αποθήκευση αρχείων ημερολογίου, που χρησιμοποιείται από το Evolution, το Microsoft Outlook, το Palm OS παλάμης, και άλλα.</p></item>
+</list>
+</section>
+
+<section id="contacts">
+<title>Επαφές</title>
+<list>
+<item><p>LDAP Data Interchange Format (.ldif):</p>
+<p>Μια τυπική μορφή δεδομένων για κάρτες επαφών.</p></item>
+<item><p>vCard (.vcf, .gcrd):</p>
+<p>Ο χρησιμοποιούμενος τύπος βιβλίου διευθύνσεων που χρησιμοποιείται από το GNOME, το KDE, και πολλές άλλες εφαρμογές διαχείρισης επαφών. Θα πρέπει να έχετε την δυνατότητα να εξάγετε σε τύπο vCard από οποιαδήποτε εφαρμογή βιβλίου διευθύνσεων.</p></item>
+</list>
+</section>
+
+<section id="misc">
+<title>Διάφορα</title>
+<list>
+<item><p>Evolution/Mozilla/Outlook CSV/Tab (.csv, .tab):</p>
+<p>Τα αρχεία CSV (τιμές χωριζόμενες με κόμμα) ή στηλοθέτη αποθηκεύονται χρησιμοποιώντας Evolution, Microsoft Outlook και Mozilla.</p></item>
+<item><p>Προσωπικοί φάκελοι Outlook (.pst):</p>
+<p>Μια μορφή αρχείου που χρησιμοποιείται για την αποθήκευση τοπικών αντιγράφων των μηνυμάτων, των γεγονότων ημερολογίου και άλλων στοιχείων στο λογισμικό της Microsoft, όπως το Microsoft Exchange Client, το Windows Messaging και το Microsoft Outlook. Λέγεται επίσης "προσωπικός πίνακας αποθήκευσης".</p></item>
+</list>
+</section>
+
+</page>

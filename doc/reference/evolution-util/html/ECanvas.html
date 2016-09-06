@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ECanvas</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch05.html" title="Canvas Drawing">
+<link rel="prev" href="ch05.html" title="Canvas Drawing">
+<link rel="next" href="ECanvasBackground.html" title="ECanvasBackground">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ECanvas.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ECanvas.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#ECanvas.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ECanvas.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch05.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch05.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ECanvasBackground.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ECanvas"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ECanvas.top_of_page"></a>ECanvas</span></h2>
+<p>ECanvas</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ECanvas.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ECanvas.html#ECanvasItemSelectionFunc" title="ECanvasItemSelectionFunc ()">*ECanvasItemSelectionFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ECanvas.html#e-canvas-new" title="e_canvas_new ()">e_canvas_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECanvas.html#e-canvas-item-grab-focus" title="e_canvas_item_grab_focus ()">e_canvas_item_grab_focus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECanvas.html#e-canvas-item-request-reflow" title="e_canvas_item_request_reflow ()">e_canvas_item_request_reflow</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECanvas.html#e-canvas-item-request-parent-reflow" title="e_canvas_item_request_parent_reflow ()">e_canvas_item_request_parent_reflow</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ECanvas.html#ECanvasItemReflowFunc" title="ECanvasItemReflowFunc ()">*ECanvasItemReflowFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECanvas.html#e-canvas-item-set-reflow-callback" title="e_canvas_item_set_reflow_callback ()">e_canvas_item_set_reflow_callback</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ECanvas.html#ECanvasItemGrabCancelled" title="ECanvasItemGrabCancelled ()">*ECanvasItemGrabCancelled</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECanvas.html#e-canvas-item-grab" title="e_canvas_item_grab ()">e_canvas_item_grab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECanvas.html#e-canvas-item-ungrab" title="e_canvas_item_ungrab ()">e_canvas_item_ungrab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECanvas.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ECanvas.html#ECanvas-reflow" title="The “reflow” signal">reflow</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECanvas.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="ECanvas.html#ECanvasSelectionInfo" title="ECanvasSelectionInfo">ECanvasSelectionInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ECanvas.html#ECanvas-struct" title="struct ECanvas">ECanvas</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECanvas.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkLayout.html">GtkLayout</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvas.html">GnomeCanvas</a>
+                        <span class="lineart">╰──</span> ECanvas
+                            <span class="lineart">╰──</span> <a class="link" href="ECalendar.html" title="ECalendar">ECalendar</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ECanvas.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ECanvas implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a> and  <a href="http://developer.gnome.org/gtk2/GtkScrollable.html">GtkScrollable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ECanvas.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ECanvas.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ECanvasItemSelectionFunc"></a><h3>ECanvasItemSelectionFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*ECanvasItemSelectionFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> flags</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-canvas-new"></a><h3>e_canvas_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_canvas_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-canvas-item-grab-focus"></a><h3>e_canvas_item_grab_focus ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_canvas_item_grab_focus (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> widget_too</code></em>);</pre>
+<p>Makes the specified item take the keyboard focus, so all keyboard
+events will be sent to it. If the canvas widget itself did not have
+the focus and <em class="parameter"><code>widget_too</code></em>
+ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, it grabs that focus as well.</p>
+<div class="refsect3">
+<a name="id-1.6.2.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item</p></td>
+<td class="parameter_description"><p>A canvas item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>widget_too</p></td>
+<td class="parameter_description"><p>Whether or not to grab the widget-level focus too</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-canvas-item-request-reflow"></a><h3>e_canvas_item_request_reflow ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_canvas_item_request_reflow (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-canvas-item-request-parent-reflow"></a><h3>e_canvas_item_request_parent_reflow ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_canvas_item_request_parent_reflow (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECanvasItemReflowFunc"></a><h3>ECanvasItemReflowFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*ECanvasItemReflowFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> flags</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-canvas-item-set-reflow-callback"></a><h3>e_canvas_item_set_reflow_callback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_canvas_item_set_reflow_callback (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>,
+                                   <em class="parameter"><code><a class="link" href="ECanvas.html#ECanvasItemReflowFunc" title="ECanvasItemReflowFunc ()"><span class="type">ECanvasItemReflowFunc</span></a> func</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECanvasItemGrabCancelled"></a><h3>ECanvasItemGrabCancelled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*ECanvasItemGrabCancelled<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="ECanvas.html" title="ECanvas"><span class="type">ECanvas</span></a> *canvas</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-canvas-item-grab"></a><h3>e_canvas_item_grab ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_canvas_item_grab (<em class="parameter"><code><a class="link" href="ECanvas.html" title="ECanvas"><span class="type">ECanvas</span></a> *canvas</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> event_mask</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Cursors.html#GdkCursor"><span class="type">GdkCursor</span></a> *cursor</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/GdkDevice.html"><span class="type">GdkDevice</span></a> *device</code></em>,
+                    <em class="parameter"><code><span class="type">guint32</span> etime</code></em>,
+                    <em class="parameter"><code><a class="link" href="ECanvas.html#ECanvasItemGrabCancelled" title="ECanvasItemGrabCancelled ()"><span class="type">ECanvasItemGrabCancelled</span></a> cancelled</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> cancelled_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-canvas-item-ungrab"></a><h3>e_canvas_item_ungrab ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_canvas_item_ungrab (<em class="parameter"><code><a class="link" href="ECanvas.html" title="ECanvas"><span class="type">ECanvas</span></a> *canvas</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>,
+                      <em class="parameter"><code><span class="type">guint32</span> etime</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ECanvas.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ECanvasSelectionInfo"></a><h3>ECanvasSelectionInfo</h3>
+<pre class="programlisting">typedef struct {
+	GnomeCanvasItem *item;
+	gpointer         id;
+} ECanvasSelectionInfo;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECanvas-struct"></a><h3>struct ECanvas</h3>
+<pre class="programlisting">struct ECanvas;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ECanvas.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ECanvas-reflow"></a><h3>The <code class="literal">“reflow”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ECanvas.html" title="ECanvas"><span class="type">ECanvas</span></a> *ecanvas,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

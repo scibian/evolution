@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-two-trash-folders" xml:lang="el">
+
+  <info>
+    <desc>Πώς να έχετε μόνο έναν φάκελο απορριμμάτων ή ανεπιθύμητων ανά λογαριασμό.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-default-folder-locations"/>
+
+    <revision pkgversion="3.7.4" version="0.2" date="2013-01-23" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Δύο φάκελοι απορριμμάτων ή ανεπιθύμητων εμφανίζονται για τον ίδιο λογαριασμό</title>
+
+<p>Εάν χρησιμοποιείτε έναν απομακρυσμένο λογαριασμό αλληλογραφίας που έχει επίσης φακέλους ανεπιθύμητων και/ή απορριμμάτων στον εξυπηρετητή μπορεί να αντιμετωπίσετε διπλούς φακέλους στο Evolution.</p>
+<p>Μπορείτε εύκολα να ξεχωρίσετε τους δύο φακέλους απορριμμάτων κοιτώντας στα εικονίδιά τους. Ο φάκελος <gui>απορρίμματα</gui> του Evolution έχει ένα ειδικό εικονίδιο ενώ οι άλλοι φυσικοί φάκελοι απορριμμάτων φαίνονται όπως κάθε άλλος φάκελος.</p>
+
+<p>Από προεπιλογή, οι φάκελοι <gui>Απορρίμματα</gui> και <gui>Ανεπιθύμητα</gui> του Evolution είναι <link xref="mail-search-folders">φάκελοι αναζήτησης</link>. Δεν υπάρχουν πράγματι αλλά απλά εμφανίζουν όλα τα μηνύματα που σημειώνονται ως ανεπιθύμητα ή για διαγραφή σε κάθε φάκελο αυτού του λογαριασμού.</p>
+
+<p>Για να χρησιμοποιήσετε μόνο τους φακέλους για ανεπιθύμητα και απορρίμματα στον εξυπηρετητή αλληλογραφίας, επιλέξτε την αντίστοιχη επιλογή <gui>Χρήση πραγματικού φακέλου</gui> στο <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui><gui>Λογαριασμοί αλληλογραφίας</gui><gui style="button">Επεξεργασία</gui><gui>Προεπιλογές</gui></guiseq>. Σε αυτήν την περίπτωση, οι τοπικοί εικονικοί φάκελοι του Evolution δεν θα χρησιμοποιηθούν.</p>
+
+</page>

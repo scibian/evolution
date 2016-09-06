@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EAlertSink</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch03.html" title="Alerts">
+<link rel="prev" href="EAlertDialog.html" title="EAlertDialog">
+<link rel="next" href="ch04.html" title="Attachments">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EAlertSink.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EAlertSink.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#EAlertSink.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_implementations">  <span class="dim">|</span> 
+                  <a href="#EAlertSink.implementations" class="shortcut">Known Implementations</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EAlertDialog.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch04.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EAlertSink"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EAlertSink.top_of_page"></a>EAlertSink</span></h2>
+<p>EAlertSink — an interface to handle alerts</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EAlertSink.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlertSink.html#e-alert-sink-submit-alert" title="e_alert_sink_submit_alert ()">e_alert_sink_submit_alert</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAlertSink.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="EAlertSink.html#EAlertSink-struct" title="EAlertSink">EAlertSink</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EAlertSink.html#EAlertSinkInterface" title="struct EAlertSinkInterface">EAlertSinkInterface</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAlertSink.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> EAlertSink
+</pre>
+</div>
+<div class="refsect1">
+<a name="EAlertSink.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+EAlertSink requires
+ <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EAlertSink.implementations"></a><h2>Known Implementations</h2>
+<p>
+EAlertSink is implemented by
+ <a class="link" href="EPreviewPane.html" title="EPreviewPane">EPreviewPane</a>,  <a class="link" href="ESourceConfigDialog.html" title="ESourceConfigDialog">ESourceConfigDialog</a>,  <a class="link" href="EWebView.html" title="EWebView">EWebView</a> and  <a class="link" href="EWebViewGtkHTML.html" title="EWebViewGtkHTML">EWebViewGtkHTML</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EAlertSink.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;e-util/e-util.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="EAlertSink.description"></a><h2>Description</h2>
+<p>A widget that implements <a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a> means it can handle <a href="EAlert.html"><span class="type">EAlerts</span></a>,
+usually by displaying them to the user.</p>
+</div>
+<div class="refsect1">
+<a name="EAlertSink.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-alert-sink-submit-alert"></a><h3>e_alert_sink_submit_alert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_sink_submit_alert (<em class="parameter"><code><a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a> *alert_sink</code></em>,
+                           <em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>);</pre>
+<p>This function is a place to pass <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> objects.  Beyond that it has no
+well-defined behavior.  It's up to the widget implementing the <a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a>
+interface to decide what to do with them.</p>
+<div class="refsect3">
+<a name="id-1.4.5.10.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>alert_sink</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>alert</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAlertSink.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EAlertSink-struct"></a><h3>EAlertSink</h3>
+<pre class="programlisting">typedef struct _EAlertSink EAlertSink;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAlertSinkInterface"></a><h3>struct EAlertSinkInterface</h3>
+<pre class="programlisting">struct EAlertSinkInterface {
+	GTypeInterface parent_interface;
+
+	void		(*submit_alert)		(EAlertSink *alert_sink,
+						 EAlert *alert);
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

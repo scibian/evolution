@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Evolution Mail Composer Reference Manual" link="index.html" author="" name="evolution-mail-composer" version="2" language="c">
+  <chapters>
+    <sub name="Mail Composition" link="ch01.html">
+      <sub name="EMsgComposer" link="EMsgComposer.html"/>
+      <sub name="EComposerActivity" link="EComposerActivity.html"/>
+      <sub name="EComposerHeaderTable" link="EComposerHeaderTable.html"/>
+      <sub name="EComposerHeader" link="EComposerHeader.html"/>
+      <sub name="EComposerFromHeader" link="EComposerFromHeader.html"/>
+      <sub name="EComposerNameHeader" link="EComposerNameHeader.html"/>
+      <sub name="EComposerPostHeader" link="EComposerPostHeader.html"/>
+      <sub name="EComposerSpellHeader" link="EComposerSpellHeader.html"/>
+      <sub name="EComposerTextHeader" link="EComposerTextHeader.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="e_msg_composer_new ()" link="EMsgComposer.html#e-msg-composer-new"/>
+    <keyword type="function" name="e_msg_composer_new_with_message ()" link="EMsgComposer.html#e-msg-composer-new-with-message"/>
+    <keyword type="function" name="e_msg_composer_new_from_url ()" link="EMsgComposer.html#e-msg-composer-new-from-url"/>
+    <keyword type="function" name="e_msg_composer_new_redirect ()" link="EMsgComposer.html#e-msg-composer-new-redirect"/>
+    <keyword type="function" name="e_msg_composer_get_focus_tracker ()" link="EMsgComposer.html#e-msg-composer-get-focus-tracker"/>
+    <keyword type="function" name="e_msg_composer_ref_session ()" link="EMsgComposer.html#e-msg-composer-ref-session"/>
+    <keyword type="function" name="e_msg_composer_get_shell ()" link="EMsgComposer.html#e-msg-composer-get-shell"/>
+    <keyword type="function" name="e_msg_composer_get_web_view ()" link="EMsgComposer.html#e-msg-composer-get-web-view"/>
+    <keyword type="function" name="e_msg_composer_send ()" link="EMsgComposer.html#e-msg-composer-send"/>
+    <keyword type="function" name="e_msg_composer_save_to_drafts ()" link="EMsgComposer.html#e-msg-composer-save-to-drafts"/>
+    <keyword type="function" name="e_msg_composer_save_to_outbox ()" link="EMsgComposer.html#e-msg-composer-save-to-outbox"/>
+    <keyword type="function" name="e_msg_composer_print ()" link="EMsgComposer.html#e-msg-composer-print"/>
+    <keyword type="function" name="e_msg_composer_set_body_text ()" link="EMsgComposer.html#e-msg-composer-set-body-text"/>
+    <keyword type="function" name="e_msg_composer_set_body ()" link="EMsgComposer.html#e-msg-composer-set-body"/>
+    <keyword type="function" name="e_msg_composer_add_header ()" link="EMsgComposer.html#e-msg-composer-add-header"/>
+    <keyword type="function" name="e_msg_composer_set_header ()" link="EMsgComposer.html#e-msg-composer-set-header"/>
+    <keyword type="function" name="e_msg_composer_remove_header ()" link="EMsgComposer.html#e-msg-composer-remove-header"/>
+    <keyword type="function" name="e_msg_composer_set_draft_headers ()" link="EMsgComposer.html#e-msg-composer-set-draft-headers"/>
+    <keyword type="function" name="e_msg_composer_set_source_headers ()" link="EMsgComposer.html#e-msg-composer-set-source-headers"/>
+    <keyword type="function" name="e_msg_composer_attach ()" link="EMsgComposer.html#e-msg-composer-attach"/>
+    <keyword type="function" name="e_msg_composer_add_inline_image_from_file ()" link="EMsgComposer.html#e-msg-composer-add-inline-image-from-file"/>
+    <keyword type="function" name="e_msg_composer_add_inline_image_from_mime_part ()" link="EMsgComposer.html#e-msg-composer-add-inline-image-from-mime-part"/>
+    <keyword type="function" name="e_msg_composer_get_message ()" link="EMsgComposer.html#e-msg-composer-get-message"/>
+    <keyword type="function" name="e_msg_composer_get_message_finish ()" link="EMsgComposer.html#e-msg-composer-get-message-finish"/>
+    <keyword type="function" name="e_msg_composer_get_message_print ()" link="EMsgComposer.html#e-msg-composer-get-message-print"/>
+    <keyword type="function" name="e_msg_composer_get_message_print_finish ()" link="EMsgComposer.html#e-msg-composer-get-message-print-finish"/>
+    <keyword type="function" name="e_msg_composer_get_message_draft ()" link="EMsgComposer.html#e-msg-composer-get-message-draft"/>
+    <keyword type="function" name="e_msg_composer_get_message_draft_finish ()" link="EMsgComposer.html#e-msg-composer-get-message-draft-finish"/>
+    <keyword type="function" name="e_msg_composer_get_from ()" link="EMsgComposer.html#e-msg-composer-get-from"/>
+    <keyword type="function" name="e_msg_composer_get_reply_to ()" link="EMsgComposer.html#e-msg-composer-get-reply-to"/>
+    <keyword type="function" name="e_msg_composer_clear_inlined_table ()" link="EMsgComposer.html#e-msg-composer-clear-inlined-table"/>
+    <keyword type="function" name="e_msg_composer_add_message_attachments ()" link="EMsgComposer.html#e-msg-composer-add-message-attachments"/>
+    <keyword type="function" name="e_msg_composer_request_close ()" link="EMsgComposer.html#e-msg-composer-request-close"/>
+    <keyword type="function" name="e_msg_composer_can_close ()" link="EMsgComposer.html#e-msg-composer-can-close"/>
+    <keyword type="function" name="e_msg_composer_reply_indent ()" link="EMsgComposer.html#e-msg-composer-reply-indent"/>
+    <keyword type="function" name="e_msg_composer_get_header_table ()" link="EMsgComposer.html#e-msg-composer-get-header-table"/>
+    <keyword type="function" name="e_msg_composer_get_attachment_view ()" link="EMsgComposer.html#e-msg-composer-get-attachment-view"/>
+    <keyword type="function" name="e_msg_composer_get_raw_message_text ()" link="EMsgComposer.html#e-msg-composer-get-raw-message-text"/>
+    <keyword type="function" name="e_msg_composer_is_exiting ()" link="EMsgComposer.html#e-msg-composer-is-exiting"/>
+    <keyword type="function" name="e_load_spell_languages ()" link="EMsgComposer.html#e-load-spell-languages"/>
+    <keyword type="function" name="e_save_spell_languages ()" link="EMsgComposer.html#e-save-spell-languages"/>
+    <keyword type="struct" name="struct EMsgComposer" link="EMsgComposer.html#EMsgComposer-struct"/>
+    <keyword type="property" name="The “focus-tracker” property" link="EMsgComposer.html#EMsgComposer--focus-tracker"/>
+    <keyword type="property" name="The “shell” property" link="EMsgComposer.html#EMsgComposer--shell"/>
+    <keyword type="signal" name="The “presend” signal" link="EMsgComposer.html#EMsgComposer-presend"/>
+    <keyword type="signal" name="The “print” signal" link="EMsgComposer.html#EMsgComposer-print"/>
+    <keyword type="signal" name="The “save-to-drafts” signal" link="EMsgComposer.html#EMsgComposer-save-to-drafts"/>
+    <keyword type="signal" name="The “save-to-outbox” signal" link="EMsgComposer.html#EMsgComposer-save-to-outbox"/>
+    <keyword type="signal" name="The “send” signal" link="EMsgComposer.html#EMsgComposer-send"/>
+    <keyword type="function" name="e_composer_activity_new ()" link="EComposerActivity.html#e-composer-activity-new"/>
+    <keyword type="function" name="e_composer_activity_get_composer ()" link="EComposerActivity.html#e-composer-activity-get-composer"/>
+    <keyword type="struct" name="struct EComposerActivity" link="EComposerActivity.html#EComposerActivity-struct"/>
+    <keyword type="property" name="The “composer” property" link="EComposerActivity.html#EComposerActivity--composer"/>
+    <keyword type="function" name="e_composer_header_table_new ()" link="EComposerHeaderTable.html#e-composer-header-table-new"/>
+    <keyword type="function" name="e_composer_header_table_ref_client_cache ()" link="EComposerHeaderTable.html#e-composer-header-table-ref-client-cache"/>
+    <keyword type="function" name="e_composer_header_table_get_header ()" link="EComposerHeaderTable.html#e-composer-header-table-get-header"/>
+    <keyword type="function" name="e_composer_header_table_get_signature_combo_box ()" link="EComposerHeaderTable.html#e-composer-header-table-get-signature-combo-box"/>
+    <keyword type="function" name="e_composer_header_table_get_destinations ()" link="EComposerHeaderTable.html#e-composer-header-table-get-destinations"/>
+    <keyword type="function" name="e_composer_header_table_get_destinations_bcc ()" link="EComposerHeaderTable.html#e-composer-header-table-get-destinations-bcc"/>
+    <keyword type="function" name="e_composer_header_table_add_destinations_bcc ()" link="EComposerHeaderTable.html#e-composer-header-table-add-destinations-bcc"/>
+    <keyword type="function" name="e_composer_header_table_set_destinations_bcc ()" link="EComposerHeaderTable.html#e-composer-header-table-set-destinations-bcc"/>
+    <keyword type="function" name="e_composer_header_table_get_destinations_cc ()" link="EComposerHeaderTable.html#e-composer-header-table-get-destinations-cc"/>
+    <keyword type="function" name="e_composer_header_table_add_destinations_cc ()" link="EComposerHeaderTable.html#e-composer-header-table-add-destinations-cc"/>
+    <keyword type="function" name="e_composer_header_table_set_destinations_cc ()" link="EComposerHeaderTable.html#e-composer-header-table-set-destinations-cc"/>
+    <keyword type="function" name="e_composer_header_table_get_destinations_to ()" link="EComposerHeaderTable.html#e-composer-header-table-get-destinations-to"/>
+    <keyword type="function" name="e_composer_header_table_add_destinations_to ()" link="EComposerHeaderTable.html#e-composer-header-table-add-destinations-to"/>
+    <keyword type="function" name="e_composer_header_table_set_destinations_to ()" link="EComposerHeaderTable.html#e-composer-header-table-set-destinations-to"/>
+    <keyword type="function" name="e_composer_header_table_get_identity_uid ()" link="EComposerHeaderTable.html#e-composer-header-table-get-identity-uid"/>
+    <keyword type="function" name="e_composer_header_table_set_identity_uid ()" link="EComposerHeaderTable.html#e-composer-header-table-set-identity-uid"/>
+    <keyword type="function" name="e_composer_header_table_get_post_to ()" link="EComposerHeaderTable.html#e-composer-header-table-get-post-to"/>
+    <keyword type="function" name="e_composer_header_table_set_post_to_base ()" link="EComposerHeaderTable.html#e-composer-header-table-set-post-to-base"/>
+    <keyword type="function" name="e_composer_header_table_set_post_to_list ()" link="EComposerHeaderTable.html#e-composer-header-table-set-post-to-list"/>
+    <keyword type="function" name="e_composer_header_table_get_reply_to ()" link="EComposerHeaderTable.html#e-composer-header-table-get-reply-to"/>
+    <keyword type="function" name="e_composer_header_table_set_reply_to ()" link="EComposerHeaderTable.html#e-composer-header-table-set-reply-to"/>
+    <keyword type="function" name="e_composer_header_table_get_signature_uid ()" link="EComposerHeaderTable.html#e-composer-header-table-get-signature-uid"/>
+    <keyword type="function" name="e_composer_header_table_set_signature_uid ()" link="EComposerHeaderTable.html#e-composer-header-table-set-signature-uid"/>
+    <keyword type="function" name="e_composer_header_table_get_subject ()" link="EComposerHeaderTable.html#e-composer-header-table-get-subject"/>
+    <keyword type="function" name="e_composer_header_table_set_subject ()" link="EComposerHeaderTable.html#e-composer-header-table-set-subject"/>
+    <keyword type="function" name="e_composer_header_table_set_header_visible ()" link="EComposerHeaderTable.html#e-composer-header-table-set-header-visible"/>
+    <keyword type="function" name="e_composer_header_table_ref_source ()" link="EComposerHeaderTable.html#e-composer-header-table-ref-source"/>
+    <keyword type="struct" name="struct EComposerHeaderTable" link="EComposerHeaderTable.html#EComposerHeaderTable-struct"/>
+    <keyword type="enum" name="enum EComposerHeaderType" link="EComposerHeaderTable.html#EComposerHeaderType"/>
+    <keyword type="property" name="The “client-cache” property" link="EComposerHeaderTable.html#EComposerHeaderTable--client-cache"/>
+    <keyword type="property" name="The “destinations-bcc” property" link="EComposerHeaderTable.html#EComposerHeaderTable--destinations-bcc"/>
+    <keyword type="property" name="The “destinations-cc” property" link="EComposerHeaderTable.html#EComposerHeaderTable--destinations-cc"/>
+    <keyword type="property" name="The “destinations-to” property" link="EComposerHeaderTable.html#EComposerHeaderTable--destinations-to"/>
+    <keyword type="property" name="The “identity-uid” property" link="EComposerHeaderTable.html#EComposerHeaderTable--identity-uid"/>
+    <keyword type="property" name="The “post-to” property" link="EComposerHeaderTable.html#EComposerHeaderTable--post-to"/>
+    <keyword type="property" name="The “reply-to” property" link="EComposerHeaderTable.html#EComposerHeaderTable--reply-to"/>
+    <keyword type="property" name="The “signature-combo-box” property" link="EComposerHeaderTable.html#EComposerHeaderTable--signature-combo-box"/>
+    <keyword type="property" name="The “signature-uid” property" link="EComposerHeaderTable.html#EComposerHeaderTable--signature-uid"/>
+    <keyword type="property" name="The “subject” property" link="EComposerHeaderTable.html#EComposerHeaderTable--subject"/>
+    <keyword type="function" name="e_composer_header_get_label ()" link="EComposerHeader.html#e-composer-header-get-label"/>
+    <keyword type="function" name="e_composer_header_get_registry ()" link="EComposerHeader.html#e-composer-header-get-registry"/>
+    <keyword type="function" name="e_composer_header_get_sensitive ()" link="EComposerHeader.html#e-composer-header-get-sensitive"/>
+    <keyword type="function" name="e_composer_header_set_sensitive ()" link="EComposerHeader.html#e-composer-header-set-sensitive"/>
+    <keyword type="function" name="e_composer_header_get_visible ()" link="EComposerHeader.html#e-composer-header-get-visible"/>
+    <keyword type="function" name="e_composer_header_set_visible ()" link="EComposerHeader.html#e-composer-header-set-visible"/>
+    <keyword type="function" name="e_composer_header_set_title_tooltip ()" link="EComposerHeader.html#e-composer-header-set-title-tooltip"/>
+    <keyword type="function" name="e_composer_header_set_input_tooltip ()" link="EComposerHeader.html#e-composer-header-set-input-tooltip"/>
+    <keyword type="struct" name="struct EComposerHeader" link="EComposerHeader.html#EComposerHeader-struct"/>
+    <keyword type="property" name="The “button” property" link="EComposerHeader.html#EComposerHeader--button"/>
+    <keyword type="property" name="The “label” property" link="EComposerHeader.html#EComposerHeader--label"/>
+    <keyword type="property" name="The “registry” property" link="EComposerHeader.html#EComposerHeader--registry"/>
+    <keyword type="property" name="The “sensitive” property" link="EComposerHeader.html#EComposerHeader--sensitive"/>
+    <keyword type="property" name="The “visible” property" link="EComposerHeader.html#EComposerHeader--visible"/>
+    <keyword type="signal" name="The “changed” signal" link="EComposerHeader.html#EComposerHeader-changed"/>
+    <keyword type="signal" name="The “clicked” signal" link="EComposerHeader.html#EComposerHeader-clicked"/>
+    <keyword type="function" name="e_composer_from_header_new ()" link="EComposerFromHeader.html#e-composer-from-header-new"/>
+    <keyword type="function" name="e_composer_from_header_get_active_id ()" link="EComposerFromHeader.html#e-composer-from-header-get-active-id"/>
+    <keyword type="function" name="e_composer_from_header_set_active_id ()" link="EComposerFromHeader.html#e-composer-from-header-set-active-id"/>
+    <keyword type="struct" name="struct EComposerFromHeader" link="EComposerFromHeader.html#EComposerFromHeader-struct"/>
+    <keyword type="function" name="e_composer_name_header_new ()" link="EComposerNameHeader.html#e-composer-name-header-new"/>
+    <keyword type="function" name="e_composer_name_header_get_name_selector ()" link="EComposerNameHeader.html#e-composer-name-header-get-name-selector"/>
+    <keyword type="function" name="e_composer_name_header_get_destinations ()" link="EComposerNameHeader.html#e-composer-name-header-get-destinations"/>
+    <keyword type="function" name="e_composer_name_header_add_destinations ()" link="EComposerNameHeader.html#e-composer-name-header-add-destinations"/>
+    <keyword type="function" name="e_composer_name_header_set_destinations ()" link="EComposerNameHeader.html#e-composer-name-header-set-destinations"/>
+    <keyword type="struct" name="struct EComposerNameHeader" link="EComposerNameHeader.html#EComposerNameHeader-struct"/>
+    <keyword type="property" name="The “name-selector” property" link="EComposerNameHeader.html#EComposerNameHeader--name-selector"/>
+    <keyword type="function" name="e_composer_post_header_new ()" link="EComposerPostHeader.html#e-composer-post-header-new"/>
+    <keyword type="function" name="e_composer_post_header_get_folders ()" link="EComposerPostHeader.html#e-composer-post-header-get-folders"/>
+    <keyword type="function" name="e_composer_post_header_set_folders ()" link="EComposerPostHeader.html#e-composer-post-header-set-folders"/>
+    <keyword type="function" name="e_composer_post_header_set_folders_base ()" link="EComposerPostHeader.html#e-composer-post-header-set-folders-base"/>
+    <keyword type="function" name="e_composer_post_header_get_mail_account ()" link="EComposerPostHeader.html#e-composer-post-header-get-mail-account"/>
+    <keyword type="function" name="e_composer_post_header_set_mail_account ()" link="EComposerPostHeader.html#e-composer-post-header-set-mail-account"/>
+    <keyword type="struct" name="struct EComposerPostHeader" link="EComposerPostHeader.html#EComposerPostHeader-struct"/>
+    <keyword type="property" name="The “mail-account” property" link="EComposerPostHeader.html#EComposerPostHeader--mail-account"/>
+    <keyword type="function" name="e_composer_spell_header_new_label ()" link="EComposerSpellHeader.html#e-composer-spell-header-new-label"/>
+    <keyword type="function" name="e_composer_spell_header_new_button ()" link="EComposerSpellHeader.html#e-composer-spell-header-new-button"/>
+    <keyword type="function" name="e_composer_spell_header_set_languages ()" link="EComposerSpellHeader.html#e-composer-spell-header-set-languages"/>
+    <keyword type="struct" name="struct EComposerSpellHeader" link="EComposerSpellHeader.html#EComposerSpellHeader-struct"/>
+    <keyword type="function" name="e_composer_text_header_new_label ()" link="EComposerTextHeader.html#e-composer-text-header-new-label"/>
+    <keyword type="function" name="e_composer_text_header_new_button ()" link="EComposerTextHeader.html#e-composer-text-header-new-button"/>
+    <keyword type="function" name="e_composer_text_header_get_text ()" link="EComposerTextHeader.html#e-composer-text-header-get-text"/>
+    <keyword type="function" name="e_composer_text_header_set_text ()" link="EComposerTextHeader.html#e-composer-text-header-set-text"/>
+    <keyword type="struct" name="struct EComposerTextHeader" link="EComposerTextHeader.html#EComposerTextHeader-struct"/>
+  </functions>
+</book>

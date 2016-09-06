@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ECellText</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ECellSize.html" title="ECellSize">
+<link rel="next" href="ECellToggle.html" title="ECellToggle">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ECellText.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ECellText.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ECellText.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ECellText.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ECellSize.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ECellToggle.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ECellText"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ECellText.top_of_page"></a>ECellText</span></h2>
+<p>ECellText</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ECellText.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ECell.html" title="ECell"><span class="returnvalue">ECell</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-new" title="e_cell_text_new ()">e_cell_text_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ECell.html" title="ECell"><span class="returnvalue">ECell</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-construct" title="e_cell_text_construct ()">e_cell_text_construct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-get-text" title="e_cell_text_get_text ()">e_cell_text_get_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-free-text" title="e_cell_text_free_text ()">e_cell_text_free_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-set-value" title="e_cell_text_set_value ()">e_cell_text_set_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-set-selection" title="e_cell_text_set_selection ()">e_cell_text_set_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-get-selection" title="e_cell_text_get_selection ()">e_cell_text_get_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-copy-clipboard" title="e_cell_text_copy_clipboard ()">e_cell_text_copy_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-paste-clipboard" title="e_cell_text_paste_clipboard ()">e_cell_text_paste_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-delete-selection" title="e_cell_text_delete_selection ()">e_cell_text_delete_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ECellText.html#e-cell-text-get-text-by-view" title="e_cell_text_get_text_by_view ()">e_cell_text_get_text_by_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECellText.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ECellText.html#ECellText--bg-color-column" title="The “bg-color-column” property">bg-color-column</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ECellText.html#ECellText--bold-column" title="The “bold-column” property">bold-column</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ECellText.html#ECellText--color-column" title="The “color-column” property">color-column</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ECellText.html#ECellText--editable" title="The “editable” property">editable</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ECellText.html#ECellText--strikeout-column" title="The “strikeout-column” property">strikeout-column</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ECellText.html#ECellText--underline-column" title="The “underline-column” property">underline-column</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECellText.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ECellText.html#ECellText-text-deleted" title="The “text-deleted” signal">text-deleted</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ECellText.html#ECellText-text-inserted" title="The “text-inserted” signal">text-inserted</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECellText.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ECellText.html#ECellText-struct" title="struct ECellText">ECellText</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECellText.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a class="link" href="ECell.html" title="ECell">ECell</a>
+        <span class="lineart">╰──</span> ECellText
+            <span class="lineart">├──</span> <a class="link" href="ECellDate.html" title="ECellDate">ECellDate</a>
+            <span class="lineart">├──</span> <a class="link" href="ECellNumber.html" title="ECellNumber">ECellNumber</a>
+            <span class="lineart">├──</span> <a class="link" href="ECellPercent.html" title="ECellPercent">ECellPercent</a>
+            <span class="lineart">╰──</span> <a class="link" href="ECellSize.html" title="ECellSize">ECellSize</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ECellText.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ECellText.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-cell-text-new"></a><h3>e_cell_text_new ()</h3>
+<pre class="programlisting"><a class="link" href="ECell.html" title="ECell"><span class="returnvalue">ECell</span></a> *
+e_cell_text_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *fontname</code></em>,
+                 <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkJustification"><span class="type">GtkJustification</span></a> justify</code></em>);</pre>
+<p>Creates a new ECell renderer that can be used to render strings that
+that come from the model.  The value returned from the model is
+interpreted as being a gchar *.</p>
+<p>The ECellText object support a large set of properties that can be
+configured through the Gtk argument system and allows the user to have
+a finer control of the way the string is displayed.  The arguments supported
+allow the control of strikeout, underline, bold, and color.</p>
+<p>The arguments "strikeout_column", "underline_column", "bold_column"
+and "color_column" set and return an integer that points to a
+column in the model that controls these settings.  So controlling
+the way things are rendered is achieved by having special columns
+in the model that will be used to flag whether the text should be
+rendered with strikeout, or bolded.  In the case of the
+"color_column" argument, the column in the model is expected to
+have a string that can be parsed by <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#gdk-color-parse"><code class="function">gdk_color_parse()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.12.47.9.2.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>fontname</p></td>
+<td class="parameter_description"><p>this param is no longer used, but left here for api stability</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>justify</p></td>
+<td class="parameter_description"><p>Justification of the string in the cell.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.47.9.2.8"></a><h4>Returns</h4>
+<p> an ECell object that can be used to render strings.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-construct"></a><h3>e_cell_text_construct ()</h3>
+<pre class="programlisting"><a class="link" href="ECell.html" title="ECell"><span class="returnvalue">ECell</span></a> *
+e_cell_text_construct (<em class="parameter"><code><a class="link" href="ECellText.html" title="ECellText"><span class="type">ECellText</span></a> *cell</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *fontname</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkJustification"><span class="type">GtkJustification</span></a> justify</code></em>);</pre>
+<p>constructs the ECellText.  To be used by subclasses and language
+bindings.</p>
+<div class="refsect3">
+<a name="id-1.12.47.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cell</p></td>
+<td class="parameter_description"><p>The cell to construct</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fontname</p></td>
+<td class="parameter_description"><p>this param is no longer used, but left here for api stability</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>justify</p></td>
+<td class="parameter_description"><p>Justification of the string in the cell</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.47.9.3.6"></a><h4>Returns</h4>
+<p> The ECellText.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-get-text"></a><h3>e_cell_text_get_text ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_cell_text_get_text (<em class="parameter"><code><a class="link" href="ECellText.html" title="ECellText"><span class="type">ECellText</span></a> *cell</code></em>,
+                      <em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *model</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-free-text"></a><h3>e_cell_text_free_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_text_free_text (<em class="parameter"><code><a class="link" href="ECellText.html" title="ECellText"><span class="type">ECellText</span></a> *cell</code></em>,
+                       <em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *model</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-set-value"></a><h3>e_cell_text_set_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_text_set_value (<em class="parameter"><code><a class="link" href="ECellText.html" title="ECellText"><span class="type">ECellText</span></a> *cell</code></em>,
+                       <em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *model</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-set-selection"></a><h3>e_cell_text_set_selection ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_cell_text_set_selection (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *cell_view</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> start</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> end</code></em>);</pre>
+<p>Sets the selection of given text cell.
+If the current editing cell is not the given cell, this function
+will return FALSE;</p>
+<p>If success, the [start, end) part of the text will be selected.</p>
+<p>This API is most likely to be used by a11y implementations.</p>
+<div class="refsect3">
+<a name="id-1.12.47.9.7.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cell_view</p></td>
+<td class="parameter_description"><p>the given cell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>column of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>row of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start</p></td>
+<td class="parameter_description"><p>start offset of the selection</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end</p></td>
+<td class="parameter_description"><p>end offset of the selection</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.47.9.7.8"></a><h4>Returns</h4>
+<p> whether the action is successful.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-get-selection"></a><h3>e_cell_text_get_selection ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_cell_text_get_selection (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *cell_view</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *start</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *end</code></em>);</pre>
+<p>Gets the selection of given text cell.
+If the current editing cell is not the given cell, this function
+will return FALSE;</p>
+<p>This API is most likely to be used by a11y implementations.</p>
+<div class="refsect3">
+<a name="id-1.12.47.9.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cell_view</p></td>
+<td class="parameter_description"><p>the given cell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>column of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>row of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start</p></td>
+<td class="parameter_description"><p>a pointer to an gint value indicates the start offset of the selection</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end</p></td>
+<td class="parameter_description"><p>a pointer to an gint value indicates the end offset of the selection</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.47.9.8.7"></a><h4>Returns</h4>
+<p> whether the action is successful.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-copy-clipboard"></a><h3>e_cell_text_copy_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_text_copy_clipboard (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *cell_view</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Copys the selected text to clipboard.</p>
+<p>This API is most likely to be used by a11y implementations.</p>
+<div class="refsect3">
+<a name="id-1.12.47.9.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cell_view</p></td>
+<td class="parameter_description"><p>the given cell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>column of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>row of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-paste-clipboard"></a><h3>e_cell_text_paste_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_text_paste_clipboard (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *cell_view</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Pastes the text from the clipboardt.</p>
+<p>This API is most likely to be used by a11y implementations.</p>
+<div class="refsect3">
+<a name="id-1.12.47.9.10.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cell_view</p></td>
+<td class="parameter_description"><p>the given cell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>column of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>row of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-delete-selection"></a><h3>e_cell_text_delete_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_text_delete_selection (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *cell_view</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Deletes the selected text of the cell.</p>
+<p>This API is most likely to be used by a11y implementations.</p>
+<div class="refsect3">
+<a name="id-1.12.47.9.11.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cell_view</p></td>
+<td class="parameter_description"><p>the given cell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>column of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>row of the given cell in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-text-get-text-by-view"></a><h3>e_cell_text_get_text_by_view ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_cell_text_get_text_by_view (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *cell_view</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Get the cell's text directly from CellEdit,
+during editting this cell, the cell's text value maybe inconsistant
+with the text got from table_model.
+The caller should free the text after using it.</p>
+<p>This API is most likely to be used by a11y implementations.</p>
+<div class="refsect3">
+<a name="id-1.12.47.9.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cell_view</p></td>
+<td class="parameter_description"><p>the given cell view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>column of the given cell in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>row of the given cell in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ECellText.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ECellText-struct"></a><h3>struct ECellText</h3>
+<pre class="programlisting">struct ECellText;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ECellText.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ECellText--bg-color-column"></a><h3>The <code class="literal">“bg-color-column”</code> property</h3>
+<pre class="programlisting">  “bg-color-column”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellText--bold-column"></a><h3>The <code class="literal">“bold-column”</code> property</h3>
+<pre class="programlisting">  “bold-column”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellText--color-column"></a><h3>The <code class="literal">“color-column”</code> property</h3>
+<pre class="programlisting">  “color-column”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellText--editable"></a><h3>The <code class="literal">“editable”</code> property</h3>
+<pre class="programlisting">  “editable”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellText--strikeout-column"></a><h3>The <code class="literal">“strikeout-column”</code> property</h3>
+<pre class="programlisting">  “strikeout-column”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellText--underline-column"></a><h3>The <code class="literal">“underline-column”</code> property</h3>
+<pre class="programlisting">  “underline-column”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ECellText.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ECellText-text-deleted"></a><h3>The <code class="literal">“text-deleted”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ECellText.html" title="ECellText"><span class="type">ECellText</span></a> *ecelltext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>       arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>       arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>       arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>       arg5,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellText-text-inserted"></a><h3>The <code class="literal">“text-inserted”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ECellText.html" title="ECellText"><span class="type">ECellText</span></a> *ecelltext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>       arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>       arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>       arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>       arg5,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>Flags: Run First</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

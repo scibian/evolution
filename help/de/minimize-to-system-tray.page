@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="minimize-to-system-tray" xml:lang="de">
+
+  <info>
+    <desc>Über das Minimieren von Evolution in das Benachrichtigungsfeld.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.5.4" version="0.4" date="2012-07-08" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  </info>
+
+
+<title>Evolution in das Benachrichtigungsfeld minimieren</title>
+
+<p>GNOME hat von Haus aus ein <link xref="mail-received-notification">Benachrichtigungsfeld</link>, das ein Applet enthält, welches Benutzer über Systemaktualisierungen, Änderungen und Ereignisse unterrichtet. Hierzu zählt auch der Eingang neuer Nachrichten in Evolution. Es werden sämtliche E-Mail-Benachrichtigungen über diese Funktion von GNOME ausgegeben.</p>
+
+<p>In GNOME 2 kann das Benachrichtigungsfeld so angepasst werden, dass es mit Drittsoftware zu einem Systembereich wird. Diese ist möglicherweise in ihrer Softwareverwaltung verfügbar. Beispiel solcher Software ist <link href="http://code.google.com/p/tint2/">Tint2</link>. Dies ist in GNOME 3 nicht mehr möglich.</p>
+</page>

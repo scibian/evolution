@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="exporting-data-mail" xml:lang="ja">
+
+  <info>
+    <desc><app>Evolution</app> からメールのデータをエクスポートする方法です。</desc>
+
+    <link type="guide" xref="exporting-data"/>
+
+    <revision pkgversion="3.0.2" version="0.4" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>メールデータのエクスポート</title>
+
+<p>メールを <link href="https://en.wikipedia.org/wiki/Mbox">mbox</link> 形式でファイルに保存するには、メールを選択して<guiseq><gui>ファイル</gui><gui>mbox 形式で保存...</gui></guiseq>をクリックするか、メールを右クリックして <gui>mbox 形式で保存...</gui>をクリックします。</p>
+
+<p>The same steps apply to save a complete mail folder, but you have to mark all messages in it first.</p>
+<p><guiseq><gui>編集</gui><gui>すべて選択</gui></guiseq>をクリックするか、<keyseq><key>Ctrl</key><key>A</key></keyseq>を押すと、フォルダー内の全メールを選択できます。</p>
+
+</page>

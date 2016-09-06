@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="offline" xml:lang="el">
+
+  <info>
+    <desc>Για επανασύνδεση της αλληλογραφίας του Evolution.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+    <link type="seealso" xref="mail-working-offline"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Brian Grohe</name>
+      <email its:translate="no">grohe43@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+<title>Γιατί η αλληλογραφία του Evolution είναι εκτός σύνδεσης όταν η σύνδεση του δικτύου μου δουλεύει;</title>
+<p>Ίσως έχετε ξεκινήσει το Evolution με την επιλογή της γραμμής εντολών <cmd>--offline</cmd> που εξαναγκάζει σε κατάσταση εκτός σύνδεσης.</p>
+
+<p>Εάν δεν συμβαίνει αυτό και το Evolution δουλεύει κανονικά αλλά σταμάτησε ξαφνικά την σύνδεση με τους λογαριασμούς αλληλογραφίας, μπορεί να πατήσατε άθελα σας στο εικονίδιο σύνδεσης στην κάτω αριστερή γωνία. Όταν συνδέεστε, το εικονίδιο μοιάζει με ένα ζευγάρι καλτσών ενωμένων μαζί. Εάν οι κάλτσες είναι ανοικτές, δεν υπάρχει σύνδεση με τους λογαριασμούς αλληλογραφίας σας (και το κουμπί <gui style="button">Αποστολή/λήψη</gui> είναι αχνό). Πατήστε στο εικονίδιο για αλλαγή της κατάστασης του.</p>
+
+<p>Αν το πρόβλημα επιμένει και είστε σίγουροι ότι δεν πατήσατε το εικονίδιο, αλλά μπορείτε ακόμα να επικοινωνήσετε με το δίκτυο από άλλες εφαρμογές στο σύστημά σας (περιηγητές, FTP, SSH, αποστολή κλπ.) μπορεί η σύνδεση του δικτύου να μην είναι ρυθμισμένη κατάλληλα. Για περισσότερες πληροφορίες ρίξτε μια ματιά στην <link xref="help:gnome-help/net-problem" href="https://help.gnome.org/users/gnome-help/stable/net-problem">Βοήθεια επιφάνειας εργασίας</link> ή αναζητήστε βοήθεια από τις ομάδες υποστήριξης διανομής, καταλόγους αλληλογραφίας κλπ.</p>
+
+<note style="warning"><p>Η αναγκαστική κατάσταση εκτός σύνδεσης του Evolution αναφέρεται μόνο στην αλληλογραφία και δεν εφαρμόζεται στις επαφές και τα ημερολόγια.</p></note>
+
+</page>

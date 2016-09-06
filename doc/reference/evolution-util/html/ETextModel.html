@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETextModel</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch13.html" title="Text Processing">
+<link rel="prev" href="EText.html" title="EText">
+<link rel="next" href="ETextEventProcessor.html" title="ETextEventProcessor">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETextModel.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETextModel.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETextModel.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch13.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EText.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ETextEventProcessor.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETextModel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETextModel.top_of_page"></a>ETextModel</span></h2>
+<p>ETextModel</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETextModel.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ETextModel.html" title="ETextModel"><span class="returnvalue">ETextModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-new" title="e_text_model_new ()">e_text_model_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-changed" title="e_text_model_changed ()">e_text_model_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-cancel-completion" title="e_text_model_cancel_completion ()">e_text_model_cancel_completion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ETextModel.html#ETextModelReposFn" title="ETextModelReposFn ()">*ETextModelReposFn</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-reposition" title="e_text_model_reposition ()">e_text_model_reposition</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-validate-position" title="e_text_model_validate_position ()">e_text_model_validate_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-get-text" title="e_text_model_get_text ()">e_text_model_get_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-get-text-length" title="e_text_model_get_text_length ()">e_text_model_get_text_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-set-text" title="e_text_model_set_text ()">e_text_model_set_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-insert" title="e_text_model_insert ()">e_text_model_insert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-insert-length" title="e_text_model_insert_length ()">e_text_model_insert_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-prepend" title="e_text_model_prepend ()">e_text_model_prepend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-append" title="e_text_model_append ()">e_text_model_append</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-delete" title="e_text_model_delete ()">e_text_model_delete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-object-count" title="e_text_model_object_count ()">e_text_model_object_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-get-nth-object" title="e_text_model_get_nth_object ()">e_text_model_get_nth_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-strdup-nth-object" title="e_text_model_strdup_nth_object ()">e_text_model_strdup_nth_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-get-nth-object-bounds" title="e_text_model_get_nth_object_bounds ()">e_text_model_get_nth_object_bounds</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-get-object-at-offset" title="e_text_model_get_object_at_offset ()">e_text_model_get_object_at_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-get-object-at-pointer" title="e_text_model_get_object_at_pointer ()">e_text_model_get_object_at_pointer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-text-model-activate-nth-object" title="e_text_model_activate_nth_object ()">e_text_model_activate_nth_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-repos-absolute" title="e_repos_absolute ()">e_repos_absolute</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-repos-insert-shift" title="e_repos_insert_shift ()">e_repos_insert_shift</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETextModel.html#e-repos-delete-shift" title="e_repos_delete_shift ()">e_repos_delete_shift</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETextModel.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETextModel.html#ETextModel-cancel-completion" title="The “cancel-completion” signal">cancel-completion</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETextModel.html#ETextModel-changed" title="The “changed” signal">changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETextModel.html#ETextModel-object-activated" title="The “object-activated” signal">object-activated</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETextModel.html#ETextModel-reposition" title="The “reposition” signal">reposition</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETextModel.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETextModel.html#ETextModel-struct" title="struct ETextModel">ETextModel</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="ETextModel.html#EReposAbsolute" title="EReposAbsolute">EReposAbsolute</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="ETextModel.html#EReposInsertShift" title="EReposInsertShift">EReposInsertShift</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="ETextModel.html#EReposDeleteShift" title="EReposDeleteShift">EReposDeleteShift</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETextModel.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ETextModel
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETextModel.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETextModel.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-text-model-new"></a><h3>e_text_model_new ()</h3>
+<pre class="programlisting"><a class="link" href="ETextModel.html" title="ETextModel"><span class="returnvalue">ETextModel</span></a> *
+e_text_model_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-changed"></a><h3>e_text_model_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_changed (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-cancel-completion"></a><h3>e_text_model_cancel_completion ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_cancel_completion (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETextModelReposFn"></a><h3>ETextModelReposFn ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<span class="c_punctuation">(</span>*ETextModelReposFn<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> Param1</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> Param2</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-reposition"></a><h3>e_text_model_reposition ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_reposition (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                         <em class="parameter"><code><a class="link" href="ETextModel.html#ETextModelReposFn" title="ETextModelReposFn ()"><span class="type">ETextModelReposFn</span></a> fn</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> repos_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-validate-position"></a><h3>e_text_model_validate_position ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_text_model_validate_position (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-get-text"></a><h3>e_text_model_get_text ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_text_model_get_text (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-get-text-length"></a><h3>e_text_model_get_text_length ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_text_model_get_text_length (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-set-text"></a><h3>e_text_model_set_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_set_text (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-insert"></a><h3>e_text_model_insert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_insert (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-insert-length"></a><h3>e_text_model_insert_length ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_insert_length (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> length</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-prepend"></a><h3>e_text_model_prepend ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_prepend (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-append"></a><h3>e_text_model_append ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_append (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-delete"></a><h3>e_text_model_delete ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_delete (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> length</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-object-count"></a><h3>e_text_model_object_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_text_model_object_count (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-get-nth-object"></a><h3>e_text_model_get_nth_object ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_text_model_get_nth_object (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *len</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-strdup-nth-object"></a><h3>e_text_model_strdup_nth_object ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_text_model_strdup_nth_object (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-get-nth-object-bounds"></a><h3>e_text_model_get_nth_object_bounds ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_get_nth_object_bounds (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *start_pos</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *end_pos</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-get-object-at-offset"></a><h3>e_text_model_get_object_at_offset ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_text_model_get_object_at_offset (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> offset</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-get-object-at-pointer"></a><h3>e_text_model_get_object_at_pointer ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_text_model_get_object_at_pointer (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *c</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-model-activate-nth-object"></a><h3>e_text_model_activate_nth_object ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_model_activate_nth_object (<em class="parameter"><code><a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *model</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-repos-absolute"></a><h3>e_repos_absolute ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_repos_absolute (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-repos-insert-shift"></a><h3>e_repos_insert_shift ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_repos_insert_shift (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-repos-delete-shift"></a><h3>e_repos_delete_shift ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_repos_delete_shift (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETextModel.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETextModel-struct"></a><h3>struct ETextModel</h3>
+<pre class="programlisting">struct ETextModel;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EReposAbsolute"></a><h3>EReposAbsolute</h3>
+<pre class="programlisting">typedef struct {
+	ETextModel *model;
+	gint pos;  /* Position to move to.  Negative values count from the end buffer.
+		      (i.e. -1 puts cursor at the end, -2 one character from end, etc.) */
+} EReposAbsolute;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EReposInsertShift"></a><h3>EReposInsertShift</h3>
+<pre class="programlisting">typedef struct {
+	ETextModel *model;
+	gint pos;  /* Location of first inserted character. */
+	gint len;  /* Number of characters inserted. */
+} EReposInsertShift;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EReposDeleteShift"></a><h3>EReposDeleteShift</h3>
+<pre class="programlisting">typedef struct {
+	ETextModel *model;
+	gint pos;  /* Location of first deleted character. */
+	gint len;  /* Number of characters deleted. */
+} EReposDeleteShift;
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETextModel.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETextModel-cancel-completion"></a><h3>The <code class="literal">“cancel-completion”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *etextmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETextModel-changed"></a><h3>The <code class="literal">“changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *etextmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETextModel-object-activated"></a><h3>The <code class="literal">“object-activated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *etextmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETextModel-reposition"></a><h3>The <code class="literal">“reposition”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *etextmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

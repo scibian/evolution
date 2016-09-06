@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-search-folders-conditions" xml:lang="hu">
+
+  <info>
+    <desc>Keresőmappák készítéséhez használható feltételek.</desc>
+
+    <link type="seealso" xref="mail-search-folders"/>
+
+    <revision pkgversion="3.6.4" version="0.4" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-vfolders.html.en -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+    
+  </info>
+
+  <title>Használható keresőmappa-feltételek</title>
+
+<list>
+
+<!-- As filter and search folder conditions share a fair amount of options, those ones are centrally in one file that's 
+included by XInclude. See http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+<include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-filter-vfolder-conditions.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:item)"/>
+
+<item><p>Üzenet helye:</p>
+<p>Ellenőrzi, hogy a levél egy adott mappában van-e.</p><p>Ne feledje, hogy alapesetben az Evolution <gui>Kuka</gui> és <gui>Levélszemét</gui> mappái <link xref="mail-search-folders">keresőmappák</link>, így itt nem választhatók ki.</p></item>
+
+<item><p>Összes illesztése:</p>
+<p>Mindig alkalmaz egy műveletet minden üzenetre, feltétel nélkül. Ez a keresőmappák listájának végén lehet hasznos, azon üzenetek feldolgozására, amelyeket a listában előrébb lévő keresőmappák nem dolgoztak fel.</p></item>
+</list>
+</page>

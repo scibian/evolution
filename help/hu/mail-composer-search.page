@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-composer-search" xml:lang="hu">
+
+  <info>
+    <desc>Szöveg keresése a levélszerkesztőben.</desc>
+    
+    <link type="guide" xref="index#mail-composing"/>
+    <link type="guide" xref="searching-items"/>
+
+    <revision pkgversion="3.1.5" version="0.3" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+<title>Keresés a levélszerkesztőben</title>
+
+<p>A levélszerkesztő <gui>Szerkesztés</gui> menüjében számos szövegkeresési lehetőség érhető el.</p>
+
+<list>
+<item><p><gui>Keresés</gui>:</p><p>Írjon beg egy szót vagy kifejezést, és az Evolution megkeresi a leveleiben.</p></item>
+
+<item><p><gui>Keresés megismétlése</gui>:</p><p>Válassza ezt a menüpontot az utolsó keresés megismétléséhez.</p></item>
+
+<item><p><gui>Csere</gui>:</p><p>Szó vagy kifejezés keresése, és lecserélése valami másra.</p></item>
+</list>
+
+<p>Ezen menüpontok esetén kiválaszthatja a keresés irányát a kurzor pozíciójához képest. Megadhatja azt is, hogy a keresés megkülönböztesse-e kereséskor a kis- és nagybetűket.</p>
+<p>Ha megvannak a technikai ismeretei, akkor kereshet <link href="https://en.wikipedia.org/wiki/Regular_expression">reguláris kifejezések</link> használatával is.</p>
+
+</page>

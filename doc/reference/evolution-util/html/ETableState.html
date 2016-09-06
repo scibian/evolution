@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETableState</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ETableSpecification.html" title="ETableSpecification">
+<link rel="next" href="evolution-util-ETableSubsetVariable.html" title="ETableSubsetVariable">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETableState.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETableState.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ETableState.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETableSpecification.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="evolution-util-ETableSubsetVariable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETableState"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETableState.top_of_page"></a>ETableState</span></h2>
+<p>ETableState</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETableState.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-new" title="e_table_state_new ()">e_table_state_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-vanilla" title="e_table_state_vanilla ()">e_table_state_vanilla</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-parse-context-push" title="e_table_state_parse_context_push ()">e_table_state_parse_context_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-parse-context-pop" title="e_table_state_parse_context_pop ()">e_table_state_parse_context_pop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="returnvalue">_ETableSpecification</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-ref-specification" title="e_table_state_ref_specification ()">e_table_state_ref_specification</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-load-from-file" title="e_table_state_load_from_file ()">e_table_state_load_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-load-from-string" title="e_table_state_load_from_string ()">e_table_state_load_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-load-from-node" title="e_table_state_load_from_node ()">e_table_state_load_from_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-save-to-file" title="e_table_state_save_to_file ()">e_table_state_save_to_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-save-to-string" title="e_table_state_save_to_string ()">e_table_state_save_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-save-to-node" title="e_table_state_save_to_node ()">e_table_state_save_to_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableState.html#e-table-state-duplicate" title="e_table_state_duplicate ()">e_table_state_duplicate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableState.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> *</td>
+<td class="property_name"><a class="link" href="ETableState.html#ETableState--specification" title="The “specification” property">specification</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableState.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETableState.html#ETableState-struct" title="struct ETableState">ETableState</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableState.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ETableState
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETableState.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETableState.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-table-state-new"></a><h3>e_table_state_new ()</h3>
+<pre class="programlisting"><a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+e_table_state_new (<em class="parameter"><code><span class="type">struct _ETableSpecification</span> *specification</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-vanilla"></a><h3>e_table_state_vanilla ()</h3>
+<pre class="programlisting"><a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+e_table_state_vanilla (<em class="parameter"><code><span class="type">struct _ETableSpecification</span> *specification</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-parse-context-push"></a><h3>e_table_state_parse_context_push ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_state_parse_context_push (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParseContext"><span class="type">GMarkupParseContext</span></a> *context</code></em>,
+                                  <em class="parameter"><code><span class="type">struct _ETableSpecification</span> *specification</code></em>);</pre>
+<p>Creates a new <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> from a segment of XML data being fed to
+<em class="parameter"><code>context</code></em>
+.  Call this function for the appropriate opening tag from the</p>
+<em class="structfield"><code>start_element</code></em> callback of a <a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParser"><span class="type">GMarkupParser</span></a>,
+<p>then call <a class="link" href="ETableState.html#e-table-state-parse-context-pop" title="e_table_state_parse_context_pop ()"><code class="function">e_table_state_parse_context_pop()</code></a> for the corresponding
+closing tag from the <em class="structfield"><code>end_element</code></em> callback.</p>
+<div class="refsect3">
+<a name="id-1.12.28.8.4.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParseContext"><span class="type">GMarkupParseContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>specification</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-parse-context-pop"></a><h3>e_table_state_parse_context_pop ()</h3>
+<pre class="programlisting"><a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+e_table_state_parse_context_pop (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParseContext"><span class="type">GMarkupParseContext</span></a> *context</code></em>);</pre>
+<p>Creates a new <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> from a segment of XML data being fed to
+<em class="parameter"><code>context</code></em>
+.  Call <a class="link" href="ETableState.html#e-table-state-parse-context-push" title="e_table_state_parse_context_push ()"><code class="function">e_table_state_parse_context_push()</code></a> for the appropriate
+opening tag from the <em class="structfield"><code>start_element</code></em> callback of
+a <a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParser"><span class="type">GMarkupParser</span></a>, then call this function for the corresponding closing
+tag from the <em class="structfield"><code>end_element</code></em> callback.</p>
+<p>Unreference the newly-created <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when
+finished with it.</p>
+<div class="refsect3">
+<a name="id-1.12.28.8.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParseContext"><span class="type">GMarkupParseContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.28.8.5.7"></a><h4>Returns</h4>
+<p> an <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-ref-specification"></a><h3>e_table_state_ref_specification ()</h3>
+<pre class="programlisting">struct <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="returnvalue">_ETableSpecification</span></a> *
+e_table_state_ref_specification (<em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>);</pre>
+<p>Returns the <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> passed to <a class="link" href="ETableState.html#e-table-state-new" title="e_table_state_new ()"><code class="function">e_table_state_new()</code></a>.</p>
+<p>The returned <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> is referenced for thread-safety and must
+be unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.12.28.8.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.28.8.6.7"></a><h4>Returns</h4>
+<p> an <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-load-from-file"></a><h3>e_table_state_load_from_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_state_load_from_file (<em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-load-from-string"></a><h3>e_table_state_load_from_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_state_load_from_string (<em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *xml</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-load-from-node"></a><h3>e_table_state_load_from_node ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_state_load_from_node (<em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>,
+                              <em class="parameter"><code>const <span class="type">xmlNode</span> *node</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-save-to-file"></a><h3>e_table_state_save_to_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_state_save_to_file (<em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-save-to-string"></a><h3>e_table_state_save_to_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_table_state_save_to_string (<em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-save-to-node"></a><h3>e_table_state_save_to_node ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+e_table_state_save_to_node (<em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>,
+                            <em class="parameter"><code><span class="type">xmlNode</span> *parent</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-state-duplicate"></a><h3>e_table_state_duplicate ()</h3>
+<pre class="programlisting"><a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+e_table_state_duplicate (<em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>);</pre>
+<p>Creates a new <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> cloned from <em class="parameter"><code>state</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.12.28.8.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.28.8.13.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableState.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETableState-struct"></a><h3>struct ETableState</h3>
+<pre class="programlisting">struct ETableState;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableState.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ETableState--specification"></a><h3>The <code class="literal">“specification”</code> property</h3>
+<pre class="programlisting">  “specification”            <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> *</pre>
+<p>Specification for the table state.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

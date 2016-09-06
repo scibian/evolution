@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="tasks-local" xml:lang="cs">
+
+  <info>
+    <desc>Přidávání dalšího místního seznamu úkolů a poznámek.</desc>
+    
+    <link type="guide" xref="tasks-using-several-tasklists"/>
+
+    <revision pkgversion="3.1.5" version="0.3" date="2011-07-28" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+<title>Přidání dalšího místního seznamu úkolů a poznámek</title>
+
+<p>Chcete-li do Evolutionu přidat místní seznam poznámek, proveďte následující kroky: </p>
+<steps>
+<item><p>Klikněte na <guiseq><gui>Soubor</gui><gui>Nový</gui><gui>Seznam úkolů</gui></guiseq> nebo <guiseq><gui>Soubor</gui><gui>Nový</gui><gui>Seznam poznámek</gui></guiseq>.</p></item>
+<item><p>Vyberte typ <gui>V tomto počítači</gui>.</p></item>
+<item><p>Vložte název, který preferujete.</p></item>
+<item><p>Volitelně vyberte barvu, kterou preferujete.</p></item>
+<item><p>Klikněte na <gui style="button">Použít</gui>.</p></item>
+</steps>
+
+<p>Seznam úkolů bude přidán do seznamu se seznamy úkolů v Evolutionu.</p>
+
+</page>

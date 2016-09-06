@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-filters-not-working" xml:lang="el">
+
+  <info>
+    <desc>Διόρθωση προβλημάτων με φίλτρα αλληλογραφίας που δεν ταξινομούν και δεν οργανώνουν την αλληλογραφία όπως αναμένεται.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-filters"/>
+
+    <revision pkgversion="3.9.3" version="0.5" date="2013-06-24" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Τα φίλτρα αλληλογραφίας δεν δουλεύουν</title>
+
+<section id="order">
+<title>Σειρά φίλτρων</title>
+<p>Η σειρά των φίλτρων είναι πολύ σημαντική. Εφαρμόζονται στο αρχικό μήνυμα σε αλληλουχία, όπως σε συνταγή.</p>
+<p>Εάν το πρώτο σας φίλτρο έχει έναν κανόνα <gui>παύσης διεργασίας</gui>, τότε όλα τα μηνύματα που συμφωνούν με αυτό το φίλτρο θα αγνοήσουν όλα τα επόμενα φίλτρα.</p>
+<p>Όταν μετακινείτε ένα μήνυμα σε άλλο φάκελο, η "μετακίνηση" στην πραγματικότητα σημαίνει προσάρτηση ενός αντιγράφου του μηνύματος στον φάκελο προορισμού και σημειώνει το αρχικό μήνυμα για διαγραφή. Έτσι κάθε επόμενος κανόνας φίλτρου θα εφαρμοστεί στο αρχικό μήνυμα που είναι σημειωμένο τώρα για διαγραφή. Συνεπώς η μετακίνηση ενός μηνύματος πρέπει συνήθως να εμφανίζεται τελευταία στην αλληλουχία των κανόνων φίλτρων.</p>
+<p>Για να ελέγξετε τους κανόνες και τη σειρά τους σε υπάρχον φίλτρο, επιθεωρήστε τις ενέργειές του στην ενότητα <gui>έπειτα</gui> με <link xref="mail-filters#editing">επεξεργασία του φίλτρου</link>.</p>
+</section>
+
+<section id="several-clients">
+<title>Χρήση αρκετών πελατών αλληλογραφίας</title>
+<p>Ένα άλλο πράγμα που πρέπει να κρατάτε κατά νου είναι ότι τα φίλτρα εξαρτώνται από "νέα" σημαία που ορίζεται στον εξυπηρετητή, όταν ένα συγκεκριμένο μήνυμα αλληλογραφίας προσκομίζεται αρχικά από τον εξυπηρετητή. Εάν χρησιμοποιείτε έναν άλλον πελάτη αλληλογραφίας πέρα από το Evolution, μπορεί τα φίλτρα σας να μην δουλεύουν αυτόματα.</p>
+</section>
+
+<section id="filter-log">
+<title>Καταγραφή ενεργειών φίλτρων</title>
+<p>Εάν είναι ακόμα ασαφές γιατί τα φίλτρα δεν δουλεύουν όπως αναμένεται, μπορείτε να ενεργοποιήσετε την καταγραφή ενεργειών φίλτρων.</p>
+<list>
+<item><p>Κλείσιμο του Evolution.</p></item>
+<item><p>Άνοιγμα της εφαρμογής του <app>τερματικού</app>.</p></item>
+<item><p>Εκτελέστε την εντολή <cmd>gsettings set org.gnome.evolution.mail filters-log-actions true</cmd></p></item>
+<item><p>Εκτελέστε την εντολή <cmd>gsettings set org.gnome.evolution.mail filters-log-file "/home/myusername/my-filter-log"</cmd> και αντικαταστήστε το <cmd>myusername</cmd> από το όνομα χρήστη. Αυτό θα δημιουργήσει ένα αρχείο κειμένου με όνομα <file>my-filter-log</file> στον προσωπικό σας κατάλογο. Σημειώστε ότι η απόλυτη διαδρομή στο όνομα του αρχείου πρέπει να εισαχθεί· μια σύνταξη όπως <sys>~</sys> ή <sys>$HOME</sys> δεν θα δουλέψει.</p></item><!-- this is explained in https://bugzilla.gnome.org/show_bug.cgi?id=669471 -->
+<item><p>Εκκινήστε το Evolution.</p></item>
+<item><p>Προσκόμιση αλληλογραφίας για εφαρμογή φίλτρων.</p></item>
+<item><p>Άνοιγμα του αρχείου <file>my-filter-log</file> με έναν επεξεργαστή κειμένου για να δείτε ποιες ενέργειες φίλτρου έχουν εφαρμοστεί.</p></item>
+</list>
+
+<p>Σημειώστε ότι μπορείτε να απενεργοποιήσετε την καταγραφή φίλτρου ξανά χρησιμοποιώντας την εντολή <cmd>gsettings set org.gnome.evolution.mail filters-log-actions false</cmd></p>
+
+<p>Μπορείτε επίσης να χρησιμοποιήσετε την εφαρμογή <app>dconf-editor</app> για να το κάνετε αυτό.</p>
+</section>
+
+</page>

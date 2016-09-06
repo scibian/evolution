@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: Object Hierarchy</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="prev" href="EUrlEntry.html" title="EUrlEntry">
+<link rel="next" href="api-index-full.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="EUrlEntry.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="object-tree"></a>Object Hierarchy</h1></div></div></div>
+<pre class="screen">
+    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">├──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkBin.html">GtkBin</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkComboBox.html">GtkComboBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EActionComboBox.html" title="EActionComboBox">EActionComboBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECharsetComboBox.html" title="ECharsetComboBox">ECharsetComboBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAuthComboBox.html" title="EAuthComboBox">EAuthComboBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ESourceComboBox.html" title="ESourceComboBox">ESourceComboBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EClientComboBox.html" title="EClientComboBox">EClientComboBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EPortEntry.html" title="EPortEntry">EPortEntry</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EProxyComboBox.html" title="EProxyComboBox">EProxyComboBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkFrame.html">GtkFrame</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EActivityProxy.html" title="EActivityProxy">EActivityProxy</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkWindow.html">GtkWindow</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkDialog.html">GtkDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAlertDialog.html" title="EAlertDialog">EAlertDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAttachmentDialog.html" title="EAttachmentDialog">EAttachmentDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECategoriesDialog.html" title="ECategoriesDialog">ECategoriesDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECategoryEditor.html" title="ECategoryEditor">ECategoryEditor</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ENameSelectorDialog.html" title="ENameSelectorDialog">ENameSelectorDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ERuleEditor.html" title="ERuleEditor">ERuleEditor</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ESourceConfigDialog.html" title="ESourceConfigDialog">ESourceConfigDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ESourceSelectorDialog.html" title="ESourceSelectorDialog">ESourceSelectorDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ETableFieldChooserDialog.html" title="ETableFieldChooserDialog">ETableFieldChooserDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GalViewInstanceSaveAsDialog.html" title="GalViewInstanceSaveAsDialog">GalViewInstanceSaveAsDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkAssistant.html">GtkAssistant</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EImportAssistant.html" title="EImportAssistant">EImportAssistant</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EPreferencesWindow.html" title="EPreferencesWindow">EPreferencesWindow</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkToolItem.html">GtkToolItem</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkToolButton.html">GtkToolButton</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkMenuToolButton.html">GtkMenuToolButton</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>           <span class="lineart">╰──</span> <a class="link" href="EMenuToolButton.html" title="EMenuToolButton">EMenuToolButton</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkButton.html">GtkButton</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="EOnlineButton.html" title="EOnlineButton">EOnlineButton</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkBox.html">GtkBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkInfoBar.html">GtkInfoBar</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EActivityBar.html" title="EActivityBar">EActivityBar</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EAlertBar.html" title="EAlertBar">EAlertBar</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkVBox.html">GtkVBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAttachmentBar.html" title="EAttachmentBar">EAttachmentBar</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EImageChooser.html" title="EImageChooser">EImageChooser</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EPreviewPane.html" title="EPreviewPane">EPreviewPane</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ETableFieldChooser.html" title="ETableFieldChooser">ETableFieldChooser</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkHBox.html">GtkHBox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAttachmentButton.html" title="EAttachmentButton">EAttachmentButton</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ESearchBar.html" title="ESearchBar">ESearchBar</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ESourceConfig.html" title="ESourceConfig">ESourceConfig</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EBookSourceConfig.html" title="EBookSourceConfig">EBookSourceConfig</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECalSourceConfig.html" title="ECalSourceConfig">ECalSourceConfig</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EIntervalChooser.html" title="EIntervalChooser">EIntervalChooser</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EProxyPreferences.html" title="EProxyPreferences">EProxyPreferences</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame">ETreeViewFrame</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="EProxySelector.html" title="EProxySelector">EProxySelector</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="ETableColumnSelector.html" title="ETableColumnSelector">ETableColumnSelector</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkTreeView.html">GtkTreeView</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ESourceSelector.html" title="ESourceSelector">ESourceSelector</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAlarmSelector.html" title="EAlarmSelector">EAlarmSelector</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAutocompleteSelector.html" title="EAutocompleteSelector">EAutocompleteSelector</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EClientSelector.html" title="EClientSelector">EClientSelector</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EProxyLinkSelector.html" title="EProxyLinkSelector">EProxyLinkSelector</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAttachmentTreeView.html" title="EAttachmentTreeView">EAttachmentTreeView</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECategoriesSelector.html" title="ECategoriesSelector">ECategoriesSelector</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkIconView.html">GtkIconView</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAttachmentIconView.html" title="EAttachmentIconView">EAttachmentIconView</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EPictureGallery.html" title="EPictureGallery">EPictureGallery</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkPaned.html">GtkPaned</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkVPaned.html">GtkVPaned</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EAttachmentPaned.html" title="EAttachmentPaned">EAttachmentPaned</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EWebViewPreview.html" title="EWebViewPreview">EWebViewPreview</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EPaned.html" title="EPaned">EPaned</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkLayout.html">GtkLayout</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvas.html">GnomeCanvas</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECanvas.html" title="ECanvas">ECanvas</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="ECalendar.html" title="ECalendar">ECalendar</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> GtkHTML
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="EWebViewGtkHTML.html" title="EWebViewGtkHTML">EWebViewGtkHTML</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkGrid.html">GtkGrid</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECategoriesEditor.html" title="ECategoriesEditor">ECategoriesEditor</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EProxyEditor.html" title="EProxyEditor">EProxyEditor</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkTable.html">GtkTable</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ETable.html" title="ETable">ETable</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ETree.html" title="ETree">ETree</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/webkitgtk/webkitgtk-webkitwebview.html#WebKitWebView">WebKitWebView</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="EWebView.html" title="EWebView">EWebView</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EMap.html" title="EMap">EMap</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkEntry.html">GtkEntry</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="ENameSelectorEntry.html" title="ENameSelectorEntry">ENameSelectorEntry</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ENameSelectorList.html" title="ENameSelectorList">ENameSelectorList</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="ESpellEntry.html" title="ESpellEntry">ESpellEntry</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="EUrlEntry.html" title="EUrlEntry">EUrlEntry</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html">GnomeCanvasItem</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECalendarItem.html" title="ECalendarItem">ECalendarItem</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECanvasBackground.html" title="ECanvasBackground">ECanvasBackground</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasGroup.html">GnomeCanvasGroup</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECanvasVbox.html" title="ECanvasVbox">ECanvasVbox</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EReflow.html" title="EReflow">EReflow</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ETableClickToAdd.html" title="ETableClickToAdd">ETableClickToAdd</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ETableGroup.html" title="ETableGroup">ETableGroup</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="ETableGroupLeaf.html" title="ETableGroupLeaf">ETableGroupLeaf</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ETableFieldChooserItem.html" title="ETableFieldChooserItem">ETableFieldChooserItem</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ETableHeaderItem.html" title="ETableHeaderItem">ETableHeaderItem</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ETableItem.html" title="ETableItem">ETableItem</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EText.html" title="EText">EText</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkCellRenderer.html">GtkCellRenderer</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECellRendererColor.html" title="ECellRendererColor">ECellRendererColor</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EPrintable.html" title="EPrintable">EPrintable</a>
+    <span class="lineart">├──</span> <a class="link" href="EActivity.html" title="EActivity">EActivity</a>
+    <span class="lineart">├──</span> <a class="link" href="EAlert.html" title="EAlert">EAlert</a>
+    <span class="lineart">├──</span> <a class="link" href="EAttachment.html" title="EAttachment">EAttachment</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/eds/eds-EExtension.html#EExtension">EExtension</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EAttachmentHandler.html" title="EAttachmentHandler">EAttachmentHandler</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="EAttachmentHandler.html#EAttachmentHandlerImage">EAttachmentHandlerImage</a>
+    <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkListStore.html">GtkListStore</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EAttachmentStore.html" title="EAttachmentStore">EAttachmentStore</a>
+    <span class="lineart">├──</span> <a class="link" href="EBitArray.html" title="EBitArray">EBitArray</a>
+    <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkEntryCompletion.html">GtkEntryCompletion</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECategoryCompletion.html" title="ECategoryCompletion">ECategoryCompletion</a>
+    <span class="lineart">├──</span> <a class="link" href="ECell.html" title="ECell">ECell</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellToggle.html" title="ECellToggle">ECellToggle</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECellCheckbox.html" title="ECellCheckbox">ECellCheckbox</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellPopup.html" title="ECellPopup">ECellPopup</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellCombo.html" title="ECellCombo">ECellCombo</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECellDateEdit.html" title="ECellDateEdit">ECellDateEdit</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellText.html" title="ECellText">ECellText</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellDate.html" title="ECellDate">ECellDate</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellNumber.html" title="ECellNumber">ECellNumber</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellPercent.html" title="ECellPercent">ECellPercent</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECellSize.html" title="ECellSize">ECellSize</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellHbox.html" title="ECellHbox">ECellHbox</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellPixbuf.html" title="ECellPixbuf">ECellPixbuf</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ECellTree.html" title="ECellTree">ECellTree</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ECellVbox.html" title="ECellVbox">ECellVbox</a>
+    <span class="lineart">├──</span> <a class="link" href="EClientCache.html" title="EClientCache">EClientCache</a>
+    <span class="lineart">├──</span> <a class="link" href="EConfig.html" title="EConfig">EConfig</a>
+    <span class="lineart">├──</span> <a class="link" href="EPlugin.html#EPluginHook">EPluginHook</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EConfig.html#EConfigHook">EConfigHook</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EEvent.html#EEventHook">EEventHook</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EImport.html#EImportHook">EImportHook</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="evolution-util-EPluginUI.html#EPluginUIHook">EPluginUIHook</a>
+    <span class="lineart">├──</span> <a class="link" href="EContactStore.html" title="EContactStore">EContactStore</a>
+    <span class="lineart">├──</span> <a class="link" href="EDataCapture.html" title="EDataCapture">EDataCapture</a>
+    <span class="lineart">├──</span> <a class="link" href="EDestinationStore.html" title="EDestinationStore">EDestinationStore</a>
+    <span class="lineart">├──</span> <a class="link" href="EEvent.html" title="EEvent">EEvent</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/libsoup-2.4/SoupRequest.html">SoupRequest</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EFileRequest.html" title="EFileRequest">EFileRequest</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EStockRequest.html" title="EStockRequest">EStockRequest</a>
+    <span class="lineart">├──</span> <a class="link" href="EFilterElement.html" title="EFilterElement">EFilterElement</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EFilterInput.html" title="EFilterInput">EFilterInput</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EFilterCode.html" title="EFilterCode">EFilterCode</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EFilterColor.html" title="EFilterColor">EFilterColor</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EFilterDatespec.html" title="EFilterDatespec">EFilterDatespec</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EFilterFile.html" title="EFilterFile">EFilterFile</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EFilterInt.html" title="EFilterInt">EFilterInt</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EFilterOption.html" title="EFilterOption">EFilterOption</a>
+    <span class="lineart">├──</span> <a class="link" href="EFilterPart.html" title="EFilterPart">EFilterPart</a>
+    <span class="lineart">├──</span> <a class="link" href="EFilterRule.html" title="EFilterRule">EFilterRule</a>
+    <span class="lineart">├──</span> <a class="link" href="EFocusTracker.html" title="EFocusTracker">EFocusTracker</a>
+    <span class="lineart">├──</span> <a class="link" href="EImport.html" title="EImport">EImport</a>
+    <span class="lineart">├──</span> <a href="http://developer.gnome.org/gtk2/GtkAction.html">GtkAction</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="EMenuToolAction.html" title="EMenuToolAction">EMenuToolAction</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="EPopupAction.html" title="EPopupAction">EPopupAction</a>
+    <span class="lineart">├──</span> <a class="link" href="ENameSelector.html" title="ENameSelector">ENameSelector</a>
+    <span class="lineart">├──</span> <a class="link" href="ENameSelectorModel.html" title="ENameSelectorModel">ENameSelectorModel</a>
+    <span class="lineart">├──</span> <a class="link" href="EPhotoCache.html" title="EPhotoCache">EPhotoCache</a>
+    <span class="lineart">├──</span> <a class="link" href="EPlugin.html" title="EPlugin">EPlugin</a>
+    <span class="lineart">├──</span> <a class="link" href="EReflowModel.html" title="EReflowModel">EReflowModel</a>
+    <span class="lineart">├──</span> <a class="link" href="ERuleContext.html" title="ERuleContext">ERuleContext</a>
+    <span class="lineart">├──</span> <a class="link" href="ESelectionModel.html" title="ESelectionModel">ESelectionModel</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ESelectionModelArray.html" title="ESelectionModelArray">ESelectionModelArray</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="ESelectionModelSimple.html" title="ESelectionModelSimple">ESelectionModelSimple</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ETableSelectionModel.html" title="ETableSelectionModel">ETableSelectionModel</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ETreeSelectionModel.html" title="ETreeSelectionModel">ETreeSelectionModel</a>
+    <span class="lineart">├──</span> <a class="link" href="evolution-util-ESendOptions.html#ESendOptionsDialog">ESendOptionsDialog</a>
+    <span class="lineart">├──</span> <a class="link" href="ESorterArray.html" title="ESorterArray">ESorterArray</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableCol.html" title="ETableCol">ETableCol</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification">ETableColumnSpecification</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableConfig.html" title="ETableConfig">ETableConfig</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableExtras.html" title="ETableExtras">ETableExtras</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableHeader.html" title="ETableHeader">ETableHeader</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableSearch.html" title="ETableSearch">ETableSearch</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableSortInfo.html" title="ETableSortInfo">ETableSortInfo</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableSubset.html" title="ETableSubset">ETableSubset</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ETableSorted.html" title="ETableSorted">ETableSorted</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableSorter.html" title="ETableSorter">ETableSorter</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableSpecification.html" title="ETableSpecification">ETableSpecification</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableState.html" title="ETableState">ETableState</a>
+    <span class="lineart">├──</span> <a class="link" href="ETextEventProcessor.html" title="ETextEventProcessor">ETextEventProcessor</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="ETextEventProcessorEmacsLike.html" title="ETextEventProcessorEmacsLike">ETextEventProcessorEmacsLike</a>
+    <span class="lineart">├──</span> <a class="link" href="ETextModel.html" title="ETextModel">ETextModel</a>
+    <span class="lineart">├──</span> <a class="link" href="ETimezoneDialog.html" title="ETimezoneDialog">ETimezoneDialog</a>
+    <span class="lineart">├──</span> <a class="link" href="ETreeModelGenerator.html" title="ETreeModelGenerator">ETreeModelGenerator</a>
+    <span class="lineart">├──</span> <a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter">ETreeTableAdapter</a>
+    <span class="lineart">├──</span> <a class="link" href="GalViewCollection.html" title="GalViewCollection">GalViewCollection</a>
+    <span class="lineart">├──</span> <a class="link" href="GalView.html" title="GalView">GalView</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GalViewEtable.html" title="GalViewEtable">GalViewEtable</a>
+    <span class="lineart">╰──</span> <a class="link" href="GalViewInstance.html" title="GalViewInstance">GalViewInstance</a>
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">├──</span> <a class="link" href="EAlertSink.html" title="EAlertSink">EAlertSink</a>
+    <span class="lineart">├──</span> <a class="link" href="EAttachmentView.html" title="EAttachmentView">EAttachmentView</a>
+    <span class="lineart">├──</span> <a class="link" href="EPhotoSource.html" title="EPhotoSource">EPhotoSource</a>
+    <span class="lineart">├──</span> <a class="link" href="ESelectable.html" title="ESelectable">ESelectable</a>
+    <span class="lineart">├──</span> <a class="link" href="ESorter.html" title="ESorter">ESorter</a>
+    <span class="lineart">├──</span> <a class="link" href="ETableModel.html" title="ETableModel">ETableModel</a>
+    <span class="lineart">╰──</span> <a class="link" href="ETreeModel.html" title="ETreeModel">ETreeModel</a>
+</pre>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

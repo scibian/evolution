@@ -1,0 +1,2595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: Miscellaneous Utilities</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch01.html" title="Basic Utility Functions">
+<link rel="prev" href="evolution-util-Text-to-HTML-Conversion.html" title="Text to HTML Conversion">
+<link rel="next" href="evolution-util-Printing.html" title="Printing">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#evolution-util-Miscellaneous-Utilities.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="evolution-util-Text-to-HTML-Conversion.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="evolution-util-Printing.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="evolution-util-Miscellaneous-Utilities"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="evolution-util-Miscellaneous-Utilities.top_of_page"></a>Miscellaneous Utilities</span></h2>
+<p>Miscellaneous Utilities</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="evolution-util-Miscellaneous-Utilities.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-util-Miscellaneous-Utilities.html#EForeachFunc" title="EForeachFunc ()">*EForeachFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-get-accels-filename" title="e_get_accels_filename ()">e_get_accels_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-show-uri" title="e_show_uri ()">e_show_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-display-help" title="e_display_help ()">e_display_help</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-restore-window" title="e_restore_window ()">e_restore_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-lookup-action" title="e_lookup_action ()">e_lookup_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-lookup-action-group" title="e_lookup_action_group ()">e_lookup_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-action-compare-by-label" title="e_action_compare_by_label ()">e_action_compare_by_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-action-group-remove-all-actions" title="e_action_group_remove_all_actions ()">e_action_group_remove_all_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkRadioAction.html"><span class="returnvalue">GtkRadioAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-radio-action-get-current-action" title="e_radio_action_get_current_action ()">e_radio_action_get_current_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-action-group-add-actions-localized" title="e_action_group_add_actions_localized ()">e_action_group_add_actions_localized</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-builder-get-widget" title="e_builder_get_widget ()">e_builder_get_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-load-ui-builder-definition" title="e_load_ui_builder_definition ()">e_load_ui_builder_definition</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-load-ui-manager-definition" title="e_load_ui_manager_definition ()">e_load_ui_manager_definition</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-categories-add-change-hook" title="e_categories_add_change_hook ()">e_categories_add_change_hook</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-str-without-underscores" title="e_str_without_underscores ()">e_str_without_underscores</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-str-compare" title="e_str_compare ()">e_str_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-str-case-compare" title="e_str_case_compare ()">e_str_case_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-collate-compare" title="e_collate_compare ()">e_collate_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-int-compare" title="e_int_compare ()">e_int_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-color-to-value" title="e_color_to_value ()">e_color_to_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-rgba-to-value" title="e_rgba_to_value ()">e_rgba_to_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-format-number" title="e_format_number ()">e_format_number</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-util-Miscellaneous-Utilities.html#ESortCompareFunc" title="ESortCompareFunc ()">*ESortCompareFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-bsearch" title="e_bsearch ()">e_bsearch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gsize</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-strftime-fix-am-pm" title="e_strftime_fix_am_pm ()">e_strftime_fix_am_pm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gsize</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-utf8-strftime-fix-am-pm" title="e_utf8_strftime_fix_am_pm ()">e_utf8_strftime_fix_am_pm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-get-month-name" title="e_get_month_name ()">e_get_month_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-get-weekday-name" title="e_get_weekday_name ()">e_get_weekday_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-weekday-get-next" title="e_weekday_get_next ()">e_weekday_get_next</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-weekday-get-prev" title="e_weekday_get_prev ()">e_weekday_get_prev</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-weekday-add-days" title="e_weekday_add_days ()">e_weekday_add_days</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-weekday-subtract-days" title="e_weekday_subtract_days ()">e_weekday_subtract_days</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-weekday-get-days-between" title="e_weekday_get_days_between ()">e_weekday_get_days_between</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-weekday-to-tm-wday" title="e_weekday_to_tm_wday ()">e_weekday_to_tm_wday</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-weekday-from-tm-wday" title="e_weekday_from_tm_wday ()">e_weekday_from_tm_wday</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-flexible-strtod" title="e_flexible_strtod ()">e_flexible_strtod</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="evolution-util-Miscellaneous-Utilities.html#E-ASCII-DTOSTR-BUF-SIZE:CAPS" title="E_ASCII_DTOSTR_BUF_SIZE">E_ASCII_DTOSTR_BUF_SIZE</a></td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-ascii-dtostr" title="e_ascii_dtostr ()">e_ascii_dtostr</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-file-lock-create" title="e_file_lock_create ()">e_file_lock_create</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-file-lock-destroy" title="e_file_lock_destroy ()">e_file_lock_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-file-lock-exists" title="e_file_lock_exists ()">e_file_lock_exists</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-util-guess-mime-type" title="e_util_guess_mime_type ()">e_util_guess_mime_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-util-get-category-filter-options" title="e_util_get_category_filter_options ()">e_util_get_category_filter_options</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-util-get-searchable-categories" title="e_util_get_searchable_categories ()">e_util_get_searchable_categories</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-binding-transform-color-to-string" title="e_binding_transform_color_to_string ()">e_binding_transform_color_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-binding-transform-string-to-color" title="e_binding_transform_string_to_color ()">e_binding_transform_string_to_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-binding-transform-source-to-uid" title="e_binding_transform_source_to_uid ()">e_binding_transform_source_to_uid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-binding-transform-uid-to-source" title="e_binding_transform_uid_to_source ()">e_binding_transform_uid_to_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-charset-add-radio-actions" title="e_charset_add_radio_actions ()">e_charset_add_radio_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EActivity.html" title="EActivity"><span class="returnvalue">EActivity</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-file-replace-contents-async" title="e_file_replace_contents_async ()">e_file_replace_contents_async</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-file-replace-contents-finish" title="e_file_replace_contents_finish ()">e_file_replace_contents_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-mktemp" title="e_mktemp ()">e_mktemp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-mkstemp" title="e_mkstemp ()">e_mkstemp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-mkdtemp" title="e_mkdtemp ()">e_mkdtemp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-attach" title="e_widget_undo_attach ()">e_widget_undo_attach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-is-attached" title="e_widget_undo_is_attached ()">e_widget_undo_is_attached</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-has-undo" title="e_widget_undo_has_undo ()">e_widget_undo_has_undo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-has-redo" title="e_widget_undo_has_redo ()">e_widget_undo_has_redo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-describe-undo" title="e_widget_undo_describe_undo ()">e_widget_undo_describe_undo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-describe-redo" title="e_widget_undo_describe_redo ()">e_widget_undo_describe_redo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-do-undo" title="e_widget_undo_do_undo ()">e_widget_undo_do_undo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-do-redo" title="e_widget_undo_do_redo ()">e_widget_undo_do_redo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-reset" title="e_widget_undo_reset ()">e_widget_undo_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-Miscellaneous-Utilities.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="evolution-util-Miscellaneous-Utilities.html#EAutomaticActionPolicy" title="enum EAutomaticActionPolicy">EAutomaticActionPolicy</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="evolution-util-Miscellaneous-Utilities.html#EDateWeekday" title="enum EDateWeekday">EDateWeekday</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="evolution-util-Miscellaneous-Utilities.html#ERestoreWindowFlags" title="enum ERestoreWindowFlags">ERestoreWindowFlags</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-Miscellaneous-Utilities.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="evolution-util-Miscellaneous-Utilities.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="EForeachFunc"></a><h3>EForeachFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EForeachFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_row</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> closure</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-get-accels-filename"></a><h3>e_get_accels_filename ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_get_accels_filename (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns the name of the user data file containing custom keyboard
+accelerator specifications.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.3.5"></a><h4>Returns</h4>
+<p> filename for accelerator specifications</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-show-uri"></a><h3>e_show_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_show_uri (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+<p>Launches the default application to show the given URI.  The URI must
+be of a form understood by GIO.  If the URI cannot be shown, it presents
+a dialog describing the error.  The dialog is set as transient to <em class="parameter"><code>parent</code></em>
+
+if <em class="parameter"><code>parent</code></em>
+ is non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>a parent <a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the URI to show</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-display-help"></a><h3>e_display_help ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_display_help (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *link_id</code></em>);</pre>
+<p>Opens the user documentation to the section given by <em class="parameter"><code>link_id</code></em>
+, or to the
+table of contents if <em class="parameter"><code>link_id</code></em>
+ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  If the user documentation cannot
+be opened, it presents a dialog describing the error.  The dialog is set
+as transient to <em class="parameter"><code>parent</code></em>
+ if <em class="parameter"><code>parent</code></em>
+ is non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>a parent <a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>link_id</p></td>
+<td class="parameter_description"><p>help section to present or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-restore-window"></a><h3>e_restore_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_restore_window (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *settings_path</code></em>,
+                  <em class="parameter"><code><a class="link" href="evolution-util-Miscellaneous-Utilities.html#ERestoreWindowFlags" title="enum ERestoreWindowFlags"><span class="type">ERestoreWindowFlags</span></a> flags</code></em>);</pre>
+<p>This function can restore one of or both a window's size and position
+using <a href="https://developer.gnome.org/gio/unstable/GSettings.html"><span class="type">GSettings</span></a> keys at <em class="parameter"><code>settings_path</code></em>
+ which conform to the relocatable
+schema "org.gnome.evolution.window".</p>
+<p>If <a class="link" href="evolution-util-Miscellaneous-Utilities.html#E-RESTORE-WINDOW-SIZE:CAPS"><span class="type">E_RESTORE_WINDOW_SIZE</span></a> is present in <em class="parameter"><code>flags</code></em>
+, restore <em class="parameter"><code>window</code></em>
+'s
+previously recorded size and maximize state.</p>
+<p>If <a class="link" href="evolution-util-Miscellaneous-Utilities.html#E-RESTORE-WINDOW-POSITION:CAPS"><span class="type">E_RESTORE_WINDOW_POSITION</span></a> is present in <em class="parameter"><code>flags</code></em>
+, move <em class="parameter"><code>window</code></em>
+ to
+the previously recorded screen coordinates.</p>
+<p>The respective <a href="https://developer.gnome.org/gio/unstable/GSettings.html"><span class="type">GSettings</span></a> values will be updated when the window is
+resized and/or moved.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.6.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>settings_path</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GSettings.html"><span class="type">GSettings</span></a> path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>flags indicating which window features to restore</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-lookup-action"></a><h3>e_lookup_action ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_lookup_action (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a> *ui_manager</code></em>,
+                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Returns the first <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> named <em class="parameter"><code>action_name</code></em>
+ by traversing the
+list of action groups in <em class="parameter"><code>ui_manager</code></em>
+.  If no such action exists, the
+function emits a critical warning before returning <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, since this
+probably indicates a programming error and most code is not prepared
+to deal with lookup failures.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ui_manager</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>the name of an action</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.7.6"></a><h4>Returns</h4>
+<p> the first <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> named <em class="parameter"><code>action_name</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-lookup-action-group"></a><h3>e_lookup_action_group ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+e_lookup_action_group (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a> *ui_manager</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+<p>Returns the <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> in <em class="parameter"><code>ui_manager</code></em>
+ named <em class="parameter"><code>group_name</code></em>
+.  If no
+such action group exists, the function emits a critical warnings before
+returning <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, since this probably indicates a programming error and
+most code is not prepared to deal with lookup failures.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ui_manager</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>group_name</p></td>
+<td class="parameter_description"><p>the name of an action group</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.8.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> named <em class="parameter"><code>group_name</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-action-compare-by-label"></a><h3>e_action_compare_by_label ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_action_compare_by_label (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *action1</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *action2</code></em>);</pre>
+<p>Compares the labels for <em class="parameter"><code>action1</code></em>
+ and <em class="parameter"><code>action2</code></em>
+ using <a href="https://developer.gnome.org/glib/unstable/glib-Unicode-Manipulation.html#g-utf8-collate"><code class="function">g_utf8_collate()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>action1</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action2</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.9.6"></a><h4>Returns</h4>
+<p> &lt; 0 if <em class="parameter"><code>action1</code></em>
+compares before <em class="parameter"><code>action2</code></em>
+, 0 if they
+compare equal, &gt; 0 if <em class="parameter"><code>action1</code></em>
+compares after <em class="parameter"><code>action2</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-action-group-remove-all-actions"></a><h3>e_action_group_remove_all_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_action_group_remove_all_actions (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> *action_group</code></em>);</pre>
+<p>Removes all actions from the action group.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>action_group</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-radio-action-get-current-action"></a><h3>e_radio_action_get_current_action ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkRadioAction.html"><span class="returnvalue">GtkRadioAction</span></a> *
+e_radio_action_get_current_action (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkRadioAction.html"><span class="type">GtkRadioAction</span></a> *radio_action</code></em>);</pre>
+<p>Returns the currently active member of the group to which <em class="parameter"><code>radio_action</code></em>
+
+belongs.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>radio_action</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkRadioAction.html"><span class="type">GtkRadioAction</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.11.6"></a><h4>Returns</h4>
+<p> the currently active group member</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-action-group-add-actions-localized"></a><h3>e_action_group_add_actions_localized ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_action_group_add_actions_localized (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> *action_group</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *translation_domain</code></em>,
+                                      <em class="parameter"><code>const <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html#GtkActionEntry"><span class="type">GtkActionEntry</span></a> *entries</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Adds <span class="type">GtkAction-s</span> defined by <em class="parameter"><code>entries</code></em>
+ to <em class="parameter"><code>action_group</code></em>
+, with action's
+label and tooltip localized in the given translation domain, instead
+of the domain set on the <em class="parameter"><code>action_group</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>action_group</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> to add <em class="parameter"><code>entries</code></em>
+to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>translation_domain</p></td>
+<td class="parameter_description"><p>a translation domain to use
+to translate label and tooltip strings in <em class="parameter"><code>entries</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p> an array of action descriptions. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_entries]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_entries</p></td>
+<td class="parameter_description"><p>the number of entries</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to the action callbacks</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-builder-get-widget"></a><h3>e_builder_get_widget ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_builder_get_widget (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="type">GtkBuilder</span></a> *builder</code></em>,
+                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *widget_name</code></em>);</pre>
+<p>Gets the widget named <em class="parameter"><code>widget_name</code></em>
+.  Note that this function does not
+increment the reference count of the returned widget.  If <em class="parameter"><code>widget_name</code></em>
+
+could not be found in the <em class="parameter"><code>builder</code></em>
+'s object tree, a run-time
+warning is emitted since this usually indicates a programming error.</p>
+<p>This is a convenience function to work around the awkwardness of
+<a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="type">GtkBuilder</span></a> returning <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> pointers, when the vast majority of
+the time you want a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> pointer.</p>
+<p>If you need something from <em class="parameter"><code>builder</code></em>
+ other than a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a>, or you
+want to test for the existence of some widget name without incurring
+a run-time warning, use <a href="http://developer.gnome.org/gtk2/GtkBuilder.html#gtk-builder-get-object"><code class="function">gtk_builder_get_object()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.13.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>builder</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="type">GtkBuilder</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>widget_name</p></td>
+<td class="parameter_description"><p>name of a widget in <em class="parameter"><code>builder</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.13.8"></a><h4>Returns</h4>
+<p> the widget named <em class="parameter"><code>widget_name</code></em>
+, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-load-ui-builder-definition"></a><h3>e_load_ui_builder_definition ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_load_ui_builder_definition (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="type">GtkBuilder</span></a> *builder</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *basename</code></em>);</pre>
+<p>Loads a UI definition into <em class="parameter"><code>builder</code></em>
+ from Evolution's UI directory.
+Failure here is fatal, since the application can't function without
+its UI definitions.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>builder</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="type">GtkBuilder</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>basename</p></td>
+<td class="parameter_description"><p>basename of the UI definition file</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-load-ui-manager-definition"></a><h3>e_load_ui_manager_definition ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+e_load_ui_manager_definition (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a> *ui_manager</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *basename</code></em>);</pre>
+<p>Loads a UI definition into <em class="parameter"><code>ui_manager</code></em>
+ from Evolution's UI directory.
+Failure here is fatal, since the application can't function without
+its UI definitions.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ui_manager</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="type">GtkUIManager</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>basename</p></td>
+<td class="parameter_description"><p>basename of the UI definition file</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.15.6"></a><h4>Returns</h4>
+<p> The merge ID for the merged UI.  The merge ID can be used to
+unmerge the UI with <a href="http://developer.gnome.org/gtk2/GtkUIManager.html#gtk-ui-manager-remove-ui"><code class="function">gtk_ui_manager_remove_ui()</code></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-categories-add-change-hook"></a><h3>e_categories_add_change_hook ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_categories_add_change_hook (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Hook-Functions.html#GHookFunc"><span class="type">GHookFunc</span></a> func</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> object</code></em>);</pre>
+<p>A saner alternative to <a href="/usr/share/gtk-doc/html/eds/eds-ECategories.html#e-categories-register-change-listener"><code class="function">e_categories_register_change_listener()</code></a>.</p>
+<p>Adds a hook function to be called when a category is added, removed or
+modified.  If <em class="parameter"><code>object</code></em>
+ is not <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the hook function is automatically
+removed when <em class="parameter"><code>object</code></em>
+ is finalized.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.16.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>a hook function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> to be passed to <em class="parameter"><code>func</code></em>
+, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-str-without-underscores"></a><h3>e_str_without_underscores ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_str_without_underscores (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+<p>Strips underscores from a string in the same way
+<em class="parameter"><code>gtk_label_new_with_mnemonics</code></em>
+ does.  The returned string should be freed
+using <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>the string to strip underscores from</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.17.6"></a><h4>Returns</h4>
+<p> a newly-allocated string without underscores</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-str-compare"></a><h3>e_str_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_str_compare (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> x</code></em>,
+               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> y</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-str-case-compare"></a><h3>e_str_case_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_str_case_compare (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> x</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> y</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-collate-compare"></a><h3>e_collate_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_collate_compare (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> x</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> y</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-int-compare"></a><h3>e_int_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_int_compare (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> x</code></em>,
+               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> y</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-color-to-value"></a><h3>e_color_to_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint32</span>
+e_color_to_value (<em class="parameter"><code>const <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+<p>Converts a <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to a 24-bit RGB color value.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>color</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.22.6"></a><h4>Returns</h4>
+<p> a 24-bit color value</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rgba-to-value"></a><h3>e_rgba_to_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint32</span>
+e_rgba_to_value (<em class="parameter"><code>const <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Converts <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> to a 24-bit RGB color value</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.23.6"></a><h4>Returns</h4>
+<p> a 24-bit color value</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-format-number"></a><h3>e_format_number ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_format_number (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> number</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ESortCompareFunc"></a><h3>ESortCompareFunc ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<span class="c_punctuation">(</span>*ESortCompareFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> first</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> second</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> closure</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-bsearch"></a><h3>e_bsearch ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_bsearch (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> key</code></em>,
+           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> base</code></em>,
+           <em class="parameter"><code><span class="type">gsize</span> nmemb</code></em>,
+           <em class="parameter"><code><span class="type">gsize</span> size</code></em>,
+           <em class="parameter"><code><a class="link" href="evolution-util-Miscellaneous-Utilities.html#ESortCompareFunc" title="ESortCompareFunc ()"><span class="type">ESortCompareFunc</span></a> compare</code></em>,
+           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> closure</code></em>,
+           <em class="parameter"><code><span class="type">gsize</span> *start</code></em>,
+           <em class="parameter"><code><span class="type">gsize</span> *end</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-strftime-fix-am-pm"></a><h3>e_strftime_fix_am_pm ()</h3>
+<pre class="programlisting"><span class="returnvalue">gsize</span>
+e_strftime_fix_am_pm (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                      <em class="parameter"><code><span class="type">gsize</span> max</code></em>,
+                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *fmt</code></em>,
+                      <em class="parameter"><code>const <span class="type">struct tm</span> *tm</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-utf8-strftime-fix-am-pm"></a><h3>e_utf8_strftime_fix_am_pm ()</h3>
+<pre class="programlisting"><span class="returnvalue">gsize</span>
+e_utf8_strftime_fix_am_pm (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                           <em class="parameter"><code><span class="type">gsize</span> max</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *fmt</code></em>,
+                           <em class="parameter"><code>const <span class="type">struct tm</span> *tm</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-get-month-name"></a><h3>e_get_month_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_get_month_name (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateMonth"><span class="type">GDateMonth</span></a> month</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> abbreviated</code></em>);</pre>
+<p>Returns the localized name for <em class="parameter"><code>month</code></em>
+.  If <em class="parameter"><code>abbreviated</code></em>
+ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>,
+returns the locale's abbreviated month name.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.29.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>month</p></td>
+<td class="parameter_description"><p>month index</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>abbreviated</p></td>
+<td class="parameter_description"><p>if <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, abbreviate the month name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.29.6"></a><h4>Returns</h4>
+<p> localized month name</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-get-weekday-name"></a><h3>e_get_weekday_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_get_weekday_name (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> weekday</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> abbreviated</code></em>);</pre>
+<p>Returns the localized name for <em class="parameter"><code>weekday</code></em>
+.  If <em class="parameter"><code>abbreviated</code></em>
+ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>,
+returns the locale's abbreviated weekday name.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>weekday</p></td>
+<td class="parameter_description"><p>weekday index</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>abbreviated</p></td>
+<td class="parameter_description"><p>if <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, abbreviate the weekday name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.30.6"></a><h4>Returns</h4>
+<p> localized weekday name</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-weekday-get-next"></a><h3>e_weekday_get_next ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+e_weekday_get_next (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> weekday</code></em>);</pre>
+<p>Returns the <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> after <em class="parameter"><code>weekday</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.31.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>weekday</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.31.6"></a><h4>Returns</h4>
+<p> the day after <em class="parameter"><code>weekday</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-weekday-get-prev"></a><h3>e_weekday_get_prev ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+e_weekday_get_prev (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> weekday</code></em>);</pre>
+<p>Returns the <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> before <em class="parameter"><code>weekday</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.32.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>weekday</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.32.6"></a><h4>Returns</h4>
+<p> the day before <em class="parameter"><code>weekday</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-weekday-add-days"></a><h3>e_weekday_add_days ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+e_weekday_add_days (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> weekday</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_days</code></em>);</pre>
+<p>Increments <em class="parameter"><code>weekday</code></em>
+ by <em class="parameter"><code>n_days</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.33.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>weekday</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_days</p></td>
+<td class="parameter_description"><p>number of days to add</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.33.6"></a><h4>Returns</h4>
+<p> a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-weekday-subtract-days"></a><h3>e_weekday_subtract_days ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+e_weekday_subtract_days (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> weekday</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_days</code></em>);</pre>
+<p>Decrements <em class="parameter"><code>weekday</code></em>
+ by <em class="parameter"><code>n_days</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.34.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>weekday</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_days</p></td>
+<td class="parameter_description"><p>number of days to subtract</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.34.6"></a><h4>Returns</h4>
+<p> a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-weekday-get-days-between"></a><h3>e_weekday_get_days_between ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+e_weekday_get_days_between (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> weekday1</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> weekday2</code></em>);</pre>
+<p>Counts the number of days starting at <em class="parameter"><code>weekday1</code></em>
+ and ending at <em class="parameter"><code>weekday2</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.35.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>weekday1</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>weekday2</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.35.6"></a><h4>Returns</h4>
+<p> the number of days</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-weekday-to-tm-wday"></a><h3>e_weekday_to_tm_wday ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_weekday_to_tm_wday (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> weekday</code></em>);</pre>
+<p>Converts a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> to the numbering used in
+<span class="structname">struct tm</span>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.36.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>weekday</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.36.6"></a><h4>Returns</h4>
+<p> number of days since Sunday (0 - 6)</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-weekday-from-tm-wday"></a><h3>e_weekday_from_tm_wday ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+e_weekday_from_tm_wday (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> tm_wday</code></em>);</pre>
+<p>Converts a weekday in the numbering used in
+<span class="structname">struct tm</span> to a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.37.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tm_wday</p></td>
+<td class="parameter_description"><p>number of days since Sunday (0 - 6)</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.37.6"></a><h4>Returns</h4>
+<p> a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-flexible-strtod"></a><h3>e_flexible_strtod ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+e_flexible_strtod (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nptr</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **endptr</code></em>);</pre>
+<p>Converts a string to a gdouble value.  This function detects
+strings either in the standard C locale or in the current locale.</p>
+<p>This function is typically used when reading configuration files or
+other non-user input that should not be locale dependent, but may
+have been in the past.  To handle input from the user you should
+normally use the locale-sensitive system strtod function.</p>
+<p>To convert from a double to a string in a locale-insensitive way, use
+<em class="parameter"><code>g_ascii_dtostr</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.38.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nptr</p></td>
+<td class="parameter_description"><p>the string to convert to a numeric value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>endptr</p></td>
+<td class="parameter_description"><p>if non-NULL, it returns the character after
+the last character used in the conversion.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.38.8"></a><h4>Returns</h4>
+<p> the gdouble value</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-ASCII-DTOSTR-BUF-SIZE:CAPS"></a><h3>E_ASCII_DTOSTR_BUF_SIZE</h3>
+<pre class="programlisting">#define E_ASCII_DTOSTR_BUF_SIZE (DBL_DIG + 12 + 10)
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-ascii-dtostr"></a><h3>e_ascii_dtostr ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_ascii_dtostr (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *buffer</code></em>,
+                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> buf_len</code></em>,
+                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *format</code></em>,
+                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> d</code></em>);</pre>
+<p>Converts a double to a string, using the '.' as
+decimal_point. To format the number you pass in
+a printf-style formating string. Allowed conversion
+specifiers are eEfFgG.</p>
+<p>If you want to generates enough precision that converting
+the string back using <em class="parameter"><code>g_strtod</code></em>
+ gives the same machine-number
+(on machines with IEEE compatible 64bit doubles) use the format
+string "%.17g". If you do this it is guaranteed that the size
+of the resulting string will never be larger than
+<em class="parameter"><code>G_ASCII_DTOSTR_BUF_SIZE</code></em>
+ bytes.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.40.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A buffer to place the resulting string in</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf_len</p></td>
+<td class="parameter_description"><p>The length of the buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>The printf-style format to use for the
+code to use for converting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>d</p></td>
+<td class="parameter_description"><p>The double to convert</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.40.7"></a><h4>Returns</h4>
+<p> the pointer to the buffer with the converted string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-file-lock-create"></a><h3>e_file_lock_create ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_file_lock_create (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-file-lock-destroy"></a><h3>e_file_lock_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_file_lock_destroy (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-file-lock-exists"></a><h3>e_file_lock_exists ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_file_lock_exists (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-util-guess-mime-type"></a><h3>e_util_guess_mime_type ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_util_guess_mime_type (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> localfile</code></em>);</pre>
+<p>Tries to determine the MIME type for <em class="parameter"><code>filename</code></em>
+.  Free the returned
+string with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.44.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>a local file name, or URI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>localfile</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to check the file content, FALSE to check only the name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.44.6"></a><h4>Returns</h4>
+<p> the MIME type of <em class="parameter"><code>filename</code></em>
+, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the the MIME type could
+not be determined</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-util-get-category-filter-options"></a><h3>e_util_get_category_filter_options ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+e_util_get_category_filter_options (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-util-get-searchable-categories"></a><h3>e_util_get_searchable_categories ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_util_get_searchable_categories (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns list of searchable categories only. The list should
+be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a> when done with it, but the items
+are internal strings, names of categories, which should not
+be touched in other than read-only way, in other words the same
+restrictions as for <a href="/usr/share/gtk-doc/html/eds/eds-ECategories.html#e-categories-get-list"><code class="function">e_categories_get_list()</code></a> applies here too.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-binding-transform-color-to-string"></a><h3>e_binding_transform_color_to_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_binding_transform_color_to_string (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a> *binding</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *source_value</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *target_value</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> not_used</code></em>);</pre>
+<p>Transforms a <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> value to a color string specification.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.47.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>binding</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_value</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> of type <span class="type">GDK_TYPE_COLOR</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_value</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> of type <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-STRING:CAPS"><span class="type">G_TYPE_STRING</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>not_used</p></td>
+<td class="parameter_description"><p>not used</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.47.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> always</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-binding-transform-string-to-color"></a><h3>e_binding_transform_string_to_color ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_binding_transform_string_to_color (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a> *binding</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *source_value</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *target_value</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> not_used</code></em>);</pre>
+<p>Transforms a color string specification to a <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.48.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>binding</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_value</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> of type <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-STRING:CAPS"><span class="type">G_TYPE_STRING</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_value</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> of type <span class="type">GDK_TYPE_COLOR</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>not_used</p></td>
+<td class="parameter_description"><p>not used</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.48.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if color string specification was valid</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-binding-transform-source-to-uid"></a><h3>e_binding_transform_source_to_uid ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_binding_transform_source_to_uid (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a> *binding</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *source_value</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *target_value</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *registry</code></em>);</pre>
+<p>Transforms an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> object to its UID string.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.49.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>binding</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_value</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> of type <span class="type">E_TYPE_SOURCE</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_value</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> of type <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-STRING:CAPS"><span class="type">G_TYPE_STRING</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>registry</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.49.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>source_value</code></em>
+was an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> object</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-binding-transform-uid-to-source"></a><h3>e_binding_transform_uid_to_source ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_binding_transform_uid_to_source (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a> *binding</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *source_value</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *target_value</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *registry</code></em>);</pre>
+<p>Transforms an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> UID string to the corresponding <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> object
+in <em class="parameter"><code>registry</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.50.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>binding</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_value</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> of type <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-STRING:CAPS"><span class="type">G_TYPE_STRING</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_value</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> of type <span class="type">E_TYPE_SOURCe</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>registry</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.50.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>registry</code></em>
+had an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> object with a matching
+UID string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-charset-add-radio-actions"></a><h3>e_charset_add_radio_actions ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+e_charset_add_radio_actions (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> *action_group</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_prefix</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *default_charset</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Closures.html#GCallback"><span class="type">GCallback</span></a> callback</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Adds a set of <a href="http://developer.gnome.org/gtk2/GtkRadioAction.html"><span class="type">GtkRadioActions</span></a> for available character sets to
+<em class="parameter"><code>action_group</code></em>
+.  The <em class="parameter"><code>default_charset</code></em>
+ (or locale character set if
+<em class="parameter"><code>default_charset</code></em>
+ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>) will be added first, and selected by
+default (except that ISO-8859-1 will always be used instead of
+US-ASCII).  Any other character sets of the same language class as
+the default will be added next, followed by the remaining character
+sets.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.51.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>action_group</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_prefix</p></td>
+<td class="parameter_description"><p>a prefix for action names, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_charset</p></td>
+<td class="parameter_description"><p>the default character set, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use the
+locale character set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>a callback function for actions in the group, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data to be passed to <em class="parameter"><code>callback</code></em>
+, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.51.6"></a><h4>Returns</h4>
+<p> the radio action group</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-file-replace-contents-async"></a><h3>e_file_replace_contents_async ()</h3>
+<pre class="programlisting"><a class="link" href="EActivity.html" title="EActivity"><span class="returnvalue">EActivity</span></a> *
+e_file_replace_contents_async (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *contents</code></em>,
+                               <em class="parameter"><code><span class="type">gsize</span> length</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *etag</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> make_backup</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html#GFileCreateFlags"><span class="type">GFileCreateFlags</span></a> flags</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>This is a wrapper for <a href="https://developer.gnome.org/gio/unstable/GFile.html#g-file-replace-contents-async"><code class="function">g_file_replace_contents_async()</code></a> that also returns
+an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> to track the file operation.  Cancelling the activity will
+cancel the file operation.  See <a href="https://developer.gnome.org/gio/unstable/GFile.html#g-file-replace-contents-async"><code class="function">g_file_replace_contents_async()</code></a> for more
+details.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.52.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>input <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>contents</p></td>
+<td class="parameter_description"><p>string of contents to replace the file with</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>the length of <em class="parameter"><code>contents</code></em>
+in bytes</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>etag</p></td>
+<td class="parameter_description"><p>a new entity tag for the <em class="parameter"><code>file</code></em>
+, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>make_backup</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a backup should be created</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>a set of <a href="https://developer.gnome.org/gio/unstable/GFile.html#GFileCreateFlags"><span class="type">GFileCreateFlags</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when the request is satisfied</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the data to pass to the callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.52.6"></a><h4>Returns</h4>
+<p> an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> for the file operation</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-file-replace-contents-finish"></a><h3>e_file_replace_contents_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_file_replace_contents_finish (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **new_etag</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Finishes an asynchronous replace of the given <em class="parameter"><code>file</code></em>
+.  See
+<a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-file-replace-contents-async" title="e_file_replace_contents_async ()"><code class="function">e_file_replace_contents_async()</code></a>.  Sets <em class="parameter"><code>new_etag</code></em>
+ to the new entity
+tag for the document, if present.  Free it with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when it is
+no longer needed.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.53.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>input <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_etag</p></td>
+<td class="parameter_description"><p>return location for a new entity tag</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.53.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mktemp"></a><h3>e_mktemp ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mktemp (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *template</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mkstemp"></a><h3>e_mkstemp ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_mkstemp (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *template</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mkdtemp"></a><h3>e_mkdtemp ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mkdtemp (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *template</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-attach"></a><h3>e_widget_undo_attach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_widget_undo_attach (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>,
+                      <em class="parameter"><code><span class="type">struct _EFocusTracker</span> *focus_tracker</code></em>);</pre>
+<p>The function does nothing, if the widget is not of a supported type
+for undo functionality, same as when the undo is already attached.
+It is ensured that the actions of the provided <em class="parameter"><code>focus_tracker</code></em>
+ are
+updated on change of the <em class="parameter"><code>widget</code></em>
+.</p>
+<p>See <em class="parameter"><code><a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-is-attached" title="e_widget_undo_is_attached ()"><code class="function">e_widget_undo_is_attached()</code></a></code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.57.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a>, where to attach undo functionality</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>focus_tracker</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EFocusTracker.html" title="EFocusTracker"><span class="type">EFocusTracker</span></a>, can be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-is-attached"></a><h3>e_widget_undo_is_attached ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_widget_undo_is_attached (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<p>Checks whether the given widget has already attached an undo
+functionality - it is done with <em class="parameter"><code><a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-attach" title="e_widget_undo_attach ()"><code class="function">e_widget_undo_attach()</code></a></code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.58.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a>, where to test whether undo functionality is attached.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.58.6"></a><h4>Returns</h4>
+<p> Whether the given <em class="parameter"><code>widget</code></em>
+has already attached undo functionality.</p>
+<p></p>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-has-undo"></a><h3>e_widget_undo_has_undo ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_widget_undo_has_undo (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.4.6.59.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.59.5"></a><h4>Returns</h4>
+<p> Whether the given <em class="parameter"><code>widget</code></em>
+has any undo available.</p>
+<p>See: <em class="parameter"><code>e_widget_undo_describe_undo</code></em>
+, <em class="parameter"><code>e_widget_undo_do_undo</code></em>
+</p>
+<p></p>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-has-redo"></a><h3>e_widget_undo_has_redo ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_widget_undo_has_redo (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.4.6.60.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.60.5"></a><h4>Returns</h4>
+<p> Whether the given <em class="parameter"><code>widget</code></em>
+has any redo available.</p>
+<p>See: <em class="parameter"><code>e_widget_undo_describe_redo</code></em>
+, <em class="parameter"><code>e_widget_undo_do_redo</code></em>
+</p>
+<p></p>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-describe-undo"></a><h3>e_widget_undo_describe_undo ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_widget_undo_describe_undo (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.4.6.61.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.61.5"></a><h4>Returns</h4>
+<p> Description of a top undo action available
+for the <em class="parameter"><code>widget</code></em>
+, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> when there is no undo action. Returned pointer,
+if not <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, should be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<p>See: <em class="parameter"><code>e_widget_undo_has_undo</code></em>
+, <em class="parameter"><code>e_widget_undo_do_undo</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-describe-redo"></a><h3>e_widget_undo_describe_redo ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_widget_undo_describe_redo (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.4.6.62.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.6.62.5"></a><h4>Returns</h4>
+<p> Description of a top redo action available
+for the <em class="parameter"><code>widget</code></em>
+, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> when there is no redo action. Returned pointer,
+if not <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, should be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<p>See: <em class="parameter"><code>e_widget_undo_has_redo</code></em>
+, <em class="parameter"><code>e_widget_undo_do_redo</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-do-undo"></a><h3>e_widget_undo_do_undo ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_widget_undo_do_undo (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<p>Applies the top undo action on the <em class="parameter"><code>widget</code></em>
+, which also remembers
+a redo action. It does nothing if the widget doesn't have
+attached undo functionality (<em class="parameter"><code><a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-attach" title="e_widget_undo_attach ()"><code class="function">e_widget_undo_attach()</code></a></code></em>
+), neither
+when there is no undo action available.</p>
+<p>See: <em class="parameter"><code>e_widget_undo_attach</code></em>
+, <em class="parameter"><code>e_widget_undo_has_undo</code></em>
+, <em class="parameter"><code>e_widget_undo_describe_undo</code></em>
+</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.63.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-do-redo"></a><h3>e_widget_undo_do_redo ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_widget_undo_do_redo (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<p>Applies the top redo action on the <em class="parameter"><code>widget</code></em>
+, which also remembers
+an undo action. It does nothing if the widget doesn't have
+attached undo functionality (<em class="parameter"><code><a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-attach" title="e_widget_undo_attach ()"><code class="function">e_widget_undo_attach()</code></a></code></em>
+), neither
+when there is no redo action available.</p>
+<p>See: <em class="parameter"><code>e_widget_undo_attach</code></em>
+, <em class="parameter"><code>e_widget_undo_has_redo</code></em>
+, <em class="parameter"><code>e_widget_undo_describe_redo</code></em>
+</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.64.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-widget-undo-reset"></a><h3>e_widget_undo_reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_widget_undo_reset (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<p>Resets undo and redo stack to empty on a widget with attached
+undo functionality. It does nothing, if the widget does not have
+the undo functionality attached (see <em class="parameter"><code><a class="link" href="evolution-util-Miscellaneous-Utilities.html#e-widget-undo-attach" title="e_widget_undo_attach ()"><code class="function">e_widget_undo_attach()</code></a></code></em>
+).</p>
+<div class="refsect3">
+<a name="id-1.2.4.6.65.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a>, on which might be attached undo functionality</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-Miscellaneous-Utilities.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EAutomaticActionPolicy"></a><h3>enum EAutomaticActionPolicy</h3>
+<p>Used for automatable actions based on the user's preference.  The user
+is initially asked whether to perform the action automatically, and is
+given either-or choices like "Yes, Always" or "No, Never".  The user's
+response is then remembered for future sessions.</p>
+<div class="refsect3">
+<a name="id-1.2.4.7.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-AUTOMATIC-ACTION-POLICY-ASK:CAPS"></a>E_AUTOMATIC_ACTION_POLICY_ASK</p></td>
+<td class="enum_member_description">
+<p>  Ask the user whether to perform the action.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-AUTOMATIC-ACTION-POLICY-ALWAYS:CAPS"></a>E_AUTOMATIC_ACTION_POLICY_ALWAYS</p></td>
+<td class="enum_member_description">
+<p>  Perform the action without interrupting the user.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-AUTOMATIC-ACTION-POLICY-NEVER:CAPS"></a>E_AUTOMATIC_ACTION_POLICY_NEVER</p></td>
+<td class="enum_member_description">
+<p>  Do not perform the action and do not interrupt the user.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EDateWeekday"></a><h3>enum EDateWeekday</h3>
+<p>Enumeration representing a day of the week; <em class="parameter"><code>E_DATE_MONDAY</code></em>
+,
+<em class="parameter"><code>E_DATE_TUESDAY</code></em>
+, etc.  <em class="parameter"><code>G_DATE_BAD_WEEKDAY</code></em>
+ is an invalid weekday.</p>
+<p>This enum type is intentionally compatible with <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a>.
+It exists only because GLib does not provide a <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html#GEnumClass"><span class="type">GEnumClass</span></a> for
+<a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a>.  If that ever changes, this enum can go away.</p>
+<div class="refsect3">
+<a name="id-1.2.4.7.3.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-DATE-BAD-WEEKDAY:CAPS"></a>E_DATE_BAD_WEEKDAY</p></td>
+<td class="enum_member_description">
+<p>  Invalid value</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-DATE-MONDAY:CAPS"></a>E_DATE_MONDAY</p></td>
+<td class="enum_member_description">
+<p>  Monday</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-DATE-TUESDAY:CAPS"></a>E_DATE_TUESDAY</p></td>
+<td class="enum_member_description">
+<p>  Tuesday</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-DATE-WEDNESDAY:CAPS"></a>E_DATE_WEDNESDAY</p></td>
+<td class="enum_member_description">
+<p>  Wednesday</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-DATE-THURSDAY:CAPS"></a>E_DATE_THURSDAY</p></td>
+<td class="enum_member_description">
+<p>  Thursday</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-DATE-FRIDAY:CAPS"></a>E_DATE_FRIDAY</p></td>
+<td class="enum_member_description">
+<p>  Friday</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-DATE-SATURDAY:CAPS"></a>E_DATE_SATURDAY</p></td>
+<td class="enum_member_description">
+<p>  Saturday</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-DATE-SUNDAY:CAPS"></a>E_DATE_SUNDAY</p></td>
+<td class="enum_member_description">
+<p>  Sunday</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ERestoreWindowFlags"></a><h3>enum ERestoreWindowFlags</h3>
+<div class="refsect3">
+<a name="id-1.2.4.7.4.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-RESTORE-WINDOW-SIZE:CAPS"></a>E_RESTORE_WINDOW_SIZE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-RESTORE-WINDOW-POSITION:CAPS"></a>E_RESTORE_WINDOW_POSITION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

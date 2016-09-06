@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-spellcheck" xml:lang="el">
+
+  <info>
+    <desc>Έλεγχος ορθογραφίας του μηνύματός σας στην σύνταξη.</desc>
+    
+    <link type="guide" xref="index#mail-composing"/>
+
+    <revision pkgversion="3.5.1" version="0.6" date="2012-04-25" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ορθογραφικός έλεγχος</title>
+
+<!-- Instructions are only valid from Evolution 2.24 on -->
+
+<section id="required-packages">
+<title>Προαπαιτούμενα</title>
+<p>Για χρήση ορθογραφικού ελέγχου για τα μηνύματα που γράφετε χρειάζεται πρώτα να βεβαιωθείτε ότι το πακέτο <sys>hunspell</sys> για την συγκεκριμένη γλώσσα σας και το πακέτο <sys>enchant</sys> είναι εγκατεστημένα μέσα από το εργαλείο διαχείρισης λογισμικού της διανομή σας.</p>
+
+<note style="info package">
+  <p>Μπορεί να χρειαστεί να εγκαταστήσετε τα <sys>hunspell</sys> και/ή <sys>enchant</sys> για να εκτελέσετε αυτά τα βήματα.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:hunspell" href="http://hunspell.sourceforge.net/" style="button">Εγκατάσταση hunspell</link></p>
+      <p><link action="install:enchant" href="http://www.abisource.com/projects/enchant/" style="button">Εγκατάσταση enchant</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</section>
+
+<section id="global-preferences">
+<title>Γενικές προτιμήσεις</title>
+
+<p>Στο <guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui><gui>προτιμήσεις σύνταξης</gui><gui>ορθογραφικός έλεγχος</gui><gui>επιλογές</gui></guiseq> μπορείτε να ορίσετε εάν η ορθογραφία σας ελέγχεται ενώ πληκτρολογείτε και ποιο χρώμα χρησιμοποιείται για υπογράμμιση λέξεων που είναι εσφαλμένες.</p>
+
+<p>Μπορείτε επίσης να ορίσετε ποιες εγκατεστημένες γλώσσες χρησιμοποιούνται για ορθογραφικό έλεγχο στον διαθέσιμο κατάλογο στο <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui><gui>Προτιμήσεις σύνταξης</gui><gui>Ορθογραφικός έλεγχος</gui><gui>Γλώσσες</gui></guiseq>.</p>
+</section>
+
+<section id="composer">
+<title>Χειροκίνητος έλεγχος ορθογραφίας στην σύνταξη</title>
+<p>Εάν δεν έχετε ενεργοποιήσει <gui>έλεγχος ορθογραφίας κατά την πληκτρολόγηση</gui> στο <link xref="#global-preferences">προτιμήσεις σύνταξης</link> μπορείτε να τρέξετε έναν ορθογραφικό έλεγχο στη σύνταξη αλληλογραφίας με κλικ στο <guiseq><gui>επεξεργασία</gui><gui>ορθογραφικός έλεγχος</gui></guiseq> ή πατώντας <key>F7</key>.</p>
+</section>
+
+</page>

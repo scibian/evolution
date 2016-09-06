@@ -1,0 +1,1504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Shell Reference Manual: EShell</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Shell Reference Manual">
+<link rel="up" href="ch01.html" title="The Shell">
+<link rel="prev" href="ch01.html" title="The Shell">
+<link rel="next" href="EShellBackend.html" title="EShellBackend">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EShell.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EShell.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EShell.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EShell.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EShell.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EShellBackend.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EShell"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EShell.top_of_page"></a>EShell</span></h2>
+<p>EShell — the backbone of Evolution</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EShell.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EShell.html" title="EShell"><span class="returnvalue">EShell</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-default" title="e_shell_get_default ()">e_shell_get_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-load-modules" title="e_shell_load_modules ()">e_shell_load_modules</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-shell-backends" title="e_shell_get_shell_backends ()">e_shell_get_shell_backends</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-canonical-name" title="e_shell_get_canonical_name ()">e_shell_get_canonical_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EShellBackend.html" title="EShellBackend"><span class="returnvalue">EShellBackend</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-backend-by-name" title="e_shell_get_backend_by_name ()">e_shell_get_backend_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EShellBackend.html" title="EShellBackend"><span class="returnvalue">EShellBackend</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-backend-by-scheme" title="e_shell_get_backend_by_scheme ()">e_shell_get_backend_by_scheme</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-util/EClientCache.html"><span class="returnvalue">EClientCache</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-client-cache" title="e_shell_get_client_cache ()">e_shell_get_client_cache</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-registry" title="e_shell_get_registry ()">e_shell_get_registry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-create-shell-window" title="e_shell_create_shell_window ()">e_shell_create_shell_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-handle-uris" title="e_shell_handle_uris ()">e_shell_handle_uris</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-submit-alert" title="e_shell_submit_alert ()">e_shell_submit_alert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="returnvalue">GtkWindow</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-active-window" title="e_shell_get_active_window ()">e_shell_get_active_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-express-mode" title="e_shell_get_express_mode ()">e_shell_get_express_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-module-directory" title="e_shell_get_module_directory ()">e_shell_get_module_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-network-available" title="e_shell_get_network_available ()">e_shell_get_network_available</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-set-network-available" title="e_shell_set_network_available ()">e_shell_set_network_available</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-lock-network-available" title="e_shell_lock_network_available ()">e_shell_lock_network_available</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-online" title="e_shell_get_online ()">e_shell_get_online</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-set-online" title="e_shell_set_online ()">e_shell_set_online</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-get-preferences-window" title="e_shell_get_preferences_window ()">e_shell_get_preferences_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-event" title="e_shell_event ()">e_shell_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-quit" title="e_shell_quit ()">e_shell_quit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-cancel-quit" title="e_shell_cancel_quit ()">e_shell_cancel_quit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EShell.html#e-shell-migrate-attempt" title="e_shell_migrate_attempt ()">e_shell_migrate_attempt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShell.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/evolution-util/EClientCache.html"><span class="type">EClientCache</span></a> *</td>
+<td class="property_name"><a class="link" href="EShell.html#EShell--client-cache" title="The “client-cache” property">client-cache</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EShell.html#EShell--express-mode" title="The “express-mode” property">express-mode</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EShell.html#EShell--geometry" title="The “geometry” property">geometry</a></td>
+<td class="property_flags">Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EShell.html#EShell--module-directory" title="The “module-directory” property">module-directory</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EShell.html#EShell--network-available" title="The “network-available” property">network-available</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EShell.html#EShell--online" title="The “online” property">online</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *</td>
+<td class="property_name"><a class="link" href="EShell.html#EShell--registry" title="The “registry” property">registry</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShell.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EShell.html#EShell-event" title="The “event” signal">event</a></td>
+<td class="signal_flags">Action</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="EShell.html#EShell-handle-uri" title="The “handle-uri” signal">handle-uri</a></td>
+<td class="signal_flags">Action</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EShell.html#EShell-prepare-for-offline" title="The “prepare-for-offline” signal">prepare-for-offline</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EShell.html#EShell-prepare-for-online" title="The “prepare-for-online” signal">prepare-for-online</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EShell.html#EShell-prepare-for-quit" title="The “prepare-for-quit” signal">prepare-for-quit</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EShell.html#EShell-quit-requested" title="The “quit-requested” signal">quit-requested</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShell.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EShell.html#EShell-struct" title="struct EShell">EShell</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EShell.html#EShellQuitReason" title="enum EShellQuitReason">EShellQuitReason</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShell.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gio/unstable/GApplication.html">GApplication</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkApplication.html">GtkApplication</a>
+            <span class="lineart">╰──</span> EShell
+</pre>
+</div>
+<div class="refsect1">
+<a name="EShell.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EShell implements
+ <a href="https://developer.gnome.org/gio/unstable/GActionGroup.html">GActionGroup</a>,  <a href="https://developer.gnome.org/gio/unstable/GActionMap.html">GActionMap</a>,  <a href="https://developer.gnome.org/gio/unstable/GInitable.html">GInitable</a> and  EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EShell.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;shell/e-shell.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="EShell.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EShell.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-shell-get-default"></a><h3>e_shell_get_default ()</h3>
+<pre class="programlisting"><a class="link" href="EShell.html" title="EShell"><span class="returnvalue">EShell</span></a> *
+e_shell_get_default (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> created by &lt;function&gt;<code class="function">main()</code>&lt;/function&gt;.</p>
+<p>Try to obtain the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> from elsewhere if you can.  This function
+is intended as a temporary workaround for when that proves difficult.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.2.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> singleton</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-load-modules"></a><h3>e_shell_load_modules ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_load_modules (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Loads all installed modules and performs some internal bookkeeping.
+This function should be called after creating the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> instance
+but before initiating migration or starting the main loop.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-shell-backends"></a><h3>e_shell_get_shell_backends ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_shell_get_shell_backends (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns a list of loaded <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> instances.  The list is
+owned by <em class="parameter"><code>shell</code></em>
+ and should not be modified or freed.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.4.6"></a><h4>Returns</h4>
+<p> a list of loaded <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> instances</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-canonical-name"></a><h3>e_shell_get_canonical_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_shell_get_canonical_name (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns the canonical name for the <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> whose name or alias
+is <em class="parameter"><code>name</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the name or alias of an <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.5.6"></a><h4>Returns</h4>
+<p> the canonical <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> name</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-backend-by-name"></a><h3>e_shell_get_backend_by_name ()</h3>
+<pre class="programlisting"><a class="link" href="EShellBackend.html" title="EShellBackend"><span class="returnvalue">EShellBackend</span></a> *
+e_shell_get_backend_by_name (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns the corresponding <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> for the given name or alias,
+or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>name</code></em>
+ is not recognized.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the name or alias of an <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.6.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> named <em class="parameter"><code>name</code></em>
+, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-backend-by-scheme"></a><h3>e_shell_get_backend_by_scheme ()</h3>
+<pre class="programlisting"><a class="link" href="EShellBackend.html" title="EShellBackend"><span class="returnvalue">EShellBackend</span></a> *
+e_shell_get_backend_by_scheme (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *scheme</code></em>);</pre>
+<p>Returns the <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> that implements the given URI scheme,
+or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>scheme</code></em>
+ is not recognized.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>scheme</p></td>
+<td class="parameter_description"><p>a URI scheme</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.7.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> that implements <em class="parameter"><code>scheme</code></em>
+, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-client-cache"></a><h3>e_shell_get_client_cache ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-util/EClientCache.html"><span class="returnvalue">EClientCache</span></a> *
+e_shell_get_client_cache (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns the <a href="http://developer.gnome.org/evolution-util/EClientCache.html"><span class="type">EClientCache</span></a> instance for <em class="parameter"><code>shell</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.8.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/evolution-util/EClientCache.html"><span class="type">EClientCache</span></a> instance for <em class="parameter"><code>shell</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-registry"></a><h3>e_shell_get_registry ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+e_shell_get_registry (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns the shell's <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> which holds all <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> instances.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.9.6"></a><h4>Returns</h4>
+<p> the <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-create-shell-window"></a><h3>e_shell_create_shell_window ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_shell_create_shell_window (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *view_name</code></em>);</pre>
+<p>Creates a new <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a>.  Use this function instead of
+<a class="link" href="EShellWindow.html#e-shell-window-new" title="e_shell_window_new ()"><code class="function">e_shell_window_new()</code></a> so that <em class="parameter"><code>shell</code></em>
+ can properly configure
+the window.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_name</p></td>
+<td class="parameter_description"><p>name of the initial shell view, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.10.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-handle-uris"></a><h3>e_shell_handle_uris ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+e_shell_handle_uris (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> * const *uris</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> do_import</code></em>);</pre>
+<p>Emits the <a class="link" href="EShell.html#EShell-handle-uri" title="The “handle-uri” signal"><span class="type">“handle-uri”</span></a> signal for each URI.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uris</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of URIs</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>do_import</p></td>
+<td class="parameter_description"><p>request an import of the URIs</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.11.6"></a><h4>Returns</h4>
+<p> the number of URIs successfully handled</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-submit-alert"></a><h3>e_shell_submit_alert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_submit_alert (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                      <em class="parameter"><code><a href="http://developer.gnome.org/evolution-util/EAlert.html"><span class="type">EAlert</span></a> *alert</code></em>);</pre>
+<p>Broadcasts <em class="parameter"><code>alert</code></em>
+ to all <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a>&lt;!-- --&gt;s.  This should only
+be used for application-wide alerts such as a network outage.  Submit
+view-specific alerts to the appropriate <a class="link" href="EShellContent.html" title="EShellContent"><span class="type">EShellContent</span></a> instance.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>alert</p></td>
+<td class="parameter_description"><p>an <a href="http://developer.gnome.org/evolution-util/EAlert.html"><span class="type">EAlert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-active-window"></a><h3>e_shell_get_active_window ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="returnvalue">GtkWindow</span></a> *
+e_shell_get_active_window (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns the most recently focused watched window, according to
+<a href="http://developer.gnome.org/gtk2/GtkApplication.html#gtk-application-get-windows"><code class="function">gtk_application_get_windows()</code></a>.  Convenient for finding a parent
+for a transient window.</p>
+<p>Note the returned window is not necessarily an <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.13.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use the default shell</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.13.7"></a><h4>Returns</h4>
+<p> the most recently focused watched window</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-express-mode"></a><h3>e_shell_get_express_mode ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_get_express_mode (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if Evolution is in express mode.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.14.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if Evolution is in express mode</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-module-directory"></a><h3>e_shell_get_module_directory ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_shell_get_module_directory (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns the directory from which <a href="/usr/share/gtk-doc/html/eds/eds-EModule.html#EModule"><span class="type">EModule</span></a>&lt;!-- --&gt;s were loaded.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.15.6"></a><h4>Returns</h4>
+<p> the <a href="/usr/share/gtk-doc/html/eds/eds-EModule.html#EModule"><span class="type">EModule</span></a> directory</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-network-available"></a><h3>e_shell_get_network_available ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_get_network_available (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a network is available.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.16.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a network is available</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-set-network-available"></a><h3>e_shell_set_network_available ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_set_network_available (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> network_available</code></em>);</pre>
+<p>Sets whether a network is available.  This is usually called in
+response to a status change signal from NetworkManager.  If the
+network becomes unavailable while <a class="link" href="EShell.html#EShell--online" title="The “online” property"><span class="type">“online”</span></a> is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the
+<em class="parameter"><code>shell</code></em>
+ will force <a class="link" href="EShell.html#EShell--online" title="The “online” property"><span class="type">“online”</span></a> to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> until the network
+becomes available again.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>network_available</p></td>
+<td class="parameter_description"><p>whether a network is available</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-lock-network-available"></a><h3>e_shell_lock_network_available ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_lock_network_available (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Locks the value of <a class="link" href="EShell.html#EShell--network-available" title="The “network-available” property"><span class="type">“network-available”</span></a> to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.  Further
+attempts to set the property will be ignored.</p>
+<p>This is used for the --force-online command-line option, which is
+intended to override the network availability status as reported
+by NetworkManager or other network monitoring software.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.18.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-online"></a><h3>e_shell_get_online ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_get_online (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if Evolution is online, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if Evolution is offline.
+Evolution may be offline because the user elected to work offline, or
+because the network has become unavailable.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.19.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if Evolution is online</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-set-online"></a><h3>e_shell_set_online ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_set_online (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> online</code></em>);</pre>
+<p>Asynchronously places Evolution in online or offline mode.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>online</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to go online, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to go offline</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-get-preferences-window"></a><h3>e_shell_get_preferences_window ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_shell_get_preferences_window (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Returns the Evolution Preferences window.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.21.6"></a><h4>Returns</h4>
+<p> the preferences window</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-event"></a><h3>e_shell_event ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_event (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *event_name</code></em>,
+               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> event_data</code></em>);</pre>
+<p>The <a class="link" href="EShell.html#EShell-event" title="The “event” signal"><span class="type">“event”</span></a> signal acts as a cheap mechanism for broadcasting
+events to the rest of the application, such as new mail arriving.  The
+<em class="parameter"><code>event_name</code></em>
+ is used as the signal detail, and <em class="parameter"><code>event_data</code></em>
+ may point to
+an object or data structure associated with the event.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event_name</p></td>
+<td class="parameter_description"><p>the name of the event</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event_data</p></td>
+<td class="parameter_description"><p>data associated with the event</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-quit"></a><h3>e_shell_quit ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_quit (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>,
+              <em class="parameter"><code><a class="link" href="EShell.html#EShellQuitReason" title="enum EShellQuitReason"><span class="type">EShellQuitReason</span></a> reason</code></em>);</pre>
+<p>Requests an application shutdown.  This happens in two phases: the
+first is synchronous, the second is asynchronous.</p>
+<p>In the first phase, the <em class="parameter"><code>shell</code></em>
+ emits a <a class="link" href="EShell.html#EShell-quit-requested" title="The “quit-requested” signal"><span class="type">“quit-requested”</span></a> signal
+to potentially give the user a chance to cancel shutdown.  If the user
+cancels shutdown, the function returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.  Otherwise it proceeds
+into the second phase.</p>
+<p>In the second phase, the <em class="parameter"><code>shell</code></em>
+ emits a <a class="link" href="EShell.html#EShell-prepare-for-quit" title="The “prepare-for-quit” signal"><span class="type">“prepare-for-quit”</span></a>
+signal and immediately returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.  Signal handlers may delay the
+actual application shutdown while they clean up resources, but there
+is no way to cancel shutdown at this point.</p>
+<p>Consult the documentation for these two signals for details on how
+to handle them.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.23.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>reason</p></td>
+<td class="parameter_description"><p>the reason for quitting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.11.23.9"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if shutdown is underway, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it was cancelled</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-cancel-quit"></a><h3>e_shell_cancel_quit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_cancel_quit (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>This function may only be called from <a class="link" href="EShell.html#EShell-quit-requested" title="The “quit-requested” signal"><span class="type">“quit-requested”</span></a> signal
+handlers to prevent Evolution from quitting.  Calling this will stop
+further emission of the <a class="link" href="EShell.html#EShell-quit-requested" title="The “quit-requested” signal"><span class="type">“quit-requested”</span></a> signal.</p>
+<p>Note: This function has no effect during a <a class="link" href="EShell.html#EShell-prepare-for-quit" title="The “prepare-for-quit” signal"><span class="type">“prepare-for-quit”</span></a>
+signal emission.</p>
+<div class="refsect3">
+<a name="id-1.2.2.11.24.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-migrate-attempt"></a><h3>e_shell_migrate_attempt ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_shell_migrate_attempt (<em class="parameter"><code><a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EShell.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EShell-struct"></a><h3>struct EShell</h3>
+<pre class="programlisting">struct EShell;</pre>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellQuitReason"></a><h3>enum EShellQuitReason</h3>
+<p>These values are passed in the <a class="link" href="EShell.html#EShell-quit-requested" title="The “quit-requested” signal"><span class="type">“quit-requested”</span></a> signal to
+indicate why the shell is requesting to shut down.</p>
+<div class="refsect3">
+<a name="id-1.2.2.12.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-SHELL-QUIT-ACTION:CAPS"></a>E_SHELL_QUIT_ACTION</p></td>
+<td class="enum_member_description">
+<p>  <em class="parameter"><code>E_SHELL_WINDOW_ACTION_QUIT</code></em>
+ was activated.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-SHELL-QUIT-LAST-WINDOW:CAPS"></a>E_SHELL_QUIT_LAST_WINDOW</p></td>
+<td class="enum_member_description">
+<p>  The last watched window has been destroyed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-SHELL-QUIT-OPTION:CAPS"></a>E_SHELL_QUIT_OPTION</p></td>
+<td class="enum_member_description">
+<p>  The program was invoked with --quit.  Extensions will never
+  see this value because they are not loaded when --quit is given.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-SHELL-QUIT-REMOTE-REQUEST:CAPS"></a>E_SHELL_QUIT_REMOTE_REQUEST</p></td>
+<td class="enum_member_description">
+<p>  Another Evolution process requested we quit.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-SHELL-QUIT-SESSION-REQUEST:CAPS"></a>E_SHELL_QUIT_SESSION_REQUEST</p></td>
+<td class="enum_member_description">
+<p>  The desktop session requested we quit.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EShell.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EShell--client-cache"></a><h3>The <code class="literal">“client-cache”</code> property</h3>
+<pre class="programlisting">  “client-cache”             <a href="http://developer.gnome.org/evolution-util/EClientCache.html"><span class="type">EClientCache</span></a> *</pre>
+<p>Shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instances.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell--express-mode"></a><h3>The <code class="literal">“express-mode”</code> property</h3>
+<pre class="programlisting">  “express-mode”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Express mode alters Evolution's user interface to be mode
+usable on devices with small screens.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell--geometry"></a><h3>The <code class="literal">“geometry”</code> property</h3>
+<pre class="programlisting">  “geometry”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>User-specified initial window geometry string to apply
+to the first <a class="link" href="EShellWindow.html" title="EShellWindow"><span class="type">EShellWindow</span></a> created.</p>
+<p>Flags: Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell--module-directory"></a><h3>The <code class="literal">“module-directory”</code> property</h3>
+<pre class="programlisting">  “module-directory”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The directory from which to load <a href="/usr/share/gtk-doc/html/eds/eds-EModule.html#EModule"><span class="type">EModule</span></a>&lt;!-- --&gt;s.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell--network-available"></a><h3>The <code class="literal">“network-available”</code> property</h3>
+<pre class="programlisting">  “network-available”        <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the network is available.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell--online"></a><h3>The <code class="literal">“online”</code> property</h3>
+<pre class="programlisting">  “online”                   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the shell is online.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell--registry"></a><h3>The <code class="literal">“registry”</code> property</h3>
+<pre class="programlisting">  “registry”                 <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *</pre>
+<p>The <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> manages <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> instances.</p>
+<p>Flags: Read</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EShell.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EShell-event"></a><h3>The <code class="literal">“event”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a>  *shell,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> event_data,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>This signal is used to broadcast custom events to the entire
+application.  The nature of <em class="parameter"><code>event_data</code></em>
+ depends on the event
+being broadcast.  The signal's detail denotes the event.</p>
+<div class="refsect3">
+<a name="id-1.2.2.14.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> which emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event_data</p></td>
+<td class="parameter_description"><p>data associated with the event</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Action</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell-handle-uri"></a><h3>The <code class="literal">“handle-uri”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a>  *shell,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>   *uri,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Emitted when <em class="parameter"><code>shell</code></em>
+ receives a URI to be handled, usually by
+way of a command-line argument.  An <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> should listen
+for this signal and try to handle the URI, usually by opening an
+editor window for the identified resource.</p>
+<div class="refsect3">
+<a name="id-1.2.2.14.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> which emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the URI to be handled</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.14.3.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the URI could be handled, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+<p>Flags: Action</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell-prepare-for-offline"></a><h3>The <code class="literal">“prepare-for-offline”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a>    *shell,
+               <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a> *activity,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>Emitted when the user elects to work offline.  An <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a>
+should listen for this signal and make preparations for working
+in offline mode.</p>
+<p>If preparations for working offline cannot immediately be
+completed (such as when synchronizing with a remote server),
+the <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> should reference the <em class="parameter"><code>activity</code></em>
+ until
+preparations are complete, and then unreference the <em class="parameter"><code>activity</code></em>
+.
+This will delay Evolution from actually going to offline mode
+until all backends have unreferenced <em class="parameter"><code>activity</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.14.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> which emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>the <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a> for offline preparations</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell-prepare-for-online"></a><h3>The <code class="literal">“prepare-for-online”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a>    *shell,
+               <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a> *activity,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>Emitted when the user elects to work online.  An <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a>
+should listen for this signal and make preparations for working
+in online mode.</p>
+<p>If preparations for working online cannot immediately be
+completed (such as when re-connecting to a remote server), the
+<a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> should reference the <em class="parameter"><code>activity</code></em>
+ until preparations
+are complete, and then unreference the <em class="parameter"><code>activity</code></em>
+.  This will
+delay Evolution from actually going to online mode until all
+backends have unreferenced <em class="parameter"><code>activity</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.14.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> which emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>the <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a> for offline preparations</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell-prepare-for-quit"></a><h3>The <code class="literal">“prepare-for-quit”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a>    *shell,
+               <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a> *activity,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>Emitted when the user elects to quit the application, after
+<a class="link" href="EShell.html#EShell-quit-requested" title="The “quit-requested” signal"><span class="type">“quit-requested”</span></a>.  An <a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> should listen for
+this signal and make preparations for shutting down.</p>
+<p>If preparations for shutting down cannot immediately be completed
+(such as when there are uncompleted network operations), the
+<a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a> should reference the <em class="parameter"><code>activity</code></em>
+ until preparations
+are complete, and then unreference the <em class="parameter"><code>activity</code></em>
+.  This will
+delay Evolution from actually shutting down until all backends
+have unreferenced <em class="parameter"><code>activity</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.14.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> which emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>the <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a> for quit preparations</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShell-quit-requested"></a><h3>The <code class="literal">“quit-requested”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a>          *shell,
+               <a class="link" href="EShell.html#EShellQuitReason" title="enum EShellQuitReason"><span class="type">EShellQuitReason</span></a> reason,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Emitted when the user elects to quit the application, before
+<a class="link" href="EShell.html#EShell-prepare-for-quit" title="The “prepare-for-quit” signal"><span class="type">“prepare-for-quit”</span></a>.</p>
+<p><a class="link" href="EShellBackend.html" title="EShellBackend"><span class="type">EShellBackend</span></a>&lt;!-- --&gt;s and editor windows can listen for
+this signal to prompt the user to save changes or finish
+scheduled operations immediately (such as sending mail in
+Outbox).  If the user elects to cancel, the signal handler
+should call <a class="link" href="EShell.html#e-shell-cancel-quit" title="e_shell_cancel_quit ()"><code class="function">e_shell_cancel_quit()</code></a> to abort the quit.</p>
+<div class="refsect3">
+<a name="id-1.2.2.14.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EShell.html" title="EShell"><span class="type">EShell</span></a> which emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>reason</p></td>
+<td class="parameter_description"><p>the reason for quitting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

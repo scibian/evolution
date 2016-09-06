@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-meetings-sending-invitation" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-meetings"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-29" status="stub"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#usage-calendar-rsvp
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>会議開催通知を送ります。</desc>
+  </info>
+
+  <title>会議開催通知の送信</title>
+
+  <p>会議 (グループの予定) の作成時に "議長" や "必須の参加者" 等、出席者に複数のカテゴリを指定できます。会議一覧の保存時に会議の情報を収録したメールが各出席者に送られ、返信の選択肢も提示します。</p>
+
+  <p>イベントスケジュールの作成時に出席情報を収集する必要がなく、単にイベントを告知したい場合、会議を右クリックして <gui>iCalendar 形式で転送</gui>を選択します。新規メールが開き、告知の形でイベント通知が添付されます。受け取った人は1クリックで自分のカレンダーにそのイベントを追加できますが、出席/欠席の予定を示すメールは自動的には送られません。</p>
+
+  <p>会議のスケジュールを作成するには:</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui>ファイル</gui><gui>新規</gui> <gui>会議</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p>メールアドレスが複数ある場合は<gui>主催者</gui>欄から使うアカウントを選択します。</p>
+    </item>
+    <item>
+      <p><gui>カレンダー</gui>ドロップダウンリストからカレンダーを選択します。</p>
+    </item>
+    <item>
+      <p><gui style="button">追加</gui>をクリックして招待する人のメールアドレスを追加します。</p>
+    </item>
+    <item>
+      <p>メニューバーの<gui>表示</gui>をクリックし、<gui>種類</gui>や<gui>役割</gui>、<gui>ステータス</gui>、<gui>RSVP</gui> フィールドの表示/非表示を切り替えます。</p>
+    </item>
+    <item>
+      <p><gui>サマリ</gui>欄に簡潔なサマリを入力します。</p>
+    </item>
+    <item>
+      <p>(オプション) <gui>場所</gui>欄に場所を入力します。</p>
+    </item>
+    <item>
+      <p>このイベントを終日のイベントに設定するには、<guiseq><gui>オプション</gui><gui>終日のイベント</gui></guiseq>またはツールバーの<gui>終日のイベント</gui>ボタンをクリックします。</p>
+    </item>
+    <item>
+      <p>日付と時刻を選択します。</p>
+    </item>
+    <item>
+      <p>イベントが終日のイベントではない場合、<gui>以下の期間</gui>を選択して期間を指定するか、<gui>以下の日時まで</gui>を選択してイベントの終了時刻を指定します。</p>
+    </item>
+    <item>
+      <p>(オプション) <gui>説明</gui>欄に説明を入力します。</p>
+    </item>
+    <item>
+      <p>出席者の<link xref="calendar-free-busy">スケジュール</link>情報を調べるには、ツールバーの<gui>スケジュール</gui>ボタン、または<guiseq><gui>オプション</gui><gui>スケジュール</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p><gui>保存</gui>をクリックして会議を保存します。</p>
+    </item>
+  </steps>
+
+  <p>すべての宛先にメールが送られ、イベントへの参加を促します。</p>
+
+  <p>イベントの<link xref="calendar-timezones">タイムゾーン</link>や<link xref="using-categories">カテゴリ</link>、<link xref="calendar-alarms-and-reminders">リマインダー</link>、<link xref="calendar-recurrence">繰り返し</link>、<link xref="calendar-classifications">分類</link>の定義や、添付ファイルの追加もできます。</p>
+
+  <note style="tip">
+    <p><app>Evolution</app> では会議の主催者にセットできるのは一人だけで、その主催者だけが会議の参加者を追加できます。会議の主催者を変更することは可能ですが、会議の追加の参加者を招待する手段としては勧められません。会議の主催者ではない人が追加の参加者を会議に招待したい場合に推奨する方法は、会議の元の主催者から送られた招待メッセージを追加の参加者に転送すことです。</p>
+  </note>
+
+</page>

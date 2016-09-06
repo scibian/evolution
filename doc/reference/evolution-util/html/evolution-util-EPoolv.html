@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EPoolv</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch16.html" title="(Unsorted Sections)">
+<link rel="prev" href="EPictureGallery.html" title="EPictureGallery">
+<link rel="next" href="EPopupAction.html" title="EPopupAction">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#evolution-util-EPoolv.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch16.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EPictureGallery.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EPopupAction.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="evolution-util-EPoolv"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="evolution-util-EPoolv.top_of_page"></a>EPoolv</span></h2>
+<p>EPoolv</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="evolution-util-EPoolv.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="returnvalue">EPoolv</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EPoolv.html#e-poolv-new" title="e_poolv_new ()">e_poolv_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="returnvalue">EPoolv</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EPoolv.html#e-poolv-set" title="e_poolv_set ()">e_poolv_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EPoolv.html#e-poolv-get" title="e_poolv_get ()">e_poolv_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EPoolv.html#e-poolv-destroy" title="e_poolv_destroy ()">e_poolv_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EPoolv.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv">EPoolv</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EPoolv.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EPoolv.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-poolv-new"></a><h3>e_poolv_new ()</h3>
+<pre class="programlisting"><a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="returnvalue">EPoolv</span></a> *
+e_poolv_new (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> size</code></em>);</pre>
+<p>Create a new <a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="type">EPoolv</span></a>: a string vector which shares a global string
+pool.  An <a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="type">EPoolv</span></a> can be used to work with arrays of strings which
+save memory by eliminating duplicated allocations of the same string.</p>
+<p>This is useful when you have a log of read-only strings that do not
+go away and are duplicated a lot, such as email headers.</p>
+<div class="refsect3">
+<a name="id-1.17.32.6.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The number of elements in the poolv, maximum of 254 elements.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.32.6.2.7"></a><h4>Returns</h4>
+<p> a new <a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="type">EPoolv</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-poolv-set"></a><h3>e_poolv_set ()</h3>
+<pre class="programlisting"><a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="returnvalue">EPoolv</span></a> *
+e_poolv_set (<em class="parameter"><code><a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="type">EPoolv</span></a> *poolv</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> freeit</code></em>);</pre>
+<p>Set a string vector reference.  If the caller will no longer be
+referencing the string, freeit should be TRUE.  Otherwise, this
+will duplicate the string if it is not found in the pool.</p>
+<div class="refsect3">
+<a name="id-1.17.32.6.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>poolv</p></td>
+<td class="parameter_description"><p>pooled string vector</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>index in vector of string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>string to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>freeit</p></td>
+<td class="parameter_description"><p>whether the caller is releasing its reference to the
+string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.32.6.3.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>poolv</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-poolv-get"></a><h3>e_poolv_get ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_poolv_get (<em class="parameter"><code><a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="type">EPoolv</span></a> *poolv</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index</code></em>);</pre>
+<p>Retrieve a string by index.  This could possibly just be a macro.</p>
+<p>Since the pool is never freed, this string does not need to be
+duplicated, but should not be modified.</p>
+<div class="refsect3">
+<a name="id-1.17.32.6.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>poolv</p></td>
+<td class="parameter_description"><p>pooled string vector</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>index in vector of string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.32.6.4.7"></a><h4>Returns</h4>
+<p> string at that index.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-poolv-destroy"></a><h3>e_poolv_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_poolv_destroy (<em class="parameter"><code><a class="link" href="evolution-util-EPoolv.html#EPoolv" title="EPoolv"><span class="type">EPoolv</span></a> *poolv</code></em>);</pre>
+<p>Free a pooled string vector.  This doesn't free the strings from
+the vector, however.</p>
+<div class="refsect3">
+<a name="id-1.17.32.6.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>poolv</p></td>
+<td class="parameter_description"><p>pooled string vector to free</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EPoolv.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EPoolv"></a><h3>EPoolv</h3>
+<pre class="programlisting">typedef struct _EPoolv EPoolv;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

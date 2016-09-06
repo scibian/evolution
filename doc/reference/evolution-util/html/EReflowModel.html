@@ -1,0 +1,672 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EReflowModel</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch13.html" title="Text Processing">
+<link rel="prev" href="EReflow.html" title="EReflow">
+<link rel="next" href="ch14.html" title="View Management">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EReflowModel.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EReflowModel.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EReflowModel.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch13.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EReflow.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch14.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EReflowModel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EReflowModel.top_of_page"></a>EReflowModel</span></h2>
+<p>EReflowModel</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EReflowModel.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-set-width" title="e_reflow_model_set_width ()">e_reflow_model_set_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-count" title="e_reflow_model_count ()">e_reflow_model_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-height" title="e_reflow_model_height ()">e_reflow_model_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="returnvalue">GnomeCanvasItem</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-incarnate" title="e_reflow_model_incarnate ()">e_reflow_model_incarnate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-create-cmp-cache" title="e_reflow_model_create_cmp_cache ()">e_reflow_model_create_cmp_cache</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-compare" title="e_reflow_model_compare ()">e_reflow_model_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-reincarnate" title="e_reflow_model_reincarnate ()">e_reflow_model_reincarnate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-changed" title="e_reflow_model_changed ()">e_reflow_model_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-comparison-changed" title="e_reflow_model_comparison_changed ()">e_reflow_model_comparison_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-items-inserted" title="e_reflow_model_items_inserted ()">e_reflow_model_items_inserted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-item-removed" title="e_reflow_model_item_removed ()">e_reflow_model_item_removed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EReflowModel.html#e-reflow-model-item-changed" title="e_reflow_model_item_changed ()">e_reflow_model_item_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EReflowModel.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EReflowModel.html#EReflowModel-comparison-changed" title="The “comparison-changed” signal">comparison-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EReflowModel.html#EReflowModel-model-changed" title="The “model-changed” signal">model-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EReflowModel.html#EReflowModel-model-item-changed" title="The “model-item-changed” signal">model-item-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EReflowModel.html#EReflowModel-model-item-removed" title="The “model-item-removed” signal">model-item-removed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EReflowModel.html#EReflowModel-model-items-inserted" title="The “model-items-inserted” signal">model-items-inserted</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EReflowModel.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EReflowModel.html#EReflowModel-struct" title="struct EReflowModel">EReflowModel</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EReflowModel.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EReflowModel
+</pre>
+</div>
+<div class="refsect1">
+<a name="EReflowModel.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EReflowModel.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-reflow-model-set-width"></a><h3>e_reflow_model_set_width ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_reflow_model_set_width (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.14.7.8.2.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The e-reflow-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The new value for the width of each item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-count"></a><h3>e_reflow_model_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_reflow_model_count (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.14.7.8.3.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The e-reflow-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.14.7.8.3.5"></a><h4>Returns</h4>
+<p> the number of items in the reflow model.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-height"></a><h3>e_reflow_model_height ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_reflow_model_height (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasGroup.html"><span class="type">GnomeCanvasGroup</span></a> *parent</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.14.7.8.4.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The e-reflow-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The item number to get the height of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>The parent GnomeCanvasItem.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.14.7.8.4.5"></a><h4>Returns</h4>
+<p> the height of the nth item.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-incarnate"></a><h3>e_reflow_model_incarnate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="returnvalue">GnomeCanvasItem</span></a> *
+e_reflow_model_incarnate (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasGroup.html"><span class="type">GnomeCanvasGroup</span></a> *parent</code></em>);</pre>
+<p>Create a GnomeCanvasItem to represent the nth piece of data.</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The e-reflow-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The item to create.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>The parent GnomeCanvasItem to create a child of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.14.7.8.5.6"></a><h4>Returns</h4>
+<p> the new GnomeCanvasItem.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-create-cmp-cache"></a><h3>e_reflow_model_create_cmp_cache ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+e_reflow_model_create_cmp_cache (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>);</pre>
+<p>Creates a compare cache for quicker sorting. The sorting function
+may not depend on the cache, but it should benefit from it if available.</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The e-reflow-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.14.7.8.6.6"></a><h4>Returns</h4>
+<p> Newly created GHashTable with cached compare values. This will be
+automatically freed with <a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#g-hash-table-destroy"><code class="function">g_hash_table_destroy()</code></a> when no longer needed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-compare"></a><h3>e_reflow_model_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_reflow_model_compare (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n1</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n2</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *cmp_cache</code></em>);</pre>
+<p>Compares item n1 and item n2 to see which should come first.</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The e-reflow-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n1</p></td>
+<td class="parameter_description"><p>The first item to compare</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n2</p></td>
+<td class="parameter_description"><p>The second item to compare</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cmp_cache</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> of cached compare values, created by
+<a class="link" href="EReflowModel.html#e-reflow-model-create-cmp-cache" title="e_reflow_model_create_cmp_cache ()"><code class="function">e_reflow_model_create_cmp_cache()</code></a>. This can be NULL, when
+caching is not available, even when <em class="parameter"><code>reflow_model</code></em>
+defines
+the create_cmp_cache function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.14.7.8.7.6"></a><h4>Returns</h4>
+<p> strcmp like semantics for the comparison value.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-reincarnate"></a><h3>e_reflow_model_reincarnate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_reflow_model_reincarnate (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="type">GnomeCanvasItem</span></a> *item</code></em>);</pre>
+<p>Update item to represent the nth piece of data.</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The e-reflow-model to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The item to create.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>item</p></td>
+<td class="parameter_description"><p>The item to reuse.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-changed"></a><h3>e_reflow_model_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_reflow_model_changed (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>);</pre>
+<p>Use this function to notify any views of this reflow model that
+the contents of the reflow model have changed.  This will emit
+the signal "model_changed" on the <em class="parameter"><code>reflow_model</code></em>
+ object.</p>
+<p>It is preferable to use the <a class="link" href="EReflowModel.html#e-reflow-model-item-changed" title="e_reflow_model_item_changed ()"><code class="function">e_reflow_model_item_changed()</code></a> signal to
+notify of smaller changes than to invalidate the entire model, as
+the views might have ways of caching the information they render
+from the model.</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>the reflow model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-comparison-changed"></a><h3>e_reflow_model_comparison_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_reflow_model_comparison_changed (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>);</pre>
+<p>Use this function to notify any views of this reflow model that the
+sorting has changed.  The actual contents of the items hasn't, so
+there's no need to re-query the model for the heights of the
+individual items.</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>the reflow model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-items-inserted"></a><h3>e_reflow_model_items_inserted ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_reflow_model_items_inserted (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>);</pre>
+<p>Use this function to notify any views of the reflow model that a number
+of items have been inserted.</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The model changed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The position the items were insert in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>The number of items inserted.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-item-removed"></a><h3>e_reflow_model_item_removed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_reflow_model_item_removed (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Use this function to notify any views of the reflow model that an
+item has been removed.</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>The model changed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The position from which the items were removed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-reflow-model-item-changed"></a><h3>e_reflow_model_item_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_reflow_model_item_changed (<em class="parameter"><code><a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *reflow_model</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Use this function to notify any views of the reflow model that the
+contents of item <em class="parameter"><code>item</code></em>
+ have changed in model such that the height
+has changed or the item needs to be reincarnated.  This function
+will emit the "model_item_changed" signal on the <em class="parameter"><code>reflow_model</code></em>
+
+object</p>
+<div class="refsect3">
+<a name="id-1.14.7.8.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>reflow_model</p></td>
+<td class="parameter_description"><p>the reflow model to notify of the change</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>the item that was changed in the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EReflowModel.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EReflowModel-struct"></a><h3>struct EReflowModel</h3>
+<pre class="programlisting">struct EReflowModel;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EReflowModel.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EReflowModel-comparison-changed"></a><h3>The <code class="literal">“comparison-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *ereflowmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EReflowModel-model-changed"></a><h3>The <code class="literal">“model-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *ereflowmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EReflowModel-model-item-changed"></a><h3>The <code class="literal">“model-item-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *ereflowmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EReflowModel-model-item-removed"></a><h3>The <code class="literal">“model-item-removed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *ereflowmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EReflowModel-model-items-inserted"></a><h3>The <code class="literal">“model-items-inserted”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EReflowModel.html" title="EReflowModel"><span class="type">EReflowModel</span></a> *ereflowmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

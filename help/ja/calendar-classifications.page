@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="calendar-classifications" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#calendar-advanced"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-07-31" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+      http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#bxmtbjb
+      -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>グループウェアサーバーの予定やタスクを分類します。</desc>
+  </info>
+
+  <title>区分の利用</title>
+
+  <p>Novell GroupWise や Microsoft Exchange サーバーのカレンダーを利用している場合は、見られる人を決定する区分を選択できます。</p>
+
+  <p>予定やタスクに区分を指定するには、エディターで<guiseq><gui>オプション</gui><gui>区分</gui></guiseq>をクリックして区分を選択します。デフォルトは<gui>公開</gui>で、公開されている予定はカレンダー共有ネットワーク上の誰もが見られるようになっています。<gui>非公開</gui>はセキュリティーのレベルを示し、<gui>機密</gui>はさらに上のレベルです。</p>
+
+  <p>レベルの違いはサーバーの設定により様々です。システム管理者に確認するか委任の設定を調整してください。</p>
+
+</page>

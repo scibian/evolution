@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="exchange-placeholder" xml:lang="hu">
+
+  <info>
+    <desc>Kapcsolódás Exchange kiszolgálókhoz</desc>
+
+    <link type="guide" xref="index#corporate-environments-exchange"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-07-21" status="stub"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Kapcsolódás Exchange kiszolgálókhoz</title>
+
+<p>Az itt nem ismertetett lépésekkel kapcsolatban nézze meg a <link href="http://library.gnome.org/users/evolution/2.32/usage-exchange.html.en">régi Evolution kézikönyvet</link>.</p>
+</page>

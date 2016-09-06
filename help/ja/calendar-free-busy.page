@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-free-busy" xml:lang="ja">
+
+  <info>
+
+    <link type="guide" xref="calendar-sharing-information"/>
+
+    <revision pkgversion="3.1.5" version="0.5" date="2012-02-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en
+	   and
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#usage-calendar-freebusy
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>グループウェアサーバーのスケジュールビューを利用して会議を準備します。</desc>
+    <!-- TODO: Really split this into Exchange/Groupware section and normal people section -->
+  </info>
+
+  <title>スケジュールの情報</title>
+
+  <p>会議のスケジュール検索を利用して招待者が出席できるか判断できます。</p>
+
+  <p>標準的な会議予定ツールに加え、スケジュールビューを利用することである人が出席できるか事前に確認できます。スケジュール機能は通常、Microsoft Exchange や Novell GroupWise 等のグループウェアサーバー専用の機能ですが、オンラインで公開されているスケジュール情報や別のどこかで公開されているスケジュール情報にアクセスできます。共同作業している人にスケジュールを公開していない人がいる場合には、<link xref="calendar-meetings-sending-invitation">会議開催通知</link>を利用して他の人と日程を調整できます。</p>
+
+  <p>スケジュールビューにアクセスするには:</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui>ファイル</gui><gui>新規</gui> <gui>会議</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p><gui style="button">追加</gui>をクリックして招待する人のメールアドレスを追加します。</p>
+    </item>
+    <item>
+      <p>ツールバーの<gui>スケジュール</gui>ボタン、または<guiseq><gui>オプション</gui><gui>スケジュール</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p>会議の境界をドラッグするか<gui>自動ピックアップ</gui>ボタンを使って自動的に時刻を選択させて会議の時刻を調整し、<gui style="button">閉じる</gui>をクリックします。Exchange サーバー上の出席者の予定は自動的に更新され、その他の人は予定に変更があればメールで通知を受け取ります。</p>
+    </item>
+  </steps>
+
+  <list>
+    <item>
+      <p>出席者の一覧:</p>
+      <p>出席者の一覧では予定に招待された人を表示します。</p>
+    </item>
+    <item>
+      <p>Schedule Grid:</p>
+      <p>Schedule Grid は招待した人の公開されているスケジュール情報を表示します。これを利用して日程を比較して空き時間を探し、予定を立てます。各個人の日程情報が見えるのは同一の Novell GroupWise や Microsoft Exchange サーバーを利用している (つまり同一の組織にいる) 人か、到達可能などこかのウェブアドレス (URL) でスケジュール情報を公開している人で、そのウェブアドレスを<guiseq><gui>個人の情報</gui> <gui>ウェブのアドレス</gui><gui>スケジュール</gui></guiseq>以下から<link xref="contacts-usage-edit-contact">連絡先エディター</link>で入力した場合に限られます。</p>
+    </item>
+  </list>
+
+  <p>WebDAV サーバーやFTPサーバー、SSH経由のリモートマシン、あるいは HTTP PUT をサポートしているその他のウェブサーバーでカレンダーやスケジュール情報を公開できます。</p>
+
+  <p>企業環境で Exchange や Groupwise サーバーにカレンダーやスケジュール情報を公開できます。会議に招待された際、自分のスケジュール情報に他の人がアクセスできるようにするには最上位の Exchange カレンダーを利用する必要があることに注意してください。</p> <p><guiseq><gui>編集</gui><gui>設定</gui><gui>カレンダーとタスク</gui><gui>情報を公開</gui> <gui>デフォルトのスケジュールサーバー</gui></guiseq>以下から選択できます。</p>
+
+  <!-- This is the location since 3.1.5, see bug
+       https://bugzilla.gnome.org/show_bug.cgi?id=655666 -->
+
+<section id="no-groupware">
+  <title>グループウェアサーバーを利用しない場合のスケジュールへのアクセス</title>
+
+  <p>各個人からスケジュールのデータやウェブカレンダーのURLを受け取っていれば、<link xref="contacts-usage-edit-contact">連絡先エディター</link>で<guiseq><gui>個人の情報</gui><gui>ウェブのアドレス</gui></guiseq>からそのURLを追加できます。それから、その人たちとの会議の日程を決定すると、<app>Evolution</app> はその日程を検索してスケジュールデータに表示します。</p>
+
+</section>
+
+</page>

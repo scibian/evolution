@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-spam-marking" xml:lang="cs">
+
+  <info>
+    <desc>How to mark unwanted junk and spam mail.</desc>
+
+    <link type="guide" xref="mail-spam"/>
+
+    <revision pkgversion="3.3.91" version="0.4" date="2012-03-07" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Barbara Tobias</name>
+      <email its:translate="no">barbtobias09@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-spam.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Označení zprávy jako nevyžádané</title>
+
+<p>While SpamAssassin comes with a set of predefined rules, Bogofilter needs to be taught first before it will automatically filter junk mail. If you only train Bogofilter on bad messages, it will assume all mail is bad (because it does not know any difference) hence it will not make any decisions until the database is sufficiently large to determine what is and is not spam. In any case, when you first start using junk mail blocking, check the <gui>Junk</gui> mail folder frequently to be sure that legitimate mail doesn't get flagged as junk mail.</p>
+
+<section id="marking-junk">
+<title>Ruční označení nevyžádané pošty</title>
+<p>Pokud Evolutionu spam proklouzne, klikněte pravým tlačítkem na zprávu a potom klikněte na <gui>Označit jako nevyžádaná</gui>, nebo stiskněte <keyseq><key>Ctrl</key><key>J</key></keyseq>, nebo klikněte na tlačítko <gui>Nevyžádaná pošty</gui> v nástrojové liště. Když provedete opravu, filtr bude umět v budoucnu rozpoznat podobné zprávy a bude se zpřesňovat.</p>
+<p>Pokud je dobrá pošta nesprávně označena, odstraňte ji ze složky <gui>Nevyžádané</gui> tak, že kliknete pravým tlačítkem a zvolíte <gui>Označit že není nevyžádaná</gui>, nebo stisknete <keyseq><key>Shift</key><key>Ctrl</key><key>J</key></keyseq>, nebo zprávu označíte a kliknete na tlačítko <gui>Není nevyžádané</gui>. </p>
+
+</section>
+</page>

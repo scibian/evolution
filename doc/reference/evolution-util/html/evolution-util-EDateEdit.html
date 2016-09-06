@@ -1,0 +1,977 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EDateEdit</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch16.html" title="(Unsorted Sections)">
+<link rel="prev" href="EDataCapture.html" title="EDataCapture">
+<link rel="next" href="EDestinationStore.html" title="EDestinationStore">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#evolution-util-EDateEdit.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch16.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EDataCapture.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EDestinationStore.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="evolution-util-EDateEdit"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="evolution-util-EDateEdit.top_of_page"></a>EDateEdit</span></h2>
+<p>EDateEdit</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="evolution-util-EDateEdit.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-new" title="e_date_edit_new ()">e_date_edit_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-editable" title="e_date_edit_set_editable ()">e_date_edit_set_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-date-is-valid" title="e_date_edit_date_is_valid ()">e_date_edit_date_is_valid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-time-is-valid" title="e_date_edit_time_is_valid ()">e_date_edit_time_is_valid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">time_t</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-time" title="e_date_edit_get_time ()">e_date_edit_get_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-time" title="e_date_edit_set_time ()">e_date_edit_set_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-date" title="e_date_edit_get_date ()">e_date_edit_get_date</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-date" title="e_date_edit_set_date ()">e_date_edit_set_date</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-time-of-day" title="e_date_edit_get_time_of_day ()">e_date_edit_get_time_of_day</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-time-of-day" title="e_date_edit_set_time_of_day ()">e_date_edit_set_time_of_day</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-date-and-time-of-day" title="e_date_edit_set_date_and_time_of_day ()">e_date_edit_set_date_and_time_of_day</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-show-date" title="e_date_edit_get_show_date ()">e_date_edit_get_show_date</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-show-date" title="e_date_edit_set_show_date ()">e_date_edit_set_show_date</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-show-time" title="e_date_edit_get_show_time ()">e_date_edit_get_show_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-show-time" title="e_date_edit_set_show_time ()">e_date_edit_set_show_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-week-start-day" title="e_date_edit_get_week_start_day ()">e_date_edit_get_week_start_day</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-week-start-day" title="e_date_edit_set_week_start_day ()">e_date_edit_set_week_start_day</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-show-week-numbers" title="e_date_edit_get_show_week_numbers ()">e_date_edit_get_show_week_numbers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-show-week-numbers" title="e_date_edit_set_show_week_numbers ()">e_date_edit_set_show_week_numbers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-use-24-hour-format" title="e_date_edit_get_use_24_hour_format ()">e_date_edit_get_use_24_hour_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-use-24-hour-format" title="e_date_edit_set_use_24_hour_format ()">e_date_edit_set_use_24_hour_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-allow-no-date-set" title="e_date_edit_get_allow_no_date_set ()">e_date_edit_get_allow_no_date_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-allow-no-date-set" title="e_date_edit_set_allow_no_date_set ()">e_date_edit_set_allow_no_date_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-time-popup-range" title="e_date_edit_get_time_popup_range ()">e_date_edit_get_time_popup_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-time-popup-range" title="e_date_edit_set_time_popup_range ()">e_date_edit_set_time_popup_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-make-time-insensitive" title="e_date_edit_get_make_time_insensitive ()">e_date_edit_get_make_time_insensitive</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-make-time-insensitive" title="e_date_edit_set_make_time_insensitive ()">e_date_edit_set_make_time_insensitive</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-twodigit-year-can-future" title="e_date_edit_get_twodigit_year_can_future ()">e_date_edit_get_twodigit_year_can_future</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-twodigit-year-can-future" title="e_date_edit_set_twodigit_year_can_future ()">e_date_edit_set_twodigit_year_can_future</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-get-time-callback" title="e_date_edit_set_get_time_callback ()">e_date_edit_set_get_time_callback</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-entry" title="e_date_edit_get_entry ()">e_date_edit_get_entry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EDateEdit.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EDateEdit.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-date-edit-new"></a><h3>e_date_edit_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_date_edit_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <span class="type">EDateEdit</span> widget which can be used
+to provide an easy to use way for entering dates and times.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.2.5"></a><h4>Returns</h4>
+<p> a new <span class="type">EDateEdit</span> widget.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-editable"></a><h3>e_date_edit_set_editable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_editable (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> editable</code></em>);</pre>
+<p>Allows the programmer to disallow editing (and the popping up of
+the calendar widget), while still allowing the user to select the
+date from the GtkEntry.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>editable</p></td>
+<td class="parameter_description"><p>whether or not the widget should accept edits.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-date-is-valid"></a><h3>e_date_edit_date_is_valid ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_date_is_valid (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+<p>Returns TRUE if the last date entered was valid.</p>
+<p>Note that if this returns FALSE, you can still use <a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-time" title="e_date_edit_get_time ()"><code class="function">e_date_edit_get_time()</code></a>
+or <a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-date" title="e_date_edit_get_date ()"><code class="function">e_date_edit_get_date()</code></a> to get the last time or date entered which was
+valid.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.4.7"></a><h4>Returns</h4>
+<p>TRUE if the last date entered was valid.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-time-is-valid"></a><h3>e_date_edit_time_is_valid ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_time_is_valid (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+<p>Returns TRUE if the last time entered was valid.</p>
+<p>Note that if this returns FALSE, you can still use <a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-time" title="e_date_edit_get_time ()"><code class="function">e_date_edit_get_time()</code></a>
+or <a class="link" href="evolution-util-EDateEdit.html#e-date-edit-get-time-of-day" title="e_date_edit_get_time_of_day ()"><code class="function">e_date_edit_get_time_of_day()</code></a> to get the last time or time of the day
+entered which was valid.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.5.7"></a><h4>Returns</h4>
+<p>TRUE if the last time entered was valid.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-time"></a><h3>e_date_edit_get_time ()</h3>
+<pre class="programlisting"><span class="returnvalue">time_t</span>
+e_date_edit_get_time (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+<p>Returns the last valid time entered. If empty times are valid, by calling
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-allow-no-date-set" title="e_date_edit_set_allow_no_date_set ()"><code class="function">e_date_edit_set_allow_no_date_set()</code></a>, then it may return -1.</p>
+<p>Note that the last time entered may actually have been invalid. You can
+check this with <a class="link" href="evolution-util-EDateEdit.html#e-date-edit-time-is-valid" title="e_date_edit_time_is_valid ()"><code class="function">e_date_edit_time_is_valid()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.6.7"></a><h4>Returns</h4>
+<p> the last valid time entered, or -1 if the time is not set.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-time"></a><h3>e_date_edit_set_time ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_time (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                      <em class="parameter"><code><span class="type">time_t</span> the_time</code></em>);</pre>
+<p>Changes the displayed date and time in the EDateEdit
+widget to be the one represented by <em class="parameter"><code>the_time</code></em>
+.  If <em class="parameter"><code>the_time</code></em>
+ is 0
+then current time is used. If it is -1, then the date is set to None.</p>
+<p>Note that the time is converted to local time using the Unix timezone,
+so if you are using your own timezones then you should use
+<a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-date" title="e_date_edit_set_date ()"><code class="function">e_date_edit_set_date()</code></a> and <a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-time-of-day" title="e_date_edit_set_time_of_day ()"><code class="function">e_date_edit_set_time_of_day()</code></a> instead.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>the_time</p></td>
+<td class="parameter_description"><p>The time and date that should be set on the widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-date"></a><h3>e_date_edit_get_date ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_date (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *year</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *month</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *day</code></em>);</pre>
+<p>Returns the last valid date entered into the date field.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>year</p></td>
+<td class="parameter_description"><p>returns the year set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>month</p></td>
+<td class="parameter_description"><p>returns the month set (1 - 12).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>day</p></td>
+<td class="parameter_description"><p>returns the day set (1 - 31).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.8.6"></a><h4>Returns</h4>
+<p>TRUE if a time was set, or FALSE if the field is empty or 'None'.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-date"></a><h3>e_date_edit_set_date ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_date (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> year</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> month</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> day</code></em>);</pre>
+<p>Sets the date in the date field.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>year</p></td>
+<td class="parameter_description"><p>the year to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>month</p></td>
+<td class="parameter_description"><p>the month to set (1 - 12).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>day</p></td>
+<td class="parameter_description"><p>the day to set (1 - 31).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-time-of-day"></a><h3>e_date_edit_get_time_of_day ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_time_of_day (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *hour</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *minute</code></em>);</pre>
+<p>Returns the last valid time entered into the time field.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hour</p></td>
+<td class="parameter_description"><p>returns the hour set, or 0 if the time isn't set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minute</p></td>
+<td class="parameter_description"><p>returns the minute set, or 0 if the time isn't set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.10.6"></a><h4>Returns</h4>
+<p>TRUE if a time was set, or FALSE if the field is empty or 'None'.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-time-of-day"></a><h3>e_date_edit_set_time_of_day ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_time_of_day (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hour</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> minute</code></em>);</pre>
+<p>Sets the time in the time field.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hour</p></td>
+<td class="parameter_description"><p>the hour to set, or -1 to set the time to None (i.e. empty).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minute</p></td>
+<td class="parameter_description"><p>the minute to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-date-and-time-of-day"></a><h3>e_date_edit_set_date_and_time_of_day ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_date_and_time_of_day (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> year</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> month</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> day</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hour</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> minute</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-show-date"></a><h3>e_date_edit_get_show_date ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_show_date (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+<p>Returns TRUE if the date field is currently shown.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.13.6"></a><h4>Returns</h4>
+<p>Whether the date field is shown.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-show-date"></a><h3>e_date_edit_set_show_date ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_show_date (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_date</code></em>);</pre>
+<p>Specifies whether the date field should be shown. The date
+field would be hidden if only a time needed to be entered.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>show_date</p></td>
+<td class="parameter_description"><p>TRUE if the date field should be shown.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-show-time"></a><h3>e_date_edit_get_show_time ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_show_time (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+<p>Returns TRUE if the time field is currently shown.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.15.6"></a><h4>Returns</h4>
+<p>Whether the time field is shown.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-show-time"></a><h3>e_date_edit_set_show_time ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_show_time (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_time</code></em>);</pre>
+<p>Specifies whether the time field should be shown. The time
+field would be hidden if only a date needed to be entered.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>show_time</p></td>
+<td class="parameter_description"><p>TRUE if the time field should be shown.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-week-start-day"></a><h3>e_date_edit_get_week_start_day ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="returnvalue">GDateWeekday</span></a>
+e_date_edit_get_week_start_day (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+<p>Returns the week start day currently used in the calendar popup.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.17.6"></a><h4>Returns</h4>
+<p> a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-week-start-day"></a><h3>e_date_edit_set_week_start_day ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_week_start_day (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a> week_start_day</code></em>);</pre>
+<p>Sets the week start day to use in the calendar popup.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>week_start_day</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Date-and-Time-Functions.html#GDateWeekday"><span class="type">GDateWeekday</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-show-week-numbers"></a><h3>e_date_edit_get_show_week_numbers ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_show_week_numbers (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-show-week-numbers"></a><h3>e_date_edit_set_show_week_numbers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_show_week_numbers (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_week_numbers</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-use-24-hour-format"></a><h3>e_date_edit_get_use_24_hour_format ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_use_24_hour_format (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-use-24-hour-format"></a><h3>e_date_edit_set_use_24_hour_format ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_use_24_hour_format (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_24_hour_format</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-allow-no-date-set"></a><h3>e_date_edit_get_allow_no_date_set ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_allow_no_date_set (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-allow-no-date-set"></a><h3>e_date_edit_set_allow_no_date_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_allow_no_date_set (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> allow_no_date_set</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-time-popup-range"></a><h3>e_date_edit_get_time_popup_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_get_time_popup_range (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *lower_hour</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *upper_hour</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-time-popup-range"></a><h3>e_date_edit_set_time_popup_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_time_popup_range (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> lower_hour</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> upper_hour</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-make-time-insensitive"></a><h3>e_date_edit_get_make_time_insensitive ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_make_time_insensitive (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+<p>Returns TRUE if the time field is made insensitive instead of
+hiding it.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.27.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.12.5.27.6"></a><h4>Returns</h4>
+<p>Whether the time field is be made insensitive instead of hiding
+it.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-make-time-insensitive"></a><h3>e_date_edit_set_make_time_insensitive ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_make_time_insensitive (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> make_insensitive</code></em>);</pre>
+<p>Specifies whether the time field should be made insensitive
+rather than hiding it. Note that this doesn't make it insensitive - you
+need to call <a class="link" href="evolution-util-EDateEdit.html#e-date-edit-set-show-time" title="e_date_edit_set_show_time ()"><code class="function">e_date_edit_set_show_time()</code></a> with FALSE as show_time to do that.</p>
+<p>This is useful if you want to disable the time field, but don't want it to
+disappear as that may affect the layout of the widgets.</p>
+<div class="refsect3">
+<a name="id-1.17.12.5.28.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dedit</p></td>
+<td class="parameter_description"><p>an <span class="type">EDateEdit</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>make_insensitive</p></td>
+<td class="parameter_description"><p>TRUE if the time field should be made insensitive instead
+of hiding it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-twodigit-year-can-future"></a><h3>e_date_edit_get_twodigit_year_can_future ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_date_edit_get_twodigit_year_can_future
+                               (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-twodigit-year-can-future"></a><h3>e_date_edit_set_twodigit_year_can_future ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_twodigit_year_can_future
+                               (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-set-get-time-callback"></a><h3>e_date_edit_set_get_time_callback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_date_edit_set_get_time_callback (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>,
+                                   <em class="parameter"><code><span class="type">EDateEditGetTimeCallback</span> cb</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> destroy</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-date-edit-get-entry"></a><h3>e_date_edit_get_entry ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_date_edit_get_entry (<em class="parameter"><code><span class="type">EDateEdit</span> *dedit</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EDateEdit.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

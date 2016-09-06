@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-exchange-ews" xml:lang="ja">
+
+  <info>
+    <desc>Exchange Web Services アカウントの受信オプション</desc>
+
+    <link type="guide" xref="mail-receiving-options#corporate-server-types"/>
+    <link type="guide" xref="mail-account-manage-microsoft-exchange-evo-ews#receiving-email"/>
+    <revision pkgversion="3.1.91" version="0.2" date="2013-06-22" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>Exchange Web Services の受信オプション</title>
+
+<section id="receiving-email-exchange-ews">
+<title>メールの受信</title>
+
+<p><gui>メールの受信</gui>ページ (<guiseq><gui>編集</gui><gui>設定</gui><gui>メールアカウント</gui><gui style="button">編集</gui><gui>メールの受信</gui></guiseq>でアクセスできます) で:</p>
+
+<list>
+<item><p>そのサーバーのユーザー名を入力します。</p></item>
+<item><p>Either manually enter the Host URL and OAB URL, or click <gui style="button">Fetch URL</gui> which will ask you for your password and then try to automatically fill in the values.</p>
+<note style="tip"><p>If you are in an organizational environment, you may want to contact your system administrator for more information.</p></note></item>
+<item><p>Select your authentication type in the Authentication list, or click <gui style="button">Check for Supported Types</gui> to have Evolution check for supported authentication mechanisms. Some servers do not announce the authentication mechanisms they support, so clicking this button is not a guarantee that available mechanisms actually work.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-exchange-ews">
+<title>受信オプション</title>
+
+<p><gui>受信のオプション</gui>ページ (<guiseq><gui>編集</gui><gui>設定</gui><gui>メールアカウント</gui><gui style="button">編集</gui><gui>受信のオプション</gui></guiseq>でアクセスできます) で:</p>
+
+<list>
+<item><p>If you want Evolution to check automatically for new messages, click the <gui>Check for new messages every ... minutes</gui> option and select the frequency in minutes.</p></item>
+<item><p>You can also define if Evolution checks for new messages in all folders.</p></item>
+<item><p>If you would like to have a copy of the address book on the server for offline access to it, enable <gui>Cache offline address book</gui> and click <gui style="button">Fetch list</gui>. Afterwards, select the address book from the available options.</p></item>
+<item><p>If you want <link xref="mail-filters">Filters</link> to be automatically used for new messages in your inbox, enable <gui>Apply filters to new messages in Inbox on this server</gui>.</p></item>
+</list>
+
+</section>
+
+</page>

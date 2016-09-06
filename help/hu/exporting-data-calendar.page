@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="exporting-data-calendar" xml:lang="hu">
+
+  <info>
+    <desc>Naptáradatok exportálásának módja az <app>Evolutionből</app>.</desc>
+
+    <link type="guide" xref="exporting-data"/>
+
+    <revision pkgversion="3.6.4" version="0.4" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Naptáradatok exportálása</title>
+
+<p>Egy teljes naptár exportálásához kattintson rá a jobb egérgombbal a naptárak listájában, és válassza a <gui>Mentés másként</gui> menüpontot. Az elérhető formátumok az iCalendar (.ics, ajánlott), vesszőkkel elválasztott értéklista (.csv) és az RDF.</p>
+<p>Ha csak egy névjegyet (vagy feladatot vagy feljegyzést) szeretne exportálni, akkor válassza a <guiseq><gui>Fájl</gui><gui>Mentés iCalendarként</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a névjegyre, és válassza a <gui>Mentés iCalendarként</gui> menüpontot.</p>
+</page>

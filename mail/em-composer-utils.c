@@ -1,0 +1,3242 @@
+/* -*- Mode: C; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*- */
+
+/*
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *
+ *
+ * Authors:
+ *		Jeffrey Stedfast <fejj@ximian.com>
+ *
+ * Copyright (C) 1999-2008 Novell, Inc. (www.novell.com)
+ *
+ */
+
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
+#include <string.h>
+#include <gtk/gtk.h>
+#include <glib/gi18n.h>
+
+#include <e-util/e-util.h>
+
+#include <libemail-engine/libemail-engine.h>
+
+#include <em-format/e-mail-parser.h>
+#include <em-format/e-mail-formatter-quote.h>
+
+#include <shell/e-shell.h>
+
+#include <composer/e-msg-composer.h>
+#include <composer/e-composer-actions.h>
+#include <composer/e-composer-post-header.h>
+
+#include "e-mail-printer.h"
+#include "e-mail-ui-session.h"
+#include "em-utils.h"
+#include "em-composer-utils.h"
+#include "em-folder-selector.h"
+#include "em-folder-tree.h"
+#include "em-event.h"
+#include "mail-send-recv.h"
+
+#ifdef G_OS_WIN32
+#ifdef gmtime_r
+#undef gmtime_r
+#endif
+
+/* The gmtime() in Microsoft's C library is MT-safe */
+#define gmtime_r(tp,tmp) (gmtime(tp)?(*(tmp)=*gmtime(tp),(tmp)):0)
+#endif
+
+typedef struct _AsyncContext AsyncContext;
+typedef struct _ForwardData ForwardData;
+
+struct _AsyncContext {
+	CamelMimeMessage *message;
+	EMailSession *session;
+	EMsgComposer *composer;
+	EActivity *activity;
+	gchar *folder_uri;
+	gchar *message_uid;
+};
+
+struct _ForwardData {
+	EShell *shell;
+	CamelFolder *folder;
+	GPtrArray *uids;
+	EMailForwardStyle style;
+};
+
+static void
+async_context_free (AsyncContext *async_context)
+{
+	g_clear_object (&async_context->message);
+	g_clear_object (&async_context->session);
+	g_clear_object (&async_context->composer);
+	g_clear_object (&async_context->activity);
+
+	g_free (async_context->folder_uri);
+	g_free (async_context->message_uid);
+
+	g_slice_free (AsyncContext, async_context);
+}
+
+static void
+forward_data_free (ForwardData *data)
+{
+	if (data->shell != NULL)
+		g_object_unref (data->shell);
+
+	if (data->folder != NULL)
+		g_object_unref (data->folder);
+
+	if (data->uids != NULL)
+		g_ptr_array_unref (data->uids);
+
+	g_slice_free (ForwardData, data);
+}
+
+static gboolean
+ask_confirm_for_unwanted_html_mail (EMsgComposer *composer,
+                                    EDestination **recipients)
+{
+	gboolean res;
+	GString *str;
+	gint i;
+
+	str = g_string_new ("");
+	for (i = 0; recipients[i] != NULL; ++i) {
+		if (!e_destination_get_html_mail_pref (recipients[i])) {
+			const gchar *name;
+
+			name = e_destination_get_textrep (recipients[i], FALSE);
+
+			g_string_append_printf (str, "     %s\n", name);
+		}
+	}
+
+	if (str->len)
+		res = em_utils_prompt_user (
+			GTK_WINDOW (composer),
+			"prompt-on-unwanted-html",
+			"mail:ask-send-html", str->str, NULL);
+	else
+		res = TRUE;
+
+	g_string_free (str, TRUE);
+
+	return res;
+}
+
+static gboolean
+ask_confirm_for_empty_subject (EMsgComposer *composer)
+{
+	return em_utils_prompt_user (
+		GTK_WINDOW (composer),
+		"prompt-on-empty-subject",
+		"mail:ask-send-no-subject", NULL);
+}
+
+static gboolean
+ask_confirm_for_only_bcc (EMsgComposer *composer,
+                          gboolean hidden_list_case)
+{
+	/* If the user is mailing a hidden contact list, it is possible for
+	 * them to create a message with only Bcc recipients without really
+	 * realizing it.  To try to avoid being totally confusing, I've changed
+	 * this dialog to provide slightly different text in that case, to
+	 * better explain what the hell is going on. */
+
+	return em_utils_prompt_user (
+		GTK_WINDOW (composer),
+		"prompt-on-only-bcc",
+		hidden_list_case ?
+		"mail:ask-send-only-bcc-contact" :
+		"mail:ask-send-only-bcc", NULL);
+}
+
+static gboolean
+is_group_definition (const gchar *str)
+{
+	const gchar *colon;
+
+	if (!str || !*str)
+		return FALSE;
+
+	colon = strchr (str, ':');
+	return colon > str && strchr (str, ';') > colon;
+}
+
+static gboolean
+composer_presend_check_recipients (EMsgComposer *composer,
+                                   EMailSession *session)
+{
+	EDestination **recipients;
+	EDestination **recipients_bcc;
+	CamelInternetAddress *cia;
+	EComposerHeaderTable *table;
+	EComposerHeader *post_to_header;
+	GString *invalid_addrs = NULL;
+	gboolean check_passed = FALSE;
+	gint hidden = 0;
+	gint shown = 0;
+	gint num = 0;
+	gint num_bcc = 0;
+	gint num_post = 0;
+	gint ii;
+
+	/* We should do all of the validity checks based on the composer,
+	 * and not on the created message, as extra interaction may occur
+	 * when we get the message (e.g. passphrase to sign a message). */
+
+	table = e_msg_composer_get_header_table (composer);
+	recipients = e_composer_header_table_get_destinations (table);
+
+	cia = camel_internet_address_new ();
+
+	/* See which ones are visible, present, etc. */
+	for (ii = 0; recipients != NULL && recipients[ii] != NULL; ii++) {
+		const gchar *addr;
+		gint len, j;
+
+		addr = e_destination_get_address (recipients[ii]);
+		if (addr == NULL || *addr == '\0')
+			continue;
+
+		camel_address_decode (CAMEL_ADDRESS (cia), addr);
+		len = camel_address_length (CAMEL_ADDRESS (cia));
+
+		if (len > 0) {
+			if (!e_destination_is_evolution_list (recipients[ii])) {
+				for (j = 0; j < len; j++) {
+					const gchar *name = NULL, *eml = NULL;
+
+					if (!camel_internet_address_get (cia, j, &name, &eml) ||
+					    !eml ||
+					    strchr (eml, '@') <= eml) {
+						if (!invalid_addrs)
+							invalid_addrs = g_string_new ("");
+						else
+							g_string_append (invalid_addrs, ", ");
+
+						if (name)
+							g_string_append (invalid_addrs, name);
+						if (eml) {
+							g_string_append (invalid_addrs, name ? " <" : "");
+							g_string_append (invalid_addrs, eml);
+							g_string_append (invalid_addrs, name ? ">" : "");
+						}
+					}
+				}
+			}
+
+			camel_address_remove (CAMEL_ADDRESS (cia), -1);
+			num++;
+			if (e_destination_is_evolution_list (recipients[ii])
+			    && !e_destination_list_show_addresses (recipients[ii])) {
+				hidden++;
+			} else {
+				shown++;
+			}
+		} else if (is_group_definition (addr)) {
+			/* like an address, it will not claim on only-bcc */
+			shown++;
+			num++;
+		} else if (!invalid_addrs) {
+			invalid_addrs = g_string_new (addr);
+		} else {
+			g_string_append (invalid_addrs, ", ");
+			g_string_append (invalid_addrs, addr);
+		}
+	}
+
+	recipients_bcc = e_composer_header_table_get_destinations_bcc (table);
+	if (recipients_bcc) {
+		for (ii = 0; recipients_bcc[ii] != NULL; ii++) {
+			const gchar *addr;
+
+			addr = e_destination_get_address (recipients_bcc[ii]);
+			if (addr == NULL || *addr == '\0')
+				continue;
+
+			camel_address_decode (CAMEL_ADDRESS (cia), addr);
+			if (camel_address_length (CAMEL_ADDRESS (cia)) > 0) {
+				camel_address_remove (CAMEL_ADDRESS (cia), -1);
+				num_bcc++;
+			}
+		}
+
+		e_destination_freev (recipients_bcc);
+	}
+
+	g_object_unref (cia);
+
+	post_to_header = e_composer_header_table_get_header (
+		table, E_COMPOSER_HEADER_POST_TO);
+	if (e_composer_header_get_visible (post_to_header)) {
+		GList *postlist;
+
+		postlist = e_composer_header_table_get_post_to (table);
+		num_post = g_list_length (postlist);
+		g_list_foreach (postlist, (GFunc) g_free, NULL);
+		g_list_free (postlist);
+	}
+
+	/* I'm sensing a lack of love, er, I mean recipients. */
+	if (num == 0 && num_post == 0) {
+		e_alert_submit (
+			E_ALERT_SINK (composer),
+			"mail:send-no-recipients", NULL);
+		goto finished;
+	}
+
+	if (invalid_addrs) {
+		if (!em_utils_prompt_user (
+			GTK_WINDOW (composer),
+			"prompt-on-invalid-recip",
+			strstr (invalid_addrs->str, ", ") ?
+				"mail:ask-send-invalid-recip-multi" :
+				"mail:ask-send-invalid-recip-one",
+			invalid_addrs->str, NULL)) {
+			g_string_free (invalid_addrs, TRUE);
+			goto finished;
+		}
+
+		g_string_free (invalid_addrs, TRUE);
+	}
+
+	if (num > 0 && (num == num_bcc || shown == 0)) {
+		/* this means that the only recipients are Bcc's */
+		if (!ask_confirm_for_only_bcc (composer, shown == 0))
+			goto finished;
+	}
+
+	check_passed = TRUE;
+
+finished:
+	if (recipients != NULL)
+		e_destination_freev (recipients);
+
+	return check_passed;
+}
+
+static gboolean
+composer_presend_check_identity (EMsgComposer *composer,
+                                 EMailSession *session)
+{
+	EComposerHeaderTable *table;
+	EClientCache *client_cache;
+	ESourceRegistry *registry;
+	ESource *source;
+	const gchar *uid;
+	gboolean success = TRUE;
+
+	table = e_msg_composer_get_header_table (composer);
+
+	uid = e_composer_header_table_get_identity_uid (table);
+	source = e_composer_header_table_ref_source (table, uid);
+	g_return_val_if_fail (source != NULL, FALSE);
+
+	client_cache = e_composer_header_table_ref_client_cache (table);
+	registry = e_client_cache_ref_registry (client_cache);
+
+	if (!e_source_registry_check_enabled (registry, source)) {
+		e_alert_submit (
+			E_ALERT_SINK (composer),
+			"mail:send-no-account-enabled", NULL);
+		success = FALSE;
+	}
+
+	g_object_unref (client_cache);
+	g_object_unref (registry);
+	g_object_unref (source);
+
+	return success;
+}
+
+static gboolean
+composer_presend_check_downloads (EMsgComposer *composer,
+                                  EMailSession *session)
+{
+	EAttachmentView *view;
+	EAttachmentStore *store;
+	gboolean check_passed = TRUE;
+
+	view = e_msg_composer_get_attachment_view (composer);
+	store = e_attachment_view_get_store (view);
+
+	if (e_attachment_store_get_num_loading (store) > 0) {
+		if (!em_utils_prompt_user (GTK_WINDOW (composer), NULL,
+		    "mail-composer:ask-send-message-pending-download", NULL))
+			check_passed = FALSE;
+	}
+
+	return check_passed;
+}
+
+static gboolean
+composer_presend_check_plugins (EMsgComposer *composer,
+                                EMailSession *session)
+{
+	EMEvent *eme;
+	EMEventTargetComposer *target;
+	gpointer data;
+
+	/** @Event: composer.presendchecks
+	 * @Title: Composer PreSend Checks
+	 * @Target: EMEventTargetMessage
+	 *
+	 * composer.presendchecks is emitted during pre-checks for the
+	 * message just before sending.  Since the e-plugin framework
+	 * doesn't provide a way to return a value from the plugin,
+	 * use 'presend_check_status' to set whether the check passed.
+	 */
+	eme = em_event_peek ();
+	target = em_event_target_new_composer (eme, composer, 0);
+
+	e_event_emit (
+		(EEvent *) eme, "composer.presendchecks",
+		(EEventTarget *) target);
+
+	/* A non-NULL value for this key means the check failed. */
+	data = g_object_get_data (G_OBJECT (composer), "presend_check_status");
+
+	/* Clear the value in case we have to run these checks again. */
+	g_object_set_data (G_OBJECT (composer), "presend_check_status", NULL);
+
+	return (data == NULL);
+}
+
+static gboolean
+composer_presend_check_subject (EMsgComposer *composer,
+                                EMailSession *session)
+{
+	EComposerHeaderTable *table;
+	const gchar *subject;
+	gboolean check_passed = TRUE;
+
+	table = e_msg_composer_get_header_table (composer);
+	subject = e_composer_header_table_get_subject (table);
+
+	if (subject == NULL || subject[0] == '\0') {
+		if (!ask_confirm_for_empty_subject (composer))
+			check_passed = FALSE;
+	}
+
+	return check_passed;
+}
+
+static gboolean
+composer_presend_check_unwanted_html (EMsgComposer *composer,
+                                      EMailSession *session)
+{
+	EDestination **recipients;
+	EComposerHeaderTable *table;
+	GSettings *settings;
+	gboolean check_passed = TRUE;
+	gboolean html_mode;
+	gboolean send_html;
+	gboolean confirm_html;
+	gint ii;
+
+	settings = g_settings_new ("org.gnome.evolution.mail");
+
+	table = e_msg_composer_get_header_table (composer);
+	recipients = e_composer_header_table_get_destinations (table);
+	html_mode = gtkhtml_editor_get_html_mode (GTKHTML_EDITOR (composer));
+
+	send_html = g_settings_get_boolean (settings, "composer-send-html");
+	confirm_html = g_settings_get_boolean (settings, "prompt-on-unwanted-html");
+
+	/* Only show this warning if our default is to send html.  If it
+	 * isn't, we've manually switched into html mode in the composer
+	 * and (presumably) had a good reason for doing this. */
+	if (html_mode && send_html && confirm_html && recipients != NULL) {
+		gboolean html_problem = FALSE;
+
+		for (ii = 0; recipients[ii] != NULL; ii++) {
+			if (!e_destination_get_html_mail_pref (recipients[ii])) {
+				html_problem = TRUE;
+				break;
+			}
+		}
+
+		if (html_problem) {
+			if (!ask_confirm_for_unwanted_html_mail (
+				composer, recipients))
+				check_passed = FALSE;
+		}
+	}
+
+	if (recipients != NULL)
+		e_destination_freev (recipients);
+
+	g_object_unref (settings);
+
+	return check_passed;
+}
+
+static void
+composer_send_completed (GObject *source_object,
+                         GAsyncResult *result,
+                         gpointer user_data)
+{
+	EActivity *activity;
+	gboolean service_unavailable;
+	gboolean set_changed = FALSE;
+	AsyncContext *async_context;
+	GError *local_error = NULL;
+
+	async_context = (AsyncContext *) user_data;
+
+	activity = async_context->activity;
+
+	e_mail_session_send_to_finish (
+		E_MAIL_SESSION (source_object), result, &local_error);
+
+	if (e_activity_handle_cancellation (activity, local_error)) {
+		set_changed = TRUE;
+		goto exit;
+	}
+
+	/* Check for error codes which may indicate we're offline
+	 * or name resolution failed or connection attempt failed. */
+	service_unavailable =
+		g_error_matches (
+			local_error, CAMEL_SERVICE_ERROR,
+			CAMEL_SERVICE_ERROR_UNAVAILABLE) ||
+		/* name resolution failed */
+		g_error_matches (
+			local_error, G_RESOLVER_ERROR,
+			G_RESOLVER_ERROR_NOT_FOUND) ||
+		g_error_matches (
+			local_error, G_RESOLVER_ERROR,
+			G_RESOLVER_ERROR_TEMPORARY_FAILURE) ||
+		/* something internal to Camel failed */
+		g_error_matches (
+			local_error, CAMEL_SERVICE_ERROR,
+			CAMEL_SERVICE_ERROR_URL_INVALID);
+	if (service_unavailable) {
+		/* Inform the user. */
+		e_alert_run_dialog_for_args (
+			GTK_WINDOW (async_context->composer),
+			"mail-composer:saving-to-outbox", NULL);
+		e_msg_composer_save_to_outbox (async_context->composer);
+		goto exit;
+	}
+
+	/* Post-processing errors are shown in the shell window. */
+	if (g_error_matches (
+		local_error, E_MAIL_ERROR,
+		E_MAIL_ERROR_POST_PROCESSING)) {
+		EAlert *alert;
+		EShell *shell;
+
+		shell = e_msg_composer_get_shell (async_context->composer);
+
+		alert = e_alert_new (
+			"mail-composer:send-post-processing-error",
+			local_error->message, NULL);
+		e_shell_submit_alert (shell, alert);
+		g_object_unref (alert);
+
+	/* All other errors are shown in the composer window. */
+	} else if (local_error != NULL) {
+		gint response;
+
+		/* Clear the activity bar before
+		 * presenting the error dialog. */
+		g_clear_object (&async_context->activity);
+		activity = async_context->activity;
+
+		response = e_alert_run_dialog_for_args (
+			GTK_WINDOW (async_context->composer),
+			"mail-composer:send-error",
+			local_error->message, NULL);
+		if (response == GTK_RESPONSE_OK)  /* Try Again */
+			e_msg_composer_send (async_context->composer);
+		if (response == GTK_RESPONSE_ACCEPT)  /* Save to Outbox */
+			e_msg_composer_save_to_outbox (async_context->composer);
+		set_changed = TRUE;
+		goto exit;
+	}
+
+	e_activity_set_state (activity, E_ACTIVITY_COMPLETED);
+
+	/* Wait for the EActivity's completion message to
+	 * time out and then destroy the composer window. */
+	g_object_weak_ref (
+		G_OBJECT (activity), (GWeakNotify)
+		gtk_widget_destroy, async_context->composer);
+
+exit:
+	g_clear_error (&local_error);
+
+	if (set_changed) {
+		gtkhtml_editor_set_changed (
+			GTKHTML_EDITOR (async_context->composer), TRUE);
+		gtk_window_present (GTK_WINDOW (async_context->composer));
+	}
+
+	async_context_free (async_context);
+}
+
+static void
+em_utils_composer_send_cb (EMsgComposer *composer,
+                           CamelMimeMessage *message,
+                           EActivity *activity,
+                           EMailSession *session)
+{
+	AsyncContext *async_context;
+	GCancellable *cancellable;
+
+	if (!camel_session_get_online (CAMEL_SESSION (session))) {
+		e_alert_run_dialog_for_args (
+			GTK_WINDOW (composer),
+			"mail-composer:saving-to-outbox", NULL);
+		e_msg_composer_save_to_outbox (composer);
+		return;
+	}
+
+	async_context = g_slice_new0 (AsyncContext);
+	async_context->message = g_object_ref (message);
+	async_context->composer = g_object_ref (composer);
+	async_context->activity = g_object_ref (activity);
+
+	cancellable = e_activity_get_cancellable (activity);
+
+	e_mail_session_send_to (
+		session, message,
+		G_PRIORITY_DEFAULT,
+		cancellable, NULL, NULL,
+		composer_send_completed,
+		async_context);
+}
+
+static void
+composer_set_no_change (EMsgComposer *composer)
+{
+	GtkhtmlEditor *editor;
+
+	g_return_if_fail (composer != NULL);
+
+	editor = GTKHTML_EDITOR (composer);
+
+	gtkhtml_editor_drop_undo (editor);
+	gtkhtml_editor_set_changed (editor, FALSE);
+}
+
+/* delete original messages from Outbox folder */
+static void
+manage_x_evolution_replace_outbox (EMsgComposer *composer,
+                                   EMailSession *session,
+                                   CamelMimeMessage *message,
+                                   GCancellable *cancellable)
+{
+	const gchar *message_uid;
+	const gchar *header;
+	CamelFolder *outbox;
+
+	g_return_if_fail (composer != NULL);
+	g_return_if_fail (CAMEL_IS_MIME_MESSAGE (message));
+
+	header = "X-Evolution-Replace-Outbox-UID";
+	message_uid = camel_medium_get_header (CAMEL_MEDIUM (message), header);
+	e_msg_composer_remove_header (composer, header);
+
+	if (!message_uid)
+		return;
+
+	outbox = e_mail_session_get_local_folder (
+		session, E_MAIL_LOCAL_FOLDER_OUTBOX);
+	g_return_if_fail (outbox != NULL);
+
+	camel_folder_set_message_flags (
+		outbox, message_uid,
+		CAMEL_MESSAGE_DELETED | CAMEL_MESSAGE_SEEN,
+		CAMEL_MESSAGE_DELETED | CAMEL_MESSAGE_SEEN);
+
+	/* ignore errors here */
+	camel_folder_synchronize_message_sync (
+		outbox, message_uid, cancellable, NULL);
+}
+
+static void
+composer_save_to_drafts_complete (GObject *source_object,
+                                  GAsyncResult *result,
+                                  gpointer user_data)
+{
+	EActivity *activity;
+	AsyncContext *async_context;
+	GError *local_error = NULL;
+
+	/* We don't really care if this failed.  If something other than
+	 * cancellation happened, emit a runtime warning so the error is
+	 * not completely lost. */
+
+	async_context = (AsyncContext *) user_data;
+
+	activity = async_context->activity;
+
+	e_mail_session_handle_draft_headers_finish (
+		E_MAIL_SESSION (source_object), result, &local_error);
+
+	if (e_activity_handle_cancellation (activity, local_error)) {
+		gtkhtml_editor_set_changed (
+			GTKHTML_EDITOR (async_context->composer), TRUE);
+		g_error_free (local_error);
+
+	} else if (local_error != NULL) {
+		gtkhtml_editor_set_changed (
+			GTKHTML_EDITOR (async_context->composer), TRUE);
+		g_warning ("%s", local_error->message);
+		g_error_free (local_error);
+
+	} else
+		e_activity_set_state (activity, E_ACTIVITY_COMPLETED);
+
+	/* Encode the draft message we just saved into the EMsgComposer
+	 * as X-Evolution-Draft headers.  The message will be marked for
+	 * deletion if the user saves a newer draft message or sends the
+	 * composed message. */
+	e_msg_composer_set_draft_headers (
+		async_context->composer,
+		async_context->folder_uri,
+		async_context->message_uid);
+
+	async_context_free (async_context);
+}
+
+static void
+composer_save_to_drafts_cleanup (GObject *source_object,
+                                 GAsyncResult *result,
+                                 gpointer user_data)
+{
+	CamelSession *session;
+	EActivity *activity;
+	EAlertSink *alert_sink;
+	GCancellable *cancellable;
+	AsyncContext *async_context;
+	GError *local_error = NULL;
+
+	async_context = (AsyncContext *) user_data;
+
+	activity = async_context->activity;
+	alert_sink = e_activity_get_alert_sink (activity);
+	cancellable = e_activity_get_cancellable (activity);
+
+	e_mail_folder_append_message_finish (
+		CAMEL_FOLDER (source_object), result,
+		&async_context->message_uid, &local_error);
+
+	if (e_activity_handle_cancellation (activity, local_error)) {
+		g_warn_if_fail (async_context->message_uid == NULL);
+		gtkhtml_editor_set_changed (
+			GTKHTML_EDITOR (async_context->composer), TRUE);
+		async_context_free (async_context);
+		g_error_free (local_error);
+		return;
+
+	} else if (local_error != NULL) {
+		g_warn_if_fail (async_context->message_uid == NULL);
+		e_alert_submit (
+			alert_sink,
+			"mail-composer:save-to-drafts-error",
+			local_error->message, NULL);
+		gtkhtml_editor_set_changed (
+			GTKHTML_EDITOR (async_context->composer), TRUE);
+		async_context_free (async_context);
+		g_error_free (local_error);
+		return;
+	}
+
+	session = e_msg_composer_ref_session (async_context->composer);
+
+	/* Mark the previously saved draft message for deletion.
+	 * Note: This is just a nice-to-have; ignore failures. */
+	e_mail_session_handle_draft_headers (
+		E_MAIL_SESSION (session),
+		async_context->message,
+		G_PRIORITY_DEFAULT, cancellable,
+		composer_save_to_drafts_complete,
+		async_context);
+
+	g_object_unref (session);
+}
+
+static void
+composer_save_to_drafts_append_mail (AsyncContext *async_context,
+                                     CamelFolder *drafts_folder)
+{
+	CamelFolder *local_drafts_folder;
+	GCancellable *cancellable;
+	CamelMessageInfo *info;
+
+	local_drafts_folder =
+		e_mail_session_get_local_folder (
+		async_context->session, E_MAIL_LOCAL_FOLDER_DRAFTS);
+
+	if (drafts_folder == NULL)
+		drafts_folder = g_object_ref (local_drafts_folder);
+
+	cancellable = e_activity_get_cancellable (async_context->activity);
+
+	info = camel_message_info_new (NULL);
+
+	camel_message_info_set_flags (info, CAMEL_MESSAGE_DRAFT | CAMEL_MESSAGE_SEEN |
+		(camel_mime_message_has_attachment (async_context->message) ? CAMEL_MESSAGE_ATTACHMENTS : 0), ~0);
+
+	camel_medium_remove_header (
+		CAMEL_MEDIUM (async_context->message),
+		"X-Evolution-Replace-Outbox-UID");
+
+	e_mail_folder_append_message (
+		drafts_folder, async_context->message,
+		info, G_PRIORITY_DEFAULT, cancellable,
+		composer_save_to_drafts_cleanup,
+		async_context);
+
+	camel_message_info_unref (info);
+
+	g_object_unref (drafts_folder);
+}
+
+static void
+composer_save_to_drafts_got_folder (GObject *source_object,
+                                    GAsyncResult *result,
+                                    gpointer user_data)
+{
+	EActivity *activity;
+	CamelFolder *drafts_folder;
+	AsyncContext *async_context;
+	GError *local_error = NULL;
+
+	async_context = (AsyncContext *) user_data;
+
+	activity = async_context->activity;
+
+	drafts_folder = e_mail_session_uri_to_folder_finish (
+		E_MAIL_SESSION (source_object), result, &local_error);
+
+	/* Sanity check. */
+	g_return_if_fail (
+		((drafts_folder != NULL) && (local_error == NULL)) ||
+		((drafts_folder == NULL) && (local_error != NULL)));
+
+	if (e_activity_handle_cancellation (activity, local_error)) {
+		gtkhtml_editor_set_changed (
+			GTKHTML_EDITOR (async_context->composer), TRUE);
+		async_context_free (async_context);
+		g_error_free (local_error);
+		return;
+
+	} else if (local_error != NULL) {
+		gint response;
+
+		/* XXX Not showing the error message in the dialog? */
+		g_error_free (local_error);
+
+		/* If we can't retrieve the Drafts folder for the
+		 * selected account, ask the user if he wants to
+		 * save to the local Drafts folder instead. */
+		response = e_alert_run_dialog_for_args (
+			GTK_WINDOW (async_context->composer),
+			"mail:ask-default-drafts", NULL);
+		if (response != GTK_RESPONSE_YES) {
+			gtkhtml_editor_set_changed (
+				GTKHTML_EDITOR (async_context->composer), TRUE);
+			async_context_free (async_context);
+			return;
+		}
+	}
+
+	composer_save_to_drafts_append_mail (async_context, drafts_folder);
+}
+
+static void
+em_utils_composer_save_to_drafts_cb (EMsgComposer *composer,
+                                     CamelMimeMessage *message,
+                                     EActivity *activity,
+                                     EMailSession *session)
+{
+	AsyncContext *async_context;
+	EComposerHeaderTable *table;
+	ESource *source;
+	const gchar *local_drafts_folder_uri;
+	const gchar *identity_uid;
+	gchar *drafts_folder_uri = NULL;
+
+	async_context = g_slice_new0 (AsyncContext);
+	async_context->message = g_object_ref (message);
+	async_context->session = g_object_ref (session);
+	async_context->composer = g_object_ref (composer);
+	async_context->activity = g_object_ref (activity);
+
+	table = e_msg_composer_get_header_table (composer);
+
+	identity_uid = e_composer_header_table_get_identity_uid (table);
+	source = e_composer_header_table_ref_source (table, identity_uid);
+
+	/* Get the selected identity's preferred Drafts folder. */
+	if (source != NULL) {
+		ESourceMailComposition *extension;
+		const gchar *extension_name;
+		gchar *uri;
+
+		extension_name = E_SOURCE_EXTENSION_MAIL_COMPOSITION;
+		extension = e_source_get_extension (source, extension_name);
+		uri = e_source_mail_composition_dup_drafts_folder (extension);
+
+		drafts_folder_uri = uri;
+
+		g_object_unref (source);
+	}
+
+	local_drafts_folder_uri =
+		e_mail_session_get_local_folder_uri (
+		session, E_MAIL_LOCAL_FOLDER_DRAFTS);
+
+	if (drafts_folder_uri == NULL) {
+		composer_save_to_drafts_append_mail (async_context, NULL);
+		async_context->folder_uri = g_strdup (local_drafts_folder_uri);
+	} else {
+		GCancellable *cancellable;
+
+		cancellable = e_activity_get_cancellable (activity);
+		async_context->folder_uri = g_strdup (drafts_folder_uri);
+
+		e_mail_session_uri_to_folder (
+			session, drafts_folder_uri, 0,
+			G_PRIORITY_DEFAULT, cancellable,
+			composer_save_to_drafts_got_folder,
+			async_context);
+
+		g_free (drafts_folder_uri);
+	}
+}
+
+static void
+composer_save_to_outbox_completed (GObject *source_object,
+                                   GAsyncResult *result,
+                                   gpointer user_data)
+{
+	EMailSession *session;
+	EActivity *activity;
+	EAlertSink *alert_sink;
+	GCancellable *cancellable;
+	AsyncContext *async_context;
+	GError *local_error = NULL;
+
+	session = E_MAIL_SESSION (source_object);
+	async_context = (AsyncContext *) user_data;
+
+	activity = async_context->activity;
+	alert_sink = e_activity_get_alert_sink (activity);
+	cancellable = e_activity_get_cancellable (activity);
+
+	e_mail_session_append_to_local_folder_finish (
+		session, result, NULL, &local_error);
+
+	if (e_activity_handle_cancellation (activity, local_error)) {
+		g_error_free (local_error);
+		goto exit;
+
+	} else if (local_error != NULL) {
+		e_alert_submit (
+			alert_sink,
+			"mail-composer:append-to-outbox-error",
+			local_error->message, NULL);
+		g_error_free (local_error);
+		goto exit;
+	}
+
+	/* special processing for Outbox folder */
+	manage_x_evolution_replace_outbox (
+		async_context->composer,
+		session,
+		async_context->message,
+		cancellable);
+
+	e_activity_set_state (activity, E_ACTIVITY_COMPLETED);
+
+	/* Wait for the EActivity's completion message to
+	 * time out and then destroy the composer window. */
+	g_object_weak_ref (
+		G_OBJECT (activity), (GWeakNotify)
+		gtk_widget_destroy, async_context->composer);
+
+exit:
+	async_context_free (async_context);
+}
+
+static void
+em_utils_composer_save_to_outbox_cb (EMsgComposer *composer,
+                                     CamelMimeMessage *message,
+                                     EActivity *activity,
+                                     EMailSession *session)
+{
+	AsyncContext *async_context;
+	CamelMessageInfo *info;
+	GCancellable *cancellable;
+
+	async_context = g_slice_new0 (AsyncContext);
+	async_context->message = g_object_ref (message);
+	async_context->composer = g_object_ref (composer);
+	async_context->activity = g_object_ref (activity);
+
+	cancellable = e_activity_get_cancellable (activity);
+
+	info = camel_message_info_new (NULL);
+	camel_message_info_set_flags (info, CAMEL_MESSAGE_SEEN, ~0);
+
+	e_mail_session_append_to_local_folder (
+		session, E_MAIL_LOCAL_FOLDER_OUTBOX,
+		message, info, G_PRIORITY_DEFAULT, cancellable,
+		composer_save_to_outbox_completed,
+		async_context);
+
+	camel_message_info_unref (info);
+}
+
+static void
+em_utils_composer_print_cb (EMsgComposer *composer,
+                            GtkPrintOperationAction action,
+                            CamelMimeMessage *message,
+                            EActivity *activity,
+                            EMailSession *session)
+{
+	/* as long as EMsgComposer uses GtkHTML, use its routine for printing;
+	 * this conditional compile is here rather to not forget to fix this
+	 * once the WebKit-based composer will land */
+#if defined(GTK_TYPE_HTML)
+	EWebViewGtkHTML *gtkhtml_web_view;
+	GtkPrintOperation *operation;
+	GError *error = NULL;
+
+	gtkhtml_web_view = e_msg_composer_get_web_view (composer);
+	g_return_if_fail (E_IS_WEB_VIEW_GTKHTML (gtkhtml_web_view));
+
+	operation = gtk_print_operation_new ();
+
+	gtk_html_print_operation_run (
+		GTK_HTML (gtkhtml_web_view), operation, action,
+		GTK_WINDOW (composer), NULL, NULL, NULL, NULL, NULL, &error);
+
+	g_object_unref (operation);
+
+	if (g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED)) {
+		g_error_free (error);
+
+	} else if (error != NULL) {
+		g_warning (
+			"%s: Failed to run print operation: %s",
+			G_STRFUNC, error->message);
+		g_error_free (error);
+	}
+#else
+	EMailParser *parser;
+	EMailPartList *parts;
+	EMailPrinter *printer;
+	const gchar *message_id;
+
+	parser = e_mail_parser_new (CAMEL_SESSION (session));
+
+	message_id = camel_mime_message_get_message_id (message);
+	parts = e_mail_parser_parse_sync (
+		parser, NULL, g_strdup (message_id), message, NULL);
+
+	/* FIXME Show an alert on error. */
+	printer = e_mail_printer_new (parts);
+	e_mail_printer_print (printer, action, NULL, NULL, NULL, NULL);
+	g_object_unref (printer);
+
+	g_object_unref (parts);
+#endif
+}
+
+/* Composing messages... */
+
+static EMsgComposer *
+create_new_composer (EShell *shell,
+                     const gchar *subject,
+                     CamelFolder *folder)
+{
+	EMsgComposer *composer;
+	EClientCache *client_cache;
+	ESourceRegistry *registry;
+	EComposerHeaderTable *table;
+	ESource *source = NULL;
+	gchar *identity = NULL;
+
+	composer = e_msg_composer_new (shell);
+
+	table = e_msg_composer_get_header_table (composer);
+
+	client_cache = e_composer_header_table_ref_client_cache (table);
+	registry = e_client_cache_ref_registry (client_cache);
+
+	if (folder != NULL) {
+		CamelStore *store;
+		gchar *folder_uri;
+		GList *list;
+
+		store = camel_folder_get_parent_store (folder);
+		source = em_utils_ref_mail_identity_for_store (registry, store);
+
+		folder_uri = e_mail_folder_uri_from_folder (folder);
+
+		list = g_list_prepend (NULL, folder_uri);
+		e_composer_header_table_set_post_to_list (table, list);
+		g_list_free (list);
+
+		g_free (folder_uri);
+	}
+
+	if (source != NULL) {
+		identity = e_source_dup_uid (source);
+		g_object_unref (source);
+	}
+
+	e_composer_header_table_set_subject (table, subject);
+	e_composer_header_table_set_identity_uid (table, identity);
+
+	em_utils_apply_send_account_override_to_composer (composer, shell, folder);
+
+	g_free (identity);
+
+	g_object_unref (client_cache);
+	g_object_unref (registry);
+
+	return composer;
+}
+
+/**
+ * em_utils_compose_new_message:
+ * @shell: an #EShell
+ * @folder: a #CamelFolder, or %NULL
+ *
+ * Opens a new composer window as a child window of @parent's toplevel
+ * window.
+ *
+ * Returns: the resulting #EMsgComposer
+ **/
+EMsgComposer *
+em_utils_compose_new_message (EShell *shell,
+                              CamelFolder *folder)
+{
+	EMsgComposer *composer;
+
+	g_return_val_if_fail (E_IS_SHELL (shell), NULL);
+
+	if (folder != NULL)
+		g_return_val_if_fail (CAMEL_IS_FOLDER (folder), NULL);
+
+	composer = create_new_composer (shell, "", folder);
+	composer_set_no_change (composer);
+
+	gtk_widget_show (GTK_WIDGET (composer));
+
+	return composer;
+}
+
+static CamelMimeMessage *
+em_utils_get_composer_recipients_as_message (EMsgComposer *composer)
+{
+	CamelMimeMessage *message;
+	EComposerHeaderTable *table;
+	EComposerHeader *header;
+	EDestination **destv;
+	CamelInternetAddress *to_addr, *cc_addr, *bcc_addr, *dest_addr;
+	const gchar *text_addr;
+	gint ii;
+
+	g_return_val_if_fail (E_IS_MSG_COMPOSER (composer), NULL);
+
+	table = e_msg_composer_get_header_table (composer);
+	header = e_composer_header_table_get_header (table, E_COMPOSER_HEADER_TO);
+
+	if (!e_composer_header_get_visible (header))
+		return NULL;
+
+	message = camel_mime_message_new ();
+
+	to_addr = camel_internet_address_new ();
+	cc_addr = camel_internet_address_new ();
+	bcc_addr = camel_internet_address_new ();
+
+	/* To */
+	dest_addr = to_addr;
+	destv = e_composer_header_table_get_destinations_to (table);
+	for (ii = 0; destv != NULL && destv[ii] != NULL; ii++) {
+		text_addr = e_destination_get_address (destv[ii]);
+		if (text_addr && *text_addr) {
+			if (camel_address_decode (CAMEL_ADDRESS (dest_addr), text_addr) <= 0)
+				camel_internet_address_add (dest_addr, "", text_addr);
+		}
+	}
+	e_destination_freev (destv);
+
+	/* CC */
+	dest_addr = cc_addr;
+	destv = e_composer_header_table_get_destinations_cc (table);
+	for (ii = 0; destv != NULL && destv[ii] != NULL; ii++) {
+		text_addr = e_destination_get_address (destv[ii]);
+		if (text_addr && *text_addr) {
+			if (camel_address_decode (CAMEL_ADDRESS (dest_addr), text_addr) <= 0)
+				camel_internet_address_add (dest_addr, "", text_addr);
+		}
+	}
+	e_destination_freev (destv);
+
+	/* Bcc */
+	dest_addr = bcc_addr;
+	destv = e_composer_header_table_get_destinations_bcc (table);
+	for (ii = 0; destv != NULL && destv[ii] != NULL; ii++) {
+		text_addr = e_destination_get_address (destv[ii]);
+		if (text_addr && *text_addr) {
+			if (camel_address_decode (CAMEL_ADDRESS (dest_addr), text_addr) <= 0)
+				camel_internet_address_add (dest_addr, "", text_addr);
+		}
+	}
+	e_destination_freev (destv);
+
+	if (camel_address_length (CAMEL_ADDRESS (to_addr)) > 0)
+		camel_mime_message_set_recipients (message, CAMEL_RECIPIENT_TYPE_TO, to_addr);
+
+	if (camel_address_length (CAMEL_ADDRESS (cc_addr)) > 0)
+		camel_mime_message_set_recipients (message, CAMEL_RECIPIENT_TYPE_CC, cc_addr);
+
+	if (camel_address_length (CAMEL_ADDRESS (bcc_addr)) > 0)
+		camel_mime_message_set_recipients (message, CAMEL_RECIPIENT_TYPE_BCC, bcc_addr);
+
+	g_object_unref (to_addr);
+	g_object_unref (cc_addr);
+	g_object_unref (bcc_addr);
+
+	return message;
+}
+
+/**
+ * em_utils_compose_new_message_with_mailto:
+ * @shell: an #EShell
+ * @mailto: a mailto URL
+ * @folder: a #CamelFolder, or %NULL
+ *
+ * Opens a new composer window as a child window of @parent's toplevel
+ * window. If @mailto is non-NULL, the composer fields will be filled in
+ * according to the values in the mailto URL.
+ **/
+EMsgComposer *
+em_utils_compose_new_message_with_mailto (EShell *shell,
+                                          const gchar *mailto,
+                                          CamelFolder *folder)
+{
+	EMsgComposer *composer;
+	EComposerHeaderTable *table;
+	EClientCache *client_cache;
+	ESourceRegistry *registry;
+
+	g_return_val_if_fail (E_IS_SHELL (shell), NULL);
+
+	if (folder != NULL)
+		g_return_val_if_fail (CAMEL_IS_FOLDER (folder), NULL);
+
+	if (mailto != NULL)
+		composer = e_msg_composer_new_from_url (shell, mailto);
+	else
+		composer = e_msg_composer_new (shell);
+
+	em_utils_apply_send_account_override_to_composer (composer, shell, folder);
+
+	table = e_msg_composer_get_header_table (composer);
+
+	client_cache = e_composer_header_table_ref_client_cache (table);
+	registry = e_client_cache_ref_registry (client_cache);
+
+	composer_set_no_change (composer);
+
+	gtk_window_present (GTK_WINDOW (composer));
+
+	/* If a CamelFolder was given, we need to backtrack and find
+	 * the corresponding ESource with a Mail Identity extension. */
+
+	if (folder != NULL) {
+		ESource *source;
+		CamelStore *store;
+
+		store = camel_folder_get_parent_store (folder);
+		source = em_utils_ref_mail_identity_for_store (registry, store);
+
+		if (source != NULL) {
+			const gchar *uid = e_source_get_uid (source);
+			e_composer_header_table_set_identity_uid (table, uid);
+			g_object_unref (source);
+		}
+	}
+
+	g_object_unref (client_cache);
+	g_object_unref (registry);
+
+	return composer;
+}
+
+static gboolean
+replace_variables (GSList *clues,
+                   CamelMimeMessage *message,
+                   gchar **pstr)
+{
+	gint i;
+	gboolean string_changed = FALSE, count1 = FALSE;
+	gchar *str;
+
+	g_return_val_if_fail (pstr != NULL, FALSE);
+	g_return_val_if_fail (*pstr != NULL, FALSE);
+	g_return_val_if_fail (message != NULL, FALSE);
+
+	str = *pstr;
+
+	for (i = 0; i < strlen (str); i++) {
+		const gchar *cur = str + i;
+		if (!g_ascii_strncasecmp (cur, "$", 1)) {
+			const gchar *end = cur + 1;
+			gchar *out;
+			gchar **temp_str;
+			GSList *list;
+
+			while (*end && (g_unichar_isalnum (*end) || *end == '_'))
+				end++;
+
+			out = g_strndup ((const gchar *) cur, end - cur);
+
+			temp_str = g_strsplit (str, out, 2);
+
+			for (list = clues; list; list = g_slist_next (list)) {
+				gchar **temp = g_strsplit (list->data, "=", 2);
+				if (!g_ascii_strcasecmp (temp[0], out + 1)) {
+					g_free (str);
+					str = g_strconcat (temp_str[0], temp[1], temp_str[1], NULL);
+					count1 = TRUE;
+					string_changed = TRUE;
+				} else
+					count1 = FALSE;
+				g_strfreev (temp);
+			}
+
+			if (!count1) {
+				if (getenv (out + 1)) {
+					g_free (str);
+					str = g_strconcat (
+						temp_str[0],
+						getenv (out + 1),
+						temp_str[1], NULL);
+					count1 = TRUE;
+					string_changed = TRUE;
+				} else
+					count1 = FALSE;
+			}
+
+			if (!count1) {
+				CamelInternetAddress *to;
+				const gchar *name, *addr;
+
+				to = camel_mime_message_get_recipients (
+					message, CAMEL_RECIPIENT_TYPE_TO);
+				if (!camel_internet_address_get (to, 0, &name, &addr))
+					continue;
+
+				if (name && g_ascii_strcasecmp ("sender_name", out + 1) == 0) {
+					g_free (str);
+					str = g_strconcat (temp_str[0], name, temp_str[1], NULL);
+					count1 = TRUE;
+					string_changed = TRUE;
+				} else if (addr && g_ascii_strcasecmp ("sender_email", out + 1) == 0) {
+					g_free (str);
+					str = g_strconcat (temp_str[0], addr, temp_str[1], NULL);
+					count1 = TRUE;
+					string_changed = TRUE;
+				}
+			}
+
+			g_strfreev (temp_str);
+			g_free (out);
+		}
+	}
+
+	*pstr = str;
+
+	return string_changed;
+}
+
+static void
+traverse_parts (GSList *clues,
+                CamelMimeMessage *message,
+                CamelDataWrapper *content)
+{
+	g_return_if_fail (message != NULL);
+
+	if (!content)
+		return;
+
+	if (CAMEL_IS_MULTIPART (content)) {
+		guint i, n;
+		CamelMultipart *multipart = CAMEL_MULTIPART (content);
+		CamelMimePart *part;
+
+		n = camel_multipart_get_number (multipart);
+		for (i = 0; i < n; i++) {
+			part = camel_multipart_get_part (multipart, i);
+			if (!part)
+				continue;
+
+			traverse_parts (clues, message, CAMEL_DATA_WRAPPER (part));
+		}
+	} else if (CAMEL_IS_MIME_PART (content)) {
+		CamelMimePart *part = CAMEL_MIME_PART (content);
+		CamelContentType *type;
+		CamelStream *stream;
+		GByteArray *byte_array;
+		gchar *str;
+
+		content = camel_medium_get_content (CAMEL_MEDIUM (part));
+		if (!content)
+			return;
+
+		if (CAMEL_IS_MULTIPART (content)) {
+			traverse_parts (clues, message, CAMEL_DATA_WRAPPER (content));
+			return;
+		}
+
+		type = camel_mime_part_get_content_type (part);
+		if (!camel_content_type_is (type, "text", "*"))
+			return;
+
+		byte_array = g_byte_array_new ();
+		stream = camel_stream_mem_new_with_byte_array (byte_array);
+		camel_data_wrapper_decode_to_stream_sync (
+			content, stream, NULL, NULL);
+
+		str = g_strndup ((gchar *) byte_array->data, byte_array->len);
+		g_object_unref (stream);
+
+		if (replace_variables (clues, message, &str)) {
+			stream = camel_stream_mem_new_with_buffer (str, strlen (str));
+			camel_data_wrapper_construct_from_stream_sync (
+				content, stream, NULL, NULL);
+			g_object_unref (stream);
+		}
+
+		g_free (str);
+	}
+}
+
+/* Editing messages... */
+
+typedef enum {
+	QUOTING_ATTRIBUTION,
+	QUOTING_FORWARD,
+	QUOTING_ORIGINAL
+} QuotingTextEnum;
+
+static struct {
+	const gchar * conf_key;
+	const gchar * message;
+} conf_messages[] = {
+	[QUOTING_ATTRIBUTION] =
+		{ "composer-message-attribution",
+		/* Note to translators: this is the attribution string used
+		 * when quoting messages.  Each ${Variable} gets replaced
+		 * with a value.  To see a full list of available variables,
+		 * see mail/em-composer-utils.c:attribvars array. */
+		  N_("On ${AbbrevWeekdayName}, ${Year}-${Month}-${Day} at "
+		     "${24Hour}:${Minute} ${TimeZone}, ${Sender} wrote:")
+		},
+
+	[QUOTING_FORWARD] =
+		{ "composer-message-forward",
+		  N_("-------- Forwarded Message --------")
+		},
+
+	[QUOTING_ORIGINAL] =
+		{ "composer-message-original",
+		  N_("-----Original Message-----")
+		}
+};
+
+static gchar *
+quoting_text (QuotingTextEnum type)
+{
+	GSettings *settings;
+	gchar *text;
+
+	settings = g_settings_new ("org.gnome.evolution.mail");
+	text = g_settings_get_string (settings, conf_messages[type].conf_key);
+	g_object_unref (settings);
+
+	if (text && *text)
+		return text;
+
+	g_free (text);
+
+	return g_strdup (_(conf_messages[type].message));
+}
+
+/**
+ * em_utils_edit_message:
+ * @shell: an #EShell
+ * @folder: a #CamelFolder
+ * @message: a #CamelMimeMessage
+ * @message_uid: UID of @message, or %NULL
+ *
+ * Opens a composer filled in with the headers/mime-parts/etc of
+ * @message.
+ **/
+EMsgComposer *
+em_utils_edit_message (EShell *shell,
+                       CamelFolder *folder,
+                       CamelMimeMessage *message,
+                       const gchar *message_uid,
+                       gboolean keep_signature)
+{
+	EMsgComposer *composer;
+	ESourceRegistry *registry;
+	gboolean folder_is_drafts;
+	gboolean folder_is_outbox;
+	gboolean folder_is_templates;
+
+	g_return_val_if_fail (E_IS_SHELL (shell), NULL);
+	g_return_val_if_fail (CAMEL_IS_FOLDER (folder), NULL);
+	g_return_val_if_fail (CAMEL_IS_MIME_MESSAGE (message), NULL);
+
+	registry = e_shell_get_registry (shell);
+	folder_is_drafts = em_utils_folder_is_drafts (registry, folder);
+	folder_is_outbox = em_utils_folder_is_outbox (registry, folder);
+	folder_is_templates = em_utils_folder_is_templates (registry, folder);
+
+	/* Template specific code follows. */
+	if (folder_is_templates) {
+		CamelDataWrapper *content;
+		GSettings *settings;
+		gchar **strv;
+		gint i;
+		GSList *clue_list = NULL;
+
+		settings = g_settings_new ("org.gnome.evolution.plugin.templates");
+
+		/* Get the list from GSettings */
+		strv = g_settings_get_strv (settings, "template-placeholders");
+		for (i = 0; strv[i] != NULL; i++)
+			clue_list = g_slist_append (clue_list, g_strdup (strv[i]));
+		g_object_unref (settings);
+		g_strfreev (strv);
+
+		content = camel_medium_get_content (CAMEL_MEDIUM (message));
+		traverse_parts (clue_list, message, content);
+
+		g_slist_foreach (clue_list, (GFunc) g_free, NULL);
+		g_slist_free (clue_list);
+	}
+
+	composer = e_msg_composer_new_with_message (shell, message, keep_signature, NULL);
+
+	em_utils_apply_send_account_override_to_composer (composer, shell, folder);
+
+	if (!folder_is_templates) {
+		EComposerHeaderTable *table;
+		ESource *source;
+		CamelStore *store;
+		gchar *folder_uri;
+		GList *list;
+
+		table = e_msg_composer_get_header_table (composer);
+
+		store = camel_folder_get_parent_store (folder);
+		source = em_utils_ref_mail_identity_for_store (registry, store);
+
+		if (source != NULL) {
+			const gchar *uid = e_source_get_uid (source);
+			e_composer_header_table_set_identity_uid (table, uid);
+			g_object_unref (source);
+		}
+
+		folder_uri = e_mail_folder_uri_from_folder (folder);
+
+		list = g_list_prepend (NULL, folder_uri);
+		e_composer_header_table_set_post_to_list (table, list);
+		g_list_free (list);
+
+		g_free (folder_uri);
+	}
+
+	e_msg_composer_remove_header (
+		composer, "X-Evolution-Replace-Outbox-UID");
+
+	if (message_uid != NULL && folder_is_drafts) {
+		gchar *folder_uri;
+
+		folder_uri = e_mail_folder_uri_from_folder (folder);
+
+		e_msg_composer_set_draft_headers (
+			composer, folder_uri, message_uid);
+
+		g_free (folder_uri);
+
+	} else if (message_uid != NULL && folder_is_outbox) {
+		e_msg_composer_set_header (
+			composer, "X-Evolution-Replace-Outbox-UID",
+			message_uid);
+	}
+
+	composer_set_no_change (composer);
+
+	gtk_widget_show (GTK_WIDGET (composer));
+
+	return composer;
+}
+
+static void
+emu_update_composers_security (EMsgComposer *composer,
+                               guint32 validity_found)
+{
+	GtkAction *action;
+	GSettings *settings;
+	gboolean sign_by_default;
+
+	g_return_if_fail (composer != NULL);
+
+	settings = g_settings_new ("org.gnome.evolution.mail");
+
+	sign_by_default =
+		(validity_found & E_MAIL_PART_VALIDITY_SIGNED) != 0 &&
+		/* FIXME This should be an EMsgComposer property. */
+		g_settings_get_boolean (
+			settings, "composer-sign-reply-if-signed");
+
+	g_object_unref (settings);
+
+	/* Pre-set only for encrypted messages, not for signed */
+	if (sign_by_default) {
+		if (validity_found & E_MAIL_PART_VALIDITY_SMIME)
+			action = E_COMPOSER_ACTION_SMIME_SIGN (composer);
+		else
+			action = E_COMPOSER_ACTION_PGP_SIGN (composer);
+
+		gtk_toggle_action_set_active (
+			GTK_TOGGLE_ACTION (action), TRUE);
+	}
+
+	if (validity_found & E_MAIL_PART_VALIDITY_ENCRYPTED) {
+		if (validity_found & E_MAIL_PART_VALIDITY_SMIME)
+			action = E_COMPOSER_ACTION_SMIME_ENCRYPT (composer);
+		else
+			action = E_COMPOSER_ACTION_PGP_ENCRYPT (composer);
+
+		gtk_toggle_action_set_active (
+			GTK_TOGGLE_ACTION (action), TRUE);
+	}
+}
+
+void
+em_utils_get_real_folder_uri_and_message_uid (CamelFolder *folder,
+                                              const gchar *uid,
+                                              gchar **folder_uri,
+                                              gchar **message_uid)
+{
+	g_return_if_fail (folder != NULL);
+	g_return_if_fail (uid != NULL);
+	g_return_if_fail (folder_uri != NULL);
+	g_return_if_fail (message_uid != NULL);
+
+	if (CAMEL_IS_VEE_FOLDER (folder)) {
+		CamelMessageInfo *mi;
+
+		mi = camel_folder_get_message_info (folder, uid);
+		if (mi) {
+			CamelFolder *real_folder;
+			gchar *real_uid = NULL;
+
+			real_folder = camel_vee_folder_get_location (
+				CAMEL_VEE_FOLDER (folder),
+				(CamelVeeMessageInfo *) mi,
+				&real_uid);
+
+			if (real_folder) {
+				*folder_uri = e_mail_folder_uri_from_folder (real_folder);
+				*message_uid = real_uid;
+
+				camel_message_info_unref (mi);
+
+				return;
+			}
+
+			camel_message_info_unref (mi);
+		}
+	}
+
+	*folder_uri = e_mail_folder_uri_from_folder (folder);
+	*message_uid = g_strdup (uid);
+}
+
+static void
+real_update_forwarded_flag (gpointer uid,
+                            gpointer folder)
+{
+	if (uid && folder)
+		camel_folder_set_message_flags (
+			folder, uid, CAMEL_MESSAGE_FORWARDED,
+			CAMEL_MESSAGE_FORWARDED);
+}
+
+static void
+update_forwarded_flags_cb (EMsgComposer *composer,
+                           ForwardData *data)
+{
+	if (data && data->uids && data->folder)
+		g_ptr_array_foreach (
+			data->uids, real_update_forwarded_flag, data->folder);
+}
+
+static void
+setup_forward_attached_callbacks (EMsgComposer *composer,
+                                  CamelFolder *folder,
+                                  GPtrArray *uids)
+{
+	ForwardData *data;
+
+	if (!composer || !folder || !uids || !uids->len)
+		return;
+
+	g_object_ref (folder);
+
+	data = g_slice_new0 (ForwardData);
+	data->folder = g_object_ref (folder);
+	data->uids = g_ptr_array_ref (uids);
+
+	g_signal_connect (
+		composer, "send",
+		G_CALLBACK (update_forwarded_flags_cb), data);
+	g_signal_connect (
+		composer, "save-to-drafts",
+		G_CALLBACK (update_forwarded_flags_cb), data);
+
+	g_object_set_data_full (
+		G_OBJECT (composer), "forward-data", data,
+		(GDestroyNotify) forward_data_free);
+}
+
+static EMsgComposer *
+forward_non_attached (EMailBackend *backend,
+                      CamelFolder *folder,
+                      const gchar *uid,
+                      CamelMimeMessage *message,
+                      EMailForwardStyle style)
+{
+	EMsgComposer *composer = NULL;
+	EMailSession *session;
+	EShell *shell;
+	gchar *text, *forward;
+	guint32 validity_found = 0;
+	guint32 flags;
+
+	flags = E_MAIL_FORMATTER_QUOTE_FLAG_HEADERS |
+		E_MAIL_FORMATTER_QUOTE_FLAG_KEEP_SIG;
+	if (style == E_MAIL_FORWARD_STYLE_QUOTED)
+		flags |= E_MAIL_FORMATTER_QUOTE_FLAG_CITE;
+
+	session = e_mail_backend_get_session (backend);
+	shell = e_shell_backend_get_shell (E_SHELL_BACKEND (backend));
+
+	forward = quoting_text (QUOTING_FORWARD);
+	if (style == E_MAIL_FORWARD_STYLE_INLINE && forward) {
+		gchar *tmp = forward;
+		forward = g_strconcat (forward, "<br>", NULL);
+		g_free (tmp);
+	}
+
+	text = em_utils_message_to_html (
+		CAMEL_SESSION (session), message,
+		forward, flags, NULL, NULL, &validity_found);
+
+	if (text != NULL) {
+		CamelDataWrapper *content;
+		gchar *subject;
+
+		subject = mail_tool_generate_forward_subject (message);
+		composer = create_new_composer (shell, subject, folder);
+		g_free (subject);
+
+		content = camel_medium_get_content (CAMEL_MEDIUM (message));
+
+		if (CAMEL_IS_MULTIPART (content))
+			e_msg_composer_add_message_attachments (
+				composer, message, FALSE);
+
+		e_msg_composer_set_body_text (composer, text, TRUE);
+
+		if (uid != NULL) {
+			gchar *folder_uri = NULL, *tmp_message_uid = NULL;
+
+			em_utils_get_real_folder_uri_and_message_uid (
+				folder, uid, &folder_uri, &tmp_message_uid);
+
+			e_msg_composer_set_source_headers (
+				composer, folder_uri, tmp_message_uid,
+				CAMEL_MESSAGE_FORWARDED);
+
+			g_free (folder_uri);
+			g_free (tmp_message_uid);
+		}
+
+		emu_update_composers_security (
+			composer, validity_found);
+		composer_set_no_change (composer);
+		gtk_widget_show (GTK_WIDGET (composer));
+
+		g_free (text);
+	}
+
+	g_free (forward);
+
+	return composer;
+}
+
+/**
+ * em_utils_forward_message:
+ * @backend: an #EMailBackend
+ * @message: a #CamelMimeMessage to forward
+ * @style: the forward style to use
+ * @folder: a #CamelFolder, or %NULL
+ * @uid: the UID of %message, or %NULL
+ *
+ * Forwards @message in the given @style.
+ *
+ * If @style is #E_MAIL_FORWARD_STYLE_ATTACHED, the new message is
+ * created as follows.  If there is more than a single message in @uids,
+ * a multipart/digest will be constructed and attached to a new composer
+ * window preset with the appropriate header defaults for forwarding the
+ * first message in the list.  If only one message is to be forwarded,
+ * it is forwarded as a simple message/rfc822 attachment.
+ *
+ * If @style is #E_MAIL_FORWARD_STYLE_INLINE, each message is forwarded
+ * in its own composer window in 'inline' form.
+ *
+ * If @style is #E_MAIL_FORWARD_STYLE_QUOTED, each message is forwarded
+ * in its own composer window in 'quoted' form (each line starting with
+ * a "> ").
+ **/
+EMsgComposer *
+em_utils_forward_message (EMailBackend *backend,
+                          CamelMimeMessage *message,
+                          EMailForwardStyle style,
+                          CamelFolder *folder,
+                          const gchar *uid)
+{
+	CamelMimePart *part;
+	gchar *subject;
+	EMsgComposer *composer = NULL;
+
+	g_return_val_if_fail (E_IS_MAIL_BACKEND (backend), NULL);
+	g_return_val_if_fail (CAMEL_IS_MIME_MESSAGE (message), NULL);
+
+	switch (style) {
+		case E_MAIL_FORWARD_STYLE_ATTACHED:
+		default:
+			part = mail_tool_make_message_attachment (message);
+			subject = mail_tool_generate_forward_subject (message);
+
+			composer = em_utils_forward_attachment (
+				backend, part, subject, NULL, NULL);
+
+			g_object_unref (part);
+			g_free (subject);
+			break;
+
+		case E_MAIL_FORWARD_STYLE_INLINE:
+		case E_MAIL_FORWARD_STYLE_QUOTED:
+			composer = forward_non_attached (
+				backend, folder, uid, message, style);
+			break;
+	}
+
+	return composer;
+}
+
+EMsgComposer *
+em_utils_forward_attachment (EMailBackend *backend,
+                             CamelMimePart *part,
+                             const gchar *subject,
+                             CamelFolder *folder,
+                             GPtrArray *uids)
+{
+	EShell *shell;
+	EMsgComposer *composer;
+
+	g_return_val_if_fail (E_IS_MAIL_BACKEND (backend), NULL);
+	g_return_val_if_fail (CAMEL_IS_MIME_PART (part), NULL);
+
+	if (folder != NULL)
+		g_return_val_if_fail (CAMEL_IS_FOLDER (folder), NULL);
+
+	shell = e_shell_backend_get_shell (E_SHELL_BACKEND (backend));
+
+	composer = create_new_composer (shell, subject, folder);
+
+	e_msg_composer_attach (composer, part);
+
+	if (uids != NULL)
+		setup_forward_attached_callbacks (composer, folder, uids);
+
+	composer_set_no_change (composer);
+
+	gtk_widget_show (GTK_WIDGET (composer));
+
+	return composer;
+}
+
+static gint
+compare_sources_with_uids_order_cb (gconstpointer a,
+                                    gconstpointer b,
+                                    gpointer user_data)
+{
+	ESource *asource = (ESource *) a;
+	ESource *bsource = (ESource *) b;
+	GHashTable *uids_order = user_data;
+	gint aindex, bindex;
+
+	aindex = GPOINTER_TO_INT (g_hash_table_lookup (uids_order, e_source_get_uid (asource)));
+	bindex = GPOINTER_TO_INT (g_hash_table_lookup (uids_order, e_source_get_uid (bsource)));
+
+	if (aindex <= 0)
+		aindex = g_hash_table_size (uids_order);
+	if (bindex <= 0)
+		bindex = g_hash_table_size (uids_order);
+
+	return aindex - bindex;
+}
+
+static void
+sort_sources_by_ui (GList **psources,
+                    gpointer user_data)
+{
+	EShell *shell = user_data;
+	EShellBackend *shell_backend;
+	EMailSession *mail_session;
+	EMailAccountStore *account_store;
+	GtkTreeModel *model;
+	GtkTreeIter iter;
+	GHashTable *uids_order;
+	gint index = 0;
+
+	g_return_if_fail (psources != NULL);
+	g_return_if_fail (E_IS_SHELL (shell));
+
+	/* nothing to sort */
+	if (!*psources || !g_list_next (*psources))
+		return;
+
+	shell_backend = e_shell_get_backend_by_name (shell, "mail");
+	g_return_if_fail (shell_backend != NULL);
+
+	mail_session = e_mail_backend_get_session (E_MAIL_BACKEND (shell_backend));
+	g_return_if_fail (mail_session != NULL);
+
+	account_store = e_mail_ui_session_get_account_store (E_MAIL_UI_SESSION (mail_session));
+	g_return_if_fail (account_store != NULL);
+
+	model = GTK_TREE_MODEL (account_store);
+	if (!gtk_tree_model_get_iter_first (model, &iter))
+		return;
+
+	uids_order = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, NULL);
+
+	do {
+		CamelService *service = NULL;
+
+		gtk_tree_model_get (model, &iter, E_MAIL_ACCOUNT_STORE_COLUMN_SERVICE, &service, -1);
+
+		if (service) {
+			index++;
+			g_hash_table_insert (uids_order, g_strdup (camel_service_get_uid (service)), GINT_TO_POINTER (index));
+			g_object_unref (service);
+		}
+	} while (gtk_tree_model_iter_next (model, &iter));
+
+	*psources = g_list_sort_with_data (*psources, compare_sources_with_uids_order_cb, uids_order);
+
+	g_hash_table_destroy (uids_order);
+}
+
+/* Redirecting messages... */
+
+static EMsgComposer *
+redirect_get_composer (EShell *shell,
+                       CamelMimeMessage *message)
+{
+	EMsgComposer *composer;
+	ESourceRegistry *registry;
+	CamelMedium *medium;
+	ESource *source;
+	gchar *identity_uid = NULL;
+
+	medium = CAMEL_MEDIUM (message);
+
+	/* QMail will refuse to send a message if it finds one of
+	 * it's Delivered-To headers in the message, so remove all
+	 * Delivered-To headers. Fixes bug #23635. */
+	while (camel_medium_get_header (medium, "Delivered-To"))
+		camel_medium_remove_header (medium, "Delivered-To");
+
+	while (camel_medium_get_header (medium, "Bcc"))
+		camel_medium_remove_header (medium, "Bcc");
+
+	while (camel_medium_get_header (medium, "Resent-Bcc"))
+		camel_medium_remove_header (medium, "Resent-Bcc");
+
+	registry = e_shell_get_registry (shell);
+
+	/* This returns a new ESource reference. */
+	source = em_utils_check_send_account_override (shell, message, NULL);
+	if (!source)
+		source = em_utils_guess_mail_identity_with_recipients_and_sort (
+			registry, message, NULL, NULL, sort_sources_by_ui, shell);
+
+	if (source != NULL) {
+		identity_uid = e_source_dup_uid (source);
+		g_object_unref (source);
+	}
+
+	composer = e_msg_composer_new_redirect (
+		shell, message, identity_uid, NULL);
+
+	g_free (identity_uid);
+
+	return composer;
+}
+
+/**
+ * em_utils_redirect_message:
+ * @shell: an #EShell
+ * @message: message to redirect
+ *
+ * Opens a composer to redirect @message (Note: only headers will be
+ * editable). Adds Resent-From/Resent-To/etc headers.
+ *
+ * Returns: the resulting #EMsgComposer
+ **/
+EMsgComposer *
+em_utils_redirect_message (EShell *shell,
+                           CamelMimeMessage *message)
+{
+	EMsgComposer *composer;
+
+	g_return_val_if_fail (E_IS_SHELL (shell), NULL);
+	g_return_val_if_fail (CAMEL_IS_MIME_MESSAGE (message), NULL);
+
+	composer = redirect_get_composer (shell, message);
+
+	gtk_widget_show (GTK_WIDGET (composer));
+
+	composer_set_no_change (composer);
+
+	return composer;
+}
+
+/* Replying to messages... */
+
+EDestination **
+em_utils_camel_address_to_destination (CamelInternetAddress *iaddr)
+{
+	EDestination *dest, **destv;
+	gint n, i, j;
+
+	if (iaddr == NULL)
+		return NULL;
+
+	if ((n = camel_address_length ((CamelAddress *) iaddr)) == 0)
+		return NULL;
+
+	destv = g_malloc (sizeof (EDestination *) * (n + 1));
+	for (i = 0, j = 0; i < n; i++) {
+		const gchar *name, *addr;
+
+		if (camel_internet_address_get (iaddr, i, &name, &addr)) {
+			dest = e_destination_new ();
+			e_destination_set_name (dest, name);
+			e_destination_set_email (dest, addr);
+
+			destv[j++] = dest;
+		}
+	}
+
+	if (j == 0) {
+		g_free (destv);
+		return NULL;
+	}
+
+	destv[j] = NULL;
+
+	return destv;
+}
+
+static EMsgComposer *
+reply_get_composer (EShell *shell,
+                    CamelMimeMessage *message,
+                    const gchar *identity_uid,
+                    CamelInternetAddress *to,
+                    CamelInternetAddress *cc,
+                    CamelFolder *folder,
+                    CamelNNTPAddress *postto)
+{
+	const gchar *message_id, *references;
+	EDestination **tov, **ccv;
+	EMsgComposer *composer;
+	EComposerHeaderTable *table;
+	CamelMedium *medium;
+	gchar *subject;
+
+	g_return_val_if_fail (E_IS_SHELL (shell), NULL);
+	g_return_val_if_fail (CAMEL_IS_MIME_MESSAGE (message), NULL);
+
+	if (to != NULL)
+		g_return_val_if_fail (CAMEL_IS_INTERNET_ADDRESS (to), NULL);
+
+	if (cc != NULL)
+		g_return_val_if_fail (CAMEL_IS_INTERNET_ADDRESS (cc), NULL);
+
+	composer = e_msg_composer_new (shell);
+
+	/* construct the tov/ccv */
+	tov = em_utils_camel_address_to_destination (to);
+	ccv = em_utils_camel_address_to_destination (cc);
+
+	/* Set the subject of the new message. */
+	if ((subject = (gchar *) camel_mime_message_get_subject (message))) {
+		gboolean skip_len = -1;
+
+		if (em_utils_is_re_in_subject (subject, &skip_len, NULL) && skip_len > 0)
+			subject = subject + skip_len;
+
+		subject = g_strdup_printf ("Re: %s", subject);
+	} else {
+		subject = g_strdup ("");
+	}
+
+	table = e_msg_composer_get_header_table (composer);
+	e_composer_header_table_set_subject (table, subject);
+	e_composer_header_table_set_destinations_to (table, tov);
+	e_composer_header_table_set_identity_uid (table, identity_uid);
+
+	/* Add destinations instead of setting, so we don't remove
+	 * automatic CC addresses that have already been added. */
+	e_composer_header_table_add_destinations_cc (table, ccv);
+
+	e_destination_freev (tov);
+	e_destination_freev (ccv);
+	g_free (subject);
+
+	/* add post-to, if nessecary */
+	if (postto && camel_address_length ((CamelAddress *) postto)) {
+		gchar *store_url = NULL;
+		gchar *post;
+
+		if (folder) {
+			CamelStore *parent_store;
+			CamelService *service;
+			CamelURL *url;
+
+			parent_store = camel_folder_get_parent_store (folder);
+
+			service = CAMEL_SERVICE (parent_store);
+			url = camel_service_new_camel_url (service);
+
+			store_url = camel_url_to_string (
+				url, CAMEL_URL_HIDE_ALL);
+			if (store_url[strlen (store_url) - 1] == '/')
+				store_url[strlen (store_url) - 1] = '\0';
+
+			camel_url_free (url);
+		}
+
+		post = camel_address_encode ((CamelAddress *) postto);
+		e_composer_header_table_set_post_to_base (
+			table, store_url ? store_url : "", post);
+		g_free (post);
+		g_free (store_url);
+	}
+
+	/* Add In-Reply-To and References. */
+
+	medium = CAMEL_MEDIUM (message);
+	message_id = camel_medium_get_header (medium, "Message-ID");
+	references = camel_medium_get_header (medium, "References");
+
+	if (message_id != NULL) {
+		gchar *reply_refs;
+
+		e_msg_composer_add_header (
+			composer, "In-Reply-To", message_id);
+
+		if (references)
+			reply_refs = g_strdup_printf (
+				"%s %s", references, message_id);
+		else
+			reply_refs = g_strdup (message_id);
+
+		e_msg_composer_add_header (
+			composer, "References", reply_refs);
+		g_free (reply_refs);
+
+	} else if (references != NULL) {
+		e_msg_composer_add_header (
+			composer, "References", references);
+	}
+
+	return composer;
+}
+
+static gboolean
+get_reply_list (CamelMimeMessage *message,
+                CamelInternetAddress *to)
+{
+	const gchar *header, *p;
+	gchar *addr;
+
+	/* Examples:
+	 *
+	 * List-Post: <mailto:list@host.com>
+	 * List-Post: <mailto:moderator@host.com?subject=list%20posting>
+	 * List-Post: NO (posting not allowed on this list)
+	 */
+	if (!(header = camel_medium_get_header ((CamelMedium *) message, "List-Post")))
+		return FALSE;
+
+	while (*header == ' ' || *header == '\t')
+		header++;
+
+	/* check for NO */
+	if (!g_ascii_strncasecmp (header, "NO", 2))
+		return FALSE;
+
+	/* Search for the first mailto angle-bracket enclosed URL.
+	 * (See rfc2369, Section 2, paragraph 3 for details) */
+	if (!(header = camel_strstrcase (header, "<mailto:")))
+		return FALSE;
+
+	header += 8;
+
+	p = header;
+	while (*p && !strchr ("?>", *p))
+		p++;
+
+	addr = g_strndup (header, p - header);
+	camel_internet_address_add (to, NULL, addr);
+	g_free (addr);
+
+	return TRUE;
+}
+
+gboolean
+em_utils_is_munged_list_message (CamelMimeMessage *message)
+{
+	CamelInternetAddress *reply_to, *list;
+	gboolean result = FALSE;
+
+	reply_to = camel_mime_message_get_reply_to (message);
+	if (reply_to) {
+		list = camel_internet_address_new ();
+
+		if (get_reply_list (message, list) &&
+		    camel_address_length (CAMEL_ADDRESS (list)) ==
+		    camel_address_length (CAMEL_ADDRESS (reply_to))) {
+			gint i;
+			const gchar *r_name, *r_addr;
+			const gchar *l_name, *l_addr;
+
+			for (i = 0; i < camel_address_length (CAMEL_ADDRESS (list)); i++) {
+				if (!camel_internet_address_get (reply_to, i, &r_name, &r_addr))
+					break;
+				if (!camel_internet_address_get (list, i, &l_name, &l_addr))
+					break;
+				if (strcmp (l_addr, r_addr))
+					break;
+			}
+			if (i == camel_address_length (CAMEL_ADDRESS (list)))
+				result = TRUE;
+		}
+		g_object_unref (list);
+	}
+	return result;
+}
+
+static CamelInternetAddress *
+get_reply_to (CamelMimeMessage *message)
+{
+	CamelInternetAddress *reply_to;
+
+	reply_to = camel_mime_message_get_reply_to (message);
+	if (reply_to) {
+		GSettings *settings;
+		gboolean ignore_list_reply_to;
+
+		settings = g_settings_new ("org.gnome.evolution.mail");
+		ignore_list_reply_to = g_settings_get_boolean (
+			settings, "composer-ignore-list-reply-to");
+		g_object_unref (settings);
+
+		if (ignore_list_reply_to && em_utils_is_munged_list_message (message))
+			reply_to = NULL;
+	}
+	if (!reply_to)
+		reply_to = camel_mime_message_get_from (message);
+
+	return reply_to;
+}
+
+static void
+get_reply_sender (CamelMimeMessage *message,
+                  CamelInternetAddress *to,
+                  CamelNNTPAddress *postto)
+{
+	CamelInternetAddress *reply_to;
+	CamelMedium *medium;
+	const gchar *posthdr = NULL;
+
+	medium = CAMEL_MEDIUM (message);
+
+	/* check whether there is a 'Newsgroups: ' header in there */
+	if (postto != NULL && posthdr == NULL)
+		posthdr = camel_medium_get_header (medium, "Followup-To");
+
+	if (postto != NULL && posthdr == NULL)
+		posthdr = camel_medium_get_header (medium, "Newsgroups");
+
+	if (postto != NULL && posthdr != NULL) {
+		camel_address_decode (CAMEL_ADDRESS (postto), posthdr);
+		return;
+	}
+
+	reply_to = get_reply_to (message);
+
+	if (reply_to != NULL) {
+		const gchar *name;
+		const gchar *addr;
+		gint ii = 0;
+
+		while (camel_internet_address_get (reply_to, ii++, &name, &addr))
+			camel_internet_address_add (to, name, addr);
+	}
+}
+
+void
+em_utils_get_reply_sender (CamelMimeMessage *message,
+                           CamelInternetAddress *to,
+                           CamelNNTPAddress *postto)
+{
+	get_reply_sender (message, to, postto);
+}
+
+static void
+get_reply_from (CamelMimeMessage *message,
+                CamelInternetAddress *to,
+                CamelNNTPAddress *postto)
+{
+	CamelInternetAddress *from;
+	CamelMedium *medium;
+	const gchar *name, *addr;
+	const gchar *posthdr = NULL;
+
+	medium = CAMEL_MEDIUM (message);
+
+	/* check whether there is a 'Newsgroups: ' header in there */
+	if (postto != NULL && posthdr == NULL)
+		posthdr = camel_medium_get_header (medium, "Followup-To");
+
+	if (postto != NULL && posthdr == NULL)
+		posthdr = camel_medium_get_header (medium, "Newsgroups");
+
+	if (postto != NULL && posthdr != NULL) {
+		camel_address_decode (CAMEL_ADDRESS (postto), posthdr);
+		return;
+	}
+
+	from = camel_mime_message_get_from (message);
+
+	if (from != NULL) {
+		gint ii = 0;
+
+		while (camel_internet_address_get (from, ii++, &name, &addr))
+			camel_internet_address_add (to, name, addr);
+	}
+}
+
+static void
+get_reply_recipient (CamelMimeMessage *message,
+                     CamelInternetAddress *to,
+                     CamelNNTPAddress *postto,
+                     CamelInternetAddress *address)
+{
+	CamelMedium *medium;
+	const gchar *posthdr = NULL;
+
+	medium = CAMEL_MEDIUM (message);
+
+	/* check whether there is a 'Newsgroups: ' header in there */
+	if (postto != NULL && posthdr == NULL)
+		posthdr = camel_medium_get_header (medium, "Followup-To");
+
+	if (postto != NULL && posthdr == NULL)
+		 posthdr = camel_medium_get_header (medium, "Newsgroups");
+
+	if (postto != NULL && posthdr != NULL) {
+		camel_address_decode (CAMEL_ADDRESS (postto), posthdr);
+		return;
+	}
+
+	if (address != NULL) {
+		const gchar *name;
+		const gchar *addr;
+		gint ii = 0;
+
+		while (camel_internet_address_get (address, ii++, &name, &addr))
+			camel_internet_address_add (to, name, addr);
+	}
+
+}
+
+static void
+concat_unique_addrs (CamelInternetAddress *dest,
+                     CamelInternetAddress *src,
+                     GHashTable *rcpt_hash)
+{
+	const gchar *name, *addr;
+	gint i;
+
+	for (i = 0; camel_internet_address_get (src, i, &name, &addr); i++) {
+		if (!g_hash_table_contains (rcpt_hash, addr)) {
+			camel_internet_address_add (dest, name, addr);
+			g_hash_table_add (rcpt_hash, (gpointer) addr);
+		}
+	}
+}
+
+static GHashTable *
+generate_recipient_hash (ESourceRegistry *registry)
+{
+	GHashTable *rcpt_hash;
+	ESource *default_source;
+	GList *list, *link;
+	const gchar *extension_name;
+
+	g_return_val_if_fail (E_IS_SOURCE_REGISTRY (registry), NULL);
+
+	rcpt_hash = g_hash_table_new (
+		(GHashFunc) camel_strcase_hash,
+		(GEqualFunc) camel_strcase_equal);
+
+	default_source = e_source_registry_ref_default_mail_identity (registry);
+
+	extension_name = E_SOURCE_EXTENSION_MAIL_IDENTITY;
+	list = e_source_registry_list_sources (registry, extension_name);
+
+	for (link = list; link != NULL; link = g_list_next (link)) {
+		ESource *source = E_SOURCE (link->data);
+		ESource *cached_source;
+		ESourceMailIdentity *extension;
+		const gchar *address;
+		gboolean insert_source;
+		gboolean cached_is_default;
+		gboolean cached_is_enabled;
+		gboolean source_is_default;
+		gboolean source_is_enabled;
+
+		/* No default mail identity implies there are no mail
+		 * identities at all and so we should never get here. */
+		g_warn_if_fail (default_source != NULL);
+
+		source_is_default =
+			e_source_equal (source, default_source);
+		source_is_enabled =
+			e_source_registry_check_enabled (registry, source);
+
+		extension_name = E_SOURCE_EXTENSION_MAIL_IDENTITY;
+		extension = e_source_get_extension (source, extension_name);
+
+		address = e_source_mail_identity_get_address (extension);
+
+		if (address == NULL)
+			continue;
+
+		cached_source = g_hash_table_lookup (rcpt_hash, address);
+
+		if (cached_source != NULL) {
+			cached_is_default = e_source_equal (
+				cached_source, default_source);
+			cached_is_enabled = e_source_registry_check_enabled (
+				registry, cached_source);
+		} else {
+			cached_is_default = FALSE;
+			cached_is_enabled = FALSE;
+		}
+
+		/* Accounts with identical email addresses that are enabled
+		 * take precedence over disabled accounts.  If all accounts
+		 * with matching email addresses are disabled, the first
+		 * one in the list takes precedence.  The default account
+		 * always takes precedence no matter what. */
+		insert_source =
+			source_is_default ||
+			cached_source == NULL ||
+			(source_is_enabled &&
+			 !cached_is_enabled &&
+			 !cached_is_default);
+
+		if (insert_source)
+			g_hash_table_insert (
+				rcpt_hash, (gchar *) address, source);
+	}
+
+	g_list_free_full (list, (GDestroyNotify) g_object_unref);
+
+	if (default_source != NULL)
+		g_object_unref (default_source);
+
+	return rcpt_hash;
+}
+
+void
+em_utils_get_reply_all (ESourceRegistry *registry,
+                        CamelMimeMessage *message,
+                        CamelInternetAddress *to,
+                        CamelInternetAddress *cc,
+                        CamelNNTPAddress *postto)
+{
+	CamelInternetAddress *reply_to;
+	CamelInternetAddress *to_addrs;
+	CamelInternetAddress *cc_addrs;
+	CamelMedium *medium;
+	const gchar *name, *addr;
+	const gchar *posthdr = NULL;
+	GHashTable *rcpt_hash;
+
+	g_return_if_fail (E_IS_SOURCE_REGISTRY (registry));
+	g_return_if_fail (CAMEL_IS_MIME_MESSAGE (message));
+	g_return_if_fail (CAMEL_IS_INTERNET_ADDRESS (to));
+	g_return_if_fail (CAMEL_IS_INTERNET_ADDRESS (cc));
+
+	medium = CAMEL_MEDIUM (message);
+
+	/* check whether there is a 'Newsgroups: ' header in there */
+	if (postto != NULL && posthdr == NULL)
+		posthdr = camel_medium_get_header (medium, "Followup-To");
+
+	if (postto != NULL && posthdr == NULL)
+		posthdr = camel_medium_get_header (medium, "Newsgroups");
+
+	if (postto != NULL && posthdr != NULL)
+		camel_address_decode (CAMEL_ADDRESS (postto), posthdr);
+
+	rcpt_hash = generate_recipient_hash (registry);
+
+	reply_to = get_reply_to (message);
+	to_addrs = camel_mime_message_get_recipients (
+		message, CAMEL_RECIPIENT_TYPE_TO);
+	cc_addrs = camel_mime_message_get_recipients (
+		message, CAMEL_RECIPIENT_TYPE_CC);
+
+	if (reply_to != NULL) {
+		gint ii = 0;
+
+		while (camel_internet_address_get (reply_to, ii++, &name, &addr)) {
+			/* Ignore references to the Reply-To address
+			 * in the To and Cc lists. */
+			if (addr && !g_hash_table_contains (rcpt_hash, addr)) {
+				/* In the case we are doing a Reply-To-All,
+				 * we do not want to include the user's email
+				 * address because replying to oneself is
+				 * kinda silly. */
+				camel_internet_address_add (to, name, addr);
+				g_hash_table_add (rcpt_hash, (gpointer) addr);
+			}
+		}
+	}
+
+	concat_unique_addrs (cc, to_addrs, rcpt_hash);
+	concat_unique_addrs (cc, cc_addrs, rcpt_hash);
+
+	/* Promote the first Cc: address to To: if To: is empty. */
+	if (camel_address_length ((CamelAddress *) to) == 0 &&
+			camel_address_length ((CamelAddress *) cc) > 0) {
+		camel_internet_address_get (cc, 0, &name, &addr);
+		camel_internet_address_add (to, name, addr);
+		camel_address_remove ((CamelAddress *) cc, 0);
+	}
+
+	/* If To: is still empty, may we removed duplicates (i.e. ourself),
+	 * so add the original To if it was set. */
+	if (camel_address_length ((CamelAddress *) to) == 0
+	    && (camel_internet_address_get (to_addrs, 0, &name, &addr)
+		|| camel_internet_address_get (cc_addrs, 0, &name, &addr))) {
+		camel_internet_address_add (to, name, addr);
+	}
+
+	g_hash_table_destroy (rcpt_hash);
+}
+
+enum {
+	ATTRIB_UNKNOWN,
+	ATTRIB_CUSTOM,
+	ATTRIB_TIMEZONE,
+	ATTRIB_STRFTIME,
+	ATTRIB_TM_SEC,
+	ATTRIB_TM_MIN,
+	ATTRIB_TM_24HOUR,
+	ATTRIB_TM_12HOUR,
+	ATTRIB_TM_MDAY,
+	ATTRIB_TM_MON,
+	ATTRIB_TM_YEAR,
+	ATTRIB_TM_2YEAR,
+	ATTRIB_TM_WDAY, /* not actually used */
+	ATTRIB_TM_YDAY
+};
+
+typedef void		(*AttribFormatter)	(GString *str,
+						 const gchar *attr,
+						 CamelMimeMessage *message);
+
+static void
+format_sender (GString *str,
+               const gchar *attr,
+               CamelMimeMessage *message)
+{
+	CamelInternetAddress *sender;
+	const gchar *name, *addr = NULL;
+
+	sender = camel_mime_message_get_from (message);
+	if (sender != NULL && camel_address_length (CAMEL_ADDRESS (sender)) > 0) {
+		camel_internet_address_get (sender, 0, &name, &addr);
+	} else {
+		name = _("an unknown sender");
+	}
+
+	if (name && !strcmp (attr, "{SenderName}")) {
+		g_string_append (str, name);
+	} else if (addr && !strcmp (attr, "{SenderEMail}")) {
+		g_string_append (str, addr);
+	} else if (name && *name) {
+		g_string_append (str, name);
+	} else if (addr) {
+		g_string_append (str, addr);
+	}
+}
+
+static struct {
+	const gchar *name;
+	gint type;
+	struct {
+		const gchar *format;         /* strftime or printf format */
+		AttribFormatter formatter;  /* custom formatter */
+	} v;
+} attribvars[] = {
+	{ "{Sender}", ATTRIB_CUSTOM, { NULL, format_sender } },
+	{ "{SenderName}", ATTRIB_CUSTOM, { NULL, format_sender } },
+	{ "{SenderEMail}", ATTRIB_CUSTOM, { NULL, format_sender } },
+	{ "{AbbrevWeekdayName}", ATTRIB_STRFTIME, { "%a", NULL } },
+	{ "{WeekdayName}", ATTRIB_STRFTIME, { "%A", NULL } },
+	{ "{AbbrevMonthName}", ATTRIB_STRFTIME, { "%b", NULL } },
+	{ "{MonthName}", ATTRIB_STRFTIME, { "%B", NULL } },
+	{ "{AmPmUpper}", ATTRIB_STRFTIME, { "%p", NULL } },
+	{ "{AmPmLower}", ATTRIB_STRFTIME, { "%P", NULL } },
+	{ "{Day}", ATTRIB_TM_MDAY, { "%02d", NULL } },  /* %d  01-31 */
+	{ "{ Day}", ATTRIB_TM_MDAY, { "% 2d", NULL } },  /* %e   1-31 */
+	{ "{24Hour}", ATTRIB_TM_24HOUR, { "%02d", NULL } },  /* %H  00-23 */
+	{ "{12Hour}", ATTRIB_TM_12HOUR, { "%02d", NULL } },  /* %I  00-12 */
+	{ "{DayOfYear}", ATTRIB_TM_YDAY, { "%d", NULL } },  /* %j  1-366 */
+	{ "{Month}", ATTRIB_TM_MON, { "%02d", NULL } },  /* %m  01-12 */
+	{ "{Minute}", ATTRIB_TM_MIN, { "%02d", NULL } },  /* %M  00-59 */
+	{ "{Seconds}", ATTRIB_TM_SEC, { "%02d", NULL } },  /* %S  00-61 */
+	{ "{2DigitYear}", ATTRIB_TM_2YEAR, { "%02d", NULL } },  /* %y */
+	{ "{Year}", ATTRIB_TM_YEAR, { "%04d", NULL } },  /* %Y */
+	{ "{TimeZone}", ATTRIB_TIMEZONE, { "%+05d", NULL } }
+};
+
+static gchar *
+attribution_format (CamelMimeMessage *message)
+{
+	register const gchar *inptr;
+	const gchar *start;
+	gint tzone, len, i;
+	gchar buf[64], *s;
+	GString *str;
+	struct tm tm;
+	time_t date;
+	gint type;
+	gchar *format = quoting_text (QUOTING_ATTRIBUTION);
+
+	str = g_string_new ("");
+
+	date = camel_mime_message_get_date (message, &tzone);
+
+	if (date == CAMEL_MESSAGE_DATE_CURRENT) {
+		/* The message has no Date: header, look at Received: */
+		date = camel_mime_message_get_date_received (message, &tzone);
+	}
+	if (date == CAMEL_MESSAGE_DATE_CURRENT) {
+		/* That didn't work either, use current time */
+		time (&date);
+		tzone = 0;
+	}
+
+	/* Convert to UTC */
+	date += (tzone / 100) * 60 * 60;
+	date += (tzone % 100) * 60;
+
+	gmtime_r (&date, &tm);
+
+	inptr = format;
+	while (*inptr != '\0') {
+		start = inptr;
+		while (*inptr && strncmp (inptr, "${", 2) != 0)
+			inptr++;
+
+		g_string_append_len (str, start, inptr - start);
+
+		if (*inptr == '\0')
+			break;
+
+		start = ++inptr;
+		while (*inptr && *inptr != '}')
+			inptr++;
+
+		if (*inptr != '}') {
+			/* broken translation */
+			g_string_append_len (str, "${", 2);
+			inptr = start + 1;
+			continue;
+		}
+
+		inptr++;
+		len = inptr - start;
+		type = ATTRIB_UNKNOWN;
+		for (i = 0; i < G_N_ELEMENTS (attribvars); i++) {
+			if (!strncmp (attribvars[i].name, start, len)) {
+				type = attribvars[i].type;
+				break;
+			}
+		}
+
+		switch (type) {
+		case ATTRIB_CUSTOM:
+			attribvars[i].v.formatter (
+				str, attribvars[i].name, message);
+			break;
+		case ATTRIB_TIMEZONE:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tzone);
+			break;
+		case ATTRIB_STRFTIME:
+			e_utf8_strftime (
+				buf, sizeof (buf), attribvars[i].v.format, &tm);
+			g_string_append (str, buf);
+			break;
+		case ATTRIB_TM_SEC:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_sec);
+			break;
+		case ATTRIB_TM_MIN:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_min);
+			break;
+		case ATTRIB_TM_24HOUR:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_hour);
+			break;
+		case ATTRIB_TM_12HOUR:
+			g_string_append_printf (
+				str, attribvars[i].v.format,
+				(tm.tm_hour + 1) % 13);
+			break;
+		case ATTRIB_TM_MDAY:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_mday);
+			break;
+		case ATTRIB_TM_MON:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_mon + 1);
+			break;
+		case ATTRIB_TM_YEAR:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_year + 1900);
+			break;
+		case ATTRIB_TM_2YEAR:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_year % 100);
+			break;
+		case ATTRIB_TM_WDAY:
+			/* not actually used */
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_wday);
+			break;
+		case ATTRIB_TM_YDAY:
+			g_string_append_printf (
+				str, attribvars[i].v.format, tm.tm_yday + 1);
+			break;
+		default:
+			/* Misspelled variable?  Drop the
+			 * format argument and continue. */
+			break;
+		}
+	}
+
+	s = str->str;
+	g_string_free (str, FALSE);
+	g_free (format);
+
+	return s;
+}
+
+static void
+composer_set_body (EMsgComposer *composer,
+                   CamelMimeMessage *message,
+                   EMailReplyStyle style,
+                   EMailPartList *parts_list)
+{
+	gchar *text, *credits, *original;
+	CamelMimePart *part;
+	CamelSession *session;
+	GSettings *settings;
+	gboolean start_bottom, has_body_text = FALSE;
+	guint32 validity_found = 0;
+
+	session = e_msg_composer_ref_session (composer);
+
+	settings = g_settings_new ("org.gnome.evolution.mail");
+
+	start_bottom = g_settings_get_boolean (settings, "composer-reply-start-bottom");
+
+	switch (style) {
+	case E_MAIL_REPLY_STYLE_DO_NOT_QUOTE:
+		/* do nothing */
+		break;
+	case E_MAIL_REPLY_STYLE_ATTACH:
+		/* attach the original message as an attachment */
+		part = mail_tool_make_message_attachment (message);
+		e_msg_composer_attach (composer, part);
+		g_object_unref (part);
+		break;
+	case E_MAIL_REPLY_STYLE_OUTLOOK:
+		original = quoting_text (QUOTING_ORIGINAL);
+		text = em_utils_message_to_html (
+			session, message, original, E_MAIL_FORMATTER_QUOTE_FLAG_HEADERS,
+			parts_list, start_bottom ? "<BR>" : NULL, &validity_found);
+		e_msg_composer_set_body_text (composer, text, TRUE);
+		has_body_text = text && *text;
+		g_free (text);
+		g_free (original);
+		emu_update_composers_security (composer, validity_found);
+		break;
+
+	case E_MAIL_REPLY_STYLE_QUOTED:
+	default:
+		/* do what any sane user would want when replying... */
+		credits = attribution_format (message);
+		text = em_utils_message_to_html (
+			session, message, credits, E_MAIL_FORMATTER_QUOTE_FLAG_CITE,
+			parts_list, start_bottom ? "<BR>" : NULL, &validity_found);
+		g_free (credits);
+		e_msg_composer_set_body_text (composer, text, TRUE);
+		has_body_text = text && *text;
+		g_free (text);
+		emu_update_composers_security (composer, validity_found);
+		break;
+	}
+
+	if (has_body_text && start_bottom) {
+		GtkhtmlEditor *editor = GTKHTML_EDITOR (composer);
+		gboolean move_cursor_to_end;
+		gboolean top_signature;
+
+		/* If we are placing signature on top, then move cursor to the end,
+		 * otherwise try to find the signature place and place cursor just
+		 * before the signature. We added there an empty line already. */
+		gtkhtml_editor_run_command (editor, "block-selection");
+		gtkhtml_editor_run_command (editor, "cursor-bod");
+
+		top_signature = g_settings_get_boolean (settings, "composer-top-signature");
+
+		move_cursor_to_end = top_signature ||
+			!gtkhtml_editor_search_by_data (
+				editor, 1, "ClueFlow", "signature", "1");
+
+		if (move_cursor_to_end)
+			gtkhtml_editor_run_command (editor, "cursor-eod");
+		else
+			gtkhtml_editor_run_command (editor, "selection-move-left");
+		gtkhtml_editor_run_command (editor, "unblock-selection");
+	}
+
+	g_object_unref (settings);
+
+	g_object_unref (session);
+}
+
+gchar *
+em_utils_construct_composer_text (CamelSession *session,
+                                  CamelMimeMessage *message,
+                                  EMailPartList *parts_list)
+{
+	gchar *text, *credits;
+
+	g_return_val_if_fail (CAMEL_IS_SESSION (session), NULL);
+
+	credits = attribution_format (message);
+	text = em_utils_message_to_html (
+		session, message, credits, E_MAIL_FORMATTER_QUOTE_FLAG_CITE,
+		parts_list, NULL, NULL);
+	g_free (credits);
+
+	return text;
+}
+
+/**
+ * em_utils_reply_to_message:
+ * @shell: an #EShell
+ * @message: a #CamelMimeMessage
+ * @folder: a #CamelFolder, or %NULL
+ * @message_uid: the UID of @message, or %NULL
+ * @type: the type of reply to create
+ * @style: the reply style to use
+ * @source: source to inherit view settings from
+ * @address: used for E_MAIL_REPLY_TO_RECIPIENT @type
+ *
+ * Creates a new composer ready to reply to @message.
+ *
+ * @folder and @message_uid may be supplied in order to update the message
+ * flags once it has been replied to.
+ **/
+EMsgComposer *
+em_utils_reply_to_message (EShell *shell,
+                           CamelMimeMessage *message,
+                           CamelFolder *folder,
+                           const gchar *message_uid,
+                           EMailReplyType type,
+                           EMailReplyStyle style,
+                           EMailPartList *parts_list,
+                           CamelInternetAddress *address)
+{
+	ESourceRegistry *registry;
+	CamelInternetAddress *to, *cc;
+	CamelNNTPAddress *postto = NULL;
+	EMsgComposer *composer;
+	ESource *source;
+	gchar *identity_uid = NULL;
+	guint32 flags;
+
+	g_return_val_if_fail (E_IS_SHELL (shell), NULL);
+	g_return_val_if_fail (CAMEL_IS_MIME_MESSAGE (message), NULL);
+
+	to = camel_internet_address_new ();
+	cc = camel_internet_address_new ();
+
+	registry = e_shell_get_registry (shell);
+
+	/* This returns a new ESource reference. */
+	source = em_utils_check_send_account_override (shell, message, folder);
+	if (!source)
+		source = em_utils_guess_mail_identity_with_recipients_and_sort (
+			registry, message, folder, message_uid, sort_sources_by_ui, shell);
+	if (source != NULL) {
+		identity_uid = e_source_dup_uid (source);
+		g_object_unref (source);
+	}
+
+	flags = CAMEL_MESSAGE_ANSWERED | CAMEL_MESSAGE_SEEN;
+
+	if (!address && (type == E_MAIL_REPLY_TO_FROM || type == E_MAIL_REPLY_TO_SENDER) &&
+	    folder && em_utils_folder_is_sent (registry, folder))
+		type = E_MAIL_REPLY_TO_ALL;
+
+	switch (type) {
+	case E_MAIL_REPLY_TO_FROM:
+		if (folder)
+			postto = camel_nntp_address_new ();
+
+		get_reply_from (message, to, postto);
+		break;
+	case E_MAIL_REPLY_TO_RECIPIENT:
+		if (folder)
+			postto = camel_nntp_address_new ();
+
+		get_reply_recipient (message, to, postto, address);
+		break;
+	case E_MAIL_REPLY_TO_SENDER:
+		if (folder)
+			postto = camel_nntp_address_new ();
+
+		get_reply_sender (message, to, postto);
+		break;
+	case E_MAIL_REPLY_TO_LIST:
+		flags |= CAMEL_MESSAGE_ANSWERED_ALL;
+		if (get_reply_list (message, to))
+			break;
+		/* falls through */
+	case E_MAIL_REPLY_TO_ALL:
+		flags |= CAMEL_MESSAGE_ANSWERED_ALL;
+		if (folder)
+			postto = camel_nntp_address_new ();
+
+		em_utils_get_reply_all (registry, message, to, cc, postto);
+		break;
+	}
+
+	composer = reply_get_composer (
+		shell, message, identity_uid, to, cc, folder, postto);
+	e_msg_composer_add_message_attachments (composer, message, TRUE);
+
+	if (postto)
+		g_object_unref (postto);
+	g_object_unref (to);
+	g_object_unref (cc);
+
+	composer_set_body (composer, message, style, parts_list);
+
+	if (folder != NULL) {
+		gchar *folder_uri = NULL, *tmp_message_uid = NULL;
+
+		em_utils_get_real_folder_uri_and_message_uid (folder, message_uid, &folder_uri, &tmp_message_uid);
+
+		e_msg_composer_set_source_headers (
+			composer, folder_uri, tmp_message_uid, flags);
+
+		g_free (folder_uri);
+		g_free (tmp_message_uid);
+	}
+
+	/* because some reply types can change recipients after the composer is populated */
+	em_utils_apply_send_account_override_to_composer (composer, shell, folder);
+
+	composer_set_no_change (composer);
+
+	gtk_widget_show (GTK_WIDGET (composer));
+
+	g_free (identity_uid);
+
+	return composer;
+}
+
+static void
+post_header_clicked_cb (EComposerPostHeader *header,
+                        EMailSession *session)
+{
+	GtkTreeSelection *selection;
+	EMFolderSelector *selector;
+	EMFolderTreeModel *model;
+	EMFolderTree *folder_tree;
+	GtkWidget *dialog;
+	GList *list;
+
+	/* FIXME Limit the folder tree to the NNTP account? */
+	model = em_folder_tree_model_get_default ();
+
+	dialog = em_folder_selector_new (
+		/* FIXME GTK_WINDOW (composer) */ NULL,
+		model, EM_FOLDER_SELECTOR_CAN_CREATE,
+		_("Posting destination"),
+		_("Choose folders to post the message to."),
+		NULL);
+
+	selector = EM_FOLDER_SELECTOR (dialog);
+	folder_tree = em_folder_selector_get_folder_tree (selector);
+
+	em_folder_tree_set_excluded (
+		folder_tree,
+		EMFT_EXCLUDE_NOSELECT |
+		EMFT_EXCLUDE_VIRTUAL |
+		EMFT_EXCLUDE_VTRASH);
+
+	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (folder_tree));
+	gtk_tree_selection_set_mode (selection, GTK_SELECTION_MULTIPLE);
+
+	list = e_composer_post_header_get_folders (header);
+	em_folder_tree_set_selected_list (folder_tree, list, FALSE);
+	g_list_foreach (list, (GFunc) g_free, NULL);
+	g_list_free (list);
+
+	if (gtk_dialog_run (GTK_DIALOG (dialog)) != GTK_RESPONSE_OK) {
+		/* Prevent the header's "custom" flag from being reset,
+		 * which is what the default method will do next. */
+		g_signal_stop_emission_by_name (header, "clicked");
+		goto exit;
+	}
+
+	list = em_folder_tree_get_selected_uris (folder_tree);
+	e_composer_post_header_set_folders (header, list);
+	g_list_foreach (list, (GFunc) g_free, NULL);
+	g_list_free (list);
+
+exit:
+	gtk_widget_destroy (dialog);
+}
+
+/**
+ * em_configure_new_composer:
+ * @composer: a newly created #EMsgComposer
+ *
+ * Integrates a newly created #EMsgComposer into the mail backend.  The
+ * composer can't link directly to the mail backend without introducing
+ * circular library dependencies, so this function finishes configuring
+ * things the #EMsgComposer instance can't do itself.
+ **/
+void
+em_configure_new_composer (EMsgComposer *composer,
+                           EMailSession *session)
+{
+	EComposerHeaderTable *table;
+	EComposerHeaderType header_type;
+	EComposerHeader *header;
+
+	g_return_if_fail (E_IS_MSG_COMPOSER (composer));
+	g_return_if_fail (E_IS_MAIL_SESSION (session));
+
+	header_type = E_COMPOSER_HEADER_POST_TO;
+	table = e_msg_composer_get_header_table (composer);
+	header = e_composer_header_table_get_header (table, header_type);
+
+	g_signal_connect (
+		composer, "presend",
+		G_CALLBACK (composer_presend_check_recipients), session);
+
+	g_signal_connect (
+		composer, "presend",
+		G_CALLBACK (composer_presend_check_identity), session);
+
+	g_signal_connect (
+		composer, "presend",
+		G_CALLBACK (composer_presend_check_downloads), session);
+
+	g_signal_connect (
+		composer, "presend",
+		G_CALLBACK (composer_presend_check_plugins), session);
+
+	g_signal_connect (
+		composer, "presend",
+		G_CALLBACK (composer_presend_check_subject), session);
+
+	g_signal_connect (
+		composer, "presend",
+		G_CALLBACK (composer_presend_check_unwanted_html), session);
+
+	g_signal_connect (
+		composer, "send",
+		G_CALLBACK (em_utils_composer_send_cb), session);
+
+	g_signal_connect (
+		composer, "save-to-drafts",
+		G_CALLBACK (em_utils_composer_save_to_drafts_cb), session);
+
+	g_signal_connect (
+		composer, "save-to-outbox",
+		G_CALLBACK (em_utils_composer_save_to_outbox_cb), session);
+
+	g_signal_connect (
+		composer, "print",
+		G_CALLBACK (em_utils_composer_print_cb), session);
+
+	/* Handle "Post To:" button clicks, which displays a folder tree
+	 * widget.  The composer doesn't know about folder tree widgets,
+	 * so it can't handle this itself.
+	 *
+	 * Note: This is a G_SIGNAL_RUN_LAST signal, which allows us to
+	 *       stop the signal emission if the user cancels or closes
+	 *       the folder selector dialog.  See the handler function. */
+	g_signal_connect (
+		header, "clicked",
+		G_CALLBACK (post_header_clicked_cb), session);
+}
+
+/* free returned pointer with g_object_unref(), if not NULL */
+ESource *
+em_utils_check_send_account_override (EShell *shell,
+                                      CamelMimeMessage *message,
+                                      CamelFolder *folder)
+{
+	EMailBackend *mail_backend;
+	EMailSendAccountOverride *account_override;
+	CamelInternetAddress *to = NULL, *cc = NULL, *bcc = NULL;
+	gchar *folder_uri = NULL, *account_uid;
+	ESource *account_source = NULL;
+	ESourceRegistry *source_registry;
+
+	g_return_val_if_fail (E_IS_SHELL (shell), NULL);
+
+	if (!message && !folder)
+		return NULL;
+
+	if (message) {
+		to = camel_mime_message_get_recipients (message, CAMEL_RECIPIENT_TYPE_TO);
+		cc = camel_mime_message_get_recipients (message, CAMEL_RECIPIENT_TYPE_CC);
+		bcc = camel_mime_message_get_recipients (message, CAMEL_RECIPIENT_TYPE_BCC);
+	}
+
+	mail_backend = E_MAIL_BACKEND (e_shell_get_backend_by_name (shell, "mail"));
+	g_return_val_if_fail (mail_backend != NULL, NULL);
+
+	if (folder)
+		folder_uri = e_mail_folder_uri_from_folder (folder);
+
+	source_registry = e_shell_get_registry (shell);
+	account_override = e_mail_backend_get_send_account_override (mail_backend);
+	account_uid = e_mail_send_account_override_get_account_uid (account_override, folder_uri, to, cc, bcc);
+
+	while (account_uid) {
+		account_source = e_source_registry_ref_source (source_registry, account_uid);
+		if (account_source)
+			break;
+
+		/* stored send account override settings contain a reference
+		 * to a dropped account, thus cleanup it now */
+		e_mail_send_account_override_remove_for_account_uid (account_override, account_uid);
+
+		g_free (account_uid);
+		account_uid = e_mail_send_account_override_get_account_uid (account_override, folder_uri, to, cc, bcc);
+	}
+
+	g_free (folder_uri);
+	g_free (account_uid);
+
+	return account_source;
+}
+
+void
+em_utils_apply_send_account_override_to_composer (EMsgComposer *composer,
+                                                  EShell *shell,
+                                                  CamelFolder *folder)
+{
+	CamelMimeMessage *message;
+	EComposerHeaderTable *header_table;
+	ESource *source;
+
+	g_return_if_fail (E_IS_MSG_COMPOSER (composer));
+
+	message = em_utils_get_composer_recipients_as_message (composer);
+	source = em_utils_check_send_account_override (shell, message, folder);
+	g_object_unref (message);
+
+	if (!source)
+		return;
+
+	header_table = e_msg_composer_get_header_table (composer);
+	e_composer_header_table_set_identity_uid (header_table, e_source_get_uid (source));
+
+	g_object_unref (source);
+}

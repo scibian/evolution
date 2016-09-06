@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-imap-plus" xml:lang="hu">
+
+  <info>
+    <desc>Fogadás beállításai IMAP+ fiókokhoz.</desc>
+
+    <link type="guide" xref="mail-receiving-options#common-server-types"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#receiving-email"/>
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en#bstggh0 -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>IMAP+ fogadási beállításai</title>
+
+<section id="receiving-email-imap-plus">
+<title>Levelek fogadása</title>
+
+<p>A <gui>Levelek fogadása</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Levelek fogadása</gui></guiseq>):</p>
+
+<list>
+<item><p>Adja meg az e-mail kiszolgáló nevét a <gui>Kiszolgáló</gui> mezőben, és adja meg a kiszolgálón használt felhasználónevét.</p></item>
+<item><p>Válassza ki, hogy használni kíván-e biztonságos kapcsolatot (SSL vagy TLS).</p><p>Engedélyezze ezt a beállítást, ha a kiszolgáló támogatja.</p>
+<note style="tip"><p>Az ingyenes webes levelezők általában megadják, hogy ezen beállítások közül melyek használhatók. Ha céges környezetben van, akkor a rendszergazdától kaphat további információkat.</p></note></item>
+<item><p>Válassza ki a hitelesítés típusát a Hitelesítés listából, vagy nyomja meg a <gui style="button">Támogatott típusok lekérdezése</gui> gombot, és az Evolution meghatározza a támogatott hitelesítési mechanizmusokat. Egyes kiszolgálók nem teszik közzé az általuk támogatott hitelesítési mechanizmusokat, így a gomb megnyomása nem garantálja, hogy az elérhető mechanizmusok ténylegesen működni fognak.</p></item>
+<item><p>Döntse el, hogy az Evolution megjegyezze-e a jelszavát.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-imap-plus">
+<title>Fogadás beállításai</title>
+
+<p>A <gui>Fogadás beállításai</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Fogadás beállításai</gui></guiseq>):</p>
+
+<list>
+<item><p>Ha azt szeretné, hogy az Evolution automatikusan keresse az új üzeneteket, akkor jelölje be az <gui>Új levelek automatikus lekérdezése ... percenként</gui> négyzetet, és adja meg a gyakoriságot percben.</p></item>
+<item><p>Válassza ki a „Gyors újraszinkronizálás használata, ha a kiszolgáló támogatja” négyzetet, ha az IMAP kiszolgáló támogatja az <link href="http://tools.ietf.org/html/rfc5162">IMAP4 kiterjesztéseket a gyors postafiók-újraszinkronizáláshoz</link>.</p></item>
+<item><p>Megadhatja azt is, hogy az Evolution az új üzeneteket az összes mappában, vagy csak a feliratkozottakban keresse-e.</p></item>
+<item><p>Döntse el, hogy az Evolution használjon-e egyéni parancsokat az IMAP-kiszolgálóhoz csatlakozáshoz.</p></item>
+<item><p>Döntse el, hogy az Evolution csak a <link xref="mail-imap-subscriptions">feliratkozott mappákat</link> jelenítse-e meg.</p></item>
+<item><p>Döntse el, hogy az Evolution felülbírálja-e a kiszolgáló által megadott mappanévtereket.</p></item>
+</list>
+
+</section>
+
+</page>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-searching" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="searching-items"/>
+    <link type="guide" xref="calendar-organizing"/>
+
+    <revision pkgversion="3.5.90" version="0.3" date="2012-08-16" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Max Vorobuov</name>
+      <email its:translate="no">vmax0770@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-contact-organize.html.en
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>予定や会議を検索します。</desc>
+  </info>
+
+  <title>カレンダー項目の検索</title>
+
+<section id="quick-search">
+  <title>簡易検索</title>
+
+  <p>カレンダービューで、予定や会議をサマリやカテゴリにより簡単に検索できます。</p>
+
+  <p>サマリ検索</p>
+
+  <steps>
+    <item>
+      <p>検索アイコン <media type="image" mime="image/png" its:translate="no" src="figures/search-icon.png"/> をクリックしてドロップダウンリストを展開します。</p>
+    </item>
+    <item>
+      <p>検索条件を一覧から選択します。</p>
+    </item>
+    <item>
+      <p>検索したいテキストを入力して<key>Enter</key>を押します。</p>
+    </item>
+    <item>
+      <p><app>Evolution</app> は検索結果を表示します。</p>
+    </item>
+  </steps>
+
+  <p>カテゴリ検索</p>
+
+  <steps>
+    <item>
+      <p>ドロップダウンリストの<gui>表示</gui>をクリックします。</p>
+    </item>
+    <item>
+      <p>カテゴリを一覧から選択します。</p>
+    </item>
+    <item>
+      <p><app>Evolution</app> は検索結果を表示します。</p>
+    </item>
+  </steps>
+
+  <p>検索結果を調べるのに、検索欄の後にある2つの矢印ボタンを利用できます。このボタンは現在有効になっているカレンダーを検索します。検索対象は現在選択されている日から指定された方向へ、デフォルトでは10年の範囲です。</p>
+
+  <p>If you want to set several search conditions, you should use an Advanced
+  search, which is described below.</p>
+
+</section>
+
+  <!-- As advanced-search, clearing-search, saved-searches,
+       editing-a-saved-search are totally identical in all *-searching.page
+       files, this is centrally in one file that's included by XInclude. See
+
+  http://blogs.gnome.org/shaunm/2011/07/21/understanding-xinclude/ for how it works. -->
+
+  <include xmlns="http://www.w3.org/2001/XInclude" href="xinclude-searching.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:info/mal:section)"/>
+
+</page>

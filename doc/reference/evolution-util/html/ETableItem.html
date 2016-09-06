@@ -1,0 +1,874 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETableItem</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ETableHeader.html" title="ETableHeader">
+<link rel="next" href="ETableModel.html" title="ETableModel">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETableItem.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETableItem.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ETableItem.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETableItem.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETableHeader.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ETableModel.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETableItem"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETableItem.top_of_page"></a>ETableItem</span></h2>
+<p>ETableItem</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETableItem.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-set-cursor" title="e_table_item_set_cursor ()">e_table_item_set_cursor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-get-focused-column" title="e_table_item_get_focused_column ()">e_table_item_get_focused_column</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-leave-edit" title="e_table_item_leave_edit ()">e_table_item_leave_edit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-enter-edit" title="e_table_item_enter_edit ()">e_table_item_enter_edit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-redraw-range" title="e_table_item_redraw_range ()">e_table_item_redraw_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EPrintable.html" title="EPrintable"><span class="returnvalue">EPrintable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-get-printable" title="e_table_item_get_printable ()">e_table_item_get_printable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-compute-location" title="e_table_item_compute_location ()">e_table_item_compute_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-compute-mouse-over" title="e_table_item_compute_mouse_over ()">e_table_item_compute_mouse_over</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-get-cell-geometry" title="e_table_item_get_cell_geometry ()">e_table_item_get_cell_geometry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-row-diff" title="e_table_item_row_diff ()">e_table_item_row_diff</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-is-editing" title="e_table_item_is_editing ()">e_table_item_is_editing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableItem.html#e-table-item-cursor-scrolled" title="e_table_item_cursor_scrolled ()">e_table_item_cursor_scrolled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableItem.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *</td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--ETableHeader" title="The “ETableHeader” property">ETableHeader</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *</td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--ETableModel" title="The “ETableModel” property">ETableModel</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--alternating-row-colors" title="The “alternating-row-colors” property">alternating-row-colors</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--cursor-mode" title="The “cursor-mode” property">cursor-mode</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--cursor-row" title="The “cursor-row” property">cursor-row</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--drawfocus" title="The “drawfocus” property">drawfocus</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--height" title="The “height” property">height</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--horizontal-draw-grid" title="The “horizontal-draw-grid” property">horizontal-draw-grid</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--is-editing" title="The “is-editing” property">is-editing</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--length-threshold" title="The “length-threshold” property">length-threshold</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--minimum-width" title="The “minimum-width” property">minimum-width</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *</td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--selection-model" title="The “selection-model” property">selection-model</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--uniform-row-height" title="The “uniform-row-height” property">uniform-row-height</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--vertical-draw-grid" title="The “vertical-draw-grid” property">vertical-draw-grid</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="ETableItem.html#ETableItem--width" title="The “width” property">width</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableItem.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-click" title="The “click” signal">click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-cursor-activated" title="The “cursor-activated” signal">cursor-activated</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-cursor-change" title="The “cursor-change” signal">cursor-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-double-click" title="The “double-click” signal">double-click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-key-press" title="The “key-press” signal">key-press</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-right-click" title="The “right-click” signal">right-click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-selection-model-added" title="The “selection-model-added” signal">selection-model-added</a></td>
+<td class="signal_flags">Action</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-selection-model-removed" title="The “selection-model-removed” signal">selection-model-removed</a></td>
+<td class="signal_flags">Action</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-start-drag" title="The “start-drag” signal">start-drag</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableItem.html#ETableItem-style-updated" title="The “style-updated” signal">style-updated</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableItem.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETableItem.html#ETableItem-struct" title="struct ETableItem">ETableItem</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableItem.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html">GnomeCanvasItem</a>
+            <span class="lineart">╰──</span> ETableItem
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETableItem.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETableItem.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-table-item-set-cursor"></a><h3>e_table_item_set_cursor ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_item_set_cursor (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>This routine sets the cursor of the <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> canvas item.</p>
+<div class="refsect3">
+<a name="id-1.12.17.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eti</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> which will have the cursor set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Column to select.  -1 means the last column.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Row to select.  -1 means the last row.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-get-focused-column"></a><h3>e_table_item_get_focused_column ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_item_get_focused_column (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>);</pre>
+<p>This routine gets the cursor of the <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> canvas item.</p>
+<div class="refsect3">
+<a name="id-1.12.17.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eti</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> which will have the cursor retrieved.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.17.9.3.6"></a><h4>Returns</h4>
+<p> The current cursor column.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-leave-edit"></a><h3>e_table_item_leave_edit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_item_leave_edit (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-enter-edit"></a><h3>e_table_item_enter_edit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_item_enter_edit (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>This routine starts the given <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> editing at the given view
+column and row.</p>
+<div class="refsect3">
+<a name="id-1.12.17.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eti</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> which will start being edited</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The view col to edit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The view row to edit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-redraw-range"></a><h3>e_table_item_redraw_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_item_redraw_range (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> start_col</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> start_row</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> end_col</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> end_row</code></em>);</pre>
+<p>This routine redraws the given <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> in the range given.  The
+range is inclusive at both ends.</p>
+<div class="refsect3">
+<a name="id-1.12.17.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eti</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> which will be redrawn</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start_col</p></td>
+<td class="parameter_description"><p>The first col to redraw.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start_row</p></td>
+<td class="parameter_description"><p>The first row to redraw.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end_col</p></td>
+<td class="parameter_description"><p>The last col to redraw.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end_row</p></td>
+<td class="parameter_description"><p>The last row to redraw.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-get-printable"></a><h3>e_table_item_get_printable ()</h3>
+<pre class="programlisting"><a class="link" href="EPrintable.html" title="EPrintable"><span class="returnvalue">EPrintable</span></a> *
+e_table_item_get_printable (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>);</pre>
+<p>This routine creates and returns an <a class="link" href="EPrintable.html" title="EPrintable"><code class="literal">EPrintable</code></a> that can be used to
+print the given <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.12.17.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eti</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> which will be printed</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.17.9.7.6"></a><h4>Returns</h4>
+<p> The <a class="link" href="EPrintable.html" title="EPrintable"><code class="literal">EPrintable</code></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-compute-location"></a><h3>e_table_item_compute_location ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_item_compute_location (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *row</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *col</code></em>);</pre>
+<p>This routine locates the pixel location (*x, *y) in the
+<a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a>.  If that location is in the <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a>, *row and *col
+are set to the view row and column where it was found.  If that
+location is not in the <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a>, the height of the <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a>
+is removed from the value y points to.</p>
+<div class="refsect3">
+<a name="id-1.12.17.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eti</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> to look in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>A pointer to the x location to find in the <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>A pointer to the y location to find in the <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>A pointer to the location to store the found row in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>A pointer to the location to store the found col in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-compute-mouse-over"></a><h3>e_table_item_compute_mouse_over ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_item_compute_mouse_over (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *row</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *col</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-get-cell-geometry"></a><h3>e_table_item_get_cell_geometry ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_item_get_cell_geometry (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *row</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *col</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *height</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-row-diff"></a><h3>e_table_item_row_diff ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_item_row_diff (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> start_row</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> end_row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-is-editing"></a><h3>e_table_item_is_editing ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_item_is_editing (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.17.9.12.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eti</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> </p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.17.9.12.5"></a><h4>Returns</h4>
+<p> Whether the table item is currently editing cell content.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-item-cursor-scrolled"></a><h3>e_table_item_cursor_scrolled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_item_cursor_scrolled (<em class="parameter"><code><a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *eti</code></em>);</pre>
+<p>Does necessary recalculations after cursor scrolled, like whether
+the cursor is on screen or not anymore.</p>
+<div class="refsect3">
+<a name="id-1.12.17.9.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eti</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableItem.html" title="ETableItem"><code class="literal">ETableItem</code></a> </p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableItem.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETableItem-struct"></a><h3>struct ETableItem</h3>
+<pre class="programlisting">struct ETableItem;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableItem.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ETableItem--ETableHeader"></a><h3>The <code class="literal">“ETableHeader”</code> property</h3>
+<pre class="programlisting">  “ETableHeader”             <a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *</pre>
+<p>Table header.</p>
+<p>Flags: Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--ETableModel"></a><h3>The <code class="literal">“ETableModel”</code> property</h3>
+<pre class="programlisting">  “ETableModel”              <a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *</pre>
+<p>Table model.</p>
+<p>Flags: Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--alternating-row-colors"></a><h3>The <code class="literal">“alternating-row-colors”</code> property</h3>
+<pre class="programlisting">  “alternating-row-colors”   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Alternating Row Colors.</p>
+<p>Flags: Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--cursor-mode"></a><h3>The <code class="literal">“cursor-mode”</code> property</h3>
+<pre class="programlisting">  “cursor-mode”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Cursor mode.</p>
+<p>Flags: Write</p>
+<p>Allowed values: [0,2]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--cursor-row"></a><h3>The <code class="literal">“cursor-row”</code> property</h3>
+<pre class="programlisting">  “cursor-row”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Cursor row.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--drawfocus"></a><h3>The <code class="literal">“drawfocus”</code> property</h3>
+<pre class="programlisting">  “drawfocus”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Draw focus.</p>
+<p>Flags: Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--height"></a><h3>The <code class="literal">“height”</code> property</h3>
+<pre class="programlisting">  “height”                   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Height.</p>
+<p>Flags: Read</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--horizontal-draw-grid"></a><h3>The <code class="literal">“horizontal-draw-grid”</code> property</h3>
+<pre class="programlisting">  “horizontal-draw-grid”     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Horizontal Draw Grid.</p>
+<p>Flags: Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--is-editing"></a><h3>The <code class="literal">“is-editing”</code> property</h3>
+<pre class="programlisting">  “is-editing”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether is in an editing mode.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--length-threshold"></a><h3>The <code class="literal">“length-threshold”</code> property</h3>
+<pre class="programlisting">  “length-threshold”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Length Threshold.</p>
+<p>Flags: Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--minimum-width"></a><h3>The <code class="literal">“minimum-width”</code> property</h3>
+<pre class="programlisting">  “minimum-width”            <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Minimum Width.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--selection-model"></a><h3>The <code class="literal">“selection-model”</code> property</h3>
+<pre class="programlisting">  “selection-model”          <a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *</pre>
+<p>Selection model.</p>
+<p>Flags: Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--uniform-row-height"></a><h3>The <code class="literal">“uniform-row-height”</code> property</h3>
+<pre class="programlisting">  “uniform-row-height”       <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Uniform row height.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--vertical-draw-grid"></a><h3>The <code class="literal">“vertical-draw-grid”</code> property</h3>
+<pre class="programlisting">  “vertical-draw-grid”       <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Vertical Draw Grid.</p>
+<p>Flags: Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem--width"></a><h3>The <code class="literal">“width”</code> property</h3>
+<pre class="programlisting">  “width”                    <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Width.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableItem.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETableItem-click"></a><h3>The <code class="literal">“click”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>   *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-cursor-activated"></a><h3>The <code class="literal">“cursor-activated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-cursor-change"></a><h3>The <code class="literal">“cursor-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-double-click"></a><h3>The <code class="literal">“double-click”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>   *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-key-press"></a><h3>The <code class="literal">“key-press”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>   *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-right-click"></a><h3>The <code class="literal">“right-click”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>   *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-selection-model-added"></a><h3>The <code class="literal">“selection-model-added”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Action</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-selection-model-removed"></a><h3>The <code class="literal">“selection-model-removed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Action</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-start-drag"></a><h3>The <code class="literal">“start-drag”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>        arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>   *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableItem-style-updated"></a><h3>The <code class="literal">“style-updated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a> *etableitem,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

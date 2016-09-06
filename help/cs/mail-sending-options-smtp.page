@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-sending-options-smtp" xml:lang="cs">
+
+  <info>
+    <desc>Možnosti odesílání pro SMTP.</desc>
+
+    <link type="guide" xref="mail-account-manage-imap-plus#sending-email"/>
+    <link type="guide" xref="mail-account-manage-local-delivery#sending-email"/>
+    <link type="guide" xref="mail-account-manage-maildir-format-directories#sending-email"/>
+    <link type="guide" xref="mail-account-manage-mh-format-directories#sending-email"/>
+    <link type="guide" xref="mail-account-manage-pop#sending-email"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-directory#sending-email"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-file#sending-email"/>
+    <link type="guide" xref="mail-account-manage-usenet-news#sending-email"/>
+    <revision pkgversion="3.0.2" version="0.3" date="2013-06-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>Možnosti odesílání SMTP</title>
+
+<list>
+<item><p>Enter the address of your mail server for sending mail in the <gui>Server</gui> field and select if the server requires authentication (entering a username and a password).</p>
+<note style="tip"><p>Poskytovatelé freemailů obvykle poskytují informace možnostech, které můžete použít. Pokud jste v prostředí organizace, kontaktujte správce, chcete-li získat více informací.</p></note>
+</item>
+<item><p>Pokud server vyžaduje autentizaci, musíte poskytnout následující informace:</p>
+<list>
+  <item><p>Vyberte typ autentizace v seznamu nebo klikněte na <gui>Zjistit podporované typy</gui> a Evolution zjistí, který typ je podporován. Některé servery tuto funkci nepodporují, takže kliknutí na toto tlačítko nezaručuje, že dostupné mechanismy opravdu fungují.</p></item>
+  <item><p>Zadejte uživatelské jméno.</p></item>
+</list>
+</item>
+<item><p>Vyberte <gui>Používat zabezpečené připojení</gui>, pokud se chcete připojovat zabezpečeně.</p></item>
+</list>
+
+</page>

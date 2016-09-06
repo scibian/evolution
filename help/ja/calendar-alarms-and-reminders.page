@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="calendar-alarms-and-reminders" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#calendar"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-02" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+     <name its:translate="no">Novell, Inc</name>
+     <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#CACHCGCI -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>予定のリマインダー通知を設定します。</desc>
+  </info>
+
+  <title>予定のリマインダー</title>
+
+<section id="general-settings">
+  <title>全般設定</title>
+
+  <p><guiseq><gui>編集</gui><gui>設定</gui> <gui>カレンダーとタスク</gui><gui>リマインダー</gui></guiseq>以下で、リマインダー通知を受け取るカレンダーを選択できます。カレンダーを選択しない場合、そのカレンダーのイベントについてのリマインダーは受け取りません。予定や誕生日、記念日単位でリマインダーを表示するか否かを設定することもできます。</p>
+
+  <if:choose>
+    <if:when test="platform:gnome-shell">
+      <p>リマインダーの表示全般の情報については、<link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">GNOME デスクトップヘルプ</link>を見てください。</p>
+    </if:when>
+  </if:choose>
+
+</section>
+
+<section id="manual-reminders">
+  <title>手作業でのリマインダー設定</title>
+
+  <p>全般設定以外に、予定エディターで特定の予定だけのリマインダーを用意することもできます:</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui>オプション</gui><gui>リマインダー</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p>ドロップダウンメニューから、利用可能なデフォルトのオプションからリマインダーの通知を表示するものを選択するか、<gui>カスタマイズ</gui>を選択します。</p>
+    </item>
+    <item>
+      <p><gui>カスタマイズ</gui>を選択した場合、リマインダーはポップさせる、音を鳴らす、あるいはプログラムを実行させることもできます。リマインダーを繰り返すかどうかも設定できます。</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

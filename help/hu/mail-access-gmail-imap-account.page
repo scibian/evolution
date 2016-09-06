@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-access-gmail-imap-account" xml:lang="hu">
+
+  <info>
+    <desc>Hogyan állíthat be Gmail IMAP fiókot.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="guide" xref="google-services"/>
+    <link type="seealso" xref="mail-account-manage-imap-plus"/>
+
+    <revision pkgversion="3.1.5" version="0.2" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+<!-- Page only exists for the <note>, apart from that nothing special. -->
+
+<title>Gmail IMAP fiók elérése az Evolutionből</title>
+
+<p>Nézze meg az <link xref="mail-account-manage-imap-plus">IMAP+ levelezőfiók beállításai</link> szakaszt.</p>
+
+<note style="important"><p>A Gmail IMAP használatával való eléréséhez be kell kapcsolnia az IMAP protokollt a Google fiókjában. További információkért nézze meg a <link href="https://mail.google.com/support/bin/answer.py?answer=77695">Gmail súgóját</link>.</p></note>
+</page>

@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Formatter Reference Manual: EMailParserExtension</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Formatter Reference Manual">
+<link rel="up" href="ch02.html" title="Extensions">
+<link rel="prev" href="EMailExtensionRegistry.html" title="EMailExtensionRegistry">
+<link rel="next" href="EMailFormatterExtension.html" title="EMailFormatterExtension">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EMailParserExtension.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EMailParserExtension.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EMailExtensionRegistry.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EMailFormatterExtension.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EMailParserExtension"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EMailParserExtension.top_of_page"></a>EMailParserExtension</span></h2>
+<p>EMailParserExtension</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EMailParserExtension.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailParserExtension.html#e-mail-parser-extension-parse" title="e_mail_parser_extension_parse ()">e_mail_parser_extension_parse</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailParserExtension.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMailParserExtension.html#EMailParserExtension-struct" title="struct EMailParserExtension">EMailParserExtension</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EMailParserExtension.html#EMailParserExtensionFlags" title="enum EMailParserExtensionFlags">EMailParserExtensionFlags</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailParserExtension.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EMailParserExtension
+</pre>
+</div>
+<div class="refsect1">
+<a name="EMailParserExtension.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EMailParserExtension.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-mail-parser-extension-parse"></a><h3>e_mail_parser_extension_parse ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_parser_extension_parse (<em class="parameter"><code><a class="link" href="EMailParserExtension.html" title="EMailParserExtension"><span class="type">EMailParserExtension</span></a> *extension</code></em>,
+                               <em class="parameter"><code><a class="link" href="EMailParser.html" title="EMailParser"><span class="type">EMailParser</span></a> *parser</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *mime_part</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Strings.html#GString"><span class="type">GString</span></a> *part_id</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> *out_mail_parts</code></em>);</pre>
+<p>A virtual function reimplemented in all mail parser extensions. The function
+decodes and parses the <em class="parameter"><code>mime_part</code></em>
+, appending one or more <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a>&lt;!-//&gt;s
+to the <em class="parameter"><code>out_mail_parts</code></em>
+ queue.</p>
+<p>When the function is unable to parse the <em class="parameter"><code>mime_part</code></em>
+ (either because it's
+broken or because it is a different MIME type then the extension is
+specialized for), the function will return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to indicate to the
+<a class="link" href="EMailParser.html" title="EMailParser"><span class="type">EMailParser</span></a> that it should pick another extension.</p>
+<p>When the <em class="parameter"><code>mime_part</code></em>
+ contains for example multipart/mixed of one RFC822
+message with an attachment and of one image, then parser must make sure
+that parts are appeded to <em class="parameter"><code>out_mail_parts</code></em>
+ in the correct order.</p>
+<p>part1.rfc822.plain_text
+part1.rfc822.attachment
+part2.image</p>
+<p>Implementation of this function must be thread-safe.</p>
+<div class="refsect3">
+<a name="id-1.3.3.7.2.9"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>extension</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMailParserExtension.html" title="EMailParserExtension"><span class="type">EMailParserExtension</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="EMailParser.html" title="EMailParser"><span class="type">EMailParser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_part</p></td>
+<td class="parameter_description"><p>(allow-none) a <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> to parse</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>part_id</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Strings.html#GString"><span class="type">GString</span></a> to which parser will append ID of the parsed part.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>(allow-none) A <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_mail_parts</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> to deposit <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> instances</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.3.7.2.10"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <em class="parameter"><code>mime_part</code></em>
+was handled (even if no
+<a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a>&lt;!-//&gt;s were added to <em class="parameter"><code>out_mail_parts</code></em>
+), or
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the <em class="parameter"><code>mime_part</code></em>
+was not handled</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailParserExtension.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EMailParserExtension-struct"></a><h3>struct EMailParserExtension</h3>
+<pre class="programlisting">struct EMailParserExtension;</pre>
+<p>The <a class="link" href="EMailParserExtension.html" title="EMailParserExtension"><span class="type">EMailParserExtension</span></a> is an abstract interface for all extensions for
+<a class="link" href="EMailParser.html" title="EMailParser"><span class="type">EMailParser</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailParserExtensionFlags"></a><h3>enum EMailParserExtensionFlags</h3>
+<div class="refsect3">
+<a name="id-1.3.3.8.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-PARSER-EXTENSION-INLINE:CAPS"></a>E_MAIL_PARSER_EXTENSION_INLINE</p></td>
+<td class="enum_member_description">
+<p>   Don't parse as attachment.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-PARSER-EXTENSION-INLINE-DISPOSITION:CAPS"></a>E_MAIL_PARSER_EXTENSION_INLINE_DISPOSITION</p></td>
+<td class="enum_member_description">
+<p>   Always expand.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-PARSER-EXTENSION-COMPOUND-TYPE:CAPS"></a>E_MAIL_PARSER_EXTENSION_COMPOUND_TYPE</p></td>
+<td class="enum_member_description">
+<p>   Always check what's inside.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

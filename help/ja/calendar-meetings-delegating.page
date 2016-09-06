@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-meetings-delegating" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-meetings"/>
+
+    <revision pkgversion="3.5.91" version="0.3" date="2012-09-14" status="stub"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/bxqatxt.html -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>他の誰かに会議の開催を依頼します。</desc>
+  </info>
+
+  <title>会議の委任</title>
+
+  <p>Only attendees of a meeting can delegate a meeting, but not the organizer
+  of a meeting.</p>
+
+  <steps>
+    <item>
+      <p>委任する会議を右クリックします。</p>
+    </item>
+    <item>
+      <p><gui>会議の委任</gui>をクリックします。</p>
+    </item>
+    <item>
+      <p>会議を委任する人を選択します。</p>
+    </item>
+    <item>
+      <p><gui style="button">OK</gui>をクリックします。</p>
+    </item>
+  </steps>
+
+  <p>連絡先にある人たちそれぞれが会議開催通知を受け取ります。</p>
+
+</page>

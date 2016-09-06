@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Engine Reference Manual: EMailSession</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Engine Reference Manual">
+<link rel="up" href="ch01.html" title="Classes">
+<link rel="prev" href="EMailJunkFilter.html" title="EMailJunkFilter">
+<link rel="next" href="EMFilterFolderElement.html" title="EMFilterFolderElement">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EMailSession.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EMailSession.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EMailSession.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EMailSession.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EMailSession.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EMailJunkFilter.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EMFilterFolderElement.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EMailSession"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EMailSession.top_of_page"></a>EMailSession</span></h2>
+<p>EMailSession</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EMailSession.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailSession.html" title="EMailSession"><span class="returnvalue">EMailSession</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-new" title="e_mail_session_new ()">e_mail_session_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-registry" title="e_mail_session_get_registry ()">e_mail_session_get_registry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="returnvalue">MailFolderCache</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-folder-cache" title="e_mail_session_get_folder_cache ()">e_mail_session_get_folder_cache</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="returnvalue">CamelStore</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-local-store" title="e_mail_session_get_local_store ()">e_mail_session_get_local_store</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="returnvalue">CamelStore</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-vfolder-store" title="e_mail_session_get_vfolder_store ()">e_mail_session_get_vfolder_store</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-local-folder" title="e_mail_session_get_local_folder ()">e_mail_session_get_local_folder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-local-folder-uri" title="e_mail_session_get_local_folder_uri ()">e_mail_session_get_local_folder_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-available-junk-filters" title="e_mail_session_get_available_junk_filters ()">e_mail_session_get_available_junk_filters</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailJunkFilter.html" title="EMailJunkFilter"><span class="returnvalue">EMailJunkFilter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-junk-filter-by-name" title="e_mail_session_get_junk_filter_by_name ()">e_mail_session_get_junk_filter_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-inbox-sync" title="e_mail_session_get_inbox_sync ()">e_mail_session_get_inbox_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-inbox" title="e_mail_session_get_inbox ()">e_mail_session_get_inbox</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-inbox-finish" title="e_mail_session_get_inbox_finish ()">e_mail_session_get_inbox_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-trash-sync" title="e_mail_session_get_trash_sync ()">e_mail_session_get_trash_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-trash" title="e_mail_session_get_trash ()">e_mail_session_get_trash</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-get-trash-finish" title="e_mail_session_get_trash_finish ()">e_mail_session_get_trash_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-uri-to-folder-sync" title="e_mail_session_uri_to_folder_sync ()">e_mail_session_uri_to_folder_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-uri-to-folder" title="e_mail_session_uri_to_folder ()">e_mail_session_uri_to_folder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-uri-to-folder-finish" title="e_mail_session_uri_to_folder_finish ()">e_mail_session_uri_to_folder_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMVFolderContext.html" title="EMVFolderContext"><span class="returnvalue">EMVFolderContext</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-mail-session-create-vfolder-context" title="e_mail_session_create_vfolder_context ()">e_mail_session_create_vfolder_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-binding-transform-service-to-source" title="e_binding_transform_service_to_source ()">e_binding_transform_service_to_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#e-binding-transform-source-to-service" title="e_binding_transform_source_to_service ()">e_binding_transform_source_to_service</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#mail-session-flush-filter-log" title="mail_session_flush_filter_log ()">mail_session_flush_filter_log</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#mail-session-get-data-dir" title="mail_session_get_data_dir ()">mail_session_get_data_dir</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#mail-session-get-cache-dir" title="mail_session_get_cache_dir ()">mail_session_get_cache_dir</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailSession.html#mail-session-get-config-dir" title="mail_session_get_config_dir ()">mail_session_get_config_dir</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailSession.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailSession.html#EMailSession--folder-cache" title="The “folder-cache” property">folder-cache</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailSession.html#EMailSession--local-store" title="The “local-store” property">local-store</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailSession.html#EMailSession--registry" title="The “registry” property">registry</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailSession.html#EMailSession--vfolder-store" title="The “vfolder-store” property">vfolder-store</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailSession.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMailSession.html#EMailSession-flush-outbox" title="The “flush-outbox” signal">flush-outbox</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMailSession.html#EMailSession-refresh-service" title="The “refresh-service” signal">refresh-service</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMailSession.html#EMailSession-store-added" title="The “store-added” signal">store-added</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMailSession.html#EMailSession-store-removed" title="The “store-removed” signal">store-removed</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailSession.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMailSession.html#EMailSession-struct" title="struct EMailSession">EMailSession</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EMailSession.html#E-MAIL-SESSION-LOCAL-UID:CAPS" title="E_MAIL_SESSION_LOCAL_UID">E_MAIL_SESSION_LOCAL_UID</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EMailSession.html#E-MAIL-SESSION-VFOLDER-UID:CAPS" title="E_MAIL_SESSION_VFOLDER_UID">E_MAIL_SESSION_VFOLDER_UID</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EMailSession.html#EMailLocalFolder" title="enum EMailLocalFolder">EMailLocalFolder</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailSession.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/camel/CamelSession.html">CamelSession</a>
+        <span class="lineart">╰──</span> EMailSession
+</pre>
+</div>
+<div class="refsect1">
+<a name="EMailSession.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EMailSession implements
+ EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EMailSession.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EMailSession.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-mail-session-new"></a><h3>e_mail_session_new ()</h3>
+<pre class="programlisting"><a class="link" href="EMailSession.html" title="EMailSession"><span class="returnvalue">EMailSession</span></a> *
+e_mail_session_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *registry</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-registry"></a><h3>e_mail_session_get_registry ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+e_mail_session_get_registry (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-folder-cache"></a><h3>e_mail_session_get_folder_cache ()</h3>
+<pre class="programlisting"><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="returnvalue">MailFolderCache</span></a> *
+e_mail_session_get_folder_cache (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-local-store"></a><h3>e_mail_session_get_local_store ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="returnvalue">CamelStore</span></a> *
+e_mail_session_get_local_store (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-vfolder-store"></a><h3>e_mail_session_get_vfolder_store ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="returnvalue">CamelStore</span></a> *
+e_mail_session_get_vfolder_store (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-local-folder"></a><h3>e_mail_session_get_local_folder ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+e_mail_session_get_local_folder (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                                 <em class="parameter"><code><a class="link" href="EMailSession.html#EMailLocalFolder" title="enum EMailLocalFolder"><span class="type">EMailLocalFolder</span></a> type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-local-folder-uri"></a><h3>e_mail_session_get_local_folder_uri ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_session_get_local_folder_uri (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                                     <em class="parameter"><code><a class="link" href="EMailSession.html#EMailLocalFolder" title="enum EMailLocalFolder"><span class="type">EMailLocalFolder</span></a> type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-available-junk-filters"></a><h3>e_mail_session_get_available_junk_filters ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_mail_session_get_available_junk_filters
+                               (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-junk-filter-by-name"></a><h3>e_mail_session_get_junk_filter_by_name ()</h3>
+<pre class="programlisting"><a class="link" href="EMailJunkFilter.html" title="EMailJunkFilter"><span class="returnvalue">EMailJunkFilter</span></a> *
+e_mail_session_get_junk_filter_by_name
+                               (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filter_name</code></em>);</pre>
+<p>Looks up an <a class="link" href="EMailJunkFilter.html" title="EMailJunkFilter"><span class="type">EMailJunkFilter</span></a> extension by its filter name, as specified
+in its class structure.  If no match is found, the function returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.6.10.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filter_name</p></td>
+<td class="parameter_description"><p>a junk filter name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.10.10.6"></a><h4>Returns</h4>
+<p> an <a class="link" href="EMailJunkFilter.html" title="EMailJunkFilter"><span class="type">EMailJunkFilter</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-inbox-sync"></a><h3>e_mail_session_get_inbox_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+e_mail_session_get_inbox_sync (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *service_uid</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-inbox"></a><h3>e_mail_session_get_inbox ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_session_get_inbox (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *service_uid</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-inbox-finish"></a><h3>e_mail_session_get_inbox_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+e_mail_session_get_inbox_finish (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-trash-sync"></a><h3>e_mail_session_get_trash_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+e_mail_session_get_trash_sync (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *service_uid</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-trash"></a><h3>e_mail_session_get_trash ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_session_get_trash (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *service_uid</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-get-trash-finish"></a><h3>e_mail_session_get_trash_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+e_mail_session_get_trash_finish (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-uri-to-folder-sync"></a><h3>e_mail_session_uri_to_folder_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+e_mail_session_uri_to_folder_sync (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_uri</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html#CamelStoreGetFolderFlags"><span class="type">CamelStoreGetFolderFlags</span></a> flags</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-uri-to-folder"></a><h3>e_mail_session_uri_to_folder ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_session_uri_to_folder (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_uri</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html#CamelStoreGetFolderFlags"><span class="type">CamelStoreGetFolderFlags</span></a> flags</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-uri-to-folder-finish"></a><h3>e_mail_session_uri_to_folder_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+e_mail_session_uri_to_folder_finish (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-session-create-vfolder-context"></a><h3>e_mail_session_create_vfolder_context ()</h3>
+<pre class="programlisting"><a class="link" href="EMVFolderContext.html" title="EMVFolderContext"><span class="returnvalue">EMVFolderContext</span></a> *
+e_mail_session_create_vfolder_context (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-binding-transform-service-to-source"></a><h3>e_binding_transform_service_to_source ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_binding_transform_service_to_source (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a> *binding</code></em>,
+                                       <em class="parameter"><code>const <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *source_value</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *target_value</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-binding-transform-source-to-service"></a><h3>e_binding_transform_source_to_service ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_binding_transform_source_to_service (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/GBinding.html"><span class="type">GBinding</span></a> *binding</code></em>,
+                                       <em class="parameter"><code>const <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *source_value</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *target_value</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-session-flush-filter-log"></a><h3>mail_session_flush_filter_log ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_session_flush_filter_log (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-session-get-data-dir"></a><h3>mail_session_get_data_dir ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+mail_session_get_data_dir (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-session-get-cache-dir"></a><h3>mail_session_get_cache_dir ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+mail_session_get_cache_dir (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-session-get-config-dir"></a><h3>mail_session_get_config_dir ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+mail_session_get_config_dir (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailSession.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EMailSession-struct"></a><h3>struct EMailSession</h3>
+<pre class="programlisting">struct EMailSession;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-MAIL-SESSION-LOCAL-UID:CAPS"></a><h3>E_MAIL_SESSION_LOCAL_UID</h3>
+<pre class="programlisting">#define E_MAIL_SESSION_LOCAL_UID   "local" /* "On This Computer" */
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-MAIL-SESSION-VFOLDER-UID:CAPS"></a><h3>E_MAIL_SESSION_VFOLDER_UID</h3>
+<pre class="programlisting">#define E_MAIL_SESSION_VFOLDER_UID "vfolder" /* "Search Folders" */
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailLocalFolder"></a><h3>enum EMailLocalFolder</h3>
+<div class="refsect3">
+<a name="id-1.2.6.11.5.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-LOCAL-FOLDER-INBOX:CAPS"></a>E_MAIL_LOCAL_FOLDER_INBOX</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-LOCAL-FOLDER-DRAFTS:CAPS"></a>E_MAIL_LOCAL_FOLDER_DRAFTS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-LOCAL-FOLDER-OUTBOX:CAPS"></a>E_MAIL_LOCAL_FOLDER_OUTBOX</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-LOCAL-FOLDER-SENT:CAPS"></a>E_MAIL_LOCAL_FOLDER_SENT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-LOCAL-FOLDER-TEMPLATES:CAPS"></a>E_MAIL_LOCAL_FOLDER_TEMPLATES</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-LOCAL-FOLDER-LOCAL-INBOX:CAPS"></a>E_MAIL_LOCAL_FOLDER_LOCAL_INBOX</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-NUM-LOCAL-FOLDERS:CAPS"></a>E_MAIL_NUM_LOCAL_FOLDERS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailSession.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EMailSession--folder-cache"></a><h3>The <code class="literal">“folder-cache”</code> property</h3>
+<pre class="programlisting">  “folder-cache”             <a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *</pre>
+<p></p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailSession--local-store"></a><h3>The <code class="literal">“local-store”</code> property</h3>
+<pre class="programlisting">  “local-store”              <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *</pre>
+<p>Built-in local store.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailSession--registry"></a><h3>The <code class="literal">“registry”</code> property</h3>
+<pre class="programlisting">  “registry”                 <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *</pre>
+<p>Data source registry.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailSession--vfolder-store"></a><h3>The <code class="literal">“vfolder-store”</code> property</h3>
+<pre class="programlisting">  “vfolder-store”            <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *</pre>
+<p>Built-in search folder store.</p>
+<p>Flags: Read</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailSession.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EMailSession-flush-outbox"></a><h3>The <code class="literal">“flush-outbox”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Emitted if the send folder should be flushed.</p>
+<div class="refsect3">
+<a name="id-1.2.6.13.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>the email session</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailSession-refresh-service"></a><h3>The <code class="literal">“refresh-service”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session,
+               <a href="/usr/share/gtk-doc/html/camel/CamelService.html"><span class="type">CamelService</span></a> *service,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Emitted when <em class="parameter"><code>service</code></em>
+ should be refreshed.</p>
+<div class="refsect3">
+<a name="id-1.2.6.13.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> that emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>service</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelService.html"><span class="type">CamelService</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailSession-store-added"></a><h3>The <code class="literal">“store-added”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session,
+               <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>   *store,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Emitted when a store is added</p>
+<div class="refsect3">
+<a name="id-1.2.6.13.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> that emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailSession-store-removed"></a><h3>The <code class="literal">“store-removed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session,
+               <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>   *store,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Emitted when a store is removed</p>
+<div class="refsect3">
+<a name="id-1.2.6.13.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> that emitted the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

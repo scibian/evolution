@@ -1,0 +1,773 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Engine Reference Manual: MailFolderCache</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Engine Reference Manual">
+<link rel="up" href="ch01.html" title="Classes">
+<link rel="prev" href="EMVFolderRule.html" title="EMVFolderRule">
+<link rel="next" href="ch02.html" title="Utilities">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#MailFolderCache.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#MailFolderCache.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#MailFolderCache.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#MailFolderCache.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EMVFolderRule.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch02.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="MailFolderCache"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="MailFolderCache.top_of_page"></a>MailFolderCache</span></h2>
+<p>MailFolderCache — Stores information about open folders</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="MailFolderCache.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="returnvalue">MailFolderCache</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-new" title="mail_folder_cache_new ()">mail_folder_cache_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="returnvalue">GMainContext</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-ref-main-context" title="mail_folder_cache_ref_main_context ()">mail_folder_cache_ref_main_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-note-store" title="mail_folder_cache_note_store ()">mail_folder_cache_note_store</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-note-store-finish" title="mail_folder_cache_note_store_finish ()">mail_folder_cache_note_store_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-note-folder" title="mail_folder_cache_note_folder ()">mail_folder_cache_note_folder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-has-folder-info" title="mail_folder_cache_has_folder_info ()">mail_folder_cache_has_folder_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-ref-folder" title="mail_folder_cache_ref_folder ()">mail_folder_cache_ref_folder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-get-folder-info-flags" title="mail_folder_cache_get_folder_info_flags ()">mail_folder_cache_get_folder_info_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-get-local-folder-uris" title="mail_folder_cache_get_local_folder_uris ()">mail_folder_cache_get_local_folder_uris</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-get-remote-folder-uris" title="mail_folder_cache_get_remote_folder_uris ()">mail_folder_cache_get_remote_folder_uris</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-service-removed" title="mail_folder_cache_service_removed ()">mail_folder_cache_service_removed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-service-enabled" title="mail_folder_cache_service_enabled ()">mail_folder_cache_service_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MailFolderCache.html#mail-folder-cache-service-disabled" title="mail_folder_cache_service_disabled ()">mail_folder_cache_service_disabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> *</td>
+<td class="property_name"><a class="link" href="MailFolderCache.html#MailFolderCache--main-context" title="The “main-context” property">main-context</a></td>
+<td class="property_flags">Read</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="MailFolderCache.html#MailFolderCache-folder-available" title="The “folder-available” signal">folder-available</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="MailFolderCache.html#MailFolderCache-folder-changed" title="The “folder-changed” signal">folder-changed</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="MailFolderCache.html#MailFolderCache-folder-deleted" title="The “folder-deleted” signal">folder-deleted</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="MailFolderCache.html#MailFolderCache-folder-renamed" title="The “folder-renamed” signal">folder-renamed</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="MailFolderCache.html#MailFolderCache-folder-unavailable" title="The “folder-unavailable” signal">folder-unavailable</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="MailFolderCache.html#MailFolderCache-folder-unread-updated" title="The “folder-unread-updated” signal">folder-unread-updated</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="MailFolderCache.html#MailFolderCache-struct" title="struct MailFolderCache">MailFolderCache</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> MailFolderCache
+</pre>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="mail-folder-cache-new"></a><h3>mail_folder_cache_new ()</h3>
+<pre class="programlisting"><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="returnvalue">MailFolderCache</span></a> *
+mail_folder_cache_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-ref-main-context"></a><h3>mail_folder_cache_ref_main_context ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="returnvalue">GMainContext</span></a> *
+mail_folder_cache_ref_main_context (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>);</pre>
+<p>Returns the <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> on which event sources for <em class="parameter"><code>cache</code></em>
+ are to be
+attached.</p>
+<p>The returned <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> is referenced for thread-safety and should
+be unreferenced with <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#g-main-context-unref"><code class="function">g_main_context_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.2.10.9.3.6"></a><h4>Returns</h4>
+<p> a <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-note-store"></a><h3>mail_folder_cache_note_store ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_folder_cache_note_store (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Add a store whose folders should appear in the shell The folders are scanned
+from the store, and/or added at runtime via the folder_created event.  The
+<em class="parameter"><code>done</code></em>
+ function returns if we can free folder info.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-note-store-finish"></a><h3>mail_folder_cache_note_store_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+mail_folder_cache_note_store_finish (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html#CamelFolderInfo"><span class="type">CamelFolderInfo</span></a> **out_info</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-note-folder"></a><h3>mail_folder_cache_note_folder ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_folder_cache_note_folder (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>);</pre>
+<p>When a folder has been opened, notify it for watching.  The folder must have
+already been created on the store (which has already been noted) before the
+folder can be opened</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-has-folder-info"></a><h3>mail_folder_cache_has_folder_info ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+mail_folder_cache_has_folder_info (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_name</code></em>);</pre>
+<p>Returns whether <em class="parameter"><code>cache</code></em>
+ has information about the folder described by
+<em class="parameter"><code>store</code></em>
+ and <em class="parameter"><code>folder_name</code></em>
+.  This does not necessarily mean it has the
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> instance, but it at least has some meta-data about it.</p>
+<p>You can use this function as a folder existence test.</p>
+<div class="refsect3">
+<a name="id-1.2.10.9.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cache</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>a folder name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.10.9.7.7"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>cache</code></em>
+has folder info, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-ref-folder"></a><h3>mail_folder_cache_ref_folder ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+mail_folder_cache_ref_folder (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_name</code></em>);</pre>
+<p>Returns the <a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> for <em class="parameter"><code>store</code></em>
+ and <em class="parameter"><code>folder_name</code></em>
+ if available, or
+else <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if a <a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> instance is not yet cached.  This function
+does not block.</p>
+<p>The returned <a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> is referenced for thread-safety and must be
+unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.2.10.9.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cache</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>a folder name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.10.9.8.7"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-get-folder-info-flags"></a><h3>mail_folder_cache_get_folder_info_flags ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+mail_folder_cache_get_folder_info_flags
+                               (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_name</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html#CamelFolderInfoFlags"><span class="type">CamelFolderInfoFlags</span></a> *flags</code></em>);</pre>
+<p>Obtains <a href="/usr/share/gtk-doc/html/camel/CamelStore.html#CamelFolderInfoFlags"><span class="type">CamelFolderInfoFlags</span></a> for <em class="parameter"><code>store</code></em>
+ and <em class="parameter"><code>folder_name</code></em>
+ if available,
+and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to indicate <em class="parameter"><code>flags</code></em>
+ was set.  If no folder information
+is available for <em class="parameter"><code>store</code></em>
+ and <em class="parameter"><code>folder_name</code></em>
+, the function returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.10.9.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cache</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>a folder name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>return location for <a href="/usr/share/gtk-doc/html/camel/CamelStore.html#CamelFolderInfoFlags"><span class="type">CamelFolderInfoFlags</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.10.9.9.6"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>flags</code></em>
+was set</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-get-local-folder-uris"></a><h3>mail_folder_cache_get_local_folder_uris ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_folder_cache_get_local_folder_uris
+                               (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> *out_queue</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-get-remote-folder-uris"></a><h3>mail_folder_cache_get_remote_folder_uris ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_folder_cache_get_remote_folder_uris
+                               (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> *out_queue</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-service-removed"></a><h3>mail_folder_cache_service_removed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_folder_cache_service_removed (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelService.html"><span class="type">CamelService</span></a> *service</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-service-enabled"></a><h3>mail_folder_cache_service_enabled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_folder_cache_service_enabled (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelService.html"><span class="type">CamelService</span></a> *service</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-folder-cache-service-disabled"></a><h3>mail_folder_cache_service_disabled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_folder_cache_service_disabled (<em class="parameter"><code><a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *cache</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelService.html"><span class="type">CamelService</span></a> *service</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MailFolderCache-struct"></a><h3>struct MailFolderCache</h3>
+<pre class="programlisting">struct MailFolderCache;</pre>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="MailFolderCache--main-context"></a><h3>The <code class="literal">“main-context”</code> property</h3>
+<pre class="programlisting">  “main-context”             <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> *</pre>
+<p>The main loop context on which to attach event sources.</p>
+<p>Flags: Read</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="MailFolderCache.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="MailFolderCache-folder-available"></a><h3>The <code class="literal">“folder-available”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *store,
+               <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>      *folder_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Emitted when a folder becomes available</p>
+<div class="refsect3">
+<a name="id-1.2.10.12.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> containing the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>the name of the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailFolderCache-folder-changed"></a><h3>The <code class="literal">“folder-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *store,
+               <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>      *folder_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *new_messages,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             msg_uid,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *msg_sender,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *msg_subject,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *arg6,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Emitted when a folder has changed.  If <em class="parameter"><code>new_messages</code></em>
+ is not
+exactly 1, <em class="parameter"><code>msg_uid</code></em>
+, <em class="parameter"><code>msg_sender</code></em>
+, and <em class="parameter"><code>msg_subject</code></em>
+ will be NULL.</p>
+<div class="refsect3">
+<a name="id-1.2.10.12.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> containing the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>the name of the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_messages</p></td>
+<td class="parameter_description"><p>the number of new messages for the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>msg_uid</p></td>
+<td class="parameter_description"><p>uid of the new message, or NULL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>msg_sender</p></td>
+<td class="parameter_description"><p>sender of the new message, or NULL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>msg_subject</p></td>
+<td class="parameter_description"><p>subject of the new message, or NULL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailFolderCache-folder-deleted"></a><h3>The <code class="literal">“folder-deleted”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *store,
+               <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>      *folder_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Emitted when a folder is deleted</p>
+<div class="refsect3">
+<a name="id-1.2.10.12.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> containing the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>the name of the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailFolderCache-folder-renamed"></a><h3>The <code class="literal">“folder-renamed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *store,
+               <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>      *old_folder_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *new_folder_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Emitted when a folder is renamed</p>
+<div class="refsect3">
+<a name="id-1.2.10.12.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> containing the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>old_folder_name</p></td>
+<td class="parameter_description"><p>the old name of the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_folder_name</p></td>
+<td class="parameter_description"><p>the new name of the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailFolderCache-folder-unavailable"></a><h3>The <code class="literal">“folder-unavailable”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *store,
+               <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>      *folder_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Emitted when a folder becomes unavailable.  This represents a
+transient condition.  See MailFolderCache::folder-deleted to be
+notified when a folder is permanently removed.</p>
+<div class="refsect3">
+<a name="id-1.2.10.12.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> containing the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>the name of the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailFolderCache-folder-unread-updated"></a><h3>The <code class="literal">“folder-unread-updated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="MailFolderCache.html" title="MailFolderCache"><span class="type">MailFolderCache</span></a> *store,
+               <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>      *folder_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *unread,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Emitted when a we receive an update to the unread count for a folder</p>
+<div class="refsect3">
+<a name="id-1.2.10.12.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> containing the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>the name of the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unread</p></td>
+<td class="parameter_description"><p>the number of unread mails in the folder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

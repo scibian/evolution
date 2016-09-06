@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: GalViewEtable</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch14.html" title="View Management">
+<link rel="prev" href="GalViewCollection.html" title="GalViewCollection">
+<link rel="next" href="GalViewInstanceSaveAsDialog.html" title="GalViewInstanceSaveAsDialog">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GalViewEtable.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GalViewEtable.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch14.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GalViewCollection.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GalViewInstanceSaveAsDialog.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GalViewEtable"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GalViewEtable.top_of_page"></a>GalViewEtable</span></h2>
+<p>GalViewEtable</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GalViewEtable.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GalView.html" title="GalView"><span class="returnvalue">GalView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GalViewEtable.html#gal-view-etable-new" title="gal_view_etable_new ()">gal_view_etable_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GalViewEtable.html#gal-view-etable-attach-table" title="gal_view_etable_attach_table ()">gal_view_etable_attach_table</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GalViewEtable.html#gal-view-etable-attach-tree" title="gal_view_etable_attach_tree ()">gal_view_etable_attach_tree</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GalViewEtable.html#gal-view-etable-detach" title="gal_view_etable_detach ()">gal_view_etable_detach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GalViewEtable.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GalViewEtable.html#GalViewEtable-struct" title="struct GalViewEtable">GalViewEtable</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GalViewEtable.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a class="link" href="GalView.html" title="GalView">GalView</a>
+        <span class="lineart">╰──</span> GalViewEtable
+</pre>
+</div>
+<div class="refsect1">
+<a name="GalViewEtable.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GalViewEtable.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gal-view-etable-new"></a><h3>gal_view_etable_new ()</h3>
+<pre class="programlisting"><a class="link" href="GalView.html" title="GalView"><span class="returnvalue">GalView</span></a> *
+gal_view_etable_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>);</pre>
+<p>Returns a new GalViewEtable.  This is primarily for use by
+GalViewFactoryEtable.</p>
+<div class="refsect3">
+<a name="id-1.15.5.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>The name of the new view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.15.5.7.2.6"></a><h4>Returns</h4>
+<p> The new GalViewEtable.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gal-view-etable-attach-table"></a><h3>gal_view_etable_attach_table ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gal_view_etable_attach_table (<em class="parameter"><code><a class="link" href="GalViewEtable.html" title="GalViewEtable"><span class="type">GalViewEtable</span></a> *view</code></em>,
+                              <em class="parameter"><code><a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a> *table</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gal-view-etable-attach-tree"></a><h3>gal_view_etable_attach_tree ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gal_view_etable_attach_tree (<em class="parameter"><code><a class="link" href="GalViewEtable.html" title="GalViewEtable"><span class="type">GalViewEtable</span></a> *view</code></em>,
+                             <em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gal-view-etable-detach"></a><h3>gal_view_etable_detach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gal_view_etable_detach (<em class="parameter"><code><a class="link" href="GalViewEtable.html" title="GalViewEtable"><span class="type">GalViewEtable</span></a> *view</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GalViewEtable.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GalViewEtable-struct"></a><h3>struct GalViewEtable</h3>
+<pre class="programlisting">struct GalViewEtable;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

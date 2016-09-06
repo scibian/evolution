@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETreeTableAdapter</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ETreeSelectionModel.html" title="ETreeSelectionModel">
+<link rel="next" href="ECell.html" title="ECell">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETreeTableAdapter.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETreeTableAdapter.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#ETreeTableAdapter.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ETreeTableAdapter.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETreeTableAdapter.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETreeSelectionModel.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ECell.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETreeTableAdapter"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETreeTableAdapter.top_of_page"></a>ETreeTableAdapter</span></h2>
+<p>ETreeTableAdapter</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableModel.html" title="ETableModel"><span class="returnvalue">ETableModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-new" title="e_tree_table_adapter_new ()">e_tree_table_adapter_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="returnvalue">ETableHeader</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-get-header" title="e_tree_table_adapter_get_header ()">e_tree_table_adapter_get_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-set-sort-info" title="e_tree_table_adapter_set_sort_info ()">e_tree_table_adapter_set_sort_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="returnvalue">ETableSortInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-get-sort-info" title="e_tree_table_adapter_get_sort_info ()">e_tree_table_adapter_get_sort_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETreeModel.html" title="ETreeModel"><span class="returnvalue">ETreeModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-get-source-model" title="e_tree_table_adapter_get_source_model ()">e_tree_table_adapter_get_source_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="returnvalue">ETreePath</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-node-get-next" title="e_tree_table_adapter_node_get_next ()">e_tree_table_adapter_node_get_next</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-node-is-expanded" title="e_tree_table_adapter_node_is_expanded ()">e_tree_table_adapter_node_is_expanded</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-node-set-expanded" title="e_tree_table_adapter_node_set_expanded ()">e_tree_table_adapter_node_set_expanded</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-node-set-expanded-recurse" title="e_tree_table_adapter_node_set_expanded_recurse ()">e_tree_table_adapter_node_set_expanded_recurse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-force-expanded-state" title="e_tree_table_adapter_force_expanded_state ()">e_tree_table_adapter_force_expanded_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-root-node-set-visible" title="e_tree_table_adapter_root_node_set_visible ()">e_tree_table_adapter_root_node_set_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="returnvalue">ETreePath</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-node-at-row" title="e_tree_table_adapter_node_at_row ()">e_tree_table_adapter_node_at_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-row-of-node" title="e_tree_table_adapter_row_of_node ()">e_tree_table_adapter_row_of_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-root-node-is-visible" title="e_tree_table_adapter_root_node_is_visible ()">e_tree_table_adapter_root_node_is_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-show-node" title="e_tree_table_adapter_show_node ()">e_tree_table_adapter_show_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-save-expanded-state" title="e_tree_table_adapter_save_expanded_state ()">e_tree_table_adapter_save_expanded_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-load-expanded-state" title="e_tree_table_adapter_load_expanded_state ()">e_tree_table_adapter_load_expanded_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlDoc</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-save-expanded-state-xml" title="e_tree_table_adapter_save_expanded_state_xml ()">e_tree_table_adapter_save_expanded_state_xml</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeTableAdapter.html#e-tree-table-adapter-load-expanded-state-xml" title="e_tree_table_adapter_load_expanded_state_xml ()">e_tree_table_adapter_load_expanded_state_xml</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *</td>
+<td class="property_name"><a class="link" href="ETreeTableAdapter.html#ETreeTableAdapter--header" title="The “header” property">header</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *</td>
+<td class="property_name"><a class="link" href="ETreeTableAdapter.html#ETreeTableAdapter--sort-info" title="The “sort-info” property">sort-info</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="ETreeModel.html" title="ETreeModel"><span class="type">ETreeModel</span></a> *</td>
+<td class="property_name"><a class="link" href="ETreeTableAdapter.html#ETreeTableAdapter--source-model" title="The “source-model” property">source-model</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETreeTableAdapter.html#ETreeTableAdapter-sorting-changed" title="The “sorting-changed” signal">sorting-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETreeTableAdapter.html#ETreeTableAdapter-struct" title="struct ETreeTableAdapter">ETreeTableAdapter</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ETreeTableAdapter
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ETreeTableAdapter implements
+ <a class="link" href="ETableModel.html" title="ETableModel">ETableModel</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-tree-table-adapter-new"></a><h3>e_tree_table_adapter_new ()</h3>
+<pre class="programlisting"><a class="link" href="ETableModel.html" title="ETableModel"><span class="returnvalue">ETableModel</span></a> *
+e_tree_table_adapter_new (<em class="parameter"><code><a class="link" href="ETreeModel.html" title="ETreeModel"><span class="type">ETreeModel</span></a> *source_model</code></em>,
+                          <em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                          <em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *header</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-get-header"></a><h3>e_tree_table_adapter_get_header ()</h3>
+<pre class="programlisting"><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="returnvalue">ETableHeader</span></a> *
+e_tree_table_adapter_get_header (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-set-sort-info"></a><h3>e_tree_table_adapter_set_sort_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_set_sort_info (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                    <em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-get-sort-info"></a><h3>e_tree_table_adapter_get_sort_info ()</h3>
+<pre class="programlisting"><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="returnvalue">ETableSortInfo</span></a> *
+e_tree_table_adapter_get_sort_info (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-get-source-model"></a><h3>e_tree_table_adapter_get_source_model ()</h3>
+<pre class="programlisting"><a class="link" href="ETreeModel.html" title="ETreeModel"><span class="returnvalue">ETreeModel</span></a> *
+e_tree_table_adapter_get_source_model (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-node-get-next"></a><h3>e_tree_table_adapter_node_get_next ()</h3>
+<pre class="programlisting"><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="returnvalue">ETreePath</span></a>
+e_tree_table_adapter_node_get_next (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                    <em class="parameter"><code><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="type">ETreePath</span></a> path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-node-is-expanded"></a><h3>e_tree_table_adapter_node_is_expanded ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_tree_table_adapter_node_is_expanded (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                       <em class="parameter"><code><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="type">ETreePath</span></a> path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-node-set-expanded"></a><h3>e_tree_table_adapter_node_set_expanded ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_node_set_expanded
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                <em class="parameter"><code><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="type">ETreePath</span></a> path</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> expanded</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-node-set-expanded-recurse"></a><h3>e_tree_table_adapter_node_set_expanded_recurse ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_node_set_expanded_recurse
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                <em class="parameter"><code><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="type">ETreePath</span></a> path</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> expanded</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-force-expanded-state"></a><h3>e_tree_table_adapter_force_expanded_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_force_expanded_state
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> state</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-root-node-set-visible"></a><h3>e_tree_table_adapter_root_node_set_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_root_node_set_visible
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> visible</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-node-at-row"></a><h3>e_tree_table_adapter_node_at_row ()</h3>
+<pre class="programlisting"><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="returnvalue">ETreePath</span></a>
+e_tree_table_adapter_node_at_row (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-row-of-node"></a><h3>e_tree_table_adapter_row_of_node ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_tree_table_adapter_row_of_node (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                  <em class="parameter"><code><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="type">ETreePath</span></a> path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-root-node-is-visible"></a><h3>e_tree_table_adapter_root_node_is_visible ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_tree_table_adapter_root_node_is_visible
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-show-node"></a><h3>e_tree_table_adapter_show_node ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_show_node (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                <em class="parameter"><code><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="type">ETreePath</span></a> path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-save-expanded-state"></a><h3>e_tree_table_adapter_save_expanded_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_save_expanded_state
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-load-expanded-state"></a><h3>e_tree_table_adapter_load_expanded_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_load_expanded_state
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-save-expanded-state-xml"></a><h3>e_tree_table_adapter_save_expanded_state_xml ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlDoc</span> *
+e_tree_table_adapter_save_expanded_state_xml
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-table-adapter-load-expanded-state-xml"></a><h3>e_tree_table_adapter_load_expanded_state_xml ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_table_adapter_load_expanded_state_xml
+                               (<em class="parameter"><code><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etta</code></em>,
+                                <em class="parameter"><code><span class="type">xmlDoc</span> *doc</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETreeTableAdapter-struct"></a><h3>struct ETreeTableAdapter</h3>
+<pre class="programlisting">struct ETreeTableAdapter;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ETreeTableAdapter--header"></a><h3>The <code class="literal">“header”</code> property</h3>
+<pre class="programlisting">  “header”                   <a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETreeTableAdapter--sort-info"></a><h3>The <code class="literal">“sort-info”</code> property</h3>
+<pre class="programlisting">  “sort-info”                <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETreeTableAdapter--source-model"></a><h3>The <code class="literal">“source-model”</code> property</h3>
+<pre class="programlisting">  “source-model”             <a class="link" href="ETreeModel.html" title="ETreeModel"><span class="type">ETreeModel</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETreeTableAdapter.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETreeTableAdapter-sorting-changed"></a><h3>The <code class="literal">“sorting-changed”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *etreetableadapter,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

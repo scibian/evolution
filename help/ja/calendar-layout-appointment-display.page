@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-layout-appointment-display" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-layout"/>
+
+    <revision pkgversion="3.0.2" version="0.4" date="2012-02-18" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#bshpsxa
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>カレンダーでの予定の表示を設定します。</desc>
+  </info>
+
+  <title>予定の表示方法</title>
+
+  <!-- TODO:POST-3-8: Just listing the partially busted UI options (also see
+       calendar-layout-general-formatting) here is very poor and not
+       task-oriented, but that's it for the time being. Better ideas welcome.
+       -->
+
+  <!-- TODO: Recheck once https://bugzilla.gnome.org/show_bug.cgi?id=657233 is
+       fixed, as the current UI is a huge mess. -->
+
+  <p>カレンダー関連の以下のオプションが、<guiseq><gui>編集</gui><gui>設定</gui><gui>カレンダーとタスク</gui><gui>表示</gui></guiseq>以下にあります。</p>
+
+<section id="general">
+  <title>全般</title>
+
+  <list>
+    <item>
+      <p>時刻の区切り:</p>
+      <p>カレンダーの日時ビューにはっきりした境界線を何分間ごとに表示するか指定します。</p>
+    </item>
+    <item>
+      <p>週間と月間ビューで予定の期日を表示:</p>
+      <p>余白があれば、<app>Evolution</app> は週間と月間ビューで各予定の終了時刻を表示します。</p>
+    </item>
+    <item>
+      <p>月間ビューで週末を丸める:</p>
+      <p>このオプションを指定すると月間ビューで週末をまとめて1つの枠に表示します。</p>
+    </item>
+    <item>
+      <p>週番号の表示:</p>
+      <p>週番号をカレンダーの該当する週の後に表示します。</p>
+    </item>
+    <item>
+      <p>繰り返しのイベントをカレンダーの左下にイタリック体で表示します。</p>
+    </item>
+    <item>
+      <p>月間ビューで週単位でスクロール</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="date-time">
+  <title>日付と時刻の型式:</title>
+
+  <p><gui>日付</gui>列の表示型式は好みの型式を設定することにより変更できます。</p>
+
+  <p>形式の指定には strftime フォーマットの表現を使えます。strftime フォーマットで利用できる表現の全容については、<app>ターミナル</app>アプリケーションで <cmd>date --help</cmd> を実行してください。</p>
+
+</section>
+
+</page>

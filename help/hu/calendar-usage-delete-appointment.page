@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-usage-delete-appointment" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="calendar-usage"/>
+
+    <revision pkgversion="3.3.91" version="0.3" date="2012-02-19" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Értekezlet törlése a naptárában.</desc>
+  </info>
+
+  <title>Értekezlet törlése</title>
+
+  <p>Ha szeretne egy értekezletet törölni a naptárából, akkor kattintson a jobb egérgombbal az értekezletre a naptárban, és válassza az <gui>Értekezlet törlése</gui> menüpontot, vagy kattintson az értekezletre, és nyomja meg a <gui>Törlés</gui> gombot az eszköztáron, vagy a <keyseq><key>Ctrl</key><key>D</key></keyseq> kombinációt. Ha a <link xref="calendar-layout-views">listanézetben</link> van, akkor a <guiseq><gui>Szerkesztés</gui><gui>Értekezlet törlése</gui></guiseq> menüpontot is használhatja.</p>
+
+</page>

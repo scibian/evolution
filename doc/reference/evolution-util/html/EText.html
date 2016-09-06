@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EText</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch13.html" title="Text Processing">
+<link rel="prev" href="ch13.html" title="Text Processing">
+<link rel="next" href="ETextModel.html" title="ETextModel">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EText.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EText.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EText.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EText.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch13.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch13.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ETextModel.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EText"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EText.top_of_page"></a>EText</span></h2>
+<p>EText</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EText.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EText.html#e-text-cancel-editing" title="e_text_cancel_editing ()">e_text_cancel_editing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EText.html#e-text-stop-editing" title="e_text_stop_editing ()">e_text_stop_editing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EText.html#e-text-delete-selection" title="e_text_delete_selection ()">e_text_delete_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EText.html#e-text-cut-clipboard" title="e_text_cut_clipboard ()">e_text_cut_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EText.html#e-text-copy-clipboard" title="e_text_copy_clipboard ()">e_text_copy_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EText.html#e-text-paste-clipboard" title="e_text_paste_clipboard ()">e_text_paste_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EText.html#e-text-select-all" title="e_text_select_all ()">e_text_select_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EText.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--allow-newlines" title="The “allow-newlines” property">allow-newlines</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--bold" title="The “bold” property">bold</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EText.html#EText--break-characters" title="The “break-characters” property">break-characters</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--clip" title="The “clip” property">clip</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--clip-height" title="The “clip-height” property">clip-height</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--clip-width" title="The “clip-width” property">clip-width</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--cursor-pos" title="The “cursor-pos” property">cursor-pos</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--editable" title="The “editable” property">editable</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EText.html#EText--ellipsis" title="The “ellipsis” property">ellipsis</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="ETextEventProcessor.html" title="ETextEventProcessor"><span class="type">ETextEventProcessor</span></a> *</td>
+<td class="property_name"><a class="link" href="EText.html#EText--event-processor" title="The “event-processor” property">event-processor</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--fill-clip-rectangle" title="The “fill-clip-rectangle” property">fill-clip-rectangle</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EText.html#EText--fill-color" title="The “fill-color” property">fill-color</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</td>
+<td class="property_name"><a class="link" href="EText.html#EText--fill-color-gdk" title="The “fill-color-gdk” property">fill-color-gdk</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--fill-color-rgba" title="The “fill-color-rgba” property">fill-color-rgba</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--handle-popup" title="The “handle-popup” property">handle-popup</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--height" title="The “height” property">height</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/GtkIMContext.html"><span class="type">GtkIMContext</span></a> *</td>
+<td class="property_name"><a class="link" href="EText.html#EText--im-context" title="The “im-context” property">im-context</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkJustification"><span class="type">GtkJustification</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--justification" title="The “justification” property">justification</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--line-wrap" title="The “line-wrap” property">line-wrap</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--max-lines" title="The “max-lines” property">max-lines</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *</td>
+<td class="property_name"><a class="link" href="EText.html#EText--model" title="The “model” property">model</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--strikeout" title="The “strikeout” property">strikeout</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EText.html#EText--text" title="The “text” property">text</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--text-height" title="The “text-height” property">text-height</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--text-width" title="The “text-width” property">text-width</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--use-ellipsis" title="The “use-ellipsis” property">use-ellipsis</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--width" title="The “width” property">width</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--x-offset" title="The “x-offset” property">x-offset</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EText.html#EText--y-offset" title="The “y-offset” property">y-offset</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EText.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EText.html#EText-activate" title="The “activate” signal">activate</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EText.html#EText-changed" title="The “changed” signal">changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EText.html#EText-keypress" title="The “keypress” signal">keypress</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EText.html#EText-populate-popup" title="The “populate-popup” signal">populate-popup</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EText.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EText.html#EText-struct" title="struct EText">EText</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EText.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html">GnomeCanvasItem</a>
+            <span class="lineart">╰──</span> EText
+</pre>
+</div>
+<div class="refsect1">
+<a name="EText.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EText.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-text-cancel-editing"></a><h3>e_text_cancel_editing ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_cancel_editing (<em class="parameter"><code><a class="link" href="EText.html" title="EText"><span class="type">EText</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-stop-editing"></a><h3>e_text_stop_editing ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_stop_editing (<em class="parameter"><code><a class="link" href="EText.html" title="EText"><span class="type">EText</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-delete-selection"></a><h3>e_text_delete_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_delete_selection (<em class="parameter"><code><a class="link" href="EText.html" title="EText"><span class="type">EText</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-cut-clipboard"></a><h3>e_text_cut_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_cut_clipboard (<em class="parameter"><code><a class="link" href="EText.html" title="EText"><span class="type">EText</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-copy-clipboard"></a><h3>e_text_copy_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_copy_clipboard (<em class="parameter"><code><a class="link" href="EText.html" title="EText"><span class="type">EText</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-paste-clipboard"></a><h3>e_text_paste_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_paste_clipboard (<em class="parameter"><code><a class="link" href="EText.html" title="EText"><span class="type">EText</span></a> *text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-text-select-all"></a><h3>e_text_select_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_text_select_all (<em class="parameter"><code><a class="link" href="EText.html" title="EText"><span class="type">EText</span></a> *text</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EText.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EText-struct"></a><h3>struct EText</h3>
+<pre class="programlisting">struct EText;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EText.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EText--allow-newlines"></a><h3>The <code class="literal">“allow-newlines”</code> property</h3>
+<pre class="programlisting">  “allow-newlines”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Allow newlines.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--bold"></a><h3>The <code class="literal">“bold”</code> property</h3>
+<pre class="programlisting">  “bold”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Bold.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--break-characters"></a><h3>The <code class="literal">“break-characters”</code> property</h3>
+<pre class="programlisting">  “break-characters”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Break characters.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--clip"></a><h3>The <code class="literal">“clip”</code> property</h3>
+<pre class="programlisting">  “clip”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Clip.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--clip-height"></a><h3>The <code class="literal">“clip-height”</code> property</h3>
+<pre class="programlisting">  “clip-height”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Clip Height.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--clip-width"></a><h3>The <code class="literal">“clip-width”</code> property</h3>
+<pre class="programlisting">  “clip-width”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Clip Width.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--cursor-pos"></a><h3>The <code class="literal">“cursor-pos”</code> property</h3>
+<pre class="programlisting">  “cursor-pos”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Cursor position.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--editable"></a><h3>The <code class="literal">“editable”</code> property</h3>
+<pre class="programlisting">  “editable”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Editable.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--ellipsis"></a><h3>The <code class="literal">“ellipsis”</code> property</h3>
+<pre class="programlisting">  “ellipsis”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Ellipsis.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--event-processor"></a><h3>The <code class="literal">“event-processor”</code> property</h3>
+<pre class="programlisting">  “event-processor”          <a class="link" href="ETextEventProcessor.html" title="ETextEventProcessor"><span class="type">ETextEventProcessor</span></a> *</pre>
+<p>Event Processor.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--fill-clip-rectangle"></a><h3>The <code class="literal">“fill-clip-rectangle”</code> property</h3>
+<pre class="programlisting">  “fill-clip-rectangle”      <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Fill clip rectangle.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--fill-color"></a><h3>The <code class="literal">“fill-color”</code> property</h3>
+<pre class="programlisting">  “fill-color”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Fill color.</p>
+<p>Flags: Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--fill-color-gdk"></a><h3>The <code class="literal">“fill-color-gdk”</code> property</h3>
+<pre class="programlisting">  “fill-color-gdk”           <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</pre>
+<p>GDK fill color.</p>
+<p>Flags: Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--fill-color-rgba"></a><h3>The <code class="literal">“fill-color-rgba”</code> property</h3>
+<pre class="programlisting">  “fill-color-rgba”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>GDK fill color.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--handle-popup"></a><h3>The <code class="literal">“handle-popup”</code> property</h3>
+<pre class="programlisting">  “handle-popup”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Handle Popup.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--height"></a><h3>The <code class="literal">“height”</code> property</h3>
+<pre class="programlisting">  “height”                   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Height.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--im-context"></a><h3>The <code class="literal">“im-context”</code> property</h3>
+<pre class="programlisting">  “im-context”               <a href="http://developer.gnome.org/gtk2/GtkIMContext.html"><span class="type">GtkIMContext</span></a> *</pre>
+<p>IM Context.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--justification"></a><h3>The <code class="literal">“justification”</code> property</h3>
+<pre class="programlisting">  “justification”            <a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkJustification"><span class="type">GtkJustification</span></a></pre>
+<p>Justification.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GTK_JUSTIFY_LEFT</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--line-wrap"></a><h3>The <code class="literal">“line-wrap”</code> property</h3>
+<pre class="programlisting">  “line-wrap”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Line wrap.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--max-lines"></a><h3>The <code class="literal">“max-lines”</code> property</h3>
+<pre class="programlisting">  “max-lines”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Max lines.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--model"></a><h3>The <code class="literal">“model”</code> property</h3>
+<pre class="programlisting">  “model”                    <a class="link" href="ETextModel.html" title="ETextModel"><span class="type">ETextModel</span></a> *</pre>
+<p>Model.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--strikeout"></a><h3>The <code class="literal">“strikeout”</code> property</h3>
+<pre class="programlisting">  “strikeout”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Strikeout.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--text"></a><h3>The <code class="literal">“text”</code> property</h3>
+<pre class="programlisting">  “text”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Text.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--text-height"></a><h3>The <code class="literal">“text-height”</code> property</h3>
+<pre class="programlisting">  “text-height”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Text height.</p>
+<p>Flags: Read</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--text-width"></a><h3>The <code class="literal">“text-width”</code> property</h3>
+<pre class="programlisting">  “text-width”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Text width.</p>
+<p>Flags: Read</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--use-ellipsis"></a><h3>The <code class="literal">“use-ellipsis”</code> property</h3>
+<pre class="programlisting">  “use-ellipsis”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Use ellipsis.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--width"></a><h3>The <code class="literal">“width”</code> property</h3>
+<pre class="programlisting">  “width”                    <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Width.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--x-offset"></a><h3>The <code class="literal">“x-offset”</code> property</h3>
+<pre class="programlisting">  “x-offset”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>X Offset.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText--y-offset"></a><h3>The <code class="literal">“y-offset”</code> property</h3>
+<pre class="programlisting">  “y-offset”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Y Offset.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EText.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EText-activate"></a><h3>The <code class="literal">“activate”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EText.html" title="EText"><span class="type">EText</span></a>   *etext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText-changed"></a><h3>The <code class="literal">“changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EText.html" title="EText"><span class="type">EText</span></a>   *etext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText-keypress"></a><h3>The <code class="literal">“keypress”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EText.html" title="EText"><span class="type">EText</span></a>   *etext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>    arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>    arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EText-populate-popup"></a><h3>The <code class="literal">“populate-popup”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EText.html" title="EText"><span class="type">EText</span></a>   *etext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>     arg2,
+               <a href="http://developer.gnome.org/gtk2/GtkMenu.html"><span class="type">GtkMenu</span></a> *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

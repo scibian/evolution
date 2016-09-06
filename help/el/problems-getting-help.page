@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="problems-getting-help" xml:lang="el">
+
+  <info>
+    <desc>Πώς να πάρετε βοήθεια για προβλήματα.</desc>
+    
+    <link type="guide" xref="index#tracking-down-problems"/>
+    <link type="seealso" xref="problems-reporting-bugs"/>
+
+    <revision pkgversion="3.5.3" version="0.7" date="2012-06-15" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+
+<title>Πώς να πάρετε βοήθεια</title>
+
+<p>Για να δεχτείτε βοήθεια σε προβλήματα μπορείτε να στείλετε ένα μήνυμα στο <link href="http://mail.gnome.org/mailman/listinfo/evolution-list">Κατάλογος αλληλογραφίας του Evolution</link> ή να μιλήσετε με τους προγραμματιστές και άλλους χρήστες στο κανάλι συνομιλιών IRC του #evolution στον εξυπηρετητή irc.gimp.net. Για σύνδεση με έναν εξυπηρετητή IRC μπορείτε για παράδειγμα να <link xref="help:empathy/irc-manage" href="https://help.gnome.org/users/empathy/stable/irc-manage">χρησιμοποιήσετε την εφαρμογή αγγελιοφόρου διαδικτύου του <app>Empathy</app></link>.</p>
+</page>

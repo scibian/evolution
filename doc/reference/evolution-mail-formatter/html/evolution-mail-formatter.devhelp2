@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Evolution Mail Formatter Reference Manual" link="index.html" author="" name="evolution-mail-formatter" version="2" language="c">
+  <chapters>
+    <sub name="Mail Parsing and Formatting" link="ch01.html">
+      <sub name="EMailParser" link="EMailParser.html"/>
+      <sub name="EMailFormatter" link="EMailFormatter.html"/>
+      <sub name="EMailFormatterPrint" link="EMailFormatterPrint.html"/>
+      <sub name="EMailFormatterQuote" link="EMailFormatterQuote.html"/>
+      <sub name="EMailPart" link="EMailPart.html"/>
+      <sub name="EMailPartList" link="EMailPartList.html"/>
+      <sub name="EMailPartAttachment" link="EMailPartAttachment.html"/>
+      <sub name="EMailPartAttachmentBar" link="EMailPartAttachmentBar.html"/>
+      <sub name="EMailPartHeaders" link="EMailPartHeaders.html"/>
+      <sub name="EMailPartImage" link="EMailPartImage.html"/>
+    </sub>
+    <sub name="Extensions" link="ch02.html">
+      <sub name="EMailExtensionRegistry" link="EMailExtensionRegistry.html"/>
+      <sub name="EMailParserExtension" link="EMailParserExtension.html"/>
+      <sub name="EMailFormatterExtension" link="EMailFormatterExtension.html"/>
+    </sub>
+    <sub name="Miscellaneous" link="ch03.html">
+      <sub name="EMailInlineFilter" link="EMailInlineFilter.html"/>
+      <sub name="EMailStripSigFilter" link="EMailStripSigFilter.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="Index" link="api-index-full.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="e_mail_parser_new ()" link="EMailParser.html#e-mail-parser-new"/>
+    <keyword type="function" name="e_mail_parser_parse_sync ()" link="EMailParser.html#e-mail-parser-parse-sync"/>
+    <keyword type="function" name="e_mail_parser_parse ()" link="EMailParser.html#e-mail-parser-parse"/>
+    <keyword type="function" name="e_mail_parser_parse_finish ()" link="EMailParser.html#e-mail-parser-parse-finish"/>
+    <keyword type="function" name="e_mail_parser_parse_part ()" link="EMailParser.html#e-mail-parser-parse-part"/>
+    <keyword type="function" name="e_mail_parser_parse_part_as ()" link="EMailParser.html#e-mail-parser-parse-part-as"/>
+    <keyword type="function" name="e_mail_parser_error ()" link="EMailParser.html#e-mail-parser-error"/>
+    <keyword type="function" name="e_mail_parser_wrap_as_attachment ()" link="EMailParser.html#e-mail-parser-wrap-as-attachment"/>
+    <keyword type="function" name="e_mail_parser_get_session ()" link="EMailParser.html#e-mail-parser-get-session"/>
+    <keyword type="function" name="e_mail_parser_get_extension_registry ()" link="EMailParser.html#e-mail-parser-get-extension-registry"/>
+    <keyword type="struct" name="struct EMailParser" link="EMailParser.html#EMailParser-struct"/>
+    <keyword type="property" name="The “session” property" link="EMailParser.html#EMailParser--session"/>
+    <keyword type="function" name="e_mail_formatter_new ()" link="EMailFormatter.html#e-mail-formatter-new"/>
+    <keyword type="function" name="e_mail_formatter_format_sync ()" link="EMailFormatter.html#e-mail-formatter-format-sync"/>
+    <keyword type="function" name="e_mail_formatter_format ()" link="EMailFormatter.html#e-mail-formatter-format"/>
+    <keyword type="function" name="e_mail_formatter_format_finish ()" link="EMailFormatter.html#e-mail-formatter-format-finish"/>
+    <keyword type="function" name="e_mail_formatter_format_as ()" link="EMailFormatter.html#e-mail-formatter-format-as"/>
+    <keyword type="function" name="e_mail_formatter_format_text ()" link="EMailFormatter.html#e-mail-formatter-format-text"/>
+    <keyword type="function" name="e_mail_formatter_get_sub_html_header ()" link="EMailFormatter.html#e-mail-formatter-get-sub-html-header"/>
+    <keyword type="function" name="e_mail_formatter_get_html_header ()" link="EMailFormatter.html#e-mail-formatter-get-html-header"/>
+    <keyword type="function" name="e_mail_formatter_get_extension_registry ()" link="EMailFormatter.html#e-mail-formatter-get-extension-registry"/>
+    <keyword type="function" name="e_mail_formatter_get_text_format_flags ()" link="EMailFormatter.html#e-mail-formatter-get-text-format-flags"/>
+    <keyword type="function" name="e_mail_formatter_get_color ()" link="EMailFormatter.html#e-mail-formatter-get-color"/>
+    <keyword type="function" name="e_mail_formatter_set_color ()" link="EMailFormatter.html#e-mail-formatter-set-color"/>
+    <keyword type="function" name="e_mail_formatter_update_style ()" link="EMailFormatter.html#e-mail-formatter-update-style"/>
+    <keyword type="function" name="e_mail_formatter_get_image_loading_policy ()" link="EMailFormatter.html#e-mail-formatter-get-image-loading-policy"/>
+    <keyword type="function" name="e_mail_formatter_set_image_loading_policy ()" link="EMailFormatter.html#e-mail-formatter-set-image-loading-policy"/>
+    <keyword type="function" name="e_mail_formatter_get_mark_citations ()" link="EMailFormatter.html#e-mail-formatter-get-mark-citations"/>
+    <keyword type="function" name="e_mail_formatter_set_mark_citations ()" link="EMailFormatter.html#e-mail-formatter-set-mark-citations"/>
+    <keyword type="function" name="e_mail_formatter_get_show_sender_photo ()" link="EMailFormatter.html#e-mail-formatter-get-show-sender-photo"/>
+    <keyword type="function" name="e_mail_formatter_set_show_sender_photo ()" link="EMailFormatter.html#e-mail-formatter-set-show-sender-photo"/>
+    <keyword type="function" name="e_mail_formatter_get_animate_images ()" link="EMailFormatter.html#e-mail-formatter-get-animate-images"/>
+    <keyword type="function" name="e_mail_formatter_set_animate_images ()" link="EMailFormatter.html#e-mail-formatter-set-animate-images"/>
+    <keyword type="function" name="e_mail_formatter_get_show_real_date ()" link="EMailFormatter.html#e-mail-formatter-get-show-real-date"/>
+    <keyword type="function" name="e_mail_formatter_set_show_real_date ()" link="EMailFormatter.html#e-mail-formatter-set-show-real-date"/>
+    <keyword type="function" name="e_mail_formatter_get_charset ()" link="EMailFormatter.html#e-mail-formatter-get-charset"/>
+    <keyword type="function" name="e_mail_formatter_dup_charset ()" link="EMailFormatter.html#e-mail-formatter-dup-charset"/>
+    <keyword type="function" name="e_mail_formatter_set_charset ()" link="EMailFormatter.html#e-mail-formatter-set-charset"/>
+    <keyword type="function" name="e_mail_formatter_get_default_charset ()" link="EMailFormatter.html#e-mail-formatter-get-default-charset"/>
+    <keyword type="function" name="e_mail_formatter_dup_default_charset ()" link="EMailFormatter.html#e-mail-formatter-dup-default-charset"/>
+    <keyword type="function" name="e_mail_formatter_set_default_charset ()" link="EMailFormatter.html#e-mail-formatter-set-default-charset"/>
+    <keyword type="function" name="e_mail_formatter_format_header ()" link="EMailFormatter.html#e-mail-formatter-format-header"/>
+    <keyword type="function" name="e_mail_formatter_format_text_header ()" link="EMailFormatter.html#e-mail-formatter-format-text-header"/>
+    <keyword type="function" name="e_mail_formatter_format_address ()" link="EMailFormatter.html#e-mail-formatter-format-address"/>
+    <keyword type="function" name="e_mail_formatter_canon_header_name ()" link="EMailFormatter.html#e-mail-formatter-canon-header-name"/>
+    <keyword type="function" name="e_mail_formatter_find_rfc822_end_iter ()" link="EMailFormatter.html#e-mail-formatter-find-rfc822-end-iter"/>
+    <keyword type="function" name="e_mail_formatter_parse_html_mnemonics ()" link="EMailFormatter.html#e-mail-formatter-parse-html-mnemonics"/>
+    <keyword type="struct" name="struct EMailFormatter" link="EMailFormatter.html#EMailFormatter-struct"/>
+    <keyword type="enum" name="enum EMailFormatterHeaderFlags" link="EMailFormatter.html#EMailFormatterHeaderFlags"/>
+    <keyword type="enum" name="enum EMailFormatterMode" link="EMailFormatter.html#EMailFormatterMode"/>
+    <keyword type="struct" name="struct EMailFormatterContext" link="EMailFormatter.html#EMailFormatterContext"/>
+    <keyword type="enum" name="enum EMailFormatterColor" link="EMailFormatter.html#EMailFormatterColor"/>
+    <keyword type="enum" name="enum EMailImageLoadingPolicy" link="EMailFormatter.html#EMailImageLoadingPolicy"/>
+    <keyword type="property" name="The “animate-images” property" link="EMailFormatter.html#EMailFormatter--animate-images"/>
+    <keyword type="property" name="The “body-color” property" link="EMailFormatter.html#EMailFormatter--body-color"/>
+    <keyword type="property" name="The “charset” property" link="EMailFormatter.html#EMailFormatter--charset"/>
+    <keyword type="property" name="The “citation-color” property" link="EMailFormatter.html#EMailFormatter--citation-color"/>
+    <keyword type="property" name="The “content-color” property" link="EMailFormatter.html#EMailFormatter--content-color"/>
+    <keyword type="property" name="The “default-charset” property" link="EMailFormatter.html#EMailFormatter--default-charset"/>
+    <keyword type="property" name="The “frame-color” property" link="EMailFormatter.html#EMailFormatter--frame-color"/>
+    <keyword type="property" name="The “header-color” property" link="EMailFormatter.html#EMailFormatter--header-color"/>
+    <keyword type="property" name="The “image-loading-policy” property" link="EMailFormatter.html#EMailFormatter--image-loading-policy"/>
+    <keyword type="property" name="The “mark-citations” property" link="EMailFormatter.html#EMailFormatter--mark-citations"/>
+    <keyword type="property" name="The “show-real-date” property" link="EMailFormatter.html#EMailFormatter--show-real-date"/>
+    <keyword type="property" name="The “show-sender-photo” property" link="EMailFormatter.html#EMailFormatter--show-sender-photo"/>
+    <keyword type="property" name="The “text-color” property" link="EMailFormatter.html#EMailFormatter--text-color"/>
+    <keyword type="signal" name="The “need-redraw” signal" link="EMailFormatter.html#EMailFormatter-need-redraw"/>
+    <keyword type="function" name="e_mail_formatter_print_new ()" link="EMailFormatterPrint.html#e-mail-formatter-print-new"/>
+    <keyword type="struct" name="struct EMailFormatterPrint" link="EMailFormatterPrint.html#EMailFormatterPrint-struct"/>
+    <keyword type="struct" name="struct EMailFormatterPrintExtension" link="EMailFormatterPrint.html#EMailFormatterPrintExtension-struct"/>
+    <keyword type="function" name="e_mail_formatter_quote_new ()" link="EMailFormatterQuote.html#e-mail-formatter-quote-new"/>
+    <keyword type="struct" name="struct EMailFormatterQuote" link="EMailFormatterQuote.html#EMailFormatterQuote-struct"/>
+    <keyword type="struct" name="struct EMailFormatterQuoteContext" link="EMailFormatterQuote.html#EMailFormatterQuoteContext"/>
+    <keyword type="enum" name="enum EMailFormatterQuoteFlags" link="EMailFormatterQuote.html#EMailFormatterQuoteFlags"/>
+    <keyword type="struct" name="struct EMailFormatterQuoteExtension" link="EMailFormatterQuote.html#EMailFormatterQuoteExtension-struct"/>
+    <keyword type="function" name="e_mail_part_new ()" link="EMailPart.html#e-mail-part-new"/>
+    <keyword type="function" name="e_mail_part_get_id ()" link="EMailPart.html#e-mail-part-get-id"/>
+    <keyword type="function" name="e_mail_part_get_cid ()" link="EMailPart.html#e-mail-part-get-cid"/>
+    <keyword type="function" name="e_mail_part_set_cid ()" link="EMailPart.html#e-mail-part-set-cid"/>
+    <keyword type="function" name="e_mail_part_id_has_prefix ()" link="EMailPart.html#e-mail-part-id-has-prefix"/>
+    <keyword type="function" name="e_mail_part_id_has_suffix ()" link="EMailPart.html#e-mail-part-id-has-suffix"/>
+    <keyword type="function" name="e_mail_part_id_has_substr ()" link="EMailPart.html#e-mail-part-id-has-substr"/>
+    <keyword type="function" name="e_mail_part_ref_mime_part ()" link="EMailPart.html#e-mail-part-ref-mime-part"/>
+    <keyword type="function" name="e_mail_part_get_mime_type ()" link="EMailPart.html#e-mail-part-get-mime-type"/>
+    <keyword type="function" name="e_mail_part_set_mime_type ()" link="EMailPart.html#e-mail-part-set-mime-type"/>
+    <keyword type="function" name="e_mail_part_ref_part_list ()" link="EMailPart.html#e-mail-part-ref-part-list"/>
+    <keyword type="function" name="e_mail_part_set_part_list ()" link="EMailPart.html#e-mail-part-set-part-list"/>
+    <keyword type="function" name="e_mail_part_get_is_attachment ()" link="EMailPart.html#e-mail-part-get-is-attachment"/>
+    <keyword type="function" name="e_mail_part_set_is_attachment ()" link="EMailPart.html#e-mail-part-set-is-attachment"/>
+    <keyword type="function" name="e_mail_part_bind_dom_element ()" link="EMailPart.html#e-mail-part-bind-dom-element"/>
+    <keyword type="function" name="e_mail_part_update_validity ()" link="EMailPart.html#e-mail-part-update-validity"/>
+    <keyword type="function" name="e_mail_part_get_validity ()" link="EMailPart.html#e-mail-part-get-validity" since="3.8"/>
+    <keyword type="function" name="e_mail_part_has_validity ()" link="EMailPart.html#e-mail-part-has-validity"/>
+    <keyword type="function" name="e_mail_part_get_validity_flags ()" link="EMailPart.html#e-mail-part-get-validity-flags"/>
+    <keyword type="function" name="e_mail_part_is_secured ()" link="EMailPart.html#e-mail-part-is-secured"/>
+    <keyword type="function" name="e_mail_part_snoop_type ()" link="EMailPart.html#e-mail-part-snoop-type"/>
+    <keyword type="function" name="e_mail_part_is_attachment ()" link="EMailPart.html#e-mail-part-is-attachment"/>
+    <keyword type="function" name="e_mail_part_preserve_charset_in_content_type ()" link="EMailPart.html#e-mail-part-preserve-charset-in-content-type"/>
+    <keyword type="function" name="e_mail_part_get_related_display_part ()" link="EMailPart.html#e-mail-part-get-related-display-part"/>
+    <keyword type="function" name="e_mail_part_animation_extract_frame ()" link="EMailPart.html#e-mail-part-animation-extract-frame"/>
+    <keyword type="function" name="e_mail_part_build_uri ()" link="EMailPart.html#e-mail-part-build-uri"/>
+    <keyword type="function" name="e_mail_part_describe ()" link="EMailPart.html#e-mail-part-describe"/>
+    <keyword type="function" name="e_mail_part_is_inline ()" link="EMailPart.html#e-mail-part-is-inline"/>
+    <keyword type="function" name="e_mail_part_utils_body_refers ()" link="EMailPart.html#e-mail-part-utils-body-refers"/>
+    <keyword type="struct" name="struct EMailPart" link="EMailPart.html#EMailPart-struct"/>
+    <keyword type="enum" name="enum EMailPartValidityFlags" link="EMailPart.html#EMailPartValidityFlags"/>
+    <keyword type="struct" name="struct EMailPartValidityPair" link="EMailPart.html#EMailPartValidityPair"/>
+    <keyword type="property" name="The “cid” property" link="EMailPart.html#EMailPart--cid"/>
+    <keyword type="property" name="The “id” property" link="EMailPart.html#EMailPart--id"/>
+    <keyword type="property" name="The “is-attachment” property" link="EMailPart.html#EMailPart--is-attachment"/>
+    <keyword type="property" name="The “mime-part” property" link="EMailPart.html#EMailPart--mime-part"/>
+    <keyword type="property" name="The “mime-type” property" link="EMailPart.html#EMailPart--mime-type"/>
+    <keyword type="property" name="The “part-list” property" link="EMailPart.html#EMailPart--part-list"/>
+    <keyword type="function" name="e_mail_part_list_new ()" link="EMailPartList.html#e-mail-part-list-new"/>
+    <keyword type="function" name="e_mail_part_list_get_folder ()" link="EMailPartList.html#e-mail-part-list-get-folder"/>
+    <keyword type="function" name="e_mail_part_list_get_message ()" link="EMailPartList.html#e-mail-part-list-get-message"/>
+    <keyword type="function" name="e_mail_part_list_get_message_uid ()" link="EMailPartList.html#e-mail-part-list-get-message-uid"/>
+    <keyword type="function" name="e_mail_part_list_add_part ()" link="EMailPartList.html#e-mail-part-list-add-part"/>
+    <keyword type="function" name="e_mail_part_list_ref_part ()" link="EMailPartList.html#e-mail-part-list-ref-part"/>
+    <keyword type="function" name="e_mail_part_list_queue_parts ()" link="EMailPartList.html#e-mail-part-list-queue-parts"/>
+    <keyword type="function" name="e_mail_part_list_is_empty ()" link="EMailPartList.html#e-mail-part-list-is-empty"/>
+    <keyword type="function" name="e_mail_part_list_get_registry ()" link="EMailPartList.html#e-mail-part-list-get-registry"/>
+    <keyword type="struct" name="struct EMailPartList" link="EMailPartList.html#EMailPartList-struct"/>
+    <keyword type="property" name="The “folder” property" link="EMailPartList.html#EMailPartList--folder"/>
+    <keyword type="property" name="The “message” property" link="EMailPartList.html#EMailPartList--message"/>
+    <keyword type="property" name="The “message-uid” property" link="EMailPartList.html#EMailPartList--message-uid"/>
+    <keyword type="function" name="e_mail_part_attachment_new ()" link="EMailPartAttachment.html#e-mail-part-attachment-new"/>
+    <keyword type="function" name="e_mail_part_attachment_ref_attachment ()" link="EMailPartAttachment.html#e-mail-part-attachment-ref-attachment"/>
+    <keyword type="macro" name="E_MAIL_PART_ATTACHMENT_MIME_TYPE" link="EMailPartAttachment.html#E-MAIL-PART-ATTACHMENT-MIME-TYPE:CAPS"/>
+    <keyword type="struct" name="struct EMailPartAttachment" link="EMailPartAttachment.html#EMailPartAttachment-struct"/>
+    <keyword type="property" name="The “attachment” property" link="EMailPartAttachment.html#EMailPartAttachment--attachment"/>
+    <keyword type="function" name="e_mail_part_attachment_bar_new ()" link="EMailPartAttachmentBar.html#e-mail-part-attachment-bar-new"/>
+    <keyword type="function" name="e_mail_part_attachment_bar_get_store ()" link="EMailPartAttachmentBar.html#e-mail-part-attachment-bar-get-store"/>
+    <keyword type="macro" name="E_MAIL_PART_ATTACHMENT_BAR_MIME_TYPE" link="EMailPartAttachmentBar.html#E-MAIL-PART-ATTACHMENT-BAR-MIME-TYPE:CAPS"/>
+    <keyword type="struct" name="struct EMailPartAttachmentBar" link="EMailPartAttachmentBar.html#EMailPartAttachmentBar-struct"/>
+    <keyword type="function" name="e_mail_part_headers_new ()" link="EMailPartHeaders.html#e-mail-part-headers-new"/>
+    <keyword type="function" name="e_mail_part_headers_dup_default_headers ()" link="EMailPartHeaders.html#e-mail-part-headers-dup-default-headers"/>
+    <keyword type="function" name="e_mail_part_headers_set_default_headers ()" link="EMailPartHeaders.html#e-mail-part-headers-set-default-headers"/>
+    <keyword type="function" name="e_mail_part_headers_is_default ()" link="EMailPartHeaders.html#e-mail-part-headers-is-default"/>
+    <keyword type="function" name="e_mail_part_headers_ref_print_model ()" link="EMailPartHeaders.html#e-mail-part-headers-ref-print-model"/>
+    <keyword type="macro" name="E_MAIL_PART_HEADERS_MIME_TYPE" link="EMailPartHeaders.html#E-MAIL-PART-HEADERS-MIME-TYPE:CAPS"/>
+    <keyword type="struct" name="struct EMailPartHeaders" link="EMailPartHeaders.html#EMailPartHeaders-struct"/>
+    <keyword type="enum" name="enum EMailPartHeadersPrintModelColumns" link="EMailPartHeaders.html#EMailPartHeadersPrintModelColumns"/>
+    <keyword type="property" name="The “default-headers” property" link="EMailPartHeaders.html#EMailPartHeaders--default-headers"/>
+    <keyword type="function" name="e_mail_part_image_new ()" link="EMailPartImage.html#e-mail-part-image-new"/>
+    <keyword type="struct" name="struct EMailPartImage" link="EMailPartImage.html#EMailPartImage-struct"/>
+    <keyword type="function" name="e_mail_extension_registry_get_for_mime_type ()" link="EMailExtensionRegistry.html#e-mail-extension-registry-get-for-mime-type"/>
+    <keyword type="function" name="e_mail_extension_registry_get_fallback ()" link="EMailExtensionRegistry.html#e-mail-extension-registry-get-fallback"/>
+    <keyword type="function" name="e_mail_parser_extension_registry_load ()" link="EMailExtensionRegistry.html#e-mail-parser-extension-registry-load"/>
+    <keyword type="function" name="e_mail_formatter_extension_registry_load ()" link="EMailExtensionRegistry.html#e-mail-formatter-extension-registry-load"/>
+    <keyword type="struct" name="struct EMailExtensionRegistry" link="EMailExtensionRegistry.html#EMailExtensionRegistry-struct"/>
+    <keyword type="struct" name="struct EMailParserExtensionRegistry" link="EMailExtensionRegistry.html#EMailParserExtensionRegistry-struct"/>
+    <keyword type="struct" name="struct EMailFormatterExtensionRegistry" link="EMailExtensionRegistry.html#EMailFormatterExtensionRegistry-struct"/>
+    <keyword type="function" name="e_mail_parser_extension_parse ()" link="EMailParserExtension.html#e-mail-parser-extension-parse"/>
+    <keyword type="struct" name="struct EMailParserExtension" link="EMailParserExtension.html#EMailParserExtension-struct"/>
+    <keyword type="enum" name="enum EMailParserExtensionFlags" link="EMailParserExtension.html#EMailParserExtensionFlags"/>
+    <keyword type="function" name="e_mail_formatter_extension_format ()" link="EMailFormatterExtension.html#e-mail-formatter-extension-format"/>
+    <keyword type="function" name="e_mail_formatter_extension_has_widget ()" link="EMailFormatterExtension.html#e-mail-formatter-extension-has-widget"/>
+    <keyword type="function" name="e_mail_formatter_extension_get_widget ()" link="EMailFormatterExtension.html#e-mail-formatter-extension-get-widget"/>
+    <keyword type="struct" name="struct EMailFormatterExtension" link="EMailFormatterExtension.html#EMailFormatterExtension-struct"/>
+    <keyword type="function" name="e_mail_inline_filter_new ()" link="EMailInlineFilter.html#e-mail-inline-filter-new"/>
+    <keyword type="function" name="e_mail_inline_filter_get_multipart ()" link="EMailInlineFilter.html#e-mail-inline-filter-get-multipart"/>
+    <keyword type="function" name="e_mail_inline_filter_found_any ()" link="EMailInlineFilter.html#e-mail-inline-filter-found-any"/>
+    <keyword type="struct" name="struct EMailInlineFilter" link="EMailInlineFilter.html#EMailInlineFilter-struct"/>
+    <keyword type="function" name="e_mail_stripsig_filter_new ()" link="EMailStripSigFilter.html#e-mail-stripsig-filter-new"/>
+    <keyword type="struct" name="struct EMailStripSigFilter" link="EMailStripSigFilter.html#EMailStripSigFilter-struct"/>
+  </functions>
+</book>

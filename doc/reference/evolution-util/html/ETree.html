@@ -1,0 +1,1273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETree</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="evolution-util-Miscellaneous-Table-Utilities.html" title="Miscellaneous Table Utilities">
+<link rel="next" href="ETreeModel.html" title="ETreeModel">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETree.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETree.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#ETree.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ETree.properties" class="shortcut">Properties</a></span><span id="nav_style_properties">  <span class="dim">|</span> 
+                  <a href="#ETree.style-properties" class="shortcut">Style Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETree.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="evolution-util-Miscellaneous-Table-Utilities.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ETreeModel.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETree"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETree.top_of_page"></a>ETree</span></h2>
+<p>ETree</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETree.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-construct" title="e_tree_construct ()">e_tree_construct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-new" title="e_tree_new ()">e_tree_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-state-object" title="e_tree_get_state_object ()">e_tree_get_state_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="returnvalue">ETableSpecification</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-spec" title="e_tree_get_spec ()">e_tree_get_spec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-set-state-object" title="e_tree_set_state_object ()">e_tree_set_state_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-show-cursor-after-reflow" title="e_tree_show_cursor_after_reflow ()">e_tree_show_cursor_after_reflow</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-set-cursor" title="e_tree_set_cursor ()">e_tree_set_cursor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="returnvalue">ETreePath</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-cursor" title="e_tree_get_cursor ()">e_tree_get_cursor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-path-foreach" title="e_tree_path_foreach ()">e_tree_path_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-cell-at" title="e_tree_get_cell_at ()">e_tree_get_cell_at</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-cell-geometry" title="e_tree_get_cell_geometry ()">e_tree_get_cell_geometry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETreeModel.html" title="ETreeModel"><span class="returnvalue">ETreeModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-model" title="e_tree_get_model ()">e_tree_get_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="returnvalue">ESelectionModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-selection-model" title="e_tree_get_selection_model ()">e_tree_get_selection_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="returnvalue">ETreeTableAdapter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-table-adapter" title="e_tree_get_table_adapter ()">e_tree_get_table_adapter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-drag-source-set" title="e_tree_drag_source_set ()">e_tree_drag_source_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-drag-source-unset" title="e_tree_drag_source_unset ()">e_tree_drag_source_unset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="returnvalue">GdkDragContext</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-drag-begin" title="e_tree_drag_begin ()">e_tree_drag_begin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-is-dragging" title="e_tree_is_dragging ()">e_tree_is_dragging</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableItem.html" title="ETableItem"><span class="returnvalue">ETableItem</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-item" title="e_tree_get_item ()">e_tree_get_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="returnvalue">GnomeCanvasItem</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-get-header-item" title="e_tree_get_header_item ()">e_tree_get_header_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-set-info-message" title="e_tree_set_info_message ()">e_tree_set_info_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-freeze-state-change" title="e_tree_freeze_state_change ()">e_tree_freeze_state_change</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-thaw-state-change" title="e_tree_thaw_state_change ()">e_tree_thaw_state_change</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETree.html#e-tree-is-editing" title="e_tree_is_editing ()">e_tree_is_editing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETree.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *</td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--ETreeTableAdapter" title="The “ETreeTableAdapter” property">ETreeTableAdapter</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--always-search" title="The “always-search” property">always-search</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--drawfocus" title="The “drawfocus” property">drawfocus</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--horizontal-draw-grid" title="The “horizontal-draw-grid” property">horizontal-draw-grid</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--is-editing" title="The “is-editing” property">is-editing</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--length-threshold" title="The “length-threshold” property">length-threshold</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--uniform-row-height" title="The “uniform-row-height” property">uniform-row-height</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--vertical-draw-grid" title="The “vertical-draw-grid” property">vertical-draw-grid</a></td>
+<td class="property_flags">Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETree.style-properties"></a><h2>Style Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="style_properties_type">
+<col width="300px" class="style_properties_name">
+<col width="200px" class="style_properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--s-alternating-row-colors" title="The “alternating-row-colors” style property">alternating-row-colors</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--s-expander-size" title="The “expander-size” style property">expander-size</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ETree.html#ETree--s-vertical-spacing" title="The “vertical-spacing” style property">vertical-spacing</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETree.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-click" title="The “click” signal">click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-cursor-activated" title="The “cursor-activated” signal">cursor-activated</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-cursor-change" title="The “cursor-change” signal">cursor-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-double-click" title="The “double-click” signal">double-click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-key-press" title="The “key-press” signal">key-press</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-right-click" title="The “right-click” signal">right-click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-selection-change" title="The “selection-change” signal">selection-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-start-drag" title="The “start-drag” signal">start-drag</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-state-change" title="The “state-change” signal">state-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-tree-drag-begin" title="The “tree-drag-begin” signal">tree-drag-begin</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-tree-drag-data-delete" title="The “tree-drag-data-delete” signal">tree-drag-data-delete</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-tree-drag-data-get" title="The “tree-drag-data-get” signal">tree-drag-data-get</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-tree-drag-data-received" title="The “tree-drag-data-received” signal">tree-drag-data-received</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-tree-drag-drop" title="The “tree-drag-drop” signal">tree-drag-drop</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-tree-drag-end" title="The “tree-drag-end” signal">tree-drag-end</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-tree-drag-leave" title="The “tree-drag-leave” signal">tree-drag-leave</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-tree-drag-motion" title="The “tree-drag-motion” signal">tree-drag-motion</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETree.html#ETree-white-space-event" title="The “white-space-event” signal">white-space-event</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETree.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETree.html#ETree-struct" title="struct ETree">ETree</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETree.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkTable.html">GtkTable</a>
+                    <span class="lineart">╰──</span> ETree
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETree.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ETree implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a> and  <a href="http://developer.gnome.org/gtk2/GtkScrollable.html">GtkScrollable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ETree.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETree.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-tree-construct"></a><h3>e_tree_construct ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_tree_construct (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                  <em class="parameter"><code><a class="link" href="ETreeModel.html" title="ETreeModel"><span class="type">ETreeModel</span></a> *etm</code></em>,
+                  <em class="parameter"><code><a class="link" href="ETableExtras.html" title="ETableExtras"><span class="type">ETableExtras</span></a> *ete</code></em>,
+                  <em class="parameter"><code><a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> *specification</code></em>);</pre>
+<p>This is the internal implementation of <a class="link" href="ETree.html#e-tree-new" title="e_tree_new ()"><code class="function">e_tree_new()</code></a> for use by
+subclasses or language bindings.  See <a class="link" href="ETree.html#e-tree-new" title="e_tree_new ()"><code class="function">e_tree_new()</code></a> for details.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p>The newly created <a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>etm</p></td>
+<td class="parameter_description"><p>The model for this table.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ete</p></td>
+<td class="parameter_description"><p>An optional <a class="link" href="ETableExtras.html" title="ETableExtras"><span class="type">ETableExtras</span></a>.  (<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is valid.)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>specification</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.32.11.2.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if an error occurred</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-new"></a><h3>e_tree_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_tree_new (<em class="parameter"><code><a class="link" href="ETreeModel.html" title="ETreeModel"><span class="type">ETreeModel</span></a> *etm</code></em>,
+            <em class="parameter"><code><a class="link" href="ETableExtras.html" title="ETableExtras"><span class="type">ETableExtras</span></a> *ete</code></em>,
+            <em class="parameter"><code><a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> *specification</code></em>);</pre>
+<p>This function creates an <a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> from the given parameters.  The
+<a class="link" href="ETreeModel.html" title="ETreeModel"><span class="type">ETreeModel</span></a> is a tree model to be represented.  The <a class="link" href="ETableExtras.html" title="ETableExtras"><span class="type">ETableExtras</span></a>
+is an optional set of pixbufs, cells, and sorting functions to be
+used when interpreting the spec.  If you pass in <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> it uses the
+default <a class="link" href="ETableExtras.html" title="ETableExtras"><span class="type">ETableExtras</span></a>.  (See <a class="link" href="ETableExtras.html#e-table-extras-new" title="e_table_extras_new ()"><code class="function">e_table_extras_new()</code></a>).</p>
+<p><em class="parameter"><code>specification</code></em>
+ is the specification of the set of viewable columns and the
+default sorting state and such.  <em class="parameter"><code>state</code></em>
+ is an optional string specifying
+the current sorting state and such.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>etm</p></td>
+<td class="parameter_description"><p>The model for this tree</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ete</p></td>
+<td class="parameter_description"><p>An optional <a class="link" href="ETableExtras.html" title="ETableExtras"><span class="type">ETableExtras</span></a>  (<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is valid.)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>specification</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.32.11.3.7"></a><h4>Returns</h4>
+<p>The newly created <a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there's an error.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-state-object"></a><h3>e_tree_get_state_object ()</h3>
+<pre class="programlisting"><a class="link" href="ETableState.html" title="ETableState"><span class="returnvalue">ETableState</span></a> *
+e_tree_get_state_object (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+<p>Builds an <a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> corresponding to the current state of the
+<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> object to act on</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.32.11.4.6"></a><h4>Returns</h4>
+<p>The <a class="link" href="ETableState.html" title="ETableState"><code class="literal">ETableState</code></a> object generated.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-spec"></a><h3>e_tree_get_spec ()</h3>
+<pre class="programlisting"><a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="returnvalue">ETableSpecification</span></a> *
+e_tree_get_spec (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+<p>Returns the specification object.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.32.11.5.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-set-state-object"></a><h3>e_tree_set_state_object ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_set_state_object (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                         <em class="parameter"><code><a class="link" href="ETableState.html" title="ETableState"><span class="type">ETableState</span></a> *state</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-show-cursor-after-reflow"></a><h3>e_tree_show_cursor_after_reflow ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_show_cursor_after_reflow (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-set-cursor"></a><h3>e_tree_set_cursor ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_set_cursor (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                   <em class="parameter"><code><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="type">ETreePath</span></a> path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-cursor"></a><h3>e_tree_get_cursor ()</h3>
+<pre class="programlisting"><a class="link" href="ETreeModel.html#ETreePath" title="ETreePath"><span class="returnvalue">ETreePath</span></a>
+e_tree_get_cursor (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-path-foreach"></a><h3>e_tree_path_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_path_foreach (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                     <em class="parameter"><code><a class="link" href="ETreeSelectionModel.html#ETreeForeachFunc" title="ETreeForeachFunc ()"><span class="type">ETreeForeachFunc</span></a> callback</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> closure</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-cell-at"></a><h3>e_tree_get_cell_at ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_get_cell_at (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *row_return</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *col_return</code></em>);</pre>
+<p>Return the row and column for the cell in which the pixel at (<em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+) is
+contained.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p>An ETree widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>X coordinate for the pixel</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Y coordinate for the pixel</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_return</p></td>
+<td class="parameter_description"><p>Pointer to return the row value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_return</p></td>
+<td class="parameter_description"><p>Pointer to return the column value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-cell-geometry"></a><h3>e_tree_get_cell_geometry ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_get_cell_geometry (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x_return</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y_return</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width_return</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *height_return</code></em>);</pre>
+<p>Computes the data about this cell.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p>The tree.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row to get the geometry of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The col to get the geometry of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_return</p></td>
+<td class="parameter_description"><p>Returns the x coordinate of the upper right hand corner
+of the cell with respect to the widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_return</p></td>
+<td class="parameter_description"><p>Returns the y coordinate of the upper right hand corner
+of the cell with respect to the widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width_return</p></td>
+<td class="parameter_description"><p>Returns the width of the cell.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height_return</p></td>
+<td class="parameter_description"><p>Returns the height of the cell.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-model"></a><h3>e_tree_get_model ()</h3>
+<pre class="programlisting"><a class="link" href="ETreeModel.html" title="ETreeModel"><span class="returnvalue">ETreeModel</span></a> *
+e_tree_get_model (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+<p>Returns the model upon which this ETree is based.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p>the ETree</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.32.11.13.6"></a><h4>Returns</h4>
+<p> the model</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-selection-model"></a><h3>e_tree_get_selection_model ()</h3>
+<pre class="programlisting"><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="returnvalue">ESelectionModel</span></a> *
+e_tree_get_selection_model (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+<p>Returns the selection model of this ETree.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p>the ETree</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.32.11.14.6"></a><h4>Returns</h4>
+<p> the selection model</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-table-adapter"></a><h3>e_tree_get_table_adapter ()</h3>
+<pre class="programlisting"><a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="returnvalue">ETreeTableAdapter</span></a> *
+e_tree_get_table_adapter (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+<p>Returns the table adapter this ETree uses.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p>the ETree</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.32.11.15.6"></a><h4>Returns</h4>
+<p> the model</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-drag-source-set"></a><h3>e_tree_drag_source_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_drag_source_set (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> start_button_mask</code></em>,
+                        <em class="parameter"><code>const <a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetEntry"><span class="type">GtkTargetEntry</span></a> *targets</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_targets</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> actions</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-drag-source-unset"></a><h3>e_tree_drag_source_unset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_drag_source_unset (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-drag-begin"></a><h3>e_tree_drag_begin ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="returnvalue">GdkDragContext</span></a> *
+e_tree_drag_begin (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                   <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *targets</code></em>,
+                   <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> actions</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> button</code></em>,
+                   <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-is-dragging"></a><h3>e_tree_is_dragging ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_tree_is_dragging (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+<p>Returns whether is <em class="parameter"><code>tree</code></em>
+ in a drag&amp;drop operation.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p>An <a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-item"></a><h3>e_tree_get_item ()</h3>
+<pre class="programlisting"><a class="link" href="ETableItem.html" title="ETableItem"><span class="returnvalue">ETableItem</span></a> *
+e_tree_get_item (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-get-header-item"></a><h3>e_tree_get_header_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><span class="returnvalue">GnomeCanvasItem</span></a> *
+e_tree_get_header_item (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-set-info-message"></a><h3>e_tree_set_info_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_set_info_message (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_message</code></em>);</pre>
+<p>Creates an info message in table area, or removes old.</p>
+<div class="refsect3">
+<a name="id-1.12.32.11.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree</p></td>
+<td class="parameter_description"><p><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info_message</p></td>
+<td class="parameter_description"><p>Message to set. Can be NULL.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-freeze-state-change"></a><h3>e_tree_freeze_state_change ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_freeze_state_change (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-thaw-state-change"></a><h3>e_tree_thaw_state_change ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_thaw_state_change (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-is-editing"></a><h3>e_tree_is_editing ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_tree_is_editing (<em class="parameter"><code><a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a> *tree</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETree.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETree-struct"></a><h3>struct ETree</h3>
+<pre class="programlisting">struct ETree;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETree.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ETree--ETreeTableAdapter"></a><h3>The <code class="literal">“ETreeTableAdapter”</code> property</h3>
+<pre class="programlisting">  “ETreeTableAdapter”        <a class="link" href="ETreeTableAdapter.html" title="ETreeTableAdapter"><span class="type">ETreeTableAdapter</span></a> *</pre>
+<p>ETree table adapter.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--always-search"></a><h3>The <code class="literal">“always-search”</code> property</h3>
+<pre class="programlisting">  “always-search”            <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Always search.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--drawfocus"></a><h3>The <code class="literal">“drawfocus”</code> property</h3>
+<pre class="programlisting">  “drawfocus”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Draw focus.</p>
+<p>Flags: Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--horizontal-draw-grid"></a><h3>The <code class="literal">“horizontal-draw-grid”</code> property</h3>
+<pre class="programlisting">  “horizontal-draw-grid”     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Horizontal Draw Grid.</p>
+<p>Flags: Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--is-editing"></a><h3>The <code class="literal">“is-editing”</code> property</h3>
+<pre class="programlisting">  “is-editing”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether is in an editing mode.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--length-threshold"></a><h3>The <code class="literal">“length-threshold”</code> property</h3>
+<pre class="programlisting">  “length-threshold”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Length Threshold.</p>
+<p>Flags: Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--uniform-row-height"></a><h3>The <code class="literal">“uniform-row-height”</code> property</h3>
+<pre class="programlisting">  “uniform-row-height”       <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Uniform row height.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--vertical-draw-grid"></a><h3>The <code class="literal">“vertical-draw-grid”</code> property</h3>
+<pre class="programlisting">  “vertical-draw-grid”       <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Vertical Draw Grid.</p>
+<p>Flags: Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETree.style-property-details"></a><h2>Style Property Details</h2>
+<div class="refsect2">
+<a name="ETree--s-alternating-row-colors"></a><h3>The <code class="literal">“alternating-row-colors”</code> style property</h3>
+<pre class="programlisting">  “alternating-row-colors”   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether to use alternating row colors.</p>
+<p>Flags: Read</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--s-expander-size"></a><h3>The <code class="literal">“expander-size”</code> style property</h3>
+<pre class="programlisting">  “expander-size”            <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Size of the expander arrow.</p>
+<p>Flags: Read</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree--s-vertical-spacing"></a><h3>The <code class="literal">“vertical-spacing”</code> style property</h3>
+<pre class="programlisting">  “vertical-spacing”         <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Vertical space between rows. It is added to top and to bottom of a row.</p>
+<p>Flags: Read</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 3</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETree.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETree-click"></a><h3>The <code class="literal">“click”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>    *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-cursor-activated"></a><h3>The <code class="literal">“cursor-activated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>   *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>     arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-cursor-change"></a><h3>The <code class="literal">“cursor-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>   *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>     arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-double-click"></a><h3>The <code class="literal">“double-click”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>    *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-key-press"></a><h3>The <code class="literal">“key-press”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>    *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-right-click"></a><h3>The <code class="literal">“right-click”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>    *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-selection-change"></a><h3>The <code class="literal">“selection-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>   *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-start-drag"></a><h3>The <code class="literal">“start-drag”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>    *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-state-change"></a><h3>The <code class="literal">“state-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>   *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-tree-drag-begin"></a><h3>The <code class="literal">“tree-drag-begin”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>          *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-tree-drag-data-delete"></a><h3>The <code class="literal">“tree-drag-data-delete”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>          *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-tree-drag-data-get"></a><h3>The <code class="literal">“tree-drag-data-get”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>            *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a>   *arg4,
+               <a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *arg5,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>             arg6,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>             arg7,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-tree-drag-data-received"></a><h3>The <code class="literal">“tree-drag-data-received”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>            *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a>   *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg5,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg6,
+               <a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *arg7,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>             arg8,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>             arg9,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-tree-drag-drop"></a><h3>The <code class="literal">“tree-drag-drop”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>          *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg5,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg6,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>           arg7,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-tree-drag-end"></a><h3>The <code class="literal">“tree-drag-end”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>          *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-tree-drag-leave"></a><h3>The <code class="literal">“tree-drag-leave”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>          *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>           arg5,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-tree-drag-motion"></a><h3>The <code class="literal">“tree-drag-motion”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>          *etree,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg3,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *arg4,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg5,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>            arg6,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>           arg7,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETree-white-space-event"></a><h3>The <code class="literal">“white-space-event”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETree.html" title="ETree"><span class="type">ETree</span></a>    *etree,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

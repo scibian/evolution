@@ -1,0 +1,1074 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETableHeader</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ETableHeaderItem.html" title="ETableHeaderItem">
+<link rel="next" href="ETableItem.html" title="ETableItem">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETableHeader.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETableHeader.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ETableHeader.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETableHeader.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETableHeaderItem.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ETableItem.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETableHeader"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETableHeader.top_of_page"></a>ETableHeader</span></h2>
+<p>ETableHeader</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETableHeader.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="returnvalue">ETableHeader</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-new" title="e_table_header_new ()">e_table_header_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-add-column" title="e_table_header_add_column ()">e_table_header_add_column</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-get-column" title="e_table_header_get_column ()">e_table_header_get_column</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-get-column-by-spec" title="e_table_header_get_column_by_spec ()">e_table_header_get_column_by_spec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-get-column-by-col-idx" title="e_table_header_get_column_by_col_idx ()">e_table_header_get_column_by_col_idx</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-count" title="e_table_header_count ()">e_table_header_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-index" title="e_table_header_index ()">e_table_header_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-get-index-at" title="e_table_header_get_index_at ()">e_table_header_get_index_at</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-get-columns" title="e_table_header_get_columns ()">e_table_header_get_columns</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-get-selected" title="e_table_header_get_selected ()">e_table_header_get_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-total-width" title="e_table_header_total_width ()">e_table_header_total_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-min-width" title="e_table_header_min_width ()">e_table_header_min_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-move" title="e_table_header_move ()">e_table_header_move</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-remove" title="e_table_header_remove ()">e_table_header_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-set-size" title="e_table_header_set_size ()">e_table_header_set_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-set-selection" title="e_table_header_set_selection ()">e_table_header_set_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-col-diff" title="e_table_header_col_diff ()">e_table_header_col_diff</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-calc-widths" title="e_table_header_calc_widths ()">e_table_header_calc_widths</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-get-selected-indexes" title="e_table_header_get_selected_indexes ()">e_table_header_get_selected_indexes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-update-horizontal" title="e_table_header_update_horizontal ()">e_table_header_update_horizontal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-prioritized-column" title="e_table_header_prioritized_column ()">e_table_header_prioritized_column</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ETableHeader.html#ETableColCheckFunc" title="ETableColCheckFunc ()">*ETableColCheckFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-prioritized-column-selected" title="e_table_header_prioritized_column_selected ()">e_table_header_prioritized_column_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-compute-height" title="e_table_header_compute_height ()">e_table_header_compute_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-width-extras" title="e_table_header_width_extras ()">e_table_header_width_extras</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableHeader.html#e-table-header-draw-button" title="e_table_header_draw_button ()">e_table_header_draw_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *</td>
+<td class="property_name"><a class="link" href="ETableHeader.html#ETableHeader--sort-info" title="The “sort-info” property">sort-info</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="ETableHeader.html#ETableHeader--width" title="The “width” property">width</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="ETableHeader.html#ETableHeader--width-extras" title="The “width-extras” property">width-extras</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableHeader.html#ETableHeader-dimension-change" title="The “dimension-change” signal">dimension-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableHeader.html#ETableHeader-expansion-change" title="The “expansion-change” signal">expansion-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a></td>
+<td class="signal_name"><a class="link" href="ETableHeader.html#ETableHeader-request-width" title="The “request-width” signal">request-width</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableHeader.html#ETableHeader-structure-change" title="The “structure-change” signal">structure-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETableHeader.html#ETableHeader-struct" title="struct ETableHeader">ETableHeader</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ETableHeader.html#ETableColArrow" title="enum ETableColArrow">ETableColArrow</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ETableHeader
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-table-header-new"></a><h3>e_table_header_new ()</h3>
+<pre class="programlisting"><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="returnvalue">ETableHeader</span></a> *
+e_table_header_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.16.9.2.4"></a><h4>Returns</h4>
+<p> A new <em class="parameter"><code>ETableHeader</code></em>
+object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-add-column"></a><h3>e_table_header_add_column ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_header_add_column (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                           <em class="parameter"><code><a class="link" href="ETableCol.html" title="ETableCol"><span class="type">ETableCol</span></a> *tc</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>);</pre>
+<p>This function adds the <em class="parameter"><code>tc</code></em>
+ ETableCol definition into the <em class="parameter"><code>eth</code></em>
+ ETableHeader
+at position <em class="parameter"><code>pos</code></em>
+.  This is the way you add new ETableCols to the
+ETableHeader.  The header will assume ownership of the <em class="parameter"><code>tc</code></em>
+; you should not
+unref it after you add it.</p>
+<p>This function will emit the "structure_change" signal on the <em class="parameter"><code>eth</code></em>
+ object.
+The ETableCol is assumed</p>
+<div class="refsect3">
+<a name="id-1.12.16.9.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>the table header to add the column to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tc</p></td>
+<td class="parameter_description"><p>the ETableCol definition</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>position where the ETableCol will go.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-get-column"></a><h3>e_table_header_get_column ()</h3>
+<pre class="programlisting"><a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> *
+e_table_header_get_column (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.16.9.4.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>the ETableHeader to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>column</p></td>
+<td class="parameter_description"><p>the column inside the <em class="parameter"><code>eth</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.4.5"></a><h4>Returns</h4>
+<p> The ETableCol at <em class="parameter"><code>column</code></em>
+in the <em class="parameter"><code>eth</code></em>
+object</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-get-column-by-spec"></a><h3>e_table_header_get_column_by_spec ()</h3>
+<pre class="programlisting"><a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> *
+e_table_header_get_column_by_spec (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                                   <em class="parameter"><code><a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="type">ETableColumnSpecification</span></a> *spec</code></em>);</pre>
+<p>Returns the <a class="link" href="ETableCol.html" title="ETableCol"><span class="type">ETableCol</span></a> having <em class="parameter"><code>spec</code></em>
+ as the column specification, or
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no matching <a class="link" href="ETableCol.html" title="ETableCol"><span class="type">ETableCol</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.12.16.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>the ETableHeader to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spec</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="type">ETableColumnSpecification</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.5.6"></a><h4>Returns</h4>
+<p> an <a class="link" href="ETableCol.html" title="ETableCol"><span class="type">ETableCol</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-get-column-by-col-idx"></a><h3>e_table_header_get_column_by_col_idx ()</h3>
+<pre class="programlisting"><a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> *
+e_table_header_get_column_by_col_idx (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_idx</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-count"></a><h3>e_table_header_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_header_count (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.16.9.7.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>the ETableHeader to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.7.5"></a><h4>Returns</h4>
+<p> the number of columns in this ETableHeader.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-index"></a><h3>e_table_header_index ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_header_index (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>);</pre>
+<p>ETableHeaders contain the visual list of columns that the user will
+view.  The visible columns will typically map to different columns
+in the ETableModel (because the user reordered the data for
+example).</p>
+<div class="refsect3">
+<a name="id-1.12.16.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>the ETableHeader to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>the column to fetch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.8.6"></a><h4>Returns</h4>
+<p> the column that contains pixel <em class="parameter"><code>x_offset</code></em>
+, or -1
+if no column inside this ETableHeader contains that pixel.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-get-index-at"></a><h3>e_table_header_get_index_at ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_header_get_index_at (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_offset</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-get-columns"></a><h3>e_table_header_get_columns ()</h3>
+<pre class="programlisting"><a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> **
+e_table_header_get_columns (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.16.9.10.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>The ETableHeader to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.10.5"></a><h4>Returns</h4>
+<p> A NULL terminated array of the ETableCols
+contained in the ETableHeader <em class="parameter"><code>eth</code></em>
+.  Note that every
+returned ETableCol in the array has been referenced, to release
+this information you need to g_free the buffer returned
+and you need to g_object_unref every element returned</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-get-selected"></a><h3>e_table_header_get_selected ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_header_get_selected (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.16.9.11.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>The ETableHeader to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.11.5"></a><h4>Returns</h4>
+<p> The number of selected columns in the <em class="parameter"><code>eth</code></em>
+object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-total-width"></a><h3>e_table_header_total_width ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_header_total_width (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.16.9.12.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>The ETableHeader to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.12.5"></a><h4>Returns</h4>
+<p> the number of pixels used by the <em class="parameter"><code>eth</code></em>
+object
+when rendered on screen</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-min-width"></a><h3>e_table_header_min_width ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_header_min_width (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.16.9.13.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>The ETableHeader to query</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.13.5"></a><h4>Returns</h4>
+<p> the minimum number of pixels required by the <em class="parameter"><code>eth</code></em>
+object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-move"></a><h3>e_table_header_move ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_header_move (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> source_index</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> target_index</code></em>);</pre>
+<p>This function moves the column <em class="parameter"><code>source_index</code></em>
+ to <em class="parameter"><code>target_index</code></em>
+
+inside the <em class="parameter"><code>eth</code></em>
+ ETableHeader.  The signals "dimension_change"
+and "structure_change" will be emmited</p>
+<div class="refsect3">
+<a name="id-1.12.16.9.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>The ETableHeader to operate on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_index</p></td>
+<td class="parameter_description"><p>the source column to move.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_index</p></td>
+<td class="parameter_description"><p>the target location for the column</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-remove"></a><h3>e_table_header_remove ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_header_remove (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> idx</code></em>);</pre>
+<p>Removes the column at <em class="parameter"><code>idx</code></em>
+ position in the ETableHeader <em class="parameter"><code>eth</code></em>
+.
+This emmits the "structure_change" signal on the <em class="parameter"><code>eth</code></em>
+ object.</p>
+<div class="refsect3">
+<a name="id-1.12.16.9.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>The ETableHeader to operate on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>idx</p></td>
+<td class="parameter_description"><p>the index to the column to be removed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-set-size"></a><h3>e_table_header_set_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_header_set_size (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> idx</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-set-selection"></a><h3>e_table_header_set_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_header_set_selection (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> allow_selection</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-col-diff"></a><h3>e_table_header_col_diff ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_header_col_diff (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> start_col</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> end_col</code></em>);</pre>
+<p>Computes the number of pixels between the columns <em class="parameter"><code>start_col</code></em>
+ and
+<em class="parameter"><code>end_col</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.12.16.9.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>eth</p></td>
+<td class="parameter_description"><p>the ETableHeader to query.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start_col</p></td>
+<td class="parameter_description"><p>the starting column</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end_col</p></td>
+<td class="parameter_description"><p>the ending column.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.18.6"></a><h4>Returns</h4>
+<p> the number of pixels between <em class="parameter"><code>start_col</code></em>
+and <em class="parameter"><code>end_col</code></em>
+on the
+<em class="parameter"><code>eth</code></em>
+ETableHeader object</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-calc-widths"></a><h3>e_table_header_calc_widths ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_header_calc_widths (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-get-selected-indexes"></a><h3>e_table_header_get_selected_indexes ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_table_header_get_selected_indexes (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-update-horizontal"></a><h3>e_table_header_update_horizontal ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_header_update_horizontal (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-prioritized-column"></a><h3>e_table_header_prioritized_column ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_header_prioritized_column (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableColCheckFunc"></a><h3>ETableColCheckFunc ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*ETableColCheckFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="ETableCol.html" title="ETableCol"><span class="type">ETableCol</span></a> *col</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-prioritized-column-selected"></a><h3>e_table_header_prioritized_column_selected ()</h3>
+<pre class="programlisting"><a class="link" href="ETableCol.html" title="ETableCol"><span class="returnvalue">ETableCol</span></a> *
+e_table_header_prioritized_column_selected
+                               (<em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *eth</code></em>,
+                                <em class="parameter"><code><a class="link" href="ETableHeader.html#ETableColCheckFunc" title="ETableColCheckFunc ()"><span class="type">ETableColCheckFunc</span></a> check_func</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-compute-height"></a><h3>e_table_header_compute_height ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+e_table_header_compute_height (<em class="parameter"><code><a class="link" href="ETableCol.html" title="ETableCol"><span class="type">ETableCol</span></a> *ecol</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<p>Computes the minimum height required for a table header button.</p>
+<div class="refsect3">
+<a name="id-1.12.16.9.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecol</p></td>
+<td class="parameter_description"><p>Table column description.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>The widget from which to build the PangoLayout.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.16.9.25.6"></a><h4>Returns</h4>
+<p> The height of the button, in pixels.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-width-extras"></a><h3>e_table_header_width_extras ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+e_table_header_width_extras (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-header-draw-button"></a><h3>e_table_header_draw_button ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_header_draw_button (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-t"><span class="type">cairo_t</span></a> *cr</code></em>,
+                            <em class="parameter"><code><a class="link" href="ETableCol.html" title="ETableCol"><span class="type">ETableCol</span></a> *ecol</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> button_width</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> button_height</code></em>,
+                            <em class="parameter"><code><a class="link" href="ETableHeader.html#ETableColArrow" title="enum ETableColArrow"><span class="type">ETableColArrow</span></a> arrow</code></em>);</pre>
+<p>Draws a button suitable for a table header.</p>
+<div class="refsect3">
+<a name="id-1.12.16.9.27.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cr</p></td>
+<td class="parameter_description"><p>a cairo context</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ecol</p></td>
+<td class="parameter_description"><p>Table column for the header information.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>The table widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Leftmost coordinate of the button.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Topmost coordinate of the button.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Width of the region to draw.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Height of the region to draw.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>button_width</p></td>
+<td class="parameter_description"><p>Width for the complete button.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>button_height</p></td>
+<td class="parameter_description"><p>Height for the complete button.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arrow</p></td>
+<td class="parameter_description"><p>Arrow type to use as a sort indicator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETableHeader-struct"></a><h3>struct ETableHeader</h3>
+<pre class="programlisting">struct ETableHeader;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableColArrow"></a><h3>enum ETableColArrow</h3>
+<div class="refsect3">
+<a name="id-1.12.16.10.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-TABLE-COL-ARROW-NONE:CAPS"></a>E_TABLE_COL_ARROW_NONE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-TABLE-COL-ARROW-UP:CAPS"></a>E_TABLE_COL_ARROW_UP</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-TABLE-COL-ARROW-DOWN:CAPS"></a>E_TABLE_COL_ARROW_DOWN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ETableHeader--sort-info"></a><h3>The <code class="literal">“sort-info”</code> property</h3>
+<pre class="programlisting">  “sort-info”                <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *</pre>
+<p>Sort Info.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableHeader--width"></a><h3>The <code class="literal">“width”</code> property</h3>
+<pre class="programlisting">  “width”                    <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Width.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableHeader--width-extras"></a><h3>The <code class="literal">“width-extras”</code> property</h3>
+<pre class="programlisting">  “width-extras”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Width of Extras.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableHeader.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETableHeader-dimension-change"></a><h3>The <code class="literal">“dimension-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *etableheader,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableHeader-expansion-change"></a><h3>The <code class="literal">“expansion-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *etableheader,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableHeader-request-width"></a><h3>The <code class="literal">“request-width”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+user_function (<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *etableheader,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableHeader-structure-change"></a><h3>The <code class="literal">“structure-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *etableheader,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

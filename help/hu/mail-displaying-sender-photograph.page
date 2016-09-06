@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-sender-photograph" xml:lang="hu">
+
+  <info>
+    <desc>A feladó képének megjelenítése az üzenet fejlécében.</desc>
+
+    <link type="guide" xref="mail-displaying-message#advanced"/>
+
+    <revision pkgversion="3.9.1" version="0.4" date="2013-04-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-prefs-mail.html.en#mail-prefs-headers -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Fényképes üzenetfejlécek</title>
+
+<!-- NB: This is done by "Face" and "X-Face" headers. -->
+<p>Az Evolution automatikusan megjeleníti a levelek feladójának képét az üzenet előnézetének jobb oldalán, ha a feladó beágyazott egy képet az üzenetbe.</p>
+<!-- TODO: If I ever manage to find out if the "Edit > Plugins > Face" reliably works, create a topic page covering it linked under <link type="guide" xref="index#mail-composing-advanced" />, and link to it from here and vice versa. -->
+
+<p>A levelek feladójának képe akkor is megjeleníthető az üzenet előnézetének jobb oldalán, ha a feladó benne van valamelyik címjegyzékében, és abban van róla fénykép.</p>
+
+<p>Ezen funkció engedélyezéséhez jelölje be a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Levelezés beállításai</gui><gui>Fejlécek</gui><gui>Feladó fényképének megjelenítése az e-mail előnézetben</gui></guiseq> jelölőnégyzetet.</p>
+
+<p>Ha egy névjegyhez több találat is van, akkor mindig az első kerül felhasználásra.</p>
+
+<!-- Note: <guiseq><gui>Edit</gui><gui>Plugins</gui><gui>Face</gui></guiseq> 
+has no influence at all, so it is not mentioned here. 
+See https://bugzilla.gnome.org/show_bug.cgi?id=698435 -->
+ 
+</page>

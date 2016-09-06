@@ -1,0 +1,1131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ECell</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ETreeTableAdapter.html" title="ETreeTableAdapter">
+<link rel="next" href="ECellCheckbox.html" title="ECellCheckbox">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ECell.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ECell.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETreeTableAdapter.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ECellCheckbox.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ECell"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ECell.top_of_page"></a>ECell</span></h2>
+<p>ECell</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ECell.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="returnvalue">ECellView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-new-view" title="e_cell_new_view ()">e_cell_new_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-kill-view" title="e_cell_kill_view ()">e_cell_kill_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-event" title="e_cell_event ()">e_cell_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-realize" title="e_cell_realize ()">e_cell_realize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-unrealize" title="e_cell_unrealize ()">e_cell_unrealize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-draw" title="e_cell_draw ()">e_cell_draw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-print" title="e_cell_print ()">e_cell_print</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-print-height" title="e_cell_print_height ()">e_cell_print_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-max-width" title="e_cell_max_width ()">e_cell_max_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-max-width-by-row" title="e_cell_max_width_by_row ()">e_cell_max_width_by_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-max-width-by-row-implemented" title="e_cell_max_width_by_row_implemented ()">e_cell_max_width_by_row_implemented</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-get-bg-color" title="e_cell_get_bg_color ()">e_cell_get_bg_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-focus" title="e_cell_focus ()">e_cell_focus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-unfocus" title="e_cell_unfocus ()">e_cell_unfocus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-height" title="e_cell_height ()">e_cell_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-enter-edit" title="e_cell_enter_edit ()">e_cell_enter_edit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-leave-edit" title="e_cell_leave_edit ()">e_cell_leave_edit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-save-state" title="e_cell_save_state ()">e_cell_save_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-load-state" title="e_cell_load_state ()">e_cell_load_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ECell.html#e-cell-free-state" title="e_cell_free_state ()">e_cell_free_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECell.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ECell.html#ECell-struct" title="struct ECell">ECell</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ECell.html#ECellView" title="struct ECellView">ECellView</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ECell.html#ECellFlags" title="enum ECellFlags">ECellFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ECell.html#ECellActions" title="enum ECellActions">ECellActions</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECell.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ECell
+        <span class="lineart">├──</span> <a class="link" href="ECellToggle.html" title="ECellToggle">ECellToggle</a>
+        <span class="lineart">├──</span> <a class="link" href="ECellPopup.html" title="ECellPopup">ECellPopup</a>
+        <span class="lineart">├──</span> <a class="link" href="ECellText.html" title="ECellText">ECellText</a>
+        <span class="lineart">├──</span> <a class="link" href="ECellHbox.html" title="ECellHbox">ECellHbox</a>
+        <span class="lineart">├──</span> <a class="link" href="ECellPixbuf.html" title="ECellPixbuf">ECellPixbuf</a>
+        <span class="lineart">├──</span> <a class="link" href="ECellTree.html" title="ECellTree">ECellTree</a>
+        <span class="lineart">╰──</span> <a class="link" href="ECellVbox.html" title="ECellVbox">ECellVbox</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ECell.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ECell.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-cell-new-view"></a><h3>e_cell_new_view ()</h3>
+<pre class="programlisting"><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="returnvalue">ECellView</span></a> *
+e_cell_new_view (<em class="parameter"><code><a class="link" href="ECell.html" title="ECell"><span class="type">ECell</span></a> *ecell</code></em>,
+                 <em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *table_model</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> e_table_item_view</code></em>);</pre>
+<p>ECell renderers new to be bound to a table_model and to the actual view
+during their life time to actually render the data.  This method is invoked
+by the ETableItem canvas item to instatiate a new view of the ECell.</p>
+<p>This is invoked when the ETableModel is attached to the ETableItem
+(a CanvasItem that can render ETableModels in the screen).</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell</p></td>
+<td class="parameter_description"><p>the Ecell that will create the new view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>table_model</p></td>
+<td class="parameter_description"><p>the table model the ecell is bound to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>e_table_item_view</p></td>
+<td class="parameter_description"><p>an ETableItem object (the CanvasItem that
+reprensents the view of the table)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.36.7.2.7"></a><h4>Returns</h4>
+<p> a new ECellView for this <em class="parameter"><code>ecell</code></em>
+on the <em class="parameter"><code>table_model</code></em>
+displayed
+on the <em class="parameter"><code>e_table_item_view</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-kill-view"></a><h3>e_cell_kill_view ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_kill_view (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>);</pre>
+<p>This method it used to destroy a view of an ECell renderer</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>view to be destroyed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-event"></a><h3>e_cell_event ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_cell_event (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+              <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+              <em class="parameter"><code><a class="link" href="ECell.html#ECellFlags" title="enum ECellFlags"><span class="type">ECellFlags</span></a> flags</code></em>,
+              <em class="parameter"><code><a class="link" href="ECell.html#ECellActions" title="enum ECellActions"><span class="type">ECellActions</span></a> *actions</code></em>);</pre>
+<p>Dispatches the event <em class="parameter"><code>event</code></em>
+ to the <em class="parameter"><code>ecell_view</code></em>
+ for.</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>The ECellView where the event will be dispatched</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>The GdkEvent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>flags about the current state</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>actions</p></td>
+<td class="parameter_description"><p>a second return value in case the cell wants to take some action
+(specifically grabbing &amp; ungrabbing)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.36.7.4.6"></a><h4>Returns</h4>
+<p> processing state from the GdkEvent handling.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-realize"></a><h3>e_cell_realize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_realize (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>);</pre>
+<p>This function is invoked to give a chance to the ECellView to allocate
+any resources it needs from Gdk, equivalent to the GtkWidget::realize
+signal.</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>The ECellView to be realized.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-unrealize"></a><h3>e_cell_unrealize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_unrealize (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>);</pre>
+<p>This function is invoked to give a chance to the ECellView to
+release any resources it allocated during the realize method,
+equivalent to the GtkWidget::unrealize signal.</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>The ECellView to be unrealized.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-draw"></a><h3>e_cell_draw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_draw (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-t"><span class="type">cairo_t</span></a> *cr</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+             <em class="parameter"><code><a class="link" href="ECell.html#ECellFlags" title="enum ECellFlags"><span class="type">ECellFlags</span></a> flags</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x1</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y1</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x2</code></em>,
+             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y2</code></em>);</pre>
+<p>This instructs the ECellView to render itself into the Cairo context.
+The region to be drawn in given by (x1,y1)-(x2,y2).</p>
+<p>The most important flags are <a class="link" href="ECell.html#E-CELL-SELECTED:CAPS"><code class="literal">E_CELL_SELECTED</code></a> and <a class="link" href="ECell.html#E-CELL-FOCUSED:CAPS"><code class="literal">E_CELL_FOCUSED</code></a>, other
+flags include alignments and justifications.</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView to redraw</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cr</p></td>
+<td class="parameter_description"><p>a Cairo context</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model being drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view being drawn (what the model maps to).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row being drawn</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>rendering flags.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>boudary for the rendering</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>boudary for the rendering</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x2</p></td>
+<td class="parameter_description"><p>boudary for the rendering</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y2</p></td>
+<td class="parameter_description"><p>boudary for the rendering</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-print"></a><h3>e_cell_print ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_print (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+              <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkPrintContext.html"><span class="type">GtkPrintContext</span></a> *context</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> width</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> height</code></em>);</pre>
+<p>FIXME:</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-print-height"></a><h3>e_cell_print_height ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+e_cell_print_height (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkPrintContext.html"><span class="type">GtkPrintContext</span></a> *context</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> width</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-max-width"></a><h3>e_cell_max_width ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_cell_max_width (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.36.7.10.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView that will leave editing</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.36.7.10.5"></a><h4>Returns</h4>
+<p> the maximum width for the ECellview at <em class="parameter"><code>model_col</code></em>
+which
+is being rendered as <em class="parameter"><code>view_col</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-max-width-by-row"></a><h3>e_cell_max_width_by_row ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_cell_max_width_by_row (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.36.7.11.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView that we are curious about</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row in the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.36.7.11.5"></a><h4>Returns</h4>
+<p> the maximum width for the ECellview at <em class="parameter"><code>model_col</code></em>
+which
+is being rendered as <em class="parameter"><code>view_col</code></em>
+for the data in <em class="parameter"><code>row</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-max-width-by-row-implemented"></a><h3>e_cell_max_width_by_row_implemented ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_cell_max_width_by_row_implemented (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.36.7.12.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView that we are curious about</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.36.7.12.5"></a><h4>Returns</h4>
+<p> the maximum width for the ECellview at <em class="parameter"><code>model_col</code></em>
+which
+is being rendered as <em class="parameter"><code>view_col</code></em>
+for the data in <em class="parameter"><code>row</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-get-bg-color"></a><h3>e_cell_get_bg_color ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_cell_get_bg_color (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-focus"></a><h3>e_cell_focus ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_focus (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x1</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y1</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x2</code></em>,
+              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y2</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-unfocus"></a><h3>e_cell_unfocus ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_unfocus (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-height"></a><h3>e_cell_height ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_cell_height (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.36.7.16.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row to me measured</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.36.7.16.5"></a><h4>Returns</h4>
+<p> the height of the cell at <em class="parameter"><code>model_col</code></em>
+, <em class="parameter"><code>row</code></em>
+rendered at
+<em class="parameter"><code>view_col</code></em>
+, <em class="parameter"><code>row</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-enter-edit"></a><h3>e_cell_enter_edit ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_cell_enter_edit (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Notifies the ECellView that it is about to enter editing mode for
+<em class="parameter"><code>model_col</code></em>
+, <em class="parameter"><code>row</code></em>
+ rendered at <em class="parameter"><code>view_col</code></em>
+, <em class="parameter"><code>row</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView that will enter editing</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-leave-edit"></a><h3>e_cell_leave_edit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_leave_edit (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> edit_context</code></em>);</pre>
+<p>Notifies the ECellView that editing is finished at <em class="parameter"><code>model_col</code></em>
+, <em class="parameter"><code>row</code></em>
+
+rendered at <em class="parameter"><code>view_col</code></em>
+, <em class="parameter"><code>row</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView that will leave editing</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>edit_context</p></td>
+<td class="parameter_description"><p>the editing context</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-save-state"></a><h3>e_cell_save_state ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_cell_save_state (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> edit_context</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.36.7.19.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView to save</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>edit_context</p></td>
+<td class="parameter_description"><p>the editing context</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.36.7.19.5"></a><h4>Returns</h4>
+<p> The save state.</p>
+<p>Requests that the ECellView return a gpointer  representing the state
+of the ECell.  This is primarily intended for things like selection
+or scrolling.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-load-state"></a><h3>e_cell_load_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_load_state (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> edit_context</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> save_state</code></em>);</pre>
+<p>Requests that the ECellView load from the given save state.</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView to load</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>edit_context</p></td>
+<td class="parameter_description"><p>the editing context</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>save_state</p></td>
+<td class="parameter_description"><p>the save state to load from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-cell-free-state"></a><h3>e_cell_free_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_cell_free_state (<em class="parameter"><code><a class="link" href="ECell.html#ECellView" title="struct ECellView"><span class="type">ECellView</span></a> *ecell_view</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> model_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> save_state</code></em>);</pre>
+<p>Requests that the ECellView free the given save state.</p>
+<div class="refsect3">
+<a name="id-1.12.36.7.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ecell_view</p></td>
+<td class="parameter_description"><p>the ECellView</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model_col</p></td>
+<td class="parameter_description"><p>the column in the model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>the column in the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>the row</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>save_state</p></td>
+<td class="parameter_description"><p>the save state to free</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ECell.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ECell-struct"></a><h3>struct ECell</h3>
+<pre class="programlisting">struct ECell;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellView"></a><h3>struct ECellView</h3>
+<pre class="programlisting">struct ECellView {
+	ECell *ecell;
+	ETableModel *e_table_model;
+	void        *e_table_item_view;
+
+	gint   focus_x1, focus_y1, focus_x2, focus_y2;
+	gint   focus_col, focus_row;
+
+	void  (*kill_view_cb) (struct _ECellView *, gpointer);
+	GList *kill_view_cb_data;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellFlags"></a><h3>enum ECellFlags</h3>
+<div class="refsect3">
+<a name="id-1.12.36.8.4.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-SELECTED:CAPS"></a>E_CELL_SELECTED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-JUSTIFICATION:CAPS"></a>E_CELL_JUSTIFICATION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-JUSTIFY-CENTER:CAPS"></a>E_CELL_JUSTIFY_CENTER</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-JUSTIFY-LEFT:CAPS"></a>E_CELL_JUSTIFY_LEFT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-JUSTIFY-RIGHT:CAPS"></a>E_CELL_JUSTIFY_RIGHT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-JUSTIFY-FILL:CAPS"></a>E_CELL_JUSTIFY_FILL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-ALIGN-LEFT:CAPS"></a>E_CELL_ALIGN_LEFT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-ALIGN-RIGHT:CAPS"></a>E_CELL_ALIGN_RIGHT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-FOCUSED:CAPS"></a>E_CELL_FOCUSED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-EDITING:CAPS"></a>E_CELL_EDITING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-CURSOR:CAPS"></a>E_CELL_CURSOR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-PREEDIT:CAPS"></a>E_CELL_PREEDIT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECellActions"></a><h3>enum ECellActions</h3>
+<div class="refsect3">
+<a name="id-1.12.36.8.5.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-GRAB:CAPS"></a>E_CELL_GRAB</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CELL-UNGRAB:CAPS"></a>E_CELL_UNGRAB</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-duplicates" xml:lang="ja">
+
+  <info>
+    <desc>重複したメールの処理方法</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.7.4" version="0.6" date="2013-01-23" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>メールが重複してダウンロードされている</title>
+
+<section id="remove">
+<title>重複したメールの削除</title>
+<p>フォルダー内の重複したメールを削除するには、複数のメールを選択 (または<guiseq><gui>編集</gui><gui>すべて選択</gui></guiseq>をクリックするか、<keyseq><key>Ctrl</key><key>A</key></keyseq>を押して全メールを選択) し、<guiseq><gui>メッセージ</gui><gui>重複したメッセージの削除</gui></guiseq>をクリックします。</p>
+<!-- available by default since 2.91, as per http://mail.gnome.org/archives/evolution-list/2011-August/msg00000.html -->
+</section>
+
+<section id="reasons">
+<title>原因</title>
+<p>メールが重複してダウンロードされている原因には以下のようなものがあります。</p>
+<list>
+<item><p>同じメールのコピーが同じメールボックスに複数存在する</p></item>
+<item><p>Evolution が UIDL 拡張に関して問題を抱えている</p></item>
+<item><p><file>$HOME/.local/share/evolution/mail/local/</file> にあるキャッシュファイルに書き込めない</p></item>
+</list>
+</section>
+
+</page>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-spellcheck" xml:lang="hu">
+
+  <info>
+    <desc>Levelek helyesírás-ellenőrzése a szerkesztőben.</desc>
+    
+    <link type="guide" xref="index#mail-composing"/>
+
+    <revision pkgversion="3.5.1" version="0.6" date="2012-04-25" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+<title>Helyesírás-ellenőrzés</title>
+
+<!-- Instructions are only valid from Evolution 2.24 on -->
+
+<section id="required-packages">
+<title>Előfeltételek</title>
+<p>Az elküldendő e-mailek helyesírásának ellenőrzéséhez elsőként győződjön meg a disztribúciója szoftverkezelő eszközének segítségével, hogy a nyelvének megfelelő <sys>hunspell</sys> csomag, illetve az <sys>enchant</sys> csomag telepítve van-e.</p>
+
+<note style="info package">
+  <p>Ezen lépések végrehajtásához szükség lehet a <sys>hunspell</sys> és/vagy az <sys>enchant</sys> csomag telepítésére.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:hunspell" href="http://hunspell.sourceforge.net/" style="button">A hunspell telepítése</link></p>
+      <p><link action="install:enchant" href="http://www.abisource.com/projects/enchant/" style="button">Az enchant telepítése</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</section>
+
+<section id="global-preferences">
+<title>Globális beállítások</title>
+
+<p>A <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Levélszerkesztő beállításai</gui><gui>Helyesírás-ellenőrzés</gui><gui>Beállítások</gui></guiseq> alatt megadhatja, hogy helyesírása ellenőrzésre kerüljön-e gépelés közben, és milyen színnel kerüljenek aláhúzásra a hibásan írt szavak.</p>
+
+<p>A <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Levélszerkesztő beállításai</gui><gui>Helyesírás-ellenőrzés</gui><gui>Nyelvek</gui></guiseq> alatt megadhatja a helyesírás-ellenőrzéshez használandó nyelveket is.</p>
+</section>
+
+<section id="composer">
+<title>Kézi helyesírás-ellenőrzés a szerkesztőben</title>
+<p>Ha a <link xref="#global-preferences">szerkesztő beállításaiban</link> nincs engedélyezve a <gui>Helyesírás-ellenőrzés beírás közben</gui>, akkor az e-mail szerkesztőben a <guiseq><gui>Szerkesztés</gui><gui>Helyesírás-ellenőrzés</gui></guiseq> menüpont kiválasztásával, vagy az <key>F7</key> megnyomásával futtathatja a helyesírás-ellenőrzést.</p>
+</section>
+
+</page>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-layout-general-formatting" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-layout"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-30" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#bshpskx
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <!-- TODO:POST-3-8: Just listing the partially busted UI options (also see
+	 calendar-layout-appointment-display) here is very poor and not
+	 task-oriented, but that's it for the time being. Better ideas welcome.
+	 -->
+
+    <desc>カレンダーでの表示型式全般のオプションです。</desc>
+  </info>
+
+  <title>型式の全般オプション</title>
+
+  <p>以下のオプションが、<guiseq><gui>編集</gui><gui>設定</gui><gui>カレンダーとタスク</gui><gui>全般</gui></guiseq>以下にあります。</p>
+
+<section id="time">
+  <title>時間</title>
+
+  <list>
+    <item>
+      <p>時刻の型式:</p>
+      <p>12時間制 (AM/PM) と24時間制から型式を選択します。</p>
+    </item>
+    <item>
+      <p><link xref="calendar-timezones">タイムゾーン</link>を同時に2つまで利用できます:</p>
+      <p>現在地の都市と、オプションで2つ目の都市を指定します。</p>
+    </item>
+  </list>
+</section>
+
+<section id="work-week">
+  <title>平日</title>
+
+  <list>
+    <item>
+      <p>週の開始:</p>
+      <p>各週の最初に表示する曜日を選択します。</p>
+    </item>
+    <item>
+      <p>平日:</p>
+      <p>平日の曜日を設定します。</p>
+    </item>
+    <item>
+      <p>一日の開始:</p>
+      <p>平日の開始時刻を設定します。</p>
+    </item>
+    <item>
+      <p>一日の終了:</p>
+      <p>平日の終了時刻を設定します。</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="alerts">
+  <title>警告</title>
+
+  <p>予定を削除する前に警告を出したい場合にこのオプションを選択します。</p>
+
+</section>
+
+</page>

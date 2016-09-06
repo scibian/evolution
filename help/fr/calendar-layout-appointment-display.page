@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-layout-appointment-display" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="calendar-layout"/>
+
+    <revision pkgversion="3.0.2" version="0.4" date="2012-02-18" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#bshpsxa
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Définir l'affichage des rendez-vous dans l'agenda.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Apparence des rendez-vous</title>
+
+  <!-- TODO:POST-3-8: Just listing the partially busted UI options (also see
+       calendar-layout-general-formatting) here is very poor and not
+       task-oriented, but that's it for the time being. Better ideas welcome.
+       -->
+
+  <!-- TODO: Recheck once https://bugzilla.gnome.org/show_bug.cgi?id=657233 is
+       fixed, as the current UI is a huge mess. -->
+
+  <p>The following calendar-related options are available under
+  <guiseq><gui>Edit</gui><gui>Preferences</gui>
+  <gui>Calendar and Tasks</gui><gui>Display</gui></guiseq>.</p>
+
+<section id="general">
+  <title>Général</title>
+
+  <list>
+    <item>
+      <p>Divisions horaires :</p>
+      <p>Définit les incréments horaires signalés par de fines lignes dans la vue journalière de l'agenda.</p>
+    </item>
+    <item>
+      <p>Afficher les heures de fin de rendez-vous dans les vues mensuelles et hebdomadaires :</p>
+      <p>If there is space, <app>Evolution</app> shows the end times in the
+      week and month views for each appointment.</p>
+    </item>
+    <item>
+      <p>Compresser les week-ends dans la vue mensuelle :</p>
+      <p>Sélectionnez cette option pour afficher les week-ends dans une seule zone au lieu de deux dans la vue mensuelle.</p>
+    </item>
+    <item>
+      <p>Afficher les numéros de semaine :</p>
+      <p>Affiche le numéro de chaque semaine dans l'agenda.</p>
+    </item>
+    <item>
+      <p>Show recurring events in italic in bottom left calendar.</p>
+    </item>
+    <item>
+      <p>Faire défiler la vue mensuelle d'une semaine</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="date-time">
+  <title>Format de date et d'heure</title>
+
+  <p>Vous pouvez modifier le format de la colonne <gui>Date</gui> en définissant votre format préféré.</p>
+
+  <p>Les substituants dans l'expression de format sont au format strftime. Pour une liste complète des formats disponibles, saisissez <cmd>date --help</cmd> dans l'application <app>Terminal</app>.</p>
+
+</section>
+
+</page>

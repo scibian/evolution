@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EPopupAction</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch16.html" title="(Unsorted Sections)">
+<link rel="prev" href="evolution-util-EPoolv.html" title="EPoolv">
+<link rel="next" href="EPortEntry.html" title="EPortEntry">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EPopupAction.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EPopupAction.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EPopupAction.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch16.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="evolution-util-EPoolv.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EPortEntry.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EPopupAction"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EPopupAction.top_of_page"></a>EPopupAction</span></h2>
+<p>EPopupAction</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EPopupAction.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EPopupAction.html" title="EPopupAction"><span class="returnvalue">EPopupAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EPopupAction.html#e-popup-action-new" title="e_popup_action_new ()">e_popup_action_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EPopupAction.html#e-action-group-add-popup-actions" title="e_action_group_add_popup_actions ()">e_action_group_add_popup_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EPopupAction.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EPopupAction.html#EPopupAction-struct" title="struct EPopupAction">EPopupAction</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EPopupAction.html#EPopupActionEntry" title="struct EPopupActionEntry">EPopupActionEntry</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EPopupAction.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkAction.html">GtkAction</a>
+        <span class="lineart">╰──</span> EPopupAction
+</pre>
+</div>
+<div class="refsect1">
+<a name="EPopupAction.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EPopupAction implements
+ <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a> and  <a href="http://developer.gnome.org/gtk2/GtkActivatable.html">GtkActivatable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EPopupAction.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EPopupAction.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-popup-action-new"></a><h3>e_popup_action_new ()</h3>
+<pre class="programlisting"><a class="link" href="EPopupAction.html" title="EPopupAction"><span class="returnvalue">EPopupAction</span></a> *
+e_popup_action_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-action-group-add-popup-actions"></a><h3>e_action_group_add_popup_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_action_group_add_popup_actions (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> *action_group</code></em>,
+                                  <em class="parameter"><code>const <a class="link" href="EPopupAction.html#EPopupActionEntry" title="struct EPopupActionEntry"><span class="type">EPopupActionEntry</span></a> *entries</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EPopupAction.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EPopupAction-struct"></a><h3>struct EPopupAction</h3>
+<pre class="programlisting">struct EPopupAction;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EPopupActionEntry"></a><h3>struct EPopupActionEntry</h3>
+<pre class="programlisting">struct EPopupActionEntry {
+	const gchar *name;
+	const gchar *label; /* optional: overrides the related action */
+	const gchar *related; /* name of the related action */
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

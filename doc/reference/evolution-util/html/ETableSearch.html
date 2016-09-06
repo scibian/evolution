@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETableSearch</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="evolution-util-ETableOne.html" title="ETableOne">
+<link rel="next" href="ETableSelectionModel.html" title="ETableSelectionModel">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETableSearch.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETableSearch.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETableSearch.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="evolution-util-ETableOne.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ETableSelectionModel.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETableSearch"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETableSearch.top_of_page"></a>ETableSearch</span></h2>
+<p>ETableSearch</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETableSearch.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableSearch.html" title="ETableSearch"><span class="returnvalue">ETableSearch</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableSearch.html#e-table-search-new" title="e_table_search_new ()">e_table_search_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSearch.html#e-table-search-input-character" title="e_table_search_input_character ()">e_table_search_input_character</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSearch.html#e-table-search-backspace" title="e_table_search_backspace ()">e_table_search_backspace</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSearch.html#e-table-search-cancel" title="e_table_search_cancel ()">e_table_search_cancel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableSearch.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableSearch.html#ETableSearch-accept" title="The “accept” signal">accept</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableSearch.html#ETableSearch-search" title="The “search” signal">search</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableSearch.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ETableSearch.html#ETableSearchFlags" title="enum ETableSearchFlags">ETableSearchFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETableSearch.html#ETableSearch-struct" title="struct ETableSearch">ETableSearch</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableSearch.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ETableSearch
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETableSearch.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETableSearch.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-table-search-new"></a><h3>e_table_search_new ()</h3>
+<pre class="programlisting"><a class="link" href="ETableSearch.html" title="ETableSearch"><span class="returnvalue">ETableSearch</span></a> *
+e_table_search_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-search-input-character"></a><h3>e_table_search_input_character ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_search_input_character (<em class="parameter"><code><a class="link" href="ETableSearch.html" title="ETableSearch"><span class="type">ETableSearch</span></a> *e_table_search</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Unicode-Manipulation.html#gunichar"><span class="type">gunichar</span></a> character</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-search-backspace"></a><h3>e_table_search_backspace ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_search_backspace (<em class="parameter"><code><a class="link" href="ETableSearch.html" title="ETableSearch"><span class="type">ETableSearch</span></a> *e_table_search</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-search-cancel"></a><h3>e_table_search_cancel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_search_cancel (<em class="parameter"><code><a class="link" href="ETableSearch.html" title="ETableSearch"><span class="type">ETableSearch</span></a> *e_table_search</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableSearch.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETableSearchFlags"></a><h3>enum ETableSearchFlags</h3>
+<div class="refsect3">
+<a name="id-1.12.20.9.2.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="enum_member_name"><p><a name="E-TABLE-SEARCH-FLAGS-CHECK-CURSOR-FIRST:CAPS"></a>E_TABLE_SEARCH_FLAGS_CHECK_CURSOR_FIRST</p></td>
+<td> </td>
+<td> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableSearch-struct"></a><h3>struct ETableSearch</h3>
+<pre class="programlisting">struct ETableSearch;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableSearch.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETableSearch-accept"></a><h3>The <code class="literal">“accept”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableSearch.html" title="ETableSearch"><span class="type">ETableSearch</span></a> *etablesearch,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableSearch-search"></a><h3>The <code class="literal">“search”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableSearch.html" title="ETableSearch"><span class="type">ETableSearch</span></a> *etablesearch,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

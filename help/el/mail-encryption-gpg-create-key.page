@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-create-key" xml:lang="el">
+
+  <info>
+    <desc>Υπογραφή ή κρυπτογράφηση μηνυμάτων μέσα από GPG/OpenPGP που στέλνετε.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.3" date="2012-02-18" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encryption-keygen -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Δημιουργία κλειδιού GPG</title>
+
+<note style="advanced"><p>Αυτά τα βήματα είναι πολύ τεχνικά. Για τον μέσο χρήστη συνιστούμε τη χρήση της εφαρμογής <link xref="help:seahorse/index" href="https://help.gnome.org/users/seahorse/stable/index"><app>Seahorse</app></link> για διαχείριση κλειδιών GPG/OpenPGP.</p></note>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a complete rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<p>Πριν να μπορείτε να πάρετε ή να στείλετε κρυπτογραφημένα μηνύματα, χρειάζεται να δημιουργήσετε το δημόσιο και ιδιωτικό κλειδί με GPG.</p>
+<steps>
+<item><p>Ανοίξτε την εφαρμογή <app>Τερματικός</app> και εισάγετε <cmd>gpg --gen-key</cmd>.</p></item>
+<item><p>Επιλέξτε έναν αλγόριθμο, μετά πατήστε εισαγωγή.</p></item>
+<item><p>Επιλέξτε ένα μήκος κλειδιού, μετά πατήστε εισαγωγή.</p></item>
+<item><p>Εισάγετε τον χρόνο που θέλετε το κλειδί σας να είναι έγκυρο.</p></item>
+<item><p>Πληκτρολογήστε το πραγματικό σας όνομα, μετά πατήστε εισαγωγή.</p></item>
+<item><p>Πληκτρολογήστε τη διεύθυνση αλληλογραφίας σας, μετά πατήστε εισαγωγή.</p></item>
+<item><p>(Προαιρετικό) Πληκτρολογήστε ένα σχόλιο, μετά πατήστε εισαγωγή.</p></item>
+<item><p>Ελέγξτε το επιλεγμένο σας ID χρήστη. Αν είναι σωστό, πατήστε Ο.</p></item>
+<item><p>Πληκτρολογήστε ένα συνθηματικό, μετά πατήστε εισαγωγή.</p></item>
+<item><p>Κινείστε το ποντίκι σας με τυχαίες κινήσεις για να δημιουργηθούν τα κλειδιά.</p></item>
+</steps>
+
+<p>Αφού δημιουργηθούν τα κλειδιά, μπορείτε να δείτε τις πληροφορίες του κλειδιού σας εισάγοντας <cmd>gpg --list-keys</cmd>. Θα πρέπει να δείτε κάτι παρόμοιο με αυτό: <code> /home/you/.gnupg/pubring.gpg ---------------------------- pub 1024D/32j38dk2 2001-06-20 you &lt;you@example.com&gt; sub 1024g/289sklj3 2011-06-20 [expires: 2012-11-14]</code></p>
+<p>Το GPG δημιουργεί έναν κατάλογο, ή κλειδοθήκη, για τα δημόσια κλειδιά σας και μια για τα ιδιωτικά κλειδιά σας. Όλα τα δημόσια κλειδιά που ξέρετε αποθηκεύονται στο αρχείο <file>~/.gnupg/pubring.gpg</file>. Αν θέλετε να δώσετε σε άλλους ανθρώπους το κλειδί, στείλτε τους αυτό το αρχείο.</p>
+<p>Αν θέλετε, μπορείτε να ανεβάσετε τα κλειδιά σας σε ένα εξυπηρετητή κλειδιών:</p>
+<steps>
+<item><p>Ελέγξτε το ID του δημόσιου κλειδιού σας με το <code>gpg --list-keys</code>. Είναι η συμβολοσειρά μετά το <code>1024D</code> στη γραμμή που ξεκινά με <code>pub</code>. Στο παραπάνω παράδειγμα, είναι το .<code>32j38dk2</code>.</p></item>
+<item><p>Εισάγετε την εντολή <cmd>gpg --send-keys --keyserver wwwkeys.pgp.net 32j38dk2</cmd>. Αντικαταστήστε το ID του κλειδιού σας για το <code>32j38dk2</code>. Χρειάζεστε το συνθηματικό σας για να το κάνετε αυτό.</p></item>
+</steps>
+
+<p>Οι εξυπηρετητές κλειδιών αποθηκεύουν τα δημόσια κλειδιά για σας ώστε οι φίλοι σας να μπορούν να αποκρυπτογραφήσουν τα μηνύματά σας. Αν επιλέξετε να μη χρησιμοποιήστε έναν εξυπηρετητή κλειδιών, μπορείτε χειροκίνητα να στείλετε το δημόσιο κλειδί, να το συμπεριλαμβάνετε στο αρχείο υπογραφής σας, ή να το βάλετε στην ιστοσελίδα σας. Ωστόσο, είναι ευκολότερο να δημοσιεύσετε ένα κλειδί μια φορά και μετά να αφήνετε τους ανθρώπους να το κατεβάζουν από ένα κεντρικό μέρος όποτε το χρειάζονται.</p>
+<p>Αν δεν έχετε ένα κλειδί για να ξεκλειδώσετε ή να κρυπτογραφήσετε ένα μήνυμα, μπορείτε να ρυθμίσετε το εργαλείο κρυπτογράφησης για να το ψάξει αυτόματα. Αν δε μπορεί να βρει το κλειδί, εμφανίζεται ένα μήνυμα λάθους.</p>
+
+</page>

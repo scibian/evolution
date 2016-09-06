@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-create-key" xml:lang="ja">
+
+  <info>
+    <desc>Signing or encrypting messages via GPG/OpenPGP that you send.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.3" date="2012-02-18" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encryption-keygen -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>GPG 鍵の作成</title>
+
+<note style="advanced"><p>この手順は非常に技術的なものになっています。平均的なユーザーに対しては、GPG/OpenPGP 鍵の管理には <link xref="help:seahorse/index" href="https://help.gnome.org/users/seahorse/stable/index"><app>Seahorse</app> アプリケーション</link>の利用を勧めています。</p></note>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a complete rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<p>Before you can get or send GPG encrypted mail, you need to generate your public and private keys with GPG.</p>
+<steps>
+<item><p><app>ターミナル</app>アプリケーションを開き、<cmd>gpg --gen-key</cmd> を入力します。</p></item>
+<item><p>アルゴリズムを選択し、Enter を押します。</p></item>
+<item><p>鍵の長さを選択し、Enter を押します。</p></item>
+<item><p>鍵の有効期間を入力します。</p></item>
+<item><p>名前を入力し、Enter を押します。</p></item>
+<item><p>メールアドレスを入力し、Enter を押します。</p></item>
+<item><p>(オプション) コメントを入力し、Enter を押します。</p></item>
+<item><p>選択したユーザーIDを確認し、正しければ0を押します。</p></item>
+<item><p>パスフレーズを入力し、Enter を押します。</p></item>
+<item><p>マウスを無作為に動かし、鍵を生成します。</p></item>
+</steps>
+
+<p>鍵の生成後は、<cmd>gpg --list-keys</cmd> を実行すると鍵の情報を見られます:<code> /home/you/.gnupg/pubring.gpg ---------------------------- pub 1024D/32j38dk2 2001-06-20 you &lt;you@example.com&gt; sub 1024g/289sklj3 2011-06-20 [expires: 2012-11-14]</code> のような表示が得られるはずです。</p>
+<p>GPG creates one list, or keyring, for your public keys and one for your private keys. All the public keys you know are stored in the file <file>~/.gnupg/pubring.gpg</file>. If you want to give other people your key, send them that file.</p>
+<p>If you want, you can upload your keys to a key server:</p>
+<steps>
+<item><p><code>gpg --list-keys</code> を実行して公開鍵 ID を確認します。<code>pub</code> で始まる行の <code>1024D</code> の後の文字列が公開鍵 ID です。上の例では <code>32j38dk2</code> が公開鍵 ID です。</p></item>
+<item><p>コマンド <cmd>gpg --send-keys --keyserver wwwkeys.pgp.net 32j38dk2</cmd> を実行します。<code>32j38dk2</code> は自分の鍵IDに置き換えます。この操作にはパスワードが必要です。</p></item>
+</steps>
+
+<p>Key servers store your public keys for you so that your friends can decrypt your messages. If you choose not to use a key server, you can manually send your public key, include it in your signature file, or put it on your own Web page. However, it is easier to publish a key once, and then let people download it from a central place when they want.</p>
+<p>If you don't have a key to unlock or encrypt a message, you can set your encryption tool to look it up automatically. If it cannot find the key, an error message appears.</p>
+
+</page>

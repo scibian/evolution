@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="mail-layout-changing" xml:lang="el">
+
+  <info>
+    <desc>Αλλαγή της προβολής του παραθύρου αλληλογραφίας (στήλες καταλόγων μηνυμάτων και ευρεία οθόνη).</desc>
+
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.0.0" version="0.1" date="2011-07-21" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αλλαγή της διάταξης παραθύρου αλληλογραφίας</title>
+
+</page>

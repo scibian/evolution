@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Engine Reference Manual: Legacy Utilities</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Engine Reference Manual">
+<link rel="up" href="ch02.html" title="Utilities">
+<link rel="prev" href="evolution-mail-engine-Miscellaneous-Utilities.html" title="Miscellaneous Utilities">
+<link rel="next" href="object-tree.html" title="Object Hierarchy">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#evolution-mail-engine-Legacy-Utilities.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="evolution-mail-engine-Miscellaneous-Utilities.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="object-tree.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="evolution-mail-engine-Legacy-Utilities"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="evolution-mail-engine-Legacy-Utilities.top_of_page"></a>Legacy Utilities</span></h2>
+<p>Legacy Utilities</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Legacy-Utilities.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-config-init" title="mail_config_init ()">mail_config_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-config-get-address-count" title="mail_config_get_address_count ()">mail_config_get_address_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-config-folder-to-cachename" title="mail_config_folder_to_cachename ()">mail_config_folder_to_cachename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-config-get-sync-timeout" title="mail_config_get_sync_timeout ()">mail_config_get_sync_timeout</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-config-reload-junk-headers" title="mail_config_reload_junk_headers ()">mail_config_reload_junk_headers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-config-get-lookup-book" title="mail_config_get_lookup_book ()">mail_config_get_lookup_book</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-config-get-lookup-book-local-only" title="mail_config_get_lookup_book_local_only ()">mail_config_get_lookup_book_local_only</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-transfer-messages" title="mail_transfer_messages ()">mail_transfer_messages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-sync-folder" title="mail_sync_folder ()">mail_sync_folder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-sync-store" title="mail_sync_store ()">mail_sync_store</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-empty-trash" title="mail_empty_trash ()">mail_empty_trash</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-send-queue" title="mail_send_queue ()">mail_send_queue</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchLockFunc" title="MailProviderFetchLockFunc ()">*MailProviderFetchLockFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchUnlockFunc" title="MailProviderFetchUnlockFunc ()">*MailProviderFetchUnlockFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchInboxFunc" title="MailProviderFetchInboxFunc ()">*MailProviderFetchInboxFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-fetch-mail" title="mail_fetch_mail ()">mail_fetch_mail</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-filter-folder" title="mail_filter_folder ()">mail_filter_folder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-execute-shell-command" title="mail_execute_shell_command ()">mail_execute_shell_command</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-tool-do-movemail" title="mail_tool_do_movemail ()">mail_tool_do_movemail</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a href="/usr/share/gtk-doc/html/camel/camel-camel-mime-utils.html#camel-header-raw"><span class="returnvalue">_camel_header_raw</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-tool-remove-xevolution-headers" title="mail_tool_remove_xevolution_headers ()">mail_tool_remove_xevolution_headers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-tool-restore-xevolution-headers" title="mail_tool_restore_xevolution_headers ()">mail_tool_restore_xevolution_headers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-tool-generate-forward-subject" title="mail_tool_generate_forward_subject ()">mail_tool_generate_forward_subject</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-tool-make-message-attachment" title="mail_tool_make_message_attachment ()">mail_tool_make_message_attachment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgDescFunc" title="MailMsgDescFunc ()">*MailMsgDescFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgExecFunc" title="MailMsgExecFunc ()">*MailMsgExecFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgDoneFunc" title="MailMsgDoneFunc ()">*MailMsgDoneFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgFreeFunc" title="MailMsgFreeFunc ()">*MailMsgFreeFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgDispatchFunc" title="MailMsgDispatchFunc ()">*MailMsgDispatchFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgCreateActivityFunc" title="MailMsgCreateActivityFunc ()">*MailMsgCreateActivityFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgSubmitActivityFunc" title="MailMsgSubmitActivityFunc ()">*MailMsgSubmitActivityFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgFreeActivityFunc" title="MailMsgFreeActivityFunc ()">*MailMsgFreeActivityFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgCompleteActivityFunc" title="MailMsgCompleteActivityFunc ()">*MailMsgCompleteActivityFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgCancelActivityFunc" title="MailMsgCancelActivityFunc ()">*MailMsgCancelActivityFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgAlertErrorFunc" title="MailMsgAlertErrorFunc ()">*MailMsgAlertErrorFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-util/EAlertSink.html"><span class="returnvalue">EAlertSink</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgGetAlertSinkFunc" title="MailMsgGetAlertSinkFunc ()">*MailMsgGetAlertSinkFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-init" title="mail_msg_init ()">mail_msg_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-register-activities" title="mail_msg_register_activities ()">mail_msg_register_activities</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-util/EAlertSink.html"><span class="returnvalue">EAlertSink</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-get-alert-sink" title="mail_msg_get_alert_sink ()">mail_msg_get_alert_sink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-new" title="mail_msg_new ()">mail_msg_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-ref" title="mail_msg_ref ()">mail_msg_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-unref" title="mail_msg_unref ()">mail_msg_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-check-error" title="mail_msg_check_error ()">mail_msg_check_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-cancel" title="mail_msg_cancel ()">mail_msg_cancel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-active" title="mail_msg_active ()">mail_msg_active</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-main-loop-push" title="mail_msg_main_loop_push ()">mail_msg_main_loop_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-unordered-push" title="mail_msg_unordered_push ()">mail_msg_unordered_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-fast-ordered-push" title="mail_msg_fast_ordered_push ()">mail_msg_fast_ordered_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-msg-slow-ordered-push" title="mail_msg_slow_ordered_push ()">mail_msg_slow_ordered_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-in-main-thread" title="mail_in_main_thread ()">mail_in_main_thread</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMainFunc" title="MailMainFunc ()">*MailMainFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-call-main" title="mail_call_main ()">mail_call_main</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#vfolder-load-storage" title="vfolder_load_storage ()">vfolder_load_storage</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-vfolder-shutdown" title="mail_vfolder_shutdown ()">mail_vfolder_shutdown</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Legacy-Utilities.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsg" title="struct MailMsg">MailMsg</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgInfo" title="struct MailMsgInfo">MailMsgInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-call-t" title="enum mail_call_t">mail_call_t</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Legacy-Utilities.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Legacy-Utilities.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="mail-config-init"></a><h3>mail_config_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_config_init (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-config-get-address-count"></a><h3>mail_config_get_address_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+mail_config_get_address_count (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-config-folder-to-cachename"></a><h3>mail_config_folder_to_cachename ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+mail_config_folder_to_cachename (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-config-get-sync-timeout"></a><h3>mail_config_get_sync_timeout ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+mail_config_get_sync_timeout (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-config-reload-junk-headers"></a><h3>mail_config_reload_junk_headers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_config_reload_junk_headers (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-config-get-lookup-book"></a><h3>mail_config_get_lookup_book ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+mail_config_get_lookup_book (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-config-get-lookup-book-local-only"></a><h3>mail_config_get_lookup_book_local_only ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+mail_config_get_lookup_book_local_only
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-transfer-messages"></a><h3>mail_transfer_messages ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_transfer_messages (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *source</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *uids</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> delete_from_source</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dest_uri</code></em>,
+                        <em class="parameter"><code><span class="type">guint32</span> dest_flags</code></em>,
+                        <em class="parameter"><code><span class="type">void</span> (*done) (gboolean ok, gpointer data)</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-sync-folder"></a><h3>mail_sync_folder ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_sync_folder (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> test_for_expunge</code></em>,
+                  <em class="parameter"><code><span class="type">void</span> (*done) (CamelFolder *folder, gpointer data)</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-sync-store"></a><h3>mail_sync_store ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_sync_store (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> expunge</code></em>,
+                 <em class="parameter"><code><span class="type">void</span> (*done) (CamelStore *store, gpointer data)</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-empty-trash"></a><h3>mail_empty_trash ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_empty_trash (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-send-queue"></a><h3>mail_send_queue ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_send_queue (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *queue</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelTransport.html"><span class="type">CamelTransport</span></a> *transport</code></em>,
+                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *type</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFilterDriver.html#CamelFilterGetFolderFunc"><span class="type">CamelFilterGetFolderFunc</span></a> get_folder</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> get_data</code></em>,
+                 <em class="parameter"><code><span class="type">CamelFilterStatusFunc</span> *status</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> status_data</code></em>,
+                 <em class="parameter"><code><span class="type">void</span> (*done) (gpointer data)</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailProviderFetchLockFunc"></a><h3>MailProviderFetchLockFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailProviderFetchLockFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailProviderFetchUnlockFunc"></a><h3>MailProviderFetchUnlockFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailProviderFetchUnlockFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailProviderFetchInboxFunc"></a><h3>MailProviderFetchInboxFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a>
+<span class="c_punctuation">(</span>*MailProviderFetchInboxFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-fetch-mail"></a><h3>mail_fetch_mail ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_fetch_mail (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>,
+                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *type</code></em>,
+                 <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchLockFunc" title="MailProviderFetchLockFunc ()"><span class="type">MailProviderFetchLockFunc</span></a> lock_func</code></em>,
+                 <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchUnlockFunc" title="MailProviderFetchUnlockFunc ()"><span class="type">MailProviderFetchUnlockFunc</span></a> unlock_func</code></em>,
+                 <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchInboxFunc" title="MailProviderFetchInboxFunc ()"><span class="type">MailProviderFetchInboxFunc</span></a> fetch_inbox_func</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFilterDriver.html#CamelFilterGetFolderFunc"><span class="type">CamelFilterGetFolderFunc</span></a> get_folder</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> get_data</code></em>,
+                 <em class="parameter"><code><span class="type">CamelFilterStatusFunc</span> *status</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> status_data</code></em>,
+                 <em class="parameter"><code><span class="type">void</span> (*done) (gpointer data)</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-filter-folder"></a><h3>mail_filter_folder ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_filter_folder (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *source_folder</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *uids</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *type</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> notify</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-execute-shell-command"></a><h3>mail_execute_shell_command ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_execute_shell_command (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFilterDriver.html"><span class="type">CamelFilterDriver</span></a> *driver</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> argc</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **argv</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-tool-do-movemail"></a><h3>mail_tool_do_movemail ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+mail_tool_do_movemail (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-tool-remove-xevolution-headers"></a><h3>mail_tool_remove_xevolution_headers ()</h3>
+<pre class="programlisting">struct <a href="/usr/share/gtk-doc/html/camel/camel-camel-mime-utils.html#camel-header-raw"><span class="returnvalue">_camel_header_raw</span></a> *
+mail_tool_remove_xevolution_headers (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-tool-restore-xevolution-headers"></a><h3>mail_tool_restore_xevolution_headers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_tool_restore_xevolution_headers (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>,
+                                      <em class="parameter"><code><span class="type">struct _camel_header_raw</span> *Param2</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-tool-generate-forward-subject"></a><h3>mail_tool_generate_forward_subject ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+mail_tool_generate_forward_subject (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-tool-make-message-attachment"></a><h3>mail_tool_make_message_attachment ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+mail_tool_make_message_attachment (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgDescFunc"></a><h3>MailMsgDescFunc ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+<span class="c_punctuation">(</span>*MailMsgDescFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsg" title="struct MailMsg"><span class="type">MailMsg</span></a> *msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgExecFunc"></a><h3>MailMsgExecFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgExecFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsg" title="struct MailMsg"><span class="type">MailMsg</span></a> *msg</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgDoneFunc"></a><h3>MailMsgDoneFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgDoneFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsg" title="struct MailMsg"><span class="type">MailMsg</span></a> *msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgFreeFunc"></a><h3>MailMsgFreeFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgFreeFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsg" title="struct MailMsg"><span class="type">MailMsg</span></a> *msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgDispatchFunc"></a><h3>MailMsgDispatchFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgDispatchFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgCreateActivityFunc"></a><h3>MailMsgCreateActivityFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgCreateActivityFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgSubmitActivityFunc"></a><h3>MailMsgSubmitActivityFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgSubmitActivityFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgFreeActivityFunc"></a><h3>MailMsgFreeActivityFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgFreeActivityFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgCompleteActivityFunc"></a><h3>MailMsgCompleteActivityFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgCompleteActivityFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgCancelActivityFunc"></a><h3>MailMsgCancelActivityFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgCancelActivityFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgAlertErrorFunc"></a><h3>MailMsgAlertErrorFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*MailMsgAlertErrorFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *what</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *message</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgGetAlertSinkFunc"></a><h3>MailMsgGetAlertSinkFunc ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-util/EAlertSink.html"><span class="returnvalue">EAlertSink</span></a>
+<span class="c_punctuation">(</span>*MailMsgGetAlertSinkFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-init"></a><h3>mail_msg_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-register-activities"></a><h3>mail_msg_register_activities ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_register_activities (<em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgCreateActivityFunc" title="MailMsgCreateActivityFunc ()"><span class="type">MailMsgCreateActivityFunc</span></a> Param1</code></em>,
+                              <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgSubmitActivityFunc" title="MailMsgSubmitActivityFunc ()"><span class="type">MailMsgSubmitActivityFunc</span></a> Param2</code></em>,
+                              <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgFreeActivityFunc" title="MailMsgFreeActivityFunc ()"><span class="type">MailMsgFreeActivityFunc</span></a> Param3</code></em>,
+                              <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgCompleteActivityFunc" title="MailMsgCompleteActivityFunc ()"><span class="type">MailMsgCompleteActivityFunc</span></a> Param4</code></em>,
+                              <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgCancelActivityFunc" title="MailMsgCancelActivityFunc ()"><span class="type">MailMsgCancelActivityFunc</span></a> Param5</code></em>,
+                              <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgAlertErrorFunc" title="MailMsgAlertErrorFunc ()"><span class="type">MailMsgAlertErrorFunc</span></a> Param6</code></em>,
+                              <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgGetAlertSinkFunc" title="MailMsgGetAlertSinkFunc ()"><span class="type">MailMsgGetAlertSinkFunc</span></a> Param7</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-get-alert-sink"></a><h3>mail_msg_get_alert_sink ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-util/EAlertSink.html"><span class="returnvalue">EAlertSink</span></a> *
+mail_msg_get_alert_sink (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-new"></a><h3>mail_msg_new ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+mail_msg_new (<em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMsgInfo" title="struct MailMsgInfo"><span class="type">MailMsgInfo</span></a> *info</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-ref"></a><h3>mail_msg_ref ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+mail_msg_ref (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-unref"></a><h3>mail_msg_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_unref (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-check-error"></a><h3>mail_msg_check_error ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_check_error (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-cancel"></a><h3>mail_msg_cancel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_cancel (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> msgid</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-active"></a><h3>mail_msg_active ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+mail_msg_active (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-main-loop-push"></a><h3>mail_msg_main_loop_push ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_main_loop_push (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-unordered-push"></a><h3>mail_msg_unordered_push ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_unordered_push (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-fast-ordered-push"></a><h3>mail_msg_fast_ordered_push ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_fast_ordered_push (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-msg-slow-ordered-push"></a><h3>mail_msg_slow_ordered_push ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_msg_slow_ordered_push (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> msg</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-in-main-thread"></a><h3>mail_in_main_thread ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+mail_in_main_thread (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMainFunc"></a><h3>MailMainFunc ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<span class="c_punctuation">(</span>*MailMainFunc<span class="c_punctuation">)</span> ();</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-call-main"></a><h3>mail_call_main ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+mail_call_main (<em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#mail-call-t" title="enum mail_call_t"><span class="type">mail_call_t</span></a> type</code></em>,
+                <em class="parameter"><code><a class="link" href="evolution-mail-engine-Legacy-Utilities.html#MailMainFunc" title="MailMainFunc ()"><span class="type">MailMainFunc</span></a> func</code></em>,
+                <em class="parameter"><code>...</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="vfolder-load-storage"></a><h3>vfolder_load_storage ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+vfolder_load_storage (<em class="parameter"><code><a class="link" href="EMailSession.html" title="EMailSession"><span class="type">EMailSession</span></a> *session</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-vfolder-shutdown"></a><h3>mail_vfolder_shutdown ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mail_vfolder_shutdown (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Legacy-Utilities.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MailMsg"></a><h3>struct MailMsg</h3>
+<pre class="programlisting">struct MailMsg {
+	MailMsgInfo *info;
+	volatile gint ref_count;
+	guint seq;			/* seq number for synchronisation */
+	gint priority;			/* priority (default = 0) */
+	GCancellable *cancellable;
+	GError *error;			/* up to the caller to use this */
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MailMsgInfo"></a><h3>struct MailMsgInfo</h3>
+<pre class="programlisting">struct MailMsgInfo {
+	gsize size;
+	MailMsgDescFunc desc;
+	MailMsgExecFunc exec;
+	MailMsgDoneFunc done;
+	MailMsgFreeFunc free;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mail-call-t"></a><h3>enum mail_call_t</h3>
+<div class="refsect3">
+<a name="id-1.3.6.7.4.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="MAIL-CALL-p-p"></a>MAIL_CALL_p_p</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MAIL-CALL-p-pp"></a>MAIL_CALL_p_pp</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MAIL-CALL-p-ppp"></a>MAIL_CALL_p_ppp</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MAIL-CALL-p-pppp"></a>MAIL_CALL_p_pppp</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MAIL-CALL-p-ppppp"></a>MAIL_CALL_p_ppppp</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MAIL-CALL-p-ppippp"></a>MAIL_CALL_p_ppippp</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

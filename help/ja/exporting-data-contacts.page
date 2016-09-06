@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="exporting-data-contacts" xml:lang="ja">
+
+  <info>
+    <desc><app>Evolution</app> から連絡先のデータをエクスポートする方法です。</desc>
+
+    <link type="guide" xref="exporting-data"/>
+
+    <revision pkgversion="3.1.5" version="0.3" date="2012-02-18" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mainwindow-starting.html.en#fourth-step -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>連絡先データのエクスポート</title>
+
+<p>Contacts files are stored in a database, but can be saved as a vCard file.</p>
+<p>アドレス帳全体をエクスポートするには、<guiseq><gui>ファイル</gui><gui>アドレス帳を vCard 形式で保存</gui></guiseq>をクリックします。</p>
+<p>連絡先の中から1件だけエクスポートするには、<guiseq><gui>ファイル</gui><gui>vCard 形式で保存</gui></guiseq>をクリックするか、連絡先を右クリックして <gui>vCard 形式で保存</gui>をクリックします。</p>
+
+</page>

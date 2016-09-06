@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-getting-keys" xml:lang="ja">
+
+  <info>
+    <desc>GPG 公開鍵を取得、利用します。</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.2" date="2011-07-27" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encrypt-getting-key -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>GPG 公開鍵の取得と利用</title>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a complete rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<p>暗号化したメールを送信するには、受け取る人の公開鍵を自分の秘密鍵と組み合わせて使う必要があります。暗号化処理は Evolution が行いますが、公開鍵を取得して自分のキーリングに追加する必要があります。</p>
+
+<p>To get public keys from a public key server, enter the command <cmd>gpg --recv-keys --keyserver wwwkeys.pgp.net keyid</cmd>, substituting <code>keyid</code> by your recipient's ID. You need to enter your password, and the ID is automatically added to your keyring.</p>
+
+<p>If someone sends you a public key directly, save it as a plain text file and enter the command <cmd>gpg --import</cmd> to add it to your keyring.</p>
+</page>

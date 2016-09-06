@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-layout-appointment-display" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="calendar-layout"/>
+
+    <revision pkgversion="3.0.2" version="0.4" date="2012-02-18" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#bshpsxa
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Adja meg a naptárban az értekezletek megjelenítését.</desc>
+  </info>
+
+  <title>Értekezletek megjelenése</title>
+
+  <!-- TODO:POST-3-8: Just listing the partially busted UI options (also see
+       calendar-layout-general-formatting) here is very poor and not
+       task-oriented, but that's it for the time being. Better ideas welcome.
+       -->
+
+  <!-- TODO: Recheck once https://bugzilla.gnome.org/show_bug.cgi?id=657233 is
+       fixed, as the current UI is a huge mess. -->
+
+  <p>A naptárral kapcsolatos alábbi beállítások a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui> <gui>Naptár és feladatok</gui><gui>Megjelenítés</gui></guiseq> menüpont alatt érhetők el.</p>
+
+<section id="general">
+  <title>Általános</title>
+
+  <list>
+    <item>
+      <p>Időosztások:</p>
+      <p>Beállítja a naptár napi nézetében vékony vonalakként megjelenő időosztásokat.</p>
+    </item>
+    <item>
+      <p>Értekezlet befejező időpontjának megjelenítése hét és hónap nézetben:</p>
+      <p>Az <app>Evolution</app> minden egyes értekezlet befejező időpontját megjeleníti, ha van elég hely.</p>
+    </item>
+    <item>
+      <p>Hétvégék tömörítése hónap nézetben:</p>
+      <p>Válassza ezt a lehetőséget a hétvégék kettő helyett egy mezőben való megjelenítéséhez.</p>
+    </item>
+    <item>
+      <p>Hetek számának mutatása:</p>
+      <p>Hetek sorszámának megjelenítése a hetek mellett a naptárban.</p>
+    </item>
+    <item>
+      <p>Ismétlődő események megjelenítése dőlt betűvel a bal alsó naptárban.</p>
+    </item>
+    <item>
+      <p>Hónapnézet görgetése egy héttel</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="date-time">
+  <title>Dátum/időformátum</title>
+
+  <p>Az előnyben részesített formátum kiválasztásával megváltoztathatja a <gui>Dátum</gui> oszlop formátumát.</p>
+
+  <p>A helykitöltők a formátumkifejezésekben strftime formátumok. A formátumok teljes listájáért futtassa a <cmd>date --help</cmd> parancsot a <app>Terminál</app> alkalmazásban.</p>
+
+</section>
+
+</page>

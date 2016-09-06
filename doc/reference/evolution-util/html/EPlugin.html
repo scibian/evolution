@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EPlugin</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch15.html" title="Plugins (Legacy)">
+<link rel="prev" href="ch15.html" title="Plugins (Legacy)">
+<link rel="next" href="evolution-util-EPluginUI.html" title="EPluginUI">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EPlugin.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EPlugin.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EPlugin.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch15.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch15.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="evolution-util-EPluginUI.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EPlugin"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EPlugin.top_of_page"></a>EPlugin</span></h2>
+<p>EPlugin</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EPlugin.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-construct" title="e_plugin_construct ()">e_plugin_construct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-load-plugins" title="e_plugin_load_plugins ()">e_plugin_load_plugins</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-list-plugins" title="e_plugin_list_plugins ()">e_plugin_list_plugins</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-get-symbol" title="e_plugin_get_symbol ()">e_plugin_get_symbol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-invoke" title="e_plugin_invoke ()">e_plugin_invoke</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-enable" title="e_plugin_enable ()">e_plugin_enable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-get-configure-widget" title="e_plugin_get_configure_widget ()">e_plugin_get_configure_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-xml-prop" title="e_plugin_xml_prop ()">e_plugin_xml_prop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-xml-prop-domain" title="e_plugin_xml_prop_domain ()">e_plugin_xml_prop_domain</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-xml-int" title="e_plugin_xml_int ()">e_plugin_xml_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-xml-content" title="e_plugin_xml_content ()">e_plugin_xml_content</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-xml-content-domain" title="e_plugin_xml_content_domain ()">e_plugin_xml_content_domain</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EPlugin.html#EPluginHook"><span class="returnvalue">EPluginHook</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-hook-new" title="e_plugin_hook_new ()">e_plugin_hook_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-hook-enable" title="e_plugin_hook_enable ()">e_plugin_hook_enable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-hook-mask" title="e_plugin_hook_mask ()">e_plugin_hook_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="EPlugin.html#e-plugin-hook-id" title="e_plugin_hook_id ()">e_plugin_hook_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EPlugin.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EPlugin.html#EPlugin--enabled" title="The “enabled” property">enabled</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<a name="EPluginHook"></a><div class="refsect1">
+<a name="EPlugin.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EPlugin.html#E-PLUGIN-CLASSID:CAPS" title="E_PLUGIN_CLASSID">E_PLUGIN_CLASSID</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EPlugin.html#EPluginAuthor" title="struct EPluginAuthor">EPluginAuthor</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EPlugin.html#EPluginFlags" title="enum EPluginFlags">EPluginFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EPlugin.html#EPlugin-struct" title="struct EPlugin">EPlugin</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EPlugin.html#EPluginHook-struct" title="struct EPluginHook">EPluginHook</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EPlugin.html#EPluginHookTargetMap" title="struct EPluginHookTargetMap">EPluginHookTargetMap</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EPlugin.html#EPluginHookTargetKey" title="struct EPluginHookTargetKey">EPluginHookTargetKey</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EPlugin.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">├──</span> EPlugin
+    <span class="lineart">╰──</span> EPluginHook
+        <span class="lineart">├──</span> <a class="link" href="EConfig.html#EConfigHook">EConfigHook</a>
+        <span class="lineart">├──</span> <a class="link" href="EEvent.html#EEventHook">EEventHook</a>
+        <span class="lineart">├──</span> <a class="link" href="EImport.html#EImportHook">EImportHook</a>
+        <span class="lineart">╰──</span> <a class="link" href="evolution-util-EPluginUI.html#EPluginUIHook">EPluginUIHook</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="EPlugin.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EPlugin.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-plugin-construct"></a><h3>e_plugin_construct ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_plugin_construct (<em class="parameter"><code><a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a> *plugin</code></em>,
+                    <em class="parameter"><code><span class="type">xmlNodePtr</span> root</code></em>);</pre>
+<p>Helper to invoke the construct virtual method.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>root</p></td>
+<td class="parameter_description"><p>The XML root node of the sub-tree containing the plugin
+definition.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.2.9.2.6"></a><h4>Returns</h4>
+<p> The return from the construct virtual method.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-load-plugins"></a><h3>e_plugin_load_plugins ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_plugin_load_plugins (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Scan the search path, looking for plugin definitions, and load them
+into memory.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.3.5"></a><h4>Returns</h4>
+<p> Returns -1 if an error occurred.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-list-plugins"></a><h3>e_plugin_list_plugins ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+e_plugin_list_plugins (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-get-symbol"></a><h3>e_plugin_get_symbol ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_plugin_get_symbol (<em class="parameter"><code><a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a> *plugin</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Helper to fetch a symbol name from a plugin.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the symbol to fetch. The format of this name
+will depend on the EPlugin type and its language conventions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.2.9.5.6"></a><h4>Returns</h4>
+<p> the symbol value, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-invoke"></a><h3>e_plugin_invoke ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_plugin_invoke (<em class="parameter"><code><a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a> *plugin</code></em>,
+                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Helper to invoke the invoke virtual method.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the function to invoke. The format of this name
+will depend on the EPlugin type and its language conventions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>The argument to the function. Its actual type depends on
+the hook on which the function resides. It is up to the called
+function to get this right.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.2.9.6.6"></a><h4>Returns</h4>
+<p> The return of the plugin invocation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-enable"></a><h3>e_plugin_enable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_plugin_enable (<em class="parameter"><code><a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a> *plugin</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> state</code></em>);</pre>
+<p>Set the enable state of a plugin.</p>
+<p>THIS IS NOT FULLY IMPLEMENTED YET</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-get-configure-widget"></a><h3>e_plugin_get_configure_widget ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_plugin_get_configure_widget (<em class="parameter"><code><a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a> *plugin</code></em>);</pre>
+<p>Plugin itself should have implemented "e_plugin_lib_get_configure_widget"
+function * of prototype EPluginLibGetConfigureWidgetFunc.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.2.9.8.6"></a><h4>Returns</h4>
+<p> Configure widget or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-xml-prop"></a><h3>e_plugin_xml_prop ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_plugin_xml_prop (<em class="parameter"><code><span class="type">xmlNodePtr</span> node</code></em>,
+                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>A static helper function to look up a property on an XML node, and
+ensure it is allocated in GLib system memory.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>An XML node.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>The name of the property to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.2.9.9.6"></a><h4>Returns</h4>
+<p> The property, allocated in GLib memory, or NULL if no
+such property exists.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-xml-prop-domain"></a><h3>e_plugin_xml_prop_domain ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_plugin_xml_prop_domain (<em class="parameter"><code><span class="type">xmlNodePtr</span> node</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *domain</code></em>);</pre>
+<p>A static helper function to look up a property on an XML node, and
+translate it based on <em class="parameter"><code>domain</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>An XML node.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>The name of the property to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>domain</p></td>
+<td class="parameter_description"><p>The translation domain for this string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.2.9.10.6"></a><h4>Returns</h4>
+<p> The property, allocated in GLib memory, or NULL if no
+such property exists.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-xml-int"></a><h3>e_plugin_xml_int ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_plugin_xml_int (<em class="parameter"><code><span class="type">xmlNodePtr</span> node</code></em>,
+                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> def</code></em>);</pre>
+<p>A static helper function to look up a property on an XML node as an
+integer.  If the property doesn't exist, then <em class="parameter"><code>def</code></em>
+ is returned as a
+default value instead.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>An XML node.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>The name of the property to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>def</p></td>
+<td class="parameter_description"><p>A default value if the property doesn't exist.  Can be used
+to determine if the property isn't set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.2.9.11.6"></a><h4>Returns</h4>
+<p> The value if set, or <em class="parameter"><code>def</code></em>
+if not.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-xml-content"></a><h3>e_plugin_xml_content ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_plugin_xml_content (<em class="parameter"><code><span class="type">xmlNodePtr</span> node</code></em>);</pre>
+<p>A static helper function to retrieve the entire textual content of
+an XML node, and ensure it is allocated in GLib system memory.  If
+GLib isn't using the system malloc them it must copy the content.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.12.5"></a><h4>Returns</h4>
+<p> The node content, allocated in GLib memory.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-xml-content-domain"></a><h3>e_plugin_xml_content_domain ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_plugin_xml_content_domain (<em class="parameter"><code><span class="type">xmlNodePtr</span> node</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *domain</code></em>);</pre>
+<p>A static helper function to retrieve the entire textual content of
+an XML node, and ensure it is allocated in GLib system memory.  If
+GLib isn't using the system malloc them it must copy the content.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.13.5"></a><h4>Returns</h4>
+<p> The node content, allocated in GLib memory.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-hook-new"></a><h3>e_plugin_hook_new ()</h3>
+<pre class="programlisting"><a class="link" href="EPlugin.html#EPluginHook"><span class="returnvalue">EPluginHook</span></a> *
+e_plugin_hook_new (<em class="parameter"><code><a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a> *plugin</code></em>,
+                   <em class="parameter"><code><span class="type">xmlNodePtr</span> root</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-hook-enable"></a><h3>e_plugin_hook_enable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_plugin_hook_enable (<em class="parameter"><code><a class="link" href="EPlugin.html#EPluginHook"><span class="type">EPluginHook</span></a> *plugin_hook</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> state</code></em>);</pre>
+<p>Set the enabled state of the plugin hook.  This is called by the
+plugin code.</p>
+<p>THIS IS NOT FULY IMEPLEMENTED YET</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-hook-mask"></a><h3>e_plugin_hook_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint32</span>
+e_plugin_hook_mask (<em class="parameter"><code><span class="type">xmlNodePtr</span> root</code></em>,
+                    <em class="parameter"><code>const <a class="link" href="EPlugin.html#EPluginHookTargetKey" title="struct EPluginHookTargetKey"><span class="type">EPluginHookTargetKey</span></a> *map</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prop</code></em>);</pre>
+<p>This is a static helper function which looks up a property <em class="parameter"><code>prop</code></em>
+ on
+the XML node <em class="parameter"><code>root</code></em>
+, and then uses the <em class="parameter"><code>map</code></em>
+ table to convert it into
+a bitmask.  The property value is a comma separated list of
+enumeration strings which are indexed into the <em class="parameter"><code>map</code></em>
+ table.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>root</p></td>
+<td class="parameter_description"><p>An XML node.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>map</p></td>
+<td class="parameter_description"><p>A zero-fill terminated array of EPluginHookTargeKeys used to
+map a string with a bit value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prop</p></td>
+<td class="parameter_description"><p>The property name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.2.9.16.6"></a><h4>Returns</h4>
+<p> A bitmask representing the inclusive-or of all of the
+integer values of the corresponding string id's stored in the <em class="parameter"><code>map</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-plugin-hook-id"></a><h3>e_plugin_hook_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint32</span>
+e_plugin_hook_id (<em class="parameter"><code><span class="type">xmlNodePtr</span> root</code></em>,
+                  <em class="parameter"><code>const <a class="link" href="EPlugin.html#EPluginHookTargetKey" title="struct EPluginHookTargetKey"><span class="type">EPluginHookTargetKey</span></a> *map</code></em>,
+                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prop</code></em>);</pre>
+<p>This is a static helper function which looks up a property <em class="parameter"><code>prop</code></em>
+ on
+the XML node <em class="parameter"><code>root</code></em>
+, and then uses the <em class="parameter"><code>map</code></em>
+ table to convert it into
+an integer.</p>
+<p>This is used as a helper wherever you need to represent an
+enumerated value in the XML.</p>
+<div class="refsect3">
+<a name="id-1.16.2.9.17.6"></a><h4>Returns</h4>
+<p> If the <em class="parameter"><code>prop</code></em>
+value is in <em class="parameter"><code>map</code></em>
+, then the corresponding
+integer value, if not, then ~0.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EPlugin.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="E-PLUGIN-CLASSID:CAPS"></a><h3>E_PLUGIN_CLASSID</h3>
+<pre class="programlisting">#define E_PLUGIN_CLASSID "org.gnome.evolution.plugin"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EPluginAuthor"></a><h3>struct EPluginAuthor</h3>
+<pre class="programlisting">struct EPluginAuthor {
+	gchar *name;
+	gchar *email;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EPluginFlags"></a><h3>enum EPluginFlags</h3>
+<div class="refsect3">
+<a name="id-1.16.2.10.4.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="enum_member_name"><p><a name="E-PLUGIN-FLAGS-SYSTEM-PLUGIN:CAPS"></a>E_PLUGIN_FLAGS_SYSTEM_PLUGIN</p></td>
+<td> </td>
+<td> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EPlugin-struct"></a><h3>struct EPlugin</h3>
+<pre class="programlisting">struct EPlugin;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EPluginHook-struct"></a><h3>struct EPluginHook</h3>
+<pre class="programlisting">struct EPluginHook;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EPluginHookTargetMap"></a><h3>struct EPluginHookTargetMap</h3>
+<pre class="programlisting">struct EPluginHookTargetMap {
+	const gchar *type;
+	gint id;
+	const EPluginHookTargetKey *mask_bits; /* null terminated array */
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EPluginHookTargetKey"></a><h3>struct EPluginHookTargetKey</h3>
+<pre class="programlisting">struct EPluginHookTargetKey {
+	const gchar *key;
+	guint32 value;
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EPlugin.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EPlugin--enabled"></a><h3>The <code class="literal">“enabled”</code> property</h3>
+<pre class="programlisting">  “enabled”                  <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the plugin is enabled.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

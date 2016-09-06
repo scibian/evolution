@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-moving-emails" xml:lang="el">
+
+  <info>
+    <desc>Μεταφορά μηνυμάτων από έναν φάκελο σε έναν άλλο.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="3.8.2" version="0.3" date="2013-05-14" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Μεταφερμένα μηνύματα εμφανίζονται ακόμα στον αρχικό φάκελο</title>
+
+<p>Αν ο διακομιστής αλληλογραφίας IMAP δεν υποστηρίζει ακόμα <link href="http://tools.ietf.org/html/rfc6851">το γνώρισμα "μετακίνηση" του IMAP</link> που εισήχθη τον Ιανουάριο του 2013, το Evolution "μετακινεί" τα μηνύματα με αντιγραφή και διαγραφή των μηνυμάτων. Διαγραφή σημαίνει "σημείωση μηνυμάτων για διαγραφή", έτσι όλα τα αρχικά μηνύματα διατηρούνται μέχρι να εξαλειφθούν τα σημειωμένα μηνύματα για διαγραφή.</p>
+
+<p>Δείτε το θέμα στο <link xref="mail-delete-and-undelete">διαγραφή μηνυμάτων</link> για οδηγίες εξάλειψης μηνυμάτων αλληλογραφίας. Σημειώστε ότι αυτό εφαρμόζεται και σε άλλους τύπους λογαριασμών επίσης.</p>
+
+</page>

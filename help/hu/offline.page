@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="offline" xml:lang="hu">
+
+  <info>
+    <desc>Az Evolution levelező visszaállítása online módba.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+    <link type="seealso" xref="mail-working-offline"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Brian Grohe</name>
+      <email its:translate="no">grohe43@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+<title>Miért van az Evolution levelező kapcsolat nélküli módban, ha van internetkapcsolat?</title>
+<p>Lehet, hogy az Evolutiont a <cmd>--offline</cmd> parancssori kapcsolóval indította a kapcsolat nélküli mód kikényszerítéséhez.</p>
+
+<p>Ha nem ezt tette, és az Evolution normális működése során hirtelen nem csatlakozik a postafiókjaihoz, akkor lehet, hogy véletlenül rákattintott a bal alsó sarokban lévő ikonra. A hálózathoz csatlakozva ez az ikon csatlakoztatott dugaljakhoz hasonlít. Ha a dugaljak nincsenek összekapcsolva, akkor nincs kapcsolat a postafiókjaihoz (és a <gui style="button">Küldés / Fogadás</gui> gomb is ki van szürkítve). Kattintson az ikonra az állapotának megváltoztatásához.</p>
+
+<p>Ha a probléma továbbra is fennáll, és biztosan nem kattintott az ikonra, de más alkalmazásokból (böngésző, FTP, SSH, ping stb.) eléri a hálózatot, akkor lehet, hogy a hálózati kapcsolat van rosszul beállítva. További információkért nézze meg az <link xref="help:gnome-help/net-problem" href="https://help.gnome.org/users/gnome-help/stable/net-problem">asztali környezet súgóját</link>, vagy keresse fel a disztribúciója támogatási fórumait vagy levelezőlistáit.</p>
+
+<note style="warning"><p>Az Evolution kényszerített kapcsolat nélküli módja csak a levelezésre vonatkozik, és nem érvényes a névjegyekre és naptárakra.</p></note>
+
+</page>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="deleting-appointments" xml:lang="hu">
+
+  <info>
+    <desc>Naptárbejegyzések törlése a postafiók méretének csökkentéséhez.</desc>
+    
+    <link type="guide" xref="deleting-to-free-disk-space"/>
+
+    <revision pkgversion="2.32.2" version="0.1" date="2011-07-21" status="candidate"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Régi találkozók végleges törlése</title>
+
+<p>Egy naptár régi bejegyzéseinek törléséhez válassza a <guiseq><gui>Műveletek</gui><gui>Tisztítás</gui></guiseq> menüpontot a Naptár nézetben. A program rákérdez, hogy milyen régi bejegyzéseket távolítson el. A művelet az aktuálisan nyitott (a bal oldali naptárlistában kiválasztott) naptárra lesz végrehajtva, a többi naptárt nem befolyásolja.</p>
+
+</page>

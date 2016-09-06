@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EAlert</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch03.html" title="Alerts">
+<link rel="prev" href="ch03.html" title="Alerts">
+<link rel="next" href="EAlertBar.html" title="EAlertBar">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EAlert.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EAlert.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EAlert.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EAlert.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch03.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EAlertBar.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EAlert"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EAlert.top_of_page"></a>EAlert</span></h2>
+<p>EAlert</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EAlert.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EAlert.html" title="EAlert"><span class="returnvalue">EAlert</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-new" title="e_alert_new ()">e_alert_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EAlert.html" title="EAlert"><span class="returnvalue">EAlert</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-new-valist" title="e_alert_new_valist ()">e_alert_new_valist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EAlert.html" title="EAlert"><span class="returnvalue">EAlert</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-new-array" title="e_alert_new_array ()">e_alert_new_array</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-get-default-response" title="e_alert_get_default_response ()">e_alert_get_default_response</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-set-default-response" title="e_alert_set_default_response ()">e_alert_set_default_response</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html#GtkMessageType"><span class="returnvalue">GtkMessageType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-get-message-type" title="e_alert_get_message_type ()">e_alert_get_message_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-set-message-type" title="e_alert_set_message_type ()">e_alert_set_message_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-get-primary-text" title="e_alert_get_primary_text ()">e_alert_get_primary_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-set-primary-text" title="e_alert_set_primary_text ()">e_alert_set_primary_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-get-secondary-text" title="e_alert_get_secondary_text ()">e_alert_get_secondary_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-set-secondary-text" title="e_alert_set_secondary_text ()">e_alert_set_secondary_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-get-icon-name" title="e_alert_get_icon_name ()">e_alert_get_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-add-action" title="e_alert_add_action ()">e_alert_add_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-peek-actions" title="e_alert_peek_actions ()">e_alert_peek_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-create-image" title="e_alert_create_image ()">e_alert_create_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-response" title="e_alert_response ()">e_alert_response</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-start-timer" title="e_alert_start_timer ()">e_alert_start_timer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-submit" title="e_alert_submit ()">e_alert_submit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAlert.html#e-alert-submit-valist" title="e_alert_submit_valist ()">e_alert_submit_valist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAlert.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *</td>
+<td class="property_name"><a class="link" href="EAlert.html#EAlert--args" title="The “args” property">args</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html#GtkMessageType"><span class="type">GtkMessageType</span></a></td>
+<td class="property_name"><a class="link" href="EAlert.html#EAlert--message-type" title="The “message-type” property">message-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EAlert.html#EAlert--primary-text" title="The “primary-text” property">primary-text</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EAlert.html#EAlert--secondary-text" title="The “secondary-text” property">secondary-text</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EAlert.html#EAlert--tag" title="The “tag” property">tag</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAlert.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EAlert.html#EAlert-response" title="The “response” signal">response</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAlert.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EAlert.html#E-ALERT-ASK-FILE-EXISTS-OVERWRITE:CAPS" title="E_ALERT_ASK_FILE_EXISTS_OVERWRITE">E_ALERT_ASK_FILE_EXISTS_OVERWRITE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EAlert.html#E-ALERT-NO-SAVE-FILE:CAPS" title="E_ALERT_NO_SAVE_FILE">E_ALERT_NO_SAVE_FILE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EAlert.html#E-ALERT-NO-LOAD-FILE:CAPS" title="E_ALERT_NO_LOAD_FILE">E_ALERT_NO_LOAD_FILE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EAlert.html#EAlert-struct" title="struct EAlert">EAlert</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAlert.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EAlert
+</pre>
+</div>
+<div class="refsect1">
+<a name="EAlert.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EAlert.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-alert-new"></a><h3>e_alert_new ()</h3>
+<pre class="programlisting"><a class="link" href="EAlert.html" title="EAlert"><span class="returnvalue">EAlert</span></a> *
+e_alert_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tag</code></em>,
+             <em class="parameter"><code>...</code></em>);</pre>
+<p>Creates a new EAlert.  The <em class="parameter"><code>tag</code></em>
+ argument is used to determine
+which alert to use, it is in the format domain:alert-id.  The NULL
+terminated list of arguments is used to fill out the alert definition.</p>
+<div class="refsect3">
+<a name="id-1.4.2.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tag</p></td>
+<td class="parameter_description"><p>alert identifier</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated argument list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.9.2.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-new-valist"></a><h3>e_alert_new_valist ()</h3>
+<pre class="programlisting"><a class="link" href="EAlert.html" title="EAlert"><span class="returnvalue">EAlert</span></a> *
+e_alert_new_valist (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tag</code></em>,
+                    <em class="parameter"><code><span class="type">va_list</span> va</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-new-array"></a><h3>e_alert_new_array ()</h3>
+<pre class="programlisting"><a class="link" href="EAlert.html" title="EAlert"><span class="returnvalue">EAlert</span></a> *
+e_alert_new_array (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tag</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *args</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-get-default-response"></a><h3>e_alert_get_default_response ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_alert_get_default_response (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-set-default-response"></a><h3>e_alert_set_default_response ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_set_default_response (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> response_id</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-get-message-type"></a><h3>e_alert_get_message_type ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html#GtkMessageType"><span class="returnvalue">GtkMessageType</span></a>
+e_alert_get_message_type (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-set-message-type"></a><h3>e_alert_set_message_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_set_message_type (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>,
+                          <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html#GtkMessageType"><span class="type">GtkMessageType</span></a> message_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-get-primary-text"></a><h3>e_alert_get_primary_text ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_alert_get_primary_text (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-set-primary-text"></a><h3>e_alert_set_primary_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_set_primary_text (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-get-secondary-text"></a><h3>e_alert_get_secondary_text ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_alert_get_secondary_text (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-set-secondary-text"></a><h3>e_alert_set_secondary_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_set_secondary_text (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *secondary_text</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-get-icon-name"></a><h3>e_alert_get_icon_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_alert_get_icon_name (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-add-action"></a><h3>e_alert_add_action ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_add_action (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *action</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> response_id</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-peek-actions"></a><h3>e_alert_peek_actions ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_alert_peek_actions (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-create-image"></a><h3>e_alert_create_image ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_alert_create_image (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>,
+                      <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Themeable-Stock-Images.html#GtkIconSize"><span class="type">GtkIconSize</span></a> size</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-response"></a><h3>e_alert_response ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_response (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> response_id</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-start-timer"></a><h3>e_alert_start_timer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_start_timer (<em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> *alert</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> seconds</code></em>);</pre>
+<p>Starts an internal timer for <em class="parameter"><code>alert</code></em>
+.  When the timer expires, <em class="parameter"><code>alert</code></em>
+
+will emit the default response.  There is only one timer per <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a>,
+so calling this function repeatedly on the same <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> will restart
+its timer each time.  If <em class="parameter"><code>seconds</code></em>
+ is zero, the timer is cancelled and
+no response will be emitted.</p>
+<div class="refsect3">
+<a name="id-1.4.2.9.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>alert</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>seconds</p></td>
+<td class="parameter_description"><p>seconds until timeout occurs</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-submit"></a><h3>e_alert_submit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_submit (<em class="parameter"><code><span class="type">struct _EAlertSink</span> *alert_sink</code></em>,
+                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tag</code></em>,
+                <em class="parameter"><code>...</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-alert-submit-valist"></a><h3>e_alert_submit_valist ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_alert_submit_valist (<em class="parameter"><code><span class="type">struct _EAlertSink</span> *alert_sink</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tag</code></em>,
+                       <em class="parameter"><code><span class="type">va_list</span> va</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAlert.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="E-ALERT-ASK-FILE-EXISTS-OVERWRITE:CAPS"></a><h3>E_ALERT_ASK_FILE_EXISTS_OVERWRITE</h3>
+<pre class="programlisting">#define             E_ALERT_ASK_FILE_EXISTS_OVERWRITE</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-ALERT-NO-SAVE-FILE:CAPS"></a><h3>E_ALERT_NO_SAVE_FILE</h3>
+<pre class="programlisting">#define E_ALERT_NO_SAVE_FILE "system:no-save-file"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-ALERT-NO-LOAD-FILE:CAPS"></a><h3>E_ALERT_NO_LOAD_FILE</h3>
+<pre class="programlisting">#define E_ALERT_NO_LOAD_FILE "system:no-save-file"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAlert-struct"></a><h3>struct EAlert</h3>
+<pre class="programlisting">struct EAlert;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAlert.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EAlert--args"></a><h3>The <code class="literal">“args”</code> property</h3>
+<pre class="programlisting">  “args”                     <a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *</pre>
+<p>Arguments for formatting the alert.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAlert--message-type"></a><h3>The <code class="literal">“message-type”</code> property</h3>
+<pre class="programlisting">  “message-type”             <a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html#GtkMessageType"><span class="type">GtkMessageType</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: GTK_MESSAGE_ERROR</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAlert--primary-text"></a><h3>The <code class="literal">“primary-text”</code> property</h3>
+<pre class="programlisting">  “primary-text”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAlert--secondary-text"></a><h3>The <code class="literal">“secondary-text”</code> property</h3>
+<pre class="programlisting">  “secondary-text”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAlert--tag"></a><h3>The <code class="literal">“tag”</code> property</h3>
+<pre class="programlisting">  “tag”                      <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>A tag describing the alert.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: ""</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAlert.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EAlert-response"></a><h3>The <code class="literal">“response”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a>  *ealert,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>     arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

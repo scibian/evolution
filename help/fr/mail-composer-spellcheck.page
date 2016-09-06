@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="mail-composer-spellcheck" xml:lang="fr">
+
+  <info>
+    <desc>À propos de la vérification orthographique de votre courriel dans l'éditeur de messages.</desc>
+    
+    <link type="guide" xref="index#mail-composing"/>
+
+    <revision pkgversion="3.5.1" version="0.6" date="2012-04-25" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Correction orthographique</title>
+
+<!-- Instructions are only valid from Evolution 2.24 on -->
+
+<section id="required-packages">
+<title>Prérequis</title>
+<p>Pour utiliser la vérification orthographique pour les courriels que vous envoyez, vous devez d'abord vous assurer que le paquet <sys>hunspell</sys> spécifique à votre langue et le paquet <sys>enchant</sys> sont installés en utilisant l'outil de gestion de logiciels de votre distribution.</p>
+
+<note style="info package">
+  <p>Il se peut que vous ayez à installer <sys>hunspell</sys> et/ou <sys>enchant</sys> pour suivre ces instructions.</p>
+    <if:choose xmlns:if="http://projectmallard.org/if/1.0/">
+      <if:when test="action:install">
+      <p><link action="install:hunspell" href="http://hunspell.sourceforge.net/" style="button">Installer hunspell</link></p>
+      <p><link action="install:enchant" href="http://www.abisource.com/projects/enchant/" style="button">Installer enchant</link></p>
+    </if:when>
+  </if:choose>
+</note>
+</section>
+
+<section id="global-preferences">
+<title>Préférences globales</title>
+
+<p>Sous <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Préférences de l'éditeur</gui><gui>Correction orthographique</gui><gui>Options</gui></guiseq>, vous pouvez définir si la vérification est réalisée pendant la frappe et quelle est la couleur utilisée pour souligner les mots incorrects.</p>
+
+<p>Vous pouvez aussi définir quelles langues installées sont utilisées pour la vérification orthographique dans la liste disponible sous <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Préférences de l'éditeur</gui><gui>Correction orthographique</gui><gui>Langues</gui></guiseq>.</p>
+</section>
+
+<section id="composer">
+<title>Correction orthographique manuelle dans l'éditeur</title>
+<p>Si vous n'avez pas activé <gui>Vérifier l'orthographe pendant la frappe</gui> dans le <link xref="#global-preferences">Préférences de l'éditeur</link>, vous pouvez lancer le correcteur orthographique dans l'éditeur de courriel en cliquant sur <guiseq><gui>Édition</gui><gui>Vérifier l'orthographe</gui></guiseq> ou en pressant sur la touche <key>F7</key>.</p>
+</section>
+
+</page>

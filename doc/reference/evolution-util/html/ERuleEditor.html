@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ERuleEditor</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch07.html" title="Filtering and Searching">
+<link rel="prev" href="ERuleContext.html" title="ERuleContext">
+<link rel="next" href="EFilterRule.html" title="EFilterRule">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ERuleEditor.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ERuleEditor.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#ERuleEditor.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch07.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ERuleContext.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EFilterRule.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ERuleEditor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ERuleEditor.top_of_page"></a>ERuleEditor</span></h2>
+<p>ERuleEditor</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ERuleEditor.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ERuleEditor.html" title="ERuleEditor"><span class="returnvalue">ERuleEditor</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleEditor.html#e-rule-editor-new" title="e_rule_editor_new ()">e_rule_editor_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleEditor.html#e-rule-editor-construct" title="e_rule_editor_construct ()">e_rule_editor_construct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleEditor.html#e-rule-editor-set-source" title="e_rule_editor_set_source ()">e_rule_editor_set_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleEditor.html#e-rule-editor-set-sensitive" title="e_rule_editor_set_sensitive ()">e_rule_editor_set_sensitive</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleEditor.html#e-rule-editor-create-rule" title="e_rule_editor_create_rule ()">e_rule_editor_create_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ERuleEditor.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ERuleEditor.html#ERuleEditor-struct" title="struct ERuleEditor">ERuleEditor</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ERuleEditor.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkBin.html">GtkBin</a>
+                    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWindow.html">GtkWindow</a>
+                        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkDialog.html">GtkDialog</a>
+                            <span class="lineart">╰──</span> ERuleEditor
+</pre>
+</div>
+<div class="refsect1">
+<a name="ERuleEditor.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ERuleEditor implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a> and  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ERuleEditor.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ERuleEditor.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-rule-editor-new"></a><h3>e_rule_editor_new ()</h3>
+<pre class="programlisting"><a class="link" href="ERuleEditor.html" title="ERuleEditor"><span class="returnvalue">ERuleEditor</span></a> *
+e_rule_editor_new (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>,
+                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-editor-construct"></a><h3>e_rule_editor_construct ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_editor_construct (<em class="parameter"><code><a class="link" href="ERuleEditor.html" title="ERuleEditor"><span class="type">ERuleEditor</span></a> *editor</code></em>,
+                         <em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                         <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="type">GtkBuilder</span></a> *builder</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-editor-set-source"></a><h3>e_rule_editor_set_source ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_editor_set_source (<em class="parameter"><code><a class="link" href="ERuleEditor.html" title="ERuleEditor"><span class="type">ERuleEditor</span></a> *editor</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-editor-set-sensitive"></a><h3>e_rule_editor_set_sensitive ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_editor_set_sensitive (<em class="parameter"><code><a class="link" href="ERuleEditor.html" title="ERuleEditor"><span class="type">ERuleEditor</span></a> *editor</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-editor-create-rule"></a><h3>e_rule_editor_create_rule ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+e_rule_editor_create_rule (<em class="parameter"><code><a class="link" href="ERuleEditor.html" title="ERuleEditor"><span class="type">ERuleEditor</span></a> *editor</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ERuleEditor.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ERuleEditor-struct"></a><h3>struct ERuleEditor</h3>
+<pre class="programlisting">struct ERuleEditor;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

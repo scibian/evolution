@@ -1,0 +1,741 @@
+/*
+ * e-mail-send-account-override.c
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *
+ *
+ * Copyright (C) 2013 Red Hat, Inc. (www.redhat.com)
+ *
+ */
+
+#include "e-mail-send-account-override.h"
+
+#include <config.h>
+#include <string.h>
+
+#include <libedataserver/libedataserver.h>
+
+#define E_MAIL_SEND_ACCOUNT_OVERRIDE_GET_PRIVATE(obj) \
+	(G_TYPE_INSTANCE_GET_PRIVATE \
+	((obj), E_TYPE_MAIL_SEND_ACCOUNT_OVERRIDE, EMailSendAccountOverridePrivate))
+
+#define FOLDERS_SECTION		"Folders"
+#define RECIPIENTS_SECTION	"Recipients"
+#define OPTIONS_SECTION		"Options"
+
+#define OPTION_PREFER_FOLDER	"PreferFolder"
+
+struct _EMailSendAccountOverridePrivate {
+	GKeyFile *key_file;
+	gchar *config_filename;
+	gboolean prefer_folder;
+
+	gboolean need_save;
+	guint save_frozen;
+
+	GMutex property_lock;
+};
+
+enum {
+	PROP_0,
+	PROP_PREFER_FOLDER
+};
+
+enum {
+	CHANGED,
+	LAST_SIGNAL
+};
+
+static guint signals[LAST_SIGNAL];
+
+G_DEFINE_TYPE (
+	EMailSendAccountOverride,
+	e_mail_send_account_override,
+	G_TYPE_OBJECT)
+
+static gboolean
+e_mail_send_account_override_save_locked (EMailSendAccountOverride *override)
+{
+	gchar *contents;
+	GError *error = NULL;
+
+	g_return_val_if_fail (override->priv->key_file != NULL, FALSE);
+
+	override->priv->need_save = FALSE;
+
+	if (override->priv->config_filename == NULL)
+		return FALSE;
+
+	contents = g_key_file_to_data (override->priv->key_file, NULL, NULL);
+	if (contents == NULL)
+		return FALSE;
+
+	g_file_set_contents (
+		override->priv->config_filename, contents, -1, &error);
+
+	if (error != NULL) {
+		g_warning ("%s: %s", G_STRFUNC, error->message);
+		g_clear_error (&error);
+	}
+
+	g_free (contents);
+
+	return TRUE;
+}
+
+static gboolean
+e_mail_send_account_override_maybe_save_locked (EMailSendAccountOverride *override)
+{
+	if (override->priv->save_frozen > 0) {
+		override->priv->need_save = TRUE;
+		return FALSE;
+	}
+
+	return e_mail_send_account_override_save_locked (override);
+}
+
+static gchar *
+get_override_for_folder_uri_locked (EMailSendAccountOverride *override,
+                                    const gchar *folder_uri)
+{
+	gchar *account_uid;
+
+	if (folder_uri == NULL || *folder_uri == '\0')
+		return NULL;
+
+	account_uid = g_key_file_get_string (
+		override->priv->key_file, FOLDERS_SECTION, folder_uri, NULL);
+
+	if (account_uid != NULL)
+		g_strchomp (account_uid);
+
+	if (account_uid != NULL && *account_uid == '\0') {
+		g_free (account_uid);
+		account_uid = NULL;
+	}
+
+	return account_uid;
+}
+
+static gchar *
+test_one_recipient (gchar **keys,
+                    GPtrArray *values,
+                    const gchar *name,
+                    const gchar *address)
+{
+	gint ii;
+
+	g_return_val_if_fail (keys != NULL, NULL);
+	g_return_val_if_fail (values != NULL, NULL);
+
+	if (name != NULL && *name == '\0')
+		name = NULL;
+
+	if (address != NULL && *address == '\0')
+		address = NULL;
+
+	if (name == NULL && address == NULL)
+		return NULL;
+
+	for (ii = 0; keys[ii] && ii < values->len; ii++) {
+		if (name != NULL && e_util_utf8_strstrcase (name, keys[ii]) != NULL) {
+			return g_strdup (values->pdata[ii]);
+		}
+
+		if (address != NULL && e_util_utf8_strstrcase (address, keys[ii]) != NULL) {
+			return g_strdup (values->pdata[ii]);
+		}
+	}
+
+	return NULL;
+}
+
+static gchar *
+get_override_for_recipients_locked (EMailSendAccountOverride *override,
+                                    CamelAddress *recipients)
+{
+	CamelInternetAddress *iaddress;
+	gchar *account_uid = NULL;
+	GPtrArray *values;
+	gchar **keys;
+	gint ii, len;
+
+	if (!CAMEL_IS_INTERNET_ADDRESS (recipients))
+		return NULL;
+
+	keys = g_key_file_get_keys (
+		override->priv->key_file, RECIPIENTS_SECTION, NULL, NULL);
+	if (keys == NULL)
+		return NULL;
+
+	values = g_ptr_array_new_full (g_strv_length (keys), g_free);
+	for (ii = 0; keys[ii]; ii++) {
+		g_ptr_array_add (
+			values,
+			g_key_file_get_string (
+				override->priv->key_file,
+				RECIPIENTS_SECTION, keys[ii], NULL));
+	}
+
+	iaddress = CAMEL_INTERNET_ADDRESS (recipients);
+	len = camel_address_length (recipients);
+	for (ii = 0; ii < len; ii++) {
+		const gchar *name, *address;
+
+		if (camel_internet_address_get (iaddress, ii, &name, &address)) {
+			account_uid = test_one_recipient (keys, values, name, address);
+
+			if (account_uid != NULL)
+				g_strchomp (account_uid);
+
+			if (account_uid != NULL && *account_uid == '\0') {
+				g_free (account_uid);
+				account_uid = NULL;
+			}
+
+			if (account_uid != NULL)
+				break;
+		}
+	}
+
+	g_ptr_array_free (values, TRUE);
+	g_strfreev (keys);
+
+	return account_uid;
+}
+
+static void
+list_overrides_section_for_account_locked (EMailSendAccountOverride *override,
+                                           const gchar *account_uid,
+                                           const gchar *section,
+                                           GList **overrides)
+{
+	gchar **keys;
+
+	g_return_if_fail (account_uid != NULL);
+	g_return_if_fail (section != NULL);
+
+	if (overrides == NULL)
+		return;
+
+	*overrides = NULL;
+
+	keys = g_key_file_get_keys (
+		override->priv->key_file, section, NULL, NULL);
+	if (keys != NULL) {
+		gint ii;
+
+		for (ii = 0; keys[ii]; ii++) {
+			const gchar *key = keys[ii];
+			gchar *value;
+
+			value = g_key_file_get_string (
+				override->priv->key_file, section, key, NULL);
+			if (g_strcmp0 (value, account_uid) == 0)
+				*overrides = g_list_prepend (*overrides, g_strdup (key));
+			g_free (value);
+		}
+	}
+
+	g_strfreev (keys);
+
+	*overrides = g_list_reverse (*overrides);
+}
+
+static void
+list_overrides_for_account_locked (EMailSendAccountOverride *override,
+                                   const gchar *account_uid,
+                                   GList **folder_overrides,
+                                   GList **recipient_overrides)
+{
+	if (account_uid == NULL)
+		return;
+
+	list_overrides_section_for_account_locked (
+		override, account_uid, FOLDERS_SECTION, folder_overrides);
+	list_overrides_section_for_account_locked (
+		override, account_uid, RECIPIENTS_SECTION, recipient_overrides);
+}
+
+static void
+mail_send_account_override_set_property (GObject *object,
+                                         guint property_id,
+                                         const GValue *value,
+                                         GParamSpec *pspec)
+{
+	switch (property_id) {
+		case PROP_PREFER_FOLDER:
+			e_mail_send_account_override_set_prefer_folder (
+				E_MAIL_SEND_ACCOUNT_OVERRIDE (object),
+				g_value_get_boolean (value));
+			return;
+	}
+
+	G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
+}
+
+static void
+mail_send_account_override_get_property (GObject *object,
+                                         guint property_id,
+                                         GValue *value,
+                                         GParamSpec *pspec)
+{
+	switch (property_id) {
+		case PROP_PREFER_FOLDER:
+			g_value_set_boolean (
+				value,
+				e_mail_send_account_override_get_prefer_folder (
+				E_MAIL_SEND_ACCOUNT_OVERRIDE (object)));
+			return;
+	}
+
+	G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
+}
+
+static void
+mail_send_account_override_finalize (GObject *object)
+{
+	EMailSendAccountOverridePrivate *priv;
+
+	priv = E_MAIL_SEND_ACCOUNT_OVERRIDE_GET_PRIVATE (object);
+
+	g_key_file_free (priv->key_file);
+	g_free (priv->config_filename);
+
+	g_mutex_clear (&priv->property_lock);
+
+	/* Chain up to parent's finalize() method. */
+	G_OBJECT_CLASS (e_mail_send_account_override_parent_class)->
+		finalize (object);
+}
+
+static void
+e_mail_send_account_override_class_init (EMailSendAccountOverrideClass *class)
+{
+	GObjectClass *object_class;
+
+	g_type_class_add_private (
+		class, sizeof (EMailSendAccountOverridePrivate));
+
+	object_class = G_OBJECT_CLASS (class);
+	object_class->set_property = mail_send_account_override_set_property;
+	object_class->get_property = mail_send_account_override_get_property;
+	object_class->finalize = mail_send_account_override_finalize;
+
+	g_object_class_install_property (
+		object_class,
+		PROP_PREFER_FOLDER,
+		g_param_spec_boolean (
+			"prefer-folder",
+			"Prefer Folder",
+			NULL,
+			TRUE,
+			G_PARAM_READWRITE));
+
+	signals[CHANGED] = g_signal_new (
+		"changed",
+		G_OBJECT_CLASS_TYPE (object_class),
+		G_SIGNAL_RUN_FIRST,
+		G_STRUCT_OFFSET (EMailSendAccountOverrideClass, changed),
+		NULL, NULL, NULL,
+		G_TYPE_NONE, 0);
+}
+
+static void
+e_mail_send_account_override_init (EMailSendAccountOverride *override)
+{
+	override->priv = E_MAIL_SEND_ACCOUNT_OVERRIDE_GET_PRIVATE (override);
+
+	g_mutex_init (&override->priv->property_lock);
+	override->priv->key_file = g_key_file_new ();
+	override->priv->prefer_folder = TRUE;
+}
+
+EMailSendAccountOverride *
+e_mail_send_account_override_new (const gchar *config_filename)
+{
+	EMailSendAccountOverride *override;
+
+	override = g_object_new (E_TYPE_MAIL_SEND_ACCOUNT_OVERRIDE, NULL);
+
+	if (config_filename != NULL)
+		e_mail_send_account_override_set_config_filename (
+			override, config_filename);
+
+	return override;
+}
+
+void
+e_mail_send_account_override_set_config_filename (EMailSendAccountOverride *override,
+                                                  const gchar *config_filename)
+{
+	GError *error = NULL;
+	gboolean old_prefer_folder, prefer_folder_changed;
+
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+	g_return_if_fail (config_filename != NULL);
+	g_return_if_fail (*config_filename != '\0');
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	if (g_strcmp0 (config_filename, override->priv->config_filename) == 0) {
+		g_mutex_unlock (&override->priv->property_lock);
+		return;
+	}
+
+	g_free (override->priv->config_filename);
+	override->priv->config_filename = g_strdup (config_filename);
+
+	g_key_file_load_from_file (
+		override->priv->key_file,
+		override->priv->config_filename, G_KEY_FILE_NONE, NULL);
+
+	old_prefer_folder = override->priv->prefer_folder;
+	override->priv->prefer_folder = g_key_file_get_boolean (
+		override->priv->key_file,
+		OPTIONS_SECTION, OPTION_PREFER_FOLDER, &error);
+
+	if (error != NULL) {
+		/* default value is to prefer the folder override over the recipients */
+		override->priv->prefer_folder = TRUE;
+		g_clear_error (&error);
+	}
+
+	prefer_folder_changed =
+		(override->priv->prefer_folder != old_prefer_folder);
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	if (prefer_folder_changed)
+		g_object_notify (G_OBJECT (override), "prefer-folder");
+}
+
+gchar *
+e_mail_send_account_override_dup_config_filename (EMailSendAccountOverride *override)
+{
+	gchar *config_filename;
+
+	g_return_val_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override), NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+	config_filename = g_strdup (override->priv->config_filename);
+	g_mutex_unlock (&override->priv->property_lock);
+
+	return config_filename;
+}
+
+void
+e_mail_send_account_override_set_prefer_folder (EMailSendAccountOverride *override,
+                                                gboolean prefer_folder)
+{
+	gboolean changed, saved = FALSE;
+
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	changed = (prefer_folder != override->priv->prefer_folder);
+
+	if (changed) {
+		override->priv->prefer_folder = prefer_folder;
+
+		g_key_file_set_boolean (
+			override->priv->key_file,
+			OPTIONS_SECTION, OPTION_PREFER_FOLDER, prefer_folder);
+
+		saved = e_mail_send_account_override_maybe_save_locked (override);
+	}
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	if (changed)
+		g_object_notify (G_OBJECT (override), "prefer-folder");
+	if (saved)
+		g_signal_emit (override, signals[CHANGED], 0);
+}
+
+gboolean
+e_mail_send_account_override_get_prefer_folder (EMailSendAccountOverride *override)
+{
+	g_return_val_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override), FALSE);
+
+	return override->priv->prefer_folder;
+}
+
+/* free returned pointer with g_free() */
+gchar *
+e_mail_send_account_override_get_account_uid (EMailSendAccountOverride *override,
+                                              const gchar *folder_uri,
+                                              CamelInternetAddress *recipients_to,
+                                              CamelInternetAddress *recipients_cc,
+                                              CamelInternetAddress *recipients_bcc)
+{
+	gchar *account_uid = NULL;
+
+	g_return_val_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override), NULL);
+	g_return_val_if_fail (override->priv->config_filename != NULL, NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	if (override->priv->prefer_folder)
+		account_uid = get_override_for_folder_uri_locked (
+			override, folder_uri);
+
+	if (account_uid == NULL)
+		account_uid = get_override_for_recipients_locked (
+			override, CAMEL_ADDRESS (recipients_to));
+
+	if (account_uid == NULL)
+		account_uid = get_override_for_recipients_locked (
+			override, CAMEL_ADDRESS (recipients_cc));
+
+	if (account_uid == NULL)
+		account_uid = get_override_for_recipients_locked (
+			override, CAMEL_ADDRESS (recipients_bcc));
+
+	if (account_uid == NULL && !override->priv->prefer_folder)
+		account_uid = get_override_for_folder_uri_locked (
+			override, folder_uri);
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	return account_uid;
+}
+
+void
+e_mail_send_account_override_remove_for_account_uid (EMailSendAccountOverride *override,
+                                                     const gchar *account_uid)
+{
+	GList *folders = NULL, *recipients = NULL;
+	gboolean saved = FALSE;
+
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+	g_return_if_fail (account_uid != NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	list_overrides_for_account_locked (
+		override, account_uid, &folders, &recipients);
+
+	if (folders != NULL || recipients != NULL) {
+		GList *link;
+
+		for (link = folders; link != NULL; link = g_list_next (link)) {
+			const gchar *key = link->data;
+
+			g_key_file_remove_key (
+				override->priv->key_file,
+				FOLDERS_SECTION, key, NULL);
+		}
+
+		for (link = recipients; link != NULL; link = g_list_next (link)) {
+			const gchar *key = link->data;
+
+			g_key_file_remove_key (
+				override->priv->key_file,
+				RECIPIENTS_SECTION, key, NULL);
+		}
+
+		saved = e_mail_send_account_override_maybe_save_locked (override);
+	}
+
+	g_list_free_full (folders, g_free);
+	g_list_free_full (recipients, g_free);
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	if (saved)
+		g_signal_emit (override, signals[CHANGED], 0);
+}
+
+gchar *
+e_mail_send_account_override_get_for_folder (EMailSendAccountOverride *override,
+                                             const gchar *folder_uri)
+{
+	gchar *account_uid = NULL;
+
+	g_return_val_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override), NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	account_uid = get_override_for_folder_uri_locked (override, folder_uri);
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	return account_uid;
+}
+
+void
+e_mail_send_account_override_set_for_folder (EMailSendAccountOverride *override,
+                                             const gchar *folder_uri,
+                                             const gchar *account_uid)
+{
+	gboolean saved;
+
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+	g_return_if_fail (folder_uri != NULL);
+	g_return_if_fail (account_uid != NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	g_key_file_set_string (
+		override->priv->key_file,
+		FOLDERS_SECTION, folder_uri, account_uid);
+	saved = e_mail_send_account_override_maybe_save_locked (override);
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	if (saved)
+		g_signal_emit (override, signals[CHANGED], 0);
+}
+
+void
+e_mail_send_account_override_remove_for_folder (EMailSendAccountOverride *override,
+                                                const gchar *folder_uri)
+{
+	gboolean saved;
+
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+	g_return_if_fail (folder_uri != NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	g_key_file_remove_key (
+		override->priv->key_file, FOLDERS_SECTION, folder_uri, NULL);
+	saved = e_mail_send_account_override_maybe_save_locked (override);
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	if (saved)
+		g_signal_emit (override, signals[CHANGED], 0);
+}
+
+gchar *
+e_mail_send_account_override_get_for_recipient (EMailSendAccountOverride *override,
+                                                CamelInternetAddress *recipients)
+{
+	gchar *account_uid;
+
+	g_return_val_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override), NULL);
+	g_return_val_if_fail (recipients != NULL, NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	account_uid = get_override_for_recipients_locked (
+		override, CAMEL_ADDRESS (recipients));
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	return account_uid;
+}
+
+void
+e_mail_send_account_override_set_for_recipient (EMailSendAccountOverride *override,
+                                                const gchar *recipient,
+                                                const gchar *account_uid)
+{
+	gboolean saved;
+
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+	g_return_if_fail (recipient != NULL);
+	g_return_if_fail (account_uid != NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	g_key_file_set_string (
+		override->priv->key_file,
+		RECIPIENTS_SECTION, recipient, account_uid);
+	saved = e_mail_send_account_override_maybe_save_locked (override);
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	if (saved)
+		g_signal_emit (override, signals[CHANGED], 0);
+}
+
+void
+e_mail_send_account_override_remove_for_recipient (EMailSendAccountOverride *override,
+                                                   const gchar *recipient)
+{
+	gboolean saved;
+
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+	g_return_if_fail (recipient != NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	g_key_file_remove_key (
+		override->priv->key_file, RECIPIENTS_SECTION, recipient, NULL);
+	saved = e_mail_send_account_override_maybe_save_locked (override);
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	if (saved)
+		g_signal_emit (override, signals[CHANGED], 0);
+}
+
+void
+e_mail_send_account_override_list_for_account (EMailSendAccountOverride *override,
+                                               const gchar *account_uid,
+                                               GList **folder_overrides,
+                                               GList **recipient_overrides)
+{
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+	g_return_if_fail (account_uid != NULL);
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	list_overrides_for_account_locked (
+		override, account_uid, folder_overrides, recipient_overrides);
+
+	g_mutex_unlock (&override->priv->property_lock);
+}
+
+void
+e_mail_send_account_override_freeze_save (EMailSendAccountOverride *override)
+{
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	override->priv->save_frozen++;
+	if (!override->priv->save_frozen) {
+		g_warn_if_reached ();
+	}
+
+	g_mutex_unlock (&override->priv->property_lock);
+}
+
+void
+e_mail_send_account_override_thaw_save (EMailSendAccountOverride *override)
+{
+	gboolean saved = FALSE;
+
+	g_return_if_fail (E_IS_MAIL_SEND_ACCOUNT_OVERRIDE (override));
+
+	g_mutex_lock (&override->priv->property_lock);
+
+	if (!override->priv->save_frozen) {
+		g_warn_if_reached ();
+	} else {
+		override->priv->save_frozen--;
+		if (!override->priv->save_frozen && override->priv->need_save)
+			saved = e_mail_send_account_override_save_locked (override);
+	}
+
+	g_mutex_unlock (&override->priv->property_lock);
+
+	if (saved)
+		g_signal_emit (override, signals[CHANGED], 0);
+}
+

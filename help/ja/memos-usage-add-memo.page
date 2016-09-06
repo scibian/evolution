@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="memos-usage-add-memo" xml:lang="ja">
+
+  <info>
+    <desc>メモ一覧にメモを追加します。</desc>
+    
+    <link type="guide" xref="memos-usage"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-08-01" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/b15iirao.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>メモの追加</title>
+
+<steps>
+<item><p><guiseq><gui>ファイル</gui><gui>新規</gui><gui>メモ</gui></guiseq>をクリックするか、<keyseq><key>Shift</key><key>Ctrl</key><key>0</key></keyseq>を押します。</p></item>
+<item><p><gui>一覧</gui>ドロップダウンリストからメモ一覧を選択します。</p></item>
+<item><p>メモの情報を入力します。</p></item>
+<item><p><gui>保存</gui>ボタン、または<guiseq><gui>ファイル</gui><gui>保存</gui></guiseq>をクリックします。</p></item>
+</steps>
+
+<p>If you just want to quickly add a memo by entering a summary you can directly enter it in the list of memos.</p>
+
+<p>メモの<link xref="using-categories">カテゴリ</link>や<link xref="calendar-classifications">分類</link>の定義や、添付ファイルの追加もできます。</p>
+
+<section id="shared-memos">
+<title>Shared Memos</title>
+
+<p>Shared Memos are like mail messages except they are scheduled for a particular day and appear on the calendar for that date. You can use shared memos to show vacations, holidays, pay days, birthdays, and so on. Posted shared memos are placed in your Calendar on the date you specify. They are not placed in your Mailbox or in any other user's Mailbox.</p>
+
+<p>To send a Shared Memo,</p>
+<steps>
+<item><p>Click <guiseq><gui>File</gui><gui>New</gui><gui>Shared Memo</gui></guiseq>, or press <keyseq><key>Shift</key><key>Ctrl</key><key>H</key></keyseq>.</p></item>
+<item><p>Select the Organizer's account name from the drop-down list given next to the Organizer field.</p></item>
+<item><p>In the To field, type a username, then press Enter. Repeat this for additional users.</p></item>
+<item><p>Select the task list (under <gui>List</gui>) in which you would like to create the entry.</p></item>
+<item><p>サマリ欄に簡潔なサマリを入力します。</p></item>
+<item><p>In the Start Date field, type the date this shared memo should appear in the recipients' calendars.</p></item>
+<item><p><gui>保存</gui>ボタン、または<guiseq><gui>ファイル</gui><gui>保存</gui></guiseq>をクリックします。</p></item>
+</steps>
+</section>
+
+</page>

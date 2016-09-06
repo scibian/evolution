@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-working-offline" xml:lang="fr">
+
+  <info>
+    <desc>Travailler avec vos courriels alors que vous n'êtes pas connecté au réseau.</desc>
+<!-- TODO:POST-3-8: Offline work for web calendars etc also exists => create index page for Offline working? -->
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-offline -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Travail hors ligne</title>
+
+<p>Le mode hors ligne forcé vous aide à communiquer avec des systèmes de stockage distant de messages comme GroupWise, IMAP ou Exchange, dans des situations où vous n'êtes pas connecté au réseau en permanence. Evolution conserve une copie locale d'un ou de plusieurs dossiers pour vous permettre de composer des messages et de les stocker dans la boîte d'envoi en vue de leur expédition lors de votre prochaine connexion.</p>
+
+<note style="warning"><p>Le mode hors ligne forcé d'Evolution fait uniquement référence aux courriels et ne s'applique pas aux contacts ni aux agendas.</p></note>
+
+<p>La messagerie POP télécharge tous les messages sur votre système local, mais les autres types de connexion ne chargent généralement que les en-têtes et ne téléchargent le reste que lorsque vous demandez à lire le message. Avant de forcer Evolution à se mettre hors ligne, il télécharge les messages non lus se trouvant dans les dossiers que vous avez choisis de conserver.</p>
+
+<section id="mark-folders">
+<title>Signalement des dossiers pour utilisation hors ligne</title>
+<p>Pour marquer un dossier de courriel pour une utilisation hors ligne,</p>
+<steps>
+<item><p>Faites un clic-droit sur le dossier, puis choisissez <gui>Propriétés</gui>.</p></item>
+<item><p>Cliquez sur <gui>Copier localement le contenu du dossier pour les opérations hors ligne</gui>.</p></item>
+</steps>
+</section>
+
+<section id="sync-for-offline">
+<title>Synchronisation des messages pour une utilisation hors ligne</title>
+<p>L'état de votre connexion est indiqué par une petite icône dans le coin inférieur gauche de la fenêtre principale d'Evolution. Lorsque vous êtes en ligne, cette icône montre deux câbles connectés. Lorsque vous forcez le mode hors ligne en cliquant sur l'icône ou en utilisant le menu <guiseq><gui>Fichier</gui><gui>Travailler hors ligne</gui></guiseq>, les deux câbles se séparent. Il vous est demandé si vous voulez immédiatement travailler hors ligne ou synchroniser les dossiers localement avant d'être déconnecté.</p>
+<p>Pour télécharger les messages pour des opérations hors-ligne sans être directement mis hors ligne, sélectionnez <guiseq><gui>Fichier</gui><gui>Télécharger les messages pour utilisation hors ligne</gui></guiseq>.</p>
+</section>
+
+<section id="network-manager-integration">
+<title>Gestion automatique de l'état du réseau</title>
+<p>Evolution détecte automatiquement l'état du réseau et agit en conséquence. Par exemple, Evolution passe en mode hors ligne lorsque le réseau n'est plus disponible et se remet en ligne dès que le réseau est de nouveau opérationnel.</p>
+</section>
+
+</page>

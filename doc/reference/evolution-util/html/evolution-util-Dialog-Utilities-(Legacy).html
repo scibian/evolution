@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: Dialog Utilities (Legacy)</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch01.html" title="Basic Utility Functions">
+<link rel="prev" href="evolution-util-Reading-and-Writing-XML.html" title="Reading and Writing XML">
+<link rel="next" href="evolution-util-Icon-Utilities-(Legacy).html" title="Icon Utilities (Legacy)">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#evolution-util-Dialog-Utilities-(Legacy).description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="evolution-util-Reading-and-Writing-XML.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="evolution-util-Icon-Utilities-(Legacy).html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="evolution-util-Dialog-Utilities-(Legacy)"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="evolution-util-Dialog-Utilities-(Legacy).top_of_page"></a>Dialog Utilities (Legacy)</span></h2>
+<p>Dialog Utilities (Legacy)</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="evolution-util-Dialog-Utilities-(Legacy).functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Dialog-Utilities-(Legacy).html#e-notice" title="e_notice ()">e_notice</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Dialog-Utilities-(Legacy).html#e-dialog-combo-box-set" title="e_dialog_combo_box_set ()">e_dialog_combo_box_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Dialog-Utilities-(Legacy).html#e-dialog-combo-box-get" title="e_dialog_combo_box_get ()">e_dialog_combo_box_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-Dialog-Utilities-(Legacy).html#e-dialog-button-new-with-icon" title="e_dialog_button_new_with_icon ()">e_dialog_button_new_with_icon</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-Dialog-Utilities-(Legacy).description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="evolution-util-Dialog-Utilities-(Legacy).functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-notice"></a><h3>e_notice ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_notice (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> parent</code></em>,
+          <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkMessageDialog.html#GtkMessageType"><span class="type">GtkMessageType</span></a> type</code></em>,
+          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *format</code></em>,
+          <em class="parameter"><code>...</code></em>);</pre>
+<p>Convenience function to show a dialog with a message and an "OK"
+button.</p>
+<div class="refsect3">
+<a name="id-1.2.9.5.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>the dialog's parent window, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of dialog (<code class="literal">GTK_MESSAGE_INFO</code>, <code class="literal">GTK_MESSAGE_WARNING</code>,
+or <code class="literal">GTK_MESSAGE_ERROR</code>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>printf-style format string, followed by arguments</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-dialog-combo-box-set"></a><h3>e_dialog_combo_box_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_dialog_combo_box_set (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value_map</code></em>);</pre>
+<p>Sets the selected item in a <a href="http://developer.gnome.org/gtk2/GtkComboBox.html"><span class="type">GtkComboBox</span></a>.  Please read the description of
+<code class="function">e_dialog_radio_set()</code> to see how <em class="parameter"><code>value_map</code></em>
+ maps enumeration values to item
+indices.</p>
+<div class="refsect3">
+<a name="id-1.2.9.5.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>A <a href="http://developer.gnome.org/gtk2/GtkComboBox.html"><span class="type">GtkComboBox</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Enumerated value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_map</p></td>
+<td class="parameter_description"><p>Map from enumeration values to array indices.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-dialog-combo-box-get"></a><h3>e_dialog_combo_box_get ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_dialog_combo_box_get (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value_map</code></em>);</pre>
+<p>Queries the selected item in a <a href="http://developer.gnome.org/gtk2/GtkComboBox.html"><span class="type">GtkComboBox</span></a>.  Please read the description
+of <code class="function">e_dialog_radio_set()</code> to see how <em class="parameter"><code>value_map</code></em>
+ maps enumeration values to item
+indices.</p>
+<div class="refsect3">
+<a name="id-1.2.9.5.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>A <a href="http://developer.gnome.org/gtk2/GtkComboBox.html"><span class="type">GtkComboBox</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_map</p></td>
+<td class="parameter_description"><p>Map from enumeration values to array indices.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.9.5.4.6"></a><h4>Returns</h4>
+<p> Enumeration value which corresponds to the selected item in the
+combo box.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-dialog-button-new-with-icon"></a><h3>e_dialog_button_new_with_icon ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_dialog_button_new_with_icon (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_name</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Creates a new <a href="http://developer.gnome.org/gtk2/GtkButton.html"><span class="type">GtkButton</span></a> with preset <em class="parameter"><code>label</code></em>
+ and image set
+to <em class="parameter"><code>icon_name</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.9.5.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>icon_name</p></td>
+<td class="parameter_description"><p>Icon's name to use; can be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Button label to set, with mnemonics</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.9.5.5.6"></a><h4>Returns</h4>
+<p> A new <a href="http://developer.gnome.org/gtk2/GtkButton.html"><span class="type">GtkButton</span></a>. </p>
+<p><span class="annotation">[transfer-full]</span></p>
+</div>
+<p class="since">Since 3.12</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-Dialog-Utilities-(Legacy).other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

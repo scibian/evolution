@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-layout-views" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-layout"/>
+
+    <revision pkgversion="3.1.5" version="0.2" date="2011-07-27" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-view.html.en
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>日の範囲 (日、週、月) を指定してカレンダーを表示します。</desc>
+  </info>
+
+  <title>利用できるビュー</title>
+
+  <p><app>Evolution</app> はカレンダーの表示型式を5種類提供しています。</p>
+
+  <list>
+    <item>
+      <p>日間ビュー (<keyseq><key>Ctrl</key><key>Y</key></keyseq>)</p>
+    </item>
+    <item>
+      <p>平日ビュー (<keyseq><key>Ctrl</key><key>J</key></keyseq>)</p>
+    </item>
+    <item>
+      <p>週間ビュー (<keyseq><key>Ctrl</key><key>K</key></keyseq>)</p>
+    </item>
+    <item>
+      <p>月間ビュー (<keyseq><key>Ctrl</key><key>M</key></keyseq>)</p>
+    </item>
+    <item>
+      <p>一覧ビュー (<keyseq><key>Ctrl</key><key>L</key></keyseq>)</p>
+    </item>
+  </list>
+
+  <p>ビューはツールバーのボタンを使うか、<guiseq><gui>表示</gui><gui>現在のビュー</gui></guiseq>をクリックすることで切り替えられます。</p>
+
+  <p>サイドバーの小さなカレンダーで任意の日数を選択することもできます。そうするには、カレンダーに表示したい日数を選択します。</p>
+
+  <p><gui style="button">前へ</gui>や<gui style="button">次へ</gui>のボタンを押すとカレンダーのページを前後に移動します。週間ビューや月間ビューを使っているときには週単位や月単位で移動できます。今日の一覧に戻るにはツールバーの左右の矢印のボタンの間にある<gui>今日にする</gui>ボタンをクリックします。</p>
+
+  <p>特定の日付のカレンダーには、ツールバーの<gui>指定した日に移動します</gui>ボタンをクリックすると移動します。</p>
+
+</page>

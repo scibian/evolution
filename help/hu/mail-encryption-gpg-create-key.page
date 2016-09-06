@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-create-key" xml:lang="hu">
+
+  <info>
+    <desc>Elküldött levelek aláírása vagy titkosítása GPG-vel/OpenPGP-vel.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.3" date="2012-02-18" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encryption-keygen -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>GPG-kulcs létrehozása</title>
+
+<note style="advanced"><p>Ezek a lépések nagyon technikai jellegűek. A legtöbb felhasználó számára a <link xref="help:seahorse/index" href="https://help.gnome.org/users/seahorse/stable/index"><app>Seahorse alkalmazás</app></link> használata javasolt a GPG/OpenPGP-kulcsok kezelésére.</p></note>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a complete rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<p>Mielőtt GPG-titkosítású leveleket fogadhatna vagy küldhetne, létre kell hoznia a nyilvános és személyes kulcsait a GPG-vel.</p>
+<steps>
+<item><p>Nyissa meg a <app>Terminál</app> alkalmazást, és adja ki a <cmd>gpg --gen-key</cmd> parancsot.</p></item>
+<item><p>Válasszon egy algoritmust, és nyomja meg az Enter billentyűt.</p></item>
+<item><p>Válasszon egy kulcshosszt, és nyomja meg az Enter billentyűt.</p></item>
+<item><p>Adja meg, hogy a kulcsa meddig legyen érvényes.</p></item>
+<item><p>Írja be a valódi nevét, és nyomja meg az Enter billentyűt.</p></item>
+<item><p>Írja be az e-mail címét, és nyomja meg az Enter billentyűt.</p></item>
+<item><p>(Elhagyható) Írjon be egy megjegyzést, és nyomja meg az Enter billentyűt.</p></item>
+<item><p>Tekintse át a kiválasztott felhasználói azonosítót, ha megfelelő, akkor nyomja meg az R billentyűt.</p></item>
+<item><p>Írjon be egy jelmondatot, majd nyomja meg az Enter billentyűt.</p></item>
+<item><p>Mozgassa véletlenszerűen az egerét a kulcsok előállításához.</p></item>
+</steps>
+
+<p>A kulcsok előállítása után a <cmd>gpg --list-keys</cmd> parancs kiadásával megjelenítheti a kulcsinformációkat. A következőhöz hasonlót kellene látnia: <code>/home/ön/.gnupg/pubring.gpg------------------------------pub   2048R/6ADAF1C0 2011-11-16uid                  ön &lt;ön@példa.hu&gt;sub   2048R/48D220F9 2011-11-16</code></p>
+<p>A GPG egy listát vagy kulcstartót hoz létre a nyilvános kulcsokhoz és egy másikat a személyes kulcsokhoz. Minden Ön által ismert nyilvános kulcs a <file>~/.gnupg/pubring.gpg</file> fájlban található. Ha kulcsát meg szeretné osztani másokkal, akkor küldje el nekik ezt a fájlt.</p>
+<p>Ha akarja, feltöltheti kulcsait egy kulcskiszolgálóra:</p>
+<steps>
+<item><p>Ellenőrizze nyilvános kulcsának azonosítóját a <code>gpg --list-keys</code> kiadásával. Ez a <code>pub</code> kezdetű sorban az <code>1024D</code> utáni karakterlánc. A fenti példában ez a <code>6ADAF1C0</code>.</p></item>
+<item><p>Adja ki a <cmd>gpg --send-keys --keyserver wwwkeys.pgp.net 6ADAF1C0</cmd> parancsot. A <code>6ADAF1C0</code> helyére saját kulcsazonosítóját írja. Ehhez a jelszavára is szüksége lesz.</p></item>
+</steps>
+
+<p>A kulcskiszolgálók a nyilvános kulcsait tárolják, hogy ismerősei visszafejthessék az Ön leveleit. Ha nem szeretne kulcskiszolgálót használni, akkor saját kezűleg is elküldheti nyilvános kulcsát, felveheti az aláírásfájljába vagy kiteheti saját weboldalára. A legegyszerűbb azonban a kulcs egyszeri közzététele, hogy ismerősei bármikor letölthessék, amikor szükségük van rá.</p>
+<p>Ha nem rendelkezik egy levél ellenőrzéséhez vagy visszafejtéséhez szükséges kulccsal, akkor beállíthatja a titkosítóeszközét a kulcs automatikus megkeresésére. Ha ez nem találja a kulcsot, akkor hibaüzenetet jelenít meg.</p>
+
+</page>

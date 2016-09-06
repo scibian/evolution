@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="calendar-recurrence" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#calendar-advanced"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-08-01" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+      http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#bxmtcp3
+      -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>予定を繰り返します。</desc>
+  </info>
+
+  <title>予定の反復</title>
+
+  <p>定期的に行われる予定がある場合は、<gui>予定エディター</gui>で<gui>繰り返し</gui>ボタンをクリックするか、<guiseq><gui>オプション</gui><gui>繰り返し</gui></guiseq>をクリックすることで、その予定の反復を定義できます。予定の反復がなくなったときには日付や時刻を選択できます。また、<gui>対象外の日</gui>以下から予定を実行しない日を個々に指定できます。左から右へと選択し、文を形成します: "毎 2週 の 月曜日 と 金曜日 以下の時まで: 1月 3, 2015" や "毎月 の 最初の 金曜日 以下の回数: 12 繰り返す"。</p>
+
+</page>

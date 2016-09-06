@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EEvent</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch15.html" title="Plugins (Legacy)">
+<link rel="prev" href="EConfig.html" title="EConfig">
+<link rel="next" href="EImport.html" title="EImport">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EEvent.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EEvent.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch15.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EConfig.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EImport.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EEvent"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EEvent.top_of_page"></a>EEvent</span></h2>
+<p>EEvent</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EEvent.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EEvent.html#EEventItemsFunc" title="EEventItemsFunc ()">*EEventItemsFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EEvent.html#EEventFunc" title="EEventFunc ()">*EEventFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EEvent.html#EEventFactoryFunc" title="EEventFactoryFunc ()">*EEventFactoryFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EEvent.html" title="EEvent"><span class="returnvalue">EEvent</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EEvent.html#e-event-construct" title="e_event_construct ()">e_event_construct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EEvent.html#e-event-add-items" title="e_event_add_items ()">e_event_add_items</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EEvent.html#e-event-remove-items" title="e_event_remove_items ()">e_event_remove_items</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EEvent.html#e-event-emit" title="e_event_emit ()">e_event_emit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EEvent.html#e-event-target-new" title="e_event_target_new ()">e_event_target_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EEvent.html#e-event-target-free" title="e_event_target_free ()">e_event_target_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EEvent.html#EEventHookFunc" title="EEventHookFunc ()">*EEventHookFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EEvent.html#e-event-hook-class-add-target-map" title="e_event_hook_class_add_target_map ()">e_event_hook_class_add_target_map</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="EEventHook"></a><div class="refsect1">
+<a name="EEvent.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EEvent.html#EEvent-struct" title="struct EEvent">EEvent</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EEvent.html#e-event-t" title="enum e_event_t">e_event_t</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EEvent.html#EEventItem" title="struct EEventItem">EEventItem</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="EEvent.html#EEventFactory" title="EEventFactory">EEventFactory</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EEvent.html#EEventTarget" title="struct EEventTarget">EEventTarget</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EEvent.html#EEventHook-struct" title="struct EEventHook">EEventHook</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="EEvent.html#EEventHookTargetMap" title="EEventHookTargetMap">EEventHookTargetMap</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="EEvent.html#EEventHookTargetMask" title="EEventHookTargetMask">EEventHookTargetMask</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EEvent.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">├──</span> <a class="link" href="EPlugin.html#EPluginHook">EPluginHook</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> EEventHook
+    <span class="lineart">╰──</span> EEvent
+</pre>
+</div>
+<div class="refsect1">
+<a name="EEvent.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EEvent.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="EEventItemsFunc"></a><h3>EEventItemsFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EEventItemsFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *ee</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *items</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventFunc"></a><h3>EEventFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EEventFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *ee</code></em>,
+               <em class="parameter"><code><a class="link" href="EEvent.html#EEventItem" title="struct EEventItem"><span class="type">EEventItem</span></a> *item</code></em>,
+               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventFactoryFunc"></a><h3>EEventFactoryFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EEventFactoryFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *ee</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> Param2</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-event-construct"></a><h3>e_event_construct ()</h3>
+<pre class="programlisting"><a class="link" href="EEvent.html" title="EEvent"><span class="returnvalue">EEvent</span></a> *
+e_event_construct (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *event</code></em>,
+                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Construct the base event instance with standard parameters.</p>
+<div class="refsect3">
+<a name="id-1.16.5.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>An instantiated but uninitialised EEvent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Event manager id.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.5.8.5.6"></a><h4>Returns</h4>
+<p> the <em class="parameter"><code>event</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-event-add-items"></a><h3>e_event_add_items ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_event_add_items (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *event</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *items</code></em>,
+                   <em class="parameter"><code><a class="link" href="EEvent.html#EEventItemsFunc" title="EEventItemsFunc ()"><span class="type">EEventItemsFunc</span></a> freefunc</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Adds <em class="parameter"><code>items</code></em>
+ to the list of events listened to on the event manager <em class="parameter"><code>event</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.16.5.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>An initialised EEvent structure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>items</p></td>
+<td class="parameter_description"><p>A list of EEventItems event listeners to register on this event manager.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>freefunc</p></td>
+<td class="parameter_description"><p>A function called when the <em class="parameter"><code>items</code></em>
+list is no longer needed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>callback data for <em class="parameter"><code>freefunc</code></em>
+and for item event handlers.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.5.8.6.6"></a><h4>Returns</h4>
+<p> An opaque key which can later be passed to remove_items.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-event-remove-items"></a><h3>e_event_remove_items ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_event_remove_items (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *event</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> handle</code></em>);</pre>
+<p>Remove items previously added.  They MUST have been previously
+added, and may only be removed once.</p>
+<div class="refsect3">
+<a name="id-1.16.5.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>an opaque key returned by <a class="link" href="EEvent.html#e-event-add-items" title="e_event_add_items ()"><code class="function">e_event_add_items()</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-event-emit"></a><h3>e_event_emit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_event_emit (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *event</code></em>,
+              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+              <em class="parameter"><code><a class="link" href="EEvent.html#EEventTarget" title="struct EEventTarget"><span class="type">EEventTarget</span></a> *target</code></em>);</pre>
+<p>Emit an event.  <em class="parameter"><code>target</code></em>
+ will automatically be freed once its
+emission is complete.</p>
+<div class="refsect3">
+<a name="id-1.16.5.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Event name.  This will be compared against EEventItem.id.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>The target describing the event context.  This will be
+implementation defined.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-event-target-new"></a><h3>e_event_target_new ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_event_target_new (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *event</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>,
+                    <em class="parameter"><code><span class="type">gsize</span> size</code></em>);</pre>
+<p>Allocate a new event target suitable for this class.  It is up to
+the implementation to define the available target types and their
+structure.</p>
+<div class="refsect3">
+<a name="id-1.16.5.8.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>An initialised EEvent instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>type, up to implementor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of memory to allocate.  This must be &gt;= sizeof(EEventTarget).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-event-target-free"></a><h3>e_event_target_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_event_target_free (<em class="parameter"><code><a class="link" href="EEvent.html" title="EEvent"><span class="type">EEvent</span></a> *event</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> target</code></em>);</pre>
+<p>Free a target.  This invokes the virtual free method on the EEventClass.</p>
+<div class="refsect3">
+<a name="id-1.16.5.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>An initialised EEvent instance on which this target was allocated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>The target to free.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventHookFunc"></a><h3>EEventHookFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EEventHookFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EPlugin.html" title="EPlugin"><span class="type">EPlugin</span></a> *plugin</code></em>,
+                   <em class="parameter"><code><a class="link" href="EEvent.html#EEventTarget" title="struct EEventTarget"><span class="type">EEventTarget</span></a> *target</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-event-hook-class-add-target-map"></a><h3>e_event_hook_class_add_target_map ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_event_hook_class_add_target_map (<em class="parameter"><code><span class="type">EEventHookClass</span> *hook_class</code></em>,
+                                   <em class="parameter"><code>const <a class="link" href="EEvent.html#EEventHookTargetMap" title="EEventHookTargetMap"><span class="type">EEventHookTargetMap</span></a> *map</code></em>);</pre>
+<p>Add a target map to a concrete derived class of EEvent.  The target
+map enumerates a single target type and th eenable mask bit names,
+so that the type can be loaded automatically by the base EEvent class.</p>
+<div class="refsect3">
+<a name="id-1.16.5.8.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>hook_class</p></td>
+<td class="parameter_description"><p>The derived EEventHook class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>map</p></td>
+<td class="parameter_description"><p>A map used to describe a single EEventTarget type for this class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EEvent.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EEvent-struct"></a><h3>struct EEvent</h3>
+<pre class="programlisting">struct EEvent;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-event-t"></a><h3>enum e_event_t</h3>
+<div class="refsect3">
+<a name="id-1.16.5.9.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-EVENT-PASS:CAPS"></a>E_EVENT_PASS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-EVENT-SINK:CAPS"></a>E_EVENT_SINK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventItem"></a><h3>struct EEventItem</h3>
+<pre class="programlisting">struct EEventItem {
+	enum _e_event_t type;
+	gint priority;		/* priority of event */
+	const gchar *id;		/* event id */
+	gint target_type;
+	EEventFunc handle;
+	gpointer user_data;
+	guint32 enable;		/* enable mask */
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventFactory"></a><h3>EEventFactory</h3>
+<pre class="programlisting">typedef struct _EEventFactory EEventFactory;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventTarget"></a><h3>struct EEventTarget</h3>
+<pre class="programlisting">struct EEventTarget {
+	EEvent *event; /* used for virtual methods */
+
+	guint32 type;		/* targe type, for implementors */
+	guint32 mask;		/* depends on type, enable mask */
+
+	/* implementation fields follow */
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventHook-struct"></a><h3>struct EEventHook</h3>
+<pre class="programlisting">struct EEventHook;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventHookTargetMap"></a><h3>EEventHookTargetMap</h3>
+<pre class="programlisting">typedef struct _EPluginHookTargetMap EEventHookTargetMap;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EEventHookTargetMask"></a><h3>EEventHookTargetMask</h3>
+<pre class="programlisting">typedef struct _EPluginHookTargetKey EEventHookTargetMask;
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

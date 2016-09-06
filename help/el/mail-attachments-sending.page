@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="mail-attachments-sending" xml:lang="el">
+
+  <info>
+    <desc>Επισύναψη αρχείων στα επιθυμητά μηνύματα για αποστολή.</desc>
+
+    <link type="guide" xref="index#mail-composing"/>
+    <link type="guide" xref="mail-attachments"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-send-compose and http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#b17rcxmf -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Προσθήκη συνημμένων σε μήνυμα</title>
+
+<section id="attaching">
+<title>Επισύναψη αρχείων</title>
+<p>Επισύναψη αρχείου στο μήνυμα σας στη σύνταξη:</p>
+<steps>
+<item><p>Κλικ <gui>προσθήκη συνημμένου...</gui>, ή κλικ <guiseq><gui>εισαγωγή</gui><gui>συνημμένο</gui></guiseq>, ή πατήστε <keyseq><key>Ctrl</key><key>Μ</key></keyseq>.</p></item>
+<item><p>Επιλέξτε το αρχείο που θέλετε να επισυνάψετε.</p></item>
+<item><p>Κλικ στο <gui style="button">Εντάξει</gui>.</p></item>
+</steps>
+<p>Μπορείτε επίσης να σύρετε ένα αρχείο στη γραμμή συνημμένου του παραθύρου σύνταξης.</p>
+
+<p>Όταν στείλετε το μήνυμα, ένα αντίγραφο του συνημμένου αρχείου πάει μαζί. Προσέξτε ότι τα μεγάλα συνημμένα θα αργήσουν να σταλούν και να ληφθούν.</p>
+</section>
+
+<section id="reminders">
+<title>Υπενθύμιση συνημμένου</title>
+
+<p>Το Evolution έχει το πρόσθετο υπενθύμιση συνημμένου που μπορείτε να χρησιμοποιήσετε για να υπενθυμίσετε στον εαυτό σας να επισυνάψει ένα αρχείο σε ένα μήνυμα. Αν ανακαλύψει ότι δεν έχετε επισυνάψει το αρχείο, τότε προβάλλει ένα παράθυρο υπενθύμισης πριν την αποστολή του μηνύματος.</p>
+
+<p>Για ενεργοποίηση της υπενθύμισης συνημμένου:</p>
+<steps>
+<item><p>Επιλέξτε <guiseq><gui>επεξεργασία</gui><gui>πρόσθετα</gui></guiseq>.</p></item>
+<item><p>Ενεργοποιήσετε <gui>υπενθύμιση συνημμένου</gui>.</p></item>
+<item><p>Κλικ στην καρτέλα <gui>διαμόρφωση</gui>.</p></item>
+<item><p>Κλικ στο <gui style="button">προσθήκη</gui>, έπειτα εισαγωγή λέξεων-κλειδιών στη γλώσσα σας όπως "επισύναψη" ή "περιέχεται".</p></item>
+</steps>
+<p>Με βάση τις λέξεις κλειδιά που προσθέσατε, το Evolution αναζητεί το κείμενο κάθε μηνύματος που στέλνετε. Αν βρει οποιαδήποτε λέξη-κλειδί στο μήνυμα σας και δεν υπάρχει ενεργό αρχείο επισύναψης, εμφανίζεται το παράθυρο υπενθύμισης.</p>
+
+</section>
+
+</page>

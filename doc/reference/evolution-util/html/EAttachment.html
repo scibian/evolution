@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EAttachment</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch04.html" title="Attachments">
+<link rel="prev" href="ch04.html" title="Attachments">
+<link rel="next" href="EAttachmentBar.html" title="EAttachmentBar">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EAttachment.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EAttachment.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EAttachment.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch04.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch04.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EAttachmentBar.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EAttachment"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EAttachment.top_of_page"></a>EAttachment</span></h2>
+<p>EAttachment</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EAttachment.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EAttachment.html" title="EAttachment"><span class="returnvalue">EAttachment</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-new" title="e_attachment_new ()">e_attachment_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EAttachment.html" title="EAttachment"><span class="returnvalue">EAttachment</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-new-for-path" title="e_attachment_new_for_path ()">e_attachment_new_for_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EAttachment.html" title="EAttachment"><span class="returnvalue">EAttachment</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-new-for-uri" title="e_attachment_new_for_uri ()">e_attachment_new_for_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EAttachment.html" title="EAttachment"><span class="returnvalue">EAttachment</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-new-for-message" title="e_attachment_new_for_message ()">e_attachment_new_for_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-add-to-multipart" title="e_attachment_add_to_multipart ()">e_attachment_add_to_multipart</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-cancel" title="e_attachment_cancel ()">e_attachment_cancel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-can-show" title="e_attachment_get_can_show ()">e_attachment_get_can_show</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-can-show" title="e_attachment_set_can_show ()">e_attachment_set_can_show</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-disposition" title="e_attachment_get_disposition ()">e_attachment_get_disposition</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-dup-disposition" title="e_attachment_dup_disposition ()">e_attachment_dup_disposition</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-disposition" title="e_attachment_set_disposition ()">e_attachment_set_disposition</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-ref-file" title="e_attachment_ref_file ()">e_attachment_ref_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-file" title="e_attachment_set_file ()">e_attachment_set_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFileInfo.html"><span class="returnvalue">GFileInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-ref-file-info" title="e_attachment_ref_file_info ()">e_attachment_ref_file_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-file-info" title="e_attachment_set_file_info ()">e_attachment_set_file_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-dup-mime-type" title="e_attachment_dup_mime_type ()">e_attachment_dup_mime_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GIcon.html"><span class="returnvalue">GIcon</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-ref-icon" title="e_attachment_ref_icon ()">e_attachment_ref_icon</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-loading" title="e_attachment_get_loading ()">e_attachment_get_loading</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-ref-mime-part" title="e_attachment_ref_mime_part ()">e_attachment_ref_mime_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-mime-part" title="e_attachment_set_mime_part ()">e_attachment_set_mime_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-percent" title="e_attachment_get_percent ()">e_attachment_get_percent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeRowReference"><span class="returnvalue">GtkTreeRowReference</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-reference" title="e_attachment_get_reference ()">e_attachment_get_reference</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-reference" title="e_attachment_set_reference ()">e_attachment_set_reference</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-saving" title="e_attachment_get_saving ()">e_attachment_get_saving</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-shown" title="e_attachment_get_shown ()">e_attachment_get_shown</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-shown" title="e_attachment_set_shown ()">e_attachment_set_shown</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#camel-cipher-validity-encrypt-t"><span class="returnvalue">camel_cipher_validity_encrypt_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-encrypted" title="e_attachment_get_encrypted ()">e_attachment_get_encrypted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-encrypted" title="e_attachment_set_encrypted ()">e_attachment_set_encrypted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#camel-cipher-validity-sign-t"><span class="returnvalue">camel_cipher_validity_sign_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-get-signed" title="e_attachment_get_signed ()">e_attachment_get_signed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-set-signed" title="e_attachment_set_signed ()">e_attachment_set_signed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-dup-description" title="e_attachment_dup_description ()">e_attachment_dup_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-dup-thumbnail-path" title="e_attachment_dup_thumbnail_path ()">e_attachment_dup_thumbnail_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-is-rfc822" title="e_attachment_is_rfc822 ()">e_attachment_is_rfc822</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-list-apps" title="e_attachment_list_apps ()">e_attachment_list_apps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-load-async" title="e_attachment_load_async ()">e_attachment_load_async</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-load-finish" title="e_attachment_load_finish ()">e_attachment_load_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-load" title="e_attachment_load ()">e_attachment_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-open-async" title="e_attachment_open_async ()">e_attachment_open_async</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-open-finish" title="e_attachment_open_finish ()">e_attachment_open_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-open" title="e_attachment_open ()">e_attachment_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-save-async" title="e_attachment_save_async ()">e_attachment_save_async</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-save-finish" title="e_attachment_save_finish ()">e_attachment_save_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-save" title="e_attachment_save ()">e_attachment_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-load-handle-error" title="e_attachment_load_handle_error ()">e_attachment_load_handle_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-open-handle-error" title="e_attachment_open_handle_error ()">e_attachment_open_handle_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachment.html#e-attachment-save-handle-error" title="e_attachment_save_handle_error ()">e_attachment_save_handle_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAttachment.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--can-show" title="The “can-show” property">can-show</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--disposition" title="The “disposition” property">disposition</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--encrypted" title="The “encrypted” property">encrypted</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *</td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--file" title="The “file” property">file</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/gio/unstable/GFileInfo.html"><span class="type">GFileInfo</span></a> *</td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--file-info" title="The “file-info” property">file-info</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/gio/unstable/GIcon.html"><span class="type">GIcon</span></a> *</td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--icon" title="The “icon” property">icon</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--loading" title="The “loading” property">loading</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *</td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--mime-part" title="The “mime-part” property">mime-part</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--percent" title="The “percent” property">percent</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeRowReference"><span class="type">GtkTreeRowReference</span></a> *</td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--reference" title="The “reference” property">reference</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--saving" title="The “saving” property">saving</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--shown" title="The “shown” property">shown</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="EAttachment.html#EAttachment--signed" title="The “signed” property">signed</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAttachment.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EAttachment.html#EAttachment-struct" title="struct EAttachment">EAttachment</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAttachment.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EAttachment
+</pre>
+</div>
+<div class="refsect1">
+<a name="EAttachment.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EAttachment.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-attachment-new"></a><h3>e_attachment_new ()</h3>
+<pre class="programlisting"><a class="link" href="EAttachment.html" title="EAttachment"><span class="returnvalue">EAttachment</span></a> *
+e_attachment_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-new-for-path"></a><h3>e_attachment_new_for_path ()</h3>
+<pre class="programlisting"><a class="link" href="EAttachment.html" title="EAttachment"><span class="returnvalue">EAttachment</span></a> *
+e_attachment_new_for_path (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-new-for-uri"></a><h3>e_attachment_new_for_uri ()</h3>
+<pre class="programlisting"><a class="link" href="EAttachment.html" title="EAttachment"><span class="returnvalue">EAttachment</span></a> *
+e_attachment_new_for_uri (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-new-for-message"></a><h3>e_attachment_new_for_message ()</h3>
+<pre class="programlisting"><a class="link" href="EAttachment.html" title="EAttachment"><span class="returnvalue">EAttachment</span></a> *
+e_attachment_new_for_message (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-add-to-multipart"></a><h3>e_attachment_add_to_multipart ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_add_to_multipart (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMultipart.html"><span class="type">CamelMultipart</span></a> *multipart</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *default_charset</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-cancel"></a><h3>e_attachment_cancel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_cancel (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-can-show"></a><h3>e_attachment_get_can_show ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_get_can_show (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-can-show"></a><h3>e_attachment_set_can_show ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_can_show (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> can_show</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-disposition"></a><h3>e_attachment_get_disposition ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_attachment_get_disposition (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-dup-disposition"></a><h3>e_attachment_dup_disposition ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_attachment_dup_disposition (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-disposition"></a><h3>e_attachment_set_disposition ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_disposition (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *disposition</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-ref-file"></a><h3>e_attachment_ref_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+e_attachment_ref_file (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-file"></a><h3>e_attachment_set_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_file (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-ref-file-info"></a><h3>e_attachment_ref_file_info ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFileInfo.html"><span class="returnvalue">GFileInfo</span></a> *
+e_attachment_ref_file_info (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-file-info"></a><h3>e_attachment_set_file_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_file_info (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFileInfo.html"><span class="type">GFileInfo</span></a> *file_info</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-dup-mime-type"></a><h3>e_attachment_dup_mime_type ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_attachment_dup_mime_type (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+<p>Returns the MIME type of <em class="parameter"><code>attachment</code></em>
+ according to its <a href="https://developer.gnome.org/gio/unstable/GFileInfo.html"><span class="type">GFileInfo</span></a>.
+If the <em class="parameter"><code>attachment</code></em>
+ has no <a href="https://developer.gnome.org/gio/unstable/GFileInfo.html"><span class="type">GFileInfo</span></a> then the function returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
+Free the returned MIME type string with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.5.2.8.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>attachment</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.8.17.6"></a><h4>Returns</h4>
+<p> a newly-allocated MIME type string, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-ref-icon"></a><h3>e_attachment_ref_icon ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GIcon.html"><span class="returnvalue">GIcon</span></a> *
+e_attachment_ref_icon (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-loading"></a><h3>e_attachment_get_loading ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_get_loading (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-ref-mime-part"></a><h3>e_attachment_ref_mime_part ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+e_attachment_ref_mime_part (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-mime-part"></a><h3>e_attachment_set_mime_part ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_mime_part (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *mime_part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-percent"></a><h3>e_attachment_get_percent ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_attachment_get_percent (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-reference"></a><h3>e_attachment_get_reference ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeRowReference"><span class="returnvalue">GtkTreeRowReference</span></a> *
+e_attachment_get_reference (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-reference"></a><h3>e_attachment_set_reference ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_reference (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeRowReference"><span class="type">GtkTreeRowReference</span></a> *reference</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-saving"></a><h3>e_attachment_get_saving ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_get_saving (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-shown"></a><h3>e_attachment_get_shown ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_get_shown (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-shown"></a><h3>e_attachment_set_shown ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_shown (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> shown</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-encrypted"></a><h3>e_attachment_get_encrypted ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#camel-cipher-validity-encrypt-t"><span class="returnvalue">camel_cipher_validity_encrypt_t</span></a>
+e_attachment_get_encrypted (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-encrypted"></a><h3>e_attachment_set_encrypted ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_encrypted (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#camel-cipher-validity-encrypt-t"><span class="type">camel_cipher_validity_encrypt_t</span></a> encrypted</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-get-signed"></a><h3>e_attachment_get_signed ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#camel-cipher-validity-sign-t"><span class="returnvalue">camel_cipher_validity_sign_t</span></a>
+e_attachment_get_signed (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-set-signed"></a><h3>e_attachment_set_signed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_set_signed (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#camel-cipher-validity-sign-t"><span class="type">camel_cipher_validity_sign_t</span></a> signed_</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-dup-description"></a><h3>e_attachment_dup_description ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_attachment_dup_description (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-dup-thumbnail-path"></a><h3>e_attachment_dup_thumbnail_path ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_attachment_dup_thumbnail_path (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-is-rfc822"></a><h3>e_attachment_is_rfc822 ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_is_rfc822 (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-list-apps"></a><h3>e_attachment_list_apps ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_attachment_list_apps (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-load-async"></a><h3>e_attachment_load_async ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_load_async (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-load-finish"></a><h3>e_attachment_load_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_load_finish (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-load"></a><h3>e_attachment_load ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_load (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-open-async"></a><h3>e_attachment_open_async ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_open_async (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAppInfo.html"><span class="type">GAppInfo</span></a> *app_info</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-open-finish"></a><h3>e_attachment_open_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_open_finish (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-open"></a><h3>e_attachment_open ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_open (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAppInfo.html"><span class="type">GAppInfo</span></a> *app_info</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-save-async"></a><h3>e_attachment_save_async ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_save_async (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *destination</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-save-finish"></a><h3>e_attachment_save_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+e_attachment_save_finish (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-save"></a><h3>e_attachment_save ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_save (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *in_destination</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> **out_destination</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-load-handle-error"></a><h3>e_attachment_load_handle_error ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_load_handle_error (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-open-handle-error"></a><h3>e_attachment_open_handle_error ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_open_handle_error (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-save-handle-error"></a><h3>e_attachment_save_handle_error ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_save_handle_error (<em class="parameter"><code><a class="link" href="EAttachment.html" title="EAttachment"><span class="type">EAttachment</span></a> *attachment</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAttachment.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EAttachment-struct"></a><h3>struct EAttachment</h3>
+<pre class="programlisting">struct EAttachment;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAttachment.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EAttachment--can-show"></a><h3>The <code class="literal">“can-show”</code> property</h3>
+<pre class="programlisting">  “can-show”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--disposition"></a><h3>The <code class="literal">“disposition”</code> property</h3>
+<pre class="programlisting">  “disposition”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: "attachment"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--encrypted"></a><h3>The <code class="literal">“encrypted”</code> property</h3>
+<pre class="programlisting">  “encrypted”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: [0,3]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--file"></a><h3>The <code class="literal">“file”</code> property</h3>
+<pre class="programlisting">  “file”                     <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--file-info"></a><h3>The <code class="literal">“file-info”</code> property</h3>
+<pre class="programlisting">  “file-info”                <a href="https://developer.gnome.org/gio/unstable/GFileInfo.html"><span class="type">GFileInfo</span></a> *</pre>
+<p></p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--icon"></a><h3>The <code class="literal">“icon”</code> property</h3>
+<pre class="programlisting">  “icon”                     <a href="https://developer.gnome.org/gio/unstable/GIcon.html"><span class="type">GIcon</span></a> *</pre>
+<p></p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--loading"></a><h3>The <code class="literal">“loading”</code> property</h3>
+<pre class="programlisting">  “loading”                  <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--mime-part"></a><h3>The <code class="literal">“mime-part”</code> property</h3>
+<pre class="programlisting">  “mime-part”                <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--percent"></a><h3>The <code class="literal">“percent”</code> property</h3>
+<pre class="programlisting">  “percent”                  <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--reference"></a><h3>The <code class="literal">“reference”</code> property</h3>
+<pre class="programlisting">  “reference”                <a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeRowReference"><span class="type">GtkTreeRowReference</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--saving"></a><h3>The <code class="literal">“saving”</code> property</h3>
+<pre class="programlisting">  “saving”                   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--shown"></a><h3>The <code class="literal">“shown”</code> property</h3>
+<pre class="programlisting">  “shown”                    <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachment--signed"></a><h3>The <code class="literal">“signed”</code> property</h3>
+<pre class="programlisting">  “signed”                   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: [0,4]</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

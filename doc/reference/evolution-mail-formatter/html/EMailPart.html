@@ -1,0 +1,953 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Formatter Reference Manual: EMailPart</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Formatter Reference Manual">
+<link rel="up" href="ch01.html" title="Mail Parsing and Formatting">
+<link rel="prev" href="EMailFormatterQuote.html" title="EMailFormatterQuote">
+<link rel="next" href="EMailPartList.html" title="EMailPartList">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EMailPart.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EMailPart.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EMailPart.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EMailPart.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EMailFormatterQuote.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EMailPartList.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EMailPart"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EMailPart.top_of_page"></a>EMailPart</span></h2>
+<p>EMailPart</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EMailPart.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailPart.html" title="EMailPart"><span class="returnvalue">EMailPart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-new" title="e_mail_part_new ()">e_mail_part_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-get-id" title="e_mail_part_get_id ()">e_mail_part_get_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-get-cid" title="e_mail_part_get_cid ()">e_mail_part_get_cid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-set-cid" title="e_mail_part_set_cid ()">e_mail_part_set_cid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-id-has-prefix" title="e_mail_part_id_has_prefix ()">e_mail_part_id_has_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-id-has-suffix" title="e_mail_part_id_has_suffix ()">e_mail_part_id_has_suffix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-id-has-substr" title="e_mail_part_id_has_substr ()">e_mail_part_id_has_substr</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-ref-mime-part" title="e_mail_part_ref_mime_part ()">e_mail_part_ref_mime_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-get-mime-type" title="e_mail_part_get_mime_type ()">e_mail_part_get_mime_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-set-mime-type" title="e_mail_part_set_mime_type ()">e_mail_part_set_mime_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a class="link" href="EMailPartList.html" title="EMailPartList"><span class="returnvalue">_EMailPartList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-ref-part-list" title="e_mail_part_ref_part_list ()">e_mail_part_ref_part_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-set-part-list" title="e_mail_part_set_part_list ()">e_mail_part_set_part_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-get-is-attachment" title="e_mail_part_get_is_attachment ()">e_mail_part_get_is_attachment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-set-is-attachment" title="e_mail_part_set_is_attachment ()">e_mail_part_set_is_attachment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-bind-dom-element" title="e_mail_part_bind_dom_element ()">e_mail_part_bind_dom_element</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-update-validity" title="e_mail_part_update_validity ()">e_mail_part_update_validity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#CamelCipherValidity"><span class="returnvalue">CamelCipherValidity</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-get-validity" title="e_mail_part_get_validity ()">e_mail_part_get_validity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-has-validity" title="e_mail_part_has_validity ()">e_mail_part_has_validity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailPart.html#EMailPartValidityFlags" title="enum EMailPartValidityFlags"><span class="returnvalue">EMailPartValidityFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-get-validity-flags" title="e_mail_part_get_validity_flags ()">e_mail_part_get_validity_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-is-secured" title="e_mail_part_is_secured ()">e_mail_part_is_secured</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-snoop-type" title="e_mail_part_snoop_type ()">e_mail_part_snoop_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-is-attachment" title="e_mail_part_is_attachment ()">e_mail_part_is_attachment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-preserve-charset-in-content-type" title="e_mail_part_preserve_charset_in_content_type ()">e_mail_part_preserve_charset_in_content_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-get-related-display-part" title="e_mail_part_get_related_display_part ()">e_mail_part_get_related_display_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-animation-extract-frame" title="e_mail_part_animation_extract_frame ()">e_mail_part_animation_extract_frame</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-build-uri" title="e_mail_part_build_uri ()">e_mail_part_build_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-describe" title="e_mail_part_describe ()">e_mail_part_describe</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-is-inline" title="e_mail_part_is_inline ()">e_mail_part_is_inline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPart.html#e-mail-part-utils-body-refers" title="e_mail_part_utils_body_refers ()">e_mail_part_utils_body_refers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailPart.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailPart.html#EMailPart--cid" title="The “cid” property">cid</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailPart.html#EMailPart--id" title="The “id” property">id</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EMailPart.html#EMailPart--is-attachment" title="The “is-attachment” property">is-attachment</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailPart.html#EMailPart--mime-part" title="The “mime-part” property">mime-part</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailPart.html#EMailPart--mime-type" title="The “mime-type” property">mime-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailPart.html#EMailPart--part-list" title="The “part-list” property">part-list</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailPart.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMailPart.html#EMailPart-struct" title="struct EMailPart">EMailPart</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EMailPart.html#EMailPartValidityFlags" title="enum EMailPartValidityFlags">EMailPartValidityFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMailPart.html#EMailPartValidityPair" title="struct EMailPartValidityPair">EMailPartValidityPair</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailPart.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EMailPart
+        <span class="lineart">├──</span> <a class="link" href="EMailPartAttachmentBar.html" title="EMailPartAttachmentBar">EMailPartAttachmentBar</a>
+        <span class="lineart">├──</span> <a class="link" href="EMailPartAttachment.html" title="EMailPartAttachment">EMailPartAttachment</a>
+        <span class="lineart">├──</span> <a class="link" href="EMailPartHeaders.html" title="EMailPartHeaders">EMailPartHeaders</a>
+        <span class="lineart">╰──</span> <a class="link" href="EMailPartImage.html" title="EMailPartImage">EMailPartImage</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="EMailPart.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EMailPart implements
+ EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EMailPart.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EMailPart.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-mail-part-new"></a><h3>e_mail_part_new ()</h3>
+<pre class="programlisting"><a class="link" href="EMailPart.html" title="EMailPart"><span class="returnvalue">EMailPart</span></a> *
+e_mail_part_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *mime_part</code></em>,
+                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Creates a new <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> for the given <em class="parameter"><code>mime_part</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_part</p></td>
+<td class="parameter_description"><p>(allow-none) a <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>part ID</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.9.2.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-get-id"></a><h3>e_mail_part_get_id ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_part_get_id (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-get-cid"></a><h3>e_mail_part_get_cid ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_part_get_cid (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-set-cid"></a><h3>e_mail_part_set_cid ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_set_cid (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *cid</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-id-has-prefix"></a><h3>e_mail_part_id_has_prefix ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_id_has_prefix (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-id-has-suffix"></a><h3>e_mail_part_id_has_suffix ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_id_has_suffix (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *suffix</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-id-has-substr"></a><h3>e_mail_part_id_has_substr ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_id_has_substr (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *substr</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-ref-mime-part"></a><h3>e_mail_part_ref_mime_part ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+e_mail_part_ref_mime_part (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-get-mime-type"></a><h3>e_mail_part_get_mime_type ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_part_get_mime_type (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-set-mime-type"></a><h3>e_mail_part_set_mime_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_set_mime_type (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-ref-part-list"></a><h3>e_mail_part_ref_part_list ()</h3>
+<pre class="programlisting">struct <a class="link" href="EMailPartList.html" title="EMailPartList"><span class="returnvalue">_EMailPartList</span></a> *
+e_mail_part_ref_part_list (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-set-part-list"></a><h3>e_mail_part_set_part_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_set_part_list (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                           <em class="parameter"><code><span class="type">struct _EMailPartList</span> *part_list</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-get-is-attachment"></a><h3>e_mail_part_get_is_attachment ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_get_is_attachment (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-set-is-attachment"></a><h3>e_mail_part_set_is_attachment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_set_is_attachment (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> is_attachment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-bind-dom-element"></a><h3>e_mail_part_bind_dom_element ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_bind_dom_element (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                              <em class="parameter"><code><span class="type">WebKitDOMElement</span> *element</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-update-validity"></a><h3>e_mail_part_update_validity ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_update_validity (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#CamelCipherValidity"><span class="type">CamelCipherValidity</span></a> *validity</code></em>,
+                             <em class="parameter"><code><a class="link" href="EMailPart.html#EMailPartValidityFlags" title="enum EMailPartValidityFlags"><span class="type">EMailPartValidityFlags</span></a> validity_type</code></em>);</pre>
+<p>Updates validity of the <em class="parameter"><code>part</code></em>
+. When the part already has some validity
+set, the new <em class="parameter"><code>validity</code></em>
+ and <em class="parameter"><code>validity_type</code></em>
+ are just appended, preserving
+the original validity. Validities of the same type (PGP or S/MIME) are
+merged together.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>An <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>validity_type</p></td>
+<td class="parameter_description"><p>E_MAIL_PART_VALIDITY_* flags</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>validity</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#CamelCipherValidity"><span class="type">CamelCipherValidity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-get-validity"></a><h3>e_mail_part_get_validity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#CamelCipherValidity"><span class="returnvalue">CamelCipherValidity</span></a> *
+e_mail_part_get_validity (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                          <em class="parameter"><code><a class="link" href="EMailPart.html#EMailPartValidityFlags" title="enum EMailPartValidityFlags"><span class="type">EMailPartValidityFlags</span></a> validity_type</code></em>);</pre>
+<p>Returns, validity of <em class="parameter"><code>part</code></em>
+ contains any validity with the same bits
+as <em class="parameter"><code>validity_type</code></em>
+ set. It should contain all bits of it.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>An <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>validity_type</p></td>
+<td class="parameter_description"><p>E_MAIL_PART_VALIDITY_* flags</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.9.18.6"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/camel/CamelCipherContext.html#CamelCipherValidity"><span class="type">CamelCipherValidity</span></a> of the given type, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found</p>
+<p></p>
+</div>
+<p class="since">Since 3.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-has-validity"></a><h3>e_mail_part_has_validity ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_has_validity (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-get-validity-flags"></a><h3>e_mail_part_get_validity_flags ()</h3>
+<pre class="programlisting"><a class="link" href="EMailPart.html#EMailPartValidityFlags" title="enum EMailPartValidityFlags"><span class="returnvalue">EMailPartValidityFlags</span></a>
+e_mail_part_get_validity_flags (<em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-is-secured"></a><h3>e_mail_part_is_secured ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_is_secured (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *part</code></em>);</pre>
+<p>Whether <em class="parameter"><code>part</code></em>
+ is signed or encrypted or not.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.9.21.6"></a><h4>Returns</h4>
+<p> TRUE/FALSE</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-snoop-type"></a><h3>e_mail_part_snoop_type ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_part_snoop_type (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *part</code></em>);</pre>
+<p>Tries to snoop the mime type of a part.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.9.22.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if unknown (more likely application/octet-stream).</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-is-attachment"></a><h3>e_mail_part_is_attachment ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_is_attachment (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *part</code></em>);</pre>
+<p>Returns true if the part is an attachment.</p>
+<p>A part is not considered an attachment if it is a
+multipart, or a text part with no filename.  It is used
+to determine if an attachment header should be displayed for
+the part.</p>
+<p>Content-Disposition is not checked.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.23.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>Part to check.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.9.23.8"></a><h4>Returns</h4>
+<p> TRUE/FALSE</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-preserve-charset-in-content-type"></a><h3>e_mail_part_preserve_charset_in_content_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_preserve_charset_in_content_type
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *ipart</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *opart</code></em>);</pre>
+<p>Copies 'charset' part of content-type header from <em class="parameter"><code>ipart</code></em>
+ to <em class="parameter"><code>opart</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ipart</p></td>
+<td class="parameter_description"><p>Source <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>opart</p></td>
+<td class="parameter_description"><p>Target <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-get-related-display-part"></a><h3>e_mail_part_get_related_display_part ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+e_mail_part_get_related_display_part (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *part</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *out_displayid</code></em>);</pre>
+<p>Goes through all subparts of given <em class="parameter"><code>part</code></em>
+ and tries to determine which
+part should be displayed and which parts are just attachments to the
+part.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>a multipart/related or multipart/alternative <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_displayid</p></td>
+<td class="parameter_description"><p>(out) returns index of the returned part</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.9.25.6"></a><h4>Returns</h4>
+<p> A <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> that should be displayed</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-animation-extract-frame"></a><h3>e_mail_part_animation_extract_frame ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_animation_extract_frame (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> *bytes</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **out_frame</code></em>,
+                                     <em class="parameter"><code><span class="type">gsize</span> *out_len</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-build-uri"></a><h3>e_mail_part_build_uri ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_part_build_uri (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *message_uid</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_param_name</code></em>,
+                       <em class="parameter"><code>...</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-describe"></a><h3>e_mail_part_describe ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_part_describe (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *part</code></em>,
+                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);</pre>
+<p>Generate a simple textual description of a part, <em class="parameter"><code>mime_type</code></em>
+ represents
+the content.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.28.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>MIME type of the content</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.9.28.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-is-inline"></a><h3>e_mail_part_is_inline ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_is_inline (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *part</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> *extensions</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-utils-body-refers"></a><h3>e_mail_part_utils_body_refers ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_utils_body_refers (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *body</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *cid</code></em>);</pre>
+<p>Returns whether <em class="parameter"><code>body</code></em>
+ contains a reference to <em class="parameter"><code>cid</code></em>
+ enclosed in quotes;
+   returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if any of the arguments is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.6.9.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>body</p></td>
+<td class="parameter_description"><p>text body to search for references in; can be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, then returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cid</p></td>
+<td class="parameter_description"><p>a Content-ID to search for; if found in body, it should be of form "cid:xxxxx"; can be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailPart.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EMailPart-struct"></a><h3>struct EMailPart</h3>
+<pre class="programlisting">struct EMailPart;</pre>
+<p>The <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> is a wrapper around <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> which holds additional
+information about the mime part, like it's ID, encryption type etc.</p>
+<p>Each <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> must have a unique ID. The ID is a dot-separated
+hierarchical description of the location of the part within the email
+message.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPartValidityFlags"></a><h3>enum EMailPartValidityFlags</h3>
+<div class="refsect3">
+<a name="id-1.2.6.10.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-PART-VALIDITY-NONE:CAPS"></a>E_MAIL_PART_VALIDITY_NONE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-PART-VALIDITY-PGP:CAPS"></a>E_MAIL_PART_VALIDITY_PGP</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-PART-VALIDITY-SMIME:CAPS"></a>E_MAIL_PART_VALIDITY_SMIME</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-PART-VALIDITY-SIGNED:CAPS"></a>E_MAIL_PART_VALIDITY_SIGNED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-PART-VALIDITY-ENCRYPTED:CAPS"></a>E_MAIL_PART_VALIDITY_ENCRYPTED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPartValidityPair"></a><h3>struct EMailPartValidityPair</h3>
+<pre class="programlisting">struct EMailPartValidityPair {
+	EMailPartValidityFlags validity_type;
+	CamelCipherValidity *validity;
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailPart.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EMailPart--cid"></a><h3>The <code class="literal">“cid”</code> property</h3>
+<pre class="programlisting">  “cid”                      <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The MIME Content-ID.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPart--id"></a><h3>The <code class="literal">“id”</code> property</h3>
+<pre class="programlisting">  “id”                       <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The part ID.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPart--is-attachment"></a><h3>The <code class="literal">“is-attachment”</code> property</h3>
+<pre class="programlisting">  “is-attachment”            <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Format the part as an attachment.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPart--mime-part"></a><h3>The <code class="literal">“mime-part”</code> property</h3>
+<pre class="programlisting">  “mime-part”                <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *</pre>
+<p>The MIME part.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPart--mime-type"></a><h3>The <code class="literal">“mime-type”</code> property</h3>
+<pre class="programlisting">  “mime-type”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The MIME type.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPart--part-list"></a><h3>The <code class="literal">“part-list”</code> property</h3>
+<pre class="programlisting">  “part-list”                <a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *</pre>
+<p>The part list that owns the part.</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

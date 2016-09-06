@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-images-in-html" xml:lang="ja">
+
+  <info>
+    <desc>HTML メールに埋め込まれた画像です。</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#usage-mail-getnsend-get-attach-html -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>HTML メールの画像</title>
+
+<p>Evolution は、メール本文に画像を埋め込んだ HTML メール (例えば受信箱にあるようこそメール) を開く際に、そのメール内に画像を表示します。</p>
+
+<section id="loading">
+<title>画像の読み込み</title>
+<p>画像はメールの一部ではなくリンクの場合もあります。Evolution はインターネットからそういった画像をダウンロードできますが、要求されない限りダウンロードは行いません。リモートに置かれた画像を読み込んで表示するには時間がかかる可能性があることと、スパマーにより誰が読んだのか追跡するのに利用されている可能性があるためです。画像を自動で読み込まないことがプライバシーの保護につながります。</p>
+
+<p>メール内の画像を読み込むには、<guiseq><gui>表示</gui><gui>画像を読み込む</gui></guiseq>をクリックするか、<keyseq><key>Ctrl</key><key>I</key></keyseq>を押します。</p>
+
+<p>画像の読み込みについてのデフォルト動作をセットするには、<guiseq><gui>編集</gui><gui>設定</gui><gui>メールの設定</gui><gui>HTML メール</gui><gui>画像の読み込み</gui></guiseq>に移動します。</p>
+</section>
+
+<section id="automatically-download">
+<title>Automatically download images in emails from people you know</title>
+
+<p>連絡先に登録されている差出人からのメールで画像をダウンロードするよううにできます。そうするには、<guiseq><gui>編集</gui><gui>設定</gui><gui>メールの設定</gui><gui>HTML メール</gui><gui>画像の読み込み</gui></guiseq>に移動します。<gui>連絡先に登録されている差出人のメッセージでのみ画像を読み込む</gui>オプションを有効にします。</p>
+
+<p>それから、<guiseq><gui>編集</gui><gui>設定</gui><gui>連絡先</gui><gui>自動補完</gui></guiseq>に移動します。<gui>自動補完した連絡先にメールアドレスを表示する</gui>チェックボックスにチェックを入れて有効にします。</p>
+</section>
+
+<section id="saving">
+<title>画像の保存</title>
+<p>HTML メールに埋め込まれた画像を保存するには、画像を右クリックして<gui>画像を保存...</gui>をクリックします。</p>
+<!-- This is available only since version 3.1.5, see https://bugzilla.gnome.org/show_bug.cgi?id=655669 -->
+</section>
+
+</page>

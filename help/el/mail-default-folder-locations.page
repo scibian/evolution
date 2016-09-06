@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-default-folder-locations" xml:lang="el">
+
+  <info>
+    <desc>Αλλαγή της θέσης των φακέλων πρόχειρο, απεσταλμένα, απορρίμματα και ανεπιθύμητα.</desc>
+
+    <link type="guide" xref="mail-account-manage-imap-plus#defaults"/>
+    <link type="guide" xref="mail-account-manage-local-delivery#defaults"/>
+    <link type="guide" xref="mail-account-manage-maildir-format-directories#defaults"/>
+    <link type="guide" xref="mail-account-manage-mh-format-directories#defaults"/>
+    <link type="guide" xref="mail-account-manage-pop#defaults"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-directory#defaults"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-file#defaults"/>
+    <link type="guide" xref="mail-account-manage-usenet-news#defaults"/>
+    <link type="guide" xref="mail-account-manage-microsoft-exchange-evo-mapi#defaults"/>
+    <link type="guide" xref="mail-account-manage-microsoft-exchange-evo-ews#defaults"/>
+
+    <revision pkgversion="3.7.4" version="0.2" date="2013-01-23" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Τοποθεσίες φακέλου αλληλογραφίας</title>
+
+<p>Μπορείτε να ορίσετε μια διαφορετική θέση αποθήκευσης μηνυμάτων στους φακέλους προχείρων και απεσταλμένων στην ενότητα <gui>προεπιλογές</gui> του επεξεργαστή λογαριασμού αλληλογραφίας (<guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui><gui>λογαριασμοί αλληλογραφίας</gui><gui style="button">επεξεργασία</gui><gui>προεπιλογές</gui></guiseq>).</p>
+<p>Για απομακρυσμένους τύπους λογαριασμού (λογαριασμοί όπως IMAP) μπορείτε επίσης να χρησιμοποιήσετε φακέλους απορριμμάτων και ανεπιθύμητων στον εξυπηρετητή αλληλογραφίας επιλέγοντας την αντίστοιχη επιλογή <gui>Χρήση ενός πραγματικού φακέλου</gui>. Σε αυτήν την περίπτωση, τα τοπικά του Evolution <link xref="mail-search-folders">εικονικοί φάκελοι</link> δεν θα χρησιμοποιηθούν.</p>
+
+</page>

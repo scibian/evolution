@@ -1,0 +1,932 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EActivity</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch02.html" title="Activities">
+<link rel="prev" href="ch02.html" title="Activities">
+<link rel="next" href="EActivityBar.html" title="EActivityBar">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EActivity.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EActivity.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EActivity.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch02.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EActivityBar.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EActivity"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EActivity.top_of_page"></a>EActivity</span></h2>
+<p>EActivity — Describe activities in progress</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EActivity.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EActivity.html" title="EActivity"><span class="returnvalue">EActivity</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-new" title="e_activity_new ()">e_activity_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-cancel" title="e_activity_cancel ()">e_activity_cancel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-describe" title="e_activity_describe ()">e_activity_describe</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EAlertSink.html" title="EAlertSink"><span class="returnvalue">EAlertSink</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-get-alert-sink" title="e_activity_get_alert_sink ()">e_activity_get_alert_sink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-set-alert-sink" title="e_activity_set_alert_sink ()">e_activity_set_alert_sink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="returnvalue">GCancellable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-get-cancellable" title="e_activity_get_cancellable ()">e_activity_get_cancellable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-set-cancellable" title="e_activity_set_cancellable ()">e_activity_set_cancellable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-get-icon-name" title="e_activity_get_icon_name ()">e_activity_get_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-set-icon-name" title="e_activity_set_icon_name ()">e_activity_set_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-get-percent" title="e_activity_get_percent ()">e_activity_get_percent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-set-percent" title="e_activity_set_percent ()">e_activity_set_percent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EActivity.html#EActivityState" title="enum EActivityState"><span class="returnvalue">EActivityState</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-get-state" title="e_activity_get_state ()">e_activity_get_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-set-state" title="e_activity_set_state ()">e_activity_set_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-get-text" title="e_activity_get_text ()">e_activity_get_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-set-text" title="e_activity_set_text ()">e_activity_set_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-get-last-known-text" title="e_activity_get_last_known_text ()">e_activity_get_last_known_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EActivity.html#e-activity-handle-cancellation" title="e_activity_handle_cancellation ()">e_activity_handle_cancellation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EActivity.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a> *</td>
+<td class="property_name"><a class="link" href="EActivity.html#EActivity--alert-sink" title="The “alert-sink” property">alert-sink</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *</td>
+<td class="property_name"><a class="link" href="EActivity.html#EActivity--cancellable" title="The “cancellable” property">cancellable</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EActivity.html#EActivity--icon-name" title="The “icon-name” property">icon-name</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EActivity.html#EActivity--percent" title="The “percent” property">percent</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="EActivity.html#EActivityState" title="enum EActivityState"><span class="type">EActivityState</span></a></td>
+<td class="property_name"><a class="link" href="EActivity.html#EActivity--state" title="The “state” property">state</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EActivity.html#EActivity--text" title="The “text” property">text</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EActivity.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EActivity.html#EActivity-struct" title="struct EActivity">EActivity</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EActivity.html#EActivityState" title="enum EActivityState">EActivityState</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EActivity.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EActivity
+</pre>
+</div>
+<div class="refsect1">
+<a name="EActivity.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;e-util/e-util.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="EActivity.description"></a><h2>Description</h2>
+<p><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> is used to track and describe application activities in
+progress.  An <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> usually manifests in a user interface as a
+status bar message (see <a class="link" href="EActivityProxy.html" title="EActivityProxy"><span class="type">EActivityProxy</span></a>) or information bar message
+(see <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a>), with optional progress indication and a cancel
+button which is linked to a <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="EActivity.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-activity-new"></a><h3>e_activity_new ()</h3>
+<pre class="programlisting"><a class="link" href="EActivity.html" title="EActivity"><span class="returnvalue">EActivity</span></a> *
+e_activity_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.2.5"></a><h4>Returns</h4>
+<p> an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-cancel"></a><h3>e_activity_cancel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_activity_cancel (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Convenience function cancels <em class="parameter"><code>activity</code></em>
+'s <a class="link" href="EActivity.html#EActivity--cancellable" title="The “cancellable” property"><span class="type">“cancellable”</span></a>.</p>
+<p>
+  </p>
+<div class="note">
+    This function will not set <em class="parameter"><code>activity</code></em>'s <a class="link" href="EActivity.html#EActivity--state" title="The “state” property"><span class="type">“state”</span></a> to
+    <em class="parameter"><code>E_ACTIVITY_CANCELLED</code></em>.  It merely requests that the associated
+    operation be cancelled.  Only after the operation finishes with
+    a <em class="parameter"><code>G_IO_ERROR_CANCELLED</code></em> should the <em class="parameter"><code>activity</code></em>'s <a class="link" href="EActivity.html#EActivity--state" title="The “state” property"><span class="type">“state”</span></a>
+    be changed (see <a class="link" href="EActivity.html#e-activity-handle-cancellation" title="e_activity_handle_cancellation ()"><code class="function">e_activity_handle_cancellation()</code></a>).  During this
+    interim period <a class="link" href="EActivity.html#e-activity-describe" title="e_activity_describe ()"><code class="function">e_activity_describe()</code></a> will indicate the activity
+    is "cancelling".
+  </div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-describe"></a><h3>e_activity_describe ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_activity_describe (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Returns a description of the current state of the <em class="parameter"><code>activity</code></em>
+ based on
+the <a class="link" href="EActivity.html#EActivity--text" title="The “text” property"><span class="type">“text”</span></a>, <a class="link" href="EActivity.html#EActivity--percent" title="The “percent” property"><span class="type">“percent”</span></a> and <a class="link" href="EActivity.html#EActivity--state" title="The “state” property"><span class="type">“state”</span></a> properties.
+Suitable for displaying in a status bar or similar widget.</p>
+<p>Free the returned string with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.4.7"></a><h4>Returns</h4>
+<p> a description of <em class="parameter"><code>activity</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-get-alert-sink"></a><h3>e_activity_get_alert_sink ()</h3>
+<pre class="programlisting"><a class="link" href="EAlertSink.html" title="EAlertSink"><span class="returnvalue">EAlertSink</span></a> *
+e_activity_get_alert_sink (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Returns the <a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a> for <em class="parameter"><code>activity</code></em>
+, if one was provided.</p>
+<p>The <a class="link" href="EActivity.html#EActivity--alert-sink" title="The “alert-sink” property"><span class="type">“alert-sink”</span></a> property is convenient for when the user
+should be alerted about a failed asynchronous operation.  Generally
+an <a class="link" href="EActivity.html#EActivity--alert-sink" title="The “alert-sink” property"><span class="type">“alert-sink”</span></a> is set prior to dispatching the operation,
+and retrieved by a callback function when the operation completes.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.5.7"></a><h4>Returns</h4>
+<p> an <a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-set-alert-sink"></a><h3>e_activity_set_alert_sink ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_activity_set_alert_sink (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>,
+                           <em class="parameter"><code><a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a> *alert_sink</code></em>);</pre>
+<p>Sets (or clears) the <a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a> for <em class="parameter"><code>activity</code></em>
+.</p>
+<p>The <a class="link" href="EActivity.html#EActivity--alert-sink" title="The “alert-sink” property"><span class="type">“alert-sink”</span></a> property is convenient for when the user
+should be alerted about a failed asynchronous operation.  Generally
+an <a class="link" href="EActivity.html#EActivity--alert-sink" title="The “alert-sink” property"><span class="type">“alert-sink”</span></a> is set prior to dispatching the operation,
+and retrieved by a callback function when the operation completes.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>alert_sink</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-get-cancellable"></a><h3>e_activity_get_cancellable ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="returnvalue">GCancellable</span></a> *
+e_activity_get_cancellable (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Returns the <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> for <em class="parameter"><code>activity</code></em>
+, if one was provided.</p>
+<p>Generally the <em class="parameter"><code>activity</code></em>
+'s <a class="link" href="EActivity.html#EActivity--cancellable" title="The “cancellable” property"><span class="type">“cancellable”</span></a> property holds the same
+<a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> instance passed to a cancellable function, so widgets like
+<a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> can bind the <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> to a cancel button.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.7.7"></a><h4>Returns</h4>
+<p> a <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-set-cancellable"></a><h3>e_activity_set_cancellable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_activity_set_cancellable (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+<p>Sets (or clears) the <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> for <em class="parameter"><code>activity</code></em>
+.</p>
+<p>Generally the <em class="parameter"><code>activity</code></em>
+'s <a class="link" href="EActivity.html#EActivity--cancellable" title="The “cancellable” property"><span class="type">“cancellable”</span></a> property holds the same
+<a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> instance passed to a cancellable function, so widgets like
+<a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> can bind the <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> to a cancel button.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-get-icon-name"></a><h3>e_activity_get_icon_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_activity_get_icon_name (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Returns the themed icon name for <em class="parameter"><code>activity</code></em>
+, if one was provided.</p>
+<p>Generally widgets like <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> will honor the <a class="link" href="EActivity.html#EActivity--icon-name" title="The “icon-name” property"><span class="type">“icon-name”</span></a>
+property while the <em class="parameter"><code>activity</code></em>
+'s <a class="link" href="EActivity.html#EActivity--state" title="The “state” property"><span class="type">“state”</span></a> is <em class="parameter"><code>E_ACTIVITY_RUNNING</code></em>
+ or
+<em class="parameter"><code>E_ACTIVITY_WAITING</code></em>
+, but will override the icon for <em class="parameter"><code>E_ACTIVITY_CANCELLED</code></em>
+
+and <em class="parameter"><code>E_ACTIVITY_COMPLETED</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.9.7"></a><h4>Returns</h4>
+<p> a themed icon name, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-set-icon-name"></a><h3>e_activity_set_icon_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_activity_set_icon_name (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_name</code></em>);</pre>
+<p>Sets (or clears) the themed icon name for <em class="parameter"><code>activity</code></em>
+.</p>
+<p>Generally widgets like <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> will honor the <a class="link" href="EActivity.html#EActivity--icon-name" title="The “icon-name” property"><span class="type">“icon-name”</span></a>
+property while the <em class="parameter"><code>activity</code></em>
+'s <a class="link" href="EActivity.html#EActivity--state" title="The “state” property"><span class="type">“state”</span></a> is <em class="parameter"><code>E_ACTIVITY_RUNNING</code></em>
+ or
+<em class="parameter"><code>E_ACTIVITY_WAITING</code></em>
+, but will override the icon for <em class="parameter"><code>E_ACTIVITY_CANCELLED</code></em>
+
+and <em class="parameter"><code>E_ACTIVITY_COMPLETED</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.10.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>icon_name</p></td>
+<td class="parameter_description"><p>a themed icon name, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-get-percent"></a><h3>e_activity_get_percent ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+e_activity_get_percent (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Returns the percent complete for <em class="parameter"><code>activity</code></em>
+ as a value between 0 and 100,
+or a negative value if the percent complete is unknown.</p>
+<p>Generally widgets like <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> will display the percent complete by
+way of <a class="link" href="EActivity.html#e-activity-describe" title="e_activity_describe ()"><code class="function">e_activity_describe()</code></a>, but only if the value is between 0 and 100.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.11.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.11.7"></a><h4>Returns</h4>
+<p> the percent complete, or a negative value if unknown</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-set-percent"></a><h3>e_activity_set_percent ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_activity_set_percent (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> percent</code></em>);</pre>
+<p>Sets the percent complete for <em class="parameter"><code>activity</code></em>
+.  The value should be between 0
+and 100, or negative if the percent complete is unknown.</p>
+<p>Generally widgets like <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> will display the percent complete by
+way of <a class="link" href="EActivity.html#e-activity-describe" title="e_activity_describe ()"><code class="function">e_activity_describe()</code></a>, but only if the value is between 0 and 100.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>percent</p></td>
+<td class="parameter_description"><p>the percent complete, or a negative value if unknown</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-get-state"></a><h3>e_activity_get_state ()</h3>
+<pre class="programlisting"><a class="link" href="EActivity.html#EActivityState" title="enum EActivityState"><span class="returnvalue">EActivityState</span></a>
+e_activity_get_state (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Returns the state of <em class="parameter"><code>activity</code></em>
+.</p>
+<p>Generally widgets like <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> will display the activity state by
+way of <a class="link" href="EActivity.html#e-activity-describe" title="e_activity_describe ()"><code class="function">e_activity_describe()</code></a> and possibly an icon.  The activity state is
+<em class="parameter"><code>E_ACTIVITY_RUNNING</code></em>
+ by default, and is usually only changed once when the
+associated operation is finished.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.13.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.13.7"></a><h4>Returns</h4>
+<p> an <a class="link" href="EActivity.html#EActivityState" title="enum EActivityState"><span class="type">EActivityState</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-set-state"></a><h3>e_activity_set_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_activity_set_state (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>,
+                      <em class="parameter"><code><a class="link" href="EActivity.html#EActivityState" title="enum EActivityState"><span class="type">EActivityState</span></a> state</code></em>);</pre>
+<p>Sets the state of <em class="parameter"><code>activity</code></em>
+.</p>
+<p>Generally widgets like <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> will display the activity state by
+way of <a class="link" href="EActivity.html#e-activity-describe" title="e_activity_describe ()"><code class="function">e_activity_describe()</code></a> and possibly an icon.  The activity state is
+<em class="parameter"><code>E_ACTIVITY_RUNNING</code></em>
+ by default, and is usually only changed once when the
+associated operation is finished.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.14.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html#EActivityState" title="enum EActivityState"><span class="type">EActivityState</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-get-text"></a><h3>e_activity_get_text ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_activity_get_text (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Returns a message describing what <em class="parameter"><code>activity</code></em>
+ is doing.</p>
+<p>Generally widgets like <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> will display the message by way of
+<a class="link" href="EActivity.html#e-activity-describe" title="e_activity_describe ()"><code class="function">e_activity_describe()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.15.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.15.7"></a><h4>Returns</h4>
+<p> a descriptive message</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-set-text"></a><h3>e_activity_set_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_activity_set_text (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+<p>Sets (or clears) a message describing what <em class="parameter"><code>activity</code></em>
+ is doing.</p>
+<p>Generally widgets like <a class="link" href="EActivityBar.html" title="EActivityBar"><span class="type">EActivityBar</span></a> will display the message by way of
+<a class="link" href="EActivity.html#e-activity-describe" title="e_activity_describe ()"><code class="function">e_activity_describe()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.16.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>a descriptive message, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-get-last-known-text"></a><h3>e_activity_get_last_known_text ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_activity_get_last_known_text (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>);</pre>
+<p>Returns the last non-empty <a class="link" href="EActivity.html#EActivity--text" title="The “text” property"><span class="type">“text”</span></a> value, so it's possible to
+identify what the <em class="parameter"><code>activity</code></em>
+ <span class="emphasis"><em>was</em></span> doing even if it
+currently has no description.</p>
+<p>Mostly useful for debugging.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.17.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.17.7"></a><h4>Returns</h4>
+<p> a descriptive message, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-activity-handle-cancellation"></a><h3>e_activity_handle_cancellation ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_activity_handle_cancellation (<em class="parameter"><code><a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> *activity</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *error</code></em>);</pre>
+<p>Convenience function sets <em class="parameter"><code>activity</code></em>
+'s <a class="link" href="EActivity.html#EActivity--state" title="The “state” property"><span class="type">“state”</span></a> to
+<em class="parameter"><code>E_ACTIVITY_CANCELLED</code></em>
+ if <em class="parameter"><code>error</code></em>
+ is <em class="parameter"><code>G_IO_ERROR_CANCELLED</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.2.9.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>activity</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.9.18.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>activity</code></em>
+was set to <em class="parameter"><code>E_ACTIVITY_CANCELLED</code></em>
+</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EActivity.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EActivity-struct"></a><h3>struct EActivity</h3>
+<pre class="programlisting">struct EActivity;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EActivityState"></a><h3>enum EActivityState</h3>
+<p>Various states of an <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.2.10.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-ACTIVITY-RUNNING:CAPS"></a>E_ACTIVITY_RUNNING</p></td>
+<td class="enum_member_description">
+<p>  The <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> is running.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-ACTIVITY-WAITING:CAPS"></a>E_ACTIVITY_WAITING</p></td>
+<td class="enum_member_description">
+<p>  The <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> is waiting to be run.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-ACTIVITY-CANCELLED:CAPS"></a>E_ACTIVITY_CANCELLED</p></td>
+<td class="enum_member_description">
+<p>  The <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> has been cancelled.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-ACTIVITY-COMPLETED:CAPS"></a>E_ACTIVITY_COMPLETED</p></td>
+<td class="enum_member_description">
+<p>  The <a class="link" href="EActivity.html" title="EActivity"><span class="type">EActivity</span></a> has completed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EActivity.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EActivity--alert-sink"></a><h3>The <code class="literal">“alert-sink”</code> property</h3>
+<pre class="programlisting">  “alert-sink”               <a class="link" href="EAlertSink.html" title="EAlertSink"><span class="type">EAlertSink</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EActivity--cancellable"></a><h3>The <code class="literal">“cancellable”</code> property</h3>
+<pre class="programlisting">  “cancellable”              <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EActivity--icon-name"></a><h3>The <code class="literal">“icon-name”</code> property</h3>
+<pre class="programlisting">  “icon-name”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EActivity--percent"></a><h3>The <code class="literal">“percent”</code> property</h3>
+<pre class="programlisting">  “percent”                  <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EActivity--state"></a><h3>The <code class="literal">“state”</code> property</h3>
+<pre class="programlisting">  “state”                    <a class="link" href="EActivity.html#EActivityState" title="enum EActivityState"><span class="type">EActivityState</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: E_ACTIVITY_RUNNING</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EActivity--text"></a><h3>The <code class="literal">“text”</code> property</h3>
+<pre class="programlisting">  “text”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-usage-add-contact" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="contacts-usage"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-09-29" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>アドレス帳に連絡先を追加します。</desc>
+  </info>
+
+  <title>連絡先の追加</title>
+
+  <steps>
+    <item>
+      <p><guiseq><gui>ファイル</gui><gui>新規</gui><gui>連絡先</gui></guiseq>をクリックするか、連絡先一覧の空きスペースで右クリックして<gui>新しい連絡先…</gui>をクリックするか、<keyseq><key>Shift</key><key>Ctrl</key><key>C</key></keyseq>を押します。</p>
+    </item>
+    <item>
+      <p>Select the address book under <gui>Where:</gui> to which it will be
+      added.</p>
+    </item>
+    <item>
+      <p>連絡先の情報を入力します。タブが複数あることに注意してください。</p>
+    </item>
+    <item>
+      <p>You can add a photograph to the contact by clicking the large field
+      (showing a stylized person) next to <gui>Full Name</gui> and
+      <gui>Categories</gui>.</p>
+    </item>
+    <item>
+      <p><gui style="button">OK</gui>をクリックします。</p>
+    </item>
+  </steps>
+
+<section id="contact-quick-add">
+  <title>Contact Quick-Add from the Email Window</title>
+
+  <p>You can also add a contact directly from an email.</p>
+
+  <steps>
+    <item>
+      <p>メールのヘッダーのメールアドレスを右クリックします。</p>
+    </item>
+    <item>
+      <p><gui>アドレス帳に追加…</gui>を選択します。</p>
+    </item>
+    <item>
+      <p>Either press <gui style="button">Edit Full</gui> to bring up the full
+      <gui>Contact Editor</gui>, or click <gui style="button">OK</gui> to
+      directly add the contact to the chosen address book.</p>
+    </item>
+  </steps>
+
+</section>
+
+</page>

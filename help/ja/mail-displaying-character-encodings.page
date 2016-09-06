@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-character-encodings" xml:lang="ja">
+
+  <info>
+    <desc>メール中の文字が正しく、あるいは全く表示されない場合。</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+    <link type="guide" xref="index#mail-composing-advanced"/>
+
+    <revision pkgversion="3.3.91" version="0.4" date="2012-02-18" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>エンコーディング</title>
+
+<section id="received-messages">
+<title>受け取ったメール</title>
+
+<p>If the email application of the sender is broken or misconfigured, plain text emails might not include information about the character encoding used. If you receive such messages, choose <guiseq><gui>View</gui><gui>Character Encoding</gui></guiseq> from the main menu and change the currently chosen character encoding to an appropriate one that might be the encoding used by the sender. You have to make this change every time you view the message.</p>
+<p>デフォルト設定にするには、<guiseq><gui>編集</gui><gui>設定</gui><gui>メールの設定</gui><gui>全般</gui><gui>メッセージの表示</gui><gui>デフォルトのエンコーディング</gui></guiseq>に移動します。</p>
+
+</section>
+
+<section id="sending-messages">
+<title>メール送信</title>
+
+<p>万一メールのデフォルトのエンコーディングを変更したい場合は、<guiseq><gui>編集</gui><gui>設定</gui><gui>コンポーザーの設定</gui><gui>デフォルトの動作</gui><gui>エンコーディング</gui></guiseq>から、スペルチェックに使うインストール済みの言語を指定できます。</p>
+<note style="tip"><p><link xref="mail-composer-html">HTML のメール</link>ではエンコーディングとして常に UTF-8 を使うため、この設定はプレーンテキストのメールにのみ効果があります。</p></note>
+
+</section>
+
+</page>

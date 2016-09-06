@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="intro-application" xml:lang="el">
+
+  <info>
+    <desc>Μια εισαγωγή στο Evolution.</desc>
+
+     <link type="guide" xref="index#getting-started"/>
+
+    <revision pkgversion="3.10.3" version="0.4" date="2014-01-25" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Brian Grohe</name>
+      <email its:translate="no">grohe43@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Ξεκινώντας</title>
+<p>Το Evolution σας επιτρέπει να προσπελάσετε τις προσωπικές σας πληροφορίες όπως τα ημερολόγια σας, την αλληλογραφία, τα βιβλία διευθύνσεων και εργασιών σε μια θέση.</p>
+
+<p>Από προεπιλογή το Evolution ανοίγει την προβολή αλληλογραφίας. Εκεί μπορείτε να δείτε όλη την αλληλογραφία σας. Μπορείτε να αλλάξετε σε άλλες όψεις της εφαρμογής πηγαίνοντας στο τέλος της αριστερής στήλης στο παράθυρο (τον αποκαλούμενο "εναλλάκτη") και να επιλέξετε την επιθυμητή προβολή. <link xref="intro-main-window">Μάθετε περισσότερα για τα στοιχεία του κυρίως παραθύρου.</link></p>
+
+<note style="advanced"><p>Όταν ξεκινά το Evolution, θυμάται την τελευταία προβολή που χρησιμοποιήσατε. Όμως μπορείτε επίσης ρητά να ξεκινήσετε το Evolution με μια συγκεκριμένη προβολή. Για την προβολή ημερολογίου, χρησιμοποιήστε την εντολή <cmd>evolution --component=calendar</cmd> στην εφαρμογή <app>Τερματικός</app>. Άλλες διαθέσιμες επιλογές είναι "αλληλογραφία", "επαφές", "εργασίες" και "υπενθυμίσεις".</p></note>
+
+</page>

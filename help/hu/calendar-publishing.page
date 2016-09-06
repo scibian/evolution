@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-publishing" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="calendar-sharing-information"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-24" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from Reuse
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#bxjng8p
+	   and
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#publishing-freebusy
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Naptártartalom közzététele.</desc>
+  </info>
+
+  <title>Naptárközzététel</title>
+
+  <p>Egyes naptárainak közzétételéhez megadhatja a webkiszolgálóra feltöltendő naptárakat a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui> <gui>Naptár és feladatok</gui> <gui>Naptárközzététel</gui> <gui>Helyek</gui><gui style="button">Hozzáadás</gui></guiseq> alatt.</p>
+
+  <!-- This is the location since 3.1.5, see bug
+     https://bugzilla.gnome.org/show_bug.cgi?id=655666 -->
+
+  <p>Megadhatja az online helyet, a közzététel gyakoriságát, a közzétenni kívánt naptárakat és a feltöltéshez használandó hitelesítési információkat.</p>
+
+  <p>A naptár- és időbeosztás-információkat közzéteheti WebDAV kiszolgálón, FTP kiszolgálón, SSH használatával elérhető távoli gépen, vagy bármely egyéb HTTP PUT támogatással rendelkező webkiszolgálón.</p>
+
+  <p>A naptár-információk azonnali közzétételéhez válassza a <guiseq><gui>Műveletek</gui><gui>Naptár-információk közzététele</gui></guiseq> menüpontot a naptár nézetben.</p>
+
+</page>

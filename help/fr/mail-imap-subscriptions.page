@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-imap-subscriptions" xml:lang="fr">
+
+  <info>
+    <desc>Abonnements à des dossiers IMAP.</desc>
+    
+    <link type="guide" xref="index#mail-advanced-imap"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#other-settings"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-08-05" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-subscriptions.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+
+<title>Abonnements IMAP</title>
+
+<p>Puisque l'ouverture de nombreux dossiers IMAP sur le serveur prend beaucoup de temps, vous pouvez définir les dossiers IMAP à vérifier et à afficher dans Evolution et ceux qu'il faut ignorer, via le <gui>gestionnaire d'abonnements IMAP</gui>.</p>
+<steps>
+<item><p>Sélectionnez <guiseq><gui>Dossier</gui><gui>Abonnements</gui></guiseq> ou faites un clic-droit sur le nœud supérieur d'un compte de messagerie dans la liste des dossiers et cliquez sur <gui>Gérer les abonnements</gui>.</p></item> 
+<item><p>Si vous possédez des comptes sur plusieurs serveurs, sélectionnez le serveur dont vous voulez gérer les abonnements.</p></item>
+<item><p>Evolution affiche une liste des fichiers et dossiers disponibles sur le serveur IMAP.</p></item>
+<item><p>Sélectionnez un fichier ou un dossier en cliquant dessus.</p>
+<p>Vous devriez au moins sélectionner la boîte de réception. Selon la configuration de votre serveur IMAP, la liste des fichiers disponibles peut contenir des dossiers sans messages. Si c'est le cas, vous pouvez les ignorer.</p></item>
+<item><p>Cochez la case d'un dossier pour ajouter un dossier à la liste des abonnements.</p></item>
+</steps>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="offline" xml:lang="fr">
+
+  <info>
+    <desc>Faire que le module Courriel d'Evolution soit à nouveau en ligne.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+    <link type="seealso" xref="mail-working-offline"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Brian Grohe</name>
+      <email its:translate="no">grohe43@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Patrick O'Callaghan</name>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+<title>Pourquoi le module Courriel d'Evolution est-il hors ligne quand ma connexion réseau fonctionne ?</title>
+<p>Peut-être avez-vous démarré Evolution avec l'option de ligne de commande <cmd>--offline</cmd> ou forcé le mode hors ligne.</p>
+
+<p>Si ce n'est pas le cas et qu'Evolution fonctionne normalement mais soudainement stoppe la connexion, vous avez peut-être involontairement cliqué sur l'icône de connexion dans le coin inférieur gauche. En cas de connexion, l'icône ressemble à une paire de prises de courant reliées entre elles. Si les prises ne se touchent pas, il n'y a pas de connexion à votre compte de courriel (et le bouton <gui style="button">Envoyer/Recevoir</gui> est grisé). Cliquez sur l'icône pour modifier son état.</p>
+
+<p>If the problem persists and you are sure you have not clicked the icon, but you can still reach the network from other apps on your system (browsers, FTP, SSH, ping etc.) it may be that your network connection is not properly configured. For more information please take a look at the <link xref="help:gnome-help/net-problem" href="https://help.gnome.org/users/gnome-help/stable/net-problem">Desktop help</link> or seek help from your distribution support forums, mailing lists etc.</p>
+
+<note style="warning"><p>Le mode hors ligne forcé d'Evolution fait uniquement référence aux courriels et ne s'applique pas aux contacts ni aux agendas.</p></note>
+
+</page>

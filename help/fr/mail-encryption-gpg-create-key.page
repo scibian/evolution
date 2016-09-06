@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-create-key" xml:lang="fr">
+
+  <info>
+    <desc>Signer et chiffrer les messages envoyés via GPG/OpenPGP.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.3" date="2012-02-18" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encryption-keygen -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Création d'une clé GPG</title>
+
+<note style="advanced"><p>These steps are very technical. For average users we recommend using the <link xref="help:seahorse/index" href="https://help.gnome.org/users/seahorse/stable/index"><app>Seahorse</app> application</link> for managing GPG/OpenPGP keys.</p></note>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a complete rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<p>Avant de recevoir ou d'envoyer des courriels chiffrés GPG, vous avez besoin de générer vos clés publique et privée avec GPG.</p>
+<steps>
+<item><p>Ouvrez l'application <app>Terminal</app> et saisissez <cmd>gpg --gen-key</cmd>.</p></item>
+<item><p>Choisissez un algorithme, puis appuyez sur Entrée.</p></item>
+<item><p>Choisissez une longueur de clé, puis appuyez sur Entrée.</p></item>
+<item><p>Saisissez la durée de validité de votre clé.</p></item>
+<item><p>Saisissez votre nom réel, puis appuyez sur Entrée.</p></item>
+<item><p>Saisissez votre adresse électronique, puis appuyez sur Entrée.</p></item>
+<item><p>Saisissez un commentaire (facultatif), puis appuyez sur Entrée.</p></item>
+<item><p>Relisez l'identifiant utilisateur sélectionné. S'il est correct, appuyez sur O.</p></item>
+<item><p>Saisissez une phrase de passe, puis appuyez sur Entrée.</p></item>
+<item><p>Déplacez votre souris au hasard pour générer les clés.</p></item>
+</steps>
+
+<p>Lorsque les clés ont été générées, vous pouvez consulter vos informations de clé en saisissant <cmd>gpg --list-keys</cmd>. Vous devriez voir apparaître quelque chose comme ceci : <code> /home/vous/.gnupg/pubring.gpg ---------------------------- pub 1024D/32j38dk2 2001-06-20 vous &lt;vous@exemple.com&gt; sub 1024g/289sklj3 2011-06-20 [expires: 2012-11-14]</code></p>
+<p>GPG crée une liste (ou trousseau de clés) pour vos clés publiques et une autre pour vos clés privées. Toutes les clés publiques que vous connaissez sont stockées dans le fichier <file>~/.gnupg/pubring.gpg</file>. Si vous voulez donnez vos clés à d'autres personnes, envoyez-leur ce fichier.</p>
+<p>Si vous le souhaitez, vous pouvez placer vos clés sur un serveur de clés :</p>
+<steps>
+<item><p>Vérifiez votre identifiant de clé publique avec <code>gpg --list-keys</code>. C'est la chaîne de caractères après <code>1024D</code> dans la ligne qui commence par <code>pub</code>. Dans l'exemple ci-dessus, c'est <code>32j38dk2</code>.</p></item>
+<item><p>Saisissez la commande <cmd>gpg --send-keys --keyserver wwwkeys.pgp.net 32j38dk2</cmd>. Remplacez <code>32j38dk2</code> par votre identifiant de clé. Vous avez besoin de votre mot de passe pour effectuer cela.</p></item>
+</steps>
+
+<p>Les serveurs de clés stockent vos clés publiques pour vous afin que vos connaissances puissent déchiffrer vos messages. Si vous préférez ne pas utiliser de serveur de clés, vous pouvez envoyer manuellement votre clé publique en l'incluant dans votre fichier de signature ou en la plaçant sur votre propre page Web. Cependant, il est plus simple de publier une clé une fois pour toutes, ce qui permet aux autres de la télécharger d'un endroit centralisé lorsqu'ils en ont besoin.</p>
+<p>Si vous ne possédez pas la clé pour déverrouiller ou chiffrer un message, vous pouvez configurer votre outil de déchiffrement afin qu'il la recherche automatiquement. S'il ne peut trouver la clé, un message d'erreur apparaîtra.</p>
+
+</page>

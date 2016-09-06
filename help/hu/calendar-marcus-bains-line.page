@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="calendar-marcus-bains-line" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="calendar-layout"/>
+
+    <revision pkgversion="2.32.1" version="0.1" date="2011-07-21" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>A vörös „Marcus Bains” vonal az aktuális időt jelzi.</desc>
+  </info>
+
+  <title>Idő megjelenítése a nap nézetben</title>
+
+  <p>A vörös Marcus Bains vonal a naptár nap nézetében az aktuális dátumot és időt jelöli.</p>
+
+</page>

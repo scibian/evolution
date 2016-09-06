@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-refresh-folders" xml:lang="hu">
+
+  <info>
+    <desc>Módszerek az Evolution mappáinak frissítésére.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+
+    <revision pkgversion="2.28.3" version="0.1" date="2010-10-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Mappák frissítése a levélkiszolgálón</title>
+
+<p>A helyi e-mail mappák frissítéséhez válassza a <guiseq><gui>Mappák</gui><gui>Frissítés</gui></guiseq> menüpontot. Ekkor minden e-mailje letöltésre kerül a levelezőkiszolgálóról a számítógépére, így elolvashatja azokat, és az olvasási állapotuk szinkronizálva lesz a levelezőkiszolgálóval.</p>
+
+<p>A mappa nevén duplán kattintva, vagy az <key>F5</key> billentyű megnyomásával is frissítheti azt.</p>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-webdav" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-using-several-calendars"/>
+
+    <revision pkgversion="3.1.5" version="0.3" date="2011-07-28" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>オンラインの Webcal/WebDAV カレンダーを利用します。</desc>
+  </info>
+
+  <title>WebDAV カレンダーの利用</title>
+
+  <p>この種類のカレンダーは読み込み専用です。</p>
+
+  <p><app>Evolution</app> でこういったカレンダーを追加するには以下の手順を追います:</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui>ファイル</gui><gui>新規</gui> <gui>カレンダー</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p>種類として<gui>ウェブ上</gui>を選択します。</p>
+    </item>
+    <item>
+      <p>好きなように名前を入力します。</p>
+    </item>
+    <item>
+      <p>オプションで好きな色を選択します。</p>
+    </item>
+    <item>
+      <p>オフラインの時でも内容を見られるようにしたい場合に選択します。</p>
+    </item>
+    <item>
+      <p><gui>URL</gui>欄にアドレスを入力します。</p>
+    </item>
+    <item>
+      <p>安全に接続したい場合は<gui>セキュアな接続の利用</gui>を選択します。</p>
+    </item>
+    <item>
+      <p>ユーザー名を入力します。</p>
+    </item>
+    <item>
+      <p><gui style="button">適用する</gui>をクリックします。</p>
+    </item>
+  </steps>
+
+  <p>カレンダーが <app>Evolution</app> のカレンダー一覧に追加されます。</p>
+
+</page>

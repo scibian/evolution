@@ -1,0 +1,667 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: Evolution Utilities Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="next" href="ch01.html" title="Basic Utility Functions">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="book">
+<div class="titlepage">
+<div>
+<div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">Evolution Utilities Reference Manual</p></th></tr></table></div>
+<div><p class="releaseinfo">
+      The latest version of this documentation can be found on-line at
+      <a class="ulink" href="http://developer.gnome.org/evolution-util/" target="_top">http://developer.gnome.org/evolution-util/</a>.
+    </p></div>
+</div>
+<hr>
+</div>
+<div class="toc"><dl class="toc">
+<dt><span class="chapter"><a href="ch01.html">Basic Utility Functions</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Date-and-Time-Formatting.html">Date and Time Formatting</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Text-to-HTML-Conversion.html">Text to HTML Conversion</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Miscellaneous-Utilities.html">Miscellaneous Utilities</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Printing.html">Printing</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Selections.html">Selections</a></span><span class="refpurpose"> — selection and clipboard utilities</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Unicode-Utilities.html">Unicode Utilities</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Reading-and-Writing-XML.html">Reading and Writing XML</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Dialog-Utilities-(Legacy).html">Dialog Utilities (Legacy)</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Icon-Utilities-(Legacy).html">Icon Utilities (Legacy)</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Password-Utilities-(Legacy).html">Password Utilities (Legacy)</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch02.html">Activities</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="EActivity.html">EActivity</a></span><span class="refpurpose"> — Describe activities in progress</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EActivityBar.html">EActivityBar</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EActivityProxy.html">EActivityProxy</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch03.html">Alerts</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="EAlert.html">EAlert</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAlertBar.html">EAlertBar</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAlertDialog.html">EAlertDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAlertSink.html">EAlertSink</a></span><span class="refpurpose"> — an interface to handle alerts</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch04.html">Attachments</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="EAttachment.html">EAttachment</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentBar.html">EAttachmentBar</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentButton.html">EAttachmentButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentDialog.html">EAttachmentDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentPaned.html">EAttachmentPaned</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentStore.html">EAttachmentStore</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentView.html">EAttachmentView</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentIconView.html">EAttachmentIconView</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentTreeView.html">EAttachmentTreeView</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAttachmentHandler.html">EAttachmentHandler</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch05.html">Canvas Drawing</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="ECanvas.html">ECanvas</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECanvasBackground.html">ECanvasBackground</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECanvasVbox.html">ECanvasVbox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Canvas-Utilities.html">Canvas Utilities</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch06.html">Categories</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="ECategoriesDialog.html">ECategoriesDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECategoriesEditor.html">ECategoriesEditor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECategoriesSelector.html">ECategoriesSelector</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECategoryCompletion.html">ECategoryCompletion</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECategoryEditor.html">ECategoryEditor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Category-Utilities.html">Category Utilities</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch07.html">Filtering and Searching</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="ERuleContext.html">ERuleContext</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ERuleEditor.html">ERuleEditor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterRule.html">EFilterRule</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterPart.html">EFilterPart</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterElement.html">EFilterElement</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterCode.html">EFilterCode</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterColor.html">EFilterColor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterDatespec.html">EFilterDatespec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterFile.html">EFilterFile</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterInput.html">EFilterInput</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterInt.html">EFilterInt</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFilterOption.html">EFilterOption</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch08.html">HTML Rendering</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="EWebView.html">EWebView</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EWebViewPreview.html">EWebViewPreview</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EWebViewGtkHTML.html">EWebViewGtkHTML</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFileRequest.html">EFileRequest</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EStockRequest.html">EStockRequest</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch09.html">Mail Signatures</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EMailSignatureComboBox.html">EMailSignatureComboBox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EMailSignatureEditor.html">EMailSignatureEditor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EMailSignatureManager.html">EMailSignatureManager</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EMailSignaturePreview.html">EMailSignaturePreview</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EMailSignatureScriptDialog.html">EMailSignatureScriptDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EMailSignatureTreeView.html">EMailSignatureTreeView</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch10.html">Network Proxies</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="EProxyPreferences.html">EProxyPreferences</a></span><span class="refpurpose"> — Manage network proxy preferences</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EProxyEditor.html">EProxyEditor</a></span><span class="refpurpose"> — Edit proxy profile details</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EProxySelector.html">EProxySelector</a></span><span class="refpurpose"> — Select and manage proxy profiles</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EProxyLinkSelector.html">EProxyLinkSelector</a></span><span class="refpurpose"> — Link accounts to a proxy profile</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EProxyComboBox.html">EProxyComboBox</a></span><span class="refpurpose"> — Combo box of proxy profiles</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch11.html">Tables and Trees</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="ETable.html">ETable</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableClickToAdd.html">ETableClickToAdd</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableCol.html">ETableCol</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableColumnSelector.html">ETableColumnSelector</a></span><span class="refpurpose">Select columns for an <span class="type">ETable</span> or <span class="type">ETree</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableColumnSpecification.html">ETableColumnSpecification</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableConfig.html">ETableConfig</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableExtras.html">ETableExtras</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableFieldChooserDialog.html">ETableFieldChooserDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableFieldChooserItem.html">ETableFieldChooserItem</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableFieldChooser.html">ETableFieldChooser</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-ETableGroupContainer.html">ETableGroupContainer</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableGroupLeaf.html">ETableGroupLeaf</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableGroup.html">ETableGroup</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableHeaderItem.html">ETableHeaderItem</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableHeader.html">ETableHeader</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableItem.html">ETableItem</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableModel.html">ETableModel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-ETableOne.html">ETableOne</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableSearch.html">ETableSearch</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableSelectionModel.html">ETableSelectionModel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableSortInfo.html">ETableSortInfo</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-ETableSortedVariable.html">ETableSortedVariable</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableSorted.html">ETableSorted</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableSorter.html">ETableSorter</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Sorting-Utilities.html">Sorting Utilities</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableSpecification.html">ETableSpecification</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableState.html">ETableState</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-ETableSubsetVariable.html">ETableSubsetVariable</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETableSubset.html">ETableSubset</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Miscellaneous-Table-Utilities.html">Miscellaneous Table Utilities</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETree.html">ETree</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETreeModel.html">ETreeModel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETreeSelectionModel.html">ETreeSelectionModel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETreeTableAdapter.html">ETreeTableAdapter</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECell.html">ECell</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellCheckbox.html">ECellCheckbox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellCombo.html">ECellCombo</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellDateEdit.html">ECellDateEdit</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellDate.html">ECellDate</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellHbox.html">ECellHbox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellNumber.html">ECellNumber</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellPercent.html">ECellPercent</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellPixbuf.html">ECellPixbuf</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellPopup.html">ECellPopup</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellSize.html">ECellSize</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellText.html">ECellText</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellToggle.html">ECellToggle</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellTree.html">ECellTree</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellVbox.html">ECellVbox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-Popup-Menus-(Legacy).html">Popup Menus (Legacy)</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch12.html">ESource Support</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="ESourceConfig.html">ESourceConfig</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EBookSourceConfig.html">EBookSourceConfig</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECalSourceConfig.html">ECalSourceConfig</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-ESourceConfigBackend.html">ESourceConfigBackend</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESourceConfigDialog.html">ESourceConfigDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESourceSelector.html">ESourceSelector</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAlarmSelector.html">EAlarmSelector</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAutocompleteSelector.html">EAutocompleteSelector</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESourceSelectorDialog.html">ESourceSelectorDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESourceComboBox.html">ESourceComboBox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-ESource-Utilities.html">ESource Utilities</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EClientCache.html">EClientCache</a></span><span class="refpurpose">Shared <span class="type">EClient</span> instances</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EClientComboBox.html">EClientComboBox</a></span><span class="refpurpose">Combo box of <span class="type">EClient</span> instances</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EClientSelector.html">EClientSelector</a></span><span class="refpurpose">Tree view of <span class="type">EClient</span> instances</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch13.html">Text Processing</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="EText.html">EText</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETextModel.html">ETextModel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETextEventProcessor.html">ETextEventProcessor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETextEventProcessorEmacsLike.html">ETextEventProcessorEmacsLike</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EReflow.html">EReflow</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EReflowModel.html">EReflowModel</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch14.html">View Management</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="GalView.html">GalView</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GalViewInstance.html">GalViewInstance</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GalViewCollection.html">GalViewCollection</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GalViewEtable.html">GalViewEtable</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GalViewInstanceSaveAsDialog.html">GalViewInstanceSaveAsDialog</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch15.html">Plugins (Legacy)</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="EPlugin.html">EPlugin</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EPluginUI.html">EPluginUI</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EConfig.html">EConfig</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EEvent.html">EEvent</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EImport.html">EImport</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch16.html">(Unsorted Sections)</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="EActionComboBox.html">EActionComboBox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EAuthComboBox.html">EAuthComboBox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EBitArray.html">EBitArray</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-GtkTextBuffer-Tagging.html">GtkTextBuffer Tagging</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECalendarItem.html">ECalendarItem</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECalendar.html">ECalendar</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECellRendererColor.html">ECellRendererColor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ECharsetComboBox.html">ECharsetComboBox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EContactStore.html">EContactStore</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EDataCapture.html">EDataCapture</a></span><span class="refpurpose"> — Capture data from streams</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EDateEdit.html">EDateEdit</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EDestinationStore.html">EDestinationStore</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EFocusTracker.html">EFocusTracker</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EImageChooser.html">EImageChooser</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EImportAssistant.html">EImportAssistant</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EIntervalChooser.html">EIntervalChooser</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EMailIdentityComboBox.html">EMailIdentityComboBox</a></span><span class="refpurpose"> — Combo box of mail identities</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EMap.html">EMap</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EMenuToolAction.html">EMenuToolAction</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EMenuToolButton.html">EMenuToolButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ENameSelectorDialog.html">ENameSelectorDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ENameSelectorEntry.html">ENameSelectorEntry</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ENameSelectorList.html">ENameSelectorList</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ENameSelectorModel.html">ENameSelectorModel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ENameSelector.html">ENameSelector</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EOnlineButton.html">EOnlineButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPaned.html">EPaned</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPhotoCache.html">EPhotoCache</a></span><span class="refpurpose"> — Search for photos by email address</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPhotoSource.html">EPhotoSource</a></span><span class="refpurpose"> — A source of email address photos</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPictureGallery.html">EPictureGallery</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-EPoolv.html">EPoolv</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPopupAction.html">EPopupAction</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPortEntry.html">EPortEntry</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPreferencesWindow.html">EPreferencesWindow</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPreviewPane.html">EPreviewPane</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EPrintable.html">EPrintable</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESearchBar.html">ESearchBar</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESelectable.html">ESelectable</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESelectionModelArray.html">ESelectionModelArray</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESelectionModelSimple.html">ESelectionModelSimple</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESelectionModel.html">ESelectionModel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-ESendOptions.html">ESendOptions</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESorterArray.html">ESorterArray</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESorter.html">ESorter</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ESpellEntry.html">ESpellEntry</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="evolution-util-e-spell-text-view.html">e-spell-text-view</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETimezoneDialog.html">ETimezoneDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETreeModelGenerator.html">ETreeModelGenerator</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ETreeViewFrame.html">ETreeViewFrame</a></span><span class="refpurpose">A frame for <span class="type">GtkTreeView</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="EUrlEntry.html">EUrlEntry</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="object-tree.html">Object Hierarchy</a></span></dt>
+<dt><span class="index"><a href="api-index-full.html">Index</a></span></dt>
+<dt><span class="glossary"><a href="annotation-glossary.html">Annotation Glossary</a></span></dt>
+</dl></div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

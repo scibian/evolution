@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-getting-keys" xml:lang="es">
+
+  <info>
+    <desc>Obtener y usar claves GPG públicas.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.2" date="2011-07-27" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encrypt-getting-key -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@openshine.com</mal:email>
+      <mal:years>2005, 2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Obtener y usar claves GPG públicas</title>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a complete rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<p>Para cifrar un mensaje para quien sea, necesitará usar su clave pública en combinación con su clave privada. Evolution lo hace por usted, pero con todo necesitará obtener su clave y añadirla a su depósito de claves.</p>
+
+<p>Para obtener claves públicas desde un servidor de claves públicas escriba el comando <cmd> gpg --recv-keys --keyserver wwwkeys.pgp.net keyid</cmd>, sustituyendo <code>keyid</code> por el identificador del destinatario. Necesitará escribir su contraseña y se añadirá automáticamente su identificador a su depósito de claves.</p>
+
+<p>Si alguien le envía directamente su clave pública, guárdela como un archivo de texto plano e introduzca el comando <cmd>gpg --import</cmd> para añadirla a su depósito de claves.</p>
+</page>

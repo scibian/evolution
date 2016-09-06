@@ -1,0 +1,24 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+libexecdir=${exec_prefix}/libexec
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+privlibdir=${libdir}/evolution/3.12
+privlibexecdir=${libexecdir}/evolution/3.12
+privincludedir=${includedir}/evolution-3.12
+errordir=${datadir}/evolution/3.12/errors
+moduledir=${libdir}/evolution/3.12/modules
+imagesdir=${datadir}/evolution/3.12/images
+
+execversion=3.12
+
+Name: evolution-shell
+Description: libraries needed for Evolution shell components
+Version: 3.12.9
+Requires: gtk+-3.0 libebackend-1.2 webkitgtk-3.0 libgtkhtml-4.0 gtkhtml-editor-4.0
+Requires.private: gnome-desktop-3.0
+Libs: -L${privlibdir} -levolution-shell -levolution-util -Wl,-R${privlibdir}
+Cflags: -I${privincludedir}

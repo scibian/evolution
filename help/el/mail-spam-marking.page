@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-spam-marking" xml:lang="el">
+
+  <info>
+    <desc>Σημείωση ανεπιθύμητης αλληλογραφίας.</desc>
+
+    <link type="guide" xref="mail-spam"/>
+
+    <revision pkgversion="3.3.91" version="0.4" date="2012-03-07" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Pete Biggs</name>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Barbara Tobias</name>
+      <email its:translate="no">barbtobias09@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-spam.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Σημείωση μηνύματος ως ανεπιθύμητο</title>
+
+<p>Ενώ το SpamAssassin έρχεται με ένα σύνολο προκαθορισμένων κανόνων, το Bogofilter χρειάζεται να εκπαιδευτεί πρώτα πριν το αυτόματο φιλτράρισμα ανεπιθύμητης αλληλογραφίας. Εάν εκπαιδεύσετε το Bogofilter μόνο σε κακά μηνύματα, θα υποθέσει ότι όλα τα μηνύματα είναι κακά (επειδή δεν ξέρει καμιά κάθε διαφορά) συνεπώς δεν θα παίρνει αποφάσεις μέχρι η βάση δεδομένων να είναι αρκετά μεγάλη για τον προσδιορισμό του τι είναι όχληση και τι όχι. Σε κάθε περίπτωση, όταν πρωτοξεκινήσετε χρησιμοποιώντας φραγή ανεπιθύμητων μηνυμάτων, ελέγξτε τον φάκελο αλληλογραφίας <gui>ανεπιθύμητα</gui> συχνά για να βεβαιωθείτε ότι κανονικά μηνύματα δεν επισημαίνονται ως ανεπιθύμητα.</p>
+
+<section id="marking-junk">
+<title>Χειροκίνητη σημείωση μηνύματος ως ανεπιθύμητου</title>
+<p>Εάν το Evolution χάσει ανεπιθύμητη αλληλογραφία, δεξί κλικ στο μήνυμα, έπειτα κλικ στο <gui>σημείωση ως ανεπιθύμητο</gui> ή σημειώστε το μήνυμα και πατήστε <keyseq><key>Ctrl</key><key>J</key></keyseq> ή κλικ στο κουμπί <gui>ανεπιθύμητα</gui> στη γραμμή εργαλείων. Όταν το διορθώσετε, το φίλτρο μπορεί να αναγνωρίσει παρόμοια μηνύματα στο μέλλον και γίνεται πιο ακριβές καθώς περνά ο χρόνος.</p>
+<p>Εάν κανονικό μήνυμα επισημαίνεται λαθεμένα, αφαιρέστε το από τον φάκελο <gui>ανεπιθύμητα</gui> με δεξί κλικ του και επιλέξτε <gui>σημείωση ως μη ανεπιθύμητο</gui> ή πατήστε <keyseq><key>Shift</key><key>Ctrl</key><key>J</key></keyseq>, ή σημειώστε το μήνυμα και κλικ στο κουμπί <gui>όχι ανεπιθύμητο</gui>.</p>
+
+</section>
+</page>

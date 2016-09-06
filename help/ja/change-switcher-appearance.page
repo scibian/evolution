@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="change-switcher-appearance" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#common-other-problems"/>
+
+     <!-- TODO:POST-3-8: Create a general interface adjustment guide page that
+	  also includes mail-layout-changing.page -->
+
+    <revision pkgversion="2.32.2" version="0.1" date="2011-07-21" status="stub"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Changing the display of the window buttons in the lower left
+    corner.</desc>
+  </info>
+
+  <title>Changing the Switcher appearance</title>
+
+  <p>The display of the window buttons in the lower left corner (Mail,
+  Contacts, Calendar, Tasks and Memos) can be changed via
+  <guiseq><gui>View</gui><gui>Switcher Appearance</gui></guiseq>. This can be
+  helpful if you have a small display. You can also completely hide them.</p>
+
+  <p>利用できる選択肢:</p>
+
+  <list>
+    <item>
+      <p>アイコンとテキスト</p>
+    </item>
+    <item>
+      <p>アイコンのみ</p>
+    </item>
+    <item>
+      <p>テキストのみ</p>
+    </item>
+    <item>
+      <p>ツールバーのスタイル</p>
+    </item>
+    <item>
+      <p>ボタンを表示</p>
+    </item>
+  </list>
+
+</page>

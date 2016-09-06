@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EMailIdentityComboBox</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch16.html" title="(Unsorted Sections)">
+<link rel="prev" href="EIntervalChooser.html" title="EIntervalChooser">
+<link rel="next" href="EMap.html" title="EMap">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#evolution-util-EMailIdentityComboBox.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch16.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EIntervalChooser.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EMap.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="evolution-util-EMailIdentityComboBox"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="evolution-util-EMailIdentityComboBox.top_of_page"></a>EMailIdentityComboBox</span></h2>
+<p>EMailIdentityComboBox — Combo box of mail identities</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="evolution-util-EMailIdentityComboBox.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EMailIdentityComboBox.html#e-mail-identity-combo-box-new" title="e_mail_identity_combo_box_new ()">e_mail_identity_combo_box_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EMailIdentityComboBox.html#e-mail-identity-combo-box-refresh" title="e_mail_identity_combo_box_refresh ()">e_mail_identity_combo_box_refresh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EMailIdentityComboBox.html#e-mail-identity-combo-box-get-registry" title="e_mail_identity_combo_box_get_registry ()">e_mail_identity_combo_box_get_registry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EMailIdentityComboBox.html#e-mail-identity-combo-box-get-allow-none" title="e_mail_identity_combo_box_get_allow_none ()">e_mail_identity_combo_box_get_allow_none</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-util-EMailIdentityComboBox.html#e-mail-identity-combo-box-set-allow-none" title="e_mail_identity_combo_box_set_allow_none ()">e_mail_identity_combo_box_set_allow_none</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EMailIdentityComboBox.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox">EMailIdentityComboBox</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EMailIdentityComboBox.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;e-util/e-util.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EMailIdentityComboBox.description"></a><h2>Description</h2>
+<p><span class="type">EMailIdentity</span> is a combo box of available mail identities, as described
+by <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> instances with an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceMailIdentity.html#ESourceMailIdentity"><span class="type">ESourceMailIdentity</span></a> extension.  For
+convenience, the combo box model's <a href="http://developer.gnome.org/gtk2/GtkComboBox.html#GtkComboBox--id-column"><span class="type">“id-column”</span></a> is populated
+with <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> <span class="type">“uid”</span> strings.</p>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EMailIdentityComboBox.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-mail-identity-combo-box-new"></a><h3>e_mail_identity_combo_box_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_mail_identity_combo_box_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *registry</code></em>);</pre>
+<p>Creates a new <a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a> widget using <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> instances in
+<em class="parameter"><code>registry</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.18.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>registry</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.18.7.2.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-identity-combo-box-refresh"></a><h3>e_mail_identity_combo_box_refresh ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_identity_combo_box_refresh (<em class="parameter"><code><a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a> *combo_box</code></em>);</pre>
+<p>Rebuilds the combo box model with an updated list of <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> instances
+that describe a mail identity, without disrupting the previously active
+item (if possible).</p>
+<p>This function is called automatically in response to <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a>
+signals which are pertinent to the <em class="parameter"><code>combo_box</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.18.7.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-identity-combo-box-get-registry"></a><h3>e_mail_identity_combo_box_get_registry ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+e_mail_identity_combo_box_get_registry
+                               (<em class="parameter"><code><a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a> *combo_box</code></em>);</pre>
+<p>Returns the <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> passed to <a class="link" href="evolution-util-EMailIdentityComboBox.html#e-mail-identity-combo-box-new" title="e_mail_identity_combo_box_new ()"><code class="function">e_mail_identity_combo_box_new()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.17.18.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.18.7.4.6"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-identity-combo-box-get-allow-none"></a><h3>e_mail_identity_combo_box_get_allow_none ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_identity_combo_box_get_allow_none
+                               (<em class="parameter"><code><a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a> *combo_box</code></em>);</pre>
+<p>Returns whether to append the mail identity list with a "None" item for
+use cases where the user may wish to opt out of choosing a mail identity.</p>
+<div class="refsect3">
+<a name="id-1.17.18.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.18.7.5.6"></a><h4>Returns</h4>
+<p> whether to include a "None" option</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-identity-combo-box-set-allow-none"></a><h3>e_mail_identity_combo_box_set_allow_none ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_identity_combo_box_set_allow_none
+                               (<em class="parameter"><code><a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a> *combo_box</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> allow_none</code></em>);</pre>
+<p>Sets whether to append the mail identity list with a "None" item for use
+cases where the user may wish to opt out of choosing a mail identity.</p>
+<p>Changing this property will automatically rebuild the combo box model.</p>
+<div class="refsect3">
+<a name="id-1.17.18.7.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>combo_box</p></td>
+<td class="parameter_description"><p>an <a class="link" href="evolution-util-EMailIdentityComboBox.html#EMailIdentityComboBox" title="struct EMailIdentityComboBox"><span class="type">EMailIdentityComboBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>allow_none</p></td>
+<td class="parameter_description"><p>whether to include a "None" option</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="evolution-util-EMailIdentityComboBox.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EMailIdentityComboBox"></a><h3>struct EMailIdentityComboBox</h3>
+<pre class="programlisting">struct EMailIdentityComboBox {
+	GtkComboBox parent;
+	EMailIdentityComboBoxPrivate *priv;
+};
+</pre>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

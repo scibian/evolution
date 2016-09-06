@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ERuleContext</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch07.html" title="Filtering and Searching">
+<link rel="prev" href="ch07.html" title="Filtering and Searching">
+<link rel="next" href="ERuleEditor.html" title="ERuleEditor">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ERuleContext.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ERuleContext.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ERuleContext.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch07.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch07.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ERuleEditor.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ERuleContext"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ERuleContext.top_of_page"></a>ERuleContext</span></h2>
+<p>ERuleContext</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ERuleContext.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ERuleContext.html#ERuleContextRegisterFunc" title="ERuleContextRegisterFunc ()">*ERuleContextRegisterFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ERuleContext.html#ERuleContextPartFunc" title="ERuleContextPartFunc ()">*ERuleContextPartFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ERuleContext.html#ERuleContextRuleFunc" title="ERuleContextRuleFunc ()">*ERuleContextRuleFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterPart.html" title="EFilterPart"><span class="returnvalue">EFilterPart</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ERuleContext.html#ERuleContextNextPartFunc" title="ERuleContextNextPartFunc ()">*ERuleContextNextPartFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ERuleContext.html#ERuleContextNextRuleFunc" title="ERuleContextNextRuleFunc ()">*ERuleContextNextRuleFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ERuleContext.html" title="ERuleContext"><span class="returnvalue">ERuleContext</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-new" title="e_rule_context_new ()">e_rule_context_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-load" title="e_rule_context_load ()">e_rule_context_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-save" title="e_rule_context_save ()">e_rule_context_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-revert" title="e_rule_context_revert ()">e_rule_context_revert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-add-part" title="e_rule_context_add_part ()">e_rule_context_add_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterPart.html" title="EFilterPart"><span class="returnvalue">EFilterPart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-find-part" title="e_rule_context_find_part ()">e_rule_context_find_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterPart.html" title="EFilterPart"><span class="returnvalue">EFilterPart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-create-part" title="e_rule_context_create_part ()">e_rule_context_create_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterPart.html" title="EFilterPart"><span class="returnvalue">EFilterPart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-next-part" title="e_rule_context_next_part ()">e_rule_context_next_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-next-rule" title="e_rule_context_next_rule ()">e_rule_context_next_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-find-rule" title="e_rule_context_find_rule ()">e_rule_context_find_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-find-rank-rule" title="e_rule_context_find_rank_rule ()">e_rule_context_find_rank_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-add-rule" title="e_rule_context_add_rule ()">e_rule_context_add_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-add-rule-gui" title="e_rule_context_add_rule_gui ()">e_rule_context_add_rule_gui</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-remove-rule" title="e_rule_context_remove_rule ()">e_rule_context_remove_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-rank-rule" title="e_rule_context_rank_rule ()">e_rule_context_rank_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-get-rank-rule" title="e_rule_context_get_rank_rule ()">e_rule_context_get_rank_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-add-part-set" title="e_rule_context_add_part_set ()">e_rule_context_add_part_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-add-rule-set" title="e_rule_context_add_rule_set ()">e_rule_context_add_rule_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterElement.html" title="EFilterElement"><span class="returnvalue">EFilterElement</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-new-element" title="e_rule_context_new_element ()">e_rule_context_new_element</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-delete-uri" title="e_rule_context_delete_uri ()">e_rule_context_delete_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-rename-uri" title="e_rule_context_rename_uri ()">e_rule_context_rename_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ERuleContext.html#e-rule-context-free-uri-list" title="e_rule_context_free_uri_list ()">e_rule_context_free_uri_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ERuleContext.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ERuleContext.html#ERuleContext-changed" title="The “changed” signal">changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ERuleContext.html#ERuleContext-rule-added" title="The “rule-added” signal">rule-added</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ERuleContext.html#ERuleContext-rule-removed" title="The “rule-removed” signal">rule-removed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ERuleContext.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ERuleContext.html#part-set-map" title="struct part_set_map">part_set_map</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ERuleContext.html#rule-set-map" title="struct rule_set_map">rule_set_map</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ERuleContext.html#ERuleContext-struct" title="struct ERuleContext">ERuleContext</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ERuleContext.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ERuleContext
+</pre>
+</div>
+<div class="refsect1">
+<a name="ERuleContext.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ERuleContext.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ERuleContextRegisterFunc"></a><h3>ERuleContextRegisterFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*ERuleContextRegisterFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                             <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ERuleContextPartFunc"></a><h3>ERuleContextPartFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*ERuleContextPartFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                         <em class="parameter"><code><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="type">EFilterPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ERuleContextRuleFunc"></a><h3>ERuleContextRuleFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*ERuleContextRuleFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                         <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ERuleContextNextPartFunc"></a><h3>ERuleContextNextPartFunc ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="returnvalue">EFilterPart</span></a>
+<span class="c_punctuation">(</span>*ERuleContextNextPartFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                             <em class="parameter"><code><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="type">EFilterPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ERuleContextNextRuleFunc"></a><h3>ERuleContextNextRuleFunc ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a>
+<span class="c_punctuation">(</span>*ERuleContextNextRuleFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                             <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-new"></a><h3>e_rule_context_new ()</h3>
+<pre class="programlisting"><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="returnvalue">ERuleContext</span></a> *
+e_rule_context_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new ERuleContext object.</p>
+<div class="refsect3">
+<a name="id-1.8.2.8.7.5"></a><h4>Returns</h4>
+<p> A new <a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-load"></a><h3>e_rule_context_load ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_rule_context_load (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *system</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *user</code></em>);</pre>
+<p>Load a rule context from a system and user description file.</p>
+<div class="refsect3">
+<a name="id-1.8.2.8.8.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-save"></a><h3>e_rule_context_save ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_rule_context_save (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *user</code></em>);</pre>
+<p>Save a rule context to disk.</p>
+<div class="refsect3">
+<a name="id-1.8.2.8.9.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-revert"></a><h3>e_rule_context_revert ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_rule_context_revert (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *user</code></em>);</pre>
+<p>Reverts a rule context from a user description file.  Assumes the
+system description file is unchanged from when it was loaded.</p>
+<div class="refsect3">
+<a name="id-1.8.2.8.10.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-add-part"></a><h3>e_rule_context_add_part ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_context_add_part (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                         <em class="parameter"><code><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="type">EFilterPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-find-part"></a><h3>e_rule_context_find_part ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="returnvalue">EFilterPart</span></a> *
+e_rule_context_find_part (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-create-part"></a><h3>e_rule_context_create_part ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="returnvalue">EFilterPart</span></a> *
+e_rule_context_create_part (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-next-part"></a><h3>e_rule_context_next_part ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="returnvalue">EFilterPart</span></a> *
+e_rule_context_next_part (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                          <em class="parameter"><code><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="type">EFilterPart</span></a> *last</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-next-rule"></a><h3>e_rule_context_next_rule ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+e_rule_context_next_rule (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                          <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *last</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-find-rule"></a><h3>e_rule_context_find_rule ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+e_rule_context_find_rule (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-find-rank-rule"></a><h3>e_rule_context_find_rank_rule ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+e_rule_context_find_rank_rule (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rank</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-add-rule"></a><h3>e_rule_context_add_rule ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_context_add_rule (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                         <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-add-rule-gui"></a><h3>e_rule_context_add_rule_gui ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_context_add_rule_gui (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                             <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-remove-rule"></a><h3>e_rule_context_remove_rule ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_context_remove_rule (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                            <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-rank-rule"></a><h3>e_rule_context_rank_rule ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_context_rank_rule (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                          <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rank</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-get-rank-rule"></a><h3>e_rule_context_get_rank_rule ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_rule_context_get_rank_rule (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                              <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-add-part-set"></a><h3>e_rule_context_add_part_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_context_add_part_set (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *setname</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> part_type</code></em>,
+                             <em class="parameter"><code><a class="link" href="ERuleContext.html#ERuleContextPartFunc" title="ERuleContextPartFunc ()"><span class="type">ERuleContextPartFunc</span></a> append</code></em>,
+                             <em class="parameter"><code><a class="link" href="ERuleContext.html#ERuleContextNextPartFunc" title="ERuleContextNextPartFunc ()"><span class="type">ERuleContextNextPartFunc</span></a> next</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-add-rule-set"></a><h3>e_rule_context_add_rule_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_context_add_rule_set (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *setname</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> rule_type</code></em>,
+                             <em class="parameter"><code><a class="link" href="ERuleContext.html#ERuleContextRuleFunc" title="ERuleContextRuleFunc ()"><span class="type">ERuleContextRuleFunc</span></a> append</code></em>,
+                             <em class="parameter"><code><a class="link" href="ERuleContext.html#ERuleContextNextRuleFunc" title="ERuleContextNextRuleFunc ()"><span class="type">ERuleContextNextRuleFunc</span></a> next</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-new-element"></a><h3>e_rule_context_new_element ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterElement.html" title="EFilterElement"><span class="returnvalue">EFilterElement</span></a> *
+e_rule_context_new_element (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>create a new filter element based on name.</p>
+<div class="refsect3">
+<a name="id-1.8.2.8.25.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-delete-uri"></a><h3>e_rule_context_delete_uri ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_rule_context_delete_uri (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> compare</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-rename-uri"></a><h3>e_rule_context_rename_uri ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_rule_context_rename_uri (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *old_uri</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *new_uri</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> compare</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-rule-context-free-uri-list"></a><h3>e_rule_context_free_uri_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_rule_context_free_uri_list (<em class="parameter"><code><a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *context</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *uris</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ERuleContext.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="part-set-map"></a><h3>struct part_set_map</h3>
+<pre class="programlisting">struct part_set_map {
+	gchar *name;
+	GType type;
+	ERuleContextPartFunc append;
+	ERuleContextNextPartFunc next;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="rule-set-map"></a><h3>struct rule_set_map</h3>
+<pre class="programlisting">struct rule_set_map {
+	gchar *name;
+	GType type;
+	ERuleContextRuleFunc append;
+	ERuleContextNextRuleFunc next;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ERuleContext-struct"></a><h3>struct ERuleContext</h3>
+<pre class="programlisting">struct ERuleContext;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ERuleContext.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ERuleContext-changed"></a><h3>The <code class="literal">“changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *erulecontext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ERuleContext-rule-added"></a><h3>The <code class="literal">“rule-added”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *erulecontext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ERuleContext-rule-removed"></a><h3>The <code class="literal">“rule-removed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ERuleContext.html" title="ERuleContext"><span class="type">ERuleContext</span></a> *erulecontext,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

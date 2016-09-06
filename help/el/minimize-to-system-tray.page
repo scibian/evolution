@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="minimize-to-system-tray" xml:lang="el">
+
+  <info>
+    <desc>Ελαχιστοποιώντας το Evolution στην περιοχή ειδοποιήσεων.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.5.4" version="0.4" date="2012-07-08" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+
+<title>Ελαχιστοποίηση του Evolution στον δίσκο συστήματος</title>
+
+<p>Το GNOME, από προεπιλογή, έχει μια <link xref="mail-received-notification">περιοχή ειδοποίησης</link> που περιλαμβάνει μια μικρή εφαρμογή που πληροφορεί τους χρήστες για ενημερώσεις του συστήματος, αλλαγές ή συμβάντα. Αυτό περιλαμβάνει την άφιξη μηνυμάτων στο Evolution. Μπορείτε να αναφερθείτε σε αυτό το ενσωματωμένο γνώρισμα του GNOME για όλες τις ειδοποιήσεις μηνυμάτων.</p>
+
+<p>Στην έκδοση GNOME 2 μπορείτε να τροποποιήσετε την περιοχή ειδοποίησης και να την ρυθμίσετε σε δίσκο συστήματος χρησιμοποιώντας εξωτερικές εφαρμογές που μπορεί να είναι διαθέσιμες για εγκατάσταση στο εργαλείο διαχείρισης λογισμικού της διανομής σας. Διαθέσιμες επιλογές είναι για παράδειγμα <link href="http://code.google.com/p/tint2/">Tint2</link>. Αυτό δεν είναι πια δυνατό στο GNOME 3.</p>
+</page>

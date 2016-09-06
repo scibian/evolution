@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="minimize-to-system-tray" xml:lang="cs">
+
+  <info>
+    <desc>O minimalizaci Evolutionu do oznamovací oblasti.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.5.4" version="0.4" date="2012-07-08" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+
+<title>Minimalizace Evolutionu do systémové oblasti</title>
+
+<p>GNOME má ve výchozím stavu <link xref="mail-received-notification">oznamovací oblast</link>, která obsahuje applet, který informuje uživatele o nových aktualizacích, změnách, nebo událostech. Zahrnuje to i poštovní zprávy v Evolutionu. Veškerá upozornění na poštu se zobrazí v této oblasti.</p>
+
+<p>In GNOME version 2 you may modify the notification area and set it up to become a system tray by using external applications which might be available for installation in the software management tool of your distribution. Available options are for example <link href="http://code.google.com/p/tint2/">Tint2</link>. This is no longer possible in GNOME 3.</p>
+</page>

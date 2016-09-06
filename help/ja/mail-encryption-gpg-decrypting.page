@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-decrypting" xml:lang="ja">
+
+  <info>
+    <desc>受信した GPG メールの復号と署名の確認です。</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.1" date="2011-01-05" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#unencrypting -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>GPG により暗号化、署名されたメールの受信</title>
+
+<section id="decryption">
+<title>受信したメールの復号</title>
+<p>暗号化されたメールを受け取った場合、復号しないとその内容は読めません。</p>
+<p>メールを表示すると Evolution は PGP のパスワードを聞いてきます。パスワードを入力すると、復号したメールの内容が表示されます。</p>
+<note style="tip"><p>Senders must have your GPG public key before they can send you an encrypted message.</p></note>
+</section>
+
+<section id="signature">
+<title>受信したメールの署名確認</title>
+<p>受信したメールの送信者の署名を確認するには、メールの下部までスクロールしてロゴをクリックします。Evolution はメールの<gui>セキュリティ情報</gui>を表示します。</p>
+</section>
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-google" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="contacts-using-several-addressbooks"/>
+    <link type="guide" xref="google-services"/>
+
+    <revision pkgversion="3.1.5" version="0.3" date="2011-07-28" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Google アカウントのオンラインアドレス帳を利用します。</desc>
+  </info>
+
+  <title>Google アドレス帳の利用</title>
+
+  <p><app>Evolution</app> でこういったアドレス帳を追加するには以下の手順を追います:</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui>ファイル</gui><gui>新規</gui> <gui>アドレス帳</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p>種類として <gui>Google</gui> を選択します。</p>
+    </item>
+    <item>
+      <p>好きなように名前を入力します。</p>
+    </item>
+    <item>
+      <p>オフラインの時でも内容を見られるようにしたい場合に選択します。</p>
+    </item>
+    <item>
+      <p>Google のユーザー名を入力します。</p>
+    </item>
+    <item>
+      <p>安全に接続したい場合は<gui>セキュアな接続の利用</gui>を選択します。</p>
+    </item>
+    <item>
+      <p><gui style="button">適用する</gui>をクリックします。</p>
+    </item>
+  </steps>
+
+  <p>アドレス帳は <app>Evolution</app> のアドレス帳一覧に追加されます。</p>
+
+</page>

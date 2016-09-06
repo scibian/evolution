@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-read-receipts" xml:lang="el">
+
+  <info>
+    <desc>Πώς να ενεργοποιήσετε αίτημα αποδείξεων ανάγνωσης.</desc>
+    
+    <link type="guide" xref="index#mail-advanced"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#defaults"/>
+    <link type="guide" xref="mail-account-manage-local-delivery#defaults"/>
+    <link type="guide" xref="mail-account-manage-maildir-format-directories#defaults"/>
+    <link type="guide" xref="mail-account-manage-mh-format-directories#defaults"/>
+    <link type="guide" xref="mail-account-manage-pop#defaults"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-directory#defaults"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-file#defaults"/>
+    <link type="guide" xref="mail-account-manage-usenet-news#defaults"/>
+
+    <revision pkgversion="2.32.1" version="0.2" date="2011-01-06" status="candidate"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Αποδείξεις ανάγνωσης για μηνύματα</title>
+
+<p>Αποδείξεις ανάγνωσης είναι ένας τρόπος βεβαίωσης ότι οι αποδέκτες πήραν το μήνυμα σας. Ο αποδέκτης μπορεί κανονικά να επιλέξει εάν θα βεβαιώνει την απόδειξη ή όχι, έτσι δεν είναι ένας πλήρως αξιόπιστος τρόπος ελέγχου εάν τα μηνύματα σας διαβάστηκαν από κάποιον.</p>
+
+<p>Μπορείτε να ζητήσετε αποδείξεις ανάγνωσης ενεργοποιώντας αυτήν την επιλογή στο μενού σύνταξης μηνύματος. Για να το κάνετε, μετάβαση στο <guiseq><gui>επιλογές</gui><gui>αίτημα απόδειξης ανάγνωσης</gui></guiseq>.</p>
+
+<p>Για αποδείξεις ανάγνωσης που δέχεστε μπορείτε να ορίσετε τη συμπεριφορά του Evolution πηγαίνοντας στο <guiseq><gui>επεξεργασία</gui><gui>προτιμήσεις</gui><gui>λογαριασμοί αλληλογραφίας</gui><gui style="button">επεξεργασία</gui><gui>προεπιλογές</gui><gui>αποδείξεις μηνύματος</gui></guiseq>.</p>
+
+</page>

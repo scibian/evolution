@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-collapsible-headers" xml:lang="hu">
+
+  <info>
+    <desc>Kevesebb címzett megjelenítése egy üzenetben.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+
+    <revision pkgversion="3.1.5" version="0.2" date="2011-07-28" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#b131oj36 though the setting itself has been removed in 3.1 -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Összecsukható üzenetfejlécek</title>
+
+<p>Az Evolution a kapott levelek Címzett, Másolat és Rejtett másolat fejléceit tömöríti, és csak öt címet jelenít meg az üzenet-előnézetben.</p>
+
+<p>Az összes címzett megjelenítéséhez kattintson a <media type="image" its:translate="no" src="./figures/plus-icon.png"/> ikonra a <gui>Címzett:</gui> vagy <gui>Másolat:</gui> sor mellett, vagy a három pontra (…) az öt megjelenített cím után.</p>
+
+<p>Az összes üzenetfejléc összecsukásához, és a tárgy és feladó egy sorban való megjelenítéséhez kattintson a <media type="image" its:translate="no" src="./figures/minus-icon.png"/> ikonra a <gui>Feladó:</gui> sor mellett. Ez kis képernyőkön lehet hasznos.</p>
+ 
+</page>

@@ -1,0 +1,827 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETableSortInfo</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ETableSelectionModel.html" title="ETableSelectionModel">
+<link rel="next" href="evolution-util-ETableSortedVariable.html" title="ETableSortedVariable">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETableSortInfo.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETableSortInfo.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ETableSortInfo.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETableSortInfo.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETableSelectionModel.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="evolution-util-ETableSortedVariable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETableSortInfo"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETableSortInfo.top_of_page"></a>ETableSortInfo</span></h2>
+<p>ETableSortInfo</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETableSortInfo.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="returnvalue">ETableSortInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-new" title="e_table_sort_info_new ()">e_table_sort_info_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-parse-context-push" title="e_table_sort_info_parse_context_push ()">e_table_sort_info_parse_context_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="returnvalue">ETableSortInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-parse-context-pop" title="e_table_sort_info_parse_context_pop ()">e_table_sort_info_parse_context_pop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="returnvalue">_ETableSpecification</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-ref-specification" title="e_table_sort_info_ref_specification ()">e_table_sort_info_ref_specification</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-get-can-group" title="e_table_sort_info_get_can_group ()">e_table_sort_info_get_can_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-set-can-group" title="e_table_sort_info_set_can_group ()">e_table_sort_info_set_can_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-grouping-get-count" title="e_table_sort_info_grouping_get_count ()">e_table_sort_info_grouping_get_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-grouping-truncate" title="e_table_sort_info_grouping_truncate ()">e_table_sort_info_grouping_truncate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="returnvalue">ETableColumnSpecification</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-grouping-get-nth" title="e_table_sort_info_grouping_get_nth ()">e_table_sort_info_grouping_get_nth</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-grouping-set-nth" title="e_table_sort_info_grouping_set_nth ()">e_table_sort_info_grouping_set_nth</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-sorting-get-count" title="e_table_sort_info_sorting_get_count ()">e_table_sort_info_sorting_get_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-sorting-remove" title="e_table_sort_info_sorting_remove ()">e_table_sort_info_sorting_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-sorting-truncate" title="e_table_sort_info_sorting_truncate ()">e_table_sort_info_sorting_truncate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="returnvalue">ETableColumnSpecification</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-sorting-get-nth" title="e_table_sort_info_sorting_get_nth ()">e_table_sort_info_sorting_get_nth</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-sorting-set-nth" title="e_table_sort_info_sorting_set_nth ()">e_table_sort_info_sorting_set_nth</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-sorting-insert" title="e_table_sort_info_sorting_insert ()">e_table_sort_info_sorting_insert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-load-from-node" title="e_table_sort_info_load_from_node ()">e_table_sort_info_load_from_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-save-to-node" title="e_table_sort_info_save_to_node ()">e_table_sort_info_save_to_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="returnvalue">ETableSortInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableSortInfo.html#e-table-sort-info-duplicate" title="e_table_sort_info_duplicate ()">e_table_sort_info_duplicate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> *</td>
+<td class="property_name"><a class="link" href="ETableSortInfo.html#ETableSortInfo--specification" title="The “specification” property">specification</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableSortInfo.html#ETableSortInfo-group-info-changed" title="The “group-info-changed” signal">group-info-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableSortInfo.html#ETableSortInfo-sort-info-changed" title="The “sort-info-changed” signal">sort-info-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETableSortInfo.html#ETableSortInfo-struct" title="struct ETableSortInfo">ETableSortInfo</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ETableSortInfo
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-table-sort-info-new"></a><h3>e_table_sort_info_new ()</h3>
+<pre class="programlisting"><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="returnvalue">ETableSortInfo</span></a> *
+e_table_sort_info_new (<em class="parameter"><code><span class="type">struct _ETableSpecification</span> *specification</code></em>);</pre>
+<p>This creates a new <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> object that contains no
+grouping and no sorting defined as of yet.  This object is used
+to keep track of multi-level sorting and multi-level grouping of
+an <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>specification</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.22.9.2.6"></a><h4>Returns</h4>
+<p> A new <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> object</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-parse-context-push"></a><h3>e_table_sort_info_parse_context_push ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_parse_context_push (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParseContext"><span class="type">GMarkupParseContext</span></a> *context</code></em>,
+                                      <em class="parameter"><code><span class="type">struct _ETableSpecification</span> *specification</code></em>);</pre>
+<p>Creates a new <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> from a segment of XML data being fed to
+<em class="parameter"><code>context</code></em>
+.  Call this function for the appropriate opening tag from the</p>
+<em class="structfield"><code>start_element</code></em> callback of a <a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParser"><span class="type">GMarkupParser</span></a>,
+<p>then call <a class="link" href="ETableSortInfo.html#e-table-sort-info-parse-context-pop" title="e_table_sort_info_parse_context_pop ()"><code class="function">e_table_sort_info_parse_context_pop()</code></a> for the corresponding
+closing tag from the <em class="structfield"><code>end_element</code></em> callback.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.3.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParseContext"><span class="type">GMarkupParseContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>specification</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-parse-context-pop"></a><h3>e_table_sort_info_parse_context_pop ()</h3>
+<pre class="programlisting"><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="returnvalue">ETableSortInfo</span></a> *
+e_table_sort_info_parse_context_pop (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParseContext"><span class="type">GMarkupParseContext</span></a> *context</code></em>);</pre>
+<p>Creates a new <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> from a segment of XML data being fed to
+<em class="parameter"><code>context</code></em>
+.  Call <a class="link" href="ETableSortInfo.html#e-table-sort-info-parse-context-push" title="e_table_sort_info_parse_context_push ()"><code class="function">e_table_sort_info_parse_context_push()</code></a> for the appropriate
+opening tag from the <em class="structfield"><code>start_element</code></em> callback of a
+<a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParser"><span class="type">GMarkupParser</span></a>, then call this function for the corresponding closing tag
+from the <em class="structfield"><code>end_element</code></em> callback.</p>
+<p>Unreference the newly-created <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when
+finished with it.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Simple-XML-Subset-Parser.html#GMarkupParseContext"><span class="type">GMarkupParseContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.22.9.4.7"></a><h4>Returns</h4>
+<p> an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-ref-specification"></a><h3>e_table_sort_info_ref_specification ()</h3>
+<pre class="programlisting">struct <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="returnvalue">_ETableSpecification</span></a> *
+e_table_sort_info_ref_specification (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>);</pre>
+<p>Returns the <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> passed to <a class="link" href="ETableSortInfo.html#e-table-sort-info-new" title="e_table_sort_info_new ()"><code class="function">e_table_sort_info_new()</code></a>.</p>
+<p>The returned <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> is referenced for thread-safety and must
+be unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.22.9.5.7"></a><h4>Returns</h4>
+<p> an <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-get-can-group"></a><h3>e_table_sort_info_get_can_group ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_sort_info_get_can_group (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-set-can-group"></a><h3>e_table_sort_info_set_can_group ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_set_can_group (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> can_group</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-grouping-get-count"></a><h3>e_table_sort_info_grouping_get_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+e_table_sort_info_grouping_get_count (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.22.9.8.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.22.9.8.5"></a><h4>Returns</h4>
+<p> the number of grouping criteria in the object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-grouping-truncate"></a><h3>e_table_sort_info_grouping_truncate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_grouping_truncate (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> length</code></em>);</pre>
+<p>This routine can be used to reduce or grow the number of grouping
+criteria in the object.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>position where the truncation happens.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-grouping-get-nth"></a><h3>e_table_sort_info_grouping_get_nth ()</h3>
+<pre class="programlisting"><a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="returnvalue">ETableColumnSpecification</span></a> *
+e_table_sort_info_grouping_get_nth (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a> *out_sort_type</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.22.9.10.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Item information to fetch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_sort_type</p></td>
+<td class="parameter_description"><p>return location for a <a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a> value, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.22.9.10.5"></a><h4>Returns</h4>
+<p> the description of the <em class="parameter"><code>n</code></em>
+-th grouping criteria in the <em class="parameter"><code>info</code></em>
+object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-grouping-set-nth"></a><h3>e_table_sort_info_grouping_set_nth ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_grouping_set_nth (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                    <em class="parameter"><code><a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="type">ETableColumnSpecification</span></a> *spec</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a> sort_type</code></em>);</pre>
+<p>Sets the grouping criteria for index <em class="parameter"><code>n</code></em>
+ to <em class="parameter"><code>spec</code></em>
+ and <em class="parameter"><code>sort_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Item information to fetch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spec</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="type">ETableColumnSpecification</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sort_type</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-sorting-get-count"></a><h3>e_table_sort_info_sorting_get_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+e_table_sort_info_sorting_get_count (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-sorting-remove"></a><h3>e_table_sort_info_sorting_remove ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_sorting_remove (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Removes the sorting element at the given index.  The following sorting
+elements are moved down one place.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>the index of the element to remove</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-sorting-truncate"></a><h3>e_table_sort_info_sorting_truncate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_sorting_truncate (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> length</code></em>);</pre>
+<p>This routine can be used to reduce or grow the number of sort
+criteria in the object.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>position where the truncation happens.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-sorting-get-nth"></a><h3>e_table_sort_info_sorting_get_nth ()</h3>
+<pre class="programlisting"><a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="returnvalue">ETableColumnSpecification</span></a> *
+e_table_sort_info_sorting_get_nth (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a> *out_sort_type</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.12.22.9.15.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Item information to fetch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_sort_type</p></td>
+<td class="parameter_description"><p>return location for a <a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a> value, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.22.9.15.5"></a><h4>Returns</h4>
+<p> the description of the <em class="parameter"><code>n</code></em>
+-th grouping criteria in the <em class="parameter"><code>info</code></em>
+object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-sorting-set-nth"></a><h3>e_table_sort_info_sorting_set_nth ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_sorting_set_nth (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                   <em class="parameter"><code><a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="type">ETableColumnSpecification</span></a> *spec</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a> sort_type</code></em>);</pre>
+<p>Sets the sorting criteria for index <em class="parameter"><code>n</code></em>
+ to <em class="parameter"><code>spec</code></em>
+ and <em class="parameter"><code>sort_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Item information to fetch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spec</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="type">ETableColumnSpecification</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sort_type</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-sorting-insert"></a><h3>e_table_sort_info_sorting_insert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_sorting_insert (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                  <em class="parameter"><code><a class="link" href="ETableColumnSpecification.html" title="ETableColumnSpecification"><span class="type">ETableColumnSpecification</span></a> *spec</code></em>,
+                                  <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkSortType"><span class="type">GtkSortType</span></a> sort_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-load-from-node"></a><h3>e_table_sort_info_load_from_node ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_sort_info_load_from_node (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                  <em class="parameter"><code><span class="type">xmlNode</span> *node</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> state_version</code></em>);</pre>
+<p>This loads the state for the <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> object <em class="parameter"><code>info</code></em>
+ from the
+xml node <em class="parameter"><code>node</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>pointer to the xmlNode that describes the sorting and grouping information</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-save-to-node"></a><h3>e_table_sort_info_save_to_node ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+e_table_sort_info_save_to_node (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                                <em class="parameter"><code><span class="type">xmlNode</span> *parent</code></em>);</pre>
+<p>This function is used</p>
+<div class="refsect3">
+<a name="id-1.12.22.9.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>xmlNode that will be hosting the saved state of the <em class="parameter"><code>info</code></em>
+object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.22.9.19.6"></a><h4>Returns</h4>
+<p> the node that has been appended to <em class="parameter"><code>parent</code></em>
+as a child containing
+the sorting and grouping information for this ETableSortInfo object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-sort-info-duplicate"></a><h3>e_table_sort_info_duplicate ()</h3>
+<pre class="programlisting"><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="returnvalue">ETableSortInfo</span></a> *
+e_table_sort_info_duplicate (<em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETableSortInfo-struct"></a><h3>struct ETableSortInfo</h3>
+<pre class="programlisting">struct ETableSortInfo;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ETableSortInfo--specification"></a><h3>The <code class="literal">“specification”</code> property</h3>
+<pre class="programlisting">  “specification”            <a class="link" href="ETableSpecification.html" title="ETableSpecification"><span class="type">ETableSpecification</span></a> *</pre>
+<p>Specification for the table state.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableSortInfo.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETableSortInfo-group-info-changed"></a><h3>The <code class="literal">“group-info-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *etablesortinfo,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableSortInfo-sort-info-changed"></a><h3>The <code class="literal">“sort-info-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *etablesortinfo,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

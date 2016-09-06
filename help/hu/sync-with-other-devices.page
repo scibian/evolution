@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="sync-with-other-devices" xml:lang="hu">
+
+  <info>
+    <desc>Szinkronizálja az Evolution adatait PDA-kkal és mobiltelefonokkal.</desc>
+
+    <link type="guide" xref="index#data-migration-and-sync"/>
+
+    <revision pkgversion="2.30.2" version="0.6" date="2013-04-20" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-sync.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+<!-- TODO:POST-3-8: Find out how to sync modern devices, e.g. Android, iPhone, Nokia N97 / N900, N9, N950, etc. Maybe SyncEvolution is the recommended (and external) way here? -->
+  </info>
+
+  <title>Az <app>Evolution</app> szinkronizálása más eszközökkel</title>
+
+<p>Jelenleg nincs „egységesen javasolható módszer” a felhasználók számára.</p>
+
+<p>Számos disztribúció tartalmazza a <app><link href="http://syncevolution.org/">SyncEvolution</link></app> alkalmazást, amely a <link href="https://en.wikipedia.org/wiki/SyncML">SyncML</link>-t támogató eszközökkel együtt használható.</p>
+
+<p>Általában olyan alkalmazások és eszközök használata javasolt, amelyek támogatják az <link href="https://en.wikipedia.org/wiki/ActiveSync">ActiveSync protokollt</link> (mint például a <app>SyncEvolution</app>). A Wikipédiában elérhető a <link href="https://en.wikipedia.org/wiki/List_of_collaborative_software">csoportmunka-szoftverek </link> listája.</p>
+
+ <p>Ha ezzel a témakörrel kapcsolatban ismer bevált módszereket vagy további információkat, nyugodtan küldjön be egy hibajelentést a <link href="https://bugzilla.gnome.org/enter_bug.cgi?product=evolution&amp;component=User%20Documentation">GNOME hibakövető rendszerébe</link> (angolul).</p>
+
+  <section id="palm">
+    <title>Palm</title>
+<p>A PalmPilot(TM)-hoz és Handspring Visorhoz hasonló Palm OS eszközökkel való szinkronizáláshoz több lépés szükséges: elsőként engedélyeznie kell a szinkronizálást. Másodikként a számítógépének fel kell ismernie és el kell érnie PDA-ját. Harmadikként el kell döntenie, milyen szinkronizálási viselkedést szeretne.</p>
+    <section id="sync-enabling-palm">
+      <title>Szinkronizálás engedélyezése</title>
+      <p>Ha még nem használt PDA-t a számítógépével, akkor be kell állítania azt a <guiseq><gui>Szerkesztés</gui><gui>GNOME Pilot szinkronizáció</gui></guiseq> menüpontban. Győződjön meg róla, hogy rendelkezik olvasási és írási jogosultságokkal az eszközön, amely általában a <file>/dev/pilot</file>. Ha ez nem működik, akkor próbálja soros kapcsolat esetén a <file>/dev/ttyS0</file>, vagy USB-kapcsolat esetén a <file>/dev/ttyUSB1</file> eszközt. Ezeket a jogokat úgy szerezheti meg, ha rendszergazdaként hozzáadja magát az adott eszközcsomópontot birtokló csoporthoz. USB eszköz szinkronizálásához két eszközcsomópont jön létre, a <file>ttyUSB0</file> és <file>ttyUSB1</file>. A második csomópont használandó az eszköz konfigurálásához.</p>
+   </section>
+   <section id="sync-selecting-conduits-">
+     <title>Csatornák kiválasztása</title>
+     <p>Miután a számítógépe és Palm OS eszköze kommunikál, válassza ki a használni kívánt csatornákat a <gui>Pilot csatornái</gui> szakaszban. A csatornák használatával számos alkalmazással szinkronizálhat adatokat, az Evolution csatornák címkéje <gui>EAddress</gui> a címjegyzék névjegyeihez, <gui>ECalendar</gui> a naptárához és <gui>ETodo</gui> a feladatlistájához.</p>
+     <p>Nyomja meg az <gui>Engedélyezés</gui>, majd a <gui>Beállítások</gui> gombot a csatorna aktiválásakor elvégzendő művelet módosításához. A lehetőségei a csatornától függően változhatnak, de általában a következők:</p>
+     <list>
+       <item><p><gui>Letiltva</gui>: ne tegyen semmit.</p></item>
+       <item><p><gui>Szinkronizálás</gui>: új adatok másolása a számítógépről a kéziszámítógépre, és fordítva. A korábban mindkét rendszeren meglévő, de az egyikről törölt elemek törlése.</p></item>
+       <item><p><gui>Másolás a pilotról</gui>: ha új adatok vannak a kéziszámítógépen, akkor azok számítógépre másolása.</p></item>
+       <item><p><gui>Másolás a pilotra</gui>: új adatok másolása a számítógépről a kéziszámítógépre.</p></item>
+     </list>
+   <p>Válassza ki a kívánt viselkedést minden használandó csatornához. Ha nem biztos a dolgában, akkor használja a <gui>Szinkronizálás</gui> lehetőséget.</p>
+  </section>
+
+  <section id="sync-information">
+   <title>Információk szinkronizálása</title>
+   <p>Az alábbi módszerrel szinkronizálhatja adatait a Palm OS eszköze és az Evolution között.</p>
+   <list>
+     <item><p>Ha a szinkronizálás előtt menteni kívánja az információkat, akkor készítsen egy másolatot a saját könyvtárában lévő <file>.local/share/evolution</file> mappáról.</p></item>
+     <item><p>Helyezze a kéziszámítógépét a bölcsőjébe, és nyomja meg a <gui style="button">HotSync</gui> gombot.</p></item>
+     <item><p>Ha a Palm OS 4.0-ás verzióját használja, és a jelszavas védelem be van kapcsolva kéziszámítógépéhez, akkor a szinkronizálás problémákat okozhat. Ha ez történik, akkor próbálja meg kikapcsolni a kéziszámítógép jelszavas védelmét, szinkronizálja a számítógépével, és engedélyezze újra a jelszavas védelmet.</p></item>
+    </list>
+   <p>Ezután a Palm OS eszköz szinkronizálni fogja az adatokat az Evolutionnel.</p>
+  </section>
+
+  </section>
+
+</page>

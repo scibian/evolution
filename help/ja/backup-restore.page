@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="backup-restore" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#data-migration-and-sync"/>
+    <link type="seealso" xref="data-storage"/>
+
+    <revision pkgversion="3.1.5" version="0.3" date="2011-09-29" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc><app>Evolution</app> のデータや設定をバックアップ、リストアします。</desc>
+  </info>
+
+  <title>バックアップとリストア</title>
+
+  <p><app>Evolution</app> のデータをバックアップできます。バックアップでは設定やメール、連絡先、タスク、メモ、カレンダーを保存します。gzip 型式で圧縮された tar アーカイブファイルに保管されます。</p>
+
+<section id="backup">
+  <title>バックアップ</title>
+
+  <list>
+    <item>
+      <p><guiseq><gui>ファイル</gui> <gui>Evolution データのバックアップ…</gui></guiseq>を選択します。</p>
+    </item>
+    <item>
+      <p>バックアップのファイル名と保存するフォルダーを選択して<gui style="button">保存</gui>をクリックします。</p>
+    </item>
+    <item>
+      <p><app>Evolution</app> を閉じるように要求されます。<gui style="button">Yes</gui>と回答します。</p>
+    </item>
+  </list>
+
+  <note style="warning">
+    <p><link xref="mail-spam">ジャンクフィルター</link>の設定はバックアップファイルに収録されないことに注意してください。<app>Evolution</app> により制御されているものではなく、各ツールの開発者が実装の詳細を変更する可能性があるためです。Bogofilter なら <file>~/.bogofilter/</file>、SpamAssassin なら <file>~/.spamassassin/</file> をバックアップする必要があります。</p>
+  </note>
+
+</section>
+
+<section id="restore">
+  <title>リストア</title>
+
+  <list>
+    <item>
+      <p><guiseq><gui>ファイル</gui> <gui>Evolution データのリストア…</gui></guiseq>を選択します。</p>
+    </item>
+    <item>
+      <p>フォントを選択して<gui style="button">開く</gui>をクリックします。</p>
+    </item>
+    <item>
+      <p><app>Evolution</app> を閉じるように要求されます。<gui style="button">Yes</gui>と回答します。</p>
+    </item>
+  </list>
+
+  <note style="tip">
+    <p><link xref="intro-first-run">初回起動アシスタント</link>でバックアップファイルから <app>Evolution</app> のデータをリストアできます。</p>
+  </note>
+
+</section>
+
+</page>

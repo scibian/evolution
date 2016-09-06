@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-displaying-collapsible-headers" xml:lang="ja">
+
+  <info>
+    <desc>Display less email recipients of a specific message.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+
+    <revision pkgversion="3.1.5" version="0.2" date="2011-07-28" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+ <credit type="author">
+   <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#b131oj36 though the setting itself has been removed in 3.1 -->
+ </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>メールヘッダーの省略表示</title>
+
+<p>Evolution はメールのプレビューで受け取ったメールの To や Cc、Bcc ヘッダーを圧縮し、メールアドレスを5つだけ表示します。</p>
+
+<p>宛先を全て表示するには、<gui>To:</gui>や<gui>Cc:</gui>行の後にある<media type="image" its:translate="no" src="./figures/plus-icon.png"/>アイコンをクリックするか、表示されている5つのメールアドレスの終わりの省略表示 (...) をクリックします。</p>
+
+<p>メールのヘッダーを全て省略して件名と送信者だけを1行で表示するには、<gui>差出人:</gui>行の後にあるアイコン <media type="image" its:translate="no" src="./figures/minus-icon.png"/> をクリックします。狭い画面で有用です。</p>
+ 
+</page>

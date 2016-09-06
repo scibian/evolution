@@ -1,0 +1,1285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETableGroup</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch11.html" title="Tables and Trees">
+<link rel="prev" href="ETableGroupLeaf.html" title="ETableGroupLeaf">
+<link rel="next" href="ETableHeaderItem.html" title="ETableHeaderItem">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETableGroup.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETableGroup.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ETableGroup.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETableGroup.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch11.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETableGroupLeaf.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ETableHeaderItem.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETableGroup"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETableGroup.top_of_page"></a>ETableGroup</span></h2>
+<p>ETableGroup</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETableGroup.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="returnvalue">ETableGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-new" title="e_table_group_new ()">e_table_group_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-construct" title="e_table_group_construct ()">e_table_group_construct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-add" title="e_table_group_add ()">e_table_group_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-add-array" title="e_table_group_add_array ()">e_table_group_add_array</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-add-all" title="e_table_group_add_all ()">e_table_group_add_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-remove" title="e_table_group_remove ()">e_table_group_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-increment" title="e_table_group_increment ()">e_table_group_increment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-decrement" title="e_table_group_decrement ()">e_table_group_decrement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-row-count" title="e_table_group_row_count ()">e_table_group_row_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-set-focus" title="e_table_group_set_focus ()">e_table_group_set_focus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-get-focus" title="e_table_group_get_focus ()">e_table_group_get_focus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-get-focus-column" title="e_table_group_get_focus_column ()">e_table_group_get_focus_column</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ETableHeader.html" title="ETableHeader"><span class="returnvalue">ETableHeader</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-get-header" title="e_table_group_get_header ()">e_table_group_get_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EPrintable.html" title="EPrintable"><span class="returnvalue">EPrintable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-get-printable" title="e_table_group_get_printable ()">e_table_group_get_printable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-compute-location" title="e_table_group_compute_location ()">e_table_group_compute_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-get-mouse-over" title="e_table_group_get_mouse_over ()">e_table_group_get_mouse_over</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-get-cell-geometry" title="e_table_group_get_cell_geometry ()">e_table_group_get_cell_geometry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-cursor-change" title="e_table_group_cursor_change ()">e_table_group_cursor_change</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-cursor-activated" title="e_table_group_cursor_activated ()">e_table_group_cursor_activated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-double-click" title="e_table_group_double_click ()">e_table_group_double_click</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-right-click" title="e_table_group_right_click ()">e_table_group_right_click</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-click" title="e_table_group_click ()">e_table_group_click</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-key-press" title="e_table_group_key_press ()">e_table_group_key_press</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-start-drag" title="e_table_group_start_drag ()">e_table_group_start_drag</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="ETableGroup.html#ETableGroupLeafFn" title="ETableGroupLeafFn ()">*ETableGroupLeafFn</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-apply-to-leafs" title="e_table_group_apply_to_leafs ()">e_table_group_apply_to_leafs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETableGroup.html#e-table-group-is-editing" title="e_table_group_is_editing ()">e_table_group_is_editing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETableGroup.html#ETableGroup--is-editing" title="The “is-editing” property">is-editing</a></td>
+<td class="property_flags">Read</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableGroup.html#ETableGroup-click" title="The “click” signal">click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableGroup.html#ETableGroup-cursor-activated" title="The “cursor-activated” signal">cursor-activated</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableGroup.html#ETableGroup-cursor-change" title="The “cursor-change” signal">cursor-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETableGroup.html#ETableGroup-double-click" title="The “double-click” signal">double-click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableGroup.html#ETableGroup-key-press" title="The “key-press” signal">key-press</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableGroup.html#ETableGroup-right-click" title="The “right-click” signal">right-click</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETableGroup.html#ETableGroup-start-drag" title="The “start-drag” signal">start-drag</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETableGroup.html#ETableGroup-struct" title="struct ETableGroup">ETableGroup</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ETableGroup.html#EFocus" title="enum EFocus">EFocus</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html">GnomeCanvasItem</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasGroup.html">GnomeCanvasGroup</a>
+                <span class="lineart">╰──</span> ETableGroup
+                    <span class="lineart">╰──</span> <a class="link" href="ETableGroupLeaf.html" title="ETableGroupLeaf">ETableGroupLeaf</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-table-group-new"></a><h3>e_table_group_new ()</h3>
+<pre class="programlisting"><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="returnvalue">ETableGroup</span></a> *
+e_table_group_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasGroup.html"><span class="type">GnomeCanvasGroup</span></a> *parent</code></em>,
+                   <em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *full_header</code></em>,
+                   <em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *header</code></em>,
+                   <em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *model</code></em>,
+                   <em class="parameter"><code><a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> *sort_info</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> is a collection of rows of an <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.  It's a
+<a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html"><code class="literal">GnomeCanvasItem</code></a>.  There are two different forms.  If n &lt; the
+number of groupings in the given <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a>, then the
+<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> will need to contain other <a href="ETableGroup.html"><span class="type">ETableGroups</span></a>, thus it
+creates an <a class="link" href="evolution-util-ETableGroupContainer.html#ETableGroupContainer" title="struct ETableGroupContainer"><span class="type">ETableGroupContainer</span></a>.  Otherwise, it will just contain
+an <a class="link" href="ETableItem.html" title="ETableItem"><span class="type">ETableItem</span></a>, and thus it creates an <a class="link" href="ETableGroupLeaf.html" title="ETableGroupLeaf"><span class="type">ETableGroupLeaf</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>The <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasGroup.html"><code class="literal">GnomeCanvasGroup</code></a> to create a child of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>full_header</p></td>
+<td class="parameter_description"><p>The full header of the <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>header</p></td>
+<td class="parameter_description"><p>The current header of the <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> of the <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sort_info</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableSortInfo.html" title="ETableSortInfo"><span class="type">ETableSortInfo</span></a> of the <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The grouping information object to group by.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.14.9.2.6"></a><h4>Returns</h4>
+<p> The new <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-construct"></a><h3>e_table_group_construct ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_construct (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasGroup.html"><span class="type">GnomeCanvasGroup</span></a> *parent</code></em>,
+                         <em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                         <em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *full_header</code></em>,
+                         <em class="parameter"><code><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a> *header</code></em>,
+                         <em class="parameter"><code><a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> *model</code></em>);</pre>
+<p>This routine does the base construction of the <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>The <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasGroup.html"><code class="literal">GnomeCanvasGroup</code></a> to create a child of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to construct.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>full_header</p></td>
+<td class="parameter_description"><p>The full header of the <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>header</p></td>
+<td class="parameter_description"><p>The current header of the <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> of the <a class="link" href="ETable.html" title="ETable"><span class="type">ETable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-add"></a><h3>e_table_group_add ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_add (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>This routine adds the given row from the <a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> to this set
+of rows.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to add a row to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-add-array"></a><h3>e_table_group_add_array ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_add_array (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *array</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> count</code></em>);</pre>
+<p>This routine adds all the rows in the array to this set of rows.
+It assumes that the array is already sorted properly.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to add to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>The array to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>The number of times to add</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-add-all"></a><h3>e_table_group_add_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_add_all (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>);</pre>
+<p>This routine adds all the rows from the <a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> to this set
+of rows.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to add to</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-remove"></a><h3>e_table_group_remove ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_group_remove (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>This routine removes the given row from the <a class="link" href="ETableModel.html" title="ETableModel"><span class="type">ETableModel</span></a> from this
+set of rows.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to remove a row from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row to remove.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.14.9.7.6"></a><h4>Returns</h4>
+<p> TRUE if the row was deleted and FALSE if the row was not
+found.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-increment"></a><h3>e_table_group_increment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_increment (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> amount</code></em>);</pre>
+<p>This routine calculates the number of rows shown in this group.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to count</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.14.9.8.6"></a><h4>Returns</h4>
+<p> The number of rows.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-decrement"></a><h3>e_table_group_decrement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_decrement (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> amount</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-row-count"></a><h3>e_table_group_row_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_group_row_count (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-set-focus"></a><h3>e_table_group_set_focus ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_set_focus (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                         <em class="parameter"><code><a class="link" href="ETableGroup.html#EFocus" title="enum EFocus"><span class="type">EFocus</span></a> direction</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> view_col</code></em>);</pre>
+<p>Sets the focus to this widget.  Places the focus in the view column
+coming from direction direction.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>The direction the focus is coming from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view_col</p></td>
+<td class="parameter_description"><p>The column to set the focus in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-get-focus"></a><h3>e_table_group_get_focus ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_group_get_focus (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>);</pre>
+<p>Calculates if this group has the focus.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to check</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.14.9.12.6"></a><h4>Returns</h4>
+<p> TRUE if this group has the focus.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-get-focus-column"></a><h3>e_table_group_get_focus_column ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_group_get_focus_column (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>);</pre>
+<p>Calculates which column in this group has the focus.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to check</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.14.9.13.6"></a><h4>Returns</h4>
+<p> The column index (view column).</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-get-header"></a><h3>e_table_group_get_header ()</h3>
+<pre class="programlisting"><a class="link" href="ETableHeader.html" title="ETableHeader"><span class="returnvalue">ETableHeader</span></a> *
+e_table_group_get_header (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>);</pre>
+<p>This routine returns the <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>'s header.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to check</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.14.9.14.6"></a><h4>Returns</h4>
+<p> The <a class="link" href="ETableHeader.html" title="ETableHeader"><span class="type">ETableHeader</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-get-printable"></a><h3>e_table_group_get_printable ()</h3>
+<pre class="programlisting"><a class="link" href="EPrintable.html" title="EPrintable"><span class="returnvalue">EPrintable</span></a> *
+e_table_group_get_printable (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>);</pre>
+<p>This routine creates and returns an <a class="link" href="EPrintable.html" title="EPrintable"><code class="literal">EPrintable</code></a> that can be used to
+print the given <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> which will be printed</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.12.14.9.15.6"></a><h4>Returns</h4>
+<p> The <a class="link" href="EPrintable.html" title="EPrintable"><code class="literal">EPrintable</code></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-compute-location"></a><h3>e_table_group_compute_location ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_compute_location (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *row</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *col</code></em>);</pre>
+<p>This routine locates the pixel location (*x, *y) in the
+<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>.  If that location is in the <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>, *row and
+*col are set to the view row and column where it was found.  If
+that location is not in the <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>, the height of the
+<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> is removed from the value y points to.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to look in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>A pointer to the x location to find in the <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>A pointer to the y location to find in the <a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>A pointer to the location to store the found row in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>A pointer to the location to store the found col in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-get-mouse-over"></a><h3>e_table_group_get_mouse_over ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_get_mouse_over (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *row</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *col</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-get-cell-geometry"></a><h3>e_table_group_get_cell_geometry ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_get_cell_geometry (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *row</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *col</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *height</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-cursor-change"></a><h3>e_table_group_cursor_change ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_cursor_change (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>This routine emits the "cursor_change" signal.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to emit the signal on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The new cursor row (model row)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-cursor-activated"></a><h3>e_table_group_cursor_activated ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_cursor_activated (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>This routine emits the "cursor_activated" signal.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to emit the signal on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The cursor row (model row)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-double-click"></a><h3>e_table_group_double_click ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_double_click (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
+<p>This routine emits the "double_click" signal.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to emit the signal on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row clicked on (model row)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The col clicked on (model col)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>The event that caused this signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-right-click"></a><h3>e_table_group_right_click ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_group_right_click (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
+<p>This routine emits the "right_click" signal.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to emit the signal on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row clicked on (model row)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The col clicked on (model col)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>The event that caused this signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-click"></a><h3>e_table_group_click ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_group_click (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
+<p>This routine emits the "click" signal.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to emit the signal on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row clicked on (model row)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The col clicked on (model col)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>The event that caused this signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-key-press"></a><h3>e_table_group_key_press ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_group_key_press (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                         <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
+<p>This routine emits the "key_press" signal.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to emit the signal on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The cursor row (model row)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The cursor col (model col)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>The event that caused this signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-start-drag"></a><h3>e_table_group_start_drag ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_table_group_start_drag (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                          <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
+<p>This routine emits the "start_drag" signal.</p>
+<div class="refsect3">
+<a name="id-1.12.14.9.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>table_group</p></td>
+<td class="parameter_description"><p><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> to emit the signal on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The cursor row (model row)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The cursor col (model col)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>The event that caused this signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableGroupLeafFn"></a><h3>ETableGroupLeafFn ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*ETableGroupLeafFn<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> e_table_item</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> closure</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-apply-to-leafs"></a><h3>e_table_group_apply_to_leafs ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_table_group_apply_to_leafs (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>,
+                              <em class="parameter"><code><a class="link" href="ETableGroup.html#ETableGroupLeafFn" title="ETableGroupLeafFn ()"><span class="type">ETableGroupLeafFn</span></a> fn</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> closure</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-table-group-is-editing"></a><h3>e_table_group_is_editing ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_table_group_is_editing (<em class="parameter"><code><a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *table_group</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETableGroup-struct"></a><h3>struct ETableGroup</h3>
+<pre class="programlisting">struct ETableGroup;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EFocus"></a><h3>enum EFocus</h3>
+<div class="refsect3">
+<a name="id-1.12.14.10.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-FOCUS-NONE:CAPS"></a>E_FOCUS_NONE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-FOCUS-CURRENT:CAPS"></a>E_FOCUS_CURRENT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-FOCUS-START:CAPS"></a>E_FOCUS_START</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-FOCUS-END:CAPS"></a>E_FOCUS_END</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ETableGroup--is-editing"></a><h3>The <code class="literal">“is-editing”</code> property</h3>
+<pre class="programlisting">  “is-editing”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether is in an editing mode.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETableGroup.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETableGroup-click"></a><h3>The <code class="literal">“click”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *etablegroup,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>    *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableGroup-cursor-activated"></a><h3>The <code class="literal">“cursor-activated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *etablegroup,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableGroup-cursor-change"></a><h3>The <code class="literal">“cursor-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *etablegroup,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableGroup-double-click"></a><h3>The <code class="literal">“double-click”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *etablegroup,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>    *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableGroup-key-press"></a><h3>The <code class="literal">“key-press”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *etablegroup,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>    *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableGroup-right-click"></a><h3>The <code class="literal">“right-click”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *etablegroup,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>    *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETableGroup-start-drag"></a><h3>The <code class="literal">“start-drag”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETableGroup.html" title="ETableGroup"><span class="type">ETableGroup</span></a> *etablegroup,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>         arg2,
+               <a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>    *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Evolution Mail Engine Reference Manual" link="index.html" author="" name="evolution-mail-engine" version="2" language="c">
+  <chapters>
+    <sub name="Classes" link="ch01.html">
+      <sub name="CamelNullStore" link="CamelNullStore.html"/>
+      <sub name="CamelSaslXOAuth2" link="CamelSaslXOAuth2.html"/>
+      <sub name="EMailAuthenticator" link="EMailAuthenticator.html"/>
+      <sub name="EMailJunkFilter" link="EMailJunkFilter.html"/>
+      <sub name="EMailSession" link="EMailSession.html"/>
+      <sub name="EMFilterFolderElement" link="EMFilterFolderElement.html"/>
+      <sub name="EMVFolderContext" link="EMVFolderContext.html"/>
+      <sub name="EMVFolderRule" link="EMVFolderRule.html"/>
+      <sub name="MailFolderCache" link="MailFolderCache.html"/>
+    </sub>
+    <sub name="Utilities" link="ch02.html">
+      <sub name="Mail Folder Utilities" link="evolution-mail-engine-Mail-Folder-Utilities.html"/>
+      <sub name="Mail Session Utilities" link="evolution-mail-engine-Mail-Session-Utilities.html"/>
+      <sub name="Mail Store Utilities" link="evolution-mail-engine-Mail-Store-Utilities.html"/>
+      <sub name="Miscellaneous Utilities" link="evolution-mail-engine-Miscellaneous-Utilities.html"/>
+      <sub name="Legacy Utilities" link="evolution-mail-engine-Legacy-Utilities.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="camel_null_store_register_provider ()" link="CamelNullStore.html#camel-null-store-register-provider"/>
+    <keyword type="struct" name="struct CamelNullStore" link="CamelNullStore.html#CamelNullStore-struct"/>
+    <keyword type="struct" name="struct CamelSaslXOAuth2" link="CamelSaslXOAuth2.html#CamelSaslXOAuth2-struct"/>
+    <keyword type="function" name="e_mail_authenticator_new ()" link="EMailAuthenticator.html#e-mail-authenticator-new"/>
+    <keyword type="function" name="e_mail_authenticator_get_service ()" link="EMailAuthenticator.html#e-mail-authenticator-get-service"/>
+    <keyword type="function" name="e_mail_authenticator_get_mechanism ()" link="EMailAuthenticator.html#e-mail-authenticator-get-mechanism"/>
+    <keyword type="struct" name="struct EMailAuthenticator" link="EMailAuthenticator.html#EMailAuthenticator-struct"/>
+    <keyword type="property" name="The “mechanism” property" link="EMailAuthenticator.html#EMailAuthenticator--mechanism"/>
+    <keyword type="property" name="The “service” property" link="EMailAuthenticator.html#EMailAuthenticator--service"/>
+    <keyword type="function" name="e_mail_junk_filter_new_config_widget ()" link="EMailJunkFilter.html#e-mail-junk-filter-new-config-widget"/>
+    <keyword type="function" name="e_mail_junk_filter_compare ()" link="EMailJunkFilter.html#e-mail-junk-filter-compare"/>
+    <keyword type="struct" name="struct EMailJunkFilter" link="EMailJunkFilter.html#EMailJunkFilter-struct"/>
+    <keyword type="function" name="e_mail_session_new ()" link="EMailSession.html#e-mail-session-new"/>
+    <keyword type="function" name="e_mail_session_get_registry ()" link="EMailSession.html#e-mail-session-get-registry"/>
+    <keyword type="function" name="e_mail_session_get_folder_cache ()" link="EMailSession.html#e-mail-session-get-folder-cache"/>
+    <keyword type="function" name="e_mail_session_get_local_store ()" link="EMailSession.html#e-mail-session-get-local-store"/>
+    <keyword type="function" name="e_mail_session_get_vfolder_store ()" link="EMailSession.html#e-mail-session-get-vfolder-store"/>
+    <keyword type="function" name="e_mail_session_get_local_folder ()" link="EMailSession.html#e-mail-session-get-local-folder"/>
+    <keyword type="function" name="e_mail_session_get_local_folder_uri ()" link="EMailSession.html#e-mail-session-get-local-folder-uri"/>
+    <keyword type="function" name="e_mail_session_get_available_junk_filters ()" link="EMailSession.html#e-mail-session-get-available-junk-filters"/>
+    <keyword type="function" name="e_mail_session_get_junk_filter_by_name ()" link="EMailSession.html#e-mail-session-get-junk-filter-by-name"/>
+    <keyword type="function" name="e_mail_session_get_inbox_sync ()" link="EMailSession.html#e-mail-session-get-inbox-sync"/>
+    <keyword type="function" name="e_mail_session_get_inbox ()" link="EMailSession.html#e-mail-session-get-inbox"/>
+    <keyword type="function" name="e_mail_session_get_inbox_finish ()" link="EMailSession.html#e-mail-session-get-inbox-finish"/>
+    <keyword type="function" name="e_mail_session_get_trash_sync ()" link="EMailSession.html#e-mail-session-get-trash-sync"/>
+    <keyword type="function" name="e_mail_session_get_trash ()" link="EMailSession.html#e-mail-session-get-trash"/>
+    <keyword type="function" name="e_mail_session_get_trash_finish ()" link="EMailSession.html#e-mail-session-get-trash-finish"/>
+    <keyword type="function" name="e_mail_session_uri_to_folder_sync ()" link="EMailSession.html#e-mail-session-uri-to-folder-sync"/>
+    <keyword type="function" name="e_mail_session_uri_to_folder ()" link="EMailSession.html#e-mail-session-uri-to-folder"/>
+    <keyword type="function" name="e_mail_session_uri_to_folder_finish ()" link="EMailSession.html#e-mail-session-uri-to-folder-finish"/>
+    <keyword type="function" name="e_mail_session_create_vfolder_context ()" link="EMailSession.html#e-mail-session-create-vfolder-context"/>
+    <keyword type="function" name="e_binding_transform_service_to_source ()" link="EMailSession.html#e-binding-transform-service-to-source"/>
+    <keyword type="function" name="e_binding_transform_source_to_service ()" link="EMailSession.html#e-binding-transform-source-to-service"/>
+    <keyword type="function" name="mail_session_flush_filter_log ()" link="EMailSession.html#mail-session-flush-filter-log"/>
+    <keyword type="function" name="mail_session_get_data_dir ()" link="EMailSession.html#mail-session-get-data-dir"/>
+    <keyword type="function" name="mail_session_get_cache_dir ()" link="EMailSession.html#mail-session-get-cache-dir"/>
+    <keyword type="function" name="mail_session_get_config_dir ()" link="EMailSession.html#mail-session-get-config-dir"/>
+    <keyword type="struct" name="struct EMailSession" link="EMailSession.html#EMailSession-struct"/>
+    <keyword type="macro" name="E_MAIL_SESSION_LOCAL_UID" link="EMailSession.html#E-MAIL-SESSION-LOCAL-UID:CAPS"/>
+    <keyword type="macro" name="E_MAIL_SESSION_VFOLDER_UID" link="EMailSession.html#E-MAIL-SESSION-VFOLDER-UID:CAPS"/>
+    <keyword type="enum" name="enum EMailLocalFolder" link="EMailSession.html#EMailLocalFolder"/>
+    <keyword type="property" name="The “folder-cache” property" link="EMailSession.html#EMailSession--folder-cache"/>
+    <keyword type="property" name="The “local-store” property" link="EMailSession.html#EMailSession--local-store"/>
+    <keyword type="property" name="The “registry” property" link="EMailSession.html#EMailSession--registry"/>
+    <keyword type="property" name="The “vfolder-store” property" link="EMailSession.html#EMailSession--vfolder-store"/>
+    <keyword type="signal" name="The “flush-outbox” signal" link="EMailSession.html#EMailSession-flush-outbox"/>
+    <keyword type="signal" name="The “refresh-service” signal" link="EMailSession.html#EMailSession-refresh-service"/>
+    <keyword type="signal" name="The “store-added” signal" link="EMailSession.html#EMailSession-store-added"/>
+    <keyword type="signal" name="The “store-removed” signal" link="EMailSession.html#EMailSession-store-removed"/>
+    <keyword type="function" name="em_filter_folder_element_new ()" link="EMFilterFolderElement.html#em-filter-folder-element-new"/>
+    <keyword type="function" name="em_filter_folder_element_get_uri ()" link="EMFilterFolderElement.html#em-filter-folder-element-get-uri"/>
+    <keyword type="function" name="em_filter_folder_element_set_uri ()" link="EMFilterFolderElement.html#em-filter-folder-element-set-uri"/>
+    <keyword type="struct" name="struct EMFilterFolderElement" link="EMFilterFolderElement.html#EMFilterFolderElement-struct"/>
+    <keyword type="function" name="em_vfolder_context_new ()" link="EMVFolderContext.html#em-vfolder-context-new"/>
+    <keyword type="struct" name="struct EMVFolderContext" link="EMVFolderContext.html#EMVFolderContext-struct"/>
+    <keyword type="function" name="em_vfolder_rule_new ()" link="EMVFolderRule.html#em-vfolder-rule-new"/>
+    <keyword type="function" name="em_vfolder_rule_add_source ()" link="EMVFolderRule.html#em-vfolder-rule-add-source"/>
+    <keyword type="function" name="em_vfolder_rule_remove_source ()" link="EMVFolderRule.html#em-vfolder-rule-remove-source"/>
+    <keyword type="function" name="em_vfolder_rule_find_source ()" link="EMVFolderRule.html#em-vfolder-rule-find-source"/>
+    <keyword type="function" name="em_vfolder_rule_next_source ()" link="EMVFolderRule.html#em-vfolder-rule-next-source"/>
+    <keyword type="function" name="em_vfolder_rule_get_sources ()" link="EMVFolderRule.html#em-vfolder-rule-get-sources"/>
+    <keyword type="function" name="em_vfolder_rule_sources_changed ()" link="EMVFolderRule.html#em-vfolder-rule-sources-changed"/>
+    <keyword type="function" name="em_vfolder_rule_source_get_include_subfolders ()" link="EMVFolderRule.html#em-vfolder-rule-source-get-include-subfolders"/>
+    <keyword type="function" name="em_vfolder_rule_source_set_include_subfolders ()" link="EMVFolderRule.html#em-vfolder-rule-source-set-include-subfolders"/>
+    <keyword type="function" name="em_vfolder_rule_get_with ()" link="EMVFolderRule.html#em-vfolder-rule-get-with"/>
+    <keyword type="function" name="em_vfolder_rule_set_with ()" link="EMVFolderRule.html#em-vfolder-rule-set-with"/>
+    <keyword type="function" name="em_vfolder_rule_get_autoupdate ()" link="EMVFolderRule.html#em-vfolder-rule-get-autoupdate"/>
+    <keyword type="function" name="em_vfolder_rule_set_autoupdate ()" link="EMVFolderRule.html#em-vfolder-rule-set-autoupdate"/>
+    <keyword type="struct" name="struct EMVFolderRule" link="EMVFolderRule.html#EMVFolderRule-struct"/>
+    <keyword type="enum" name="enum em_vfolder_rule_with_t" link="EMVFolderRule.html#em-vfolder-rule-with-t"/>
+    <keyword type="function" name="mail_folder_cache_new ()" link="MailFolderCache.html#mail-folder-cache-new"/>
+    <keyword type="function" name="mail_folder_cache_ref_main_context ()" link="MailFolderCache.html#mail-folder-cache-ref-main-context"/>
+    <keyword type="function" name="mail_folder_cache_note_store ()" link="MailFolderCache.html#mail-folder-cache-note-store"/>
+    <keyword type="function" name="mail_folder_cache_note_store_finish ()" link="MailFolderCache.html#mail-folder-cache-note-store-finish"/>
+    <keyword type="function" name="mail_folder_cache_note_folder ()" link="MailFolderCache.html#mail-folder-cache-note-folder"/>
+    <keyword type="function" name="mail_folder_cache_has_folder_info ()" link="MailFolderCache.html#mail-folder-cache-has-folder-info"/>
+    <keyword type="function" name="mail_folder_cache_ref_folder ()" link="MailFolderCache.html#mail-folder-cache-ref-folder"/>
+    <keyword type="function" name="mail_folder_cache_get_folder_info_flags ()" link="MailFolderCache.html#mail-folder-cache-get-folder-info-flags"/>
+    <keyword type="function" name="mail_folder_cache_get_local_folder_uris ()" link="MailFolderCache.html#mail-folder-cache-get-local-folder-uris"/>
+    <keyword type="function" name="mail_folder_cache_get_remote_folder_uris ()" link="MailFolderCache.html#mail-folder-cache-get-remote-folder-uris"/>
+    <keyword type="function" name="mail_folder_cache_service_removed ()" link="MailFolderCache.html#mail-folder-cache-service-removed"/>
+    <keyword type="function" name="mail_folder_cache_service_enabled ()" link="MailFolderCache.html#mail-folder-cache-service-enabled"/>
+    <keyword type="function" name="mail_folder_cache_service_disabled ()" link="MailFolderCache.html#mail-folder-cache-service-disabled"/>
+    <keyword type="struct" name="struct MailFolderCache" link="MailFolderCache.html#MailFolderCache-struct"/>
+    <keyword type="property" name="The “main-context” property" link="MailFolderCache.html#MailFolderCache--main-context"/>
+    <keyword type="signal" name="The “folder-available” signal" link="MailFolderCache.html#MailFolderCache-folder-available"/>
+    <keyword type="signal" name="The “folder-changed” signal" link="MailFolderCache.html#MailFolderCache-folder-changed"/>
+    <keyword type="signal" name="The “folder-deleted” signal" link="MailFolderCache.html#MailFolderCache-folder-deleted"/>
+    <keyword type="signal" name="The “folder-renamed” signal" link="MailFolderCache.html#MailFolderCache-folder-renamed"/>
+    <keyword type="signal" name="The “folder-unavailable” signal" link="MailFolderCache.html#MailFolderCache-folder-unavailable"/>
+    <keyword type="signal" name="The “folder-unread-updated” signal" link="MailFolderCache.html#MailFolderCache-folder-unread-updated"/>
+    <keyword type="function" name="e_mail_folder_append_message_sync ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-append-message-sync"/>
+    <keyword type="function" name="e_mail_folder_append_message ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-append-message"/>
+    <keyword type="function" name="e_mail_folder_append_message_finish ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-append-message-finish"/>
+    <keyword type="function" name="e_mail_folder_expunge_sync ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-expunge-sync"/>
+    <keyword type="function" name="e_mail_folder_expunge ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-expunge"/>
+    <keyword type="function" name="e_mail_folder_expunge_finish ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-expunge-finish"/>
+    <keyword type="function" name="e_mail_folder_build_attachment_sync ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-build-attachment-sync"/>
+    <keyword type="function" name="e_mail_folder_build_attachment ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-build-attachment"/>
+    <keyword type="function" name="e_mail_folder_build_attachment_finish ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-build-attachment-finish"/>
+    <keyword type="function" name="e_mail_folder_find_duplicate_messages_sync ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-find-duplicate-messages-sync"/>
+    <keyword type="function" name="e_mail_folder_find_duplicate_messages ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-find-duplicate-messages"/>
+    <keyword type="function" name="e_mail_folder_find_duplicate_messages_finish ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-find-duplicate-messages-finish"/>
+    <keyword type="function" name="e_mail_folder_get_multiple_messages_sync ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-get-multiple-messages-sync"/>
+    <keyword type="function" name="e_mail_folder_get_multiple_messages ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-get-multiple-messages"/>
+    <keyword type="function" name="e_mail_folder_get_multiple_messages_finish ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-get-multiple-messages-finish"/>
+    <keyword type="function" name="e_mail_folder_remove_sync ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-sync"/>
+    <keyword type="function" name="e_mail_folder_remove ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove"/>
+    <keyword type="function" name="e_mail_folder_remove_finish ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-finish"/>
+    <keyword type="function" name="e_mail_folder_remove_attachments_sync ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-attachments-sync"/>
+    <keyword type="function" name="e_mail_folder_remove_attachments ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-attachments"/>
+    <keyword type="function" name="e_mail_folder_remove_attachments_finish ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-attachments-finish"/>
+    <keyword type="function" name="e_mail_folder_save_messages_sync ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-save-messages-sync"/>
+    <keyword type="function" name="e_mail_folder_save_messages ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-save-messages"/>
+    <keyword type="function" name="e_mail_folder_save_messages_finish ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-save-messages-finish"/>
+    <keyword type="function" name="e_mail_folder_uri_build ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-build"/>
+    <keyword type="function" name="e_mail_folder_uri_parse ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-parse"/>
+    <keyword type="function" name="e_mail_folder_uri_equal ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-equal"/>
+    <keyword type="function" name="e_mail_folder_uri_from_folder ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-from-folder"/>
+    <keyword type="function" name="e_mail_folder_uri_to_markup ()" link="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-to-markup"/>
+    <keyword type="macro" name="E_MAIL_ERROR" link="evolution-mail-engine-Mail-Session-Utilities.html#E-MAIL-ERROR:CAPS"/>
+    <keyword type="function" name="e_mail_session_append_to_local_folder_sync ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-append-to-local-folder-sync"/>
+    <keyword type="function" name="e_mail_session_append_to_local_folder ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-append-to-local-folder"/>
+    <keyword type="function" name="e_mail_session_append_to_local_folder_finish ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-append-to-local-folder-finish"/>
+    <keyword type="function" name="e_mail_session_handle_draft_headers_sync ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-handle-draft-headers-sync"/>
+    <keyword type="function" name="e_mail_session_handle_draft_headers ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-handle-draft-headers"/>
+    <keyword type="function" name="e_mail_session_handle_draft_headers_finish ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-handle-draft-headers-finish"/>
+    <keyword type="function" name="e_mail_session_handle_source_headers_sync ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-handle-source-headers-sync"/>
+    <keyword type="function" name="e_mail_session_handle_source_headers ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-handle-source-headers"/>
+    <keyword type="function" name="e_mail_session_handle_source_headers_finish ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-handle-source-headers-finish"/>
+    <keyword type="function" name="e_mail_session_send_to ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-send-to"/>
+    <keyword type="function" name="e_mail_session_send_to_finish ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-send-to-finish"/>
+    <keyword type="function" name="e_mail_session_get_fcc_for_message_sync ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-get-fcc-for-message-sync"/>
+    <keyword type="function" name="e_mail_session_get_fcc_for_message ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-get-fcc-for-message"/>
+    <keyword type="function" name="e_mail_session_get_fcc_for_message_finish ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-get-fcc-for-message-finish"/>
+    <keyword type="function" name="e_mail_session_ref_transport ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-ref-transport"/>
+    <keyword type="function" name="e_mail_session_ref_default_transport ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-ref-default-transport"/>
+    <keyword type="function" name="e_mail_session_ref_transport_for_message ()" link="evolution-mail-engine-Mail-Session-Utilities.html#e-mail-session-ref-transport-for-message"/>
+    <keyword type="enum" name="enum EMailError" link="evolution-mail-engine-Mail-Session-Utilities.html#EMailError"/>
+    <keyword type="function" name="e_mail_store_create_folder_sync ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-create-folder-sync"/>
+    <keyword type="function" name="e_mail_store_create_folder ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-create-folder"/>
+    <keyword type="function" name="e_mail_store_create_folder_finish ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-create-folder-finish"/>
+    <keyword type="function" name="e_mail_store_go_offline_sync ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-go-offline-sync"/>
+    <keyword type="function" name="e_mail_store_go_offline ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-go-offline"/>
+    <keyword type="function" name="e_mail_store_go_offline_finish ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-go-offline-finish"/>
+    <keyword type="function" name="e_mail_store_go_online_sync ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-go-online-sync"/>
+    <keyword type="function" name="e_mail_store_go_online ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-go-online"/>
+    <keyword type="function" name="e_mail_store_go_online_finish ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-go-online-finish"/>
+    <keyword type="function" name="e_mail_store_prepare_for_offline ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-prepare-for-offline"/>
+    <keyword type="function" name="e_mail_store_prepare_for_offline_finish ()" link="evolution-mail-engine-Mail-Store-Utilities.html#e-mail-store-prepare-for-offline-finish"/>
+    <keyword type="function" name="em_utils_folder_is_drafts ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-folder-is-drafts"/>
+    <keyword type="function" name="em_utils_folder_is_templates ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-folder-is-templates"/>
+    <keyword type="function" name="em_utils_folder_is_sent ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-folder-is-sent"/>
+    <keyword type="function" name="em_utils_folder_is_outbox ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-folder-is-outbox"/>
+    <keyword type="function" name="em_utils_guess_mail_account ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-guess-mail-account"/>
+    <keyword type="function" name="em_utils_guess_mail_identity ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-guess-mail-identity"/>
+    <keyword type="function" name="em_utils_guess_mail_account_with_recipients ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-guess-mail-account-with-recipients"/>
+    <keyword type="function" name="em_utils_guess_mail_identity_with_recipients ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-guess-mail-identity-with-recipients"/>
+    <keyword type="function" name="EMailUtilsSortSourcesFunc ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#EMailUtilsSortSourcesFunc"/>
+    <keyword type="function" name="em_utils_guess_mail_account_with_recipients_and_sort ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-guess-mail-account-with-recipients-and-sort"/>
+    <keyword type="function" name="em_utils_guess_mail_identity_with_recipients_and_sort ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-guess-mail-identity-with-recipients-and-sort"/>
+    <keyword type="function" name="em_utils_ref_mail_identity_for_store ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-ref-mail-identity-for-store"/>
+    <keyword type="function" name="em_utils_is_local_delivery_mbox_file ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-is-local-delivery-mbox-file"/>
+    <keyword type="function" name="em_utils_expand_groups ()" link="evolution-mail-engine-Miscellaneous-Utilities.html#em-utils-expand-groups"/>
+    <keyword type="function" name="mail_config_init ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-config-init"/>
+    <keyword type="function" name="mail_config_get_address_count ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-config-get-address-count"/>
+    <keyword type="function" name="mail_config_folder_to_cachename ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-config-folder-to-cachename"/>
+    <keyword type="function" name="mail_config_get_sync_timeout ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-config-get-sync-timeout"/>
+    <keyword type="function" name="mail_config_reload_junk_headers ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-config-reload-junk-headers"/>
+    <keyword type="function" name="mail_config_get_lookup_book ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-config-get-lookup-book"/>
+    <keyword type="function" name="mail_config_get_lookup_book_local_only ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-config-get-lookup-book-local-only"/>
+    <keyword type="function" name="mail_transfer_messages ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-transfer-messages"/>
+    <keyword type="function" name="mail_sync_folder ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-sync-folder"/>
+    <keyword type="function" name="mail_sync_store ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-sync-store"/>
+    <keyword type="function" name="mail_empty_trash ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-empty-trash"/>
+    <keyword type="function" name="mail_send_queue ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-send-queue"/>
+    <keyword type="function" name="MailProviderFetchLockFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchLockFunc"/>
+    <keyword type="function" name="MailProviderFetchUnlockFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchUnlockFunc"/>
+    <keyword type="function" name="MailProviderFetchInboxFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailProviderFetchInboxFunc"/>
+    <keyword type="function" name="mail_fetch_mail ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-fetch-mail"/>
+    <keyword type="function" name="mail_filter_folder ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-filter-folder"/>
+    <keyword type="function" name="mail_execute_shell_command ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-execute-shell-command"/>
+    <keyword type="function" name="mail_tool_do_movemail ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-tool-do-movemail"/>
+    <keyword type="function" name="mail_tool_remove_xevolution_headers ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-tool-remove-xevolution-headers"/>
+    <keyword type="function" name="mail_tool_restore_xevolution_headers ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-tool-restore-xevolution-headers"/>
+    <keyword type="function" name="mail_tool_generate_forward_subject ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-tool-generate-forward-subject"/>
+    <keyword type="function" name="mail_tool_make_message_attachment ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-tool-make-message-attachment"/>
+    <keyword type="function" name="MailMsgDescFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgDescFunc"/>
+    <keyword type="function" name="MailMsgExecFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgExecFunc"/>
+    <keyword type="function" name="MailMsgDoneFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgDoneFunc"/>
+    <keyword type="function" name="MailMsgFreeFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgFreeFunc"/>
+    <keyword type="function" name="MailMsgDispatchFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgDispatchFunc"/>
+    <keyword type="function" name="MailMsgCreateActivityFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgCreateActivityFunc"/>
+    <keyword type="function" name="MailMsgSubmitActivityFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgSubmitActivityFunc"/>
+    <keyword type="function" name="MailMsgFreeActivityFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgFreeActivityFunc"/>
+    <keyword type="function" name="MailMsgCompleteActivityFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgCompleteActivityFunc"/>
+    <keyword type="function" name="MailMsgCancelActivityFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgCancelActivityFunc"/>
+    <keyword type="function" name="MailMsgAlertErrorFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgAlertErrorFunc"/>
+    <keyword type="function" name="MailMsgGetAlertSinkFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgGetAlertSinkFunc"/>
+    <keyword type="function" name="mail_msg_init ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-init"/>
+    <keyword type="function" name="mail_msg_register_activities ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-register-activities"/>
+    <keyword type="function" name="mail_msg_get_alert_sink ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-get-alert-sink"/>
+    <keyword type="function" name="mail_msg_new ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-new"/>
+    <keyword type="function" name="mail_msg_ref ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-ref"/>
+    <keyword type="function" name="mail_msg_unref ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-unref"/>
+    <keyword type="function" name="mail_msg_check_error ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-check-error"/>
+    <keyword type="function" name="mail_msg_cancel ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-cancel"/>
+    <keyword type="function" name="mail_msg_active ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-active"/>
+    <keyword type="function" name="mail_msg_main_loop_push ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-main-loop-push"/>
+    <keyword type="function" name="mail_msg_unordered_push ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-unordered-push"/>
+    <keyword type="function" name="mail_msg_fast_ordered_push ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-fast-ordered-push"/>
+    <keyword type="function" name="mail_msg_slow_ordered_push ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-msg-slow-ordered-push"/>
+    <keyword type="function" name="mail_in_main_thread ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-in-main-thread"/>
+    <keyword type="function" name="MailMainFunc ()" link="evolution-mail-engine-Legacy-Utilities.html#MailMainFunc"/>
+    <keyword type="function" name="mail_call_main ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-call-main"/>
+    <keyword type="function" name="vfolder_load_storage ()" link="evolution-mail-engine-Legacy-Utilities.html#vfolder-load-storage"/>
+    <keyword type="function" name="mail_vfolder_shutdown ()" link="evolution-mail-engine-Legacy-Utilities.html#mail-vfolder-shutdown"/>
+    <keyword type="struct" name="struct MailMsg" link="evolution-mail-engine-Legacy-Utilities.html#MailMsg"/>
+    <keyword type="struct" name="struct MailMsgInfo" link="evolution-mail-engine-Legacy-Utilities.html#MailMsgInfo"/>
+    <keyword type="enum" name="enum mail_call_t" link="evolution-mail-engine-Legacy-Utilities.html#mail-call-t"/>
+  </functions>
+</book>

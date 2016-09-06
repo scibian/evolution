@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-read-receipts" xml:lang="ja">
+
+  <info>
+    <desc>開封通知の返送を要求する方法です。</desc>
+    
+    <link type="guide" xref="index#mail-advanced"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#defaults"/>
+    <link type="guide" xref="mail-account-manage-local-delivery#defaults"/>
+    <link type="guide" xref="mail-account-manage-maildir-format-directories#defaults"/>
+    <link type="guide" xref="mail-account-manage-mh-format-directories#defaults"/>
+    <link type="guide" xref="mail-account-manage-pop#defaults"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-directory#defaults"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-file#defaults"/>
+    <link type="guide" xref="mail-account-manage-usenet-news#defaults"/>
+
+    <revision pkgversion="2.32.1" version="0.2" date="2011-01-06" status="candidate"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+<title>メールの開封通知</title>
+
+<p>開封通知はメールを受け取ったことを通知する方法の1つです。受け取った人は通常、受け取ったことを通知するかしないか選択できるため、ある人がメールを受け取ったかどうかを確実に確認できる方法ではありません。</p>
+
+<p>コンポーザーのメニューからこのオプションを有効にすると開封通知を要求できます。<guiseq><gui>オプション</gui><gui>開封通知を要求する</gui></guiseq>に移動します。</p>
+
+<p>受け取ったメールの開封通知に対する Evolution の挙動は、<guiseq><gui>編集</gui><gui>設定</gui><gui>メールアカウント</gui><gui style="button">編集</gui><gui>デフォルト</gui><gui>メッセージの開封通知</gui></guiseq>から定義できます。</p>
+
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-receiving-options-exchange-ews" xml:lang="hu">
+
+  <info>
+    <desc>Fogadás beállításai Webes Exchange-szolgáltatások fiókokhoz.</desc>
+
+    <link type="guide" xref="mail-receiving-options#corporate-server-types"/>
+    <link type="guide" xref="mail-account-manage-microsoft-exchange-evo-ews#receiving-email"/>
+    <revision pkgversion="3.1.91" version="0.2" date="2013-06-22" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>Webes Exchange-szolgáltatások fogadási beállításai</title>
+
+<section id="receiving-email-exchange-ews">
+<title>Levelek fogadása</title>
+
+<p>A <gui>Levelek fogadása</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Levelek fogadása</gui></guiseq>):</p>
+
+<list>
+<item><p>Írja be a kiszolgálón használt felhasználónevét.</p></item>
+<item><p>Vagy adja meg saját kezűleg a Gép URL-t és az OAB URL-t, vagy nyomja meg az <gui style="button">URL lekérése</gui> gombot, amely bekéri a jelszavát és megpróbálja automatikusan kitölteni az értékeket.</p>
+<note style="tip"><p>Ha céges környezetben van, akkor a rendszergazdától kaphat további információkat.</p></note></item>
+<item><p>Válassza ki a hitelesítés típusát a Hitelesítés listából, vagy nyomja meg a <gui style="button">Támogatott típusok lekérdezése</gui> gombot, és az Evolution meghatározza a támogatott hitelesítési mechanizmusokat. Egyes kiszolgálók nem teszik közzé az általuk támogatott hitelesítési mechanizmusokat, így a gomb megnyomása nem garantálja, hogy az elérhető mechanizmusok ténylegesen működni fognak.</p></item>
+</list>
+
+</section>
+
+<section id="receiving-options-exchange-ews">
+<title>Fogadás beállításai</title>
+
+<p>A <gui>Fogadás beállításai</gui> oldalon (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Postafiókok</gui><gui style="button">Szerkesztés</gui><gui>Fogadás beállításai</gui></guiseq>):</p>
+
+<list>
+<item><p>Ha azt szeretné, hogy az Evolution automatikusan keresse az új üzeneteket, akkor jelölje be az <gui>Új levelek automatikus lekérdezése ... percenként</gui> négyzetet, és adja meg a gyakoriságot percben.</p></item>
+<item><p>Megadhatja azt is, hogy az Evolution minden mappában keressen-e új leveleket.</p></item>
+<item><p>Ha szeretné a kiszolgálón lévő címjegyzéket kapcsolat nélküli módban is elérni, akkor a <gui>Kapcsolat nélküli címjegyzék gyorsítótárazása</gui> engedélyezésével, és a <gui style="button">Lista letöltése</gui> gomb megnyomásával, majd a kívánt címjegyzék kiválasztásával készíthet másolatot.</p></item>
+<item><p>Ha szeretne <link xref="mail-filters">szűrőket</link> alkalmazni az Érkezett mappába érkező új levelekre, akkor jelölje be a <gui>Szűrők alkalmazása az új üzenetekre ezen kiszolgáló bejövő mappájában</gui> jelölőnégyzetet.</p></item>
+</list>
+
+</section>
+
+</page>

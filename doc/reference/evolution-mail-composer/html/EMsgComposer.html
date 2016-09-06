@@ -1,0 +1,1453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Composer Reference Manual: EMsgComposer</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Composer Reference Manual">
+<link rel="up" href="ch01.html" title="Mail Composition">
+<link rel="prev" href="ch01.html" title="Mail Composition">
+<link rel="next" href="EComposerActivity.html" title="EComposerActivity">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EMsgComposer.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EMsgComposer.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EMsgComposer.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EMsgComposer.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EMsgComposer.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EComposerActivity.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EMsgComposer"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EMsgComposer.top_of_page"></a>EMsgComposer</span></h2>
+<p>EMsgComposer</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EMsgComposer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="returnvalue">EMsgComposer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-new" title="e_msg_composer_new ()">e_msg_composer_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="returnvalue">EMsgComposer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-new-with-message" title="e_msg_composer_new_with_message ()">e_msg_composer_new_with_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="returnvalue">EMsgComposer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-new-from-url" title="e_msg_composer_new_from_url ()">e_msg_composer_new_from_url</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="returnvalue">EMsgComposer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-new-redirect" title="e_msg_composer_new_redirect ()">e_msg_composer_new_redirect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="returnvalue">EFocusTracker</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-focus-tracker" title="e_msg_composer_get_focus_tracker ()">e_msg_composer_get_focus_tracker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="returnvalue">CamelSession</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-ref-session" title="e_msg_composer_ref_session ()">e_msg_composer_ref_session</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="returnvalue">EShell</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-shell" title="e_msg_composer_get_shell ()">e_msg_composer_get_shell</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-util/EWebViewGtkHTML.html"><span class="returnvalue">EWebViewGtkHTML</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-web-view" title="e_msg_composer_get_web_view ()">e_msg_composer_get_web_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-send" title="e_msg_composer_send ()">e_msg_composer_send</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-save-to-drafts" title="e_msg_composer_save_to_drafts ()">e_msg_composer_save_to_drafts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-save-to-outbox" title="e_msg_composer_save_to_outbox ()">e_msg_composer_save_to_outbox</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-print" title="e_msg_composer_print ()">e_msg_composer_print</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-set-body-text" title="e_msg_composer_set_body_text ()">e_msg_composer_set_body_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-set-body" title="e_msg_composer_set_body ()">e_msg_composer_set_body</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-add-header" title="e_msg_composer_add_header ()">e_msg_composer_add_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-set-header" title="e_msg_composer_set_header ()">e_msg_composer_set_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-remove-header" title="e_msg_composer_remove_header ()">e_msg_composer_remove_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-set-draft-headers" title="e_msg_composer_set_draft_headers ()">e_msg_composer_set_draft_headers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-set-source-headers" title="e_msg_composer_set_source_headers ()">e_msg_composer_set_source_headers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-attach" title="e_msg_composer_attach ()">e_msg_composer_attach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-add-inline-image-from-file" title="e_msg_composer_add_inline_image_from_file ()">e_msg_composer_add_inline_image_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-add-inline-image-from-mime-part" title="e_msg_composer_add_inline_image_from_mime_part ()">e_msg_composer_add_inline_image_from_mime_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-message" title="e_msg_composer_get_message ()">e_msg_composer_get_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="returnvalue">CamelMimeMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-message-finish" title="e_msg_composer_get_message_finish ()">e_msg_composer_get_message_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-message-print" title="e_msg_composer_get_message_print ()">e_msg_composer_get_message_print</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="returnvalue">CamelMimeMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-message-print-finish" title="e_msg_composer_get_message_print_finish ()">e_msg_composer_get_message_print_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-message-draft" title="e_msg_composer_get_message_draft ()">e_msg_composer_get_message_draft</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="returnvalue">CamelMimeMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-message-draft-finish" title="e_msg_composer_get_message_draft_finish ()">e_msg_composer_get_message_draft_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelInternetAddress.html"><span class="returnvalue">CamelInternetAddress</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-from" title="e_msg_composer_get_from ()">e_msg_composer_get_from</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelInternetAddress.html"><span class="returnvalue">CamelInternetAddress</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-reply-to" title="e_msg_composer_get_reply_to ()">e_msg_composer_get_reply_to</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-clear-inlined-table" title="e_msg_composer_clear_inlined_table ()">e_msg_composer_clear_inlined_table</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-add-message-attachments" title="e_msg_composer_add_message_attachments ()">e_msg_composer_add_message_attachments</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-request-close" title="e_msg_composer_request_close ()">e_msg_composer_request_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-can-close" title="e_msg_composer_can_close ()">e_msg_composer_can_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-reply-indent" title="e_msg_composer_reply_indent ()">e_msg_composer_reply_indent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EComposerHeaderTable.html" title="EComposerHeaderTable"><span class="returnvalue">EComposerHeaderTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-header-table" title="e_msg_composer_get_header_table ()">e_msg_composer_get_header_table</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-util/EAttachmentView.html"><span class="returnvalue">EAttachmentView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-attachment-view" title="e_msg_composer_get_attachment_view ()">e_msg_composer_get_attachment_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-get-raw-message-text" title="e_msg_composer_get_raw_message_text ()">e_msg_composer_get_raw_message_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-msg-composer-is-exiting" title="e_msg_composer_is_exiting ()">e_msg_composer_is_exiting</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-load-spell-languages" title="e_load_spell_languages ()">e_load_spell_languages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMsgComposer.html#e-save-spell-languages" title="e_save_spell_languages ()">e_save_spell_languages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="type">EFocusTracker</span></a> *</td>
+<td class="property_name"><a class="link" href="EMsgComposer.html#EMsgComposer--focus-tracker" title="The “focus-tracker” property">focus-tracker</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a> *</td>
+<td class="property_name"><a class="link" href="EMsgComposer.html#EMsgComposer--shell" title="The “shell” property">shell</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="EMsgComposer.html#EMsgComposer-presend" title="The “presend” signal">presend</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMsgComposer.html#EMsgComposer-print" title="The “print” signal">print</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMsgComposer.html#EMsgComposer-save-to-drafts" title="The “save-to-drafts” signal">save-to-drafts</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMsgComposer.html#EMsgComposer-save-to-outbox" title="The “save-to-outbox” signal">save-to-outbox</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMsgComposer.html#EMsgComposer-send" title="The “send” signal">send</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMsgComposer.html#EMsgComposer-struct" title="struct EMsgComposer">EMsgComposer</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkBin.html">GtkBin</a>
+                    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWindow.html">GtkWindow</a>
+                        <span class="lineart">╰──</span> GtkhtmlEditor
+                            <span class="lineart">╰──</span> EMsgComposer
+</pre>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EMsgComposer implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>,  <a href="http://developer.gnome.org/evolution-util/EAlertSink.html">EAlertSink</a> and  EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-msg-composer-new"></a><h3>e_msg_composer_new ()</h3>
+<pre class="programlisting"><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="returnvalue">EMsgComposer</span></a> *
+e_msg_composer_new (<em class="parameter"><code><a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a> *shell</code></em>);</pre>
+<p>Create a new message composer widget.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.10.2.6"></a><h4>Returns</h4>
+<p> A pointer to the newly created widget</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-new-with-message"></a><h3>e_msg_composer_new_with_message ()</h3>
+<pre class="programlisting"><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="returnvalue">EMsgComposer</span></a> *
+e_msg_composer_new_with_message (<em class="parameter"><code><a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a> *shell</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> keep_signature</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+<p>Create a new message composer widget.</p>
+<p>Note: Designed to work only for messages constructed using Evolution.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>The message to use as the source</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keep_signature</p></td>
+<td class="parameter_description"><p>Keep message signature, if any</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>optional <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> object, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.10.3.7"></a><h4>Returns</h4>
+<p> A pointer to the newly created widget</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-new-from-url"></a><h3>e_msg_composer_new_from_url ()</h3>
+<pre class="programlisting"><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="returnvalue">EMsgComposer</span></a> *
+e_msg_composer_new_from_url (<em class="parameter"><code><a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a> *shell</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *url</code></em>);</pre>
+<p>Create a new message composer widget, and fill in fields as
+defined by the provided URL.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>url</p></td>
+<td class="parameter_description"><p>a mailto URL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-new-redirect"></a><h3>e_msg_composer_new_redirect ()</h3>
+<pre class="programlisting"><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="returnvalue">EMsgComposer</span></a> *
+e_msg_composer_new_redirect (<em class="parameter"><code><a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a> *shell</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *identity_uid</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+<p>Create a new message composer widget.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell</p></td>
+<td class="parameter_description"><p>an <a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>The message to use as the source</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.10.5.6"></a><h4>Returns</h4>
+<p> A pointer to the newly created widget</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-focus-tracker"></a><h3>e_msg_composer_get_focus_tracker ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="returnvalue">EFocusTracker</span></a> *
+e_msg_composer_get_focus_tracker (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-ref-session"></a><h3>e_msg_composer_ref_session ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="returnvalue">CamelSession</span></a> *
+e_msg_composer_ref_session (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+<p>Returns the mail module's global <a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a> instance.  Calling
+this function will load the mail module if it isn't already loaded.</p>
+<p>The returned <a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a> is referenced for thread-safety and must
+be unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.10.7.7"></a><h4>Returns</h4>
+<p> the mail module's <a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-shell"></a><h3>e_msg_composer_get_shell ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="returnvalue">EShell</span></a> *
+e_msg_composer_get_shell (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+<p>Returns the <a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a> that was passed to <a class="link" href="EMsgComposer.html#e-msg-composer-new" title="e_msg_composer_new ()"><code class="function">e_msg_composer_new()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.10.8.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-web-view"></a><h3>e_msg_composer_get_web_view ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-util/EWebViewGtkHTML.html"><span class="returnvalue">EWebViewGtkHTML</span></a> *
+e_msg_composer_get_web_view (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+<p>Returns the <a href="http://developer.gnome.org/evolution-util/EWebView.html"><span class="type">EWebView</span></a> widget in <em class="parameter"><code>composer</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.10.9.6"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/evolution-util/EWebView.html"><span class="type">EWebView</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-send"></a><h3>e_msg_composer_send ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_send (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+<p>Send the message in <em class="parameter"><code>composer</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-save-to-drafts"></a><h3>e_msg_composer_save_to_drafts ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_save_to_drafts (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+<p>Save the message in <em class="parameter"><code>composer</code></em>
+ to the selected account's Drafts folder.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-save-to-outbox"></a><h3>e_msg_composer_save_to_outbox ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_save_to_outbox (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+<p>Save the message in <em class="parameter"><code>composer</code></em>
+ to the local Outbox folder.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-print"></a><h3>e_msg_composer_print ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_print (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                      <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-High-level-Printing-API.html#GtkPrintOperationAction"><span class="type">GtkPrintOperationAction</span></a> print_action</code></em>);</pre>
+<p>Print the message in <em class="parameter"><code>composer</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>print_action</p></td>
+<td class="parameter_description"><p>the print action to start</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-set-body-text"></a><h3>e_msg_composer_set_body_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_set_body_text (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> update_signature</code></em>);</pre>
+<p>Loads the given HTML text into the editor.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>a composer object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>the HTML text to initialize the editor with</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>update_signature</p></td>
+<td class="parameter_description"><p>whether update signature in the text after setting it;
+Might be usually called with TRUE.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-set-body"></a><h3>e_msg_composer_set_body ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_set_body (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *body</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);</pre>
+<p>Loads the given data into the composer as the message body.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>a composer object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>body</p></td>
+<td class="parameter_description"><p>the data to initialize the composer with</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>the MIME type of data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-add-header"></a><h3>e_msg_composer_add_header ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_add_header (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>Adds a new custom header created from <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>value</code></em>
+.  The header
+is not shown in the user interface but will be added to the resulting
+MIME message when sending or saving.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the header's name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>the header's value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-set-header"></a><h3>e_msg_composer_set_header ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_set_header (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>Replaces all custom headers matching <em class="parameter"><code>name</code></em>
+ that were added with
+<a class="link" href="EMsgComposer.html#e-msg-composer-add-header" title="e_msg_composer_add_header ()"><code class="function">e_msg_composer_add_header()</code></a> or <a class="link" href="EMsgComposer.html#e-msg-composer-set-header" title="e_msg_composer_set_header ()"><code class="function">e_msg_composer_set_header()</code></a>, with
+a new custom header created from <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>value</code></em>
+.  The header is
+not shown in the user interface but will be added to the resulting
+MIME message when sending or saving.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the header's name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>the header's value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-remove-header"></a><h3>e_msg_composer_remove_header ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_remove_header (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Removes all custom headers matching <em class="parameter"><code>name</code></em>
+ that were added with
+<a class="link" href="EMsgComposer.html#e-msg-composer-add-header" title="e_msg_composer_add_header ()"><code class="function">e_msg_composer_add_header()</code></a> or <a class="link" href="EMsgComposer.html#e-msg-composer-set-header" title="e_msg_composer_set_header ()"><code class="function">e_msg_composer_set_header()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the header's name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-set-draft-headers"></a><h3>e_msg_composer_set_draft_headers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_set_draft_headers (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_uri</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *message_uid</code></em>);</pre>
+<p>Add special X-Evolution-Draft headers to remember the most recently
+saved draft message, even across Evolution sessions.  These headers
+can be used to mark the draft message for deletion after saving a
+newer draft or sending the composed message.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_uri</p></td>
+<td class="parameter_description"><p>folder URI of the last saved draft</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message_uid</p></td>
+<td class="parameter_description"><p>message UID of the last saved draft</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-set-source-headers"></a><h3>e_msg_composer_set_source_headers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_set_source_headers (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_uri</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *message_uid</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolderSummary.html#CamelMessageFlags"><span class="type">CamelMessageFlags</span></a> flags</code></em>);</pre>
+<p>Add special X-Evolution-Source headers to remember the message being
+forwarded or replied to, even across Evolution sessions.  These headers
+can be used to set appropriate flags on the source message after sending
+the composed message.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_uri</p></td>
+<td class="parameter_description"><p>folder URI of the source message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message_uid</p></td>
+<td class="parameter_description"><p>message UID of the source message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>flags to set on the source message after sending</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-attach"></a><h3>e_msg_composer_attach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_attach (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *mime_part</code></em>);</pre>
+<p>Attaches <em class="parameter"><code>attachment</code></em>
+ to the message being composed in the composer.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>a composer object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_part</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> to attach</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-add-inline-image-from-file"></a><h3>e_msg_composer_add_inline_image_from_file ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+e_msg_composer_add_inline_image_from_file
+                               (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+<p>This reads in the image in <em class="parameter"><code>filename</code></em>
+ and adds it to <em class="parameter"><code>composer</code></em>
+
+as an inline image, to be wrapped in a multipart/related.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>a composer object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>the name of the file containing the image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.10.22.6"></a><h4>Returns</h4>
+<p> the newly-created CamelMimePart (which must be reffed
+if the caller wants to keep its own reference), or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on error.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-add-inline-image-from-mime-part"></a><h3>e_msg_composer_add_inline_image_from_mime_part ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_add_inline_image_from_mime_part
+                               (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="type">CamelMimePart</span></a> *part</code></em>);</pre>
+<p>This adds the mime part <em class="parameter"><code>part</code></em>
+ to <em class="parameter"><code>composer</code></em>
+ as an inline image, to
+be wrapped in a multipart/related.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>a composer object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>a CamelMimePart containing image data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-message"></a><h3>e_msg_composer_get_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_get_message (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Retrieve the message edited by the user as a <a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a>.  The
+<a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> object is created on the fly; subsequent calls to this
+function will always create new objects from scratch.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-message-finish"></a><h3>e_msg_composer_get_message_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="returnvalue">CamelMimeMessage</span></a> *
+e_msg_composer_get_message_finish (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-message-print"></a><h3>e_msg_composer_get_message_print ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_get_message_print (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-message-print-finish"></a><h3>e_msg_composer_get_message_print_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="returnvalue">CamelMimeMessage</span></a> *
+e_msg_composer_get_message_print_finish
+                               (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-message-draft"></a><h3>e_msg_composer_get_message_draft ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_get_message_draft (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-message-draft-finish"></a><h3>e_msg_composer_get_message_draft_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="returnvalue">CamelMimeMessage</span></a> *
+e_msg_composer_get_message_draft_finish
+                               (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-from"></a><h3>e_msg_composer_get_from ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelInternetAddress.html"><span class="returnvalue">CamelInternetAddress</span></a> *
+e_msg_composer_get_from (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-reply-to"></a><h3>e_msg_composer_get_reply_to ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelInternetAddress.html"><span class="returnvalue">CamelInternetAddress</span></a> *
+e_msg_composer_get_reply_to (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-clear-inlined-table"></a><h3>e_msg_composer_clear_inlined_table ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_clear_inlined_table (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-add-message-attachments"></a><h3>e_msg_composer_add_message_attachments ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_add_message_attachments
+                               (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> just_inlines</code></em>);</pre>
+<p>Walk through all the mime parts in <em class="parameter"><code>message</code></em>
+ and add them to the composer
+specified in <em class="parameter"><code>composer</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.10.33.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>composer</p></td>
+<td class="parameter_description"><p>the composer to add the attachments to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the source message to copy the attachments from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>just_inlines</p></td>
+<td class="parameter_description"><p>whether to attach all attachments or just add
+inline images.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-request-close"></a><h3>e_msg_composer_request_close ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_request_close (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-can-close"></a><h3>e_msg_composer_can_close ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_msg_composer_can_close (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> can_save_draft</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-reply-indent"></a><h3>e_msg_composer_reply_indent ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_msg_composer_reply_indent (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-header-table"></a><h3>e_msg_composer_get_header_table ()</h3>
+<pre class="programlisting"><a class="link" href="EComposerHeaderTable.html" title="EComposerHeaderTable"><span class="returnvalue">EComposerHeaderTable</span></a> *
+e_msg_composer_get_header_table (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-attachment-view"></a><h3>e_msg_composer_get_attachment_view ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-util/EAttachmentView.html"><span class="returnvalue">EAttachmentView</span></a> *
+e_msg_composer_get_attachment_view (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-get-raw-message-text"></a><h3>e_msg_composer_get_raw_message_text ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+e_msg_composer_get_raw_message_text (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+<p>Returns the text/plain of the message from composer</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-msg-composer-is-exiting"></a><h3>e_msg_composer_is_exiting ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_msg_composer_is_exiting (<em class="parameter"><code><a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *composer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-load-spell-languages"></a><h3>e_load_spell_languages ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_load_spell_languages (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-save-spell-languages"></a><h3>e_save_spell_languages ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_save_spell_languages (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *spell_languages</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EMsgComposer-struct"></a><h3>struct EMsgComposer</h3>
+<pre class="programlisting">struct EMsgComposer;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EMsgComposer--focus-tracker"></a><h3>The <code class="literal">“focus-tracker”</code> property</h3>
+<pre class="programlisting">  “focus-tracker”            <a href="http://developer.gnome.org/evolution-util/EFocusTracker.html"><span class="type">EFocusTracker</span></a> *</pre>
+<p></p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMsgComposer--shell"></a><h3>The <code class="literal">“shell”</code> property</h3>
+<pre class="programlisting">  “shell”                    <a href="http://developer.gnome.org/evolution-shell/EShell.html"><span class="type">EShell</span></a> *</pre>
+<p>The EShell singleton.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMsgComposer.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EMsgComposer-presend"></a><h3>The <code class="literal">“presend”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a> *emsgcomposer,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMsgComposer-print"></a><h3>The <code class="literal">“print”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a>           *emsgcomposer,
+               <a href="http://developer.gnome.org/gtk2/gtk3-High-level-Printing-API.html#GtkPrintOperationAction"><span class="type">GtkPrintOperationAction</span></a> arg1,
+               <a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a>       *arg2,
+               <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a>              *arg3,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMsgComposer-save-to-drafts"></a><h3>The <code class="literal">“save-to-drafts”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a>     *emsgcomposer,
+               <a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *arg1,
+               <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a>        *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMsgComposer-save-to-outbox"></a><h3>The <code class="literal">“save-to-outbox”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a>     *emsgcomposer,
+               <a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *arg1,
+               <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a>        *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMsgComposer-send"></a><h3>The <code class="literal">“send”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMsgComposer.html" title="EMsgComposer"><span class="type">EMsgComposer</span></a>     *emsgcomposer,
+               <a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *arg1,
+               <a href="http://developer.gnome.org/evolution-util/EActivity.html"><span class="type">EActivity</span></a>        *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

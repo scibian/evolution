@@ -1,0 +1,816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EClientCache</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch12.html" title="ESource Support">
+<link rel="prev" href="evolution-util-ESource-Utilities.html" title="ESource Utilities">
+<link rel="next" href="EClientComboBox.html" title="EClientComboBox">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EClientCache.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EClientCache.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EClientCache.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EClientCache.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EClientCache.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch12.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="evolution-util-ESource-Utilities.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EClientComboBox.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EClientCache"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EClientCache.top_of_page"></a>EClientCache</span></h2>
+<p>EClientCache — Shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instances</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EClientCache.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EClientCache.html" title="EClientCache"><span class="returnvalue">EClientCache</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientCache.html#e-client-cache-new" title="e_client_cache_new ()">e_client_cache_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientCache.html#e-client-cache-ref-registry" title="e_client_cache_ref_registry ()">e_client_cache_ref_registry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientCache.html#e-client-cache-get-client-sync" title="e_client_cache_get_client_sync ()">e_client_cache_get_client_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EClientCache.html#e-client-cache-get-client" title="e_client_cache_get_client ()">e_client_cache_get_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientCache.html#e-client-cache-get-client-finish" title="e_client_cache_get_client_finish ()">e_client_cache_get_client_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EClientCache.html#e-client-cache-ref-cached-client" title="e_client_cache_ref_cached_client ()">e_client_cache_ref_cached_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EClientCache.html#e-client-cache-is-backend-dead" title="e_client_cache_is_backend_dead ()">e_client_cache_is_backend_dead</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EClientCache.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *</td>
+<td class="property_name"><a class="link" href="EClientCache.html#EClientCache--registry" title="The “registry” property">registry</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EClientCache.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EClientCache.html#EClientCache-backend-died" title="The “backend-died” signal">backend-died</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EClientCache.html#EClientCache-backend-error" title="The “backend-error” signal">backend-error</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EClientCache.html#EClientCache-client-connected" title="The “client-connected” signal">client-connected</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EClientCache.html#EClientCache-client-created" title="The “client-created” signal">client-created</a></td>
+<td class="signal_flags">Run First</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EClientCache.html#EClientCache-client-notify" title="The “client-notify” signal">client-notify</a></td>
+<td class="signal_flags">No Hooks</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EClientCache.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EClientCache.html#EClientCache-struct" title="struct EClientCache">EClientCache</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EClientCache.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EClientCache
+</pre>
+</div>
+<div class="refsect1">
+<a name="EClientCache.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EClientCache implements
+ EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EClientCache.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;e-util/e-util.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="EClientCache.description"></a><h2>Description</h2>
+<p><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> provides for application-wide sharing of <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>
+instances and centralized rebroadcasting of <span class="type">“backend-died”</span>,
+<span class="type">“backend-error”</span> and <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-notify"><span class="type">“notify”</span></a> signals from cached
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instances.</p>
+<p><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> automatically invalidates cache entries in response to
+<span class="type">“backend-died”</span> signals.  The <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance is discarded,
+and a new instance is created on the next request.</p>
+</div>
+<div class="refsect1">
+<a name="EClientCache.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-client-cache-new"></a><h3>e_client_cache_new ()</h3>
+<pre class="programlisting"><a class="link" href="EClientCache.html" title="EClientCache"><span class="returnvalue">EClientCache</span></a> *
+e_client_cache_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *registry</code></em>);</pre>
+<p>Creates a new <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> instance.</p>
+<div class="refsect3">
+<a name="id-1.13.13.11.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>registry</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.13.11.2.6"></a><h4>Returns</h4>
+<p> an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-cache-ref-registry"></a><h3>e_client_cache_ref_registry ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+e_client_cache_ref_registry (<em class="parameter"><code><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache</code></em>);</pre>
+<p>Returns the <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> passed to <a class="link" href="EClientCache.html#e-client-cache-new" title="e_client_cache_new ()"><code class="function">e_client_cache_new()</code></a>.</p>
+<p>The returned <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> is referenced for thread-safety and must be
+unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.13.13.11.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.13.11.3.7"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-cache-get-client-sync"></a><h3>e_client_cache_get_client_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+e_client_cache_get_client_sync (<em class="parameter"><code><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *source</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *extension_name</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Obtains a shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance for <em class="parameter"><code>source</code></em>
+, or else creates a new
+<a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance to be shared.</p>
+<p>The <em class="parameter"><code>extension_name</code></em>
+ determines the type of <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> to obtain.  Valid
+<em class="parameter"><code>extension_name</code></em>
+ values are:</p>
+<p><a href="/usr/share/gtk-doc/html/eds/eds-ESourceAddressBook.html#E-SOURCE-EXTENSION-ADDRESS-BOOK:CAPS"><span class="type">E_SOURCE_EXTENSION_ADDRESS_BOOK</span></a> will obtain an <a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a>.</p>
+<p><a href="/usr/share/gtk-doc/html/eds/eds-ESourceCalendar.html#E-SOURCE-EXTENSION-CALENDAR:CAPS"><span class="type">E_SOURCE_EXTENSION_CALENDAR</span></a> will obtain an <a href="/usr/share/gtk-doc/html/eds/eds-ECalClient.html#ECalClient"><span class="type">ECalClient</span></a> with a
+<span class="type">“source-type”</span> of <span class="type">E_CAL_CLIENT_SOURCE_TYPE_EVENTS</span>.</p>
+<p><a href="/usr/share/gtk-doc/html/eds/eds-ESourceMemoList.html#E-SOURCE-EXTENSION-MEMO-LIST:CAPS"><span class="type">E_SOURCE_EXTENSION_MEMO_LIST</span></a> will obtain an <a href="/usr/share/gtk-doc/html/eds/eds-ECalClient.html#ECalClient"><span class="type">ECalClient</span></a> with a
+<span class="type">“source-type”</span> of <span class="type">E_CAL_CLIENT_SOURCE_TYPE_MEMOS</span>.</p>
+<p><a href="/usr/share/gtk-doc/html/eds/eds-ESourceTaskList.html#E-SOURCE-EXTENSION-TASK-LIST:CAPS"><span class="type">E_SOURCE_EXTENSION_TASK_LIST</span></a> will obtain an <a href="/usr/share/gtk-doc/html/eds/eds-ECalClient.html#ECalClient"><span class="type">ECalClient</span></a> with a
+<span class="type">“source-type”</span> of <span class="type">E_CAL_CLIENT_SOURCE_TYPE_TASKS</span>.</p>
+<p>The <em class="parameter"><code>source</code></em>
+ must already have an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceExtension.html#ESourceExtension"><span class="type">ESourceExtension</span></a> by that name
+for this function to work.  All other <em class="parameter"><code>extension_name</code></em>
+ values will
+result in an error.</p>
+<p>If a request for the same <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>extension_name</code></em>
+ is already in
+progress when this function is called, this request will "piggyback"
+on the in-progress request such that they will both succeed or fail
+simultaneously.</p>
+<p>Unreference the returned <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished
+with it.  If an error occurs, the function will set <em class="parameter"><code>error</code></em>
+ and return
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.13.13.11.4.13"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extension_name</p></td>
+<td class="parameter_description"><p>an extension name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>optional <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> object, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.13.11.4.14"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-cache-get-client"></a><h3>e_client_cache_get_client ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_client_cache_get_client (<em class="parameter"><code><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *source</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *extension_name</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Asynchronously obtains a shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance for <em class="parameter"><code>source</code></em>
+, or else
+creates a new <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance to be shared.</p>
+<p>The <em class="parameter"><code>extension_name</code></em>
+ determines the type of <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> to obtain.  Valid
+<em class="parameter"><code>extension_name</code></em>
+ values are:</p>
+<p><a href="/usr/share/gtk-doc/html/eds/eds-ESourceAddressBook.html#E-SOURCE-EXTENSION-ADDRESS-BOOK:CAPS"><span class="type">E_SOURCE_EXTENSION_ADDRESS_BOOK</span></a> will obtain an <a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a>.</p>
+<p><a href="/usr/share/gtk-doc/html/eds/eds-ESourceCalendar.html#E-SOURCE-EXTENSION-CALENDAR:CAPS"><span class="type">E_SOURCE_EXTENSION_CALENDAR</span></a> will obtain an <a href="/usr/share/gtk-doc/html/eds/eds-ECalClient.html#ECalClient"><span class="type">ECalClient</span></a> with a
+<span class="type">“source-type”</span> of <span class="type">E_CAL_CLIENT_SOURCE_TYPE_EVENTS</span>.</p>
+<p><a href="/usr/share/gtk-doc/html/eds/eds-ESourceMemoList.html#E-SOURCE-EXTENSION-MEMO-LIST:CAPS"><span class="type">E_SOURCE_EXTENSION_MEMO_LIST</span></a> will obtain an <a href="/usr/share/gtk-doc/html/eds/eds-ECalClient.html#ECalClient"><span class="type">ECalClient</span></a> with a
+<span class="type">“source-type”</span> of <span class="type">E_CAL_CLIENT_SOURCE_TYPE_MEMOS</span>.</p>
+<p><a href="/usr/share/gtk-doc/html/eds/eds-ESourceTaskList.html#E-SOURCE-EXTENSION-TASK-LIST:CAPS"><span class="type">E_SOURCE_EXTENSION_TASK_LIST</span></a> will obtain an <a href="/usr/share/gtk-doc/html/eds/eds-ECalClient.html#ECalClient"><span class="type">ECalClient</span></a> with a
+<span class="type">“source-type”</span> of <span class="type">E_CAL_CLIENT_SOURCE_TYPE_TASKS</span>.</p>
+<p>The <em class="parameter"><code>source</code></em>
+ must already have an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceExtension.html#ESourceExtension"><span class="type">ESourceExtension</span></a> by that name
+for this function to work.  All other <em class="parameter"><code>extension_name</code></em>
+ values will
+result in an error.</p>
+<p>If a request for the same <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>extension_name</code></em>
+ is already in
+progress when this function is called, this request will "piggyback"
+on the in-progress request such that they will both succeed or fail
+simultaneously.</p>
+<p>When the operation is finished, <em class="parameter"><code>callback</code></em>
+ will be called.  You can
+then call <a class="link" href="EClientCache.html#e-client-cache-get-client-finish" title="e_client_cache_get_client_finish ()"><code class="function">e_client_cache_get_client_finish()</code></a> to get the result of the
+operation.</p>
+<div class="refsect3">
+<a name="id-1.13.13.11.5.13"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extension_name</p></td>
+<td class="parameter_description"><p>an extension name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>optional <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> object, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when the request is satisfied</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to the callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-cache-get-client-finish"></a><h3>e_client_cache_get_client_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+e_client_cache_get_client_finish (<em class="parameter"><code><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Finishes the operation started with <a class="link" href="EClientCache.html#e-client-cache-get-client" title="e_client_cache_get_client ()"><code class="function">e_client_cache_get_client()</code></a>.</p>
+<p>Unreference the returned <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished
+with it.  If an error occurred, the function will set <em class="parameter"><code>error</code></em>
+ and return
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.13.13.11.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.13.11.6.7"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-cache-ref-cached-client"></a><h3>e_client_cache_ref_cached_client ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="returnvalue">EClient</span></a> *
+e_client_cache_ref_cached_client (<em class="parameter"><code><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *source</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *extension_name</code></em>);</pre>
+<p>Returns a shared <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance for <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>extension_name</code></em>
+ if
+such an instance is already cached, or else <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  This function does
+not create a new <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance, and therefore does not block.</p>
+<p>See <a class="link" href="EClientCache.html#e-client-cache-get-client" title="e_client_cache_get_client ()"><code class="function">e_client_cache_get_client()</code></a> for valid <em class="parameter"><code>extension_name</code></em>
+ values.</p>
+<p>The returned <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> is referenced for thread-safety and must be
+unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.13.13.11.7.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extension_name</p></td>
+<td class="parameter_description"><p>an extension name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.13.11.7.8"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-client-cache-is-backend-dead"></a><h3>e_client_cache_is_backend_dead ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_client_cache_is_backend_dead (<em class="parameter"><code><a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *source</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *extension_name</code></em>);</pre>
+<p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if an <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance for <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>extension_name</code></em>
+
+was recently discarded after having emitted a <span class="type">“backend-died”</span>
+signal, and a replacement <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance has not yet been created.</p>
+<div class="refsect3">
+<a name="id-1.13.13.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extension_name</p></td>
+<td class="parameter_description"><p>an extension name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.13.13.11.8.6"></a><h4>Returns</h4>
+<p> whether the backend for <em class="parameter"><code>source</code></em>
+and <em class="parameter"><code>extension_name</code></em>
+died</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EClientCache.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EClientCache-struct"></a><h3>struct EClientCache</h3>
+<pre class="programlisting">struct EClientCache;</pre>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EClientCache.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EClientCache--registry"></a><h3>The <code class="literal">“registry”</code> property</h3>
+<pre class="programlisting">  “registry”                 <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *</pre>
+<p>The <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> manages <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> instances.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EClientCache.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EClientCache-backend-died"></a><h3>The <code class="literal">“backend-died”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache,
+               <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>      *client,
+               <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a>       *alert,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Rebroadcasts a <span class="type">“backend-died”</span> signal emitted by <em class="parameter"><code>client</code></em>
+,
+along with a pre-formatted <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a>.</p>
+<p>As a convenience to signal handlers, this signal is always
+emitted from the <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> that was thread-default when
+the <em class="parameter"><code>client_cache</code></em>
+ was created.</p>
+<div class="refsect3">
+<a name="id-1.13.13.14.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> that received the D-Bus notification</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>alert</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> with a user-friendly error description</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EClientCache-backend-error"></a><h3>The <code class="literal">“backend-error”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache,
+               <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>      *client,
+               <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a>       *alert,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Rebroadcasts a <span class="type">“backend-error”</span> signal emitted by <em class="parameter"><code>client</code></em>
+,
+along with a pre-formatted <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a>.</p>
+<p>As a convenience to signal handlers, this signal is always
+emitted from the <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> that was thread-default when
+the <em class="parameter"><code>client_cache</code></em>
+ was created.</p>
+<div class="refsect3">
+<a name="id-1.13.13.14.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> that received the D-Bus notification</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>alert</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> with a user-friendly error description</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EClientCache-client-connected"></a><h3>The <code class="literal">“client-connected”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache,
+               <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>      *client,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>This signal is emitted when a call to <a class="link" href="EClientCache.html#e-client-cache-get-client" title="e_client_cache_get_client ()"><code class="function">e_client_cache_get_client()</code></a>
+triggers the creation of a new <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance, immediately after
+the client's opening phase is over.</p>
+<p>See the difference with EClientCache::client-created, which is
+called on idle.</p>
+<div class="refsect3">
+<a name="id-1.13.13.14.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client</p></td>
+<td class="parameter_description"><p>the newly-created <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EClientCache-client-created"></a><h3>The <code class="literal">“client-created”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache,
+               <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>      *client,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>This signal is emitted when a call to <a class="link" href="EClientCache.html#e-client-cache-get-client" title="e_client_cache_get_client ()"><code class="function">e_client_cache_get_client()</code></a>
+triggers the creation of a new <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> instance, invoked in an idle
+callback.</p>
+<p>See the difference with EClientCache::client-connected, which is
+called immediately.</p>
+<div class="refsect3">
+<a name="id-1.13.13.14.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client</p></td>
+<td class="parameter_description"><p>the newly-created <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run First</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EClientCache-client-notify"></a><h3>The <code class="literal">“client-notify”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> *client_cache,
+               <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a>      *client,
+               <a href="https://developer.gnome.org/gobject/unstable/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a>   *pspec,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Rebroadcasts a <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-notify"><span class="type">“notify”</span></a> signal emitted by <em class="parameter"><code>client</code></em>
+.</p>
+<p>This signal supports "::detail" appendices to the signal name
+just like the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-notify"><span class="type">“notify”</span></a> signal, so you can connect to
+change notification signals for specific <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> properties.</p>
+<p>As a convenience to signal handlers, this signal is always
+emitted from the <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> that was thread-default when
+the <em class="parameter"><code>client_cache</code></em>
+ was created.</p>
+<div class="refsect3">
+<a name="id-1.13.13.14.6.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>client_cache</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EClientCache.html" title="EClientCache"><span class="type">EClientCache</span></a> that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/eds/eds-EClient.html#EClient"><span class="type">EClient</span></a> whose property changed</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pspec</p></td>
+<td class="parameter_description"><p>the <a href="https://developer.gnome.org/gobject/unstable/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a> of the property that changed</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: No Hooks</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

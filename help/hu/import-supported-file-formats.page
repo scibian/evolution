@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-supported-file-formats" xml:lang="hu">
+
+  <info>
+    <desc>Támogatott fájlformátumok adatok importálásához.</desc>
+    
+    <link type="guide" xref="import-data"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-10-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/importing-mail-and-settings.html.en#importing-mail -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+  <title>Támogatott fájlformátumok</title>
+
+<p>Az Evolution a következő fájltípusokat tudja importálni:</p>
+
+<section id="mail">
+<title>Levelezés</title>
+<list>
+<item><p>Berkeley Mailbox (.mbox vagy nincs kiterjesztése):</p>
+<p>A Mozilla, Netscape, Evolution (helyi mappák esetén a 2.32-es verzióig), Eudora és sok más levelezőkliens által használt e-mail formátum.</p></item>
+<item><p>Maildir (nincs kiterjesztése):</p>
+<p>Az Evolution által (helyi mappákhoz a 3.0 verzió óta) használt formátum. A Maildir fájlok importálása nem szükséges, mivel <link xref="mail-account-manage-maildir-format-directories">beállíthat egy Maildir fiókot</link> az Evolutionben, és megadhatja hozzá a Maildir fájlokat tároló mappát.</p></item>
+<item><p>Outlook Express 5/6 személyes mappák (.dbx):</p>
+<p>A Microsoft Outlook Express 5/6 által használt e-mail fájlformátum. Újabb verziókhoz a PST-importálás szükséges.</p></item>
+</list>
+</section>
+
+<section id="calendar">
+<title>Naptár</title>
+<list>
+<item><p>vCalendar (.vcs):</p>
+<p>Naptárfájlok tárolására használt formátum, amelyet az Evolution, Microsoft Outlook, Sunbird és Korganizer szoftverek használnak.</p></item>
+<item><p>iCalendar vagy iCal (.ics):</p>
+<p>Naptárfájlok tárolására használt formátum. Az Evolution, Microsoft Outlook, Palm OS kéziszámítógépek és mások használnak.</p></item>
+</list>
+</section>
+
+<section id="contacts">
+<title>Névjegyek</title>
+<list>
+<item><p>LDAP adatcserélő formátum (.ldif):</p>
+<p>Szabványos adatformátum névjegykártyákhoz.</p></item>
+<item><p>vCard (.vcf, .gcrd):</p>
+<p>A GNOME, KDE és sok más névjegykezelő alkalmazás által használt címjegyzékformátum. vCard formátumba minden címjegyzékkezelő alkalmazásból tud exportálni.</p></item>
+</list>
+</section>
+
+<section id="misc">
+<title>Egyebek</title>
+<list>
+<item><p>Evolution/Mozilla/Outlook CSV/Tab (.csv, .tab):</p>
+<p>Az Evolution, Microsoft Outlook és Mozilla által mentett CSV (Vesszőkkel elválasztott értéklista) vagy Tabulator fájlok.</p></item>
+<item><p>Outlook személyes mappák (.pst):</p>
+<p>Üzenetek, naptáresemények és más elemek helyi másolatainak Microsoft szoftverekben (például Microsoft Exchange Client, Windows Messaging és Microsoft Outlook) való tárolására használt fájlformátum. „Personal Storage Table néven is ismert.</p></item>
+</list>
+</section>
+
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-usage-edit-appointment" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-usage"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-08-01" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>カレンダーにある予定を編集します。</desc>
+  </info>
+
+  <title>予定の編集</title>
+
+  <p>カレンダーにある既存の予定を変更したい場合は、</p>
+
+  <steps>
+    <item>
+      <p>カレンダーの変更する予定をダブルクリックします。</p>
+    </item>
+    <item>
+      <p>Edit the appointment (see
+      <link xref="calendar-usage-add-appointment">Adding an Appointment</link>
+      for the list of available options).</p>
+    </item>
+    <item>
+      <p><gui>保存</gui>ボタン、または<guiseq><gui>ファイル</gui><gui>保存</gui></guiseq>をクリックします。</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="contacts-usage-edit-contact" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="contacts-usage"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-08-01" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>アドレス帳にある連絡先を編集します。</desc>
+  </info>
+
+  <title>連絡先の編集</title>
+
+  <p>アドレス帳にある既存の連絡先を変更したい場合は、</p>
+
+  <steps>
+    <item>
+      <p>連絡先一覧の変更する連絡先をダブルクリックするか、連絡先を選択して<key>Enter</key>を押します。</p>
+    </item>
+    <item>
+      <p>連絡先の情報を編集します。</p>
+    </item>
+    <item>
+      <p><gui style="button">OK</gui>をクリックします。</p>
+    </item>
+  </steps>
+
+</page>

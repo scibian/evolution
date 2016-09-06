@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-default-folder-locations" xml:lang="ja">
+
+  <info>
+    <desc>下書き、送信済み、ゴミ箱、ジャンクの各フォルダーの場所を変更します。</desc>
+
+    <link type="guide" xref="mail-account-manage-imap-plus#defaults"/>
+    <link type="guide" xref="mail-account-manage-local-delivery#defaults"/>
+    <link type="guide" xref="mail-account-manage-maildir-format-directories#defaults"/>
+    <link type="guide" xref="mail-account-manage-mh-format-directories#defaults"/>
+    <link type="guide" xref="mail-account-manage-pop#defaults"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-directory#defaults"/>
+    <link type="guide" xref="mail-account-manage-unix-mbox-spool-file#defaults"/>
+    <link type="guide" xref="mail-account-manage-usenet-news#defaults"/>
+    <link type="guide" xref="mail-account-manage-microsoft-exchange-evo-mapi#defaults"/>
+    <link type="guide" xref="mail-account-manage-microsoft-exchange-evo-ews#defaults"/>
+
+    <revision pkgversion="3.7.4" version="0.2" date="2013-01-23" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>メールフォルダーの場所</title>
+
+<p>下書きフォルダーや送信済フォルダーには、メールアカウントエディターの<gui>デフォルト</gui> (<guiseq><gui>編集</gui><gui>設定</gui><gui>メールアカウント</gui><gui style="button">編集</gui><gui>デフォルト</gui></guiseq>) でメールの保存先に別の場所を指定できます。</p>
+<p>For remote account types (accounts such as IMAP) you can also use folders on the mail server for Junk and Trash by selecting the corresponding <gui>Use a Real Folder</gui> option. In this case, Evolution's local <link xref="mail-search-folders">virtual folders</link> will not be used.</p>
+
+</page>

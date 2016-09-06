@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-imap-subscriptions" xml:lang="el">
+
+  <info>
+    <desc>Συνδρομές φακέλων IMAP.</desc>
+    
+    <link type="guide" xref="index#mail-advanced-imap"/>
+    <link type="guide" xref="mail-account-manage-imap-plus#other-settings"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-08-05" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-subscriptions.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+
+<title>Συνδρομές IMAP</title>
+
+<p>Καθώς ανοίγετε πολλούς φακέλους IMAP στον εξυπηρετητή παίρνει χρόνο μέχρι να ορίσετε ποιοι φάκελοι του IMAP θα ελεγχθούν και θα εμφανισθούν στο Evolution και ποιοι θα αγνοηθούν προς το παρόν, μέσα από τον <gui>διαχειριστή συνδρομών IMAP</gui>.</p>
+<steps>
+<item><p>Επιλέξτε <guiseq><gui>Φάκελος</gui><gui>Συνδρομές</gui></guiseq>, ή δεξιοπατώντας στον κόμβο κορυφαίου επιπέδου ενός λογαριασμού αλληλογραφίας στον κατάλογο φακέλων και πατήστε στη <gui>διαχείριση συνδρομών</gui>.</p></item> 
+<item><p>Αν έχετε λογαριασμούς σε πολλαπλούς εξυπηρετητές, επιλέξτε τον εξυπηρετητή στον οποίο θέλετε να διαχειριστείτε τις συνδρομές σας.</p></item>
+<item><p>Το Evolution εμφανίζει έναν κατάλογο από διαθέσιμα αρχεία και φακέλους στον εξυπηρετητή IMAP.</p></item>
+<item><p>Επιλέξτε ένα αρχείο ή φάκελο πατώντας πάνω του.</p>
+<p>Θα πρέπει να επιλέξετε τουλάχιστον το φάκελο Εισερχόμενα. Ανάλογα με τον τρόπο με τον οποίο ο διακομιστής IMAP είναι ρυθμισμένος, ο κατάλογος διαθέσιμων αρχείων μπορεί να περιλαμβάνει και φακέλους χωρίς αλληλογραφία. Αν είναι έτσι, μπορείτε να τους αγνοήσετε.</p></item>
+<item><p>Κλικ στο πλαίσιο ελέγχου ενός φακέλου για να προσθέσετε έναν φάκελο στις συνδρομές σας.</p></item>
+</steps>
+
+</page>

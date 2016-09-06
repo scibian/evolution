@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-two-trash-folders" xml:lang="fr">
+
+  <info>
+    <desc>Comment n'avoir qu'un dossier corbeille ou pourriels par compte.</desc>
+    
+    <link type="guide" xref="index#common-mail-problems"/>
+    <link type="seealso" xref="mail-default-folder-locations"/>
+
+    <revision pkgversion="3.7.4" version="0.2" date="2013-01-23" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Deux dossiers Corbeille ou Pourriels affichés pour le même compte</title>
+
+<p>Si vous utilisez un compte de courriel distant qui a aussi des dossiers Pourriels et/ou Corbeille sur le serveur, you pourriez rencontrer des dossiers dupliqués dans Evolution.</p>
+<p>Vous pouvez facilement différentier les deux dossiers Corbeille en regardant leur icônes. La <gui>Corbeille</gui> d'Evolution possède une icône spéciale alors que l'autre dossier Corbeille physique possède une icône de dossier classique.</p>
+
+<p>Par défaut, les dossiers <gui>Corbeille</gui> et <gui>Pourriels</gui> d'Evolution sont des <link xref="mail-search-folders">dossiers de recherche</link>. Ils n'existent pas réellement mais affichent simplement tous les messages qui sont marqués comme pourriels ou supprimés dans tous les dossiers de ce compte.</p>
+
+<p>Pour n'utiliser que les dossiers pour les Pourriels et la Corbeille sur le serveur de messagerie, sélectionnez l'option <gui>Utiliser un vrai dossier</gui> correspondante dans <guiseq><gui>Édition</gui><gui>Préférences</gui><gui>Comptes de courriel</gui><gui style="button">Modifier</gui><gui>Valeurs par défaut</gui></guiseq>. Dans ce cas, les dossiers virtuels locaux d'Evolution ne seront pas utilisés.</p>
+
+</page>

@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ESelectionModel</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch16.html" title="(Unsorted Sections)">
+<link rel="prev" href="ESelectionModelSimple.html" title="ESelectionModelSimple">
+<link rel="next" href="evolution-util-ESendOptions.html" title="ESendOptions">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ESelectionModel.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ESelectionModel.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ESelectionModel.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ESelectionModel.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch16.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ESelectionModelSimple.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="evolution-util-ESendOptions.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ESelectionModel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ESelectionModel.top_of_page"></a>ESelectionModel</span></h2>
+<p>ESelectionModel</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ESelectionModel.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-do-something" title="e_selection_model_do_something ()">e_selection_model_do_something</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-maybe-do-something" title="e_selection_model_maybe_do_something ()">e_selection_model_maybe_do_something</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-right-click-down" title="e_selection_model_right_click_down ()">e_selection_model_right_click_down</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-right-click-up" title="e_selection_model_right_click_up ()">e_selection_model_right_click_up</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-key-press" title="e_selection_model_key_press ()">e_selection_model_key_press</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-select-as-key-press" title="e_selection_model_select_as_key_press ()">e_selection_model_select_as_key_press</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-is-row-selected" title="e_selection_model_is_row_selected ()">e_selection_model_is_row_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-foreach" title="e_selection_model_foreach ()">e_selection_model_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-clear" title="e_selection_model_clear ()">e_selection_model_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-selected-count" title="e_selection_model_selected_count ()">e_selection_model_selected_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-select-all" title="e_selection_model_select_all ()">e_selection_model_select_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-row-count" title="e_selection_model_row_count ()">e_selection_model_row_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-change-one-row" title="e_selection_model_change_one_row ()">e_selection_model_change_one_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-change-cursor" title="e_selection_model_change_cursor ()">e_selection_model_change_cursor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-cursor-row" title="e_selection_model_cursor_row ()">e_selection_model_cursor_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-cursor-col" title="e_selection_model_cursor_col ()">e_selection_model_cursor_col</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-select-single-row" title="e_selection_model_select_single_row ()">e_selection_model_select_single_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-toggle-single-row" title="e_selection_model_toggle_single_row ()">e_selection_model_toggle_single_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-move-selection-end" title="e_selection_model_move_selection_end ()">e_selection_model_move_selection_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-set-selection-end" title="e_selection_model_set_selection_end ()">e_selection_model_set_selection_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-cursor-changed" title="e_selection_model_cursor_changed ()">e_selection_model_cursor_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-cursor-activated" title="e_selection_model_cursor_activated ()">e_selection_model_cursor_activated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-selection-row-changed" title="e_selection_model_selection_row_changed ()">e_selection_model_selection_row_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectionModel.html#e-selection-model-selection-changed" title="e_selection_model_selection_changed ()">e_selection_model_selection_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ESelectionModel.html#ESelectionModel--cursor-mode" title="The “cursor-mode” property">cursor-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="ESelectionModel.html#ESelectionModel--selection-mode" title="The “selection-mode” property">selection-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="ESorter.html" title="ESorter"><span class="type">ESorter</span></a> *</td>
+<td class="property_name"><a class="link" href="ESelectionModel.html#ESelectionModel--sorter" title="The “sorter” property">sorter</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ESelectionModel.html#ESelectionModel-cursor-activated" title="The “cursor-activated” signal">cursor-activated</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ESelectionModel.html#ESelectionModel-cursor-changed" title="The “cursor-changed” signal">cursor-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ESelectionModel.html#ESelectionModel-selection-changed" title="The “selection-changed” signal">selection-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ESelectionModel.html#ESelectionModel-selection-row-changed" title="The “selection-row-changed” signal">selection-row-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ESelectionModel.html#ECursorMode" title="enum ECursorMode">ECursorMode</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ESelectionModel.html#ESelectionModel-struct" title="struct ESelectionModel">ESelectionModel</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> ESelectionModel
+        <span class="lineart">├──</span> <a class="link" href="ESelectionModelArray.html" title="ESelectionModelArray">ESelectionModelArray</a>
+        <span class="lineart">╰──</span> <a class="link" href="ETreeSelectionModel.html" title="ETreeSelectionModel">ETreeSelectionModel</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-selection-model-do-something"></a><h3>e_selection_model_do_something ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_do_something (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> state</code></em>);</pre>
+<p>This routine does whatever is appropriate as if the user clicked
+the mouse in the given row and column.</p>
+<div class="refsect3">
+<a name="id-1.17.42.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> to do something to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row to do something in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The col to do something in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>The state in which to do something.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-maybe-do-something"></a><h3>e_selection_model_maybe_do_something ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_selection_model_maybe_do_something (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> state</code></em>);</pre>
+<p>If this row is selected, this routine just moves the cursor row and
+column.  Otherwise, it does the same thing as
+<a class="link" href="ESelectionModel.html#e-selection-model-do-something" title="e_selection_model_do_something ()"><code class="function">e_selection_model_do_something()</code></a>.  This is for being used on
+right clicks and other events where if the user hit the selection,
+they don't want it to change.</p>
+<div class="refsect3">
+<a name="id-1.17.42.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> to do something to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>The row to do something in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>The col to do something in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>The state in which to do something.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-right-click-down"></a><h3>e_selection_model_right_click_down ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_right_click_down (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> row</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> col</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> state</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-right-click-up"></a><h3>e_selection_model_right_click_up ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_right_click_up (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-key-press"></a><h3>e_selection_model_key_press ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_selection_model_key_press (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEventKey"><span class="type">GdkEventKey</span></a> *key</code></em>);</pre>
+<p>This routine does whatever is appropriate as if the user pressed
+the given key.</p>
+<div class="refsect3">
+<a name="id-1.17.42.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> to affect.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.42.9.6.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> used the key.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-select-as-key-press"></a><h3>e_selection_model_select_as_key_press ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_select_as_key_press (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> row</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> col</code></em>,
+                                       <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> state</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-is-row-selected"></a><h3>e_selection_model_is_row_selected ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_selection_model_is_row_selected (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>This routine calculates whether the given row is selected.</p>
+<div class="refsect3">
+<a name="id-1.17.42.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> to check</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The row to check</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.42.9.8.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the given row is selected</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-foreach"></a><h3>e_selection_model_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_foreach (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                           <em class="parameter"><code><a class="link" href="evolution-util-Miscellaneous-Utilities.html#EForeachFunc" title="EForeachFunc ()"><span class="type">EForeachFunc</span></a> callback</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> closure</code></em>);</pre>
+<p>This routine calls the given callback function once for each
+selected row, passing closure as the closure.</p>
+<div class="refsect3">
+<a name="id-1.17.42.9.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> to traverse</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>The callback function to call back.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>closure</p></td>
+<td class="parameter_description"><p>The closure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-clear"></a><h3>e_selection_model_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_clear (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>);</pre>
+<p>This routine clears the selection to no rows selected.</p>
+<div class="refsect3">
+<a name="id-1.17.42.9.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> to clear</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-selected-count"></a><h3>e_selection_model_selected_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_selection_model_selected_count (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>);</pre>
+<p>This routine calculates the number of rows selected.</p>
+<div class="refsect3">
+<a name="id-1.17.42.9.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> to count</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.42.9.11.6"></a><h4>Returns</h4>
+<p> The number of rows selected in the given model.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-select-all"></a><h3>e_selection_model_select_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_select_all (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>);</pre>
+<p>This routine selects all the rows in the given
+<a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.17.42.9.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> to select all</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-row-count"></a><h3>e_selection_model_row_count ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_selection_model_row_count (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-change-one-row"></a><h3>e_selection_model_change_one_row ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_change_one_row (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> on</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-change-cursor"></a><h3>e_selection_model_change_cursor ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_change_cursor (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-cursor-row"></a><h3>e_selection_model_cursor_row ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_selection_model_cursor_row (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-cursor-col"></a><h3>e_selection_model_cursor_col ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_selection_model_cursor_col (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-select-single-row"></a><h3>e_selection_model_select_single_row ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_select_single_row (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-toggle-single-row"></a><h3>e_selection_model_toggle_single_row ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_toggle_single_row (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-move-selection-end"></a><h3>e_selection_model_move_selection_end ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_move_selection_end (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-set-selection-end"></a><h3>e_selection_model_set_selection_end ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_set_selection_end (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-cursor-changed"></a><h3>e_selection_model_cursor_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_cursor_changed (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-cursor-activated"></a><h3>e_selection_model_cursor_activated ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_cursor_activated (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-selection-row-changed"></a><h3>e_selection_model_selection_row_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_selection_row_changed
+                               (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selection-model-selection-changed"></a><h3>e_selection_model_selection_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selection_model_selection_changed (<em class="parameter"><code><a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *model</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ECursorMode"></a><h3>enum ECursorMode</h3>
+<div class="refsect3">
+<a name="id-1.17.42.10.2.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-CURSOR-LINE:CAPS"></a>E_CURSOR_LINE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CURSOR-SIMPLE:CAPS"></a>E_CURSOR_SIMPLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-CURSOR-SPREADSHEET:CAPS"></a>E_CURSOR_SPREADSHEET</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ESelectionModel-struct"></a><h3>struct ESelectionModel</h3>
+<pre class="programlisting">struct ESelectionModel;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ESelectionModel--cursor-mode"></a><h3>The <code class="literal">“cursor-mode”</code> property</h3>
+<pre class="programlisting">  “cursor-mode”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,2]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ESelectionModel--selection-mode"></a><h3>The <code class="literal">“selection-mode”</code> property</h3>
+<pre class="programlisting">  “selection-mode”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,3]</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ESelectionModel--sorter"></a><h3>The <code class="literal">“sorter”</code> property</h3>
+<pre class="programlisting">  “sorter”                   <a class="link" href="ESorter.html" title="ESorter"><span class="type">ESorter</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ESelectionModel.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ESelectionModel-cursor-activated"></a><h3>The <code class="literal">“cursor-activated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *eselectionmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ESelectionModel-cursor-changed"></a><h3>The <code class="literal">“cursor-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *eselectionmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ESelectionModel-selection-changed"></a><h3>The <code class="literal">“selection-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *eselectionmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ESelectionModel-selection-row-changed"></a><h3>The <code class="literal">“selection-row-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ESelectionModel.html" title="ESelectionModel"><span class="type">ESelectionModel</span></a> *eselectionmodel,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

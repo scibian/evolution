@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="minimize-to-system-tray" xml:lang="hu">
+
+  <info>
+    <desc>Az Evolution minimalizálásáról az értesítési területre.</desc>
+    
+    <link type="guide" xref="index#common-other-problems"/>
+
+    <revision pkgversion="3.5.4" version="0.4" date="2012-07-08" status="final"/>
+    <credit type="author">
+      <name its:translate="no">April Gonzales</name>
+      <email its:translate="no">loonycookie@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+
+<title>Az Evolution értesítési területre minimalizálása</title>
+
+<p>A GNOME alapesetben tartalmaz egy <link xref="mail-received-notification">értesítési területet</link>, amely értesíti a felhasználókat a rendszerfrissítésekről, változásokról vagy eseményekről. Ezek közé értendő az e-mailek érkezése az Evolutionbe. A GNOME ezen beépített szolgáltatására minden e-mail értesítésnél számíthat.</p>
+
+<p>A GNOME 2-ben külső szoftverek használatával módosíthatta az értesítési területet, és beállíthatta rendszertálcaként való működésre. Ezek a szoftverek elérhetők lehetnek a disztribúciója csomagkezelőjéből. Ilyen például a <link href="http://code.google.com/p/tint2/">Tint2</link>. Ez már nem érhető el a GNOME 3-ban.</p>
+</page>

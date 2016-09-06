@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-create-key" xml:lang="de">
+
+  <info>
+    <desc>Zu versendende Nachrichten mit GPG/OpenPGP signieren oder verschlüsseln.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.3" date="2012-02-18" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#encryption-keygen -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen GPG-Schlüssel erstellen</title>
+
+<note style="advanced"><p>Diese Schritte sind sehr technisch. Für die meisten Anwender wird zur Verwaltung der GPG/OpenPGP-Schlüssel die <link xref="help:seahorse/index" href="https://help.gnome.org/users/seahorse/stable/index">Anwendung <app>Seahorse</app></link> empfohlen.</p></note>
+<!-- TODO:POST-3-8: Update and rewrite using Seahorse. Needs a complete rewrite once https://bugzilla.gnome.org/show_bug.cgi?id=508744 is fixed. -->
+
+<p>Vor dem Empfangen oder Verschicken von mit GPG verschlüsselten E-Mails müssen Sie Ihren öffentlichen und privaten Schlüssel mit GPG erstellen.</p>
+<steps>
+<item><p>Öffnen Sie ein <app>Terminal</app>fenster und geben Sie <cmd>gpg --gen-key</cmd> ein.</p></item>
+<item><p>Wählen Sie einen Algorithmus und drücken Sie die Eingabetaste.</p></item>
+<item><p>Wählen Sie eine Schlüssellänge und drücken Sie die <key>Eingabetaste</key>.</p></item>
+<item><p>Geben Sie ein, wie lang Ihr Schlüssel gültig sein soll.</p></item>
+<item><p>Geben Sie Ihren vollen Namen ein und drücken Sie die Eingabetaste.</p></item>
+<item><p>Geben Sie Ihre E-Mail-Adresse ein und drücken Sie die Eingabetaste.</p></item>
+<item><p>(Optional) Geben Sie einen Kommentar ein und drücken Sie die Eingabetaste.</p></item>
+<item><p>Prüfen Sie die ausgewählte Benutzerkennung. Falls diese korrekt ist, so drücken Sie O.</p></item>
+<item><p>Geben Sie eine Passphrase ein und drücken Sie die Eingabetaste.</p></item>
+<item><p>Bewegen Sie Ihre Maus zufällig, um die Schlüssel zu erstellen.</p></item>
+</steps>
+
+<p>Nachdem Ihre Schlüssel erstellt wurden, können Sie Ihre Schlüsselinformationen einsehen, indem Sie <cmd>gpg --list-keys</cmd> eingeben. Sie sollten etwas ähnliches wie dieses erhalten: <code> /home/you/.gnupg/pubring.gpg ----------------------------  pub 1024D/32j38dk2 2001-06-20 you &lt;you@example.com&gt;  sub 1024g/289sklj3 2001-06-20 [expires: 2002-11-14]  </code></p>
+<p>GPG erstellt nun eine Liste, Schlüsselbund genannt, für Ihre öffentlichen Schlüssel und eine für Ihre geheimen Schlüssel. Alle Ihnen bekannten öffentlichen Schlüssel werden in der Datei <file>~/.gnupg/pubring.gpg</file> gespeichert. Wenn Sie anderen Ihren Schlüssel geben möchten, so senden Sie ihnen diese Datei.</p>
+<p>Falls Sie möchten, können Sie Ihre Schlüssel auf einen Schlüssel-Server hochladen:</p>
+<steps>
+<item><p>Prüfen Sie die Kennung Ihres öffentlichen Schlüssels mit <code>gpg --list-keys</code>. Es handelt sich um den Text nach <code>1024D</code> in der Zeile, welche mit <code>pub</code> beginnt. Im obigen Beispiel lautet die Kennung Ihres öffentlichen Schlüssels <code>32j38dk2</code>.</p></item>
+<item><p>Geben Sie den Befehl <cmd>gpg --send-keys --keyserver wwwkeys.pgp.net 32j38dk2</cmd> ein. Sie benötigen Ihr Passwort, um diesen Befehl auszuführen.</p></item>
+</steps>
+
+<p>Schlüssel-Server speichern Ihre öffentlichen Schlüssel, so dass Ihre Freunde Ihre Nachrichten entschlüsseln können. Wenn Sie sich dazu entscheiden, keinen Schlüssel-Server zu benutzen, so können Sie Ihren öffentlichen Schlüssel per Hand verschicken, in Ihre Signatur einbauen, oder auf Ihrer Internetseite veröffentlichen. Es ist allerdings einfacher, einen Schlüssel einmal zu veröffentlichen, so dass Menschen ihn von einem zentralen Ort herunterladen können.</p>
+<p>Falls Sie keinen Schlüssel zum Verschlüsseln oder Entschlüsseln einer Nachricht besitzen, so können Sie Ihr Verschlüsselungsprogramm so einstellen, dass dieser Schlüssel automatisch gesucht wird. Falls kein Schlüssel gefunden werden kann, wird eine Fehlermeldung angezeigt.</p>
+
+</page>

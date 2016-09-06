@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-mozilla" xml:lang="el">
+
+  <info>
+    <desc>Εισαγωγή δεδομένων από Mozilla Thunderbird.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.6.4" version="0.3" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mozilla</title>
+<!-- <guiseq><gui>File</gui><gui>Import</gui><gui>Import data and settings from older programs</gui></guiseq> does NOT recognize Outlook and Thunderbird automatically in 3.8." -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=214858 occasionally (Thunderbird automatic mail import) -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=559266 occasionally (Thunderbird mailfilter importer) -->
+<steps>
+<item><p>Κλικ στο <guiseq><gui>αρχείο</gui><gui>εισαγωγή</gui></guiseq>.</p></item>
+<item><p>Στην καρτέλα <gui>τύπος εισαγωγέα</gui>, κλικ στο <gui>εισαγωγή μοναδικού αρχείου</gui>.</p></item>
+<item><p>Πηγαίνετε στον φάκελο στον οποίο το Thunderbird αποθηκεύει τα δεδομένα του. Σε ένα σύστημα Λίνουξ, τα αρχεία του Thunderbird βρίσκονται σε έναν κρυφό φάκελο <file>$HOME/.thunderbird/12345678</file>. Το <file>12345678</file> θα είναι μια τυχαία συμβολοσειρά. Αν δεν μπορείτε να δείτε τον φάκελο <file>.thunderbird</file>, βεβαιωθείτε για την <link xref="help:gnome-help/files-hidden#show-hidden" href="https://help.gnome.org/users/gnome-help/stable/files-hidden#show-hidden">εμφάνιση των κρυφών αρχείων</link> στον διάλογο επιλογέα αρχείων.</p></item>
+<item>
+<list>
+<item><p>Αν θα θέλατε να εισάγετε αλληλογραφία Thunderbird, πηγαίνετε στο <file>Mail/Local Folders</file> (για τοπικούς λογαριασμούς αλληλογραφίας) ή <file>ImapMail/servername</file> (για απομακρυσμένους λογαριασμούς αλληλογραφίας). Το <file>servername</file> θα είναι η διεύθυνση του απομακρυσμένου εξυπηρετητή αλληλογραφίας. Τα αρχεία χωρίς μια κατάληξη αρχείου περιλαμβάνουν τα μηνύματά σας (όχι τα αρχεία <file>.msf</file>).</p></item>
+<item><p>Αν θα θέλατε να εισάγετε δεδομένα ημερολογίου Thunderbird/Lightning, ίσως να μπορείτε να εξάγετε τα συμβάντα Thunderbird ως ένα αρχείο <file>.ical</file>/<file>.ics</file> πρώτα και να εισάγετε αυτά τα αρχεία στο Evolution. Αυτό απαιτείται επειδή το Thunderbird αποθηκεύει τα δεδομένα ημερολογίου του σε μια άτυπη μορφή βάσης δεδομένων.</p></item>
+</list>
+<p>Ο τύπος αρχείου θα προσδιοριστεί αυτόματα.</p></item>
+<item><p>Επιλέξτε τον προορισμό (π.χ. τον φάκελο ή ημερολόγιο στο Evolution) για τα εισαγόμενα δεδομένα.</p></item>
+<item><p>Επαναλάβετε τα βήματα εισαγωγής μέχρι να έχετε εισάγει όλα τα δεδομένα σας.</p></item>
+</steps>
+</page>

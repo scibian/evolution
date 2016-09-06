@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="calendar-classifications" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#calendar-advanced"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-07-31" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+      http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#bxmtbjb
+      -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Ταξινόμηση συναντήσεων και εργασιών σε εξυπηρετητές groupware.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Χρήση ταξινομήσεων</title>
+
+  <p>Εάν χρησιμοποιείτε ημερολόγιο σε εξυπηρετητή Novell GroupWise ή Microsoft Exchange, μπορείτε να επιλέξετε μια ταξινόμηση για να προσδιορίσετε ποιος μπορεί να το δει.</p>
+
+  <p>Για ορισμό μιας ταξινόμησης για μια συνάντηση ή έργασία, κλικ στο <guiseq><gui>επιλογές</gui><gui>ταξινομήσεις</gui></guiseq> και επιλέξτε μια ταξινόμηση στον επεξεργαστή. <gui>Δημόσια</gui> είναι η προεπιλεγμένη κατηγορία και δημόσια συνάντηση μπορεί να προβληθεί από οιονδήποτε σε κοινόχρηστο ημερολόγιο δικτύου. <gui>Προσωπική</gui> υποδηλώνει ένα επίπεδο ασφάλειας, και <gui>εμπιστευτική</gui> ένα ακόμα υψηλότερο επίπεδο.</p>
+
+  <p>Τα διαφορετικά επίπεδα διαφέρουν ανάλογα με τις ρυθμίσεις του εξυπηρετητή· ελέγξετε με τον διαχειριστή του συστήματος σας ή προσαρμόστε τις ρυθμίσεις εκπροσώπησης.</p>
+
+</page>

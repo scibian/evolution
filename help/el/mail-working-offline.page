@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-working-offline" xml:lang="el">
+
+  <info>
+    <desc>Δουλέψτε με την αλληλογραφία σας ενώ δεν είστε συνδεμένοι με το δίκτυο.</desc>
+<!-- TODO:POST-3-8: Offline work for web calendars etc also exists => create index page for Offline working? -->
+    <link type="guide" xref="index#mail-basic"/>
+
+    <revision pkgversion="3.7.4" version="0.3" date="2013-01-22" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-send.html.en#usage-mail-getnsend-offline -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Εργασία χωρίς σύνδεση</title>
+
+<p>Η κατάσταση εκτός σύνδεσης βοηθά να επικοινωνείτε με συστήματα απομακρυσμένης αποθήκευσης αλληλογραφίας όπως το GroupWise, το IMAP ή το Exchange, σε περιπτώσεις που δεν είστε συνδεδεμένοι στο δίκτυο συνέχεια. Το Evolution κρατάει ένα τοπικό αντίγραφο από έναν ή περισσότερους φακέλους για να σας επιτρέπει να συνθέσετε μηνύματα, να τα αποθηκεύσετε στα εξερχόμενά σας για να σταλούν την επόμενη φορά που θα συνδεθείτε.</p>
+
+<note style="warning"><p>Η αναγκαστική κατάσταση εκτός σύνδεσης του Evolution αναφέρεται μόνο στην αλληλογραφία και δεν εφαρμόζεται στις επαφές και τα ημερολόγια.</p></note>
+
+<p>Η αλληλογραφία POP κάνει λήψη όλων των μηνυμάτων στο τοπικό σας σύστημα, αλλά οι άλλες συνδέσεις συνήθως κάνουν λήψη μόνο των κεφαλίδων και λαμβάνουν τα υπόλοιπα μόνο όταν θέλετε να διαβάσετε το μήνυμα. Πριν αναγκάσετε το Evolution να είναι εκτός σύνδεσης, το Evolution κάνει λήψη των μη αναγνωσμένων μηνυμάτων από τους φακέλους που έχετε επιλέξει να αποθηκεύονται.</p>
+
+<section id="mark-folders">
+<title>Σημειώνοντας φακέλους για εργασία χωρίς σύνδεση,</title>
+<p>Για να σημειώσετε ένα φάκελο αλληλογραφίας για εργασία χωρίς σύνδεση,</p>
+<steps>
+<item><p>Δεξί κλικ στον φάκελο, έπειτα κλικ <gui>ιδιότητες</gui>.</p></item>
+<item><p>Πατήστε <gui>αντιγραφή περιεχομένων φακέλου τοπικά για εργασία χωρίς σύνδεση</gui>.</p></item>
+</steps>
+</section>
+
+<section id="sync-for-offline">
+<title>Συγχρονισμός μηνυμάτων για εργασία χωρίς σύνδεση</title>
+<p>Η κατάσταση της σύνδεσής σας φαίνεται από το μικρό εικονίδιο στην κάτω αριστερή γωνία του κύριου παράθυρου του Evolution. Όταν είστε συνδεδεμένοι εμφανίζει δύο συνδεδεμένα καλώδια. Όταν εξαναγκάσετε σε κατάσταση εκτός σύνδεσης πατώντας το εικονίδιο ή μέσα από <guiseq><gui>Αρχείο</gui><gui>Εργασία χωρίς σύνδεση</gui></guiseq>, τα καλώδια διαχωρίζονται. Θα σας ζητηθεί εάν θέλετε να βγείτε εκτός σύνδεσης αμέσως ή να συγχρονίσετε τους φακέλους τοπικά πριν να βγείτε εκτός σύνδεσης.</p>
+<p>Για να κατεβάσετε μηνύματα για εργασία εκτός σύνδεσης, χωρίς άμεση μετάβαση εκτός σύνδεσης, επιλέξτε <guiseq><gui>αρχείο</gui><gui>κατέβασμα μηνυμάτων για εργασία χωρίς σύνδεση</gui></guiseq>.</p>
+</section>
+
+<section id="network-manager-integration">
+<title>Αυτόματος χειρισμός της κατάστασης του δικτύου</title>
+<p>Το Evolution αντιλαμβάνεται αυτόματα την κατάσταση του δικτύου και ενεργεί ανάλογα. Για παράδειγμα, το Evolution αλλάζει σε λειτουργία εκτός σύνδεσης όταν πέσει το δίκτυο και αυτόματα ενεργοποιείται πάλι όταν το δίκτυο λειτουργήσει ξανά.</p>
+</section>
+
+</page>

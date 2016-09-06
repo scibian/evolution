@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info xmlns="http://projectmallard.org/1.0/">
+
+<section id="advanced-search">
+<title>保存した検索条件</title>
+<steps>
+<item><p><guiseq><gui>検索</gui><gui>保存した検索条件</gui></guiseq> メニューを選択してダイアログボックスを開きます。</p></item>
+<item><p><gui style="button">条件の追加</gui> をクリックして条件を必要なだけ追加します。</p></item>
+<item><p>ドロップダウンリストから条件を選択し、検索内容を入力します。</p></item>
+<item><p><gui style="button">OK</gui> をクリックすると検索結果が表示されます。</p></item>
+</steps>
+</section>
+
+<section id="clearing-search">
+<title>検索結果のクリア</title>
+<p>To clear your search view and get back to the default view, click the <gui>Clear</gui> icon in the search string field, or choose <guiseq><gui>Search</gui><gui>Clear</gui></guiseq> from the menubar. You can also press <keyseq><key>Shift</key><key>Ctrl</key><key>Q</key></keyseq> to clear the search.</p>
+</section>
+
+<section id="saved-searches">
+<title>保存した検索条件</title>
+<p>同じ条件で何か検索することが多い場合、何度も入力したいとは思わないでしょう。そんなときに保存した検索条件を利用できます。</p>
+<p>To save your search results, either click <gui>Save</gui> instead of <gui>OK</gui> in the Search dialog, or in case the search results are already displayed, select <guiseq><gui>Search</gui><gui>Save Search</gui></guiseq>. From now on this search will be directly available from the <gui>Search</gui> menu.</p>
+</section>
+
+<section id="editing-a-saved-search">
+<title>保存した検索条件の編集</title>
+<steps>
+<item><p>メニューバーから <guiseq><gui>検索</gui><gui>保存した検索条件を編集します</gui></guiseq> を選択してウィンドウを開きます。</p></item>
+<item><p><gui style="button">編集</gui> ボタンをクリックして <gui>Edit Rule</gui> ウィンドウを開きます。</p></item>
+<item><p>Edit the title or search conditions from the dialog box.</p></item>
+<item><p><gui>OK</gui> をクリックします。</p></item>
+</steps>
+</section>
+
+</info>

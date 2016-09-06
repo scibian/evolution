@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="mail-attachments-received" xml:lang="el">
+
+  <info>
+    <desc>Αποθήκευση και άνοιγμα επισυναπτόμενων αρχείων σε λαμβανόμενα μηνύματα.</desc>
+
+    <link type="guide" xref="mail-displaying-message"/>
+    <link type="guide" xref="mail-attachments"/>
+
+    <revision pkgversion="3.5.3" version="0.3" date="2012-06-09" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from Reuse http://library.gnome.org/users/evolution/2.32/usage-mail-getnsend-read.html.en#usage-mail-getnsend-get-attach-actions -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Χειρισμός συνημμένων σε λαμβανόμενα μηνύματα</title>
+
+<p>Εάν δεχθείτε ένα μήνυμα αλληλογραφίας με ένα ή περισσότερα συνημμένα αρχεία, το Evolution εμφανίζει τον αριθμό των συνημμένων και ένα κουμπί <gui style="button">αποθήκευση</gui> ή <gui style="button">αποθήκευση όλων</gui> μεταξύ της κεφαλίδας μηνύματος και του περιεχομένου του μηνύματος.</p>
+<note style="tip"><p>Το Evolution δεν υποστηρίζει αποθήκευση όλων των συνημμένων όλων των μηνυμάτων σε έναν φάκελο μονομιάς.</p></note>
+
+<p>Ένας κατάλογος συνημμένων είναι επίσης διαθέσιμος στο τέλος του μηνύματος.</p>
+<p>Για αποθήκευση ενός συνημμένου στον δίσκο, κλικ στο κάτω βέλος δίπλα στο εικονίδιο προσάρτησης και κλικ <gui>αποθήκευση ως</gui>.</p>
+<p>Για άνοιγμα συνημμένου σε άλλη εφαρμογή, κλικ στο κάτω βέλος δίπλα στο εικονίδιο συνημμένου και επιλέξτε μία από τις διαθέσιμες εφαρμογές.</p>
+
+<p>Οι διαθέσιμες επιλογές για ένα συνημμένο διαφέρουν ανάλογα με τον τύπο του συνημμένου και τις εφαρμογές που έχουν εγκατασταθεί στο σύστημά σας. Για παράδειγμα, αρχεία εικόνας μπορούν να ανοιχθούν στην εφαρμογή <gui>προβολέας εικόνας</gui> ή στον επεξεργαστή γραφικών του <gui>GIMP</gui>.</p>
+
+</page>

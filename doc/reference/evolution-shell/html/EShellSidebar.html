@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Shell Reference Manual: EShellSidebar</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Shell Reference Manual">
+<link rel="up" href="ch01.html" title="The Shell">
+<link rel="prev" href="EShellContent.html" title="EShellContent">
+<link rel="next" href="EShellTaskbar.html" title="EShellTaskbar">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EShellSidebar.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EShellSidebar.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EShellSidebar.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EShellSidebar.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EShellContent.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EShellTaskbar.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EShellSidebar"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EShellSidebar.top_of_page"></a>EShellSidebar</span></h2>
+<p>EShellSidebar — the left side of the main window</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EShellSidebar.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-new" title="e_shell_sidebar_new ()">e_shell_sidebar_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-check-state" title="e_shell_sidebar_check_state ()">e_shell_sidebar_check_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">struct <a class="link" href="EShellView.html" title="EShellView"><span class="returnvalue">_EShellView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-get-shell-view" title="e_shell_sidebar_get_shell_view ()">e_shell_sidebar_get_shell_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-get-icon-name" title="e_shell_sidebar_get_icon_name ()">e_shell_sidebar_get_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-set-icon-name" title="e_shell_sidebar_set_icon_name ()">e_shell_sidebar_set_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-get-primary-text" title="e_shell_sidebar_get_primary_text ()">e_shell_sidebar_get_primary_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-set-primary-text" title="e_shell_sidebar_set_primary_text ()">e_shell_sidebar_set_primary_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-get-secondary-text" title="e_shell_sidebar_get_secondary_text ()">e_shell_sidebar_get_secondary_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EShellSidebar.html#e-shell-sidebar-set-secondary-text" title="e_shell_sidebar_set_secondary_text ()">e_shell_sidebar_set_secondary_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellSidebar.html#EShellSidebar--icon-name" title="The “icon-name” property">icon-name</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellSidebar.html#EShellSidebar--primary-text" title="The “primary-text” property">primary-text</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellSidebar.html#EShellSidebar--secondary-text" title="The “secondary-text” property">secondary-text</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> *</td>
+<td class="property_name"><a class="link" href="EShellSidebar.html#EShellSidebar--shell-view" title="The “shell-view” property">shell-view</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EShellSidebar.html#EShellSidebar-struct" title="struct EShellSidebar">EShellSidebar</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkBin.html">GtkBin</a>
+                    <span class="lineart">╰──</span> EShellSidebar
+</pre>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EShellSidebar implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>,  <a href="http://developer.gnome.org/evolution-util/EAlertSink.html">EAlertSink</a> and  EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;shell/e-shell-sidebar.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-shell-sidebar-new"></a><h3>e_shell_sidebar_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_shell_sidebar_new (<em class="parameter"><code><span class="type">struct _EShellView</span> *shell_view</code></em>);</pre>
+<p>Creates a new <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> instance belonging to <em class="parameter"><code>shell_view</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_view</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.10.2.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> instance</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-sidebar-check-state"></a><h3>e_shell_sidebar_check_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint32</span>
+e_shell_sidebar_check_state (<em class="parameter"><code><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> *shell_sidebar</code></em>);</pre>
+<p><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> subclasses should implement the
+&lt;structfield&gt;check_state&lt;/structfield&gt; method in <span class="type">EShellSidebarClass</span>
+to return a set of flags describing the current sidebar selection.
+Subclasses are responsible for defining their own flags.  This is
+primarily used to assist shell views with updating actions (see
+<a class="link" href="EShellView.html#e-shell-view-update-actions" title="e_shell_view_update_actions ()"><code class="function">e_shell_view_update_actions()</code></a>).</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_sidebar</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.10.3.6"></a><h4>Returns</h4>
+<p> a set of flags describing the current <em class="parameter"><code>shell_sidebar</code></em>
+selection</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-sidebar-get-shell-view"></a><h3>e_shell_sidebar_get_shell_view ()</h3>
+<pre class="programlisting">struct <a class="link" href="EShellView.html" title="EShellView"><span class="returnvalue">_EShellView</span></a> *
+e_shell_sidebar_get_shell_view (<em class="parameter"><code><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> *shell_sidebar</code></em>);</pre>
+<p>Returns the <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> that was passed to <a class="link" href="EShellSidebar.html#e-shell-sidebar-new" title="e_shell_sidebar_new ()"><code class="function">e_shell_sidebar_new()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_sidebar</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.10.4.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> to which <em class="parameter"><code>shell_sidebar</code></em>
+belongs</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-sidebar-get-icon-name"></a><h3>e_shell_sidebar_get_icon_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_shell_sidebar_get_icon_name (<em class="parameter"><code><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> *shell_sidebar</code></em>);</pre>
+<p>Returns the icon name displayed at the top of the sidebar.</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_sidebar</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.10.5.6"></a><h4>Returns</h4>
+<p> the icon name for <em class="parameter"><code>shell_sidebar</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-sidebar-set-icon-name"></a><h3>e_shell_sidebar_set_icon_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_sidebar_set_icon_name (<em class="parameter"><code><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> *shell_sidebar</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_name</code></em>);</pre>
+<p>Sets the icon name displayed at the top of the sidebar.</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_sidebar</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>icon_name</p></td>
+<td class="parameter_description"><p>a themed icon name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-sidebar-get-primary-text"></a><h3>e_shell_sidebar_get_primary_text ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_shell_sidebar_get_primary_text (<em class="parameter"><code><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> *shell_sidebar</code></em>);</pre>
+<p>Returns the primary text for <em class="parameter"><code>shell_sidebar</code></em>
+.</p>
+<p>The primary text is displayed in bold at the top of the sidebar.  It
+defaults to the shell view's label (as seen on the switcher button),
+but typically shows the name of the selected item in the sidebar.</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_sidebar</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.10.7.7"></a><h4>Returns</h4>
+<p> the primary text for <em class="parameter"><code>shell_sidebar</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-sidebar-set-primary-text"></a><h3>e_shell_sidebar_set_primary_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_sidebar_set_primary_text (<em class="parameter"><code><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> *shell_sidebar</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *primary_text</code></em>);</pre>
+<p>Sets the primary text for <em class="parameter"><code>shell_sidebar</code></em>
+.</p>
+<p>The primary text is displayed in bold at the top of the sidebar.  It
+defaults to the shell view's label (as seen on the switcher button),
+but typically shows the name of the selected item in the sidebar.</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_sidebar</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>primary_text</p></td>
+<td class="parameter_description"><p>text to be displayed in a bold font</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-sidebar-get-secondary-text"></a><h3>e_shell_sidebar_get_secondary_text ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_shell_sidebar_get_secondary_text (<em class="parameter"><code><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> *shell_sidebar</code></em>);</pre>
+<p>Returns the secondary text for <em class="parameter"><code>shell_sidebar</code></em>
+.</p>
+<p>The secondary text is displayed in a smaller font at the top of the
+sidebar.  It typically shows information about the contents of the
+selected sidebar item, such as total number of items, number of
+selected items, etc.</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>shell_sidebar</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.10.9.7"></a><h4>Returns</h4>
+<p> the secondary text for <em class="parameter"><code>shell_sidebar</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-shell-sidebar-set-secondary-text"></a><h3>e_shell_sidebar_set_secondary_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_shell_sidebar_set_secondary_text (<em class="parameter"><code><a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a> *shell_sidebar</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *secondary_text</code></em>);</pre>
+<p>Sets the secondary text for <em class="parameter"><code>shell_sidebar</code></em>
+.</p>
+<p>The secondary text is displayed in a smaller font at the top of the
+sidebar.  It typically shows information about the contents of the
+selected sidebar item, such as total number of items, number of
+selected items, etc.</p>
+<div class="refsect3">
+<a name="id-1.2.7.10.10.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>shell_sidebar</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EShellSidebar.html" title="EShellSidebar"><span class="type">EShellSidebar</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>secondary_text</p></td>
+<td class="parameter_description"><p>text to be displayed in a smaller font</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EShellSidebar-struct"></a><h3>struct EShellSidebar</h3>
+<pre class="programlisting">struct EShellSidebar;</pre>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EShellSidebar.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EShellSidebar--icon-name"></a><h3>The <code class="literal">“icon-name”</code> property</h3>
+<pre class="programlisting">  “icon-name”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The named icon is displayed at the top of the sidebar.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellSidebar--primary-text"></a><h3>The <code class="literal">“primary-text”</code> property</h3>
+<pre class="programlisting">  “primary-text”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The primary text is displayed in bold at the top of the sidebar.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellSidebar--secondary-text"></a><h3>The <code class="literal">“secondary-text”</code> property</h3>
+<pre class="programlisting">  “secondary-text”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The secondary text is displayed in a smaller font at the top of
+the sidebar.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EShellSidebar--shell-view"></a><h3>The <code class="literal">“shell-view”</code> property</h3>
+<pre class="programlisting">  “shell-view”               <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> *</pre>
+<p>The <a class="link" href="EShellView.html" title="EShellView"><span class="type">EShellView</span></a> to which the sidebar widget belongs.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

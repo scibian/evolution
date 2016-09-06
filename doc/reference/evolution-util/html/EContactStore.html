@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EContactStore</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch16.html" title="(Unsorted Sections)">
+<link rel="prev" href="ECharsetComboBox.html" title="ECharsetComboBox">
+<link rel="next" href="EDataCapture.html" title="EDataCapture">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EContactStore.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EContactStore.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EContactStore.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EContactStore.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch16.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ECharsetComboBox.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EDataCapture.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EContactStore"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EContactStore.top_of_page"></a>EContactStore</span></h2>
+<p>EContactStore</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EContactStore.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EContactStore.html" title="EContactStore"><span class="returnvalue">EContactStore</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-new" title="e_contact_store_new ()">e_contact_store_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="returnvalue">EBookClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-get-client" title="e_contact_store_get_client ()">e_contact_store_get_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EContact.html#EContact"><span class="returnvalue">EContact</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-get-contact" title="e_contact_store_get_contact ()">e_contact_store_get_contact</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-find-contact" title="e_contact_store_find_contact ()">e_contact_store_find_contact</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-get-clients" title="e_contact_store_get_clients ()">e_contact_store_get_clients</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-add-client" title="e_contact_store_add_client ()">e_contact_store_add_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-remove-client" title="e_contact_store_remove_client ()">e_contact_store_remove_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-set-query" title="e_contact_store_set_query ()">e_contact_store_set_query</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-EBookQuery.html#EBookQuery"><span class="returnvalue">EBookQuery</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EContactStore.html#e-contact-store-peek-query" title="e_contact_store_peek_query ()">e_contact_store_peek_query</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EContactStore.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EContactStore.html#EContactStore-start-client-view" title="The “start-client-view” signal">start-client-view</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EContactStore.html#EContactStore-stop-client-view" title="The “stop-client-view” signal">stop-client-view</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EContactStore.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EContactStore.html#EContactStore-struct" title="struct EContactStore">EContactStore</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EContactStore.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EContactStore
+</pre>
+</div>
+<div class="refsect1">
+<a name="EContactStore.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EContactStore implements
+ <a href="http://developer.gnome.org/gtk2/GtkTreeModel.html">GtkTreeModel</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EContactStore.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EContactStore.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-contact-store-new"></a><h3>e_contact_store_new ()</h3>
+<pre class="programlisting"><a class="link" href="EContactStore.html" title="EContactStore"><span class="returnvalue">EContactStore</span></a> *
+e_contact_store_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.2.5"></a><h4>Returns</h4>
+<p> A new <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-contact-store-get-client"></a><h3>e_contact_store_get_client ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="returnvalue">EBookClient</span></a> *
+e_contact_store_get_client (<em class="parameter"><code><a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a> *contact_store</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+<p>Gets the <a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a> that provided the contact at <em class="parameter"><code>iter</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>contact_store</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> from <em class="parameter"><code>contact_store</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.10.9.3.6"></a><h4>Returns</h4>
+<p> An <a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 3.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-contact-store-get-contact"></a><h3>e_contact_store_get_contact ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EContact.html#EContact"><span class="returnvalue">EContact</span></a> *
+e_contact_store_get_contact (<em class="parameter"><code><a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a> *contact_store</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+<p>Gets the <a href="/usr/share/gtk-doc/html/eds/eds-EContact.html#EContact"><span class="type">EContact</span></a> at <em class="parameter"><code>iter</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>contact_store</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> from <em class="parameter"><code>contact_store</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.10.9.4.6"></a><h4>Returns</h4>
+<p> An <a href="/usr/share/gtk-doc/html/eds/eds-EContact.html#EContact"><span class="type">EContact</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-contact-store-find-contact"></a><h3>e_contact_store_find_contact ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_contact_store_find_contact (<em class="parameter"><code><a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a> *contact_store</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uid</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+<p>Sets <em class="parameter"><code>iter</code></em>
+ to point to the contact row matching <em class="parameter"><code>uid</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>contact_store</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uid</p></td>
+<td class="parameter_description"><p>a unique contact identifier</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p>a destination <a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.10.9.5.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the contact was found, and <em class="parameter"><code>iter</code></em>
+was set. <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-contact-store-get-clients"></a><h3>e_contact_store_get_clients ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+e_contact_store_get_clients (<em class="parameter"><code><a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a> *contact_store</code></em>);</pre>
+<p>Gets the list of book clients that provide contacts for <em class="parameter"><code>contact_store</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>contact_store</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.10.9.6.6"></a><h4>Returns</h4>
+<p> A <a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> of pointers to <a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a>. The caller owns the list,
+but not the book clients.</p>
+<p></p>
+</div>
+<p class="since">Since 3.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-contact-store-add-client"></a><h3>e_contact_store_add_client ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_contact_store_add_client (<em class="parameter"><code><a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a> *contact_store</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a> *book_client</code></em>);</pre>
+<p>Adds <em class="parameter"><code>book_client</code></em>
+ to the list of clients that provide contacts for
+<em class="parameter"><code>contact_store</code></em>
+.  The <em class="parameter"><code>contact_store</code></em>
+ adds a reference to <em class="parameter"><code>book_client</code></em>
+,
+if added.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>contact_store</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>book_client</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-contact-store-remove-client"></a><h3>e_contact_store_remove_client ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_contact_store_remove_client (<em class="parameter"><code><a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a> *contact_store</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a> *book_client</code></em>);</pre>
+<p>Removes <em class="parameter"><code>book_client</code></em>
+ from the list of clients that provide contacts for
+<em class="parameter"><code>contact_store</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>contact_store</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>book_client</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-EBookClient.html#EBookClient"><span class="type">EBookClient</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.10.9.8.6"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>book_client</code></em>
+was found and removed</p>
+<p></p>
+</div>
+<p class="since">Since 3.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-contact-store-set-query"></a><h3>e_contact_store_set_query ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_contact_store_set_query (<em class="parameter"><code><a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a> *contact_store</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-EBookQuery.html#EBookQuery"><span class="type">EBookQuery</span></a> *book_query</code></em>);</pre>
+<p>Sets <em class="parameter"><code>book_query</code></em>
+ to be the query used to fetch contacts from the books
+assigned to <em class="parameter"><code>contact_store</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>contact_store</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>book_query</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-EBookQuery.html#EBookQuery"><span class="type">EBookQuery</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-contact-store-peek-query"></a><h3>e_contact_store_peek_query ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-EBookQuery.html#EBookQuery"><span class="returnvalue">EBookQuery</span></a> *
+e_contact_store_peek_query (<em class="parameter"><code><a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a> *contact_store</code></em>);</pre>
+<p>Gets the query that's being used to fetch contacts from the books
+assigned to <em class="parameter"><code>contact_store</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.10.9.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>contact_store</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.10.9.10.6"></a><h4>Returns</h4>
+<p> The <a href="/usr/share/gtk-doc/html/eds/eds-EBookQuery.html#EBookQuery"><span class="type">EBookQuery</span></a> being used.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EContactStore.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EContactStore-struct"></a><h3>struct EContactStore</h3>
+<pre class="programlisting">struct EContactStore;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EContactStore.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EContactStore-start-client-view"></a><h3>The <code class="literal">“start-client-view”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a>   *econtactstore,
+               <a href="/usr/share/gtk-doc/html/eds/eds-EBookClientView.html#EBookClientView"><span class="type">EBookClientView</span></a> *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EContactStore-stop-client-view"></a><h3>The <code class="literal">“stop-client-view”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EContactStore.html" title="EContactStore"><span class="type">EContactStore</span></a>   *econtactstore,
+               <a href="/usr/share/gtk-doc/html/eds/eds-EBookClientView.html#EBookClientView"><span class="type">EBookClientView</span></a> *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

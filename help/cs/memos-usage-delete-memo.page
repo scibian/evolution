@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="memos-usage-delete-memo" xml:lang="cs">
+
+  <info>
+    <desc>Odstranění poznámky ze seznamu poznámek.</desc>
+    
+    <link type="guide" xref="memos-usage"/>
+
+    <revision pkgversion="3.0.2" version="0.1" date="2011-08-01" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  </info>
+
+<title>Odstranění poznámky </title>
+
+<p>Chcete-li odstranit poznámku ze seznamu, klikněte na ni pravým tlačítkem a vyberte <gui>Smazat</gui>, nebo na ni klikněte a klikněte na <gui>Odstranit</gui> v nástrojové liště, nebo klikněte na <guiseq><gui>Upravit</gui><gui>Odstranit poznámku</gui></guiseq>.</p>
+
+</page>

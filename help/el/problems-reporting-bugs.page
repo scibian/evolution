@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="problems-reporting-bugs" xml:lang="el">
+
+  <info>
+    <desc>Πώς να αναφέρετε λάθη στην εφαρμογή.</desc>
+
+    <link type="guide" xref="index#tracking-down-problems"/>
+    <link type="seealso" xref="problems-debug-how-to"/>
+
+    <revision pkgversion="3.3.91" version="0.6" date="2012-02-29" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Πώς να αναφέρετε σφάλματα</title>
+
+<p>Εάν δεν χρειαζόσαστε βοήθεια για διευθέτηση, αλλά είστε σίγουρος ότι έχετε βρει ένα λάθος ή εσφαλμένη συμπεριφορά στο λογισμικό του Evolution, ή εάν θέλετε να ζητήσετε ένα γνώρισμα, μπορείτε να στείλετε μια αναφορά στο <link href="http://bugzilla.gnome.org">σύστημα ανίχνευσης σφαλμάτων του GNOME</link>. Σημειώστε ότι αυτό απαιτεί πρώτα εγγραφή. Παρακαλώ αποφύγετε να συμπληρώσετε διπλότυπα και ελέγξτε το <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">οδηγός εγγραφής σφάλματος</link> πρώτα.</p><p>Επίσης σημειώστε ότι οι διανομές του GNOME μερικές φορές εισάγουν τις δικές τους αλλαγές στο Evolution που δεν συμπεριλαμβάνονται στο GNOME Evolution. Αυτό είναι δύσκολο να αναγνωριστεί από τους χρήστες αλλά εάν το ξέρετε παρακαλώ στείλτε μια αναφορά σφάλματος στο <link href="https://live.gnome.org/Bugsquad/TriageGuide/NonGnome#Bug_trackers_for_distributions">ανιχνευτής σφάλματος της διανομής σας GNOME</link> στη θέση του.</p>
+
+<p>Όταν αναφέρετε σφάλματα ακριβείς πληροφορίες είναι καλοδεχούμενες καθώς διευκολύνουν την αναπαραγωγή και διόρθωση του θέματος. Εάν είναι δυνατό παρακαλώ συμπεριλάβετε πληροφορίες όπως έκδοση του Evolution (στο <guiseq><gui>βοήθεια</gui><gui>περί</gui></guiseq>), τη διανομή σας και ακριβή βήματα για αναπαραγωγή του προβλήματος, με κάθε κλικ. Δείτε το <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">οδηγός εγγραφής σφάλματος</link> για περισσότερες πληροφορίες.</p>
+
+</page>

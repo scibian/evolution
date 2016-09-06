@@ -1,0 +1,747 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Engine Reference Manual: Mail Folder Utilities</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Engine Reference Manual">
+<link rel="up" href="ch02.html" title="Utilities">
+<link rel="prev" href="ch02.html" title="Utilities">
+<link rel="next" href="evolution-mail-engine-Mail-Session-Utilities.html" title="Mail Session Utilities">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#evolution-mail-engine-Mail-Folder-Utilities.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch02.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="evolution-mail-engine-Mail-Session-Utilities.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="evolution-mail-engine-Mail-Folder-Utilities"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="evolution-mail-engine-Mail-Folder-Utilities.top_of_page"></a>Mail Folder Utilities</span></h2>
+<p>Mail Folder Utilities</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Mail-Folder-Utilities.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-append-message-sync" title="e_mail_folder_append_message_sync ()">e_mail_folder_append_message_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-append-message" title="e_mail_folder_append_message ()">e_mail_folder_append_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-append-message-finish" title="e_mail_folder_append_message_finish ()">e_mail_folder_append_message_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-expunge-sync" title="e_mail_folder_expunge_sync ()">e_mail_folder_expunge_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-expunge" title="e_mail_folder_expunge ()">e_mail_folder_expunge</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-expunge-finish" title="e_mail_folder_expunge_finish ()">e_mail_folder_expunge_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-build-attachment-sync" title="e_mail_folder_build_attachment_sync ()">e_mail_folder_build_attachment_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-build-attachment" title="e_mail_folder_build_attachment ()">e_mail_folder_build_attachment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-build-attachment-finish" title="e_mail_folder_build_attachment_finish ()">e_mail_folder_build_attachment_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-find-duplicate-messages-sync" title="e_mail_folder_find_duplicate_messages_sync ()">e_mail_folder_find_duplicate_messages_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-find-duplicate-messages" title="e_mail_folder_find_duplicate_messages ()">e_mail_folder_find_duplicate_messages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-find-duplicate-messages-finish" title="e_mail_folder_find_duplicate_messages_finish ()">e_mail_folder_find_duplicate_messages_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-get-multiple-messages-sync" title="e_mail_folder_get_multiple_messages_sync ()">e_mail_folder_get_multiple_messages_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-get-multiple-messages" title="e_mail_folder_get_multiple_messages ()">e_mail_folder_get_multiple_messages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-get-multiple-messages-finish" title="e_mail_folder_get_multiple_messages_finish ()">e_mail_folder_get_multiple_messages_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-sync" title="e_mail_folder_remove_sync ()">e_mail_folder_remove_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove" title="e_mail_folder_remove ()">e_mail_folder_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-finish" title="e_mail_folder_remove_finish ()">e_mail_folder_remove_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-attachments-sync" title="e_mail_folder_remove_attachments_sync ()">e_mail_folder_remove_attachments_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-attachments" title="e_mail_folder_remove_attachments ()">e_mail_folder_remove_attachments</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-remove-attachments-finish" title="e_mail_folder_remove_attachments_finish ()">e_mail_folder_remove_attachments_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-save-messages-sync" title="e_mail_folder_save_messages_sync ()">e_mail_folder_save_messages_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-save-messages" title="e_mail_folder_save_messages ()">e_mail_folder_save_messages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-save-messages-finish" title="e_mail_folder_save_messages_finish ()">e_mail_folder_save_messages_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-build" title="e_mail_folder_uri_build ()">e_mail_folder_uri_build</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-parse" title="e_mail_folder_uri_parse ()">e_mail_folder_uri_parse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-equal" title="e_mail_folder_uri_equal ()">e_mail_folder_uri_equal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-from-folder" title="e_mail_folder_uri_from_folder ()">e_mail_folder_uri_from_folder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-to-markup" title="e_mail_folder_uri_to_markup ()">e_mail_folder_uri_to_markup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Mail-Folder-Utilities.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Mail-Folder-Utilities.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-mail-folder-append-message-sync"></a><h3>e_mail_folder_append_message_sync ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_append_message_sync (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolderSummary.html#CamelMessageInfo"><span class="type">CamelMessageInfo</span></a> *info</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **appended_uid</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-append-message"></a><h3>e_mail_folder_append_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_folder_append_message (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolderSummary.html#CamelMessageInfo"><span class="type">CamelMessageInfo</span></a> *info</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-append-message-finish"></a><h3>e_mail_folder_append_message_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_append_message_finish (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **appended_uid</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-expunge-sync"></a><h3>e_mail_folder_expunge_sync ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_expunge_sync (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-expunge"></a><h3>e_mail_folder_expunge ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_folder_expunge (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-expunge-finish"></a><h3>e_mail_folder_expunge_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_expunge_finish (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-build-attachment-sync"></a><h3>e_mail_folder_build_attachment_sync ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+e_mail_folder_build_attachment_sync (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **fwd_subject</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-build-attachment"></a><h3>e_mail_folder_build_attachment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_folder_build_attachment (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-build-attachment-finish"></a><h3>e_mail_folder_build_attachment_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimePart.html"><span class="returnvalue">CamelMimePart</span></a> *
+e_mail_folder_build_attachment_finish (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **fwd_subject</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-find-duplicate-messages-sync"></a><h3>e_mail_folder_find_duplicate_messages_sync ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+e_mail_folder_find_duplicate_messages_sync
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-find-duplicate-messages"></a><h3>e_mail_folder_find_duplicate_messages ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_folder_find_duplicate_messages (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-find-duplicate-messages-finish"></a><h3>e_mail_folder_find_duplicate_messages_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+e_mail_folder_find_duplicate_messages_finish
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-get-multiple-messages-sync"></a><h3>e_mail_folder_get_multiple_messages_sync ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+e_mail_folder_get_multiple_messages_sync
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-get-multiple-messages"></a><h3>e_mail_folder_get_multiple_messages ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_folder_get_multiple_messages (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-get-multiple-messages-finish"></a><h3>e_mail_folder_get_multiple_messages_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+e_mail_folder_get_multiple_messages_finish
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-remove-sync"></a><h3>e_mail_folder_remove_sync ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_remove_sync (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-remove"></a><h3>e_mail_folder_remove ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_folder_remove (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-remove-finish"></a><h3>e_mail_folder_remove_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_remove_finish (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-remove-attachments-sync"></a><h3>e_mail_folder_remove_attachments_sync ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_remove_attachments_sync (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-remove-attachments"></a><h3>e_mail_folder_remove_attachments ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_folder_remove_attachments (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-remove-attachments-finish"></a><h3>e_mail_folder_remove_attachments_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_remove_attachments_finish
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-save-messages-sync"></a><h3>e_mail_folder_save_messages_sync ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_save_messages_sync (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *destination</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-save-messages"></a><h3>e_mail_folder_save_messages ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_folder_save_messages (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *message_uids</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *destination</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-save-messages-finish"></a><h3>e_mail_folder_save_messages_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_save_messages_finish (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-uri-build"></a><h3>e_mail_folder_uri_build ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_folder_uri_build (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> *store</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_name</code></em>);</pre>
+<p>Builds a folder URI string from <em class="parameter"><code>store</code></em>
+ and <em class="parameter"><code>folder_name</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.2.5.26.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_name</p></td>
+<td class="parameter_description"><p>a folder name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.5.26.6"></a><h4>Returns</h4>
+<p> a newly-allocated folder URI string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-uri-parse"></a><h3>e_mail_folder_uri_parse ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_uri_parse (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a> *session</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_uri</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> **out_store</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **out_folder_name</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Parses a folder URI generated by <a class="link" href="evolution-mail-engine-Mail-Folder-Utilities.html#e-mail-folder-uri-build" title="e_mail_folder_uri_build ()"><code class="function">e_mail_folder_uri_build()</code></a> and
+returns the corresponding <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> instance in <em class="parameter"><code>out_store</code></em>
+ and
+folder name string in <em class="parameter"><code>out_folder_name</code></em>
+.  If the URI is malformed
+or no corresponding store exists, the function sets <em class="parameter"><code>error</code></em>
+ and
+returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p>If the function is able to parse the URI, the <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> instance
+set in <em class="parameter"><code>out_store</code></em>
+ should be unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when
+done with it, and the folder name string set in <em class="parameter"><code>out_folder_name</code></em>
+
+should be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<p>The function also handles older style URIs, such as ones where the
+<a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>'s <span class="type">“uri”</span> string was embedded directly in the
+folder URI, and account-based URIs that used an "email://" prefix.</p>
+<div class="refsect3">
+<a name="id-1.3.2.5.27.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_uri</p></td>
+<td class="parameter_description"><p>a folder URI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_store</p></td>
+<td class="parameter_description"><p>return location for a <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_folder_name</p></td>
+<td class="parameter_description"><p>return location for a folder name, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.5.27.8"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>folder_uri</code></em>
+could be parsed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-uri-equal"></a><h3>e_mail_folder_uri_equal ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_folder_uri_equal (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a> *session</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_uri_a</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_uri_b</code></em>);</pre>
+<p>Compares two folder URIs for equality.  If either URI is invalid,
+the function returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.2.5.28.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_uri_a</p></td>
+<td class="parameter_description"><p>a folder URI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_uri_b</p></td>
+<td class="parameter_description"><p>another folder URI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.5.28.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the URIs are equal, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if not</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-uri-from-folder"></a><h3>e_mail_folder_uri_from_folder ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_folder_uri_from_folder (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>);</pre>
+<p>Convenience function for building a folder URI from a <a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a>.
+Free the returned URI string with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.2.5.29.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>folder</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.5.29.6"></a><h4>Returns</h4>
+<p> a newly-allocated folder URI string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-folder-uri-to-markup"></a><h3>e_mail_folder_uri_to_markup ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_folder_uri_to_markup (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a> *session</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *folder_uri</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Converts <em class="parameter"><code>folder_uri</code></em>
+ to a markup string suitable for displaying to users.
+The string consists of the <a href="/usr/share/gtk-doc/html/camel/CamelStore.html"><span class="type">CamelStore</span></a> display name (in bold), followed
+by the folder path.  If the URI is malformed or no corresponding store
+exists, the function sets <em class="parameter"><code>error</code></em>
+ and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  Free the returned
+string with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.2.5.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>session</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/camel/CamelSession.html"><span class="type">CamelSession</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folder_uri</p></td>
+<td class="parameter_description"><p>a folder URI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.5.30.6"></a><h4>Returns</h4>
+<p> a newly-allocated markup string, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="evolution-mail-engine-Mail-Folder-Utilities.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

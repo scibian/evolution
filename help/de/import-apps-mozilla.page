@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-apps-mozilla" xml:lang="de">
+
+  <info>
+    <desc>Daten aus Mozilla Thunderbird importieren.</desc>
+    
+    <link type="guide" xref="import-data#import-from-apps"/>
+
+    <revision pkgversion="3.6.4" version="0.3" date="2013-04-20" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andre Klapper</mal:name>
+      <mal:email>ak-47@gmx.net</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2009, 2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mozilla</title>
+<!-- <guiseq><gui>File</gui><gui>Import</gui><gui>Import data and settings from older programs</gui></guiseq> does NOT recognize Outlook and Thunderbird automatically in 3.8." -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=214858 occasionally (Thunderbird automatic mail import) -->
+<!-- TODO: Check https://bugzilla.gnome.org/show_bug.cgi?id=559266 occasionally (Thunderbird mailfilter importer) -->
+<steps>
+<item><p>Klicken Sie auf <guiseq><gui>Datei</gui><gui>Importieren</gui></guiseq>.</p></item>
+<item><p>Klicken Sie im Reiter <gui>Importeurtyp</gui> auf <gui>Eine einzelne Datei importieren</gui>.</p></item>
+<item><p>Wechseln Sie in den Ordner, in dem Thunderbird seine Daten speichert. Auf Linux-Systemen befinden sich die Dateien von Thunderbird in dem verborgenen Ordner <file>$HOME/.thunderbird/12345678</file>. <file>12345678</file> ist eine zufällige Zeichenkette. Falls Sie nicht den Ordner <file>.thunderbird</file> sehen können, so stellen Sie sicher, dass im Dateiwähler <link xref="help:gnome-help/files-hidden#show-hidden" href="https://help.gnome.org/users/gnome-help/stable/files-hidden#show-hidden">verborgene Dateien angezeigt werden</link>.</p></item>
+<item>
+<list>
+<item><p>Wenn Sie E-Mails aus Thunderbird importieren möchten, wechseln Sie in die <file>E-Mail/Lokale Ordner</file> (für lokale E-Mail-Konten) oder <file>ImapMail/Servername</file> (für entfernte E-Mail-Konten). <file>Servername</file> ist die Adresse des entfernten E-Mail-Servers. Dateien ohne Dateiendung enthalten Ihre Nachrichten (nicht die <file>.msf</file>-Dateien).</p></item>
+<item><p>Wenn Sie Ihre Kalenderdaten aus Thunderbird/Lightning importieren möchten, so könnten Sie zuerst Ihre Thunderbird-Ereignisse als <file>.ical</file>/<file>.ics</file>-Datei exportieren und diese Dateien in Evolution importieren. Dies ist notwendig, weil Thunderbird die Kalenderdaten in einem unüblichen Format speichert.</p></item>
+</list>
+<p>Der Dateityp wird automatisch bestimmt.</p></item>
+<item><p>Wählen Sie das Ziel dieses Imports, also z.B. den Ordner oder Kalender in Evolution.</p></item>
+<item><p>Wiederholen Sie diese Schritte, bis alle Ihre Daten importiert sind.</p></item>
+</steps>
+</page>

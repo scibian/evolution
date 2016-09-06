@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="mail-search-folders" xml:lang="cs">
+
+  <info>
+    <desc>Use search folders to see messages in one folder while still keeping them in their original folders.</desc>
+
+    <link type="guide" xref="mail-organizing#advanced"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-07-30" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-mail-organize-vfolders.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+  </info>
+
+  <title>Používaní složek hledání</title>
+  
+<p>If <link xref="mail-filters">filters</link> are not flexible enough, or you find yourself performing the same <link xref="mail-searching">search</link> again and again, consider a search folder.</p>
+
+<p>Složka hledání vypadá jako <link xref="mail-folders">složka</link>, chová se jako <link xref="mail-searching">vyhledávání</link> a můžete ji nastavit jako <link xref="mail-filters">filtr</link>. Zatímco obyčejná složka skutečně obsahuje zprávy, složka hledání je zobrazení zpráv, které mohou být v několika různých složkách. Zprávy, které obsahuje, jsou za běhu vybírány podle kritérií, které nastavíte při vytváření složky.</p>
+
+<p>Evolution automatically updates the search folder contents when new messages are received or message are deleted.</p>
+
+<p>Složka hledání <gui>Nepřiřazené</gui> je opakem ostatních složek hledání: zobrazuje všechny zprávy, které se neobjevují v ostatních složkách hledání. </p>
+
+<p>Používáte-li vzdálené úložiště e-mailů jako IMAP a vytvořili jste si složky hledání, aby ho prohledávaly, složka hledání <gui>Nepřiřazené</gui> bude prohledávat také vzdálené složky. Pokud jste nevytvořili jedinou složku hledání, která prohledává vzdálená úložiště, složka hledání <gui>Nepřiřazené</gui> je nebude prohledávat také.</p>
+
+</page>

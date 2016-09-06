@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-meetings-replying-to-invitation" xml:lang="ja">
+
+  <info>
+    <desc>会議への出席要求を受諾して返信します。</desc>
+    
+    <link type="guide" xref="calendar-meetings"/>
+
+    <revision pkgversion="3.1.5" version="0.6" date="2011-08-25" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+ <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#replying-to-rsvp -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+      
+
+  </info>
+
+<title>会議への出席要求に返信</title>
+<p>会議への出席要求は添付ファイルとして送られ、メールの本文として表示されます。時刻や日付を含め、イベントについての詳細がすべて表示されます。</p>
+<p>招待に返信するかしないか、あるいは返信の方法は選択でき、返信に個人的な注釈を追加することもできます。利用可能な選択肢は<gui>辞退する</gui>、<gui>仮承認する</gui>、<gui>受諾する</gui>です。会議の時間のカレンダーの表示を予定なしのままにしておくことも選択できます。</p>
+
+<p>会議への出席要求に<link xref="calendar-alarms-and-reminders">リマインダー</link>が既に収録されている場合は、<gui>リマインダーを継承する</gui>を有効にすると自分のカレンダーにそのリマインダーをインポートできます。</p>
+
+<p><gui>受諾する</gui>をクリックすると選択したカレンダーにそのイベントが自動的に追加されます。</p>
+<p>カレンダーに会議を追加した後はその会議の情報を変更できますが、元の主催者から更新が送られるとその変更は上書きされるかもしれません。</p>
+
+<note style="tip"><p><guiseq><gui>編集</gui><gui>設定</gui><gui>カレンダーとタスク</gui><gui>会議の招待</gui> <gui>重複するイベントの検索</gui></guiseq>以下から、重複の警告に利用するカレンダーを指定できます。</p></note> <!-- This is the location since 3.1.5, see bug https://bugzilla.gnome.org/show_bug.cgi?id=655494 -->
+</page>

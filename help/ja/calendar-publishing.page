@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-publishing" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-sharing-information"/>
+
+    <revision pkgversion="3.1.5" version="0.4" date="2011-08-24" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from Reuse
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#bxjng8p
+	   and
+	   http://library.gnome.org/users/evolution/2.32/usage-calendar-apts.html.en#publishing-freebusy
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>カレンダーを公の場に投稿します。</desc>
+  </info>
+
+  <title>カレンダーの公開</title>
+
+  <p>カレンダーを公に利用できるようにするため、ウェブサーバーにアップロードするカレンダーを<guiseq><gui>編集</gui><gui>設定</gui> <gui>カレンダーとタスク</gui> <gui>情報を公開</gui> <gui>場所</gui><gui style="button">追加</gui></guiseq>以下から指定できます。</p>
+
+  <!-- This is the location since 3.1.5, see bug
+     https://bugzilla.gnome.org/show_bug.cgi?id=655666 -->
+
+  <p>オンライン上の場所や公開の周期、公開するカレンダー、アップロードの認証情報を指定できます。</p>
+
+  <p>WebDAV サーバーやFTPサーバー、SSH経由のリモートマシン、あるいは HTTP PUT をサポートしているその他のウェブサーバーでカレンダーやスケジュール情報を公開できます。</p>
+
+  <p>カレンダーの情報をすぐに公開するには、カレンダーで<guiseq><gui>アクション</gui><gui>カレンダー情報を公開する</gui></guiseq>をクリックします。</p>
+
+</page>

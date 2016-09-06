@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-local" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="calendar-using-several-calendars"/>
+
+    <revision pkgversion="3.10.3" version="0.4" date="2014-01-27" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>別のローカルカレンダーを追加します。</desc>
+  </info>
+
+  <title>別のローカルカレンダーを追加</title>
+
+  <p><app>Evolution</app> に別のローカルカレンダーを追加するには以下の手順を追います:</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui>ファイル</gui><gui>新規</gui> <gui>カレンダー</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p>種類として<gui>コンピューター上</gui>を選択します。</p>
+    </item>
+    <item>
+      <p>好きなように名前を入力します。</p>
+    </item>
+    <item>
+      <p>オプションで好きな色を選択します。</p>
+    </item>
+    <item>
+      <p>既にコンピューター上にある既存のカレンダーファイルを利用するには、その位置と、そのファイルを <app>Evolution</app> から読み取り専用にするのか、<app>Evolution</app> からそのファイルに対して追加や収録されている項目への変更ができるようにするのか指定する必要があります。</p>
+    </item>
+    <item>
+      <p><gui style="button">適用する</gui>をクリックします。</p>
+    </item>
+  </steps>
+
+  <p>カレンダーが <app>Evolution</app> のカレンダー一覧に追加されます。</p>
+
+</page>

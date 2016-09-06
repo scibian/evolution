@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ESelectable</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch16.html" title="(Unsorted Sections)">
+<link rel="prev" href="ESearchBar.html" title="ESearchBar">
+<link rel="next" href="ESelectionModelArray.html" title="ESelectionModelArray">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ESelectable.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ESelectable.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#ESelectable.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_implementations">  <span class="dim">|</span> 
+                  <a href="#ESelectable.implementations" class="shortcut">Known Implementations</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ESelectable.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch16.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ESearchBar.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ESelectionModelArray.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ESelectable"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ESelectable.top_of_page"></a>ESelectable</span></h2>
+<p>ESelectable</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ESelectable.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-update-actions" title="e_selectable_update_actions ()">e_selectable_update_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-cut-clipboard" title="e_selectable_cut_clipboard ()">e_selectable_cut_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-copy-clipboard" title="e_selectable_copy_clipboard ()">e_selectable_copy_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-paste-clipboard" title="e_selectable_paste_clipboard ()">e_selectable_paste_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-delete-selection" title="e_selectable_delete_selection ()">e_selectable_delete_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-select-all" title="e_selectable_select_all ()">e_selectable_select_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-undo" title="e_selectable_undo ()">e_selectable_undo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-redo" title="e_selectable_redo ()">e_selectable_redo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-get-copy-target-list" title="e_selectable_get_copy_target_list ()">e_selectable_get_copy_target_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ESelectable.html#e-selectable-get-paste-target-list" title="e_selectable_get_paste_target_list ()">e_selectable_get_paste_target_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ESelectable.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *</td>
+<td class="property_name"><a class="link" href="ESelectable.html#ESelectable--copy-target-list" title="The “copy-target-list” property">copy-target-list</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *</td>
+<td class="property_name"><a class="link" href="ESelectable.html#ESelectable--paste-target-list" title="The “paste-target-list” property">paste-target-list</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ESelectable.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="ESelectable.html#ESelectable-struct" title="ESelectable">ESelectable</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ESelectable.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> ESelectable
+</pre>
+</div>
+<div class="refsect1">
+<a name="ESelectable.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+ESelectable requires
+ <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ESelectable.implementations"></a><h2>Known Implementations</h2>
+<p>
+ESelectable is implemented by
+ <a class="link" href="EWebView.html" title="EWebView">EWebView</a> and  <a class="link" href="EWebViewGtkHTML.html" title="EWebViewGtkHTML">EWebViewGtkHTML</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ESelectable.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ESelectable.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-selectable-update-actions"></a><h3>e_selectable_update_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selectable_update_actions (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>,
+                             <em class="parameter"><code><a class="link" href="EFocusTracker.html" title="EFocusTracker"><span class="type">EFocusTracker</span></a> *focus_tracker</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *clipboard_targets</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_clipboard_targets</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-cut-clipboard"></a><h3>e_selectable_cut_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selectable_cut_clipboard (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-copy-clipboard"></a><h3>e_selectable_copy_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selectable_copy_clipboard (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-paste-clipboard"></a><h3>e_selectable_paste_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selectable_paste_clipboard (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-delete-selection"></a><h3>e_selectable_delete_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selectable_delete_selection (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-select-all"></a><h3>e_selectable_select_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selectable_select_all (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-undo"></a><h3>e_selectable_undo ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selectable_undo (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-redo"></a><h3>e_selectable_redo ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_selectable_redo (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-get-copy-target-list"></a><h3>e_selectable_get_copy_target_list ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+e_selectable_get_copy_target_list (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-selectable-get-paste-target-list"></a><h3>e_selectable_get_paste_target_list ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+e_selectable_get_paste_target_list (<em class="parameter"><code><a class="link" href="ESelectable.html" title="ESelectable"><span class="type">ESelectable</span></a> *selectable</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ESelectable.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ESelectable-struct"></a><h3>ESelectable</h3>
+<pre class="programlisting">typedef struct _ESelectable ESelectable;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ESelectable.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ESelectable--copy-target-list"></a><h3>The <code class="literal">“copy-target-list”</code> property</h3>
+<pre class="programlisting">  “copy-target-list”         <a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *</pre>
+<p></p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ESelectable--paste-target-list"></a><h3>The <code class="literal">“paste-target-list”</code> property</h3>
+<pre class="programlisting">  “paste-target-list”        <a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *</pre>
+<p></p>
+<p>Flags: Read</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

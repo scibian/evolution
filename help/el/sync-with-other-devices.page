@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="sync-with-other-devices" xml:lang="el">
+
+  <info>
+    <desc>Συγχρονισμός δεδομένων Evolution με συσκευές χειρός και κινητά τηλέφωνα.</desc>
+
+    <link type="guide" xref="index#data-migration-and-sync"/>
+
+    <revision pkgversion="2.30.2" version="0.6" date="2013-04-20" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/config-sync.html.en -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+<!-- TODO:POST-3-8: Find out how to sync modern devices, e.g. Android, iPhone, Nokia N97 / N900, N9, N950, etc. Maybe SyncEvolution is the recommended (and external) way here? -->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Συγχρονισμός του <app>Evolution</app> με άλλες συσκευές</title>
+
+<p>Δεν υπάρχουν προς το παρόν "συνιστώμενες οδηγίες" για χρήστες.</p>
+
+<p>Πολλές διανομές παρέχουν την εφαρμογή <app><link href="http://syncevolution.org/">SyncEvolution</link></app> που μπορεί να χρησιμοποιηθεί σε συνδυασμό με συσκευές που υποστηρίζουν το <link href="https://en.wikipedia.org/wiki/SyncML">SyncML</link>.</p>
+
+<p>Γενικά συνιστάται να χρησιμοποιήσετε εφαρμογές και συσκευές που και οι δυο υποστηρίζουν το <link href="https://en.wikipedia.org/wiki/ActiveSync">πρωτόκολλο ActiveSync</link> (όπως <app>SyncEvolution</app>). Ένας <link href="https://en.wikipedia.org/wiki/List_of_collaborative_software">Κατάλογος του συνεργαζόμενου λογισμικού</link> είναι διαθέσιμος στη Wikipedia.</p>
+
+ <p>Εάν μπορείτε να παρέχετε καλές πρακτικές ή περισσότερες πληροφορίες σε αυτό το θέμα είστε ελεύθερος να στείλετε μια αναφορά σφάλματος στο <link href="https://bugzilla.gnome.org/enter_bug.cgi?product=evolution&amp;component=User%20Documentation">σύστημα ανίχνευσης σφαλμάτων του GNOME</link>.</p>
+
+  <section id="palm">
+    <title>Palm</title>
+<p>Για συγχρονισμό με συσκευή Palm OS όπως το PalmPilot(TM) και η Handspring Visor απαιτούνται αρκετά βήματα: Πρώτο, χρειάζεται να ενεργοποιήσετε τον συγχρονισμό. Δεύτερο, ο υπολογιστής σας χρειάζεται να αναγνωρίζει και να προσπελάζει τη συσκευή παλάμης σας. Τρίτο, θα πρέπει να αποφασίσετε τι είδους συμπεριφορά συγχρονισμού θέλετε.</p>
+    <section id="sync-enabling-palm">
+      <title>Ενεργοποίηση συγχρονισμού</title>
+      <p>Αν δεν έχετε χρησιμοποιήσει πριν μια συσκευή παλάμης με τον υπολογιστή σας, χρειάζεται να τον ρυθμίσετε μέσα από <guiseq><gui>επεξεργασία</gui><gui>συγχρονισμός πιλότου GNOME...</gui></guiseq>. Βεβαιωθείτε ότι έχετε δικαιώματα ανάγνωσης και εγγραφής στη συσκευή, η οποία κανονικά είναι στο <file>/dev/pilot</file>. Αν δε δουλέψει αυτό, ελέγξτε στο <file>/dev/ttyS0</file> αν έχετε μια σειραϊκή σύνδεση, ή στο <file>/dev/ttyUSB1</file> για μια σύνδεση USB. Μπορείτε να το κάνετε αυτό ως ριζικός χρήστης προσθέτοντας το όνομα χρήστη σας στην ομάδα στην οποία ανήκει ο κόμβος συσκευής. Για μια συσκευή USB σε συγχρονισμό, δημιουργούνται δύο κόμβοι συσκευής, <file>ttyUSB0</file> και<file>ttyUSB1</file>. Ο δεύτερος κόμβος είναι εκείνος που χρησιμοποιείται κατά τη ρύθμιση της συσκευής.</p>
+   </section>
+   <section id="sync-selecting-conduits-">
+     <title>Επιλογή αγωγών</title>
+     <p>Αφού ο υπολογιστής σας και η συσκευή Palm OS επικοινωνήσουν, επιλέξτε τους επιθυμητούς αγωγούς μέσα από την ενότητα <gui>Πιλότος αγωγών</gui>. Μπορείτε να χρησιμοποιήσετε τους αγωγούς για συγχρονισμό δεδομένων με διάφορες εφαρμογές· οι αγωγοί του Evolution ονομάζονται <gui>EAddress</gui> για τις επαφές στο βιβλίο διευθύνσεών σας· <gui>ECalendar</gui>, για το ημερολόγιό σας και <gui>ETodo</gui> για τον κατάλογο εργασιών σας.</p>
+     <p>Κλικ <gui>ενεργοποίηση</gui>, μετά πατήστε <gui>ρυθμίσεις</gui> για να αλλάξετε τι κάνει ο αγωγός όταν ενεργοποιείται. Οι επιλογές σας μπορούν να ποικίλουν ανάλογα με τον αγωγό, αλλά τυπικά είναι οι εξής:</p>
+     <list>
+       <item><p><gui>ανενεργό</gui>: Δεν κάνει τίποτα.</p></item>
+       <item><p><gui>Συγχρονισμός</gui>: Αντιγραφή νέων δεδομένων από τον υπολογιστή στη συσκευή παλάμης και από τη συσκευή παλάμης στον υπολογιστή. Αφαίρεση των στοιχείων που ήταν και στα δύο συστήματα αλλά έχουν διαγραφεί από το ένα.</p></item>
+       <item><p><gui>Αντιγραφή από τον πιλότο</gui>: Αν υπάρχουν οποιαδήποτε νέα δεδομένα στη συσκευή παλάμης, αντιγράψτε τα στον υπολογιστή σας.</p></item>
+       <item><p><gui>Αντιγραφή στον πιλότο</gui>: Αντιγράψτε νέα δεδομένα από τον υπολογιστή στη συσκευή παλάμης.</p></item>
+     </list>
+   <p>Επιλέξτε τη συμπεριφορά που θέλετε για κάθε αγωγό που επιλέγετε να χρησιμοποιήσετε. Αν δεν είστε σίγουροι, επιλέξτε <gui>συγχρονισμός</gui>.</p>
+  </section>
+
+  <section id="sync-information">
+   <title>Πληροφορίες συγχρονισμού</title>
+   <p>Χρησιμοποιήστε την ακόλουθη διαδικασία για να συγχρονίσετε τα δεδομένα στη συσκευή Palm OS με τα δεδομένα που αποθηκεύονται στο Evolution.</p>
+   <list>
+     <item><p>Αν θέλετε να αντίγραφο ασφαλείας των πληροφοριών πριν το συγχρονισμό, κάντε ένα αντίγραφο του καταλόγου <file>.local/share/evolution</file> μέσα στον προσωπικό σας φάκελο.</p></item>
+     <item><p>Βάλτε τη συσκευή παλάμης στη βάση της και πατήστε το κουμπί <gui style="button">HotSync</gui>.</p></item>
+     <item><p>Αν χρησιμοποιείτε Palm OS v. 4.0 και έχετε ενεργοποιημένη την προστασία με κωδικό για τη συσκευή σας, μπορεί να αντιμετωπίσετε προβλήματα στο συγχρονισμό. Αν συμβεί αυτό, δοκιμάστε να απενεργοποιήσετε την προστασία κωδικού στη συσκευή, να την συγχρονίσετε με τον υπολογιστή σας και μετά να ενεργοποιήσετε ξανά την προστασία κωδικού στη συσκευή σας.</p></item>
+    </list>
+   <p>Τώρα η συσκευή Palm OS θα συγχρονίσει τα δεδομένα με το Evolution.</p>
+  </section>
+
+  </section>
+
+</page>

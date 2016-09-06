@@ -1,0 +1,9 @@
+<schemalist>
+  <schema gettext-domain="evolution" id="org.gnome.evolution.spamassassin" path="/org/gnome/evolution/spamassassin/">
+    <key name="local-only" type="b">
+      <default>true</default>
+      <_summary>Use only local spam tests.</_summary>
+      <_description>Use only the local spam tests (no DNS).</_description>
+    </key>
+  </schema>
+</schemalist>

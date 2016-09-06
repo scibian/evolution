@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EFilterRule</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch07.html" title="Filtering and Searching">
+<link rel="prev" href="ERuleEditor.html" title="ERuleEditor">
+<link rel="next" href="EFilterPart.html" title="EFilterPart">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EFilterRule.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EFilterRule.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EFilterRule.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch07.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ERuleEditor.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EFilterPart.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EFilterRule"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EFilterRule.top_of_page"></a>EFilterRule</span></h2>
+<p>EFilterRule</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EFilterRule.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-new" title="e_filter_rule_new ()">e_filter_rule_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-clone" title="e_filter_rule_clone ()">e_filter_rule_clone</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-set-name" title="e_filter_rule_set_name ()">e_filter_rule_set_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-set-source" title="e_filter_rule_set_source ()">e_filter_rule_set_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-validate" title="e_filter_rule_validate ()">e_filter_rule_validate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-eq" title="e_filter_rule_eq ()">e_filter_rule_eq</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNodePtr</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-xml-encode" title="e_filter_rule_xml_encode ()">e_filter_rule_xml_encode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-xml-decode" title="e_filter_rule_xml_decode ()">e_filter_rule_xml_decode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-copy" title="e_filter_rule_copy ()">e_filter_rule_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-add-part" title="e_filter_rule_add_part ()">e_filter_rule_add_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-remove-part" title="e_filter_rule_remove_part ()">e_filter_rule_remove_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-replace-part" title="e_filter_rule_replace_part ()">e_filter_rule_replace_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-get-widget" title="e_filter_rule_get_widget ()">e_filter_rule_get_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-build-code" title="e_filter_rule_build_code ()">e_filter_rule_build_code</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-emit-changed" title="e_filter_rule_emit_changed ()">e_filter_rule_emit_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-next-list" title="e_filter_rule_next_list ()">e_filter_rule_next_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EFilterRule.html#e-filter-rule-find-list" title="e_filter_rule_find_list ()">e_filter_rule_find_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EFilterRule.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EFilterRule.html#EFilterRule-changed" title="The “changed” signal">changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EFilterRule.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EFilterRule.html#filter-grouping-t" title="enum filter_grouping_t">filter_grouping_t</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EFilterRule.html#filter-threading-t" title="enum filter_threading_t">filter_threading_t</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EFilterRule.html#EFilterRule-struct" title="struct EFilterRule">EFilterRule</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EFilterRule.html#E-FILTER-SOURCE-INCOMING:CAPS" title="E_FILTER_SOURCE_INCOMING">E_FILTER_SOURCE_INCOMING</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EFilterRule.html#E-FILTER-SOURCE-DEMAND:CAPS" title="E_FILTER_SOURCE_DEMAND">E_FILTER_SOURCE_DEMAND</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EFilterRule.html#E-FILTER-SOURCE-OUTGOING:CAPS" title="E_FILTER_SOURCE_OUTGOING">E_FILTER_SOURCE_OUTGOING</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="EFilterRule.html#E-FILTER-SOURCE-JUNKTEST:CAPS" title="E_FILTER_SOURCE_JUNKTEST">E_FILTER_SOURCE_JUNKTEST</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EFilterRule.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EFilterRule
+</pre>
+</div>
+<div class="refsect1">
+<a name="EFilterRule.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EFilterRule.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-filter-rule-new"></a><h3>e_filter_rule_new ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+e_filter_rule_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-clone"></a><h3>e_filter_rule_clone ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+e_filter_rule_clone (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-set-name"></a><h3>e_filter_rule_set_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_filter_rule_set_name (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-set-source"></a><h3>e_filter_rule_set_source ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_filter_rule_set_source (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-validate"></a><h3>e_filter_rule_validate ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_filter_rule_validate (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                        <em class="parameter"><code><a class="link" href="EAlert.html" title="EAlert"><span class="type">EAlert</span></a> **alert</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-eq"></a><h3>e_filter_rule_eq ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_filter_rule_eq (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule_a</code></em>,
+                  <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule_b</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-xml-encode"></a><h3>e_filter_rule_xml_encode ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNodePtr</span>
+e_filter_rule_xml_encode (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-xml-decode"></a><h3>e_filter_rule_xml_decode ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+e_filter_rule_xml_decode (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                          <em class="parameter"><code><span class="type">xmlNodePtr</span> node</code></em>,
+                          <em class="parameter"><code><span class="type">struct _ERuleContext</span> *context</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-copy"></a><h3>e_filter_rule_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_filter_rule_copy (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *dst_rule</code></em>,
+                    <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *src_rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-add-part"></a><h3>e_filter_rule_add_part ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_filter_rule_add_part (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                        <em class="parameter"><code><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="type">EFilterPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-remove-part"></a><h3>e_filter_rule_remove_part ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_filter_rule_remove_part (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                           <em class="parameter"><code><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="type">EFilterPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-replace-part"></a><h3>e_filter_rule_replace_part ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_filter_rule_replace_part (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                            <em class="parameter"><code><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="type">EFilterPart</span></a> *old_part</code></em>,
+                            <em class="parameter"><code><a class="link" href="EFilterPart.html" title="EFilterPart"><span class="type">EFilterPart</span></a> *new_part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-get-widget"></a><h3>e_filter_rule_get_widget ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_filter_rule_get_widget (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                          <em class="parameter"><code><span class="type">struct _ERuleContext</span> *context</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-build-code"></a><h3>e_filter_rule_build_code ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_filter_rule_build_code (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Strings.html#GString"><span class="type">GString</span></a> *out</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-emit-changed"></a><h3>e_filter_rule_emit_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_filter_rule_emit_changed (<em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-next-list"></a><h3>e_filter_rule_next_list ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+e_filter_rule_next_list (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>,
+                         <em class="parameter"><code><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *last</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-filter-rule-find-list"></a><h3>e_filter_rule_find_list ()</h3>
+<pre class="programlisting"><a class="link" href="EFilterRule.html" title="EFilterRule"><span class="returnvalue">EFilterRule</span></a> *
+e_filter_rule_find_list (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EFilterRule.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="filter-grouping-t"></a><h3>enum filter_grouping_t</h3>
+<div class="refsect3">
+<a name="id-1.8.4.9.2.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-FILTER-GROUP-ALL:CAPS"></a>E_FILTER_GROUP_ALL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-FILTER-GROUP-ANY:CAPS"></a>E_FILTER_GROUP_ANY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="filter-threading-t"></a><h3>enum filter_threading_t</h3>
+<div class="refsect3">
+<a name="id-1.8.4.9.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-FILTER-THREAD-NONE:CAPS"></a>E_FILTER_THREAD_NONE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-FILTER-THREAD-ALL:CAPS"></a>E_FILTER_THREAD_ALL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-FILTER-THREAD-REPLIES:CAPS"></a>E_FILTER_THREAD_REPLIES</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-FILTER-THREAD-REPLIES-PARENTS:CAPS"></a>E_FILTER_THREAD_REPLIES_PARENTS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-FILTER-THREAD-SINGLE:CAPS"></a>E_FILTER_THREAD_SINGLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EFilterRule-struct"></a><h3>struct EFilterRule</h3>
+<pre class="programlisting">struct EFilterRule;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-FILTER-SOURCE-INCOMING:CAPS"></a><h3>E_FILTER_SOURCE_INCOMING</h3>
+<pre class="programlisting">#define E_FILTER_SOURCE_INCOMING "incoming" /* performed on incoming email */
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-FILTER-SOURCE-DEMAND:CAPS"></a><h3>E_FILTER_SOURCE_DEMAND</h3>
+<pre class="programlisting">#define E_FILTER_SOURCE_DEMAND   "demand"   /* performed on the selected folder
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-FILTER-SOURCE-OUTGOING:CAPS"></a><h3>E_FILTER_SOURCE_OUTGOING</h3>
+<pre class="programlisting">#define E_FILTER_SOURCE_OUTGOING  "outgoing"/* performed on outgoing mail */
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-FILTER-SOURCE-JUNKTEST:CAPS"></a><h3>E_FILTER_SOURCE_JUNKTEST</h3>
+<pre class="programlisting">#define E_FILTER_SOURCE_JUNKTEST  "junktest"/* check incoming mail for junk */
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EFilterRule.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EFilterRule-changed"></a><h3>The <code class="literal">“changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EFilterRule.html" title="EFilterRule"><span class="type">EFilterRule</span></a> *efilterrule,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

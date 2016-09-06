@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="import-supported-file-formats" xml:lang="fr">
+
+  <info>
+    <desc>Formats de fichier pris en charge pour l'importation de données.</desc>
+    
+    <link type="guide" xref="import-data"/>
+
+    <revision pkgversion="3.0.2" version="0.3" date="2011-10-13" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/importing-mail-and-settings.html.en#importing-mail -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marc Lorber</mal:name>
+      <mal:email>Linux-Lorber@club-internet.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012 </mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Formats de fichier pris en charge</title>
+
+<p>Evolution est capable d'importer les types de fichiers suivants :</p>
+
+<section id="mail">
+<title>Messagerie</title>
+<list>
+<item><p>Berkeley Mailbox (.mbox ou sans extension) :</p>
+<p>Le format de courriels utilisé par Mozilla, Netscape, Evolution (pour les dossiers locaux avant la version 2.32), Eudora et bien d'autres logiciels de messagerie.</p></item>
+<item><p>Maildir (sans extension) :</p>
+<p>Le format utilisé par Evolution (pour les dossiers locaux depuis la version 3.0). Vous n'avez pas besoin d'importer des fichiers Maildir puisque vous pouvez <link xref="mail-account-manage-maildir-format-directories">configurer un compte Maildir</link> dans Evolution et pointer vers le dossier où les fichiers Maildir sont enregistrés.</p></item>
+<item><p>Dossiers personnels Outlook Express 5/6 (.dbx) :</p>
+<p>Le format de fichier de courriels utilisé par Microsoft Outlook Express 5/6. Pour les nouvelles versions, l'importation PST est recommandée.</p></item>
+</list>
+</section>
+
+<section id="calendar">
+<title>Agenda</title>
+<list>
+<item><p>vCalendar (.vcs) :</p>
+<p>Un format de stockage de fichiers d'agenda, utilisé généralement par Evolution, MS Outlook, Sunbird et Korganizer.</p></item>
+<item><p>iCalendar ou iCal (.ics) :</p>
+<p>Un format de stockage de fichiers d'agenda. iCalendar est utilisé par Evolution, Microsoft Outlook, portable Palm OS et d'autres.</p></item>
+</list>
+</section>
+
+<section id="contacts">
+<title>Contacts</title>
+<list>
+<item><p>LDAP Data Interchange Format (.ldif) :</p>
+<p>Un format de données standard pour les cartes de contacts.</p></item>
+<item><p>vCard (.vcf, .gcrd) :</p>
+<p>Le format de carnet d'adresses utilisé par GNOME, KDE ainsi que beaucoup d'autres programmes de gestion de contacts. Il est en principe possible d'exporter au format vCard depuis n'importe quel programme de carnet d'adresses.</p></item>
+</list>
+</section>
+
+<section id="misc">
+<title>Divers</title>
+<list>
+<item><p>Evolution/Mozilla/Outlook CSV/Tab (.csv, .tab) :</p>
+<p>Les fichiers Tabulator ou CSV (Comma-separated values : valeurs séparées par des virgules) enregistrés par Evolution, MS Outlook et Mozilla.</p></item>
+<item><p>Dossiers personnels Outlook (.pst) :</p>
+<p>Un format de fichier utilisé pour stocker des copies locales des messages, des événements de l'agenda et d'autres objets avec les logiciels Microsoft, tels que le client Microsoft Exchange, Windows Messaging et Microsoft Outlook. Il est aussi appelé « Personal Storage Table » (table d'enregistrement personnel).</p></item>
+</list>
+</section>
+
+</page>

@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Formatter Reference Manual: EMailPartList</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Formatter Reference Manual">
+<link rel="up" href="ch01.html" title="Mail Parsing and Formatting">
+<link rel="prev" href="EMailPart.html" title="EMailPart">
+<link rel="next" href="EMailPartAttachment.html" title="EMailPartAttachment">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EMailPartList.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EMailPartList.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EMailPartList.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EMailPart.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EMailPartAttachment.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EMailPartList"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EMailPartList.top_of_page"></a>EMailPartList</span></h2>
+<p>EMailPartList</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EMailPartList.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailPartList.html" title="EMailPartList"><span class="returnvalue">EMailPartList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-new" title="e_mail_part_list_new ()">e_mail_part_list_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-get-folder" title="e_mail_part_list_get_folder ()">e_mail_part_list_get_folder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="returnvalue">CamelMimeMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-get-message" title="e_mail_part_list_get_message ()">e_mail_part_list_get_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-get-message-uid" title="e_mail_part_list_get_message_uid ()">e_mail_part_list_get_message_uid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-add-part" title="e_mail_part_list_add_part ()">e_mail_part_list_add_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailPart.html" title="EMailPart"><span class="returnvalue">EMailPart</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-ref-part" title="e_mail_part_list_ref_part ()">e_mail_part_list_ref_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-queue-parts" title="e_mail_part_list_queue_parts ()">e_mail_part_list_queue_parts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-is-empty" title="e_mail_part_list_is_empty ()">e_mail_part_list_is_empty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelObject.html#CamelObjectBag"><span class="returnvalue">CamelObjectBag</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailPartList.html#e-mail-part-list-get-registry" title="e_mail_part_list_get_registry ()">e_mail_part_list_get_registry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailPartList.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailPartList.html#EMailPartList--folder" title="The “folder” property">folder</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailPartList.html#EMailPartList--message" title="The “message” property">message</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailPartList.html#EMailPartList--message-uid" title="The “message-uid” property">message-uid</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailPartList.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMailPartList.html#EMailPartList-struct" title="struct EMailPartList">EMailPartList</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailPartList.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EMailPartList
+</pre>
+</div>
+<div class="refsect1">
+<a name="EMailPartList.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EMailPartList.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-mail-part-list-new"></a><h3>e_mail_part_list_new ()</h3>
+<pre class="programlisting"><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="returnvalue">EMailPartList</span></a> *
+e_mail_part_list_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *message</code></em>,
+                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *message_uid</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *folder</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-list-get-folder"></a><h3>e_mail_part_list_get_folder ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="returnvalue">CamelFolder</span></a> *
+e_mail_part_list_get_folder (<em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-list-get-message"></a><h3>e_mail_part_list_get_message ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="returnvalue">CamelMimeMessage</span></a> *
+e_mail_part_list_get_message (<em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-list-get-message-uid"></a><h3>e_mail_part_list_get_message_uid ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_part_list_get_message_uid (<em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-list-add-part"></a><h3>e_mail_part_list_add_part ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_part_list_add_part (<em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>,
+                           <em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-list-ref-part"></a><h3>e_mail_part_list_ref_part ()</h3>
+<pre class="programlisting"><a class="link" href="EMailPart.html" title="EMailPart"><span class="returnvalue">EMailPart</span></a> *
+e_mail_part_list_ref_part (<em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>,
+                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *part_id</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-list-queue-parts"></a><h3>e_mail_part_list_queue_parts ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+e_mail_part_list_queue_parts (<em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *part_id</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> *result_queue</code></em>);</pre>
+<p>Populates <em class="parameter"><code>result_queue</code></em>
+ with a sequence of <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> instances beginning
+with the part having <em class="parameter"><code>part_id</code></em>
+.  If <em class="parameter"><code>part_id</code></em>
+ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the entire sequence
+of <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> instances is queued.</p>
+<p>Each <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> is referenced for thread-safety and should be unreferenced
+with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>part_list</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>part_id</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> ID to begin queueing from, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result_queue</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> in which to deposit <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> instances</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.8.7"></a><h4>Returns</h4>
+<p> the number of parts added to <em class="parameter"><code>result_queue</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-list-is-empty"></a><h3>e_mail_part_list_is_empty ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_part_list_is_empty (<em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.7.8.9.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>part_list</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.9.5"></a><h4>Returns</h4>
+<p> whether the part list is empty (it doesn't contain any <span class="type">EMailpart</span>).</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-part-list-get-registry"></a><h3>e_mail_part_list_get_registry ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelObject.html#CamelObjectBag"><span class="returnvalue">CamelObjectBag</span></a> *
+e_mail_part_list_get_registry (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns a <a href="/usr/share/gtk-doc/html/camel/CamelObject.html#CamelObjectBag"><span class="type">CamelObjectBag</span></a> where parsed <a href="EMailPartList.html"><span class="type">EMailPartLists</span></a> can be stored.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailPartList.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EMailPartList-struct"></a><h3>struct EMailPartList</h3>
+<pre class="programlisting">struct EMailPartList;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailPartList.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EMailPartList--folder"></a><h3>The <code class="literal">“folder”</code> property</h3>
+<pre class="programlisting">  “folder”                   <a href="/usr/share/gtk-doc/html/camel/CamelFolder.html"><span class="type">CamelFolder</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPartList--message"></a><h3>The <code class="literal">“message”</code> property</h3>
+<pre class="programlisting">  “message”                  <a href="/usr/share/gtk-doc/html/camel/CamelMimeMessage.html"><span class="type">CamelMimeMessage</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailPartList--message-uid"></a><h3>The <code class="literal">“message-uid”</code> property</h3>
+<pre class="programlisting">  “message-uid”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

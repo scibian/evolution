@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ECanvasBackground</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch05.html" title="Canvas Drawing">
+<link rel="prev" href="ECanvas.html" title="ECanvas">
+<link rel="next" href="ECanvasVbox.html" title="ECanvasVbox">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ECanvasBackground.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ECanvasBackground.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ECanvasBackground.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ECanvasBackground.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch05.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ECanvas.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ECanvasVbox.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ECanvasBackground"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ECanvasBackground.top_of_page"></a>ECanvasBackground</span></h2>
+<p>ECanvasBackground</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ECanvasBackground.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="ECanvasBackground.html#ECanvasBackground--fill-color" title="The “fill-color” property">fill-color</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</td>
+<td class="property_name"><a class="link" href="ECanvasBackground.html#ECanvasBackground--fill-color-gdk" title="The “fill-color-gdk” property">fill-color-gdk</a></td>
+<td class="property_flags">Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="ECanvasBackground.html#ECanvasBackground--fill-color-rgba" title="The “fill-color-rgba” property">fill-color-rgba</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECanvasBackground.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ECanvasBackground.html#ECanvasBackground-style-updated" title="The “style-updated” signal">style-updated</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECanvasBackground.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ECanvasBackground.html#ECanvasBackground-struct" title="struct ECanvasBackground">ECanvasBackground</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ECanvasBackground.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/libgnomecanvas/GnomeCanvasItem.html">GnomeCanvasItem</a>
+            <span class="lineart">╰──</span> ECanvasBackground
+</pre>
+</div>
+<div class="refsect1">
+<a name="ECanvasBackground.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ECanvasBackground.functions_details"></a><h2>Functions</h2>
+</div>
+<div class="refsect1">
+<a name="ECanvasBackground.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ECanvasBackground-struct"></a><h3>struct ECanvasBackground</h3>
+<pre class="programlisting">struct ECanvasBackground;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ECanvasBackground.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ECanvasBackground--fill-color"></a><h3>The <code class="literal">“fill-color”</code> property</h3>
+<pre class="programlisting">  “fill-color”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Fill color.</p>
+<p>Flags: Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECanvasBackground--fill-color-gdk"></a><h3>The <code class="literal">“fill-color-gdk”</code> property</h3>
+<pre class="programlisting">  “fill-color-gdk”           <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</pre>
+<p>GDK fill color.</p>
+<p>Flags: Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ECanvasBackground--fill-color-rgba"></a><h3>The <code class="literal">“fill-color-rgba”</code> property</h3>
+<pre class="programlisting">  “fill-color-rgba”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>GDK fill color.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ECanvasBackground.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ECanvasBackground-style-updated"></a><h3>The <code class="literal">“style-updated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ECanvasBackground.html" title="ECanvasBackground"><span class="type">ECanvasBackground</span></a> *ecanvasbackground,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

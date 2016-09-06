@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EAttachmentView</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch04.html" title="Attachments">
+<link rel="prev" href="EAttachmentStore.html" title="EAttachmentStore">
+<link rel="next" href="EAttachmentIconView.html" title="EAttachmentIconView">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EAttachmentView.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EAttachmentView.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#EAttachmentView.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_implementations">  <span class="dim">|</span> 
+                  <a href="#EAttachmentView.implementations" class="shortcut">Known Implementations</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EAttachmentView.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EAttachmentView.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch04.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EAttachmentStore.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EAttachmentIconView.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EAttachmentView"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EAttachmentView.top_of_page"></a>EAttachmentView</span></h2>
+<p>EAttachmentView</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EAttachmentView.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-init" title="e_attachment_view_init ()">e_attachment_view_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-dispose" title="e_attachment_view_dispose ()">e_attachment_view_dispose</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-finalize" title="e_attachment_view_finalize ()">e_attachment_view_finalize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">EAttachmentViewPrivate</span> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-private" title="e_attachment_view_get_private ()">e_attachment_view_get_private</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EAttachmentStore.html" title="EAttachmentStore"><span class="returnvalue">EAttachmentStore</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-store" title="e_attachment_view_get_store ()">e_attachment_view_get_store</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-dragging" title="e_attachment_view_get_dragging ()">e_attachment_view_get_dragging</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-set-dragging" title="e_attachment_view_set_dragging ()">e_attachment_view_set_dragging</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-editable" title="e_attachment_view_get_editable ()">e_attachment_view_get_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-set-editable" title="e_attachment_view_set_editable ()">e_attachment_view_set_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-target-list" title="e_attachment_view_get_target_list ()">e_attachment_view_get_target_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragAction"><span class="returnvalue">GdkDragAction</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-drag-actions" title="e_attachment_view_get_drag_actions ()">e_attachment_view_get_drag_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-add-drag-actions" title="e_attachment_view_add_drag_actions ()">e_attachment_view_add_drag_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-selected-attachments" title="e_attachment_view_get_selected_attachments ()">e_attachment_view_get_selected_attachments</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-open-path" title="e_attachment_view_open_path ()">e_attachment_view_open_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-remove-selected" title="e_attachment_view_remove_selected ()">e_attachment_view_remove_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-button-press-event" title="e_attachment_view_button_press_event ()">e_attachment_view_button_press_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-button-release-event" title="e_attachment_view_button_release_event ()">e_attachment_view_button_release_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-motion-notify-event" title="e_attachment_view_motion_notify_event ()">e_attachment_view_motion_notify_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-key-press-event" title="e_attachment_view_key_press_event ()">e_attachment_view_key_press_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreePath"><span class="returnvalue">GtkTreePath</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-path-at-pos" title="e_attachment_view_get_path_at_pos ()">e_attachment_view_get_path_at_pos</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-selected-paths" title="e_attachment_view_get_selected_paths ()">e_attachment_view_get_selected_paths</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-path-is-selected" title="e_attachment_view_path_is_selected ()">e_attachment_view_path_is_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-select-path" title="e_attachment_view_select_path ()">e_attachment_view_select_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-unselect-path" title="e_attachment_view_unselect_path ()">e_attachment_view_unselect_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-select-all" title="e_attachment_view_select_all ()">e_attachment_view_select_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-unselect-all" title="e_attachment_view_unselect_all ()">e_attachment_view_unselect_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-sync-selection" title="e_attachment_view_sync_selection ()">e_attachment_view_sync_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-source-set" title="e_attachment_view_drag_source_set ()">e_attachment_view_drag_source_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-source-unset" title="e_attachment_view_drag_source_unset ()">e_attachment_view_drag_source_unset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-begin" title="e_attachment_view_drag_begin ()">e_attachment_view_drag_begin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-end" title="e_attachment_view_drag_end ()">e_attachment_view_drag_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-data-get" title="e_attachment_view_drag_data_get ()">e_attachment_view_drag_data_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-dest-set" title="e_attachment_view_drag_dest_set ()">e_attachment_view_drag_dest_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-dest-unset" title="e_attachment_view_drag_dest_unset ()">e_attachment_view_drag_dest_unset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-motion" title="e_attachment_view_drag_motion ()">e_attachment_view_drag_motion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-drop" title="e_attachment_view_drag_drop ()">e_attachment_view_drag_drop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-drag-data-received" title="e_attachment_view_drag_data_received ()">e_attachment_view_drag_data_received</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-action" title="e_attachment_view_get_action ()">e_attachment_view_get_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-add-action-group" title="e_attachment_view_add_action_group ()">e_attachment_view_add_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-action-group" title="e_attachment_view_get_action_group ()">e_attachment_view_get_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-popup-menu" title="e_attachment_view_get_popup_menu ()">e_attachment_view_get_popup_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-get-ui-manager" title="e_attachment_view_get_ui_manager ()">e_attachment_view_get_ui_manager</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-show-popup-menu" title="e_attachment_view_show_popup_menu ()">e_attachment_view_show_popup_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EAttachmentView.html#e-attachment-view-update-actions" title="e_attachment_view_update_actions ()">e_attachment_view_update_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EAttachmentView.html#EAttachmentView--dragging" title="The “dragging” property">dragging</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EAttachmentView.html#EAttachmentView--editable" title="The “editable” property">editable</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EAttachmentView.html#EAttachmentView-update-actions" title="The “update-actions” signal">update-actions</a></td>
+<td class="signal_flags">Action</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="EAttachmentView.html#EAttachmentView-struct" title="EAttachmentView">EAttachmentView</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> EAttachmentView
+</pre>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+EAttachmentView requires
+ <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.implementations"></a><h2>Known Implementations</h2>
+<p>
+EAttachmentView is implemented by
+ <a class="link" href="EAttachmentBar.html" title="EAttachmentBar">EAttachmentBar</a>,  <a class="link" href="EAttachmentIconView.html" title="EAttachmentIconView">EAttachmentIconView</a>,  <a class="link" href="EAttachmentPaned.html" title="EAttachmentPaned">EAttachmentPaned</a> and  <a class="link" href="EAttachmentTreeView.html" title="EAttachmentTreeView">EAttachmentTreeView</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-attachment-view-init"></a><h3>e_attachment_view_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_init (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-dispose"></a><h3>e_attachment_view_dispose ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_dispose (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-finalize"></a><h3>e_attachment_view_finalize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_finalize (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-private"></a><h3>e_attachment_view_get_private ()</h3>
+<pre class="programlisting"><span class="returnvalue">EAttachmentViewPrivate</span> *
+e_attachment_view_get_private (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-store"></a><h3>e_attachment_view_get_store ()</h3>
+<pre class="programlisting"><a class="link" href="EAttachmentStore.html" title="EAttachmentStore"><span class="returnvalue">EAttachmentStore</span></a> *
+e_attachment_view_get_store (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-dragging"></a><h3>e_attachment_view_get_dragging ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_get_dragging (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-set-dragging"></a><h3>e_attachment_view_set_dragging ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_set_dragging (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> dragging</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-editable"></a><h3>e_attachment_view_get_editable ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_get_editable (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-set-editable"></a><h3>e_attachment_view_set_editable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_set_editable (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> editable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-target-list"></a><h3>e_attachment_view_get_target_list ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkTargetList"><span class="returnvalue">GtkTargetList</span></a> *
+e_attachment_view_get_target_list (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-drag-actions"></a><h3>e_attachment_view_get_drag_actions ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragAction"><span class="returnvalue">GdkDragAction</span></a>
+e_attachment_view_get_drag_actions (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-add-drag-actions"></a><h3>e_attachment_view_add_drag_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_add_drag_actions (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> drag_actions</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-selected-attachments"></a><h3>e_attachment_view_get_selected_attachments ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_attachment_view_get_selected_attachments
+                               (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-open-path"></a><h3>e_attachment_view_open_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_open_path (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAppInfo.html"><span class="type">GAppInfo</span></a> *app_info</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-remove-selected"></a><h3>e_attachment_view_remove_selected ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_remove_selected (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> select_next</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-button-press-event"></a><h3>e_attachment_view_button_press_event ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_button_press_event (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEventButton"><span class="type">GdkEventButton</span></a> *event</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-button-release-event"></a><h3>e_attachment_view_button_release_event ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_button_release_event
+                               (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEventButton"><span class="type">GdkEventButton</span></a> *event</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-motion-notify-event"></a><h3>e_attachment_view_motion_notify_event ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_motion_notify_event (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                       <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEventMotion"><span class="type">GdkEventMotion</span></a> *event</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-key-press-event"></a><h3>e_attachment_view_key_press_event ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_key_press_event (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEventKey"><span class="type">GdkEventKey</span></a> *event</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-path-at-pos"></a><h3>e_attachment_view_get_path_at_pos ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreePath"><span class="returnvalue">GtkTreePath</span></a> *
+e_attachment_view_get_path_at_pos (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-selected-paths"></a><h3>e_attachment_view_get_selected_paths ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_attachment_view_get_selected_paths (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-path-is-selected"></a><h3>e_attachment_view_path_is_selected ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_path_is_selected (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-select-path"></a><h3>e_attachment_view_select_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_select_path (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-unselect-path"></a><h3>e_attachment_view_unselect_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_unselect_path (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-select-all"></a><h3>e_attachment_view_select_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_select_all (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-unselect-all"></a><h3>e_attachment_view_unselect_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_unselect_all (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-sync-selection"></a><h3>e_attachment_view_sync_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_sync_selection (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                  <em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *target</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-source-set"></a><h3>e_attachment_view_drag_source_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_drag_source_set (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-source-unset"></a><h3>e_attachment_view_drag_source_unset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_drag_source_unset (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-begin"></a><h3>e_attachment_view_drag_begin ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_drag_begin (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-end"></a><h3>e_attachment_view_drag_end ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_drag_end (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-data-get"></a><h3>e_attachment_view_drag_data_get ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_drag_data_get (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> info</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> time</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-dest-set"></a><h3>e_attachment_view_drag_dest_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_drag_dest_set (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-dest-unset"></a><h3>e_attachment_view_drag_dest_unset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_drag_dest_unset (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-motion"></a><h3>e_attachment_view_drag_motion ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_drag_motion (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> time</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-drop"></a><h3>e_attachment_view_drag_drop ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_attachment_view_drag_drop (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> time</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-drag-data-received"></a><h3>e_attachment_view_drag_data_received ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_drag_data_received (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Selections.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> info</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> time</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-action"></a><h3>e_attachment_view_get_action ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_attachment_view_get_action (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-add-action-group"></a><h3>e_attachment_view_add_action_group ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+e_attachment_view_add_action_group (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-action-group"></a><h3>e_attachment_view_get_action_group ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+e_attachment_view_get_action_group (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-popup-menu"></a><h3>e_attachment_view_get_popup_menu ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_attachment_view_get_popup_menu (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-get-ui-manager"></a><h3>e_attachment_view_get_ui_manager ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *
+e_attachment_view_get_ui_manager (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-show-popup-menu"></a><h3>e_attachment_view_show_popup_menu ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_show_popup_menu (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEventButton"><span class="type">GdkEventButton</span></a> *event</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkMenu.html#GtkMenuPositionFunc"><span class="type">GtkMenuPositionFunc</span></a> func</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-attachment-view-update-actions"></a><h3>e_attachment_view_update_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_attachment_view_update_actions (<em class="parameter"><code><a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *view</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EAttachmentView-struct"></a><h3>EAttachmentView</h3>
+<pre class="programlisting">typedef struct _EAttachmentView EAttachmentView;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EAttachmentView--dragging"></a><h3>The <code class="literal">“dragging”</code> property</h3>
+<pre class="programlisting">  “dragging”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EAttachmentView--editable"></a><h3>The <code class="literal">“editable”</code> property</h3>
+<pre class="programlisting">  “editable”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EAttachmentView.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EAttachmentView-update-actions"></a><h3>The <code class="literal">“update-actions”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EAttachmentView.html" title="EAttachmentView"><span class="type">EAttachmentView</span></a> *eattachmentview,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: Action</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

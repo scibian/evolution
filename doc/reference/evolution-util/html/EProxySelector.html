@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EProxySelector</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch10.html" title="Network Proxies">
+<link rel="prev" href="EProxyEditor.html" title="EProxyEditor">
+<link rel="next" href="EProxyLinkSelector.html" title="EProxyLinkSelector">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EProxySelector.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EProxySelector.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EProxySelector.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EProxySelector.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch10.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EProxyEditor.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EProxyLinkSelector.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EProxySelector"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EProxySelector.top_of_page"></a>EProxySelector</span></h2>
+<p>EProxySelector — Select and manage proxy profiles</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EProxySelector.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EProxySelector.html#e-proxy-selector-new" title="e_proxy_selector_new ()">e_proxy_selector_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EProxySelector.html#e-proxy-selector-refresh" title="e_proxy_selector_refresh ()">e_proxy_selector_refresh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EProxySelector.html#e-proxy-selector-get-registry" title="e_proxy_selector_get_registry ()">e_proxy_selector_get_registry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="returnvalue">ESource</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EProxySelector.html#e-proxy-selector-ref-selected" title="e_proxy_selector_ref_selected ()">e_proxy_selector_ref_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EProxySelector.html#e-proxy-selector-set-selected" title="e_proxy_selector_set_selected ()">e_proxy_selector_set_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *</td>
+<td class="property_name"><a class="link" href="EProxySelector.html#EProxySelector--registry" title="The “registry” property">registry</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *</td>
+<td class="property_name"><a class="link" href="EProxySelector.html#EProxySelector--selected" title="The “selected” property">selected</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EProxySelector.html#EProxySelector-struct" title="struct EProxySelector">EProxySelector</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkBox.html">GtkBox</a>
+                    <span class="lineart">╰──</span> <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame">ETreeViewFrame</a>
+                        <span class="lineart">╰──</span> EProxySelector
+</pre>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EProxySelector implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>,  <a href="http://developer.gnome.org/gtk2/gtk3-Orientable.html#GtkOrientable">GtkOrientable</a> and  EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;e-util/e-util.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.description"></a><h2>Description</h2>
+<p><a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a> displays a list of available proxy profiles, with inline
+toolbar controls for adding and removing profiles.</p>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-proxy-selector-new"></a><h3>e_proxy_selector_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_proxy_selector_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *registry</code></em>);</pre>
+<p>Creates a new <a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a> widget using <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> instances in <em class="parameter"><code>registry</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.4.10.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>registry</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.4.10.2.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-proxy-selector-refresh"></a><h3>e_proxy_selector_refresh ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_proxy_selector_refresh (<em class="parameter"><code><a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a> *selector</code></em>);</pre>
+<p>Rebuilds the <em class="parameter"><code>selector</code></em>
+'s list store with an updated list of <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a>
+instances that describe a network proxy profile, without disrupting the
+previously selected item (if possible).</p>
+<p>This funtion is called automatically in response to <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a>
+signals which are pertinent to the <em class="parameter"><code>selector</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.4.10.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selector</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-proxy-selector-get-registry"></a><h3>e_proxy_selector_get_registry ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="returnvalue">ESourceRegistry</span></a> *
+e_proxy_selector_get_registry (<em class="parameter"><code><a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a> *selector</code></em>);</pre>
+<p>Returns the <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> passed to <a class="link" href="EProxySelector.html#e-proxy-selector-get-registry" title="e_proxy_selector_get_registry ()"><code class="function">e_proxy_selector_get_registry()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.11.4.10.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selector</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.4.10.4.6"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-proxy-selector-ref-selected"></a><h3>e_proxy_selector_ref_selected ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="returnvalue">ESource</span></a> *
+e_proxy_selector_ref_selected (<em class="parameter"><code><a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a> *selector</code></em>);</pre>
+<p>Returns the selected <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> in <em class="parameter"><code>selector</code></em>
+.</p>
+<p>The function tries to ensure a valid <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> is always returned,
+falling back to <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#e-source-registry-ref-builtin-proxy"><code class="function">e_source_registry_ref_builtin_proxy()</code></a> if necessary.</p>
+<p>The returned <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> is referenced for thread-safety and must be
+unreferenced with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished with it.</p>
+<div class="refsect3">
+<a name="id-1.11.4.10.5.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selector</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.4.10.5.8"></a><h4>Returns</h4>
+<p> an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-proxy-selector-set-selected"></a><h3>e_proxy_selector_set_selected ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_proxy_selector_set_selected (<em class="parameter"><code><a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a> *selector</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *source</code></em>);</pre>
+<p>Finds the corresponding tree model row for <em class="parameter"><code>source</code></em>
+, selects the row,
+and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.  If no corresponding tree model row for <em class="parameter"><code>source</code></em>
+ is
+found, the selection remains unchanged and the function returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.11.4.10.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selector</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EProxySelector.html" title="EProxySelector"><span class="type">EProxySelector</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>an <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the built-in proxy profile</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.4.10.6.6"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>source</code></em>
+was selected</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EProxySelector-struct"></a><h3>struct EProxySelector</h3>
+<pre class="programlisting">struct EProxySelector;</pre>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EProxySelector.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EProxySelector--registry"></a><h3>The <code class="literal">“registry”</code> property</h3>
+<pre class="programlisting">  “registry”                 <a href="/usr/share/gtk-doc/html/eds/eds-ESourceRegistry.html#ESourceRegistry"><span class="type">ESourceRegistry</span></a> *</pre>
+<p>Data source registry.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EProxySelector--selected"></a><h3>The <code class="literal">“selected”</code> property</h3>
+<pre class="programlisting">  “selected”                 <a href="/usr/share/gtk-doc/html/eds/eds-ESource.html#ESource"><span class="type">ESource</span></a> *</pre>
+<p>The selected data source.</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

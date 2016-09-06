@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-s-mime-signing-encrypting" xml:lang="ja">
+
+  <info>
+    <desc>送信するメールに対して S/MIME で署名や暗号化を行います。</desc>
+
+    <link type="guide" xref="mail-encryption#s-mime"/>
+
+    <revision pkgversion="2.32.1" version="0.2" date="2011-08-24" status="draft"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#bsqbdkv -->
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+  <title>メールへの署名と暗号化</title>
+
+<p><link xref="mail-encryption-s-mime-manage">自分の証明書を追加した</link>後は、<guiseq><gui>オプション</gui><gui>S/MIME 署名</gui></guiseq>をクリックするか、メール作成メニューから<gui>S/MIME 暗号化</gui>を選択することで、メールに対して署名、暗号化できます。</p>
+<p>全メールに対して署名や暗号化を行うには:</p>
+<steps>
+<item><p><guiseq><gui>編集</gui><gui>設定</gui><gui>メールアカウント</gui></guiseq>を選択します。</p></item>
+<item><p>暗号化するメールアカウントを選択します。</p></item>
+<item><p><gui style="button">編集</gui>をクリックします。</p></item>
+<item><p><gui>セキュリティー</gui>タブをクリックします。</p></item>
+<item><p>In the <gui>Secure MIME (S/MIME)</gui> section, click <gui style="button">Select</gui> next to <gui>Signing Certificate</gui> and specify the path to your signing certificate, or click <gui style="button">Select</gui> next to <gui>Encryption Certificate</gui> and specify the path to your encryption certificate.</p></item>
+<item><p>適切なオプションを選択ししてください。</p></item>
+<item><p><gui style="button">OK</gui>をクリックします。</p></item>
+</steps>
+<note style="tip"><p>メールの件名は暗号化されないため、機密情報を含めるべきではありません。</p></note>
+</page>

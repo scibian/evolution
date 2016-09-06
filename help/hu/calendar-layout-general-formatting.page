@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="calendar-layout-general-formatting" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="calendar-layout"/>
+
+    <revision pkgversion="3.0.2" version="0.2" date="2011-07-30" status="final"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name>
+      <!-- Content partially from
+	   http://library.gnome.org/users/evolution/2.32/config-prefs-cal.html.en#bshpskx
+	   -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <!-- TODO:POST-3-8: Just listing the partially busted UI options (also see
+	 calendar-layout-appointment-display) here is very poor and not
+	 task-oriented, but that's it for the time being. Better ideas welcome.
+	 -->
+
+    <desc>Általános formázási lehetőségek a naptárban.</desc>
+  </info>
+
+  <title>Általános formázási lehetőségek</title>
+
+  <p>A következő beállítások a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui> <gui>Naptár és feladatok</gui><gui>Általános</gui></guiseq> menüpont alatt találhatók.</p>
+
+<section id="time">
+  <title>Idő</title>
+
+  <list>
+    <item>
+      <p>Időformátum:</p>
+      <p>Válassza a 12 órás (AM/PM) vagy a 24 órás formátumot.</p>
+    </item>
+    <item>
+      <p><link xref="calendar-timezones">Időzóna</link> és Másodlagos zóna:</p>
+      <p>A város, ahol tartózkodik, és egy másik város.</p>
+    </item>
+  </list>
+</section>
+
+<section id="work-week">
+  <title>Munkahét</title>
+
+  <list>
+    <item>
+      <p>A hét első napja:</p>
+      <p>Válassza ki a hetek első napjaként megjelenítendő napot.</p>
+    </item>
+    <item>
+      <p>Munkanapok:</p>
+      <p>Adja meg, mely napok munkanapok.</p>
+    </item>
+    <item>
+      <p>Nap kezdete:</p>
+      <p>Adja meg, mikor kezdődik munkanapja.</p>
+    </item>
+    <item>
+      <p>Nap vége:</p>
+      <p>Adja meg, mikor végződik munkanapja.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="alerts">
+  <title>Értesítések</title>
+
+  <p>Jelölje be ezt a lehetőséget, ha értesítést kér az értekezleteinek törlése előtt.</p>
+
+</section>
+
+</page>

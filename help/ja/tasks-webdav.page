@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="tasks-webdav" xml:lang="ja">
+
+  <info>
+    <desc>Using an online WebDAV task list or memo list.</desc>
+    
+    <link type="guide" xref="tasks-using-several-tasklists"/>
+
+    <revision pkgversion="3.1.5" version="0.3" date="2011-07-28" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+
+  </info>
+
+<title>Using a WebDAV task or memo list</title>
+
+<p>この種類の一覧は読み込み専用です。</p>
+
+<p>To add such a task list or memo list to Evolution, perform the following steps:</p>
+<steps>
+<item><p>Click <guiseq><gui>File</gui><gui>New</gui><gui>Task List</gui></guiseq> or <guiseq><gui>File</gui><gui>New</gui><gui>Memo List</gui></guiseq>.</p></item>
+<item><p>種類として<gui>ウェブ上</gui>を選択します。</p></item>
+<item><p>好きなように名前を入力します。</p></item>
+<item><p>オプションで好きな色を選択します。</p></item>
+<item><p>Choose if you want to be able to view the content also while offline.</p></item>
+<item><p><gui>URL</gui>欄にアドレスを入力します。</p></item>
+<item><p>安全に接続したい場合は<gui>セキュアな接続の利用</gui>を選択します。</p></item>
+<item><p>ユーザー名を入力します。</p></item>
+<item><p><gui style="button">適用する</gui>をクリックします。</p></item>
+</steps>
+
+<p>The list will be added in Evolution.</p>
+
+</page>

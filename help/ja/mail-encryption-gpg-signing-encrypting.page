@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="mail-encryption-gpg-signing-encrypting" xml:lang="ja">
+
+  <info>
+    <desc>Signing or encrypting messages via GPG that you send.</desc>
+
+    <link type="guide" xref="mail-encryption#gpg"/>
+
+    <revision pkgversion="2.32.1" version="0.3" date="2011-08-24" status="final"/>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Novell, Inc</name> <!-- Content partially from http://library.gnome.org/users/evolution/2.32/encryption.html.en#bspya9p -->
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+
+  </info>
+
+  <title>メールへの署名と暗号化</title>
+
+<!--A seahorse help page(what-is-pgp-key.page) links to this page. So please
+     change/delete the link in the Seahorse help if you are renaming or
+     deleting this page-->
+
+
+<p>After you have <link xref="mail-encryption-gpg-set-up">set up your GPG key</link>, you can sign or encrypt a message by clicking <guiseq><gui>Options</gui><gui>PGP Sign</gui></guiseq> or <gui>PGP Encrypt</gui> from the message composer menu.</p>
+<note style="tip"><p>メールの件名は暗号化されないため、機密情報を含めるべきではありません。</p></note>
+
+<p>全メールに対して署名や暗号化を行うには:</p>
+<steps>
+<item><p><guiseq><gui>編集</gui><gui>設定</gui><gui>メールアカウント</gui></guiseq>を選択します。</p></item>
+<item><p>暗号化するメールアカウントを選択します。</p></item>
+<item><p><gui style="button">編集</gui>をクリックします。</p></item>
+<item><p><gui>セキュリティー</gui>タブをクリックします。</p></item>
+<item><p><gui>このアカウントを使用する場合は常に送信メッセージを暗号化する</gui>を選択します。</p></item>
+<item><p><gui style="button">OK</gui>をクリックします。</p></item>
+<item><p><gui style="button">閉じる</gui>をクリックします。</p></item>
+</steps>
+
+</page>

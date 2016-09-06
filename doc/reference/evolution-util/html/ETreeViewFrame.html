@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: ETreeViewFrame</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch16.html" title="(Unsorted Sections)">
+<link rel="prev" href="ETreeModelGenerator.html" title="ETreeModelGenerator">
+<link rel="next" href="EUrlEntry.html" title="EUrlEntry">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ETreeViewFrame.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ETreeViewFrame.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#ETreeViewFrame.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ETreeViewFrame.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ETreeViewFrame.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch16.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ETreeModelGenerator.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EUrlEntry.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ETreeViewFrame"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ETreeViewFrame.top_of_page"></a>ETreeViewFrame</span></h2>
+<p>ETreeViewFrame — A frame for <a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a></p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ETreeViewFrame.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-new" title="e_tree_view_frame_new ()">e_tree_view_frame_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="returnvalue">GtkTreeView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-get-tree-view" title="e_tree_view_frame_get_tree_view ()">e_tree_view_frame_get_tree_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-set-tree-view" title="e_tree_view_frame_set_tree_view ()">e_tree_view_frame_set_tree_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-get-toolbar-visible" title="e_tree_view_frame_get_toolbar_visible ()">e_tree_view_frame_get_toolbar_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-set-toolbar-visible" title="e_tree_view_frame_set_toolbar_visible ()">e_tree_view_frame_set_toolbar_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="returnvalue">GtkPolicyType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-get-hscrollbar-policy" title="e_tree_view_frame_get_hscrollbar_policy ()">e_tree_view_frame_get_hscrollbar_policy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-set-hscrollbar-policy" title="e_tree_view_frame_set_hscrollbar_policy ()">e_tree_view_frame_set_hscrollbar_policy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="returnvalue">GtkPolicyType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-get-vscrollbar-policy" title="e_tree_view_frame_get_vscrollbar_policy ()">e_tree_view_frame_get_vscrollbar_policy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-set-vscrollbar-policy" title="e_tree_view_frame_set_vscrollbar_policy ()">e_tree_view_frame_set_vscrollbar_policy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-insert-toolbar-action" title="e_tree_view_frame_insert_toolbar_action ()">e_tree_view_frame_insert_toolbar_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-lookup-toolbar-action" title="e_tree_view_frame_lookup_toolbar_action ()">e_tree_view_frame_lookup_toolbar_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ETreeViewFrame.html#e-tree-view-frame-update-toolbar-actions" title="e_tree_view_frame_update_toolbar_actions ()">e_tree_view_frame_update_toolbar_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="type">GtkPolicyType</span></a></td>
+<td class="property_name"><a class="link" href="ETreeViewFrame.html#ETreeViewFrame--hscrollbar-policy" title="The “hscrollbar-policy” property">hscrollbar-policy</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="ETreeViewFrame.html#ETreeViewFrame--toolbar-visible" title="The “toolbar-visible” property">toolbar-visible</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *</td>
+<td class="property_name"><a class="link" href="ETreeViewFrame.html#ETreeViewFrame--tree-view" title="The “tree-view” property">tree-view</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="type">GtkPolicyType</span></a></td>
+<td class="property_name"><a class="link" href="ETreeViewFrame.html#ETreeViewFrame--vscrollbar-policy" title="The “vscrollbar-policy” property">vscrollbar-policy</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="ETreeViewFrame.html#ETreeViewFrame-toolbar-action-activate" title="The “toolbar-action-activate” signal">toolbar-action-activate</a></td>
+<td class="signal_flags">Has Details</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ETreeViewFrame.html#ETreeViewFrame-update-toolbar-actions" title="The “update-toolbar-actions” signal">update-toolbar-actions</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ETreeViewFrame.html#ETreeViewFrame-struct" title="struct ETreeViewFrame">ETreeViewFrame</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ETreeViewFrame.html#E-TREE-VIEW-FRAME-ACTION-ADD:CAPS" title="E_TREE_VIEW_FRAME_ACTION_ADD">E_TREE_VIEW_FRAME_ACTION_ADD</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ETreeViewFrame.html#E-TREE-VIEW-FRAME-ACTION-REMOVE:CAPS" title="E_TREE_VIEW_FRAME_ACTION_REMOVE">E_TREE_VIEW_FRAME_ACTION_REMOVE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ETreeViewFrame.html#E-TREE-VIEW-FRAME-ACTION-MOVE-TOP:CAPS" title="E_TREE_VIEW_FRAME_ACTION_MOVE_TOP">E_TREE_VIEW_FRAME_ACTION_MOVE_TOP</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ETreeViewFrame.html#E-TREE-VIEW-FRAME-ACTION-MOVE-UP:CAPS" title="E_TREE_VIEW_FRAME_ACTION_MOVE_UP">E_TREE_VIEW_FRAME_ACTION_MOVE_UP</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ETreeViewFrame.html#E-TREE-VIEW-FRAME-ACTION-MOVE-DOWN:CAPS" title="E_TREE_VIEW_FRAME_ACTION_MOVE_DOWN">E_TREE_VIEW_FRAME_ACTION_MOVE_DOWN</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ETreeViewFrame.html#E-TREE-VIEW-FRAME-ACTION-MOVE-BOTTOM:CAPS" title="E_TREE_VIEW_FRAME_ACTION_MOVE_BOTTOM">E_TREE_VIEW_FRAME_ACTION_MOVE_BOTTOM</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ETreeViewFrame.html#E-TREE-VIEW-FRAME-ACTION-SELECT-ALL:CAPS" title="E_TREE_VIEW_FRAME_ACTION_SELECT_ALL">E_TREE_VIEW_FRAME_ACTION_SELECT_ALL</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkBox.html">GtkBox</a>
+                    <span class="lineart">╰──</span> ETreeViewFrame
+                        <span class="lineart">├──</span> <a class="link" href="EProxySelector.html" title="EProxySelector">EProxySelector</a>
+                        <span class="lineart">╰──</span> <a class="link" href="ETableColumnSelector.html" title="ETableColumnSelector">ETableColumnSelector</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ETreeViewFrame implements
+ <a href="/usr/share/gtk-doc/html/atk/AtkObject.html#AtkImplementorIface">AtkImplementorIface</a>,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>,  <a href="http://developer.gnome.org/gtk2/gtk3-Orientable.html#GtkOrientable">GtkOrientable</a> and  EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;e-util/e-util.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.description"></a><h2>Description</h2>
+<p><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> embeds a <a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> in a scrolled window and adds an
+inline-style toolbar beneath the scrolled window which can be hidden.</p>
+<p>The inline-style toolbar supports "add" and "remove" actions, as well
+as move actions if the tree view is reorderable and selection actions
+if the tree view supports multiple selections.  The action set can be
+extended through <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-insert-toolbar-action" title="e_tree_view_frame_insert_toolbar_action ()"><code class="function">e_tree_view_frame_insert_toolbar_action()</code></a>.</p>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-tree-view-frame-new"></a><h3>e_tree_view_frame_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_tree_view_frame_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.2.5"></a><h4>Returns</h4>
+<p> an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-get-tree-view"></a><h3>e_tree_view_frame_get_tree_view ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="returnvalue">GtkTreeView</span></a> *
+e_tree_view_frame_get_tree_view (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>);</pre>
+<p>Returns the <a class="link" href="ETreeViewFrame.html#ETreeViewFrame--tree-view" title="The “tree-view” property"><span class="type">“tree-view”</span></a> for <em class="parameter"><code>tree_view_frame</code></em>
+.</p>
+<p>The <em class="parameter"><code>tree_view_frame</code></em>
+ creates its own <a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> by default, but
+that instance can be replaced with <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-set-tree-view" title="e_tree_view_frame_set_tree_view ()"><code class="function">e_tree_view_frame_set_tree_view()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.50.11.3.7"></a><h4>Returns</h4>
+<p> a <a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-set-tree-view"></a><h3>e_tree_view_frame_set_tree_view ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_view_frame_set_tree_view (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *tree_view</code></em>);</pre>
+<p>Replaces the previous <a class="link" href="ETreeViewFrame.html#ETreeViewFrame--tree-view" title="The “tree-view” property"><span class="type">“tree-view”</span></a> with the given <em class="parameter"><code>tree_view</code></em>
+.
+If <em class="parameter"><code>tree_view</code></em>
+ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the <em class="parameter"><code>tree_view_frame</code></em>
+ creates a new <a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tree_view</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-get-toolbar-visible"></a><h3>e_tree_view_frame_get_toolbar_visible ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_tree_view_frame_get_toolbar_visible (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>);</pre>
+<p>Returns whether the inline toolbar in <em class="parameter"><code>tree_view_frame</code></em>
+ is visible.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.50.11.5.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the toolbar is visible, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if invisible</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-set-toolbar-visible"></a><h3>e_tree_view_frame_set_toolbar_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_view_frame_set_toolbar_visible (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> toolbar_visible</code></em>);</pre>
+<p>Shows or hides the inline toolbar in <em class="parameter"><code>tree_view_frame</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>toolbar_visible</p></td>
+<td class="parameter_description"><p>whether to make the toolbar visible</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-get-hscrollbar-policy"></a><h3>e_tree_view_frame_get_hscrollbar_policy ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="returnvalue">GtkPolicyType</span></a>
+e_tree_view_frame_get_hscrollbar_policy
+                               (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>);</pre>
+<p>Returns the policy for the horizontal scrollbar in <em class="parameter"><code>tree_view_frame</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.50.11.7.6"></a><h4>Returns</h4>
+<p> the policy for the horizontal scrollbar</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-set-hscrollbar-policy"></a><h3>e_tree_view_frame_set_hscrollbar_policy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_view_frame_set_hscrollbar_policy
+                               (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="type">GtkPolicyType</span></a> hscrollbar_policy</code></em>);</pre>
+<p>Sets the policy for the horizontal scrollbar in <em class="parameter"><code>tree_view_frame</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hscrollbar_policy</p></td>
+<td class="parameter_description"><p>the policy for the horizontal scrollbar</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-get-vscrollbar-policy"></a><h3>e_tree_view_frame_get_vscrollbar_policy ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="returnvalue">GtkPolicyType</span></a>
+e_tree_view_frame_get_vscrollbar_policy
+                               (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>);</pre>
+<p>Returns the policy for the vertical scrollbar in <em class="parameter"><code>tree_view_frame</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.50.11.9.6"></a><h4>Returns</h4>
+<p> the policy for the vertical scrollbar</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-set-vscrollbar-policy"></a><h3>e_tree_view_frame_set_vscrollbar_policy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_view_frame_set_vscrollbar_policy
+                               (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="type">GtkPolicyType</span></a> vscrollbar_policy</code></em>);</pre>
+<p>Sets the policy for the vertical scrollbar in <em class="parameter"><code>tree_view_frame</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vscrollbar_policy</p></td>
+<td class="parameter_description"><p>the policy for the vertical scrollbar</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-insert-toolbar-action"></a><h3>e_tree_view_frame_insert_toolbar_action ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_view_frame_insert_toolbar_action
+                               (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> *action</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+<p>Generates a <a href="http://developer.gnome.org/gtk2/GtkToolItem.html"><span class="type">GtkToolItem</span></a> from <em class="parameter"><code>action</code></em>
+ and inserts it into the inline
+toolbar at the given <em class="parameter"><code>position</code></em>
+.  If <em class="parameter"><code>position</code></em>
+ is zero, the item is
+prepended to the start of the toolbar.  If <em class="parameter"><code>position</code></em>
+ is negative,
+the item is appended to the end of the toolbar.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>the position of the new action</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-lookup-toolbar-action"></a><h3>e_tree_view_frame_lookup_toolbar_action ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+e_tree_view_frame_lookup_toolbar_action
+                               (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Returns the toolbar action named <em class="parameter"><code>action_name</code></em>
+, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no such
+toolbar action exists.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.17.50.11.12.6"></a><h4>Returns</h4>
+<p> a <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-tree-view-frame-update-toolbar-actions"></a><h3>e_tree_view_frame_update_toolbar_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_tree_view_frame_update_toolbar_actions
+                               (<em class="parameter"><code><a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame</code></em>);</pre>
+<p>Emits the <a class="link" href="ETreeViewFrame.html#ETreeViewFrame-update-toolbar-actions" title="The “update-toolbar-actions” signal"><span class="type">“update-toolbar-actions”</span></a> signal.</p>
+<p>See the signal description for more details.</p>
+<div class="refsect3">
+<a name="id-1.17.50.11.13.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>an <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ETreeViewFrame-struct"></a><h3>struct ETreeViewFrame</h3>
+<pre class="programlisting">struct ETreeViewFrame;</pre>
+<p>Contains only private data that should be read and manipulated using the
+functions below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-TREE-VIEW-FRAME-ACTION-ADD:CAPS"></a><h3>E_TREE_VIEW_FRAME_ACTION_ADD</h3>
+<pre class="programlisting">#define E_TREE_VIEW_FRAME_ACTION_ADD		"e-tree-view-frame-add"
+</pre>
+<p>The <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> name for the "add" toolbar button.</p>
+<p>Use <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-lookup-toolbar-action" title="e_tree_view_frame_lookup_toolbar_action ()"><code class="function">e_tree_view_frame_lookup_toolbar_action()</code></a> to obtain the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-TREE-VIEW-FRAME-ACTION-REMOVE:CAPS"></a><h3>E_TREE_VIEW_FRAME_ACTION_REMOVE</h3>
+<pre class="programlisting">#define E_TREE_VIEW_FRAME_ACTION_REMOVE		"e-tree-view-frame-remove"
+</pre>
+<p>The <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> name for the "remove" toolbar button.</p>
+<p>Use <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-lookup-toolbar-action" title="e_tree_view_frame_lookup_toolbar_action ()"><code class="function">e_tree_view_frame_lookup_toolbar_action()</code></a> to obtain the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-TREE-VIEW-FRAME-ACTION-MOVE-TOP:CAPS"></a><h3>E_TREE_VIEW_FRAME_ACTION_MOVE_TOP</h3>
+<pre class="programlisting">#define E_TREE_VIEW_FRAME_ACTION_MOVE_TOP "e-tree-view-frame-move-top"
+</pre>
+<p>The <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> name for the "move selected items to top" button.</p>
+<p>Use <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-lookup-toolbar-action" title="e_tree_view_frame_lookup_toolbar_action ()"><code class="function">e_tree_view_frame_lookup_toolbar_action()</code></a> to obtain the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-TREE-VIEW-FRAME-ACTION-MOVE-UP:CAPS"></a><h3>E_TREE_VIEW_FRAME_ACTION_MOVE_UP</h3>
+<pre class="programlisting">#define E_TREE_VIEW_FRAME_ACTION_MOVE_UP "e-tree-view-frame-move-up"
+</pre>
+<p>The <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> name for the "move selected items up" button.</p>
+<p>Use <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-lookup-toolbar-action" title="e_tree_view_frame_lookup_toolbar_action ()"><code class="function">e_tree_view_frame_lookup_toolbar_action()</code></a> to obtain the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-TREE-VIEW-FRAME-ACTION-MOVE-DOWN:CAPS"></a><h3>E_TREE_VIEW_FRAME_ACTION_MOVE_DOWN</h3>
+<pre class="programlisting">#define E_TREE_VIEW_FRAME_ACTION_MOVE_DOWN "e-tree-view-frame-move-down"
+</pre>
+<p>The <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> name for the "move selected items down" button.</p>
+<p>Use <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-lookup-toolbar-action" title="e_tree_view_frame_lookup_toolbar_action ()"><code class="function">e_tree_view_frame_lookup_toolbar_action()</code></a> to obtain the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-TREE-VIEW-FRAME-ACTION-MOVE-BOTTOM:CAPS"></a><h3>E_TREE_VIEW_FRAME_ACTION_MOVE_BOTTOM</h3>
+<pre class="programlisting">#define E_TREE_VIEW_FRAME_ACTION_MOVE_BOTTOM "e-tree-view-frame-move-bottom"
+</pre>
+<p>The <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> name for the "move selected items to bottom" button.</p>
+<p>Use <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-lookup-toolbar-action" title="e_tree_view_frame_lookup_toolbar_action ()"><code class="function">e_tree_view_frame_lookup_toolbar_action()</code></a> to obtain the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="E-TREE-VIEW-FRAME-ACTION-SELECT-ALL:CAPS"></a><h3>E_TREE_VIEW_FRAME_ACTION_SELECT_ALL</h3>
+<pre class="programlisting">#define E_TREE_VIEW_FRAME_ACTION_SELECT_ALL "e-tree-view-frame-select-all"
+</pre>
+<p>The <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> name for the "select all" button.</p>
+<p>Use <a class="link" href="ETreeViewFrame.html#e-tree-view-frame-lookup-toolbar-action" title="e_tree_view_frame_lookup_toolbar_action ()"><code class="function">e_tree_view_frame_lookup_toolbar_action()</code></a> to obtain the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ETreeViewFrame--hscrollbar-policy"></a><h3>The <code class="literal">“hscrollbar-policy”</code> property</h3>
+<pre class="programlisting">  “hscrollbar-policy”        <a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="type">GtkPolicyType</span></a></pre>
+<p>When the horizontal scrollbar is displayed.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: GTK_POLICY_AUTOMATIC</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETreeViewFrame--toolbar-visible"></a><h3>The <code class="literal">“toolbar-visible”</code> property</h3>
+<pre class="programlisting">  “toolbar-visible”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether to show the inline toolbar.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETreeViewFrame--tree-view"></a><h3>The <code class="literal">“tree-view”</code> property</h3>
+<pre class="programlisting">  “tree-view”                <a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *</pre>
+<p>The tree view widget.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETreeViewFrame--vscrollbar-policy"></a><h3>The <code class="literal">“vscrollbar-policy”</code> property</h3>
+<pre class="programlisting">  “vscrollbar-policy”        <a href="http://developer.gnome.org/gtk2/GtkScrolledWindow.html#GtkPolicyType"><span class="type">GtkPolicyType</span></a></pre>
+<p>When the vertical scrollbar is displayed.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: GTK_POLICY_AUTOMATIC</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ETreeViewFrame.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ETreeViewFrame-toolbar-action-activate"></a><h3>The <code class="literal">“toolbar-action-activate”</code> signal</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame,
+               <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>      *action,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Emitted when a toolbar action is activated.</p>
+<p>This signal supports "::detail" appendices to the signal name,
+where the "detail" part is the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> <a href="http://developer.gnome.org/gtk2/GtkAction.html#GtkAction--name"><span class="type">“name”</span></a>.  So
+you can connect a signal handler to a particular action.</p>
+<div class="refsect3">
+<a name="id-1.17.50.14.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action</p></td>
+<td class="parameter_description"><p>the <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> that was activated</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Has Details</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ETreeViewFrame-update-toolbar-actions"></a><h3>The <code class="literal">“update-toolbar-actions”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> *tree_view_frame,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Requests toolbar actions be updated, usually in response to a
+<a href="http://developer.gnome.org/gtk2/GtkTreeSelection.html"><span class="type">GtkTreeSelection</span></a> change.  Handlers should update <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a>
+properties like <a href="http://developer.gnome.org/gtk2/GtkAction.html#GtkAction--visible"><span class="type">“visible”</span></a> and <a href="http://developer.gnome.org/gtk2/GtkAction.html#GtkAction--sensitive"><span class="type">“sensitive”</span></a>
+based on the current <a class="link" href="ETreeViewFrame.html#ETreeViewFrame--tree-view" title="The “tree-view” property"><span class="type">“tree-view”</span></a> state.</p>
+<div class="refsect3">
+<a name="id-1.17.50.14.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tree_view_frame</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ETreeViewFrame.html" title="ETreeViewFrame"><span class="type">ETreeViewFrame</span></a> that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

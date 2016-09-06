@@ -1,0 +1,24 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+libexecdir=@libexecdir@
+includedir=@includedir@
+datarootdir=@datarootdir@
+datadir=@datadir@
+
+privlibdir=@privsolibdir@
+privlibexecdir=@privlibexecdir@
+privincludedir=@privincludedir@
+errordir=@privdatadir@/errors
+moduledir=@moduledir@
+imagesdir=@imagesdir@
+
+execversion=@BASE_VERSION@
+
+Name: evolution-shell
+Description: libraries needed for Evolution shell components
+Version: @VERSION@
+Requires: gtk+-3.0 libebackend-1.2 webkitgtk-3.0 libgtkhtml-4.0 gtkhtml-editor-4.0
+Requires.private: @GNOME_DESKTOP_DEPENDENCY@
+Libs: -L${privlibdir} -levolution-shell -levolution-util -Wl,-R${privlibdir}
+Cflags: -I${privincludedir}

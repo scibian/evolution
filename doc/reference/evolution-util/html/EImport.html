@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Utilities Reference Manual: EImport</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Utilities Reference Manual">
+<link rel="up" href="ch15.html" title="Plugins (Legacy)">
+<link rel="prev" href="EEvent.html" title="EEvent">
+<link rel="next" href="ch16.html" title="(Unsorted Sections)">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EImport.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EImport.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch15.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EEvent.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch16.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EImport"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EImport.top_of_page"></a>EImport</span></h2>
+<p>EImport</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EImport.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EImport.html#EImportCompleteFunc" title="EImportCompleteFunc ()">*EImportCompleteFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EImport.html#EImportStatusFunc" title="EImportStatusFunc ()">*EImportStatusFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EImport.html#EImportFactoryFunc" title="EImportFactoryFunc ()">*EImportFactoryFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EImport.html#EImportImporterFunc" title="EImportImporterFunc ()">*EImportImporterFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EImport.html#EImportSupportedFunc" title="EImportSupportedFunc ()">*EImportSupportedFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EImport.html#EImportWidgetFunc" title="EImportWidgetFunc ()">*EImportWidgetFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EImport.html#EImportImportFunc" title="EImportImportFunc ()">*EImportImportFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EImport.html" title="EImport"><span class="returnvalue">EImport</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-new" title="e_import_new ()">e_import_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-class-add-importer" title="e_import_class_add_importer ()">e_import_class_add_importer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-get-importers" title="e_import_get_importers ()">e_import_get_importers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EImport.html" title="EImport"><span class="returnvalue">EImport</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-construct" title="e_import_construct ()">e_import_construct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-import" title="e_import_import ()">e_import_import</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-cancel" title="e_import_cancel ()">e_import_cancel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-get-widget" title="e_import_get_widget ()">e_import_get_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-get-preview-widget" title="e_import_get_preview_widget ()">e_import_get_preview_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-status" title="e_import_status ()">e_import_status</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-complete" title="e_import_complete ()">e_import_complete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-target-new" title="e_import_target_new ()">e_import_target_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-target-free" title="e_import_target_free ()">e_import_target_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EImport.html#EImportTargetURI" title="struct EImportTargetURI"><span class="returnvalue">EImportTargetURI</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-target-new-uri" title="e_import_target_new_uri ()">e_import_target_new_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EImport.html#EImportTargetHome" title="struct EImportTargetHome"><span class="returnvalue">EImportTargetHome</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-target-new-home" title="e_import_target_new_home ()">e_import_target_new_home</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EImport.html#e-import-hook-class-add-target-map" title="e_import_hook_class_add_target_map ()">e_import_hook_class_add_target_map</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="EImportHook"></a><div class="refsect1">
+<a name="EImport.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EImport.html#EImport-struct" title="struct EImport">EImport</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EImport.html#e-import-target-t" title="enum e_import_target_t">e_import_target_t</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter">EImportImporter</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="EImport.html#EImportFactory" title="EImportFactory">EImportFactory</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget">EImportTarget</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EImport.html#EImportTargetURI" title="struct EImportTargetURI">EImportTargetURI</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EImport.html#EImportTargetHome" title="struct EImportTargetHome">EImportTargetHome</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EImport.html#EImportHook-struct" title="struct EImportHook">EImportHook</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="EImport.html#EImportHookTargetMap" title="EImportHookTargetMap">EImportHookTargetMap</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="EImport.html#EImportHookTargetMask" title="EImportHookTargetMask">EImportHookTargetMask</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EImport.html#EImportHookImporter" title="struct EImportHookImporter">EImportHookImporter</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EImport.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">├──</span> <a class="link" href="EPlugin.html#EPluginHook">EPluginHook</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> EImportHook
+    <span class="lineart">╰──</span> EImport
+</pre>
+</div>
+<div class="refsect1">
+<a name="EImport.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EImport.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="EImportCompleteFunc"></a><h3>EImportCompleteFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EImportCompleteFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *ei</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportStatusFunc"></a><h3>EImportStatusFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EImportStatusFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *ei</code></em>,
+                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *what</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pc</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportFactoryFunc"></a><h3>EImportFactoryFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EImportFactoryFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *ei</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportImporterFunc"></a><h3>EImportImporterFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EImportImporterFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *importer</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportSupportedFunc"></a><h3>EImportSupportedFunc ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*EImportSupportedFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *ei</code></em>,
+                         <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *Param2</code></em>,
+                         <em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *im</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportWidgetFunc"></a><h3>EImportWidgetFunc ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+<span class="c_punctuation">(</span>*EImportWidgetFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *ei</code></em>,
+                      <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *Param2</code></em>,
+                      <em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *im</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportImportFunc"></a><h3>EImportImportFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EImportImportFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *ei</code></em>,
+                      <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *Param2</code></em>,
+                      <em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *im</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-new"></a><h3>e_import_new ()</h3>
+<pre class="programlisting"><a class="link" href="EImport.html" title="EImport"><span class="returnvalue">EImport</span></a> *
+e_import_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-class-add-importer"></a><h3>e_import_class_add_importer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_import_class_add_importer (<em class="parameter"><code><span class="type">EImportClass</span> *klass</code></em>,
+                             <em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *importer</code></em>,
+                             <em class="parameter"><code><a class="link" href="EImport.html#EImportImporterFunc" title="EImportImporterFunc ()"><span class="type">EImportImporterFunc</span></a> freefunc</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.16.6.8.10.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>An initialised implementing instance of EImport.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>importer</p></td>
+<td class="parameter_description"><p>Importer to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>freefunc</p></td>
+<td class="parameter_description"><p>If supplied, called to free the importer node
+when it is no longer needed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data for the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-get-importers"></a><h3>e_import_get_importers ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+e_import_get_importers (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                        <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *target</code></em>);</pre>
+<p>Get a list of importers.  If <em class="parameter"><code>target</code></em>
+ is supplied, then only
+importers which support the type and location specified by the
+target are listed.  If <em class="parameter"><code>target</code></em>
+ is NULL, then all importers are
+listed.</p>
+<div class="refsect3">
+<a name="id-1.16.6.8.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>import</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.6.8.11.6"></a><h4>Returns</h4>
+<p> A list of importers.  The list should be freed when
+no longer needed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-construct"></a><h3>e_import_construct ()</h3>
+<pre class="programlisting"><a class="link" href="EImport.html" title="EImport"><span class="returnvalue">EImport</span></a> *
+e_import_construct (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Used by implementing classes to initialise base parameters.</p>
+<div class="refsect3">
+<a name="id-1.16.6.8.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>import</p></td>
+<td class="parameter_description"><p>The instance to initialise.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>The name of the instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.6.8.12.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>ep</code></em>
+is returned.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-import"></a><h3>e_import_import ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_import_import (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                 <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *target</code></em>,
+                 <em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *importer</code></em>,
+                 <em class="parameter"><code><a class="link" href="EImport.html#EImportStatusFunc" title="EImportStatusFunc ()"><span class="type">EImportStatusFunc</span></a> status</code></em>,
+                 <em class="parameter"><code><a class="link" href="EImport.html#EImportCompleteFunc" title="EImportCompleteFunc ()"><span class="type">EImportCompleteFunc</span></a> done</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Run the import function of the selected importer.  Once the
+importer has finished, it MUST call the <a class="link" href="EImport.html#e-import-complete" title="e_import_complete ()"><code class="function">e_import_complete()</code></a>
+function.  This allows importers to run in synchronous or
+asynchronous mode.</p>
+<p>When complete, the <em class="parameter"><code>done</code></em>
+ callback will be called.</p>
+<div class="refsect3">
+<a name="id-1.16.6.8.13.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>import</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Target to import.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>importer</p></td>
+<td class="parameter_description"><p>Importer to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>status</p></td>
+<td class="parameter_description"><p>Status callback, called with progress information.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>done</p></td>
+<td class="parameter_description"><p>Complete callback, will always be called once complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>user data for callback functions</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-cancel"></a><h3>e_import_cancel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_import_cancel (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                 <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *target</code></em>,
+                 <em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *importer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-get-widget"></a><h3>e_import_get_widget ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_import_get_widget (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                     <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *target</code></em>,
+                     <em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *importer</code></em>);</pre>
+<p>Gets a widget that the importer uses to configure its
+destination.  This widget should be packed into a container
+widget.  It should not be shown_all.</p>
+<div class="refsect3">
+<a name="id-1.16.6.8.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>import</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Target of interest</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>importer</p></td>
+<td class="parameter_description"><p>Importer to get widget of</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.6.8.15.6"></a><h4>Returns</h4>
+<p> NULL if the importer doesn't support/require
+a destination.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-get-preview-widget"></a><h3>e_import_get_preview_widget ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+e_import_get_preview_widget (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                             <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *target</code></em>,
+                             <em class="parameter"><code><a class="link" href="EImport.html#EImportImporter" title="struct EImportImporter"><span class="type">EImportImporter</span></a> *im</code></em>);</pre>
+<p>Gets a widget that the importer uses to preview data to be
+imported.  This widget should be packed into a container
+widget.  It should not be shown_all.</p>
+<div class="refsect3">
+<a name="id-1.16.6.8.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>import</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Target of interest</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>im</p></td>
+<td class="parameter_description"><p>Importer to get a preview widget of</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.16.6.8.16.6"></a><h4>Returns</h4>
+<p> NULL if the importer doesn't support preview.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-status"></a><h3>e_import_status ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_import_status (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                 <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *target</code></em>,
+                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *what</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pc</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-complete"></a><h3>e_import_complete ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_import_complete (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                   <em class="parameter"><code><a class="link" href="EImport.html#EImportTarget" title="struct EImportTarget"><span class="type">EImportTarget</span></a> *target</code></em>);</pre>
+<p>Signify that an import is complete.  This must be called by
+importer implementations when they are done.</p>
+<div class="refsect3">
+<a name="id-1.16.6.8.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>import</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Target just completed (unused currently)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-target-new"></a><h3>e_import_target_new ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+e_import_target_new (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>,
+                     <em class="parameter"><code><span class="type">gsize</span> size</code></em>);</pre>
+<p>Allocate a new import target suitable for this class.  Implementing
+classes will define the actual content of the target.</p>
+<div class="refsect3">
+<a name="id-1.16.6.8.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>import</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>type, up to implementor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Size of object to allocate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-target-free"></a><h3>e_import_target_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_import_target_free (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> target</code></em>);</pre>
+<p>Free a target.  The implementing class can override this method to
+free custom targets.</p>
+<div class="refsect3">
+<a name="id-1.16.6.8.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>import</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>the target to free</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-target-new-uri"></a><h3>e_import_target_new_uri ()</h3>
+<pre class="programlisting"><a class="link" href="EImport.html#EImportTargetURI" title="struct EImportTargetURI"><span class="returnvalue">EImportTargetURI</span></a> *
+e_import_target_new_uri (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri_src</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri_dst</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-target-new-home"></a><h3>e_import_target_new_home ()</h3>
+<pre class="programlisting"><a class="link" href="EImport.html#EImportTargetHome" title="struct EImportTargetHome"><span class="returnvalue">EImportTargetHome</span></a> *
+e_import_target_new_home (<em class="parameter"><code><a class="link" href="EImport.html" title="EImport"><span class="type">EImport</span></a> *import</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-hook-class-add-target-map"></a><h3>e_import_hook_class_add_target_map ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_import_hook_class_add_target_map (<em class="parameter"><code><span class="type">EImportHookClass</span> *klass</code></em>,
+                                    <em class="parameter"><code>const <a class="link" href="EImport.html#EImportHookTargetMap" title="EImportHookTargetMap"><span class="type">EImportHookTargetMap</span></a> *map</code></em>);</pre>
+<p><em class="parameter"><code>class</code></em>
+: The dervied EimportHook class.
+<em class="parameter"><code>map</code></em>
+: A map used to describe a single EImportTarget type for this
+class.</p>
+<p>Add a targe tmap to a concrete derived class of EImport.  The
+target map enumates the target types available for the implenting
+class.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EImport.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EImport-struct"></a><h3>struct EImport</h3>
+<pre class="programlisting">struct EImport;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-import-target-t"></a><h3>enum e_import_target_t</h3>
+<div class="refsect3">
+<a name="id-1.16.6.9.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-IMPORT-TARGET-URI:CAPS"></a>E_IMPORT_TARGET_URI</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-IMPORT-TARGET-HOME:CAPS"></a>E_IMPORT_TARGET_HOME</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-IMPORT-TARGET-LAST:CAPS"></a>E_IMPORT_TARGET_LAST</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportImporter"></a><h3>struct EImportImporter</h3>
+<pre class="programlisting">struct EImportImporter {
+	enum _e_import_target_t type;
+
+	gint pri;
+
+	EImportSupportedFunc supported;
+	EImportWidgetFunc get_widget;
+	EImportImportFunc import;
+	EImportImportFunc cancel;
+	EImportWidgetFunc get_preview;
+
+	gpointer user_data;
+
+	/* ?? */
+	gchar *name;
+	gchar *description;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportFactory"></a><h3>EImportFactory</h3>
+<pre class="programlisting">typedef struct _EImportFactory EImportFactory;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportTarget"></a><h3>struct EImportTarget</h3>
+<pre class="programlisting">struct EImportTarget {
+	EImport *import;
+
+	guint32 type;
+
+	GData *data;
+
+	/* implementation fields follow, depends on target type */
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportTargetURI"></a><h3>struct EImportTargetURI</h3>
+<pre class="programlisting">struct EImportTargetURI {
+	EImportTarget target;
+
+	gchar *uri_src;
+	gchar *uri_dest;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportTargetHome"></a><h3>struct EImportTargetHome</h3>
+<pre class="programlisting">struct EImportTargetHome {
+	EImportTarget target;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportHook-struct"></a><h3>struct EImportHook</h3>
+<pre class="programlisting">struct EImportHook;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportHookTargetMap"></a><h3>EImportHookTargetMap</h3>
+<pre class="programlisting">typedef struct _EPluginHookTargetMap EImportHookTargetMap;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportHookTargetMask"></a><h3>EImportHookTargetMask</h3>
+<pre class="programlisting">typedef struct _EPluginHookTargetKey EImportHookTargetMask;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EImportHookImporter"></a><h3>struct EImportHookImporter</h3>
+<pre class="programlisting">struct EImportHookImporter {
+	EImportImporter importer;
+
+	/* user_data == EImportHook */
+
+	gchar *supported;
+	gchar *get_widget;
+	gchar *import;
+	gchar *cancel;
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

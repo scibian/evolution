@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Engine Reference Manual: EMVFolderRule</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Engine Reference Manual">
+<link rel="up" href="ch01.html" title="Classes">
+<link rel="prev" href="EMVFolderContext.html" title="EMVFolderContext">
+<link rel="next" href="MailFolderCache.html" title="MailFolderCache">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EMVFolderRule.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EMVFolderRule.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EMVFolderContext.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="MailFolderCache.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EMVFolderRule"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EMVFolderRule.top_of_page"></a>EMVFolderRule</span></h2>
+<p>EMVFolderRule</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EMVFolderRule.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/evolution-util/EFilterRule.html"><span class="returnvalue">EFilterRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-new" title="em_vfolder_rule_new ()">em_vfolder_rule_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-add-source" title="em_vfolder_rule_add_source ()">em_vfolder_rule_add_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-remove-source" title="em_vfolder_rule_remove_source ()">em_vfolder_rule_remove_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-find-source" title="em_vfolder_rule_find_source ()">em_vfolder_rule_find_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-next-source" title="em_vfolder_rule_next_source ()">em_vfolder_rule_next_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="returnvalue">GQueue</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-get-sources" title="em_vfolder_rule_get_sources ()">em_vfolder_rule_get_sources</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-sources-changed" title="em_vfolder_rule_sources_changed ()">em_vfolder_rule_sources_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-source-get-include-subfolders" title="em_vfolder_rule_source_get_include_subfolders ()">em_vfolder_rule_source_get_include_subfolders</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-source-set-include-subfolders" title="em_vfolder_rule_source_set_include_subfolders ()">em_vfolder_rule_source_set_include_subfolders</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-with-t" title="enum em_vfolder_rule_with_t"><span class="returnvalue">em_vfolder_rule_with_t</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-get-with" title="em_vfolder_rule_get_with ()">em_vfolder_rule_get_with</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-set-with" title="em_vfolder_rule_set_with ()">em_vfolder_rule_set_with</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-get-autoupdate" title="em_vfolder_rule_get_autoupdate ()">em_vfolder_rule_get_autoupdate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMVFolderRule.html#em-vfolder-rule-set-autoupdate" title="em_vfolder_rule_set_autoupdate ()">em_vfolder_rule_set_autoupdate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMVFolderRule.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMVFolderRule.html#EMVFolderRule-struct" title="struct EMVFolderRule">EMVFolderRule</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EMVFolderRule.html#em-vfolder-rule-with-t" title="enum em_vfolder_rule_with_t">em_vfolder_rule_with_t</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMVFolderRule.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/evolution-util/EFilterRule.html">EFilterRule</a>
+        <span class="lineart">╰──</span> EMVFolderRule
+</pre>
+</div>
+<div class="refsect1">
+<a name="EMVFolderRule.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EMVFolderRule.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="em-vfolder-rule-new"></a><h3>em_vfolder_rule_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/evolution-util/EFilterRule.html"><span class="returnvalue">EFilterRule</span></a> *
+em_vfolder_rule_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-add-source"></a><h3>em_vfolder_rule_add_source ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+em_vfolder_rule_add_source (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-remove-source"></a><h3>em_vfolder_rule_remove_source ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+em_vfolder_rule_remove_source (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-find-source"></a><h3>em_vfolder_rule_find_source ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+em_vfolder_rule_find_source (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-next-source"></a><h3>em_vfolder_rule_next_source ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+em_vfolder_rule_next_source (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *last</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-get-sources"></a><h3>em_vfolder_rule_get_sources ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Double-ended-Queues.html#GQueue"><span class="returnvalue">GQueue</span></a> *
+em_vfolder_rule_get_sources (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-sources-changed"></a><h3>em_vfolder_rule_sources_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+em_vfolder_rule_sources_changed (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-source-get-include-subfolders"></a><h3>em_vfolder_rule_source_get_include_subfolders ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+em_vfolder_rule_source_get_include_subfolders
+                               (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-source-set-include-subfolders"></a><h3>em_vfolder_rule_source_set_include_subfolders ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+em_vfolder_rule_source_set_include_subfolders
+                               (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> include_subfolders</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-get-with"></a><h3>em_vfolder_rule_get_with ()</h3>
+<pre class="programlisting"><a class="link" href="EMVFolderRule.html#em-vfolder-rule-with-t" title="enum em_vfolder_rule_with_t"><span class="returnvalue">em_vfolder_rule_with_t</span></a>
+em_vfolder_rule_get_with (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-set-with"></a><h3>em_vfolder_rule_set_with ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+em_vfolder_rule_set_with (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>,
+                          <em class="parameter"><code><a class="link" href="EMVFolderRule.html#em-vfolder-rule-with-t" title="enum em_vfolder_rule_with_t"><span class="type">em_vfolder_rule_with_t</span></a> with</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-get-autoupdate"></a><h3>em_vfolder_rule_get_autoupdate ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+em_vfolder_rule_get_autoupdate (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-set-autoupdate"></a><h3>em_vfolder_rule_set_autoupdate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+em_vfolder_rule_set_autoupdate (<em class="parameter"><code><a class="link" href="EMVFolderRule.html" title="EMVFolderRule"><span class="type">EMVFolderRule</span></a> *rule</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> autoupdate</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMVFolderRule.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EMVFolderRule-struct"></a><h3>struct EMVFolderRule</h3>
+<pre class="programlisting">struct EMVFolderRule;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="em-vfolder-rule-with-t"></a><h3>enum em_vfolder_rule_with_t</h3>
+<div class="refsect3">
+<a name="id-1.2.9.8.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="EM-VFOLDER-RULE-WITH-SPECIFIC:CAPS"></a>EM_VFOLDER_RULE_WITH_SPECIFIC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="EM-VFOLDER-RULE-WITH-LOCAL-REMOTE-ACTIVE:CAPS"></a>EM_VFOLDER_RULE_WITH_LOCAL_REMOTE_ACTIVE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="EM-VFOLDER-RULE-WITH-REMOTE-ACTIVE:CAPS"></a>EM_VFOLDER_RULE_WITH_REMOTE_ACTIVE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="EM-VFOLDER-RULE-WITH-LOCAL:CAPS"></a>EM_VFOLDER_RULE_WITH_LOCAL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

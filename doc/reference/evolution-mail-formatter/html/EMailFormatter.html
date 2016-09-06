@@ -1,0 +1,1133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Evolution Mail Formatter Reference Manual: EMailFormatter</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Evolution Mail Formatter Reference Manual">
+<link rel="up" href="ch01.html" title="Mail Parsing and Formatting">
+<link rel="prev" href="EMailParser.html" title="EMailParser">
+<link rel="next" href="EMailFormatterPrint.html" title="EMailFormatterPrint">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EMailFormatter.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EMailFormatter.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EMailFormatter.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EMailFormatter.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EMailFormatter.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EMailParser.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EMailFormatterPrint.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EMailFormatter"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EMailFormatter.top_of_page"></a>EMailFormatter</span></h2>
+<p>EMailFormatter</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EMailFormatter.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="returnvalue">EMailFormatter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-new" title="e_mail_formatter_new ()">e_mail_formatter_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-format-sync" title="e_mail_formatter_format_sync ()">e_mail_formatter_format_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-format" title="e_mail_formatter_format ()">e_mail_formatter_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-format-finish" title="e_mail_formatter_format_finish ()">e_mail_formatter_format_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-format-as" title="e_mail_formatter_format_as ()">e_mail_formatter_format_as</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-format-text" title="e_mail_formatter_format_text ()">e_mail_formatter_format_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-sub-html-header" title="e_mail_formatter_get_sub_html_header ()">e_mail_formatter_get_sub_html_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-html-header" title="e_mail_formatter_get_html_header ()">e_mail_formatter_get_html_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailExtensionRegistry.html" title="EMailExtensionRegistry"><span class="returnvalue">EMailExtensionRegistry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-extension-registry" title="e_mail_formatter_get_extension_registry ()">e_mail_formatter_get_extension_registry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/camel/CamelMimeFilterToHTML.html#CamelMimeFilterToHTMLFlags"><span class="returnvalue">CamelMimeFilterToHTMLFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-text-format-flags" title="e_mail_formatter_get_text_format_flags ()">e_mail_formatter_get_text_format_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="returnvalue">GdkRGBA</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-color" title="e_mail_formatter_get_color ()">e_mail_formatter_get_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-set-color" title="e_mail_formatter_set_color ()">e_mail_formatter_set_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-update-style" title="e_mail_formatter_update_style ()">e_mail_formatter_update_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EMailFormatter.html#EMailImageLoadingPolicy" title="enum EMailImageLoadingPolicy"><span class="returnvalue">EMailImageLoadingPolicy</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-image-loading-policy" title="e_mail_formatter_get_image_loading_policy ()">e_mail_formatter_get_image_loading_policy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-set-image-loading-policy" title="e_mail_formatter_set_image_loading_policy ()">e_mail_formatter_set_image_loading_policy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-mark-citations" title="e_mail_formatter_get_mark_citations ()">e_mail_formatter_get_mark_citations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-set-mark-citations" title="e_mail_formatter_set_mark_citations ()">e_mail_formatter_set_mark_citations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-show-sender-photo" title="e_mail_formatter_get_show_sender_photo ()">e_mail_formatter_get_show_sender_photo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-set-show-sender-photo" title="e_mail_formatter_set_show_sender_photo ()">e_mail_formatter_set_show_sender_photo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-animate-images" title="e_mail_formatter_get_animate_images ()">e_mail_formatter_get_animate_images</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-set-animate-images" title="e_mail_formatter_set_animate_images ()">e_mail_formatter_set_animate_images</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-show-real-date" title="e_mail_formatter_get_show_real_date ()">e_mail_formatter_get_show_real_date</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-set-show-real-date" title="e_mail_formatter_set_show_real_date ()">e_mail_formatter_set_show_real_date</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-charset" title="e_mail_formatter_get_charset ()">e_mail_formatter_get_charset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-dup-charset" title="e_mail_formatter_dup_charset ()">e_mail_formatter_dup_charset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-set-charset" title="e_mail_formatter_set_charset ()">e_mail_formatter_set_charset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-get-default-charset" title="e_mail_formatter_get_default_charset ()">e_mail_formatter_get_default_charset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-dup-default-charset" title="e_mail_formatter_dup_default_charset ()">e_mail_formatter_dup_default_charset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-set-default-charset" title="e_mail_formatter_set_default_charset ()">e_mail_formatter_set_default_charset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-format-header" title="e_mail_formatter_format_header ()">e_mail_formatter_format_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-format-text-header" title="e_mail_formatter_format_text_header ()">e_mail_formatter_format_text_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-format-address" title="e_mail_formatter_format_address ()">e_mail_formatter_format_address</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-canon-header-name" title="e_mail_formatter_canon_header_name ()">e_mail_formatter_canon_header_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-find-rfc822-end-iter" title="e_mail_formatter_find_rfc822_end_iter ()">e_mail_formatter_find_rfc822_end_iter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EMailFormatter.html#e-mail-formatter-parse-html-mnemonics" title="e_mail_formatter_parse_html_mnemonics ()">e_mail_formatter_parse_html_mnemonics</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--animate-images" title="The “animate-images” property">animate-images</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--body-color" title="The “body-color” property">body-color</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--charset" title="The “charset” property">charset</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--citation-color" title="The “citation-color” property">citation-color</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--content-color" title="The “content-color” property">content-color</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--default-charset" title="The “default-charset” property">default-charset</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--frame-color" title="The “frame-color” property">frame-color</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--header-color" title="The “header-color” property">header-color</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="EMailFormatter.html#EMailImageLoadingPolicy" title="enum EMailImageLoadingPolicy"><span class="type">EMailImageLoadingPolicy</span></a></td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--image-loading-policy" title="The “image-loading-policy” property">image-loading-policy</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--mark-citations" title="The “mark-citations” property">mark-citations</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--show-real-date" title="The “show-real-date” property">show-real-date</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--show-sender-photo" title="The “show-sender-photo” property">show-sender-photo</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</td>
+<td class="property_name"><a class="link" href="EMailFormatter.html#EMailFormatter--text-color" title="The “text-color” property">text-color</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EMailFormatter.html#EMailFormatter-need-redraw" title="The “need-redraw” signal">need-redraw</a></td>
+<td class="signal_flags">Run First</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMailFormatter.html#EMailFormatter-struct" title="struct EMailFormatter">EMailFormatter</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EMailFormatter.html#EMailFormatterHeaderFlags" title="enum EMailFormatterHeaderFlags">EMailFormatterHeaderFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EMailFormatter.html#EMailFormatterMode" title="enum EMailFormatterMode">EMailFormatterMode</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EMailFormatter.html#EMailFormatterContext" title="struct EMailFormatterContext">EMailFormatterContext</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EMailFormatter.html#EMailFormatterColor" title="enum EMailFormatterColor">EMailFormatterColor</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="EMailFormatter.html#EMailImageLoadingPolicy" title="enum EMailImageLoadingPolicy">EMailImageLoadingPolicy</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EMailFormatter
+        <span class="lineart">├──</span> <a class="link" href="EMailFormatterPrint.html" title="EMailFormatterPrint">EMailFormatterPrint</a>
+        <span class="lineart">╰──</span> <a class="link" href="EMailFormatterQuote.html" title="EMailFormatterQuote">EMailFormatterQuote</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EMailFormatter implements
+ EExtensible.</p>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="e-mail-formatter-new"></a><h3>e_mail_formatter_new ()</h3>
+<pre class="programlisting"><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="returnvalue">EMailFormatter</span></a> *
+e_mail_formatter_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-format-sync"></a><h3>e_mail_formatter_format_sync ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_format_sync (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                              <em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GOutputStream.html"><span class="type">GOutputStream</span></a> *stream</code></em>,
+                              <em class="parameter"><code><a class="link" href="EMailFormatter.html#EMailFormatterHeaderFlags" title="enum EMailFormatterHeaderFlags"><span class="type">EMailFormatterHeaderFlags</span></a> flags</code></em>,
+                              <em class="parameter"><code><a class="link" href="EMailFormatter.html#EMailFormatterMode" title="enum EMailFormatterMode"><span class="type">EMailFormatterMode</span></a> mode</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-format"></a><h3>e_mail_formatter_format ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_format (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                         <em class="parameter"><code><a class="link" href="EMailPartList.html" title="EMailPartList"><span class="type">EMailPartList</span></a> *part_list</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GOutputStream.html"><span class="type">GOutputStream</span></a> *stream</code></em>,
+                         <em class="parameter"><code><a class="link" href="EMailFormatter.html#EMailFormatterHeaderFlags" title="enum EMailFormatterHeaderFlags"><span class="type">EMailFormatterHeaderFlags</span></a> flags</code></em>,
+                         <em class="parameter"><code><a class="link" href="EMailFormatter.html#EMailFormatterMode" title="enum EMailFormatterMode"><span class="type">EMailFormatterMode</span></a> mode</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-format-finish"></a><h3>e_mail_formatter_format_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_formatter_format_finish (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-format-as"></a><h3>e_mail_formatter_format_as ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_formatter_format_as (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                            <em class="parameter"><code><a class="link" href="EMailFormatter.html#EMailFormatterContext" title="struct EMailFormatterContext"><span class="type">EMailFormatterContext</span></a> *context</code></em>,
+                            <em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GOutputStream.html"><span class="type">GOutputStream</span></a> *stream</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *as_mime_type</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+<p>Formats given <em class="parameter"><code>part</code></em>
+ using a <em class="parameter"><code>formatter</code></em>
+ extension for given mime type. When
+the mime type is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the function will try to lookup the best formatter
+for given <em class="parameter"><code>part</code></em>
+ by it's default mime type.</p>
+<div class="refsect3">
+<a name="id-1.2.3.10.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>formatter</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMailFormatter.html#EMailFormatterContext" title="struct EMailFormatterContext"><span class="type">EMailFormatterContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>part</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GOutputStream.html"><span class="type">GOutputStream</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>as_mime_type</p></td>
+<td class="parameter_description"><p>(allow-none) mime-type to use for formatting, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>(allow-none) an optional <a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.3.10.6.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when no suitable formatter is found or
+when it fails to format the part. </p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-format-text"></a><h3>e_mail_formatter_format_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_format_text (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                              <em class="parameter"><code><a class="link" href="EMailPart.html" title="EMailPart"><span class="type">EMailPart</span></a> *part</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GOutputStream.html"><span class="type">GOutputStream</span></a> *stream</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-sub-html-header"></a><h3>e_mail_formatter_get_sub_html_header ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_formatter_get_sub_html_header (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-html-header"></a><h3>e_mail_formatter_get_html_header ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_formatter_get_html_header (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-extension-registry"></a><h3>e_mail_formatter_get_extension_registry ()</h3>
+<pre class="programlisting"><a class="link" href="EMailExtensionRegistry.html" title="EMailExtensionRegistry"><span class="returnvalue">EMailExtensionRegistry</span></a> *
+e_mail_formatter_get_extension_registry
+                               (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-text-format-flags"></a><h3>e_mail_formatter_get_text_format_flags ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/camel/CamelMimeFilterToHTML.html#CamelMimeFilterToHTMLFlags"><span class="returnvalue">CamelMimeFilterToHTMLFlags</span></a>
+e_mail_formatter_get_text_format_flags
+                               (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-color"></a><h3>e_mail_formatter_get_color ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="returnvalue">GdkRGBA</span></a> *
+e_mail_formatter_get_color (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                            <em class="parameter"><code><a class="link" href="EMailFormatter.html#EMailFormatterColor" title="enum EMailFormatterColor"><span class="type">EMailFormatterColor</span></a> type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-set-color"></a><h3>e_mail_formatter_set_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_set_color (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                            <em class="parameter"><code><a class="link" href="EMailFormatter.html#EMailFormatterColor" title="enum EMailFormatterColor"><span class="type">EMailFormatterColor</span></a> type</code></em>,
+                            <em class="parameter"><code>const <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *color</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-update-style"></a><h3>e_mail_formatter_update_style ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_update_style (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/gtk3-Standard-Enumerations.html#GtkStateFlags"><span class="type">GtkStateFlags</span></a> state</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-image-loading-policy"></a><h3>e_mail_formatter_get_image_loading_policy ()</h3>
+<pre class="programlisting"><a class="link" href="EMailFormatter.html#EMailImageLoadingPolicy" title="enum EMailImageLoadingPolicy"><span class="returnvalue">EMailImageLoadingPolicy</span></a>
+e_mail_formatter_get_image_loading_policy
+                               (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-set-image-loading-policy"></a><h3>e_mail_formatter_set_image_loading_policy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_set_image_loading_policy
+                               (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                <em class="parameter"><code><a class="link" href="EMailFormatter.html#EMailImageLoadingPolicy" title="enum EMailImageLoadingPolicy"><span class="type">EMailImageLoadingPolicy</span></a> policy</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-mark-citations"></a><h3>e_mail_formatter_get_mark_citations ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_formatter_get_mark_citations (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-set-mark-citations"></a><h3>e_mail_formatter_set_mark_citations ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_set_mark_citations (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> mark_citations</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-show-sender-photo"></a><h3>e_mail_formatter_get_show_sender_photo ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_formatter_get_show_sender_photo
+                               (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-set-show-sender-photo"></a><h3>e_mail_formatter_set_show_sender_photo ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_set_show_sender_photo
+                               (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_sender_photo</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-animate-images"></a><h3>e_mail_formatter_get_animate_images ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_formatter_get_animate_images (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-set-animate-images"></a><h3>e_mail_formatter_set_animate_images ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_set_animate_images (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> animate_images</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-show-real-date"></a><h3>e_mail_formatter_get_show_real_date ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+e_mail_formatter_get_show_real_date (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-set-show-real-date"></a><h3>e_mail_formatter_set_show_real_date ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_set_show_real_date (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_real_date</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-charset"></a><h3>e_mail_formatter_get_charset ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_formatter_get_charset (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-dup-charset"></a><h3>e_mail_formatter_dup_charset ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_formatter_dup_charset (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-set-charset"></a><h3>e_mail_formatter_set_charset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_set_charset (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *charset</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-get-default-charset"></a><h3>e_mail_formatter_get_default_charset ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_formatter_get_default_charset (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-dup-default-charset"></a><h3>e_mail_formatter_dup_default_charset ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_formatter_dup_default_charset (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-set-default-charset"></a><h3>e_mail_formatter_set_default_charset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_set_default_charset (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *charset</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-format-header"></a><h3>e_mail_formatter_format_header ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_format_header (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Strings.html#GString"><span class="type">GString</span></a> *buffer</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *header_name</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *header_value</code></em>,
+                                <em class="parameter"><code><span class="type">guint32</span> flags</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *charset</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-format-text-header"></a><h3>e_mail_formatter_format_text_header ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_format_text_header (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Strings.html#GString"><span class="type">GString</span></a> *buffer</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>,
+                                     <em class="parameter"><code><span class="type">guint32</span> flags</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-format-address"></a><h3>e_mail_formatter_format_address ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_formatter_format_address (<em class="parameter"><code><a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *formatter</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Strings.html#GString"><span class="type">GString</span></a> *out</code></em>,
+                                 <em class="parameter"><code><span class="type">struct _camel_header_address</span> *a</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *field</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> no_links</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> elipsize</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-canon-header-name"></a><h3>e_mail_formatter_canon_header_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+e_mail_formatter_canon_header_name (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-find-rfc822-end-iter"></a><h3>e_mail_formatter_find_rfc822_end_iter ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+e_mail_formatter_find_rfc822_end_iter (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *rfc822_start_iter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="e-mail-formatter-parse-html-mnemonics"></a><h3>e_mail_formatter_parse_html_mnemonics ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+e_mail_formatter_parse_html_mnemonics (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **out_access_key</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EMailFormatter-struct"></a><h3>struct EMailFormatter</h3>
+<pre class="programlisting">struct EMailFormatter;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatterHeaderFlags"></a><h3>enum EMailFormatterHeaderFlags</h3>
+<div class="refsect3">
+<a name="id-1.2.3.11.3.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-COLLAPSABLE:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_COLLAPSABLE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-COLLAPSED:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_COLLAPSED</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-HTML:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_HTML</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-NOCOLUMNS:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_NOCOLUMNS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-BOLD:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_BOLD</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-NODEC:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_NODEC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-HIDDEN:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_HIDDEN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-NOLINKS:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_NOLINKS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-HEADER-FLAG-NOELIPSIZE:CAPS"></a>E_MAIL_FORMATTER_HEADER_FLAG_NOELIPSIZE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatterMode"></a><h3>enum EMailFormatterMode</h3>
+<div class="refsect3">
+<a name="id-1.2.3.11.4.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-MODE-INVALID:CAPS"></a>E_MAIL_FORMATTER_MODE_INVALID</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-MODE-NORMAL:CAPS"></a>E_MAIL_FORMATTER_MODE_NORMAL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-MODE-SOURCE:CAPS"></a>E_MAIL_FORMATTER_MODE_SOURCE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-MODE-RAW:CAPS"></a>E_MAIL_FORMATTER_MODE_RAW</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-MODE-CID:CAPS"></a>E_MAIL_FORMATTER_MODE_CID</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-MODE-PRINTING:CAPS"></a>E_MAIL_FORMATTER_MODE_PRINTING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-MODE-ALL-HEADERS:CAPS"></a>E_MAIL_FORMATTER_MODE_ALL_HEADERS</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatterContext"></a><h3>struct EMailFormatterContext</h3>
+<pre class="programlisting">struct EMailFormatterContext {
+	EMailPartList *part_list;
+	EMailFormatterMode mode;
+	EMailFormatterHeaderFlags flags;
+
+	gchar *uri;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatterColor"></a><h3>enum EMailFormatterColor</h3>
+<div class="refsect3">
+<a name="id-1.2.3.11.6.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-COLOR-BODY:CAPS"></a>E_MAIL_FORMATTER_COLOR_BODY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-COLOR-CITATION:CAPS"></a>E_MAIL_FORMATTER_COLOR_CITATION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-COLOR-CONTENT:CAPS"></a>E_MAIL_FORMATTER_COLOR_CONTENT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-COLOR-FRAME:CAPS"></a>E_MAIL_FORMATTER_COLOR_FRAME</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-COLOR-HEADER:CAPS"></a>E_MAIL_FORMATTER_COLOR_HEADER</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-COLOR-TEXT:CAPS"></a>E_MAIL_FORMATTER_COLOR_TEXT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-FORMATTER-NUM-COLOR-TYPES:CAPS"></a>E_MAIL_FORMATTER_NUM_COLOR_TYPES</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailImageLoadingPolicy"></a><h3>enum EMailImageLoadingPolicy</h3>
+<p>Policy for loading remote image URLs in email.  Allowing images to be
+loaded from a remote server may have privacy implications.</p>
+<div class="refsect3">
+<a name="id-1.2.3.11.7.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-IMAGE-LOADING-POLICY-NEVER:CAPS"></a>E_MAIL_IMAGE_LOADING_POLICY_NEVER</p></td>
+<td class="enum_member_description">
+<p>  Never load images from a remote server.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-IMAGE-LOADING-POLICY-SOMETIMES:CAPS"></a>E_MAIL_IMAGE_LOADING_POLICY_SOMETIMES</p></td>
+<td class="enum_member_description">
+<p>  Only load images from a remote server if the sender is a known contact.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="E-MAIL-IMAGE-LOADING-POLICY-ALWAYS:CAPS"></a>E_MAIL_IMAGE_LOADING_POLICY_ALWAYS</p></td>
+<td class="enum_member_description">
+<p>  Always load images from a remote server.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EMailFormatter--animate-images"></a><h3>The <code class="literal">“animate-images”</code> property</h3>
+<pre class="programlisting">  “animate-images”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--body-color"></a><h3>The <code class="literal">“body-color”</code> property</h3>
+<pre class="programlisting">  “body-color”               <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--charset"></a><h3>The <code class="literal">“charset”</code> property</h3>
+<pre class="programlisting">  “charset”                  <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--citation-color"></a><h3>The <code class="literal">“citation-color”</code> property</h3>
+<pre class="programlisting">  “citation-color”           <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--content-color"></a><h3>The <code class="literal">“content-color”</code> property</h3>
+<pre class="programlisting">  “content-color”            <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--default-charset"></a><h3>The <code class="literal">“default-charset”</code> property</h3>
+<pre class="programlisting">  “default-charset”          <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--frame-color"></a><h3>The <code class="literal">“frame-color”</code> property</h3>
+<pre class="programlisting">  “frame-color”              <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--header-color"></a><h3>The <code class="literal">“header-color”</code> property</h3>
+<pre class="programlisting">  “header-color”             <a href="http://developer.gnome.org/gdk2/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--image-loading-policy"></a><h3>The <code class="literal">“image-loading-policy”</code> property</h3>
+<pre class="programlisting">  “image-loading-policy”     <a class="link" href="EMailFormatter.html#EMailImageLoadingPolicy" title="enum EMailImageLoadingPolicy"><span class="type">EMailImageLoadingPolicy</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: E_MAIL_IMAGE_LOADING_POLICY_NEVER</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--mark-citations"></a><h3>The <code class="literal">“mark-citations”</code> property</h3>
+<pre class="programlisting">  “mark-citations”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--show-real-date"></a><h3>The <code class="literal">“show-real-date”</code> property</h3>
+<pre class="programlisting">  “show-real-date”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--show-sender-photo"></a><h3>The <code class="literal">“show-sender-photo”</code> property</h3>
+<pre class="programlisting">  “show-sender-photo”        <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EMailFormatter--text-color"></a><h3>The <code class="literal">“text-color”</code> property</h3>
+<pre class="programlisting">  “text-color”               <a href="http://developer.gnome.org/gdk2/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</pre>
+<p></p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EMailFormatter.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EMailFormatter-need-redraw"></a><h3>The <code class="literal">“need-redraw”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EMailFormatter.html" title="EMailFormatter"><span class="type">EMailFormatter</span></a> *emailformatter,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>Flags: Run First</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>
