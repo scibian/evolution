@@ -1,3 +1,10 @@
+evolution (3.12.9~git20141130.241663-1scibian1) jessie; urgency=low
+
+  * Remove annoying alarm warnings
+  * Fix crash using template with attachment
+
+ -- Scibian Packaging Team <packaging@scibian.org>  Tue, 06 Sep 2016 17:25:38 +0200
+
 evolution (3.12.9~git20141130.241663-1) unstable; urgency=medium
 
   * New upstream git snapshot from stable branch, includes only bugfixes 
