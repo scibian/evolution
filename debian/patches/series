@@ -1,3 +1,4 @@
 02_nss_paths.patch
 10_revert_libevolution_avoid-version.patch
 90_remove_alarm-warnings.patch
+91_fix_crash_using_template_with_attachment.patch
