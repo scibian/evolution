@@ -1,0 +1,20 @@
+Description: Remove annoying alarm warnings
+Author: Scibian Packaging Team <packaging@scibian.org>
+
+Index: evolution-3.12.9/calendar/alarm-notify/alarm-queue.c
+===================================================================
+--- evolution-3.12.9.orig/calendar/alarm-notify/alarm-queue.c	2014-11-28 16:33:13.000000000 +0100
++++ evolution-3.12.9/calendar/alarm-notify/alarm-queue.c	2015-11-16 11:19:48.611457143 +0100
+@@ -623,9 +623,9 @@
+ 		ca->cal_client, str_query, &ca->view, NULL, &error);
+ 
+ 	if (error != NULL) {
+-		g_warning (
+-			"%s: Could not get query for client: %s",
+-			G_STRFUNC, error->message);
++	//	g_warning (
++	//		"%s: Could not get query for client: %s",
++	//		G_STRFUNC, error->message);
+ 		g_error_free (error);
+ 	} else {
+ 		debug (("Setting Call backs"));
